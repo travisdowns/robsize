@@ -316,12 +316,24 @@ const int memsize = 268435456;
 static int outer_its = 64;
 static int instr_type = 4;	// Default to two-byte nop
 
+void print_usage() {
+    fprintf(stderr, "Usage: "
+    "\trobsize [TEST_NUMBER] [OPTIONS]\n\n"
+    "\t-slow\t\t\tRun more iterations making the test slower but potentiallly more accurate\n"
+    "\t-fast\t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
+    "\t-write-asm\t\t\tPrint the raw generated instructions to a file and quit\n"
+    );
+}
+
 /** handle the arguments, return true if everything OK */
 bool handle_args(int argc, const char *argv[]) {
+    int firstopt = 2;
     if (argc >= 2) {
-        sscanf (argv[1], "%d", &instr_type);
+        if (sscanf(argv[1], "%d", &instr_type) == 0) {
+            firstopt = 1;
+        }
     }
-    for (int i = 2; i < argc; i++)
+    for (int i = firstopt; i < argc; i++)
     {
         if (!strcmp(argv[i], "-fast")) {
             its >>=2;
@@ -331,6 +343,9 @@ bool handle_args(int argc, const char *argv[]) {
         } else if (!strcmp(argv[i], "-write-asm")) {
             // print the generated instructions to a file and quit
             print_ibuf = true;
+        } else if (!strcmp(argv[i], "-help")) {
+            print_usage();
+            exit(EXIT_SUCCESS);
         } else {
             fprintf(stderr, "Uncognized argument: %s\n", argv[i]);
             return false;
@@ -340,14 +355,6 @@ bool handle_args(int argc, const char *argv[]) {
     return true;
 }
 
-void print_usage() {
-    fprintf(stderr, "Usage: "
-    "\trobsize [TEST_NUMBER] [OPTIONS]\n\n"
-    "\t-slow\t\t\tRun more iterations making the test slower but potentiallly more accurate\n"
-    "\t-fast\t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
-    "\t-write-asm\t\t\tPrint the raw generated instructions to a file and quit\n"
-    );
-}
 
 int main(int argc, const char *argv[])
 {
