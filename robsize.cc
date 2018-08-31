@@ -21,6 +21,9 @@ bool is_xmm[128] =
          1,1,1,1,1,1,1,1,1,1,
          1,1,0,0,0,0};
 
+/* number of tests, the index of the last test is (TEST_COUNT - 1) */
+#define TEST_COUNT 27
+
 const char *test_name(int instr) {  
     switch (instr) {
         case 0:	 return "parallel GP adds";	// add (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
@@ -318,11 +321,20 @@ static int instr_type = 4;	// Default to two-byte nop
 
 void print_usage() {
     fprintf(stderr, "Usage: "
-    "\trobsize [TEST_NUMBER] [OPTIONS]\n\n"
-    "\t-slow\t\t\tRun more iterations making the test slower but potentiallly more accurate\n"
-    "\t-fast\t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
+    "\trobsize [TEST_ID] [OPTIONS]\n\n"
+    "\t-slow     \t\t\tRun more iterations making the test slower but potentiallly more accurate\n"
+    "\t-fast     \t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
     "\t-write-asm\t\t\tPrint the raw generated instructions to a file and quit\n"
+    "\t-list     \t\t\tList the available tests and their IDs\n"
     );
+}
+
+void print_tests() {
+    printf("The following tests are supported, run the want you want with ./robsize <ID>\n");
+    printf("ID\tDescription\n");
+    for (int i = 0; i < TEST_COUNT; i++) {
+        printf("%d\t%s\n", i, test_name(i));
+    }
 }
 
 /** handle the arguments, return true if everything OK */
@@ -345,6 +357,9 @@ bool handle_args(int argc, const char *argv[]) {
             print_ibuf = true;
         } else if (!strcmp(argv[i], "-help")) {
             print_usage();
+            exit(EXIT_SUCCESS);
+        } else if (!strcmp(argv[i], "-list")) {
+            print_tests();
             exit(EXIT_SUCCESS);
         } else {
             fprintf(stderr, "Uncognized argument: %s\n", argv[i]);
@@ -374,7 +389,7 @@ int main(int argc, const char *argv[])
     init_dbuf(dbuf, memsize/sizeof(void*), 8192/sizeof(void*));
     void(*routine)() = (void(*)())ibuf;	
 
-    printf("Running test %s\n", test_name(instr_type));
+    printf("Running test ID %d: %s\n", instr_type, test_name(instr_type));
     printf("%s\t%s\t%s\t%s\n", "ICOUNT", "MIN", "AVG", "MAX");
     for (int icount = 16; icount < 250; icount += 1)
     {	
