@@ -14,6 +14,26 @@ Usage: 	robsize [TEST_ID] [OPTIONS]
 	-list     			List the available tests and their IDs
 ```
 
+## Interesting Tests
+
+There are currently 27 different tests, so here I'll quickly note which are the most interesting for determining the main parameters of your system.
+
+A common theme is that many of the tests will probably detect the _same_ archictural feature (e.g., the ROB size), but do it in a slightly different way (e.g, with different type of nops, or different ALU operations, etc). One would expect them to give the same result, but if they give different results then they may reveal something interesting about the system. So the tests below aren't the _only_ ones that detect the particular feature!
+
+All of the tests use the same basic struture: memory accesses that miss in the cache, separated by different types of operations (instructions). Only the operations vary, so when we say that a test "uses single byte NOPs" (for example), it is to be understood that the test consists as always of memory accesses separated by various amounts of single byte NOPs.
+
+### Tests 1 and 4
+
+These tests use single byte or double byte NOPs to detect the ROB size. They should both give the same answer, since only difference is that single byte NOPs tend to disable the use of micro-op cache since they are too dence, while double-byte NOPs use the cache. I woudn't expect that to affect the apparent ROB size, but it's nice to be able to check!
+
+### Test 0
+
+This uses a series of general-purpose register additions, each one of which should consume a physical register, to test the size of the speculative register file.
+
+### Test 11 and 19
+
+These use SIMD xor operations (with different registers so it is not a zeroign idiom) to test the size of the SIMD register file. Test 11 uses SSE and xmm registers, while test 19 uses AVX2 and ymm registers. On the machines I am aware of, they give the same results but maybe one day it will be different!
+
 ### References
 
 H. Wong, _Measuring Reorder Buffer Capacity_, May, 2013. [Online]. Available: http://blog.stuffedcow.net/2013/05/measuring-rob-capacity/
