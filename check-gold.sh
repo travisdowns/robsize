@@ -12,7 +12,7 @@ if [ ! -z "$1" ]; then
         for i in $(seq 0 $MAX_TEST); do
             echo "writing asm for test $i"
             ./robsize $i -write-asm
-            mv asm.bin asm-gold/asm-$i.bin
+            ${OBJDUMP[@]} asm.bin > asm-gold/asm-$i.asm
         done
     else
         echo "Usage: check-gold.sh [--write]"
@@ -28,12 +28,13 @@ mkdir -p asm-temp
 for i in $(seq 0 $MAX_TEST); do
     echo "writing asm for test $i"
     ./robsize $i -write-asm
-    mv asm.bin asm-temp/asm-$i.bin
-    diff <(cd asm-gold; ${OBJDUMP[@]} asm-$i.bin) <(cd asm-temp; ${OBJDUMP[@]} asm-$i.bin) \
-            || { echo "FAILED: asm-gold/asm-$i.bin and asm-temp/asm-$i.bin differed"; exit; }
+    ${OBJDUMP[@]} asm.bin > asm-temp/asm-$i.asm
+    diff asm-gold/asm-$i.asm asm-temp/asm-$i.asm \
+            || { echo "FAILED: asm-gold/asm-$i.asm and asm-temp/asm-$i.asm differed"; exit; }
 done
 
 rm -rf asm-temp
+rm asm.bin
 
 echo "OK: ASM output was identical"
 
