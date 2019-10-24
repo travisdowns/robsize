@@ -21,9 +21,6 @@ bool is_xmm[128] =
          1,1,1,1,1,1,1,1,1,1,
          1,1,0,0,0,0};
 
-/* number of tests, the index of the last test is (TEST_COUNT - 1) */
-#define TEST_COUNT 27
-
 const char *test_name(int instr) {
     switch (instr) {
         case 0:	 return "parallel GP adds";	// add (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
@@ -58,7 +55,7 @@ const char *test_name(int instr) {
         case 29: return "alternating kaddd k1, k2, k3 and add reg32, reg32";
     }
 
-    return "unknown test";
+    return 0;
 }
 
 int add_filler(unsigned char* ibuf, int instr, int i)
@@ -341,7 +338,7 @@ void print_usage() {
 void print_tests() {
     printf("The following tests are supported, run the want you want with ./robsize <ID>\n");
     printf("ID\tDescription\n");
-    for (int i = 0; i < TEST_COUNT; i++) {
+    for (int i = 0; test_name(i); i++) {
         printf("%d\t%s\n", i, test_name(i));
     }
 }
@@ -392,6 +389,12 @@ int main(int argc, const char *argv[])
         return EXIT_FAILURE;
     }
 
+    const char *name = test_name(instr_type);
+    if (!name) {
+        fprintf(stderr, "Bad test: %d.\nUse --list to display the available tests.\n", instr_type);
+        return EXIT_FAILURE;
+    }
+
     unsigned char *ibuf = (unsigned char*)valloc(1048576);
     void ** dbuf = (void**)valloc(memsize);
 
@@ -401,7 +404,8 @@ int main(int argc, const char *argv[])
     init_dbuf(dbuf, memsize/sizeof(void*), 8192/sizeof(void*));
     void(*routine)() = (void(*)())ibuf;
 
-    printf("Running test ID %d: %s\n", instr_type, test_name(instr_type));
+
+    printf("Running test ID %d: %s\n", instr_type, name);
     printf("%s\t%s\t%s\t%s\n", "ICOUNT", "MIN", "AVG", "MAX");
 
     // use 100 if we are printing the buffer because some things don't show up
