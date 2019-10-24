@@ -2,7 +2,7 @@
 
 set -e
 
-MAX_TEST=27
+MAX_TEST=28
 OBJDUMP=(objdump -D -b binary -Mintel -mi386:x86-64)
 
 

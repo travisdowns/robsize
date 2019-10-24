@@ -53,15 +53,15 @@ const char *test_name(int instr) {
         case 24: return "add regN, regN";	// add64 (rbx, rbp, rsi, rdi), (rbx, rbp, rsi, rdi)
         case 25: return "mov regN, regN+1";	// mov64 (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
         case 26: return "vpxord zmmN, zmmN, zmmN+1";
+        case 27: return "kaddd k1, k2, k3";
+        case 28: return "kmovd k1, k2";
     }
 
     return "unknown test";
 }
 
-int add_filler(unsigned char* ibuf, int instr, int i2)
+int add_filler(unsigned char* ibuf, int instr, int i)
 {
-    static int icount = 0;
-    const int i = icount;
     const int reg[4] = {3, 5, 6, 7};
 
     int pbuf = 0;
@@ -87,7 +87,7 @@ int add_filler(unsigned char* ibuf, int instr, int i2)
         case 18: ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | (i&7)); break;	// vxorps ymm, ymm, ymm AVX
         case 19: ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); break;	// vxorps ymm, ymm, ymm+1 AVX
         case 20:
-            if (icount & 1)	{
+            if (i & 1)	{
                 ADD_WORD(0x570f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break; // xorps xmm, xmm+1
             } else {
                 if (sizeof(void*)==4) {
@@ -98,7 +98,7 @@ int add_filler(unsigned char* ibuf, int instr, int i2)
                 }
             }
         case 21:	// Alternate between SSE/AVX and integer to see if they are allocated independently.
-            if (i2 & 1) {
+            if (i & 1) {
                 ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); break;	// vxorps ymm, ymm, ymm+1 AVX-256
                 // ADD_WORD(0xfdc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); break;	// vxorps xmm, xmm, xmm+1 AVX-128
                 // ADD_WORD(0x570f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break; // xorps xmm, xmm+1 SSE-128
@@ -113,17 +113,23 @@ int add_filler(unsigned char* ibuf, int instr, int i2)
         case 24: ADD_WORD(0x0348);	ADD_BYTE(0xc0 | reg[i&3]<<3 | reg[i&3]); break;	// add64 (rbx, rbp, rsi, rdi), (rbx, rbp, rsi, rdi)
         case 25: ADD_WORD(0x8b48); ADD_BYTE(0xc0 | reg[i&3]<<3 | reg[(i+1)&3]); break;	// mov64 (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
         case 26: ADD_WORD(0xf162); ADD_BYTE(0x5 | (0xf - (i&7)) << 3); ADD_BYTE(0x48); ADD_BYTE(0xef); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); break;	// vpxord zmm, zmm, zmm+1 AVX512
-        case 27: ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;
+        case 27: ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;  // kaddd k1, k2, k3
+        case 28: ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xf9); ADD_BYTE(0x90); ADD_BYTE(0xca); break;  // kmovd k1, k2
     }
-    icount++;
-    return pbuf;
 
+    return pbuf;
 }
 
 static int its = 8192;
+
+/* we repeat the load/payload pattern "unroll" times */
 static const int unroll = 17;
 static bool print_ibuf;
-void make_routine(unsigned char* ibuf, void *p1, void *p2, int icount, int instr)
+
+/**
+ * icount - the number of instructions between loads
+ */
+void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, const int instr)
 {
     if (icount < 3) {
         printf ("icount(%d) must be >= 3\n", icount);
@@ -134,7 +140,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, int icount, int instr
 
     // cdecl calling convention: eax, ecx, and edx are caller-saved.
     for (int i=0;i<8;i++)
-        ADD_WORD(0x9066);		// nop
+        ADD_WORD(0x9066);		// 2-byte nop
     ADD_BYTE(0x53);		// push ebx
     ADD_BYTE(0x55);		// push ebp
     ADD_BYTE(0x56);		// push esi
@@ -211,44 +217,42 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, int icount, int instr
     while (((unsigned long long)ibuf+pbuf) & 0xf) ADD_BYTE(0x90);
 
     int loop_start = pbuf;		// loop branch target.
-    int i = 0;
 
+    for (int u=unroll-1; u>=0; u--) {
 
-for (int u=unroll-1; u>=0; u--) {
+        for (int j=0;j<16;j++) {
+            pbuf += add_filler(ibuf+pbuf, instr, j + icount-1-16);
+        }
 
-            for (int j=0;j<16;j++,i++) {
-                pbuf += add_filler(ibuf+pbuf, instr, j + icount-1-16);
-            }
+        if (sizeof(void*) == 4) {
+            ADD_BYTE(0x8b);		// mov r32, r/m32
+            ADD_BYTE(0x09);	//		... ecx, [ecx]
+        }
+        else
+        {
+            ADD_WORD(0x8b48);	// mov r64, r/m64
+            ADD_BYTE(0x09);		//	... rcx, [rcx]
+        }
 
-            if (sizeof(void*) == 4) {
-                ADD_BYTE(0x8b);		// mov r32, r/m32
-                ADD_BYTE(0x09);	//		... ecx, [ecx]
-            }
-            else
-            {
-                ADD_WORD(0x8b48);	// mov r64, r/m64
-                ADD_BYTE(0x09);		//	... rcx, [rcx]
-            }
+        for (int j=0;j<icount-1;j++)
+        {
+            pbuf += add_filler(ibuf+pbuf, instr, j);
+        }
 
-            for (int j=0;j<icount-1;j++,i++)
-            {
-                pbuf += add_filler(ibuf+pbuf, instr, j);
-            }
+        if (sizeof(void*) == 4) {
+            ADD_BYTE(0x8b);		// mov r32, r/m32
+            ADD_BYTE(0x12);	//		... edx, [edx]
+        }
+        else
+        {
+            ADD_WORD(0x8b48);	// mov r64, r/m64
+            ADD_BYTE(0x12);	//		... edx, [edx]
+        }
 
-            if (sizeof(void*) == 4) {
-                ADD_BYTE(0x8b);		// mov r32, r/m32
-                ADD_BYTE(0x12);	//		... edx, [edx]
-            }
-            else
-            {
-                ADD_WORD(0x8b48);	// mov r64, r/m64
-                ADD_BYTE(0x12);	//		... edx, [edx]
-            }
-
-            for (int j=0;j<icount-1-16 -((u==0 && !is_xmm[instr]) ? 1 : 0);j++,i++)
-            {
-                pbuf += add_filler(ibuf+pbuf, instr, j);
-            }
+        for (int j=0;j<icount-1-16 -((u==0 && !is_xmm[instr]) ? 1 : 0); j++)
+        {
+            pbuf += add_filler(ibuf+pbuf, instr, j);
+        }
     }
 
     ADD_WORD(0xe883); // sub eax
@@ -392,9 +396,13 @@ int main(int argc, const char *argv[])
 
     printf("Running test ID %d: %s\n", instr_type, test_name(instr_type));
     printf("%s\t%s\t%s\t%s\n", "ICOUNT", "MIN", "AVG", "MAX");
-    for (int icount = 16; icount < 250; icount += 1)
+
+    // use 100 if we are printing the buffer because some things don't show up
+    // until more instructions are used
+    int start = print_ibuf ? 33 : 16;
+    for (int icount = start; icount < 250; icount += 1)
     {
-        make_routine (ibuf, dbuf, dbuf+((8388608+4096)/sizeof(void*)), icount, instr_type);
+        make_routine(ibuf, dbuf, dbuf+((8388608+4096)/sizeof(void*)), icount, instr_type);
         routine();
 
         long long min_diff = 0x7fffffffffffffffLL;
