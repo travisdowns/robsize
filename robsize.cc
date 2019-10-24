@@ -55,6 +55,7 @@ const char *test_name(int instr) {
         case 26: return "vpxord zmmN, zmmN, zmmN+1";
         case 27: return "kaddd k1, k2, k3";
         case 28: return "kmovd k1, k2";
+        case 29: return "alternating kaddd k1, k2, k3 and add reg32, reg32";
     }
 
     return "unknown test";
@@ -115,6 +116,9 @@ int add_filler(unsigned char* ibuf, int instr, int i)
         case 26: ADD_WORD(0xf162); ADD_BYTE(0x5 | (0xf - (i&7)) << 3); ADD_BYTE(0x48); ADD_BYTE(0xef); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); break;	// vpxord zmm, zmm, zmm+1 AVX512
         case 27: ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;  // kaddd k1, k2, k3
         case 28: ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xf9); ADD_BYTE(0x90); ADD_BYTE(0xca); break;  // kmovd k1, k2
+        case 29:  // mix test 0 and 27: alternate betweeen kaddd k1, k2, k3 and add (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
+            if (i & 1) { ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); }
+            else       { ADD_BYTE(0x03);	ADD_BYTE(0xc0 | reg[i&3]<<3 | reg[i&3]); }
     }
 
     return pbuf;
