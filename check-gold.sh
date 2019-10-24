@@ -2,16 +2,15 @@
 
 set -e
 
-MAX_TEST=28
+MAX_TEST=29
+
 OBJDUMP=(objdump -D -b binary -Mintel -mi386:x86-64)
-
-
 
 if [ ! -z "$1" ]; then
     if [ "$1" == "--write" ]; then
         for i in $(seq 0 $MAX_TEST); do
             echo "writing asm for test $i"
-            ./robsize $i -write-asm
+            ./robsize $i --write-asm
             ${OBJDUMP[@]} asm.bin > asm-gold/asm-$i.asm
         done
     else
@@ -27,7 +26,7 @@ mkdir -p asm-temp
 
 for i in $(seq 0 $MAX_TEST); do
     echo "writing asm for test $i"
-    ./robsize $i -write-asm
+    ./robsize $i --write-asm
     ${OBJDUMP[@]} asm.bin > asm-temp/asm-$i.asm
     diff asm-gold/asm-$i.asm asm-temp/asm-$i.asm \
             || { echo "FAILED: asm-gold/asm-$i.asm and asm-temp/asm-$i.asm differed"; exit; }

@@ -329,12 +329,12 @@ static int outer_its = 64;
 static int instr_type = 4;	// Default to two-byte nop
 
 void print_usage() {
-    fprintf(stderr, "Usage: "
-    "\trobsize [TEST_ID] [OPTIONS]\n\n"
-    "\t-slow     \t\t\tRun more iterations making the test slower but potentiallly more accurate\n"
-    "\t-fast     \t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
-    "\t-write-asm\t\t\tPrint the raw generated instructions to a file and quit\n"
-    "\t-list     \t\t\tList the available tests and their IDs\n"
+    fprintf(stderr, "Usage: robsize [TEST_ID] [OPTIONS]\n\n"
+    "\t--slow     \t\t\tRun more iterations making the test slower but potentiallly more accurate\n"
+    "\t--fast     \t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
+    "\t--superfast     \t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
+    "\t--write-asm\t\t\tPrint the raw generated instructions to a file and quit\n"
+    "\t--list     \t\t\tList the available tests and their IDs\n"
     );
 }
 
@@ -356,18 +356,21 @@ bool handle_args(int argc, const char *argv[]) {
     }
     for (int i = firstopt; i < argc; i++)
     {
-        if (!strcmp(argv[i], "-fast")) {
+        if (!strcmp(argv[i], "--fast")) {
             its >>=2;
             outer_its >>=2;
-        } else if (!strcmp(argv[i], "-slow")) {
+        } else if (!strcmp(argv[i], "--superfast")) {
+            its >>=4;
+            outer_its >>=3;
+        } else if (!strcmp(argv[i], "--slow")) {
             outer_its <<=1;
-        } else if (!strcmp(argv[i], "-write-asm")) {
+        } else if (!strcmp(argv[i], "--write-asm")) {
             // print the generated instructions to a file and quit
             print_ibuf = true;
-        } else if (!strcmp(argv[i], "-help")) {
+        } else if (!strcmp(argv[i], "--help")) {
             print_usage();
             exit(EXIT_SUCCESS);
-        } else if (!strcmp(argv[i], "-list")) {
+        } else if (!strcmp(argv[i], "--list")) {
             print_tests();
             exit(EXIT_SUCCESS);
         } else {
