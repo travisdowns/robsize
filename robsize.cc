@@ -118,6 +118,7 @@ int add_filler(unsigned char* ibuf, int instr, int i)
         case 29:  // mix test 0 and 27: alternate betweeen kaddd k1, k2, k3 and add (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
             if (i & 1) { ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); }
             else       { ADD_BYTE(0x03);	ADD_BYTE(0xc0 | reg[i&3]<<3 | reg[i&3]); }
+            break;
         case 30:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x0); break;	// mov (ebx, ebp, esi, edi), 0
         case 31:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x1); break;	// mov (ebx, ebp, esi, edi), 1
     }
