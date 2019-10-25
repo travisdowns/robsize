@@ -1,5 +1,4 @@
 CFLAGS = -Wall -Wextra -Wno-pointer-arith -O2
-MAX_TEST = 27
 
 .PHONY = write-gold
 
