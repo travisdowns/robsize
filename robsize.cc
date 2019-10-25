@@ -384,6 +384,11 @@ bool handle_args(int argc, const char *argv[]) {
     return true;
 }
 
+int getenv_int(const char *var, int def) {
+    const char *val = getenv(var);
+    return val ? atoi(val) : def;
+}
+
 
 int main(int argc, const char *argv[])
 {
@@ -415,8 +420,9 @@ int main(int argc, const char *argv[])
 
     // use 100 if we are printing the buffer because some things don't show up
     // until more instructions are used
-    int start = print_ibuf ? 33 : 16;
-    for (int icount = start; icount < 250; icount += 1)
+    int start = getenv_int("START", print_ibuf ? 33 : 16);
+    int stop  = getenv_int("STOP", 250);
+    for (int icount = start; icount < stop; icount += 1)
     {
         make_routine(ibuf, dbuf, dbuf+((8388608+4096)/sizeof(void*)), icount, instr_type);
         routine();
