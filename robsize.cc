@@ -63,6 +63,8 @@ const char *test_name(int instr) {
         case 29: return "alternating kaddd k1, k2, k3 and add reg32, reg32";
         case 30: return "mov regN, 0";
         case 31: return "mov regN, 1";
+        case 32: return "loads: mov ebx, [rsp] (LB size)";
+        case 33: return "stores: mov [rsp - 8], ebx (SB size)";
     }
 
     return 0;
@@ -129,6 +131,8 @@ int add_filler(unsigned char* ibuf, int instr, int i)
             break;
         case 30:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x0); break;	// mov (ebx, ebp, esi, edi), 0
         case 31:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x1); break;	// mov (ebx, ebp, esi, edi), 1
+        case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
+        case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
     }
 
     return pbuf;
@@ -201,6 +205,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
         ADD_DWORD(0x00e88349 | (7<<16)); // sub r15, 0
     }
 
+    // TODO: what is this doing?
     if (instr ==13 || instr == 14 || instr == 16 || instr == 17 || instr == 18 || instr == 19 || instr == 21) {
         /*ADD_WORD(0xfcc5 & ~(0<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | (0<<3) | 0);
         ADD_WORD(0xfcc5 & ~(1<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | (1<<3) | 1);
