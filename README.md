@@ -35,6 +35,24 @@ This uses a series of general-purpose register additions, each one of which shou
 
 These use SIMD xor operations (with different registers so it is not a zeroing idiom) to test the size of the SIMD register file. Test 11 uses SSE and xmm registers, while test 19 uses AVX2 and ymm registers. On the machines I am aware of, they give the same results but maybe one day it will be different!
 
-### References
+### Test 32 and 33
+
+These determine the load buffer (test 32) and store buffer (test 33) sizes respectively, by using loads and stores as the filler instructions.
+
+## Plotting
+
+You can plot the data for easy analysis using the included [plot-csv.py](plot-csv.py).
+
+For example, the following command:
+
+```
+ ./robsize --csv | head -n100 | ./plot-csv.py --xrotate=90 --tick-interval=4 --cols 1 2 --title="Load buffer analysis (SKL)"
+ ```
+
+ Generates this chart:
+
+ ![Skylake Load Buffers](skl-load.png)
+
+## References
 
 H. Wong, _Measuring Reorder Buffer Capacity_, May, 2013. [Online]. Available: http://blog.stuffedcow.net/2013/05/measuring-rob-capacity/
