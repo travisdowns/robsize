@@ -21,6 +21,14 @@ bool is_xmm[128] =
          1,1,1,1,1,1,1,1,1,1,
          1,1,0,0,0,0};
 
+// global configuration
+static int its = 8192;
+
+/* we repeat the load/payload pattern "unroll" times */
+static const int unroll = 17;
+static bool print_ibuf;
+static bool plot_mode; // make csv output, extraneous output to stdout
+
 const char *test_name(int instr) {
     switch (instr) {
         case 0:	 return "parallel GP adds";	// add (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
@@ -126,19 +134,13 @@ int add_filler(unsigned char* ibuf, int instr, int i)
     return pbuf;
 }
 
-static int its = 8192;
-
-/* we repeat the load/payload pattern "unroll" times */
-static const int unroll = 17;
-static bool print_ibuf;
-
 /**
  * icount - the number of instructions between loads
  */
 void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, const int instr)
 {
     if (icount < 3) {
-        printf ("icount(%d) must be >= 3\n", icount);
+        printf("icount(%d) must be >= 3\n", icount);
         return;
     }
 
@@ -361,20 +363,22 @@ bool handle_args(int argc, const char *argv[]) {
         if (!strcmp(argv[i], "--fast")) {
             its >>=2;
             outer_its >>=2;
-        } else if (!strcmp(argv[i], "--superfast")) {
-            its >>=4;
-            outer_its >>=3;
-        } else if (!strcmp(argv[i], "--slow")) {
-            outer_its <<=1;
-        } else if (!strcmp(argv[i], "--write-asm")) {
-            // print the generated instructions to a file and quit
-            print_ibuf = true;
         } else if (!strcmp(argv[i], "--help")) {
             print_usage();
             exit(EXIT_SUCCESS);
         } else if (!strcmp(argv[i], "--list")) {
             print_tests();
             exit(EXIT_SUCCESS);
+        } else if (!strcmp(argv[i], "--csv")) {
+            plot_mode = true;
+        } else if (!strcmp(argv[i], "--slow")) {
+            outer_its <<=1;
+        } else if (!strcmp(argv[i], "--superfast")) {
+            its >>=4;
+            outer_its >>=3;
+        } else if (!strcmp(argv[i], "--write-asm")) {
+            // print the generated instructions to a file and quit
+            print_ibuf = true;
         } else {
             fprintf(stderr, "Uncognized argument: %s\n", argv[i]);
             return false;
@@ -392,12 +396,13 @@ int getenv_int(const char *var, int def) {
 
 int main(int argc, const char *argv[])
 {
-    printf ("Compiled %s %s\n", __DATE__, __TIME__);
-
     if (!handle_args(argc, argv)) {
         print_usage();
         return EXIT_FAILURE;
     }
+
+    FILE *verbose_file = plot_mode ? stderr : stdout;
+    fprintf(verbose_file, "Compiled %s %s\n", __DATE__, __TIME__);
 
     const char *name = test_name(instr_type);
     if (!name) {
@@ -408,15 +413,15 @@ int main(int argc, const char *argv[])
     unsigned char *ibuf = (unsigned char*)valloc(1048576);
     void ** dbuf = (void**)valloc(memsize);
 
-    printf ("ibuf at %p\n", ibuf);
-    printf ("dbuf at %p\n", dbuf);
+    fprintf(verbose_file, "ibuf at %p\n", ibuf);
+    fprintf(verbose_file, "dbuf at %p\n", dbuf);
 
     init_dbuf(dbuf, memsize/sizeof(void*), 8192/sizeof(void*));
     void(*routine)() = (void(*)())ibuf;
 
-
-    printf("Running test ID %d: %s\n", instr_type, name);
-    printf("%s\t%s\t%s\t%s\n", "ICOUNT", "MIN", "AVG", "MAX");
+    const char *delim = plot_mode ? "," : "\t";
+    fprintf(verbose_file, "Running test ID %d: %s\n", instr_type, name);
+    printf("%s%s%s%s%s%s%s\n", "ICOUNT", delim, "MIN", delim, "AVG", delim, "MAX");
 
     // use 100 if we are printing the buffer because some things don't show up
     // until more instructions are used
@@ -448,7 +453,8 @@ int main(int argc, const char *argv[])
                 max_diff = stop-start;
             }
         }
-        printf ("%d:\t%.2f\t%.2f\t%.2f\n", icount, 0.5*min_diff/its/unroll, 0.5*sum_diff/its/unroll/outer_its, 0.5*max_diff/its/unroll);
+        printf("%d%s%.2f%s%.2f%s%.2f\n", icount, delim, 0.5*min_diff/its/unroll, delim, 0.5*sum_diff/its/unroll/outer_its,
+                delim, 0.5*max_diff/its/unroll);
     }
 
     free (dbuf);
