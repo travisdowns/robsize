@@ -46,7 +46,7 @@ You can plot the data for easy analysis using the included [plot-csv.py](plot-cs
 For example, the following command:
 
 ```
- ./robsize --csv | head -n100 | ./plot-csv.py --xrotate=90 --tick-interval=4 --cols 1 2 --title="Load buffer analysis (SKL)"
+ ./robsize 32 --csv | head -n100 | ./plot-csv.py --xrotate=90 --tick-interval=4 --cols 1 2 --title="Load buffer analysis (SKL)"
  ```
 
  Generates this chart:
