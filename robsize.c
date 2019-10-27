@@ -9,6 +9,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <malloc.h>
+#include <stdbool.h>
 #include <sys/mman.h>
 #include <unistd.h>
 
@@ -69,6 +70,8 @@ const char *test_name(int instr) {
 
     return 0;
 }
+
+int foo() { return 0; }
 
 int add_filler(unsigned char* ibuf, int instr, int i)
 {
@@ -339,11 +342,12 @@ static int instr_type = 4;	// Default to two-byte nop
 
 void print_usage() {
     fprintf(stderr, "Usage: robsize [TEST_ID] [OPTIONS]\n\n"
-    "\t--slow     \t\t\tRun more iterations making the test slower but potentiallly more accurate\n"
-    "\t--fast     \t\t\tRun fewer iterations making the test faster but potentiallly less accurate\n"
-    "\t--superfast\t\t\tRun at ludicrous speed which is even less accurate than --fast\n"
-    "\t--write-asm\t\t\tPrint the raw generated instructions to a file and quit\n"
-    "\t--list     \t\t\tList the available tests and their IDs\n"
+    "\t--csv      \tOutput in csv format suitable for plotting\n"
+    "\t--slow     \tRun more iterations making the test slower but potentiallly more accurate\n"
+    "\t--fast     \tRun fewer iterations making the test faster but potentiallly less accurate\n"
+    "\t--superfast\tRun at ludicrous speed which is even less accurate than --fast\n"
+    "\t--write-asm\tPrint the raw generated instructions to a file and quit\n"
+    "\t--list     \tList the available tests and their IDs\n"
     );
 }
 
