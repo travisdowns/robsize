@@ -71,8 +71,6 @@ const char *test_name(int instr) {
     return 0;
 }
 
-int foo() { return 0; }
-
 int add_filler(unsigned char* ibuf, int instr, int i)
 {
     const int reg[4] = {3, 5, 6, 7};
