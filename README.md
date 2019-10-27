@@ -7,11 +7,12 @@ There are a few options that you can see with `./robsize --help`:
 ```
 Usage: robsize [TEST_ID] [OPTIONS]
 
-	--slow     			Run more iterations making the test slower but potentiallly more accurate
-	--fast     			Run fewer iterations making the test faster but potentiallly less accurate
-	--superfast			Run at ludicrous speed which is even less accurate than --fast
-	--write-asm			Print the raw generated instructions to a file and quit
-	--list     			List the available tests and their IDs
+	--csv      	Output in csv format suitable for plotting
+	--slow     	Run more iterations making the test slower but potentiallly more accurate
+	--fast     	Run fewer iterations making the test faster but potentiallly less accurate
+	--superfast	Run at ludicrous speed which is even less accurate than --fast
+	--write-asm	Print the raw generated instructions to a file and quit
+	--list     	List the available tests and their IDs
 ```
 
 ## Interesting Tests
@@ -42,7 +43,7 @@ These determine the load buffer (test 32) and store buffer (test 33) sizes respe
 
 You can plot the data for easy analysis using the included [plot-csv.py](plot-csv.py).
 
-For example, the following command (after almost 7 minutes, use `--fast` if you wont' want to wait that long):
+For example, the following command (after almost 7 minutes, use `--fast` if you don't want to wait that long):
 
 ```
  ./robsize 32 --csv | head -n100 | ./plot-csv.py --xrotate=90 --tick-interval=4 --cols 1 2 --title="Load buffer analysis (SKL)"
