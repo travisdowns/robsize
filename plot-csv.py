@@ -49,10 +49,11 @@ p.add_argument('--suffix-names', help='Suffix each column name with the file it 
 p.add_argument('--jitter', help='Apply horizontal (x-axis) jitter of the given relative amount (default 0.1)',
     nargs='?', type=float, const=0.1)
 
-# axis configuration
+# axis and line/point configuration
 p.add_argument('--ylim', help='Set the y axis limits explicitly (e.g., to cross at zero)', type=int, nargs='+')
 p.add_argument('--xrotate', help='rotate the xlablels by this amount', default=0)
 p.add_argument('--tick-interval', help='use the given x-axis tick spacing (in x axis units)', type=int)
+p.add_argument('--marker', help='use the given marker', type=str)
 
 # debugging
 p.add_argument('--verbose', '-v', help='enable verbose logging', action='store_true')
@@ -174,7 +175,7 @@ if (args.scatter):
     ax = df.plot.line(x=xi, title=args.title, figsize=(12,8), grid=True, linestyle='none', marker='.')
 else:
     # df.iloc[:,xi] = df.iloc[:,xi].apply(str)
-    ax = df.plot.line(x=xi, title=args.title, figsize=(12,8), grid=True)
+    ax = df.plot.line(x=xi, title=args.title, figsize=(12,8), grid=True, marker=args.marker)
 
 # this sets the ticks explicitly to one per x value, which means that
 # all x values will be shown, but the x-axis could be crowded if there

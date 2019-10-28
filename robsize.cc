@@ -17,10 +17,6 @@
 #define ADD_WORD(val) do{*(unsigned short*)(&ibuf[pbuf]) = (val); pbuf+=2;} while(0)
 #define ADD_DWORD(val) do{*(unsigned int*)(&ibuf[pbuf]) = (val); pbuf+=4;} while(0)
 
-bool is_xmm[128] =
-        {0,0,0,0,0,0,0,0,1,1,
-         1,1,1,1,1,1,1,1,1,1,
-         1,1,0,0,0,0};
 
 // global configuration
 static int its = 8192;
@@ -30,45 +26,66 @@ static const int unroll = 17;
 static bool print_ibuf;
 static bool plot_mode; // make csv output, extraneous output to stdout
 
-const char *test_name(int instr) {
-    switch (instr) {
-        case 0:	 return "parallel GP adds";	// add (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
-        case 1:  return "single-byte NOPs";	// nop
-        case 2:  return "GP same-reg mov";	// mov (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
-        case 3:  return "parallel cmp regN, regN";	// cmp (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
-        case 4:  return "two-byte NOPs";	// two-byte nop 66 90
-        case 5:	 return "zeroing GP xor";	// xor (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
-        case 6:	 return "parallel xor regN, regN+1";	// xor (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
-        case 7:  return "GP diff-ref mov regN, regN+1";	// mov (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
-        case 8:  return "movaps xmm, xmm"; // movaps xmm, xmm
-        case 9:  return "movdqa xmm, xmm"; // movdqa xmm, xmm SSE2
-        case 10: return "zeroing xorps  xmm, xmm"; // xorps xmm, xmm
-        case 11: return "xorps xmmN, xmmN+1"; // xorps xmm, xmm+1
-        case 12: return "movdqa xmm, xmm SSE (non-VEX)"; // movdqa xmm, xmm SSE2
-        case 13: return "movdqa xmm, xmm AVX (VEX)"; // movdqa xmm, xmm AVX
-        case 14: return "movdqa ymm, ymm AVX (VEX)"; // movdqa ymm, ymm AVX
-        case 15: return "movdqa xmm, xmm+1 SSE (non-VEX)"; // movdqa xmm, xmm+1 SSE2
-        case 16: return "movdqa xmm, xmm+1 AVX (VEX)"; // movdqa xmm, xmm+1 AVX
-        case 17: return "movdqa ymm, ymm+1 AVX (VEX)"; // movdqa ymm, ymm+1 AVX
-        case 18: return "vxorps ymm, ymm, ymm AVX";	   // vxorps ymm, ymm, ymm AVX
-        case 19: return "vxorps ymm, ymm, ymm+1 AVX";	// vxorps ymm, ymm, ymm+1 AVX
-        case 20: return "alternating GP + SIMD, add & xorps";
-        case 21: return "alternating GP + SIMD, add & vxorps";  // TODO check difference vs 21
-        case 22: return "xor regN, regN+1";	// xor (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
-        case 23: return "sub regN, N"; // sub reg, val
-        case 24: return "add regN, regN";	// add64 (rbx, rbp, rsi, rdi), (rbx, rbp, rsi, rdi)
-        case 25: return "mov regN, regN+1";	// mov64 (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
-        case 26: return "vpxord zmmN, zmmN, zmmN+1";
-        case 27: return "kaddd k1, k2, k3";
-        case 28: return "kmovd k1, k2";
-        case 29: return "alternating kaddd k1, k2, k3 and add reg32, reg32";
-        case 30: return "mov regN, 0";
-        case 31: return "mov regN, 1";
-        case 32: return "loads: mov ebx, [rsp] (LB size)";
-        case 33: return "stores: mov [rsp - 8], ebx (SB size)";
-    }
+enum FLAGS {
+    // doesn't need compensation for the load op, i.e., it uses different
+    // resources than a load to a GP register
+    NO_COMP = 1 << 0
+};
 
-    return 0;
+struct test_info {
+    int flags;
+    const char *desc; // description
+};
+
+const test_info tests[] = {
+    {       0, "parallel GP adds" },	// add (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
+    {       0, "single-byte NOPs" },	// nop
+    {       0, "GP same-reg mov" },	// mov (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
+    {       0, "parallel cmp regN, regN" },	// cmp (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
+    {       0, "two-byte NOPs" },	// two-byte nop 66 90
+    {       0, "zeroing GP xor" },	// xor (ebx, ebp, esi, edi), (ebx, ebp, esi, edi)
+    {       0, "parallel xor regN, regN+1" },	// xor (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
+    {       0, "GP diff-ref mov regN, regN+1" },	// mov (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
+    { NO_COMP, "movaps xmm, xmm" }, // movaps xmm, xmm
+    { NO_COMP, "movdqa xmm, xmm" }, // movdqa xmm, xmm SSE2
+    { NO_COMP, "zeroing xorps  xmm, xmm" }, // 10 - xorps xmm, xmm
+    { NO_COMP, "xorps xmmN, xmmN+1" }, // xorps xmm, xmm+1
+    { NO_COMP, "movdqa xmm, xmm SSE (non-VEX)" }, // movdqa xmm, xmm SSE2
+    { NO_COMP, "movdqa xmm, xmm AVX (VEX)" }, // movdqa xmm, xmm AVX
+    { NO_COMP, "movdqa ymm, ymm AVX (VEX)" }, // movdqa ymm, ymm AVX
+    { NO_COMP, "movdqa xmm, xmm+1 SSE (non-VEX)" }, // movdqa xmm, xmm+1 SSE2
+    { NO_COMP, "movdqa xmm, xmm+1 AVX (VEX)" }, // movdqa xmm, xmm+1 AVX
+    { NO_COMP, "movdqa ymm, ymm+1 AVX (VEX)" }, // movdqa ymm, ymm+1 AVX
+    { NO_COMP, "vxorps ymm, ymm, ymm AVX" },	   // vxorps ymm, ymm, ymm AVX
+    { NO_COMP, "vxorps ymm, ymm, ymm+1 AVX" },	// vxorps ymm, ymm, ymm+1 AVX
+    { NO_COMP, "alternating GP + SIMD, add & xorps" },  // 20
+    {       0, "alternating GP + SIMD, add & vxorps" },  // TODO check difference vs 21
+    {       0, "xor regN, regN+1" },	// xor (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
+    {       0, "sub regN, N" }, // sub reg, val
+    {       0, "add regN, regN" },	// add64 (rbx, rbp, rsi, rdi), (rbx, rbp, rsi, rdi)
+    {       0, "mov regN, regN+1" },	// mov64 (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
+    { NO_COMP, "vpxord zmmN, zmmN, zmmN+1" },
+    { NO_COMP, "kaddd k1, k2, k3" },
+    { NO_COMP, "kmovd k1, k2" },
+    { NO_COMP, "alternating kaddd k1, k2, k3 and add reg32, reg32" },
+    {       0, "mov regN, 0" },  // 30 "value matching" tests
+    {       0, "mov regN, 1" },
+    {       0, "loads: mov ebx, [rsp] (LB size)" },
+    { NO_COMP, "stores: mov [rsp - 8], ebx (SB size)" },
+};
+
+const int test_count = sizeof(tests) / sizeof(tests[0]);
+
+const test_info* get_test(int i) {
+    if (i < 0 || i >= test_count) {
+        return 0;
+    }
+    return tests + i;
+}
+
+const char *test_name(int i) {
+    const test_info* info = get_test(i);
+    return info ? info->desc : 0;
 }
 
 int add_filler(unsigned char* ibuf, int instr, int i)
@@ -144,9 +161,15 @@ int add_filler(unsigned char* ibuf, int instr, int i)
  */
 void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, const int instr)
 {
+    const test_info* info = get_test(instr);
+    if (!info) {
+        printf("invalid test ID %d\n", instr);
+        exit(EXIT_FAILURE);
+    }
+
     if (icount < 3) {
         printf("icount(%d) must be >= 3\n", icount);
-        return;
+        exit(EXIT_FAILURE);
     }
 
     int pbuf = 0;
@@ -232,9 +255,14 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
 
     int loop_start = pbuf;		// loop branch target.
 
+    // if the load instructions used to incur the cache misses compete with the filler instruction for
+    // resources for the given test, then we subtract 2 from the filler instructions since the load
+    // instructon at either end contribute to resource usage.
+    const int adjusted_icount = icount - (info->flags & NO_COMP ? 0 : 2);
+
     for (int u=unroll-1; u>=0; u--) {
 
-        for (int j=0;j<16;j++) {
+        for (int j = 0; j < 16; j++) {
             pbuf += add_filler(ibuf+pbuf, instr, j + icount-1-16);
         }
 
@@ -248,7 +276,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
             ADD_BYTE(0x09);		//	... rcx, [rcx]
         }
 
-        for (int j=0;j<icount-1;j++)
+        for (int j = 0; j < adjusted_icount; j++)
         {
             pbuf += add_filler(ibuf+pbuf, instr, j);
         }
@@ -263,7 +291,11 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
             ADD_BYTE(0x12);	//		... edx, [edx]
         }
 
-        for (int j=0;j<icount-1-16 -((u==0 && !is_xmm[instr]) ? 1 : 0); j++)
+        // ADD_BYTE(0x0F); // lfence
+        // ADD_BYTE(0xAE);
+        // ADD_BYTE(0xE8);
+
+        for (int j=0; j < adjusted_icount - 16; j++)
         {
             pbuf += add_filler(ibuf+pbuf, instr, j);
         }
