@@ -17,46 +17,44 @@ Disassembly of section .data:
   11:	55                   	push   rbp
   12:	56                   	push   rsi
   13:	57                   	push   rdi
-  14:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  1b:	7f 00 00 
-  1e:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  25:	7f 00 00 
-  28:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  2f:	00 00 00 
-  32:	48 83 eb 00          	sub    rbx,0x0
-  36:	48 83 ed 00          	sub    rbp,0x0
-  3a:	48 83 ee 00          	sub    rsi,0x0
-  3e:	48 83 ef 00          	sub    rdi,0x0
-  42:	49 83 e8 00          	sub    r8,0x0
-  46:	49 83 e9 00          	sub    r9,0x0
-  4a:	49 83 ea 00          	sub    r10,0x0
-  4e:	49 83 eb 00          	sub    r11,0x0
-  52:	49 83 ec 00          	sub    r12,0x0
-  56:	49 83 ed 00          	sub    r13,0x0
-  5a:	49 83 ee 00          	sub    r14,0x0
-  5e:	49 83 ef 00          	sub    r15,0x0
-  62:	90                   	nop
-  63:	90                   	nop
-  64:	90                   	nop
-  65:	90                   	nop
-  66:	90                   	nop
-  67:	90                   	nop
-  68:	90                   	nop
-  69:	90                   	nop
-  6a:	90                   	nop
-  6b:	90                   	nop
-  6c:	90                   	nop
-  6d:	90                   	nop
-  6e:	90                   	nop
-  6f:	90                   	nop
-  70:	31 db                	xor    ebx,ebx
-  72:	31 ed                	xor    ebp,ebp
-  74:	31 f6                	xor    esi,esi
-  76:	31 ff                	xor    edi,edi
-  78:	31 db                	xor    ebx,ebx
-  7a:	31 ed                	xor    ebp,ebp
-  7c:	31 f6                	xor    esi,esi
-  7e:	31 ff                	xor    edi,edi
+  14:	41 50                	push   r8
+  16:	41 51                	push   r9
+  18:	48 83 ec 40          	sub    rsp,0x40
+  1c:	45 31 c0             	xor    r8d,r8d
+  1f:	4c 8d 0c 24          	lea    r9,[rsp]
+  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2a:	7f 00 00 
+  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  34:	7f 00 00 
+  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  3e:	00 00 00 
+  41:	48 83 eb 00          	sub    rbx,0x0
+  45:	48 83 ed 00          	sub    rbp,0x0
+  49:	48 83 ee 00          	sub    rsi,0x0
+  4d:	48 83 ef 00          	sub    rdi,0x0
+  51:	49 83 e8 00          	sub    r8,0x0
+  55:	49 83 e9 00          	sub    r9,0x0
+  59:	49 83 ea 00          	sub    r10,0x0
+  5d:	49 83 eb 00          	sub    r11,0x0
+  61:	49 83 ec 00          	sub    r12,0x0
+  65:	49 83 ed 00          	sub    r13,0x0
+  69:	49 83 ee 00          	sub    r14,0x0
+  6d:	49 83 ef 00          	sub    r15,0x0
+  71:	90                   	nop
+  72:	90                   	nop
+  73:	90                   	nop
+  74:	90                   	nop
+  75:	90                   	nop
+  76:	90                   	nop
+  77:	90                   	nop
+  78:	90                   	nop
+  79:	90                   	nop
+  7a:	90                   	nop
+  7b:	90                   	nop
+  7c:	90                   	nop
+  7d:	90                   	nop
+  7e:	90                   	nop
+  7f:	90                   	nop
   80:	31 db                	xor    ebx,ebx
   82:	31 ed                	xor    ebp,ebp
   84:	31 f6                	xor    esi,esi
@@ -65,15 +63,15 @@ Disassembly of section .data:
   8a:	31 ed                	xor    ebp,ebp
   8c:	31 f6                	xor    esi,esi
   8e:	31 ff                	xor    edi,edi
-  90:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-  93:	31 db                	xor    ebx,ebx
-  95:	31 ed                	xor    ebp,ebp
-  97:	31 f6                	xor    esi,esi
-  99:	31 ff                	xor    edi,edi
-  9b:	31 db                	xor    ebx,ebx
-  9d:	31 ed                	xor    ebp,ebp
-  9f:	31 f6                	xor    esi,esi
-  a1:	31 ff                	xor    edi,edi
+  90:	31 db                	xor    ebx,ebx
+  92:	31 ed                	xor    ebp,ebp
+  94:	31 f6                	xor    esi,esi
+  96:	31 ff                	xor    edi,edi
+  98:	31 db                	xor    ebx,ebx
+  9a:	31 ed                	xor    ebp,ebp
+  9c:	31 f6                	xor    esi,esi
+  9e:	31 ff                	xor    edi,edi
+  a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
   a3:	31 db                	xor    ebx,ebx
   a5:	31 ed                	xor    ebp,ebp
   a7:	31 f6                	xor    esi,esi
@@ -97,15 +95,15 @@ Disassembly of section .data:
   cb:	31 db                	xor    ebx,ebx
   cd:	31 ed                	xor    ebp,ebp
   cf:	31 f6                	xor    esi,esi
-  d1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-  d4:	31 db                	xor    ebx,ebx
-  d6:	31 ed                	xor    ebp,ebp
-  d8:	31 f6                	xor    esi,esi
-  da:	31 ff                	xor    edi,edi
-  dc:	31 db                	xor    ebx,ebx
-  de:	31 ed                	xor    ebp,ebp
-  e0:	31 f6                	xor    esi,esi
-  e2:	31 ff                	xor    edi,edi
+  d1:	31 ff                	xor    edi,edi
+  d3:	31 db                	xor    ebx,ebx
+  d5:	31 ed                	xor    ebp,ebp
+  d7:	31 f6                	xor    esi,esi
+  d9:	31 ff                	xor    edi,edi
+  db:	31 db                	xor    ebx,ebx
+  dd:	31 ed                	xor    ebp,ebp
+  df:	31 f6                	xor    esi,esi
+  e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e4:	31 db                	xor    ebx,ebx
   e6:	31 ed                	xor    ebp,ebp
   e8:	31 f6                	xor    esi,esi
@@ -113,14 +111,14 @@ Disassembly of section .data:
   ec:	31 db                	xor    ebx,ebx
   ee:	31 ed                	xor    ebp,ebp
   f0:	31 f6                	xor    esi,esi
-  f2:	31 db                	xor    ebx,ebx
-  f4:	31 ed                	xor    ebp,ebp
-  f6:	31 f6                	xor    esi,esi
-  f8:	31 ff                	xor    edi,edi
-  fa:	31 db                	xor    ebx,ebx
-  fc:	31 ed                	xor    ebp,ebp
-  fe:	31 f6                	xor    esi,esi
- 100:	31 ff                	xor    edi,edi
+  f2:	31 ff                	xor    edi,edi
+  f4:	31 db                	xor    ebx,ebx
+  f6:	31 ed                	xor    ebp,ebp
+  f8:	31 f6                	xor    esi,esi
+  fa:	31 ff                	xor    edi,edi
+  fc:	31 db                	xor    ebx,ebx
+  fe:	31 ed                	xor    ebp,ebp
+ 100:	31 f6                	xor    esi,esi
  102:	31 db                	xor    ebx,ebx
  104:	31 ed                	xor    ebp,ebp
  106:	31 f6                	xor    esi,esi
@@ -129,15 +127,15 @@ Disassembly of section .data:
  10c:	31 ed                	xor    ebp,ebp
  10e:	31 f6                	xor    esi,esi
  110:	31 ff                	xor    edi,edi
- 112:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 115:	31 db                	xor    ebx,ebx
- 117:	31 ed                	xor    ebp,ebp
- 119:	31 f6                	xor    esi,esi
- 11b:	31 ff                	xor    edi,edi
- 11d:	31 db                	xor    ebx,ebx
- 11f:	31 ed                	xor    ebp,ebp
- 121:	31 f6                	xor    esi,esi
- 123:	31 ff                	xor    edi,edi
+ 112:	31 db                	xor    ebx,ebx
+ 114:	31 ed                	xor    ebp,ebp
+ 116:	31 f6                	xor    esi,esi
+ 118:	31 ff                	xor    edi,edi
+ 11a:	31 db                	xor    ebx,ebx
+ 11c:	31 ed                	xor    ebp,ebp
+ 11e:	31 f6                	xor    esi,esi
+ 120:	31 ff                	xor    edi,edi
+ 122:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  125:	31 db                	xor    ebx,ebx
  127:	31 ed                	xor    ebp,ebp
  129:	31 f6                	xor    esi,esi
@@ -161,15 +159,15 @@ Disassembly of section .data:
  14d:	31 db                	xor    ebx,ebx
  14f:	31 ed                	xor    ebp,ebp
  151:	31 f6                	xor    esi,esi
- 153:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 156:	31 db                	xor    ebx,ebx
- 158:	31 ed                	xor    ebp,ebp
- 15a:	31 f6                	xor    esi,esi
- 15c:	31 ff                	xor    edi,edi
- 15e:	31 db                	xor    ebx,ebx
- 160:	31 ed                	xor    ebp,ebp
- 162:	31 f6                	xor    esi,esi
- 164:	31 ff                	xor    edi,edi
+ 153:	31 ff                	xor    edi,edi
+ 155:	31 db                	xor    ebx,ebx
+ 157:	31 ed                	xor    ebp,ebp
+ 159:	31 f6                	xor    esi,esi
+ 15b:	31 ff                	xor    edi,edi
+ 15d:	31 db                	xor    ebx,ebx
+ 15f:	31 ed                	xor    ebp,ebp
+ 161:	31 f6                	xor    esi,esi
+ 163:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  166:	31 db                	xor    ebx,ebx
  168:	31 ed                	xor    ebp,ebp
  16a:	31 f6                	xor    esi,esi
@@ -177,14 +175,14 @@ Disassembly of section .data:
  16e:	31 db                	xor    ebx,ebx
  170:	31 ed                	xor    ebp,ebp
  172:	31 f6                	xor    esi,esi
- 174:	31 db                	xor    ebx,ebx
- 176:	31 ed                	xor    ebp,ebp
- 178:	31 f6                	xor    esi,esi
- 17a:	31 ff                	xor    edi,edi
- 17c:	31 db                	xor    ebx,ebx
- 17e:	31 ed                	xor    ebp,ebp
- 180:	31 f6                	xor    esi,esi
- 182:	31 ff                	xor    edi,edi
+ 174:	31 ff                	xor    edi,edi
+ 176:	31 db                	xor    ebx,ebx
+ 178:	31 ed                	xor    ebp,ebp
+ 17a:	31 f6                	xor    esi,esi
+ 17c:	31 ff                	xor    edi,edi
+ 17e:	31 db                	xor    ebx,ebx
+ 180:	31 ed                	xor    ebp,ebp
+ 182:	31 f6                	xor    esi,esi
  184:	31 db                	xor    ebx,ebx
  186:	31 ed                	xor    ebp,ebp
  188:	31 f6                	xor    esi,esi
@@ -193,15 +191,15 @@ Disassembly of section .data:
  18e:	31 ed                	xor    ebp,ebp
  190:	31 f6                	xor    esi,esi
  192:	31 ff                	xor    edi,edi
- 194:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 197:	31 db                	xor    ebx,ebx
- 199:	31 ed                	xor    ebp,ebp
- 19b:	31 f6                	xor    esi,esi
- 19d:	31 ff                	xor    edi,edi
- 19f:	31 db                	xor    ebx,ebx
- 1a1:	31 ed                	xor    ebp,ebp
- 1a3:	31 f6                	xor    esi,esi
- 1a5:	31 ff                	xor    edi,edi
+ 194:	31 db                	xor    ebx,ebx
+ 196:	31 ed                	xor    ebp,ebp
+ 198:	31 f6                	xor    esi,esi
+ 19a:	31 ff                	xor    edi,edi
+ 19c:	31 db                	xor    ebx,ebx
+ 19e:	31 ed                	xor    ebp,ebp
+ 1a0:	31 f6                	xor    esi,esi
+ 1a2:	31 ff                	xor    edi,edi
+ 1a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  1a7:	31 db                	xor    ebx,ebx
  1a9:	31 ed                	xor    ebp,ebp
  1ab:	31 f6                	xor    esi,esi
@@ -225,15 +223,15 @@ Disassembly of section .data:
  1cf:	31 db                	xor    ebx,ebx
  1d1:	31 ed                	xor    ebp,ebp
  1d3:	31 f6                	xor    esi,esi
- 1d5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 1d8:	31 db                	xor    ebx,ebx
- 1da:	31 ed                	xor    ebp,ebp
- 1dc:	31 f6                	xor    esi,esi
- 1de:	31 ff                	xor    edi,edi
- 1e0:	31 db                	xor    ebx,ebx
- 1e2:	31 ed                	xor    ebp,ebp
- 1e4:	31 f6                	xor    esi,esi
- 1e6:	31 ff                	xor    edi,edi
+ 1d5:	31 ff                	xor    edi,edi
+ 1d7:	31 db                	xor    ebx,ebx
+ 1d9:	31 ed                	xor    ebp,ebp
+ 1db:	31 f6                	xor    esi,esi
+ 1dd:	31 ff                	xor    edi,edi
+ 1df:	31 db                	xor    ebx,ebx
+ 1e1:	31 ed                	xor    ebp,ebp
+ 1e3:	31 f6                	xor    esi,esi
+ 1e5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1e8:	31 db                	xor    ebx,ebx
  1ea:	31 ed                	xor    ebp,ebp
  1ec:	31 f6                	xor    esi,esi
@@ -241,14 +239,14 @@ Disassembly of section .data:
  1f0:	31 db                	xor    ebx,ebx
  1f2:	31 ed                	xor    ebp,ebp
  1f4:	31 f6                	xor    esi,esi
- 1f6:	31 db                	xor    ebx,ebx
- 1f8:	31 ed                	xor    ebp,ebp
- 1fa:	31 f6                	xor    esi,esi
- 1fc:	31 ff                	xor    edi,edi
- 1fe:	31 db                	xor    ebx,ebx
- 200:	31 ed                	xor    ebp,ebp
- 202:	31 f6                	xor    esi,esi
- 204:	31 ff                	xor    edi,edi
+ 1f6:	31 ff                	xor    edi,edi
+ 1f8:	31 db                	xor    ebx,ebx
+ 1fa:	31 ed                	xor    ebp,ebp
+ 1fc:	31 f6                	xor    esi,esi
+ 1fe:	31 ff                	xor    edi,edi
+ 200:	31 db                	xor    ebx,ebx
+ 202:	31 ed                	xor    ebp,ebp
+ 204:	31 f6                	xor    esi,esi
  206:	31 db                	xor    ebx,ebx
  208:	31 ed                	xor    ebp,ebp
  20a:	31 f6                	xor    esi,esi
@@ -257,15 +255,15 @@ Disassembly of section .data:
  210:	31 ed                	xor    ebp,ebp
  212:	31 f6                	xor    esi,esi
  214:	31 ff                	xor    edi,edi
- 216:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 219:	31 db                	xor    ebx,ebx
- 21b:	31 ed                	xor    ebp,ebp
- 21d:	31 f6                	xor    esi,esi
- 21f:	31 ff                	xor    edi,edi
- 221:	31 db                	xor    ebx,ebx
- 223:	31 ed                	xor    ebp,ebp
- 225:	31 f6                	xor    esi,esi
- 227:	31 ff                	xor    edi,edi
+ 216:	31 db                	xor    ebx,ebx
+ 218:	31 ed                	xor    ebp,ebp
+ 21a:	31 f6                	xor    esi,esi
+ 21c:	31 ff                	xor    edi,edi
+ 21e:	31 db                	xor    ebx,ebx
+ 220:	31 ed                	xor    ebp,ebp
+ 222:	31 f6                	xor    esi,esi
+ 224:	31 ff                	xor    edi,edi
+ 226:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  229:	31 db                	xor    ebx,ebx
  22b:	31 ed                	xor    ebp,ebp
  22d:	31 f6                	xor    esi,esi
@@ -289,15 +287,15 @@ Disassembly of section .data:
  251:	31 db                	xor    ebx,ebx
  253:	31 ed                	xor    ebp,ebp
  255:	31 f6                	xor    esi,esi
- 257:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 25a:	31 db                	xor    ebx,ebx
- 25c:	31 ed                	xor    ebp,ebp
- 25e:	31 f6                	xor    esi,esi
- 260:	31 ff                	xor    edi,edi
- 262:	31 db                	xor    ebx,ebx
- 264:	31 ed                	xor    ebp,ebp
- 266:	31 f6                	xor    esi,esi
- 268:	31 ff                	xor    edi,edi
+ 257:	31 ff                	xor    edi,edi
+ 259:	31 db                	xor    ebx,ebx
+ 25b:	31 ed                	xor    ebp,ebp
+ 25d:	31 f6                	xor    esi,esi
+ 25f:	31 ff                	xor    edi,edi
+ 261:	31 db                	xor    ebx,ebx
+ 263:	31 ed                	xor    ebp,ebp
+ 265:	31 f6                	xor    esi,esi
+ 267:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  26a:	31 db                	xor    ebx,ebx
  26c:	31 ed                	xor    ebp,ebp
  26e:	31 f6                	xor    esi,esi
@@ -305,14 +303,14 @@ Disassembly of section .data:
  272:	31 db                	xor    ebx,ebx
  274:	31 ed                	xor    ebp,ebp
  276:	31 f6                	xor    esi,esi
- 278:	31 db                	xor    ebx,ebx
- 27a:	31 ed                	xor    ebp,ebp
- 27c:	31 f6                	xor    esi,esi
- 27e:	31 ff                	xor    edi,edi
- 280:	31 db                	xor    ebx,ebx
- 282:	31 ed                	xor    ebp,ebp
- 284:	31 f6                	xor    esi,esi
- 286:	31 ff                	xor    edi,edi
+ 278:	31 ff                	xor    edi,edi
+ 27a:	31 db                	xor    ebx,ebx
+ 27c:	31 ed                	xor    ebp,ebp
+ 27e:	31 f6                	xor    esi,esi
+ 280:	31 ff                	xor    edi,edi
+ 282:	31 db                	xor    ebx,ebx
+ 284:	31 ed                	xor    ebp,ebp
+ 286:	31 f6                	xor    esi,esi
  288:	31 db                	xor    ebx,ebx
  28a:	31 ed                	xor    ebp,ebp
  28c:	31 f6                	xor    esi,esi
@@ -321,15 +319,15 @@ Disassembly of section .data:
  292:	31 ed                	xor    ebp,ebp
  294:	31 f6                	xor    esi,esi
  296:	31 ff                	xor    edi,edi
- 298:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 29b:	31 db                	xor    ebx,ebx
- 29d:	31 ed                	xor    ebp,ebp
- 29f:	31 f6                	xor    esi,esi
- 2a1:	31 ff                	xor    edi,edi
- 2a3:	31 db                	xor    ebx,ebx
- 2a5:	31 ed                	xor    ebp,ebp
- 2a7:	31 f6                	xor    esi,esi
- 2a9:	31 ff                	xor    edi,edi
+ 298:	31 db                	xor    ebx,ebx
+ 29a:	31 ed                	xor    ebp,ebp
+ 29c:	31 f6                	xor    esi,esi
+ 29e:	31 ff                	xor    edi,edi
+ 2a0:	31 db                	xor    ebx,ebx
+ 2a2:	31 ed                	xor    ebp,ebp
+ 2a4:	31 f6                	xor    esi,esi
+ 2a6:	31 ff                	xor    edi,edi
+ 2a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  2ab:	31 db                	xor    ebx,ebx
  2ad:	31 ed                	xor    ebp,ebp
  2af:	31 f6                	xor    esi,esi
@@ -353,15 +351,15 @@ Disassembly of section .data:
  2d3:	31 db                	xor    ebx,ebx
  2d5:	31 ed                	xor    ebp,ebp
  2d7:	31 f6                	xor    esi,esi
- 2d9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 2dc:	31 db                	xor    ebx,ebx
- 2de:	31 ed                	xor    ebp,ebp
- 2e0:	31 f6                	xor    esi,esi
- 2e2:	31 ff                	xor    edi,edi
- 2e4:	31 db                	xor    ebx,ebx
- 2e6:	31 ed                	xor    ebp,ebp
- 2e8:	31 f6                	xor    esi,esi
- 2ea:	31 ff                	xor    edi,edi
+ 2d9:	31 ff                	xor    edi,edi
+ 2db:	31 db                	xor    ebx,ebx
+ 2dd:	31 ed                	xor    ebp,ebp
+ 2df:	31 f6                	xor    esi,esi
+ 2e1:	31 ff                	xor    edi,edi
+ 2e3:	31 db                	xor    ebx,ebx
+ 2e5:	31 ed                	xor    ebp,ebp
+ 2e7:	31 f6                	xor    esi,esi
+ 2e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  2ec:	31 db                	xor    ebx,ebx
  2ee:	31 ed                	xor    ebp,ebp
  2f0:	31 f6                	xor    esi,esi
@@ -369,14 +367,14 @@ Disassembly of section .data:
  2f4:	31 db                	xor    ebx,ebx
  2f6:	31 ed                	xor    ebp,ebp
  2f8:	31 f6                	xor    esi,esi
- 2fa:	31 db                	xor    ebx,ebx
- 2fc:	31 ed                	xor    ebp,ebp
- 2fe:	31 f6                	xor    esi,esi
- 300:	31 ff                	xor    edi,edi
- 302:	31 db                	xor    ebx,ebx
- 304:	31 ed                	xor    ebp,ebp
- 306:	31 f6                	xor    esi,esi
- 308:	31 ff                	xor    edi,edi
+ 2fa:	31 ff                	xor    edi,edi
+ 2fc:	31 db                	xor    ebx,ebx
+ 2fe:	31 ed                	xor    ebp,ebp
+ 300:	31 f6                	xor    esi,esi
+ 302:	31 ff                	xor    edi,edi
+ 304:	31 db                	xor    ebx,ebx
+ 306:	31 ed                	xor    ebp,ebp
+ 308:	31 f6                	xor    esi,esi
  30a:	31 db                	xor    ebx,ebx
  30c:	31 ed                	xor    ebp,ebp
  30e:	31 f6                	xor    esi,esi
@@ -385,15 +383,15 @@ Disassembly of section .data:
  314:	31 ed                	xor    ebp,ebp
  316:	31 f6                	xor    esi,esi
  318:	31 ff                	xor    edi,edi
- 31a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 31d:	31 db                	xor    ebx,ebx
- 31f:	31 ed                	xor    ebp,ebp
- 321:	31 f6                	xor    esi,esi
- 323:	31 ff                	xor    edi,edi
- 325:	31 db                	xor    ebx,ebx
- 327:	31 ed                	xor    ebp,ebp
- 329:	31 f6                	xor    esi,esi
- 32b:	31 ff                	xor    edi,edi
+ 31a:	31 db                	xor    ebx,ebx
+ 31c:	31 ed                	xor    ebp,ebp
+ 31e:	31 f6                	xor    esi,esi
+ 320:	31 ff                	xor    edi,edi
+ 322:	31 db                	xor    ebx,ebx
+ 324:	31 ed                	xor    ebp,ebp
+ 326:	31 f6                	xor    esi,esi
+ 328:	31 ff                	xor    edi,edi
+ 32a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  32d:	31 db                	xor    ebx,ebx
  32f:	31 ed                	xor    ebp,ebp
  331:	31 f6                	xor    esi,esi
@@ -417,15 +415,15 @@ Disassembly of section .data:
  355:	31 db                	xor    ebx,ebx
  357:	31 ed                	xor    ebp,ebp
  359:	31 f6                	xor    esi,esi
- 35b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 35e:	31 db                	xor    ebx,ebx
- 360:	31 ed                	xor    ebp,ebp
- 362:	31 f6                	xor    esi,esi
- 364:	31 ff                	xor    edi,edi
- 366:	31 db                	xor    ebx,ebx
- 368:	31 ed                	xor    ebp,ebp
- 36a:	31 f6                	xor    esi,esi
- 36c:	31 ff                	xor    edi,edi
+ 35b:	31 ff                	xor    edi,edi
+ 35d:	31 db                	xor    ebx,ebx
+ 35f:	31 ed                	xor    ebp,ebp
+ 361:	31 f6                	xor    esi,esi
+ 363:	31 ff                	xor    edi,edi
+ 365:	31 db                	xor    ebx,ebx
+ 367:	31 ed                	xor    ebp,ebp
+ 369:	31 f6                	xor    esi,esi
+ 36b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  36e:	31 db                	xor    ebx,ebx
  370:	31 ed                	xor    ebp,ebp
  372:	31 f6                	xor    esi,esi
@@ -433,14 +431,14 @@ Disassembly of section .data:
  376:	31 db                	xor    ebx,ebx
  378:	31 ed                	xor    ebp,ebp
  37a:	31 f6                	xor    esi,esi
- 37c:	31 db                	xor    ebx,ebx
- 37e:	31 ed                	xor    ebp,ebp
- 380:	31 f6                	xor    esi,esi
- 382:	31 ff                	xor    edi,edi
- 384:	31 db                	xor    ebx,ebx
- 386:	31 ed                	xor    ebp,ebp
- 388:	31 f6                	xor    esi,esi
- 38a:	31 ff                	xor    edi,edi
+ 37c:	31 ff                	xor    edi,edi
+ 37e:	31 db                	xor    ebx,ebx
+ 380:	31 ed                	xor    ebp,ebp
+ 382:	31 f6                	xor    esi,esi
+ 384:	31 ff                	xor    edi,edi
+ 386:	31 db                	xor    ebx,ebx
+ 388:	31 ed                	xor    ebp,ebp
+ 38a:	31 f6                	xor    esi,esi
  38c:	31 db                	xor    ebx,ebx
  38e:	31 ed                	xor    ebp,ebp
  390:	31 f6                	xor    esi,esi
@@ -449,15 +447,15 @@ Disassembly of section .data:
  396:	31 ed                	xor    ebp,ebp
  398:	31 f6                	xor    esi,esi
  39a:	31 ff                	xor    edi,edi
- 39c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 39f:	31 db                	xor    ebx,ebx
- 3a1:	31 ed                	xor    ebp,ebp
- 3a3:	31 f6                	xor    esi,esi
- 3a5:	31 ff                	xor    edi,edi
- 3a7:	31 db                	xor    ebx,ebx
- 3a9:	31 ed                	xor    ebp,ebp
- 3ab:	31 f6                	xor    esi,esi
- 3ad:	31 ff                	xor    edi,edi
+ 39c:	31 db                	xor    ebx,ebx
+ 39e:	31 ed                	xor    ebp,ebp
+ 3a0:	31 f6                	xor    esi,esi
+ 3a2:	31 ff                	xor    edi,edi
+ 3a4:	31 db                	xor    ebx,ebx
+ 3a6:	31 ed                	xor    ebp,ebp
+ 3a8:	31 f6                	xor    esi,esi
+ 3aa:	31 ff                	xor    edi,edi
+ 3ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  3af:	31 db                	xor    ebx,ebx
  3b1:	31 ed                	xor    ebp,ebp
  3b3:	31 f6                	xor    esi,esi
@@ -481,15 +479,15 @@ Disassembly of section .data:
  3d7:	31 db                	xor    ebx,ebx
  3d9:	31 ed                	xor    ebp,ebp
  3db:	31 f6                	xor    esi,esi
- 3dd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 3e0:	31 db                	xor    ebx,ebx
- 3e2:	31 ed                	xor    ebp,ebp
- 3e4:	31 f6                	xor    esi,esi
- 3e6:	31 ff                	xor    edi,edi
- 3e8:	31 db                	xor    ebx,ebx
- 3ea:	31 ed                	xor    ebp,ebp
- 3ec:	31 f6                	xor    esi,esi
- 3ee:	31 ff                	xor    edi,edi
+ 3dd:	31 ff                	xor    edi,edi
+ 3df:	31 db                	xor    ebx,ebx
+ 3e1:	31 ed                	xor    ebp,ebp
+ 3e3:	31 f6                	xor    esi,esi
+ 3e5:	31 ff                	xor    edi,edi
+ 3e7:	31 db                	xor    ebx,ebx
+ 3e9:	31 ed                	xor    ebp,ebp
+ 3eb:	31 f6                	xor    esi,esi
+ 3ed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  3f0:	31 db                	xor    ebx,ebx
  3f2:	31 ed                	xor    ebp,ebp
  3f4:	31 f6                	xor    esi,esi
@@ -497,14 +495,14 @@ Disassembly of section .data:
  3f8:	31 db                	xor    ebx,ebx
  3fa:	31 ed                	xor    ebp,ebp
  3fc:	31 f6                	xor    esi,esi
- 3fe:	31 db                	xor    ebx,ebx
- 400:	31 ed                	xor    ebp,ebp
- 402:	31 f6                	xor    esi,esi
- 404:	31 ff                	xor    edi,edi
- 406:	31 db                	xor    ebx,ebx
- 408:	31 ed                	xor    ebp,ebp
- 40a:	31 f6                	xor    esi,esi
- 40c:	31 ff                	xor    edi,edi
+ 3fe:	31 ff                	xor    edi,edi
+ 400:	31 db                	xor    ebx,ebx
+ 402:	31 ed                	xor    ebp,ebp
+ 404:	31 f6                	xor    esi,esi
+ 406:	31 ff                	xor    edi,edi
+ 408:	31 db                	xor    ebx,ebx
+ 40a:	31 ed                	xor    ebp,ebp
+ 40c:	31 f6                	xor    esi,esi
  40e:	31 db                	xor    ebx,ebx
  410:	31 ed                	xor    ebp,ebp
  412:	31 f6                	xor    esi,esi
@@ -513,15 +511,15 @@ Disassembly of section .data:
  418:	31 ed                	xor    ebp,ebp
  41a:	31 f6                	xor    esi,esi
  41c:	31 ff                	xor    edi,edi
- 41e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 421:	31 db                	xor    ebx,ebx
- 423:	31 ed                	xor    ebp,ebp
- 425:	31 f6                	xor    esi,esi
- 427:	31 ff                	xor    edi,edi
- 429:	31 db                	xor    ebx,ebx
- 42b:	31 ed                	xor    ebp,ebp
- 42d:	31 f6                	xor    esi,esi
- 42f:	31 ff                	xor    edi,edi
+ 41e:	31 db                	xor    ebx,ebx
+ 420:	31 ed                	xor    ebp,ebp
+ 422:	31 f6                	xor    esi,esi
+ 424:	31 ff                	xor    edi,edi
+ 426:	31 db                	xor    ebx,ebx
+ 428:	31 ed                	xor    ebp,ebp
+ 42a:	31 f6                	xor    esi,esi
+ 42c:	31 ff                	xor    edi,edi
+ 42e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  431:	31 db                	xor    ebx,ebx
  433:	31 ed                	xor    ebp,ebp
  435:	31 f6                	xor    esi,esi
@@ -545,15 +543,15 @@ Disassembly of section .data:
  459:	31 db                	xor    ebx,ebx
  45b:	31 ed                	xor    ebp,ebp
  45d:	31 f6                	xor    esi,esi
- 45f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 462:	31 db                	xor    ebx,ebx
- 464:	31 ed                	xor    ebp,ebp
- 466:	31 f6                	xor    esi,esi
- 468:	31 ff                	xor    edi,edi
- 46a:	31 db                	xor    ebx,ebx
- 46c:	31 ed                	xor    ebp,ebp
- 46e:	31 f6                	xor    esi,esi
- 470:	31 ff                	xor    edi,edi
+ 45f:	31 ff                	xor    edi,edi
+ 461:	31 db                	xor    ebx,ebx
+ 463:	31 ed                	xor    ebp,ebp
+ 465:	31 f6                	xor    esi,esi
+ 467:	31 ff                	xor    edi,edi
+ 469:	31 db                	xor    ebx,ebx
+ 46b:	31 ed                	xor    ebp,ebp
+ 46d:	31 f6                	xor    esi,esi
+ 46f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  472:	31 db                	xor    ebx,ebx
  474:	31 ed                	xor    ebp,ebp
  476:	31 f6                	xor    esi,esi
@@ -561,14 +559,14 @@ Disassembly of section .data:
  47a:	31 db                	xor    ebx,ebx
  47c:	31 ed                	xor    ebp,ebp
  47e:	31 f6                	xor    esi,esi
- 480:	31 db                	xor    ebx,ebx
- 482:	31 ed                	xor    ebp,ebp
- 484:	31 f6                	xor    esi,esi
- 486:	31 ff                	xor    edi,edi
- 488:	31 db                	xor    ebx,ebx
- 48a:	31 ed                	xor    ebp,ebp
- 48c:	31 f6                	xor    esi,esi
- 48e:	31 ff                	xor    edi,edi
+ 480:	31 ff                	xor    edi,edi
+ 482:	31 db                	xor    ebx,ebx
+ 484:	31 ed                	xor    ebp,ebp
+ 486:	31 f6                	xor    esi,esi
+ 488:	31 ff                	xor    edi,edi
+ 48a:	31 db                	xor    ebx,ebx
+ 48c:	31 ed                	xor    ebp,ebp
+ 48e:	31 f6                	xor    esi,esi
  490:	31 db                	xor    ebx,ebx
  492:	31 ed                	xor    ebp,ebp
  494:	31 f6                	xor    esi,esi
@@ -577,15 +575,15 @@ Disassembly of section .data:
  49a:	31 ed                	xor    ebp,ebp
  49c:	31 f6                	xor    esi,esi
  49e:	31 ff                	xor    edi,edi
- 4a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 4a3:	31 db                	xor    ebx,ebx
- 4a5:	31 ed                	xor    ebp,ebp
- 4a7:	31 f6                	xor    esi,esi
- 4a9:	31 ff                	xor    edi,edi
- 4ab:	31 db                	xor    ebx,ebx
- 4ad:	31 ed                	xor    ebp,ebp
- 4af:	31 f6                	xor    esi,esi
- 4b1:	31 ff                	xor    edi,edi
+ 4a0:	31 db                	xor    ebx,ebx
+ 4a2:	31 ed                	xor    ebp,ebp
+ 4a4:	31 f6                	xor    esi,esi
+ 4a6:	31 ff                	xor    edi,edi
+ 4a8:	31 db                	xor    ebx,ebx
+ 4aa:	31 ed                	xor    ebp,ebp
+ 4ac:	31 f6                	xor    esi,esi
+ 4ae:	31 ff                	xor    edi,edi
+ 4b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  4b3:	31 db                	xor    ebx,ebx
  4b5:	31 ed                	xor    ebp,ebp
  4b7:	31 f6                	xor    esi,esi
@@ -609,15 +607,15 @@ Disassembly of section .data:
  4db:	31 db                	xor    ebx,ebx
  4dd:	31 ed                	xor    ebp,ebp
  4df:	31 f6                	xor    esi,esi
- 4e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 4e4:	31 db                	xor    ebx,ebx
- 4e6:	31 ed                	xor    ebp,ebp
- 4e8:	31 f6                	xor    esi,esi
- 4ea:	31 ff                	xor    edi,edi
- 4ec:	31 db                	xor    ebx,ebx
- 4ee:	31 ed                	xor    ebp,ebp
- 4f0:	31 f6                	xor    esi,esi
- 4f2:	31 ff                	xor    edi,edi
+ 4e1:	31 ff                	xor    edi,edi
+ 4e3:	31 db                	xor    ebx,ebx
+ 4e5:	31 ed                	xor    ebp,ebp
+ 4e7:	31 f6                	xor    esi,esi
+ 4e9:	31 ff                	xor    edi,edi
+ 4eb:	31 db                	xor    ebx,ebx
+ 4ed:	31 ed                	xor    ebp,ebp
+ 4ef:	31 f6                	xor    esi,esi
+ 4f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4f4:	31 db                	xor    ebx,ebx
  4f6:	31 ed                	xor    ebp,ebp
  4f8:	31 f6                	xor    esi,esi
@@ -625,14 +623,14 @@ Disassembly of section .data:
  4fc:	31 db                	xor    ebx,ebx
  4fe:	31 ed                	xor    ebp,ebp
  500:	31 f6                	xor    esi,esi
- 502:	31 db                	xor    ebx,ebx
- 504:	31 ed                	xor    ebp,ebp
- 506:	31 f6                	xor    esi,esi
- 508:	31 ff                	xor    edi,edi
- 50a:	31 db                	xor    ebx,ebx
- 50c:	31 ed                	xor    ebp,ebp
- 50e:	31 f6                	xor    esi,esi
- 510:	31 ff                	xor    edi,edi
+ 502:	31 ff                	xor    edi,edi
+ 504:	31 db                	xor    ebx,ebx
+ 506:	31 ed                	xor    ebp,ebp
+ 508:	31 f6                	xor    esi,esi
+ 50a:	31 ff                	xor    edi,edi
+ 50c:	31 db                	xor    ebx,ebx
+ 50e:	31 ed                	xor    ebp,ebp
+ 510:	31 f6                	xor    esi,esi
  512:	31 db                	xor    ebx,ebx
  514:	31 ed                	xor    ebp,ebp
  516:	31 f6                	xor    esi,esi
@@ -641,15 +639,15 @@ Disassembly of section .data:
  51c:	31 ed                	xor    ebp,ebp
  51e:	31 f6                	xor    esi,esi
  520:	31 ff                	xor    edi,edi
- 522:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 525:	31 db                	xor    ebx,ebx
- 527:	31 ed                	xor    ebp,ebp
- 529:	31 f6                	xor    esi,esi
- 52b:	31 ff                	xor    edi,edi
- 52d:	31 db                	xor    ebx,ebx
- 52f:	31 ed                	xor    ebp,ebp
- 531:	31 f6                	xor    esi,esi
- 533:	31 ff                	xor    edi,edi
+ 522:	31 db                	xor    ebx,ebx
+ 524:	31 ed                	xor    ebp,ebp
+ 526:	31 f6                	xor    esi,esi
+ 528:	31 ff                	xor    edi,edi
+ 52a:	31 db                	xor    ebx,ebx
+ 52c:	31 ed                	xor    ebp,ebp
+ 52e:	31 f6                	xor    esi,esi
+ 530:	31 ff                	xor    edi,edi
+ 532:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  535:	31 db                	xor    ebx,ebx
  537:	31 ed                	xor    ebp,ebp
  539:	31 f6                	xor    esi,esi
@@ -673,15 +671,15 @@ Disassembly of section .data:
  55d:	31 db                	xor    ebx,ebx
  55f:	31 ed                	xor    ebp,ebp
  561:	31 f6                	xor    esi,esi
- 563:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 566:	31 db                	xor    ebx,ebx
- 568:	31 ed                	xor    ebp,ebp
- 56a:	31 f6                	xor    esi,esi
- 56c:	31 ff                	xor    edi,edi
- 56e:	31 db                	xor    ebx,ebx
- 570:	31 ed                	xor    ebp,ebp
- 572:	31 f6                	xor    esi,esi
- 574:	31 ff                	xor    edi,edi
+ 563:	31 ff                	xor    edi,edi
+ 565:	31 db                	xor    ebx,ebx
+ 567:	31 ed                	xor    ebp,ebp
+ 569:	31 f6                	xor    esi,esi
+ 56b:	31 ff                	xor    edi,edi
+ 56d:	31 db                	xor    ebx,ebx
+ 56f:	31 ed                	xor    ebp,ebp
+ 571:	31 f6                	xor    esi,esi
+ 573:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  576:	31 db                	xor    ebx,ebx
  578:	31 ed                	xor    ebp,ebp
  57a:	31 f6                	xor    esi,esi
@@ -689,14 +687,14 @@ Disassembly of section .data:
  57e:	31 db                	xor    ebx,ebx
  580:	31 ed                	xor    ebp,ebp
  582:	31 f6                	xor    esi,esi
- 584:	31 db                	xor    ebx,ebx
- 586:	31 ed                	xor    ebp,ebp
- 588:	31 f6                	xor    esi,esi
- 58a:	31 ff                	xor    edi,edi
- 58c:	31 db                	xor    ebx,ebx
- 58e:	31 ed                	xor    ebp,ebp
- 590:	31 f6                	xor    esi,esi
- 592:	31 ff                	xor    edi,edi
+ 584:	31 ff                	xor    edi,edi
+ 586:	31 db                	xor    ebx,ebx
+ 588:	31 ed                	xor    ebp,ebp
+ 58a:	31 f6                	xor    esi,esi
+ 58c:	31 ff                	xor    edi,edi
+ 58e:	31 db                	xor    ebx,ebx
+ 590:	31 ed                	xor    ebp,ebp
+ 592:	31 f6                	xor    esi,esi
  594:	31 db                	xor    ebx,ebx
  596:	31 ed                	xor    ebp,ebp
  598:	31 f6                	xor    esi,esi
@@ -705,15 +703,15 @@ Disassembly of section .data:
  59e:	31 ed                	xor    ebp,ebp
  5a0:	31 f6                	xor    esi,esi
  5a2:	31 ff                	xor    edi,edi
- 5a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 5a7:	31 db                	xor    ebx,ebx
- 5a9:	31 ed                	xor    ebp,ebp
- 5ab:	31 f6                	xor    esi,esi
- 5ad:	31 ff                	xor    edi,edi
- 5af:	31 db                	xor    ebx,ebx
- 5b1:	31 ed                	xor    ebp,ebp
- 5b3:	31 f6                	xor    esi,esi
- 5b5:	31 ff                	xor    edi,edi
+ 5a4:	31 db                	xor    ebx,ebx
+ 5a6:	31 ed                	xor    ebp,ebp
+ 5a8:	31 f6                	xor    esi,esi
+ 5aa:	31 ff                	xor    edi,edi
+ 5ac:	31 db                	xor    ebx,ebx
+ 5ae:	31 ed                	xor    ebp,ebp
+ 5b0:	31 f6                	xor    esi,esi
+ 5b2:	31 ff                	xor    edi,edi
+ 5b4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  5b7:	31 db                	xor    ebx,ebx
  5b9:	31 ed                	xor    ebp,ebp
  5bb:	31 f6                	xor    esi,esi
@@ -737,15 +735,15 @@ Disassembly of section .data:
  5df:	31 db                	xor    ebx,ebx
  5e1:	31 ed                	xor    ebp,ebp
  5e3:	31 f6                	xor    esi,esi
- 5e5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 5e8:	31 db                	xor    ebx,ebx
- 5ea:	31 ed                	xor    ebp,ebp
- 5ec:	31 f6                	xor    esi,esi
- 5ee:	31 ff                	xor    edi,edi
- 5f0:	31 db                	xor    ebx,ebx
- 5f2:	31 ed                	xor    ebp,ebp
- 5f4:	31 f6                	xor    esi,esi
- 5f6:	31 ff                	xor    edi,edi
+ 5e5:	31 ff                	xor    edi,edi
+ 5e7:	31 db                	xor    ebx,ebx
+ 5e9:	31 ed                	xor    ebp,ebp
+ 5eb:	31 f6                	xor    esi,esi
+ 5ed:	31 ff                	xor    edi,edi
+ 5ef:	31 db                	xor    ebx,ebx
+ 5f1:	31 ed                	xor    ebp,ebp
+ 5f3:	31 f6                	xor    esi,esi
+ 5f5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  5f8:	31 db                	xor    ebx,ebx
  5fa:	31 ed                	xor    ebp,ebp
  5fc:	31 f6                	xor    esi,esi
@@ -753,14 +751,14 @@ Disassembly of section .data:
  600:	31 db                	xor    ebx,ebx
  602:	31 ed                	xor    ebp,ebp
  604:	31 f6                	xor    esi,esi
- 606:	31 db                	xor    ebx,ebx
- 608:	31 ed                	xor    ebp,ebp
- 60a:	31 f6                	xor    esi,esi
- 60c:	31 ff                	xor    edi,edi
- 60e:	31 db                	xor    ebx,ebx
- 610:	31 ed                	xor    ebp,ebp
- 612:	31 f6                	xor    esi,esi
- 614:	31 ff                	xor    edi,edi
+ 606:	31 ff                	xor    edi,edi
+ 608:	31 db                	xor    ebx,ebx
+ 60a:	31 ed                	xor    ebp,ebp
+ 60c:	31 f6                	xor    esi,esi
+ 60e:	31 ff                	xor    edi,edi
+ 610:	31 db                	xor    ebx,ebx
+ 612:	31 ed                	xor    ebp,ebp
+ 614:	31 f6                	xor    esi,esi
  616:	31 db                	xor    ebx,ebx
  618:	31 ed                	xor    ebp,ebp
  61a:	31 f6                	xor    esi,esi
@@ -769,15 +767,15 @@ Disassembly of section .data:
  620:	31 ed                	xor    ebp,ebp
  622:	31 f6                	xor    esi,esi
  624:	31 ff                	xor    edi,edi
- 626:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 629:	31 db                	xor    ebx,ebx
- 62b:	31 ed                	xor    ebp,ebp
- 62d:	31 f6                	xor    esi,esi
- 62f:	31 ff                	xor    edi,edi
- 631:	31 db                	xor    ebx,ebx
- 633:	31 ed                	xor    ebp,ebp
- 635:	31 f6                	xor    esi,esi
- 637:	31 ff                	xor    edi,edi
+ 626:	31 db                	xor    ebx,ebx
+ 628:	31 ed                	xor    ebp,ebp
+ 62a:	31 f6                	xor    esi,esi
+ 62c:	31 ff                	xor    edi,edi
+ 62e:	31 db                	xor    ebx,ebx
+ 630:	31 ed                	xor    ebp,ebp
+ 632:	31 f6                	xor    esi,esi
+ 634:	31 ff                	xor    edi,edi
+ 636:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  639:	31 db                	xor    ebx,ebx
  63b:	31 ed                	xor    ebp,ebp
  63d:	31 f6                	xor    esi,esi
@@ -801,15 +799,15 @@ Disassembly of section .data:
  661:	31 db                	xor    ebx,ebx
  663:	31 ed                	xor    ebp,ebp
  665:	31 f6                	xor    esi,esi
- 667:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 66a:	31 db                	xor    ebx,ebx
- 66c:	31 ed                	xor    ebp,ebp
- 66e:	31 f6                	xor    esi,esi
- 670:	31 ff                	xor    edi,edi
- 672:	31 db                	xor    ebx,ebx
- 674:	31 ed                	xor    ebp,ebp
- 676:	31 f6                	xor    esi,esi
- 678:	31 ff                	xor    edi,edi
+ 667:	31 ff                	xor    edi,edi
+ 669:	31 db                	xor    ebx,ebx
+ 66b:	31 ed                	xor    ebp,ebp
+ 66d:	31 f6                	xor    esi,esi
+ 66f:	31 ff                	xor    edi,edi
+ 671:	31 db                	xor    ebx,ebx
+ 673:	31 ed                	xor    ebp,ebp
+ 675:	31 f6                	xor    esi,esi
+ 677:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  67a:	31 db                	xor    ebx,ebx
  67c:	31 ed                	xor    ebp,ebp
  67e:	31 f6                	xor    esi,esi
@@ -817,14 +815,14 @@ Disassembly of section .data:
  682:	31 db                	xor    ebx,ebx
  684:	31 ed                	xor    ebp,ebp
  686:	31 f6                	xor    esi,esi
- 688:	31 db                	xor    ebx,ebx
- 68a:	31 ed                	xor    ebp,ebp
- 68c:	31 f6                	xor    esi,esi
- 68e:	31 ff                	xor    edi,edi
- 690:	31 db                	xor    ebx,ebx
- 692:	31 ed                	xor    ebp,ebp
- 694:	31 f6                	xor    esi,esi
- 696:	31 ff                	xor    edi,edi
+ 688:	31 ff                	xor    edi,edi
+ 68a:	31 db                	xor    ebx,ebx
+ 68c:	31 ed                	xor    ebp,ebp
+ 68e:	31 f6                	xor    esi,esi
+ 690:	31 ff                	xor    edi,edi
+ 692:	31 db                	xor    ebx,ebx
+ 694:	31 ed                	xor    ebp,ebp
+ 696:	31 f6                	xor    esi,esi
  698:	31 db                	xor    ebx,ebx
  69a:	31 ed                	xor    ebp,ebp
  69c:	31 f6                	xor    esi,esi
@@ -833,15 +831,15 @@ Disassembly of section .data:
  6a2:	31 ed                	xor    ebp,ebp
  6a4:	31 f6                	xor    esi,esi
  6a6:	31 ff                	xor    edi,edi
- 6a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 6ab:	31 db                	xor    ebx,ebx
- 6ad:	31 ed                	xor    ebp,ebp
- 6af:	31 f6                	xor    esi,esi
- 6b1:	31 ff                	xor    edi,edi
- 6b3:	31 db                	xor    ebx,ebx
- 6b5:	31 ed                	xor    ebp,ebp
- 6b7:	31 f6                	xor    esi,esi
- 6b9:	31 ff                	xor    edi,edi
+ 6a8:	31 db                	xor    ebx,ebx
+ 6aa:	31 ed                	xor    ebp,ebp
+ 6ac:	31 f6                	xor    esi,esi
+ 6ae:	31 ff                	xor    edi,edi
+ 6b0:	31 db                	xor    ebx,ebx
+ 6b2:	31 ed                	xor    ebp,ebp
+ 6b4:	31 f6                	xor    esi,esi
+ 6b6:	31 ff                	xor    edi,edi
+ 6b8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  6bb:	31 db                	xor    ebx,ebx
  6bd:	31 ed                	xor    ebp,ebp
  6bf:	31 f6                	xor    esi,esi
@@ -865,15 +863,15 @@ Disassembly of section .data:
  6e3:	31 db                	xor    ebx,ebx
  6e5:	31 ed                	xor    ebp,ebp
  6e7:	31 f6                	xor    esi,esi
- 6e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 6ec:	31 db                	xor    ebx,ebx
- 6ee:	31 ed                	xor    ebp,ebp
- 6f0:	31 f6                	xor    esi,esi
- 6f2:	31 ff                	xor    edi,edi
- 6f4:	31 db                	xor    ebx,ebx
- 6f6:	31 ed                	xor    ebp,ebp
- 6f8:	31 f6                	xor    esi,esi
- 6fa:	31 ff                	xor    edi,edi
+ 6e9:	31 ff                	xor    edi,edi
+ 6eb:	31 db                	xor    ebx,ebx
+ 6ed:	31 ed                	xor    ebp,ebp
+ 6ef:	31 f6                	xor    esi,esi
+ 6f1:	31 ff                	xor    edi,edi
+ 6f3:	31 db                	xor    ebx,ebx
+ 6f5:	31 ed                	xor    ebp,ebp
+ 6f7:	31 f6                	xor    esi,esi
+ 6f9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  6fc:	31 db                	xor    ebx,ebx
  6fe:	31 ed                	xor    ebp,ebp
  700:	31 f6                	xor    esi,esi
@@ -881,14 +879,14 @@ Disassembly of section .data:
  704:	31 db                	xor    ebx,ebx
  706:	31 ed                	xor    ebp,ebp
  708:	31 f6                	xor    esi,esi
- 70a:	31 db                	xor    ebx,ebx
- 70c:	31 ed                	xor    ebp,ebp
- 70e:	31 f6                	xor    esi,esi
- 710:	31 ff                	xor    edi,edi
- 712:	31 db                	xor    ebx,ebx
- 714:	31 ed                	xor    ebp,ebp
- 716:	31 f6                	xor    esi,esi
- 718:	31 ff                	xor    edi,edi
+ 70a:	31 ff                	xor    edi,edi
+ 70c:	31 db                	xor    ebx,ebx
+ 70e:	31 ed                	xor    ebp,ebp
+ 710:	31 f6                	xor    esi,esi
+ 712:	31 ff                	xor    edi,edi
+ 714:	31 db                	xor    ebx,ebx
+ 716:	31 ed                	xor    ebp,ebp
+ 718:	31 f6                	xor    esi,esi
  71a:	31 db                	xor    ebx,ebx
  71c:	31 ed                	xor    ebp,ebp
  71e:	31 f6                	xor    esi,esi
@@ -897,15 +895,15 @@ Disassembly of section .data:
  724:	31 ed                	xor    ebp,ebp
  726:	31 f6                	xor    esi,esi
  728:	31 ff                	xor    edi,edi
- 72a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 72d:	31 db                	xor    ebx,ebx
- 72f:	31 ed                	xor    ebp,ebp
- 731:	31 f6                	xor    esi,esi
- 733:	31 ff                	xor    edi,edi
- 735:	31 db                	xor    ebx,ebx
- 737:	31 ed                	xor    ebp,ebp
- 739:	31 f6                	xor    esi,esi
- 73b:	31 ff                	xor    edi,edi
+ 72a:	31 db                	xor    ebx,ebx
+ 72c:	31 ed                	xor    ebp,ebp
+ 72e:	31 f6                	xor    esi,esi
+ 730:	31 ff                	xor    edi,edi
+ 732:	31 db                	xor    ebx,ebx
+ 734:	31 ed                	xor    ebp,ebp
+ 736:	31 f6                	xor    esi,esi
+ 738:	31 ff                	xor    edi,edi
+ 73a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  73d:	31 db                	xor    ebx,ebx
  73f:	31 ed                	xor    ebp,ebp
  741:	31 f6                	xor    esi,esi
@@ -929,15 +927,15 @@ Disassembly of section .data:
  765:	31 db                	xor    ebx,ebx
  767:	31 ed                	xor    ebp,ebp
  769:	31 f6                	xor    esi,esi
- 76b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 76e:	31 db                	xor    ebx,ebx
- 770:	31 ed                	xor    ebp,ebp
- 772:	31 f6                	xor    esi,esi
- 774:	31 ff                	xor    edi,edi
- 776:	31 db                	xor    ebx,ebx
- 778:	31 ed                	xor    ebp,ebp
- 77a:	31 f6                	xor    esi,esi
- 77c:	31 ff                	xor    edi,edi
+ 76b:	31 ff                	xor    edi,edi
+ 76d:	31 db                	xor    ebx,ebx
+ 76f:	31 ed                	xor    ebp,ebp
+ 771:	31 f6                	xor    esi,esi
+ 773:	31 ff                	xor    edi,edi
+ 775:	31 db                	xor    ebx,ebx
+ 777:	31 ed                	xor    ebp,ebp
+ 779:	31 f6                	xor    esi,esi
+ 77b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  77e:	31 db                	xor    ebx,ebx
  780:	31 ed                	xor    ebp,ebp
  782:	31 f6                	xor    esi,esi
@@ -945,14 +943,14 @@ Disassembly of section .data:
  786:	31 db                	xor    ebx,ebx
  788:	31 ed                	xor    ebp,ebp
  78a:	31 f6                	xor    esi,esi
- 78c:	31 db                	xor    ebx,ebx
- 78e:	31 ed                	xor    ebp,ebp
- 790:	31 f6                	xor    esi,esi
- 792:	31 ff                	xor    edi,edi
- 794:	31 db                	xor    ebx,ebx
- 796:	31 ed                	xor    ebp,ebp
- 798:	31 f6                	xor    esi,esi
- 79a:	31 ff                	xor    edi,edi
+ 78c:	31 ff                	xor    edi,edi
+ 78e:	31 db                	xor    ebx,ebx
+ 790:	31 ed                	xor    ebp,ebp
+ 792:	31 f6                	xor    esi,esi
+ 794:	31 ff                	xor    edi,edi
+ 796:	31 db                	xor    ebx,ebx
+ 798:	31 ed                	xor    ebp,ebp
+ 79a:	31 f6                	xor    esi,esi
  79c:	31 db                	xor    ebx,ebx
  79e:	31 ed                	xor    ebp,ebp
  7a0:	31 f6                	xor    esi,esi
@@ -961,15 +959,15 @@ Disassembly of section .data:
  7a6:	31 ed                	xor    ebp,ebp
  7a8:	31 f6                	xor    esi,esi
  7aa:	31 ff                	xor    edi,edi
- 7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 7af:	31 db                	xor    ebx,ebx
- 7b1:	31 ed                	xor    ebp,ebp
- 7b3:	31 f6                	xor    esi,esi
- 7b5:	31 ff                	xor    edi,edi
- 7b7:	31 db                	xor    ebx,ebx
- 7b9:	31 ed                	xor    ebp,ebp
- 7bb:	31 f6                	xor    esi,esi
- 7bd:	31 ff                	xor    edi,edi
+ 7ac:	31 db                	xor    ebx,ebx
+ 7ae:	31 ed                	xor    ebp,ebp
+ 7b0:	31 f6                	xor    esi,esi
+ 7b2:	31 ff                	xor    edi,edi
+ 7b4:	31 db                	xor    ebx,ebx
+ 7b6:	31 ed                	xor    ebp,ebp
+ 7b8:	31 f6                	xor    esi,esi
+ 7ba:	31 ff                	xor    edi,edi
+ 7bc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  7bf:	31 db                	xor    ebx,ebx
  7c1:	31 ed                	xor    ebp,ebp
  7c3:	31 f6                	xor    esi,esi
@@ -993,15 +991,15 @@ Disassembly of section .data:
  7e7:	31 db                	xor    ebx,ebx
  7e9:	31 ed                	xor    ebp,ebp
  7eb:	31 f6                	xor    esi,esi
- 7ed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 7f0:	31 db                	xor    ebx,ebx
- 7f2:	31 ed                	xor    ebp,ebp
- 7f4:	31 f6                	xor    esi,esi
- 7f6:	31 ff                	xor    edi,edi
- 7f8:	31 db                	xor    ebx,ebx
- 7fa:	31 ed                	xor    ebp,ebp
- 7fc:	31 f6                	xor    esi,esi
- 7fe:	31 ff                	xor    edi,edi
+ 7ed:	31 ff                	xor    edi,edi
+ 7ef:	31 db                	xor    ebx,ebx
+ 7f1:	31 ed                	xor    ebp,ebp
+ 7f3:	31 f6                	xor    esi,esi
+ 7f5:	31 ff                	xor    edi,edi
+ 7f7:	31 db                	xor    ebx,ebx
+ 7f9:	31 ed                	xor    ebp,ebp
+ 7fb:	31 f6                	xor    esi,esi
+ 7fd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  800:	31 db                	xor    ebx,ebx
  802:	31 ed                	xor    ebp,ebp
  804:	31 f6                	xor    esi,esi
@@ -1009,14 +1007,14 @@ Disassembly of section .data:
  808:	31 db                	xor    ebx,ebx
  80a:	31 ed                	xor    ebp,ebp
  80c:	31 f6                	xor    esi,esi
- 80e:	31 db                	xor    ebx,ebx
- 810:	31 ed                	xor    ebp,ebp
- 812:	31 f6                	xor    esi,esi
- 814:	31 ff                	xor    edi,edi
- 816:	31 db                	xor    ebx,ebx
- 818:	31 ed                	xor    ebp,ebp
- 81a:	31 f6                	xor    esi,esi
- 81c:	31 ff                	xor    edi,edi
+ 80e:	31 ff                	xor    edi,edi
+ 810:	31 db                	xor    ebx,ebx
+ 812:	31 ed                	xor    ebp,ebp
+ 814:	31 f6                	xor    esi,esi
+ 816:	31 ff                	xor    edi,edi
+ 818:	31 db                	xor    ebx,ebx
+ 81a:	31 ed                	xor    ebp,ebp
+ 81c:	31 f6                	xor    esi,esi
  81e:	31 db                	xor    ebx,ebx
  820:	31 ed                	xor    ebp,ebp
  822:	31 f6                	xor    esi,esi
@@ -1025,15 +1023,15 @@ Disassembly of section .data:
  828:	31 ed                	xor    ebp,ebp
  82a:	31 f6                	xor    esi,esi
  82c:	31 ff                	xor    edi,edi
- 82e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 831:	31 db                	xor    ebx,ebx
- 833:	31 ed                	xor    ebp,ebp
- 835:	31 f6                	xor    esi,esi
- 837:	31 ff                	xor    edi,edi
- 839:	31 db                	xor    ebx,ebx
- 83b:	31 ed                	xor    ebp,ebp
- 83d:	31 f6                	xor    esi,esi
- 83f:	31 ff                	xor    edi,edi
+ 82e:	31 db                	xor    ebx,ebx
+ 830:	31 ed                	xor    ebp,ebp
+ 832:	31 f6                	xor    esi,esi
+ 834:	31 ff                	xor    edi,edi
+ 836:	31 db                	xor    ebx,ebx
+ 838:	31 ed                	xor    ebp,ebp
+ 83a:	31 f6                	xor    esi,esi
+ 83c:	31 ff                	xor    edi,edi
+ 83e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  841:	31 db                	xor    ebx,ebx
  843:	31 ed                	xor    ebp,ebp
  845:	31 f6                	xor    esi,esi
@@ -1057,15 +1055,15 @@ Disassembly of section .data:
  869:	31 db                	xor    ebx,ebx
  86b:	31 ed                	xor    ebp,ebp
  86d:	31 f6                	xor    esi,esi
- 86f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 872:	31 db                	xor    ebx,ebx
- 874:	31 ed                	xor    ebp,ebp
- 876:	31 f6                	xor    esi,esi
- 878:	31 ff                	xor    edi,edi
- 87a:	31 db                	xor    ebx,ebx
- 87c:	31 ed                	xor    ebp,ebp
- 87e:	31 f6                	xor    esi,esi
- 880:	31 ff                	xor    edi,edi
+ 86f:	31 ff                	xor    edi,edi
+ 871:	31 db                	xor    ebx,ebx
+ 873:	31 ed                	xor    ebp,ebp
+ 875:	31 f6                	xor    esi,esi
+ 877:	31 ff                	xor    edi,edi
+ 879:	31 db                	xor    ebx,ebx
+ 87b:	31 ed                	xor    ebp,ebp
+ 87d:	31 f6                	xor    esi,esi
+ 87f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  882:	31 db                	xor    ebx,ebx
  884:	31 ed                	xor    ebp,ebp
  886:	31 f6                	xor    esi,esi
@@ -1073,14 +1071,14 @@ Disassembly of section .data:
  88a:	31 db                	xor    ebx,ebx
  88c:	31 ed                	xor    ebp,ebp
  88e:	31 f6                	xor    esi,esi
- 890:	31 db                	xor    ebx,ebx
- 892:	31 ed                	xor    ebp,ebp
- 894:	31 f6                	xor    esi,esi
- 896:	31 ff                	xor    edi,edi
- 898:	31 db                	xor    ebx,ebx
- 89a:	31 ed                	xor    ebp,ebp
- 89c:	31 f6                	xor    esi,esi
- 89e:	31 ff                	xor    edi,edi
+ 890:	31 ff                	xor    edi,edi
+ 892:	31 db                	xor    ebx,ebx
+ 894:	31 ed                	xor    ebp,ebp
+ 896:	31 f6                	xor    esi,esi
+ 898:	31 ff                	xor    edi,edi
+ 89a:	31 db                	xor    ebx,ebx
+ 89c:	31 ed                	xor    ebp,ebp
+ 89e:	31 f6                	xor    esi,esi
  8a0:	31 db                	xor    ebx,ebx
  8a2:	31 ed                	xor    ebp,ebp
  8a4:	31 f6                	xor    esi,esi
@@ -1089,15 +1087,15 @@ Disassembly of section .data:
  8aa:	31 ed                	xor    ebp,ebp
  8ac:	31 f6                	xor    esi,esi
  8ae:	31 ff                	xor    edi,edi
- 8b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 8b3:	31 db                	xor    ebx,ebx
- 8b5:	31 ed                	xor    ebp,ebp
- 8b7:	31 f6                	xor    esi,esi
- 8b9:	31 ff                	xor    edi,edi
- 8bb:	31 db                	xor    ebx,ebx
- 8bd:	31 ed                	xor    ebp,ebp
- 8bf:	31 f6                	xor    esi,esi
- 8c1:	31 ff                	xor    edi,edi
+ 8b0:	31 db                	xor    ebx,ebx
+ 8b2:	31 ed                	xor    ebp,ebp
+ 8b4:	31 f6                	xor    esi,esi
+ 8b6:	31 ff                	xor    edi,edi
+ 8b8:	31 db                	xor    ebx,ebx
+ 8ba:	31 ed                	xor    ebp,ebp
+ 8bc:	31 f6                	xor    esi,esi
+ 8be:	31 ff                	xor    edi,edi
+ 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  8c3:	31 db                	xor    ebx,ebx
  8c5:	31 ed                	xor    ebp,ebp
  8c7:	31 f6                	xor    esi,esi
@@ -1121,15 +1119,15 @@ Disassembly of section .data:
  8eb:	31 db                	xor    ebx,ebx
  8ed:	31 ed                	xor    ebp,ebp
  8ef:	31 f6                	xor    esi,esi
- 8f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 8f4:	31 db                	xor    ebx,ebx
- 8f6:	31 ed                	xor    ebp,ebp
- 8f8:	31 f6                	xor    esi,esi
- 8fa:	31 ff                	xor    edi,edi
- 8fc:	31 db                	xor    ebx,ebx
- 8fe:	31 ed                	xor    ebp,ebp
- 900:	31 f6                	xor    esi,esi
- 902:	31 ff                	xor    edi,edi
+ 8f1:	31 ff                	xor    edi,edi
+ 8f3:	31 db                	xor    ebx,ebx
+ 8f5:	31 ed                	xor    ebp,ebp
+ 8f7:	31 f6                	xor    esi,esi
+ 8f9:	31 ff                	xor    edi,edi
+ 8fb:	31 db                	xor    ebx,ebx
+ 8fd:	31 ed                	xor    ebp,ebp
+ 8ff:	31 f6                	xor    esi,esi
+ 901:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  904:	31 db                	xor    ebx,ebx
  906:	31 ed                	xor    ebp,ebp
  908:	31 f6                	xor    esi,esi
@@ -1137,19 +1135,30 @@ Disassembly of section .data:
  90c:	31 db                	xor    ebx,ebx
  90e:	31 ed                	xor    ebp,ebp
  910:	31 f6                	xor    esi,esi
- 912:	83 e8 01             	sub    eax,0x1
- 915:	0f 85 55 f7 ff ff    	jne    0x70
- 91b:	66 90                	xchg   ax,ax
- 91d:	66 90                	xchg   ax,ax
- 91f:	66 90                	xchg   ax,ax
- 921:	66 90                	xchg   ax,ax
- 923:	66 90                	xchg   ax,ax
- 925:	66 90                	xchg   ax,ax
- 927:	66 90                	xchg   ax,ax
- 929:	66 90                	xchg   ax,ax
- 92b:	5f                   	pop    rdi
- 92c:	5e                   	pop    rsi
- 92d:	5d                   	pop    rbp
- 92e:	5b                   	pop    rbx
- 92f:	0f 77                	emms   
- 931:	c3                   	ret    
+ 912:	31 ff                	xor    edi,edi
+ 914:	31 db                	xor    ebx,ebx
+ 916:	31 ed                	xor    ebp,ebp
+ 918:	31 f6                	xor    esi,esi
+ 91a:	31 ff                	xor    edi,edi
+ 91c:	31 db                	xor    ebx,ebx
+ 91e:	31 ed                	xor    ebp,ebp
+ 920:	31 f6                	xor    esi,esi
+ 922:	83 e8 01             	sub    eax,0x1
+ 925:	0f 85 55 f7 ff ff    	jne    0x80
+ 92b:	66 90                	xchg   ax,ax
+ 92d:	66 90                	xchg   ax,ax
+ 92f:	66 90                	xchg   ax,ax
+ 931:	66 90                	xchg   ax,ax
+ 933:	66 90                	xchg   ax,ax
+ 935:	66 90                	xchg   ax,ax
+ 937:	66 90                	xchg   ax,ax
+ 939:	66 90                	xchg   ax,ax
+ 93b:	48 83 c4 40          	add    rsp,0x40
+ 93f:	41 59                	pop    r9
+ 941:	41 58                	pop    r8
+ 943:	5f                   	pop    rdi
+ 944:	5e                   	pop    rsi
+ 945:	5d                   	pop    rbp
+ 946:	5b                   	pop    rbx
+ 947:	0f 77                	emms   
+ 949:	c3                   	ret    

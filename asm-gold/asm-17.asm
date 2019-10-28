@@ -17,58 +17,60 @@ Disassembly of section .data:
       11:	55                   	push   rbp
       12:	56                   	push   rsi
       13:	57                   	push   rdi
-      14:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-      1b:	7f 00 00 
-      1e:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-      25:	7f 00 00 
-      28:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-      2f:	00 00 00 
-      32:	48 83 eb 00          	sub    rbx,0x0
-      36:	48 83 ed 00          	sub    rbp,0x0
-      3a:	48 83 ee 00          	sub    rsi,0x0
-      3e:	48 83 ef 00          	sub    rdi,0x0
-      42:	49 83 e8 00          	sub    r8,0x0
-      46:	49 83 e9 00          	sub    r9,0x0
-      4a:	49 83 ea 00          	sub    r10,0x0
-      4e:	49 83 eb 00          	sub    r11,0x0
-      52:	49 83 ec 00          	sub    r12,0x0
-      56:	49 83 ed 00          	sub    r13,0x0
-      5a:	49 83 ee 00          	sub    r14,0x0
-      5e:	49 83 ef 00          	sub    r15,0x0
-      62:	c5 fc c2 c0 00       	vcmpeqps ymm0,ymm0,ymm0
-      67:	c5 3c c2 c0 00       	vcmpeqps ymm8,ymm8,ymm0
-      6c:	c5 f4 c2 c9 00       	vcmpeqps ymm1,ymm1,ymm1
-      71:	c5 34 c2 c9 00       	vcmpeqps ymm9,ymm9,ymm1
-      76:	c5 ec c2 d2 00       	vcmpeqps ymm2,ymm2,ymm2
-      7b:	c5 2c c2 d2 00       	vcmpeqps ymm10,ymm10,ymm2
-      80:	c5 e4 c2 db 00       	vcmpeqps ymm3,ymm3,ymm3
-      85:	c5 24 c2 db 00       	vcmpeqps ymm11,ymm11,ymm3
-      8a:	c5 dc c2 e4 00       	vcmpeqps ymm4,ymm4,ymm4
-      8f:	c5 1c c2 e4 00       	vcmpeqps ymm12,ymm12,ymm4
-      94:	c5 d4 c2 ed 00       	vcmpeqps ymm5,ymm5,ymm5
-      99:	c5 14 c2 ed 00       	vcmpeqps ymm13,ymm13,ymm5
-      9e:	c5 cc c2 f6 00       	vcmpeqps ymm6,ymm6,ymm6
-      a3:	c5 0c c2 f6 00       	vcmpeqps ymm14,ymm14,ymm6
-      a8:	c5 c4 c2 ff 00       	vcmpeqps ymm7,ymm7,ymm7
-      ad:	c5 04 c2 ff 00       	vcmpeqps ymm15,ymm15,ymm7
-      b2:	90                   	nop
-      b3:	90                   	nop
-      b4:	90                   	nop
-      b5:	90                   	nop
-      b6:	90                   	nop
-      b7:	90                   	nop
-      b8:	90                   	nop
-      b9:	90                   	nop
-      ba:	90                   	nop
-      bb:	90                   	nop
-      bc:	90                   	nop
-      bd:	90                   	nop
-      be:	90                   	nop
-      bf:	90                   	nop
-      c0:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-      c4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-      c8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-      cc:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+      14:	41 50                	push   r8
+      16:	41 51                	push   r9
+      18:	48 83 ec 40          	sub    rsp,0x40
+      1c:	45 31 c0             	xor    r8d,r8d
+      1f:	4c 8d 0c 24          	lea    r9,[rsp]
+      23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+      2a:	7f 00 00 
+      2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+      34:	7f 00 00 
+      37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+      3e:	00 00 00 
+      41:	48 83 eb 00          	sub    rbx,0x0
+      45:	48 83 ed 00          	sub    rbp,0x0
+      49:	48 83 ee 00          	sub    rsi,0x0
+      4d:	48 83 ef 00          	sub    rdi,0x0
+      51:	49 83 e8 00          	sub    r8,0x0
+      55:	49 83 e9 00          	sub    r9,0x0
+      59:	49 83 ea 00          	sub    r10,0x0
+      5d:	49 83 eb 00          	sub    r11,0x0
+      61:	49 83 ec 00          	sub    r12,0x0
+      65:	49 83 ed 00          	sub    r13,0x0
+      69:	49 83 ee 00          	sub    r14,0x0
+      6d:	49 83 ef 00          	sub    r15,0x0
+      71:	c5 fc c2 c0 00       	vcmpeqps ymm0,ymm0,ymm0
+      76:	c5 3c c2 c0 00       	vcmpeqps ymm8,ymm8,ymm0
+      7b:	c5 f4 c2 c9 00       	vcmpeqps ymm1,ymm1,ymm1
+      80:	c5 34 c2 c9 00       	vcmpeqps ymm9,ymm9,ymm1
+      85:	c5 ec c2 d2 00       	vcmpeqps ymm2,ymm2,ymm2
+      8a:	c5 2c c2 d2 00       	vcmpeqps ymm10,ymm10,ymm2
+      8f:	c5 e4 c2 db 00       	vcmpeqps ymm3,ymm3,ymm3
+      94:	c5 24 c2 db 00       	vcmpeqps ymm11,ymm11,ymm3
+      99:	c5 dc c2 e4 00       	vcmpeqps ymm4,ymm4,ymm4
+      9e:	c5 1c c2 e4 00       	vcmpeqps ymm12,ymm12,ymm4
+      a3:	c5 d4 c2 ed 00       	vcmpeqps ymm5,ymm5,ymm5
+      a8:	c5 14 c2 ed 00       	vcmpeqps ymm13,ymm13,ymm5
+      ad:	c5 cc c2 f6 00       	vcmpeqps ymm6,ymm6,ymm6
+      b2:	c5 0c c2 f6 00       	vcmpeqps ymm14,ymm14,ymm6
+      b7:	c5 c4 c2 ff 00       	vcmpeqps ymm7,ymm7,ymm7
+      bc:	c5 04 c2 ff 00       	vcmpeqps ymm15,ymm15,ymm7
+      c1:	90                   	nop
+      c2:	90                   	nop
+      c3:	90                   	nop
+      c4:	90                   	nop
+      c5:	90                   	nop
+      c6:	90                   	nop
+      c7:	90                   	nop
+      c8:	90                   	nop
+      c9:	90                   	nop
+      ca:	90                   	nop
+      cb:	90                   	nop
+      cc:	90                   	nop
+      cd:	90                   	nop
+      ce:	90                   	nop
+      cf:	90                   	nop
       d0:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
       d4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
       d8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -81,11 +83,11 @@ Disassembly of section .data:
       f4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
       f8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
       fc:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     100:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     103:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     107:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     10b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     10f:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     100:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     104:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     108:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     10c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     110:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      113:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      117:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      11b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -115,11 +117,11 @@ Disassembly of section .data:
      17b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      17f:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      183:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     187:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     18a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     18e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     192:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     196:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     187:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     18b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     18f:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     193:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     197:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      19a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      19e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      1a2:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -133,10 +135,10 @@ Disassembly of section .data:
      1c2:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      1c6:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      1ca:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     1ce:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     1d2:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     1d6:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     1da:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     1ce:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     1d2:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     1d6:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     1da:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      1de:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      1e2:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      1e6:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -149,11 +151,11 @@ Disassembly of section .data:
      202:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      206:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      20a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     20e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     211:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     215:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     219:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     21d:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     20e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     212:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     216:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     21a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     21e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      221:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      225:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      229:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -183,11 +185,11 @@ Disassembly of section .data:
      289:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      28d:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      291:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     295:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     298:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     29c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     2a0:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     2a4:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     295:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     299:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     29d:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     2a1:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     2a5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      2a8:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      2ac:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      2b0:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -201,10 +203,10 @@ Disassembly of section .data:
      2d0:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      2d4:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      2d8:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     2dc:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     2e0:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     2e4:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     2e8:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     2dc:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     2e0:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     2e4:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     2e8:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      2ec:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      2f0:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      2f4:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -217,11 +219,11 @@ Disassembly of section .data:
      310:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      314:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      318:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     31c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     31f:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     323:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     327:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     32b:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     31c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     320:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     324:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     328:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     32c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      32f:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      333:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      337:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -251,11 +253,11 @@ Disassembly of section .data:
      397:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      39b:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      39f:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     3a3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     3a6:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     3aa:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     3ae:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     3b2:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     3a3:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     3a7:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     3ab:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     3af:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     3b3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      3b6:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      3ba:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      3be:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -269,10 +271,10 @@ Disassembly of section .data:
      3de:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      3e2:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      3e6:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     3ea:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     3ee:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     3f2:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     3f6:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     3ea:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     3ee:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     3f2:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     3f6:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      3fa:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      3fe:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      402:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -285,11 +287,11 @@ Disassembly of section .data:
      41e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      422:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      426:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     42a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     42d:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     431:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     435:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     439:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     42a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     42e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     432:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     436:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     43a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      43d:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      441:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      445:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -319,11 +321,11 @@ Disassembly of section .data:
      4a5:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      4a9:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      4ad:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     4b1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     4b4:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     4b8:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     4bc:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     4c0:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     4b1:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     4b5:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     4b9:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     4bd:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     4c1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      4c4:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      4c8:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      4cc:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -337,10 +339,10 @@ Disassembly of section .data:
      4ec:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      4f0:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      4f4:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     4f8:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     4fc:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     500:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     504:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     4f8:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     4fc:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     500:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     504:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      508:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      50c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      510:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -353,11 +355,11 @@ Disassembly of section .data:
      52c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      530:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      534:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     538:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     53b:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     53f:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     543:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     547:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     538:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     53c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     540:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     544:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     548:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      54b:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      54f:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      553:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -387,11 +389,11 @@ Disassembly of section .data:
      5b3:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      5b7:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      5bb:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     5bf:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     5c2:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     5c6:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     5ca:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     5ce:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     5bf:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     5c3:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     5c7:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     5cb:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     5cf:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      5d2:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      5d6:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      5da:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -405,10 +407,10 @@ Disassembly of section .data:
      5fa:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      5fe:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      602:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     606:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     60a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     60e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     612:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     606:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     60a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     60e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     612:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      616:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      61a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      61e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -421,11 +423,11 @@ Disassembly of section .data:
      63a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      63e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      642:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     646:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     649:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     64d:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     651:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     655:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     646:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     64a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     64e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     652:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     656:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      659:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      65d:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      661:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -455,11 +457,11 @@ Disassembly of section .data:
      6c1:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      6c5:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      6c9:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     6cd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     6d0:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     6d4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     6d8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     6dc:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     6cd:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     6d1:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     6d5:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     6d9:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     6dd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      6e0:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      6e4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      6e8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -473,10 +475,10 @@ Disassembly of section .data:
      708:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      70c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      710:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     714:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     718:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     71c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     720:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     714:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     718:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     71c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     720:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      724:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      728:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      72c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -489,11 +491,11 @@ Disassembly of section .data:
      748:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      74c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      750:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     754:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     757:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     75b:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     75f:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     763:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     754:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     758:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     75c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     760:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     764:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      767:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      76b:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      76f:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -523,11 +525,11 @@ Disassembly of section .data:
      7cf:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      7d3:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      7d7:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     7db:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     7de:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     7e2:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     7e6:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     7ea:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     7db:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     7df:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     7e3:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     7e7:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     7eb:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      7ee:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      7f2:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      7f6:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -541,10 +543,10 @@ Disassembly of section .data:
      816:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      81a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      81e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     822:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     826:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     82a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     82e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     822:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     826:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     82a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     82e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      832:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      836:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      83a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -557,11 +559,11 @@ Disassembly of section .data:
      856:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      85a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      85e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     862:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     865:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     869:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     86d:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     871:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     862:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     866:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     86a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     86e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     872:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      875:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      879:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      87d:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -591,11 +593,11 @@ Disassembly of section .data:
      8dd:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      8e1:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      8e5:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     8e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     8ec:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     8f0:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     8f4:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     8f8:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     8e9:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     8ed:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     8f1:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     8f5:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     8f9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      8fc:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      900:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      904:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -609,10 +611,10 @@ Disassembly of section .data:
      924:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      928:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      92c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     930:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     934:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     938:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     93c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     930:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     934:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     938:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     93c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      940:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      944:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      948:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -625,11 +627,11 @@ Disassembly of section .data:
      964:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      968:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      96c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     970:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     973:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     977:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     97b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     97f:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     970:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     974:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     978:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     97c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     980:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      983:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      987:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      98b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -659,11 +661,11 @@ Disassembly of section .data:
      9eb:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      9ef:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      9f3:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     9f7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     9fa:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     9fe:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     a02:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     a06:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     9f7:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     9fb:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     9ff:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     a03:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     a07:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      a0a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      a0e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      a12:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -677,10 +679,10 @@ Disassembly of section .data:
      a32:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      a36:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      a3a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     a3e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     a42:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     a46:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     a4a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     a3e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     a42:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     a46:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     a4a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      a4e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      a52:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      a56:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -693,11 +695,11 @@ Disassembly of section .data:
      a72:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      a76:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      a7a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     a7e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     a81:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     a85:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     a89:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     a8d:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     a7e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     a82:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     a86:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     a8a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     a8e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      a91:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      a95:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      a99:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -727,11 +729,11 @@ Disassembly of section .data:
      af9:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      afd:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      b01:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     b05:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     b08:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     b0c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     b10:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     b14:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     b05:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     b09:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     b0d:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     b11:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     b15:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      b18:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      b1c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      b20:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -745,10 +747,10 @@ Disassembly of section .data:
      b40:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      b44:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      b48:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     b4c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     b50:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     b54:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     b58:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     b4c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     b50:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     b54:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     b58:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      b5c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      b60:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      b64:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -761,11 +763,11 @@ Disassembly of section .data:
      b80:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      b84:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      b88:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     b8c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     b8f:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     b93:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     b97:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     b9b:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     b8c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     b90:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     b94:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     b98:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     b9c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      b9f:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      ba3:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      ba7:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -795,11 +797,11 @@ Disassembly of section .data:
      c07:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      c0b:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      c0f:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     c13:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     c16:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     c1a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     c1e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     c22:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     c13:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     c17:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     c1b:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     c1f:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     c23:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      c26:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      c2a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      c2e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -813,10 +815,10 @@ Disassembly of section .data:
      c4e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      c52:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      c56:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     c5a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     c5e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     c62:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     c66:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     c5a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     c5e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     c62:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     c66:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      c6a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      c6e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      c72:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -829,11 +831,11 @@ Disassembly of section .data:
      c8e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      c92:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      c96:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     c9a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     c9d:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     ca1:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     ca5:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     ca9:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     c9a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     c9e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     ca2:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     ca6:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     caa:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      cad:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      cb1:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      cb5:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -863,11 +865,11 @@ Disassembly of section .data:
      d15:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      d19:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      d1d:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     d21:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     d24:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     d28:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     d2c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     d30:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     d21:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     d25:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     d29:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     d2d:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     d31:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      d34:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      d38:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      d3c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -881,10 +883,10 @@ Disassembly of section .data:
      d5c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      d60:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      d64:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     d68:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     d6c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     d70:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     d74:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     d68:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     d6c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     d70:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     d74:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      d78:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      d7c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      d80:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -897,11 +899,11 @@ Disassembly of section .data:
      d9c:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      da0:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      da4:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     da8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     dab:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     daf:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     db3:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     db7:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     da8:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     dac:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     db0:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     db4:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     db8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      dbb:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      dbf:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      dc3:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -931,11 +933,11 @@ Disassembly of section .data:
      e23:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      e27:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      e2b:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     e2f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     e32:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     e36:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     e3a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     e3e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     e2f:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     e33:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     e37:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     e3b:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     e3f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      e42:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      e46:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      e4a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -949,10 +951,10 @@ Disassembly of section .data:
      e6a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      e6e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      e72:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     e76:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     e7a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     e7e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     e82:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     e76:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     e7a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     e7e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     e82:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      e86:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      e8a:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      e8e:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -965,11 +967,11 @@ Disassembly of section .data:
      eaa:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      eae:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      eb2:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     eb6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     eb9:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     ebd:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     ec1:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     ec5:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     eb6:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     eba:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     ebe:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     ec2:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     ec6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      ec9:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      ecd:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      ed1:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -999,11 +1001,11 @@ Disassembly of section .data:
      f31:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      f35:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      f39:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     f3d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     f40:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     f44:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     f48:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     f4c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     f3d:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     f41:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     f45:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     f49:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     f4d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      f50:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      f54:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      f58:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1017,10 +1019,10 @@ Disassembly of section .data:
      f78:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      f7c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
      f80:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     f84:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     f88:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     f8c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     f90:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     f84:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     f88:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     f8c:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     f90:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      f94:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      f98:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      f9c:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1033,11 +1035,11 @@ Disassembly of section .data:
      fb8:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      fbc:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
      fc0:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-     fc4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     fc7:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-     fcb:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-     fcf:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-     fd3:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     fc4:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+     fc8:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+     fcc:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+     fd0:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+     fd4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      fd7:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
      fdb:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
      fdf:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1067,11 +1069,11 @@ Disassembly of section .data:
     103f:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     1043:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
     1047:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    104b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    104e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    1052:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-    1056:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-    105a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    104b:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    104f:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    1053:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    1057:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+    105b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     105e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     1062:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     1066:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1085,10 +1087,10 @@ Disassembly of section .data:
     1086:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     108a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
     108e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    1092:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    1096:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-    109a:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-    109e:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    1092:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    1096:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    109a:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    109e:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     10a2:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     10a6:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     10aa:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1101,11 +1103,11 @@ Disassembly of section .data:
     10c6:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     10ca:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     10ce:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-    10d2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    10d5:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    10d9:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-    10dd:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-    10e1:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    10d2:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+    10d6:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    10da:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    10de:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    10e2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     10e5:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     10e9:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     10ed:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1135,11 +1137,11 @@ Disassembly of section .data:
     114d:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     1151:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
     1155:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    1159:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    115c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    1160:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-    1164:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-    1168:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    1159:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    115d:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    1161:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    1165:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+    1169:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     116c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     1170:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     1174:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1153,10 +1155,10 @@ Disassembly of section .data:
     1194:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     1198:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
     119c:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    11a0:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    11a4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-    11a8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-    11ac:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    11a0:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    11a4:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    11a8:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    11ac:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     11b0:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     11b4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     11b8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1169,11 +1171,11 @@ Disassembly of section .data:
     11d4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     11d8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     11dc:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
-    11e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    11e3:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    11e7:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-    11eb:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-    11ef:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    11e0:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+    11e4:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    11e8:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    11ec:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    11f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     11f3:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     11f7:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     11fb:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1203,11 +1205,11 @@ Disassembly of section .data:
     125b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     125f:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
     1263:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    1267:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    126a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    126e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
-    1272:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
-    1276:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    1267:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    126b:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    126f:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    1273:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+    1277:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     127a:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
     127e:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
     1282:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
@@ -1221,19 +1223,26 @@ Disassembly of section .data:
     12a2:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
     12a6:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
     12aa:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
-    12ae:	83 e8 01             	sub    eax,0x1
-    12b1:	0f 85 09 ee ff ff    	jne    0xc0
-    12b7:	66 90                	xchg   ax,ax
-    12b9:	66 90                	xchg   ax,ax
-    12bb:	66 90                	xchg   ax,ax
-    12bd:	66 90                	xchg   ax,ax
-    12bf:	66 90                	xchg   ax,ax
-    12c1:	66 90                	xchg   ax,ax
-    12c3:	66 90                	xchg   ax,ax
-    12c5:	66 90                	xchg   ax,ax
-    12c7:	5f                   	pop    rdi
-    12c8:	5e                   	pop    rsi
-    12c9:	5d                   	pop    rbp
-    12ca:	5b                   	pop    rbx
-    12cb:	0f 77                	emms   
-    12cd:	c3                   	ret    
+    12ae:	c5 fd 6f ca          	vmovdqa ymm1,ymm2
+    12b2:	c5 fd 6f d3          	vmovdqa ymm2,ymm3
+    12b6:	c5 fd 6f d8          	vmovdqa ymm3,ymm0
+    12ba:	c5 fd 6f c1          	vmovdqa ymm0,ymm1
+    12be:	83 e8 01             	sub    eax,0x1
+    12c1:	0f 85 09 ee ff ff    	jne    0xd0
+    12c7:	66 90                	xchg   ax,ax
+    12c9:	66 90                	xchg   ax,ax
+    12cb:	66 90                	xchg   ax,ax
+    12cd:	66 90                	xchg   ax,ax
+    12cf:	66 90                	xchg   ax,ax
+    12d1:	66 90                	xchg   ax,ax
+    12d3:	66 90                	xchg   ax,ax
+    12d5:	66 90                	xchg   ax,ax
+    12d7:	48 83 c4 40          	add    rsp,0x40
+    12db:	41 59                	pop    r9
+    12dd:	41 58                	pop    r8
+    12df:	5f                   	pop    rdi
+    12e0:	5e                   	pop    rsi
+    12e1:	5d                   	pop    rbp
+    12e2:	5b                   	pop    rbx
+    12e3:	0f 77                	emms   
+    12e5:	c3                   	ret    

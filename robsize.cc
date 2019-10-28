@@ -72,6 +72,7 @@ const test_info tests[] = {
     {       0, "mov regN, 1" },
     {       0, "loads: mov ebx, [rsp] (LB size)" },
     { NO_COMP, "stores: mov [rsp - 8], ebx (SB size)" },
+    {       0, "loads: mov ebx, [r9 + N] (LB size)" },
 };
 
 const int test_count = sizeof(tests) / sizeof(tests[0]);
@@ -151,6 +152,7 @@ int add_filler(unsigned char* ibuf, int instr, int i)
         case 31:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x1); break;	// mov (ebx, ebp, esi, edi), 1
         case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
         case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
+        case 34:  ADD_BYTE(0x43); ADD_BYTE(0x0F); ADD_BYTE(0xB6); ADD_BYTE(0x5C); ADD_BYTE(0x01); ADD_BYTE(i & unroll); break;
     }
 
     return pbuf;
@@ -181,6 +183,13 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_BYTE(0x55);		// push ebp
     ADD_BYTE(0x56);		// push esi
     ADD_BYTE(0x57);		// push edi
+    ADD_WORD(0x5041);   // push r8
+    ADD_WORD(0x5141);   // push r9
+
+    ADD_BYTE(0x48); ADD_BYTE(0x83); ADD_BYTE(0xEC); ADD_BYTE(0x40); // sub rsp, 64
+
+    ADD_BYTE(0x45); ADD_BYTE(0x31); ADD_BYTE(0xC0); // xor r8d
+    ADD_BYTE(0x4C); ADD_BYTE(0x8D); ADD_BYTE(0x0C); ADD_BYTE(0x24);  // lea r9
 
     if (sizeof(void*) == 4) {
         ADD_BYTE(0xb9);		// mov ecx, p1;
@@ -301,6 +310,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
         }
     }
 
+    ADD_BYTE(0x4D); ADD_BYTE(0x01); ADD_BYTE(0xC1);  // add r9, r8 (r9 += 0)
     ADD_WORD(0xe883); // sub eax
     ADD_BYTE(0x1);		//    1
     ADD_WORD(0x850f); // jne loop_start
@@ -311,6 +321,10 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_DWORD(0x90669066);		// nop padding
     ADD_DWORD(0x90669066);		// nop padding
 
+    ADD_BYTE(0x48); ADD_BYTE(0x83); ADD_BYTE(0xC4); ADD_BYTE(0x40); // add rsp, 64
+
+    ADD_WORD(0x5941);   // pop r9
+    ADD_WORD(0x5841);   // pop r8
     ADD_BYTE(0x5f);		// pop edi
     ADD_BYTE(0x5e);		// pop esi
     ADD_BYTE(0x5d);		// pop ebp

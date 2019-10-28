@@ -17,46 +17,44 @@ Disassembly of section .data:
   11:	55                   	push   rbp
   12:	56                   	push   rsi
   13:	57                   	push   rdi
-  14:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  1b:	7f 00 00 
-  1e:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  25:	7f 00 00 
-  28:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  2f:	00 00 00 
-  32:	48 83 eb 00          	sub    rbx,0x0
-  36:	48 83 ed 00          	sub    rbp,0x0
-  3a:	48 83 ee 00          	sub    rsi,0x0
-  3e:	48 83 ef 00          	sub    rdi,0x0
-  42:	49 83 e8 00          	sub    r8,0x0
-  46:	49 83 e9 00          	sub    r9,0x0
-  4a:	49 83 ea 00          	sub    r10,0x0
-  4e:	49 83 eb 00          	sub    r11,0x0
-  52:	49 83 ec 00          	sub    r12,0x0
-  56:	49 83 ed 00          	sub    r13,0x0
-  5a:	49 83 ee 00          	sub    r14,0x0
-  5e:	49 83 ef 00          	sub    r15,0x0
-  62:	90                   	nop
-  63:	90                   	nop
-  64:	90                   	nop
-  65:	90                   	nop
-  66:	90                   	nop
-  67:	90                   	nop
-  68:	90                   	nop
-  69:	90                   	nop
-  6a:	90                   	nop
-  6b:	90                   	nop
-  6c:	90                   	nop
-  6d:	90                   	nop
-  6e:	90                   	nop
-  6f:	90                   	nop
-  70:	39 db                	cmp    ebx,ebx
-  72:	39 ed                	cmp    ebp,ebp
-  74:	39 f6                	cmp    esi,esi
-  76:	39 ff                	cmp    edi,edi
-  78:	39 db                	cmp    ebx,ebx
-  7a:	39 ed                	cmp    ebp,ebp
-  7c:	39 f6                	cmp    esi,esi
-  7e:	39 ff                	cmp    edi,edi
+  14:	41 50                	push   r8
+  16:	41 51                	push   r9
+  18:	48 83 ec 40          	sub    rsp,0x40
+  1c:	45 31 c0             	xor    r8d,r8d
+  1f:	4c 8d 0c 24          	lea    r9,[rsp]
+  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2a:	7f 00 00 
+  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  34:	7f 00 00 
+  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  3e:	00 00 00 
+  41:	48 83 eb 00          	sub    rbx,0x0
+  45:	48 83 ed 00          	sub    rbp,0x0
+  49:	48 83 ee 00          	sub    rsi,0x0
+  4d:	48 83 ef 00          	sub    rdi,0x0
+  51:	49 83 e8 00          	sub    r8,0x0
+  55:	49 83 e9 00          	sub    r9,0x0
+  59:	49 83 ea 00          	sub    r10,0x0
+  5d:	49 83 eb 00          	sub    r11,0x0
+  61:	49 83 ec 00          	sub    r12,0x0
+  65:	49 83 ed 00          	sub    r13,0x0
+  69:	49 83 ee 00          	sub    r14,0x0
+  6d:	49 83 ef 00          	sub    r15,0x0
+  71:	90                   	nop
+  72:	90                   	nop
+  73:	90                   	nop
+  74:	90                   	nop
+  75:	90                   	nop
+  76:	90                   	nop
+  77:	90                   	nop
+  78:	90                   	nop
+  79:	90                   	nop
+  7a:	90                   	nop
+  7b:	90                   	nop
+  7c:	90                   	nop
+  7d:	90                   	nop
+  7e:	90                   	nop
+  7f:	90                   	nop
   80:	39 db                	cmp    ebx,ebx
   82:	39 ed                	cmp    ebp,ebp
   84:	39 f6                	cmp    esi,esi
@@ -65,15 +63,15 @@ Disassembly of section .data:
   8a:	39 ed                	cmp    ebp,ebp
   8c:	39 f6                	cmp    esi,esi
   8e:	39 ff                	cmp    edi,edi
-  90:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-  93:	39 db                	cmp    ebx,ebx
-  95:	39 ed                	cmp    ebp,ebp
-  97:	39 f6                	cmp    esi,esi
-  99:	39 ff                	cmp    edi,edi
-  9b:	39 db                	cmp    ebx,ebx
-  9d:	39 ed                	cmp    ebp,ebp
-  9f:	39 f6                	cmp    esi,esi
-  a1:	39 ff                	cmp    edi,edi
+  90:	39 db                	cmp    ebx,ebx
+  92:	39 ed                	cmp    ebp,ebp
+  94:	39 f6                	cmp    esi,esi
+  96:	39 ff                	cmp    edi,edi
+  98:	39 db                	cmp    ebx,ebx
+  9a:	39 ed                	cmp    ebp,ebp
+  9c:	39 f6                	cmp    esi,esi
+  9e:	39 ff                	cmp    edi,edi
+  a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
   a3:	39 db                	cmp    ebx,ebx
   a5:	39 ed                	cmp    ebp,ebp
   a7:	39 f6                	cmp    esi,esi
@@ -97,15 +95,15 @@ Disassembly of section .data:
   cb:	39 db                	cmp    ebx,ebx
   cd:	39 ed                	cmp    ebp,ebp
   cf:	39 f6                	cmp    esi,esi
-  d1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-  d4:	39 db                	cmp    ebx,ebx
-  d6:	39 ed                	cmp    ebp,ebp
-  d8:	39 f6                	cmp    esi,esi
-  da:	39 ff                	cmp    edi,edi
-  dc:	39 db                	cmp    ebx,ebx
-  de:	39 ed                	cmp    ebp,ebp
-  e0:	39 f6                	cmp    esi,esi
-  e2:	39 ff                	cmp    edi,edi
+  d1:	39 ff                	cmp    edi,edi
+  d3:	39 db                	cmp    ebx,ebx
+  d5:	39 ed                	cmp    ebp,ebp
+  d7:	39 f6                	cmp    esi,esi
+  d9:	39 ff                	cmp    edi,edi
+  db:	39 db                	cmp    ebx,ebx
+  dd:	39 ed                	cmp    ebp,ebp
+  df:	39 f6                	cmp    esi,esi
+  e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e4:	39 db                	cmp    ebx,ebx
   e6:	39 ed                	cmp    ebp,ebp
   e8:	39 f6                	cmp    esi,esi
@@ -113,14 +111,14 @@ Disassembly of section .data:
   ec:	39 db                	cmp    ebx,ebx
   ee:	39 ed                	cmp    ebp,ebp
   f0:	39 f6                	cmp    esi,esi
-  f2:	39 db                	cmp    ebx,ebx
-  f4:	39 ed                	cmp    ebp,ebp
-  f6:	39 f6                	cmp    esi,esi
-  f8:	39 ff                	cmp    edi,edi
-  fa:	39 db                	cmp    ebx,ebx
-  fc:	39 ed                	cmp    ebp,ebp
-  fe:	39 f6                	cmp    esi,esi
- 100:	39 ff                	cmp    edi,edi
+  f2:	39 ff                	cmp    edi,edi
+  f4:	39 db                	cmp    ebx,ebx
+  f6:	39 ed                	cmp    ebp,ebp
+  f8:	39 f6                	cmp    esi,esi
+  fa:	39 ff                	cmp    edi,edi
+  fc:	39 db                	cmp    ebx,ebx
+  fe:	39 ed                	cmp    ebp,ebp
+ 100:	39 f6                	cmp    esi,esi
  102:	39 db                	cmp    ebx,ebx
  104:	39 ed                	cmp    ebp,ebp
  106:	39 f6                	cmp    esi,esi
@@ -129,15 +127,15 @@ Disassembly of section .data:
  10c:	39 ed                	cmp    ebp,ebp
  10e:	39 f6                	cmp    esi,esi
  110:	39 ff                	cmp    edi,edi
- 112:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 115:	39 db                	cmp    ebx,ebx
- 117:	39 ed                	cmp    ebp,ebp
- 119:	39 f6                	cmp    esi,esi
- 11b:	39 ff                	cmp    edi,edi
- 11d:	39 db                	cmp    ebx,ebx
- 11f:	39 ed                	cmp    ebp,ebp
- 121:	39 f6                	cmp    esi,esi
- 123:	39 ff                	cmp    edi,edi
+ 112:	39 db                	cmp    ebx,ebx
+ 114:	39 ed                	cmp    ebp,ebp
+ 116:	39 f6                	cmp    esi,esi
+ 118:	39 ff                	cmp    edi,edi
+ 11a:	39 db                	cmp    ebx,ebx
+ 11c:	39 ed                	cmp    ebp,ebp
+ 11e:	39 f6                	cmp    esi,esi
+ 120:	39 ff                	cmp    edi,edi
+ 122:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  125:	39 db                	cmp    ebx,ebx
  127:	39 ed                	cmp    ebp,ebp
  129:	39 f6                	cmp    esi,esi
@@ -161,15 +159,15 @@ Disassembly of section .data:
  14d:	39 db                	cmp    ebx,ebx
  14f:	39 ed                	cmp    ebp,ebp
  151:	39 f6                	cmp    esi,esi
- 153:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 156:	39 db                	cmp    ebx,ebx
- 158:	39 ed                	cmp    ebp,ebp
- 15a:	39 f6                	cmp    esi,esi
- 15c:	39 ff                	cmp    edi,edi
- 15e:	39 db                	cmp    ebx,ebx
- 160:	39 ed                	cmp    ebp,ebp
- 162:	39 f6                	cmp    esi,esi
- 164:	39 ff                	cmp    edi,edi
+ 153:	39 ff                	cmp    edi,edi
+ 155:	39 db                	cmp    ebx,ebx
+ 157:	39 ed                	cmp    ebp,ebp
+ 159:	39 f6                	cmp    esi,esi
+ 15b:	39 ff                	cmp    edi,edi
+ 15d:	39 db                	cmp    ebx,ebx
+ 15f:	39 ed                	cmp    ebp,ebp
+ 161:	39 f6                	cmp    esi,esi
+ 163:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  166:	39 db                	cmp    ebx,ebx
  168:	39 ed                	cmp    ebp,ebp
  16a:	39 f6                	cmp    esi,esi
@@ -177,14 +175,14 @@ Disassembly of section .data:
  16e:	39 db                	cmp    ebx,ebx
  170:	39 ed                	cmp    ebp,ebp
  172:	39 f6                	cmp    esi,esi
- 174:	39 db                	cmp    ebx,ebx
- 176:	39 ed                	cmp    ebp,ebp
- 178:	39 f6                	cmp    esi,esi
- 17a:	39 ff                	cmp    edi,edi
- 17c:	39 db                	cmp    ebx,ebx
- 17e:	39 ed                	cmp    ebp,ebp
- 180:	39 f6                	cmp    esi,esi
- 182:	39 ff                	cmp    edi,edi
+ 174:	39 ff                	cmp    edi,edi
+ 176:	39 db                	cmp    ebx,ebx
+ 178:	39 ed                	cmp    ebp,ebp
+ 17a:	39 f6                	cmp    esi,esi
+ 17c:	39 ff                	cmp    edi,edi
+ 17e:	39 db                	cmp    ebx,ebx
+ 180:	39 ed                	cmp    ebp,ebp
+ 182:	39 f6                	cmp    esi,esi
  184:	39 db                	cmp    ebx,ebx
  186:	39 ed                	cmp    ebp,ebp
  188:	39 f6                	cmp    esi,esi
@@ -193,15 +191,15 @@ Disassembly of section .data:
  18e:	39 ed                	cmp    ebp,ebp
  190:	39 f6                	cmp    esi,esi
  192:	39 ff                	cmp    edi,edi
- 194:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 197:	39 db                	cmp    ebx,ebx
- 199:	39 ed                	cmp    ebp,ebp
- 19b:	39 f6                	cmp    esi,esi
- 19d:	39 ff                	cmp    edi,edi
- 19f:	39 db                	cmp    ebx,ebx
- 1a1:	39 ed                	cmp    ebp,ebp
- 1a3:	39 f6                	cmp    esi,esi
- 1a5:	39 ff                	cmp    edi,edi
+ 194:	39 db                	cmp    ebx,ebx
+ 196:	39 ed                	cmp    ebp,ebp
+ 198:	39 f6                	cmp    esi,esi
+ 19a:	39 ff                	cmp    edi,edi
+ 19c:	39 db                	cmp    ebx,ebx
+ 19e:	39 ed                	cmp    ebp,ebp
+ 1a0:	39 f6                	cmp    esi,esi
+ 1a2:	39 ff                	cmp    edi,edi
+ 1a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  1a7:	39 db                	cmp    ebx,ebx
  1a9:	39 ed                	cmp    ebp,ebp
  1ab:	39 f6                	cmp    esi,esi
@@ -225,15 +223,15 @@ Disassembly of section .data:
  1cf:	39 db                	cmp    ebx,ebx
  1d1:	39 ed                	cmp    ebp,ebp
  1d3:	39 f6                	cmp    esi,esi
- 1d5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 1d8:	39 db                	cmp    ebx,ebx
- 1da:	39 ed                	cmp    ebp,ebp
- 1dc:	39 f6                	cmp    esi,esi
- 1de:	39 ff                	cmp    edi,edi
- 1e0:	39 db                	cmp    ebx,ebx
- 1e2:	39 ed                	cmp    ebp,ebp
- 1e4:	39 f6                	cmp    esi,esi
- 1e6:	39 ff                	cmp    edi,edi
+ 1d5:	39 ff                	cmp    edi,edi
+ 1d7:	39 db                	cmp    ebx,ebx
+ 1d9:	39 ed                	cmp    ebp,ebp
+ 1db:	39 f6                	cmp    esi,esi
+ 1dd:	39 ff                	cmp    edi,edi
+ 1df:	39 db                	cmp    ebx,ebx
+ 1e1:	39 ed                	cmp    ebp,ebp
+ 1e3:	39 f6                	cmp    esi,esi
+ 1e5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1e8:	39 db                	cmp    ebx,ebx
  1ea:	39 ed                	cmp    ebp,ebp
  1ec:	39 f6                	cmp    esi,esi
@@ -241,14 +239,14 @@ Disassembly of section .data:
  1f0:	39 db                	cmp    ebx,ebx
  1f2:	39 ed                	cmp    ebp,ebp
  1f4:	39 f6                	cmp    esi,esi
- 1f6:	39 db                	cmp    ebx,ebx
- 1f8:	39 ed                	cmp    ebp,ebp
- 1fa:	39 f6                	cmp    esi,esi
- 1fc:	39 ff                	cmp    edi,edi
- 1fe:	39 db                	cmp    ebx,ebx
- 200:	39 ed                	cmp    ebp,ebp
- 202:	39 f6                	cmp    esi,esi
- 204:	39 ff                	cmp    edi,edi
+ 1f6:	39 ff                	cmp    edi,edi
+ 1f8:	39 db                	cmp    ebx,ebx
+ 1fa:	39 ed                	cmp    ebp,ebp
+ 1fc:	39 f6                	cmp    esi,esi
+ 1fe:	39 ff                	cmp    edi,edi
+ 200:	39 db                	cmp    ebx,ebx
+ 202:	39 ed                	cmp    ebp,ebp
+ 204:	39 f6                	cmp    esi,esi
  206:	39 db                	cmp    ebx,ebx
  208:	39 ed                	cmp    ebp,ebp
  20a:	39 f6                	cmp    esi,esi
@@ -257,15 +255,15 @@ Disassembly of section .data:
  210:	39 ed                	cmp    ebp,ebp
  212:	39 f6                	cmp    esi,esi
  214:	39 ff                	cmp    edi,edi
- 216:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 219:	39 db                	cmp    ebx,ebx
- 21b:	39 ed                	cmp    ebp,ebp
- 21d:	39 f6                	cmp    esi,esi
- 21f:	39 ff                	cmp    edi,edi
- 221:	39 db                	cmp    ebx,ebx
- 223:	39 ed                	cmp    ebp,ebp
- 225:	39 f6                	cmp    esi,esi
- 227:	39 ff                	cmp    edi,edi
+ 216:	39 db                	cmp    ebx,ebx
+ 218:	39 ed                	cmp    ebp,ebp
+ 21a:	39 f6                	cmp    esi,esi
+ 21c:	39 ff                	cmp    edi,edi
+ 21e:	39 db                	cmp    ebx,ebx
+ 220:	39 ed                	cmp    ebp,ebp
+ 222:	39 f6                	cmp    esi,esi
+ 224:	39 ff                	cmp    edi,edi
+ 226:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  229:	39 db                	cmp    ebx,ebx
  22b:	39 ed                	cmp    ebp,ebp
  22d:	39 f6                	cmp    esi,esi
@@ -289,15 +287,15 @@ Disassembly of section .data:
  251:	39 db                	cmp    ebx,ebx
  253:	39 ed                	cmp    ebp,ebp
  255:	39 f6                	cmp    esi,esi
- 257:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 25a:	39 db                	cmp    ebx,ebx
- 25c:	39 ed                	cmp    ebp,ebp
- 25e:	39 f6                	cmp    esi,esi
- 260:	39 ff                	cmp    edi,edi
- 262:	39 db                	cmp    ebx,ebx
- 264:	39 ed                	cmp    ebp,ebp
- 266:	39 f6                	cmp    esi,esi
- 268:	39 ff                	cmp    edi,edi
+ 257:	39 ff                	cmp    edi,edi
+ 259:	39 db                	cmp    ebx,ebx
+ 25b:	39 ed                	cmp    ebp,ebp
+ 25d:	39 f6                	cmp    esi,esi
+ 25f:	39 ff                	cmp    edi,edi
+ 261:	39 db                	cmp    ebx,ebx
+ 263:	39 ed                	cmp    ebp,ebp
+ 265:	39 f6                	cmp    esi,esi
+ 267:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  26a:	39 db                	cmp    ebx,ebx
  26c:	39 ed                	cmp    ebp,ebp
  26e:	39 f6                	cmp    esi,esi
@@ -305,14 +303,14 @@ Disassembly of section .data:
  272:	39 db                	cmp    ebx,ebx
  274:	39 ed                	cmp    ebp,ebp
  276:	39 f6                	cmp    esi,esi
- 278:	39 db                	cmp    ebx,ebx
- 27a:	39 ed                	cmp    ebp,ebp
- 27c:	39 f6                	cmp    esi,esi
- 27e:	39 ff                	cmp    edi,edi
- 280:	39 db                	cmp    ebx,ebx
- 282:	39 ed                	cmp    ebp,ebp
- 284:	39 f6                	cmp    esi,esi
- 286:	39 ff                	cmp    edi,edi
+ 278:	39 ff                	cmp    edi,edi
+ 27a:	39 db                	cmp    ebx,ebx
+ 27c:	39 ed                	cmp    ebp,ebp
+ 27e:	39 f6                	cmp    esi,esi
+ 280:	39 ff                	cmp    edi,edi
+ 282:	39 db                	cmp    ebx,ebx
+ 284:	39 ed                	cmp    ebp,ebp
+ 286:	39 f6                	cmp    esi,esi
  288:	39 db                	cmp    ebx,ebx
  28a:	39 ed                	cmp    ebp,ebp
  28c:	39 f6                	cmp    esi,esi
@@ -321,15 +319,15 @@ Disassembly of section .data:
  292:	39 ed                	cmp    ebp,ebp
  294:	39 f6                	cmp    esi,esi
  296:	39 ff                	cmp    edi,edi
- 298:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 29b:	39 db                	cmp    ebx,ebx
- 29d:	39 ed                	cmp    ebp,ebp
- 29f:	39 f6                	cmp    esi,esi
- 2a1:	39 ff                	cmp    edi,edi
- 2a3:	39 db                	cmp    ebx,ebx
- 2a5:	39 ed                	cmp    ebp,ebp
- 2a7:	39 f6                	cmp    esi,esi
- 2a9:	39 ff                	cmp    edi,edi
+ 298:	39 db                	cmp    ebx,ebx
+ 29a:	39 ed                	cmp    ebp,ebp
+ 29c:	39 f6                	cmp    esi,esi
+ 29e:	39 ff                	cmp    edi,edi
+ 2a0:	39 db                	cmp    ebx,ebx
+ 2a2:	39 ed                	cmp    ebp,ebp
+ 2a4:	39 f6                	cmp    esi,esi
+ 2a6:	39 ff                	cmp    edi,edi
+ 2a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  2ab:	39 db                	cmp    ebx,ebx
  2ad:	39 ed                	cmp    ebp,ebp
  2af:	39 f6                	cmp    esi,esi
@@ -353,15 +351,15 @@ Disassembly of section .data:
  2d3:	39 db                	cmp    ebx,ebx
  2d5:	39 ed                	cmp    ebp,ebp
  2d7:	39 f6                	cmp    esi,esi
- 2d9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 2dc:	39 db                	cmp    ebx,ebx
- 2de:	39 ed                	cmp    ebp,ebp
- 2e0:	39 f6                	cmp    esi,esi
- 2e2:	39 ff                	cmp    edi,edi
- 2e4:	39 db                	cmp    ebx,ebx
- 2e6:	39 ed                	cmp    ebp,ebp
- 2e8:	39 f6                	cmp    esi,esi
- 2ea:	39 ff                	cmp    edi,edi
+ 2d9:	39 ff                	cmp    edi,edi
+ 2db:	39 db                	cmp    ebx,ebx
+ 2dd:	39 ed                	cmp    ebp,ebp
+ 2df:	39 f6                	cmp    esi,esi
+ 2e1:	39 ff                	cmp    edi,edi
+ 2e3:	39 db                	cmp    ebx,ebx
+ 2e5:	39 ed                	cmp    ebp,ebp
+ 2e7:	39 f6                	cmp    esi,esi
+ 2e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  2ec:	39 db                	cmp    ebx,ebx
  2ee:	39 ed                	cmp    ebp,ebp
  2f0:	39 f6                	cmp    esi,esi
@@ -369,14 +367,14 @@ Disassembly of section .data:
  2f4:	39 db                	cmp    ebx,ebx
  2f6:	39 ed                	cmp    ebp,ebp
  2f8:	39 f6                	cmp    esi,esi
- 2fa:	39 db                	cmp    ebx,ebx
- 2fc:	39 ed                	cmp    ebp,ebp
- 2fe:	39 f6                	cmp    esi,esi
- 300:	39 ff                	cmp    edi,edi
- 302:	39 db                	cmp    ebx,ebx
- 304:	39 ed                	cmp    ebp,ebp
- 306:	39 f6                	cmp    esi,esi
- 308:	39 ff                	cmp    edi,edi
+ 2fa:	39 ff                	cmp    edi,edi
+ 2fc:	39 db                	cmp    ebx,ebx
+ 2fe:	39 ed                	cmp    ebp,ebp
+ 300:	39 f6                	cmp    esi,esi
+ 302:	39 ff                	cmp    edi,edi
+ 304:	39 db                	cmp    ebx,ebx
+ 306:	39 ed                	cmp    ebp,ebp
+ 308:	39 f6                	cmp    esi,esi
  30a:	39 db                	cmp    ebx,ebx
  30c:	39 ed                	cmp    ebp,ebp
  30e:	39 f6                	cmp    esi,esi
@@ -385,15 +383,15 @@ Disassembly of section .data:
  314:	39 ed                	cmp    ebp,ebp
  316:	39 f6                	cmp    esi,esi
  318:	39 ff                	cmp    edi,edi
- 31a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 31d:	39 db                	cmp    ebx,ebx
- 31f:	39 ed                	cmp    ebp,ebp
- 321:	39 f6                	cmp    esi,esi
- 323:	39 ff                	cmp    edi,edi
- 325:	39 db                	cmp    ebx,ebx
- 327:	39 ed                	cmp    ebp,ebp
- 329:	39 f6                	cmp    esi,esi
- 32b:	39 ff                	cmp    edi,edi
+ 31a:	39 db                	cmp    ebx,ebx
+ 31c:	39 ed                	cmp    ebp,ebp
+ 31e:	39 f6                	cmp    esi,esi
+ 320:	39 ff                	cmp    edi,edi
+ 322:	39 db                	cmp    ebx,ebx
+ 324:	39 ed                	cmp    ebp,ebp
+ 326:	39 f6                	cmp    esi,esi
+ 328:	39 ff                	cmp    edi,edi
+ 32a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  32d:	39 db                	cmp    ebx,ebx
  32f:	39 ed                	cmp    ebp,ebp
  331:	39 f6                	cmp    esi,esi
@@ -417,15 +415,15 @@ Disassembly of section .data:
  355:	39 db                	cmp    ebx,ebx
  357:	39 ed                	cmp    ebp,ebp
  359:	39 f6                	cmp    esi,esi
- 35b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 35e:	39 db                	cmp    ebx,ebx
- 360:	39 ed                	cmp    ebp,ebp
- 362:	39 f6                	cmp    esi,esi
- 364:	39 ff                	cmp    edi,edi
- 366:	39 db                	cmp    ebx,ebx
- 368:	39 ed                	cmp    ebp,ebp
- 36a:	39 f6                	cmp    esi,esi
- 36c:	39 ff                	cmp    edi,edi
+ 35b:	39 ff                	cmp    edi,edi
+ 35d:	39 db                	cmp    ebx,ebx
+ 35f:	39 ed                	cmp    ebp,ebp
+ 361:	39 f6                	cmp    esi,esi
+ 363:	39 ff                	cmp    edi,edi
+ 365:	39 db                	cmp    ebx,ebx
+ 367:	39 ed                	cmp    ebp,ebp
+ 369:	39 f6                	cmp    esi,esi
+ 36b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  36e:	39 db                	cmp    ebx,ebx
  370:	39 ed                	cmp    ebp,ebp
  372:	39 f6                	cmp    esi,esi
@@ -433,14 +431,14 @@ Disassembly of section .data:
  376:	39 db                	cmp    ebx,ebx
  378:	39 ed                	cmp    ebp,ebp
  37a:	39 f6                	cmp    esi,esi
- 37c:	39 db                	cmp    ebx,ebx
- 37e:	39 ed                	cmp    ebp,ebp
- 380:	39 f6                	cmp    esi,esi
- 382:	39 ff                	cmp    edi,edi
- 384:	39 db                	cmp    ebx,ebx
- 386:	39 ed                	cmp    ebp,ebp
- 388:	39 f6                	cmp    esi,esi
- 38a:	39 ff                	cmp    edi,edi
+ 37c:	39 ff                	cmp    edi,edi
+ 37e:	39 db                	cmp    ebx,ebx
+ 380:	39 ed                	cmp    ebp,ebp
+ 382:	39 f6                	cmp    esi,esi
+ 384:	39 ff                	cmp    edi,edi
+ 386:	39 db                	cmp    ebx,ebx
+ 388:	39 ed                	cmp    ebp,ebp
+ 38a:	39 f6                	cmp    esi,esi
  38c:	39 db                	cmp    ebx,ebx
  38e:	39 ed                	cmp    ebp,ebp
  390:	39 f6                	cmp    esi,esi
@@ -449,15 +447,15 @@ Disassembly of section .data:
  396:	39 ed                	cmp    ebp,ebp
  398:	39 f6                	cmp    esi,esi
  39a:	39 ff                	cmp    edi,edi
- 39c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 39f:	39 db                	cmp    ebx,ebx
- 3a1:	39 ed                	cmp    ebp,ebp
- 3a3:	39 f6                	cmp    esi,esi
- 3a5:	39 ff                	cmp    edi,edi
- 3a7:	39 db                	cmp    ebx,ebx
- 3a9:	39 ed                	cmp    ebp,ebp
- 3ab:	39 f6                	cmp    esi,esi
- 3ad:	39 ff                	cmp    edi,edi
+ 39c:	39 db                	cmp    ebx,ebx
+ 39e:	39 ed                	cmp    ebp,ebp
+ 3a0:	39 f6                	cmp    esi,esi
+ 3a2:	39 ff                	cmp    edi,edi
+ 3a4:	39 db                	cmp    ebx,ebx
+ 3a6:	39 ed                	cmp    ebp,ebp
+ 3a8:	39 f6                	cmp    esi,esi
+ 3aa:	39 ff                	cmp    edi,edi
+ 3ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  3af:	39 db                	cmp    ebx,ebx
  3b1:	39 ed                	cmp    ebp,ebp
  3b3:	39 f6                	cmp    esi,esi
@@ -481,15 +479,15 @@ Disassembly of section .data:
  3d7:	39 db                	cmp    ebx,ebx
  3d9:	39 ed                	cmp    ebp,ebp
  3db:	39 f6                	cmp    esi,esi
- 3dd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 3e0:	39 db                	cmp    ebx,ebx
- 3e2:	39 ed                	cmp    ebp,ebp
- 3e4:	39 f6                	cmp    esi,esi
- 3e6:	39 ff                	cmp    edi,edi
- 3e8:	39 db                	cmp    ebx,ebx
- 3ea:	39 ed                	cmp    ebp,ebp
- 3ec:	39 f6                	cmp    esi,esi
- 3ee:	39 ff                	cmp    edi,edi
+ 3dd:	39 ff                	cmp    edi,edi
+ 3df:	39 db                	cmp    ebx,ebx
+ 3e1:	39 ed                	cmp    ebp,ebp
+ 3e3:	39 f6                	cmp    esi,esi
+ 3e5:	39 ff                	cmp    edi,edi
+ 3e7:	39 db                	cmp    ebx,ebx
+ 3e9:	39 ed                	cmp    ebp,ebp
+ 3eb:	39 f6                	cmp    esi,esi
+ 3ed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  3f0:	39 db                	cmp    ebx,ebx
  3f2:	39 ed                	cmp    ebp,ebp
  3f4:	39 f6                	cmp    esi,esi
@@ -497,14 +495,14 @@ Disassembly of section .data:
  3f8:	39 db                	cmp    ebx,ebx
  3fa:	39 ed                	cmp    ebp,ebp
  3fc:	39 f6                	cmp    esi,esi
- 3fe:	39 db                	cmp    ebx,ebx
- 400:	39 ed                	cmp    ebp,ebp
- 402:	39 f6                	cmp    esi,esi
- 404:	39 ff                	cmp    edi,edi
- 406:	39 db                	cmp    ebx,ebx
- 408:	39 ed                	cmp    ebp,ebp
- 40a:	39 f6                	cmp    esi,esi
- 40c:	39 ff                	cmp    edi,edi
+ 3fe:	39 ff                	cmp    edi,edi
+ 400:	39 db                	cmp    ebx,ebx
+ 402:	39 ed                	cmp    ebp,ebp
+ 404:	39 f6                	cmp    esi,esi
+ 406:	39 ff                	cmp    edi,edi
+ 408:	39 db                	cmp    ebx,ebx
+ 40a:	39 ed                	cmp    ebp,ebp
+ 40c:	39 f6                	cmp    esi,esi
  40e:	39 db                	cmp    ebx,ebx
  410:	39 ed                	cmp    ebp,ebp
  412:	39 f6                	cmp    esi,esi
@@ -513,15 +511,15 @@ Disassembly of section .data:
  418:	39 ed                	cmp    ebp,ebp
  41a:	39 f6                	cmp    esi,esi
  41c:	39 ff                	cmp    edi,edi
- 41e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 421:	39 db                	cmp    ebx,ebx
- 423:	39 ed                	cmp    ebp,ebp
- 425:	39 f6                	cmp    esi,esi
- 427:	39 ff                	cmp    edi,edi
- 429:	39 db                	cmp    ebx,ebx
- 42b:	39 ed                	cmp    ebp,ebp
- 42d:	39 f6                	cmp    esi,esi
- 42f:	39 ff                	cmp    edi,edi
+ 41e:	39 db                	cmp    ebx,ebx
+ 420:	39 ed                	cmp    ebp,ebp
+ 422:	39 f6                	cmp    esi,esi
+ 424:	39 ff                	cmp    edi,edi
+ 426:	39 db                	cmp    ebx,ebx
+ 428:	39 ed                	cmp    ebp,ebp
+ 42a:	39 f6                	cmp    esi,esi
+ 42c:	39 ff                	cmp    edi,edi
+ 42e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  431:	39 db                	cmp    ebx,ebx
  433:	39 ed                	cmp    ebp,ebp
  435:	39 f6                	cmp    esi,esi
@@ -545,15 +543,15 @@ Disassembly of section .data:
  459:	39 db                	cmp    ebx,ebx
  45b:	39 ed                	cmp    ebp,ebp
  45d:	39 f6                	cmp    esi,esi
- 45f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 462:	39 db                	cmp    ebx,ebx
- 464:	39 ed                	cmp    ebp,ebp
- 466:	39 f6                	cmp    esi,esi
- 468:	39 ff                	cmp    edi,edi
- 46a:	39 db                	cmp    ebx,ebx
- 46c:	39 ed                	cmp    ebp,ebp
- 46e:	39 f6                	cmp    esi,esi
- 470:	39 ff                	cmp    edi,edi
+ 45f:	39 ff                	cmp    edi,edi
+ 461:	39 db                	cmp    ebx,ebx
+ 463:	39 ed                	cmp    ebp,ebp
+ 465:	39 f6                	cmp    esi,esi
+ 467:	39 ff                	cmp    edi,edi
+ 469:	39 db                	cmp    ebx,ebx
+ 46b:	39 ed                	cmp    ebp,ebp
+ 46d:	39 f6                	cmp    esi,esi
+ 46f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  472:	39 db                	cmp    ebx,ebx
  474:	39 ed                	cmp    ebp,ebp
  476:	39 f6                	cmp    esi,esi
@@ -561,14 +559,14 @@ Disassembly of section .data:
  47a:	39 db                	cmp    ebx,ebx
  47c:	39 ed                	cmp    ebp,ebp
  47e:	39 f6                	cmp    esi,esi
- 480:	39 db                	cmp    ebx,ebx
- 482:	39 ed                	cmp    ebp,ebp
- 484:	39 f6                	cmp    esi,esi
- 486:	39 ff                	cmp    edi,edi
- 488:	39 db                	cmp    ebx,ebx
- 48a:	39 ed                	cmp    ebp,ebp
- 48c:	39 f6                	cmp    esi,esi
- 48e:	39 ff                	cmp    edi,edi
+ 480:	39 ff                	cmp    edi,edi
+ 482:	39 db                	cmp    ebx,ebx
+ 484:	39 ed                	cmp    ebp,ebp
+ 486:	39 f6                	cmp    esi,esi
+ 488:	39 ff                	cmp    edi,edi
+ 48a:	39 db                	cmp    ebx,ebx
+ 48c:	39 ed                	cmp    ebp,ebp
+ 48e:	39 f6                	cmp    esi,esi
  490:	39 db                	cmp    ebx,ebx
  492:	39 ed                	cmp    ebp,ebp
  494:	39 f6                	cmp    esi,esi
@@ -577,15 +575,15 @@ Disassembly of section .data:
  49a:	39 ed                	cmp    ebp,ebp
  49c:	39 f6                	cmp    esi,esi
  49e:	39 ff                	cmp    edi,edi
- 4a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 4a3:	39 db                	cmp    ebx,ebx
- 4a5:	39 ed                	cmp    ebp,ebp
- 4a7:	39 f6                	cmp    esi,esi
- 4a9:	39 ff                	cmp    edi,edi
- 4ab:	39 db                	cmp    ebx,ebx
- 4ad:	39 ed                	cmp    ebp,ebp
- 4af:	39 f6                	cmp    esi,esi
- 4b1:	39 ff                	cmp    edi,edi
+ 4a0:	39 db                	cmp    ebx,ebx
+ 4a2:	39 ed                	cmp    ebp,ebp
+ 4a4:	39 f6                	cmp    esi,esi
+ 4a6:	39 ff                	cmp    edi,edi
+ 4a8:	39 db                	cmp    ebx,ebx
+ 4aa:	39 ed                	cmp    ebp,ebp
+ 4ac:	39 f6                	cmp    esi,esi
+ 4ae:	39 ff                	cmp    edi,edi
+ 4b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  4b3:	39 db                	cmp    ebx,ebx
  4b5:	39 ed                	cmp    ebp,ebp
  4b7:	39 f6                	cmp    esi,esi
@@ -609,15 +607,15 @@ Disassembly of section .data:
  4db:	39 db                	cmp    ebx,ebx
  4dd:	39 ed                	cmp    ebp,ebp
  4df:	39 f6                	cmp    esi,esi
- 4e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 4e4:	39 db                	cmp    ebx,ebx
- 4e6:	39 ed                	cmp    ebp,ebp
- 4e8:	39 f6                	cmp    esi,esi
- 4ea:	39 ff                	cmp    edi,edi
- 4ec:	39 db                	cmp    ebx,ebx
- 4ee:	39 ed                	cmp    ebp,ebp
- 4f0:	39 f6                	cmp    esi,esi
- 4f2:	39 ff                	cmp    edi,edi
+ 4e1:	39 ff                	cmp    edi,edi
+ 4e3:	39 db                	cmp    ebx,ebx
+ 4e5:	39 ed                	cmp    ebp,ebp
+ 4e7:	39 f6                	cmp    esi,esi
+ 4e9:	39 ff                	cmp    edi,edi
+ 4eb:	39 db                	cmp    ebx,ebx
+ 4ed:	39 ed                	cmp    ebp,ebp
+ 4ef:	39 f6                	cmp    esi,esi
+ 4f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4f4:	39 db                	cmp    ebx,ebx
  4f6:	39 ed                	cmp    ebp,ebp
  4f8:	39 f6                	cmp    esi,esi
@@ -625,14 +623,14 @@ Disassembly of section .data:
  4fc:	39 db                	cmp    ebx,ebx
  4fe:	39 ed                	cmp    ebp,ebp
  500:	39 f6                	cmp    esi,esi
- 502:	39 db                	cmp    ebx,ebx
- 504:	39 ed                	cmp    ebp,ebp
- 506:	39 f6                	cmp    esi,esi
- 508:	39 ff                	cmp    edi,edi
- 50a:	39 db                	cmp    ebx,ebx
- 50c:	39 ed                	cmp    ebp,ebp
- 50e:	39 f6                	cmp    esi,esi
- 510:	39 ff                	cmp    edi,edi
+ 502:	39 ff                	cmp    edi,edi
+ 504:	39 db                	cmp    ebx,ebx
+ 506:	39 ed                	cmp    ebp,ebp
+ 508:	39 f6                	cmp    esi,esi
+ 50a:	39 ff                	cmp    edi,edi
+ 50c:	39 db                	cmp    ebx,ebx
+ 50e:	39 ed                	cmp    ebp,ebp
+ 510:	39 f6                	cmp    esi,esi
  512:	39 db                	cmp    ebx,ebx
  514:	39 ed                	cmp    ebp,ebp
  516:	39 f6                	cmp    esi,esi
@@ -641,15 +639,15 @@ Disassembly of section .data:
  51c:	39 ed                	cmp    ebp,ebp
  51e:	39 f6                	cmp    esi,esi
  520:	39 ff                	cmp    edi,edi
- 522:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 525:	39 db                	cmp    ebx,ebx
- 527:	39 ed                	cmp    ebp,ebp
- 529:	39 f6                	cmp    esi,esi
- 52b:	39 ff                	cmp    edi,edi
- 52d:	39 db                	cmp    ebx,ebx
- 52f:	39 ed                	cmp    ebp,ebp
- 531:	39 f6                	cmp    esi,esi
- 533:	39 ff                	cmp    edi,edi
+ 522:	39 db                	cmp    ebx,ebx
+ 524:	39 ed                	cmp    ebp,ebp
+ 526:	39 f6                	cmp    esi,esi
+ 528:	39 ff                	cmp    edi,edi
+ 52a:	39 db                	cmp    ebx,ebx
+ 52c:	39 ed                	cmp    ebp,ebp
+ 52e:	39 f6                	cmp    esi,esi
+ 530:	39 ff                	cmp    edi,edi
+ 532:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  535:	39 db                	cmp    ebx,ebx
  537:	39 ed                	cmp    ebp,ebp
  539:	39 f6                	cmp    esi,esi
@@ -673,15 +671,15 @@ Disassembly of section .data:
  55d:	39 db                	cmp    ebx,ebx
  55f:	39 ed                	cmp    ebp,ebp
  561:	39 f6                	cmp    esi,esi
- 563:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 566:	39 db                	cmp    ebx,ebx
- 568:	39 ed                	cmp    ebp,ebp
- 56a:	39 f6                	cmp    esi,esi
- 56c:	39 ff                	cmp    edi,edi
- 56e:	39 db                	cmp    ebx,ebx
- 570:	39 ed                	cmp    ebp,ebp
- 572:	39 f6                	cmp    esi,esi
- 574:	39 ff                	cmp    edi,edi
+ 563:	39 ff                	cmp    edi,edi
+ 565:	39 db                	cmp    ebx,ebx
+ 567:	39 ed                	cmp    ebp,ebp
+ 569:	39 f6                	cmp    esi,esi
+ 56b:	39 ff                	cmp    edi,edi
+ 56d:	39 db                	cmp    ebx,ebx
+ 56f:	39 ed                	cmp    ebp,ebp
+ 571:	39 f6                	cmp    esi,esi
+ 573:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  576:	39 db                	cmp    ebx,ebx
  578:	39 ed                	cmp    ebp,ebp
  57a:	39 f6                	cmp    esi,esi
@@ -689,14 +687,14 @@ Disassembly of section .data:
  57e:	39 db                	cmp    ebx,ebx
  580:	39 ed                	cmp    ebp,ebp
  582:	39 f6                	cmp    esi,esi
- 584:	39 db                	cmp    ebx,ebx
- 586:	39 ed                	cmp    ebp,ebp
- 588:	39 f6                	cmp    esi,esi
- 58a:	39 ff                	cmp    edi,edi
- 58c:	39 db                	cmp    ebx,ebx
- 58e:	39 ed                	cmp    ebp,ebp
- 590:	39 f6                	cmp    esi,esi
- 592:	39 ff                	cmp    edi,edi
+ 584:	39 ff                	cmp    edi,edi
+ 586:	39 db                	cmp    ebx,ebx
+ 588:	39 ed                	cmp    ebp,ebp
+ 58a:	39 f6                	cmp    esi,esi
+ 58c:	39 ff                	cmp    edi,edi
+ 58e:	39 db                	cmp    ebx,ebx
+ 590:	39 ed                	cmp    ebp,ebp
+ 592:	39 f6                	cmp    esi,esi
  594:	39 db                	cmp    ebx,ebx
  596:	39 ed                	cmp    ebp,ebp
  598:	39 f6                	cmp    esi,esi
@@ -705,15 +703,15 @@ Disassembly of section .data:
  59e:	39 ed                	cmp    ebp,ebp
  5a0:	39 f6                	cmp    esi,esi
  5a2:	39 ff                	cmp    edi,edi
- 5a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 5a7:	39 db                	cmp    ebx,ebx
- 5a9:	39 ed                	cmp    ebp,ebp
- 5ab:	39 f6                	cmp    esi,esi
- 5ad:	39 ff                	cmp    edi,edi
- 5af:	39 db                	cmp    ebx,ebx
- 5b1:	39 ed                	cmp    ebp,ebp
- 5b3:	39 f6                	cmp    esi,esi
- 5b5:	39 ff                	cmp    edi,edi
+ 5a4:	39 db                	cmp    ebx,ebx
+ 5a6:	39 ed                	cmp    ebp,ebp
+ 5a8:	39 f6                	cmp    esi,esi
+ 5aa:	39 ff                	cmp    edi,edi
+ 5ac:	39 db                	cmp    ebx,ebx
+ 5ae:	39 ed                	cmp    ebp,ebp
+ 5b0:	39 f6                	cmp    esi,esi
+ 5b2:	39 ff                	cmp    edi,edi
+ 5b4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  5b7:	39 db                	cmp    ebx,ebx
  5b9:	39 ed                	cmp    ebp,ebp
  5bb:	39 f6                	cmp    esi,esi
@@ -737,15 +735,15 @@ Disassembly of section .data:
  5df:	39 db                	cmp    ebx,ebx
  5e1:	39 ed                	cmp    ebp,ebp
  5e3:	39 f6                	cmp    esi,esi
- 5e5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 5e8:	39 db                	cmp    ebx,ebx
- 5ea:	39 ed                	cmp    ebp,ebp
- 5ec:	39 f6                	cmp    esi,esi
- 5ee:	39 ff                	cmp    edi,edi
- 5f0:	39 db                	cmp    ebx,ebx
- 5f2:	39 ed                	cmp    ebp,ebp
- 5f4:	39 f6                	cmp    esi,esi
- 5f6:	39 ff                	cmp    edi,edi
+ 5e5:	39 ff                	cmp    edi,edi
+ 5e7:	39 db                	cmp    ebx,ebx
+ 5e9:	39 ed                	cmp    ebp,ebp
+ 5eb:	39 f6                	cmp    esi,esi
+ 5ed:	39 ff                	cmp    edi,edi
+ 5ef:	39 db                	cmp    ebx,ebx
+ 5f1:	39 ed                	cmp    ebp,ebp
+ 5f3:	39 f6                	cmp    esi,esi
+ 5f5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  5f8:	39 db                	cmp    ebx,ebx
  5fa:	39 ed                	cmp    ebp,ebp
  5fc:	39 f6                	cmp    esi,esi
@@ -753,14 +751,14 @@ Disassembly of section .data:
  600:	39 db                	cmp    ebx,ebx
  602:	39 ed                	cmp    ebp,ebp
  604:	39 f6                	cmp    esi,esi
- 606:	39 db                	cmp    ebx,ebx
- 608:	39 ed                	cmp    ebp,ebp
- 60a:	39 f6                	cmp    esi,esi
- 60c:	39 ff                	cmp    edi,edi
- 60e:	39 db                	cmp    ebx,ebx
- 610:	39 ed                	cmp    ebp,ebp
- 612:	39 f6                	cmp    esi,esi
- 614:	39 ff                	cmp    edi,edi
+ 606:	39 ff                	cmp    edi,edi
+ 608:	39 db                	cmp    ebx,ebx
+ 60a:	39 ed                	cmp    ebp,ebp
+ 60c:	39 f6                	cmp    esi,esi
+ 60e:	39 ff                	cmp    edi,edi
+ 610:	39 db                	cmp    ebx,ebx
+ 612:	39 ed                	cmp    ebp,ebp
+ 614:	39 f6                	cmp    esi,esi
  616:	39 db                	cmp    ebx,ebx
  618:	39 ed                	cmp    ebp,ebp
  61a:	39 f6                	cmp    esi,esi
@@ -769,15 +767,15 @@ Disassembly of section .data:
  620:	39 ed                	cmp    ebp,ebp
  622:	39 f6                	cmp    esi,esi
  624:	39 ff                	cmp    edi,edi
- 626:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 629:	39 db                	cmp    ebx,ebx
- 62b:	39 ed                	cmp    ebp,ebp
- 62d:	39 f6                	cmp    esi,esi
- 62f:	39 ff                	cmp    edi,edi
- 631:	39 db                	cmp    ebx,ebx
- 633:	39 ed                	cmp    ebp,ebp
- 635:	39 f6                	cmp    esi,esi
- 637:	39 ff                	cmp    edi,edi
+ 626:	39 db                	cmp    ebx,ebx
+ 628:	39 ed                	cmp    ebp,ebp
+ 62a:	39 f6                	cmp    esi,esi
+ 62c:	39 ff                	cmp    edi,edi
+ 62e:	39 db                	cmp    ebx,ebx
+ 630:	39 ed                	cmp    ebp,ebp
+ 632:	39 f6                	cmp    esi,esi
+ 634:	39 ff                	cmp    edi,edi
+ 636:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  639:	39 db                	cmp    ebx,ebx
  63b:	39 ed                	cmp    ebp,ebp
  63d:	39 f6                	cmp    esi,esi
@@ -801,15 +799,15 @@ Disassembly of section .data:
  661:	39 db                	cmp    ebx,ebx
  663:	39 ed                	cmp    ebp,ebp
  665:	39 f6                	cmp    esi,esi
- 667:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 66a:	39 db                	cmp    ebx,ebx
- 66c:	39 ed                	cmp    ebp,ebp
- 66e:	39 f6                	cmp    esi,esi
- 670:	39 ff                	cmp    edi,edi
- 672:	39 db                	cmp    ebx,ebx
- 674:	39 ed                	cmp    ebp,ebp
- 676:	39 f6                	cmp    esi,esi
- 678:	39 ff                	cmp    edi,edi
+ 667:	39 ff                	cmp    edi,edi
+ 669:	39 db                	cmp    ebx,ebx
+ 66b:	39 ed                	cmp    ebp,ebp
+ 66d:	39 f6                	cmp    esi,esi
+ 66f:	39 ff                	cmp    edi,edi
+ 671:	39 db                	cmp    ebx,ebx
+ 673:	39 ed                	cmp    ebp,ebp
+ 675:	39 f6                	cmp    esi,esi
+ 677:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  67a:	39 db                	cmp    ebx,ebx
  67c:	39 ed                	cmp    ebp,ebp
  67e:	39 f6                	cmp    esi,esi
@@ -817,14 +815,14 @@ Disassembly of section .data:
  682:	39 db                	cmp    ebx,ebx
  684:	39 ed                	cmp    ebp,ebp
  686:	39 f6                	cmp    esi,esi
- 688:	39 db                	cmp    ebx,ebx
- 68a:	39 ed                	cmp    ebp,ebp
- 68c:	39 f6                	cmp    esi,esi
- 68e:	39 ff                	cmp    edi,edi
- 690:	39 db                	cmp    ebx,ebx
- 692:	39 ed                	cmp    ebp,ebp
- 694:	39 f6                	cmp    esi,esi
- 696:	39 ff                	cmp    edi,edi
+ 688:	39 ff                	cmp    edi,edi
+ 68a:	39 db                	cmp    ebx,ebx
+ 68c:	39 ed                	cmp    ebp,ebp
+ 68e:	39 f6                	cmp    esi,esi
+ 690:	39 ff                	cmp    edi,edi
+ 692:	39 db                	cmp    ebx,ebx
+ 694:	39 ed                	cmp    ebp,ebp
+ 696:	39 f6                	cmp    esi,esi
  698:	39 db                	cmp    ebx,ebx
  69a:	39 ed                	cmp    ebp,ebp
  69c:	39 f6                	cmp    esi,esi
@@ -833,15 +831,15 @@ Disassembly of section .data:
  6a2:	39 ed                	cmp    ebp,ebp
  6a4:	39 f6                	cmp    esi,esi
  6a6:	39 ff                	cmp    edi,edi
- 6a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 6ab:	39 db                	cmp    ebx,ebx
- 6ad:	39 ed                	cmp    ebp,ebp
- 6af:	39 f6                	cmp    esi,esi
- 6b1:	39 ff                	cmp    edi,edi
- 6b3:	39 db                	cmp    ebx,ebx
- 6b5:	39 ed                	cmp    ebp,ebp
- 6b7:	39 f6                	cmp    esi,esi
- 6b9:	39 ff                	cmp    edi,edi
+ 6a8:	39 db                	cmp    ebx,ebx
+ 6aa:	39 ed                	cmp    ebp,ebp
+ 6ac:	39 f6                	cmp    esi,esi
+ 6ae:	39 ff                	cmp    edi,edi
+ 6b0:	39 db                	cmp    ebx,ebx
+ 6b2:	39 ed                	cmp    ebp,ebp
+ 6b4:	39 f6                	cmp    esi,esi
+ 6b6:	39 ff                	cmp    edi,edi
+ 6b8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  6bb:	39 db                	cmp    ebx,ebx
  6bd:	39 ed                	cmp    ebp,ebp
  6bf:	39 f6                	cmp    esi,esi
@@ -865,15 +863,15 @@ Disassembly of section .data:
  6e3:	39 db                	cmp    ebx,ebx
  6e5:	39 ed                	cmp    ebp,ebp
  6e7:	39 f6                	cmp    esi,esi
- 6e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 6ec:	39 db                	cmp    ebx,ebx
- 6ee:	39 ed                	cmp    ebp,ebp
- 6f0:	39 f6                	cmp    esi,esi
- 6f2:	39 ff                	cmp    edi,edi
- 6f4:	39 db                	cmp    ebx,ebx
- 6f6:	39 ed                	cmp    ebp,ebp
- 6f8:	39 f6                	cmp    esi,esi
- 6fa:	39 ff                	cmp    edi,edi
+ 6e9:	39 ff                	cmp    edi,edi
+ 6eb:	39 db                	cmp    ebx,ebx
+ 6ed:	39 ed                	cmp    ebp,ebp
+ 6ef:	39 f6                	cmp    esi,esi
+ 6f1:	39 ff                	cmp    edi,edi
+ 6f3:	39 db                	cmp    ebx,ebx
+ 6f5:	39 ed                	cmp    ebp,ebp
+ 6f7:	39 f6                	cmp    esi,esi
+ 6f9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  6fc:	39 db                	cmp    ebx,ebx
  6fe:	39 ed                	cmp    ebp,ebp
  700:	39 f6                	cmp    esi,esi
@@ -881,14 +879,14 @@ Disassembly of section .data:
  704:	39 db                	cmp    ebx,ebx
  706:	39 ed                	cmp    ebp,ebp
  708:	39 f6                	cmp    esi,esi
- 70a:	39 db                	cmp    ebx,ebx
- 70c:	39 ed                	cmp    ebp,ebp
- 70e:	39 f6                	cmp    esi,esi
- 710:	39 ff                	cmp    edi,edi
- 712:	39 db                	cmp    ebx,ebx
- 714:	39 ed                	cmp    ebp,ebp
- 716:	39 f6                	cmp    esi,esi
- 718:	39 ff                	cmp    edi,edi
+ 70a:	39 ff                	cmp    edi,edi
+ 70c:	39 db                	cmp    ebx,ebx
+ 70e:	39 ed                	cmp    ebp,ebp
+ 710:	39 f6                	cmp    esi,esi
+ 712:	39 ff                	cmp    edi,edi
+ 714:	39 db                	cmp    ebx,ebx
+ 716:	39 ed                	cmp    ebp,ebp
+ 718:	39 f6                	cmp    esi,esi
  71a:	39 db                	cmp    ebx,ebx
  71c:	39 ed                	cmp    ebp,ebp
  71e:	39 f6                	cmp    esi,esi
@@ -897,15 +895,15 @@ Disassembly of section .data:
  724:	39 ed                	cmp    ebp,ebp
  726:	39 f6                	cmp    esi,esi
  728:	39 ff                	cmp    edi,edi
- 72a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 72d:	39 db                	cmp    ebx,ebx
- 72f:	39 ed                	cmp    ebp,ebp
- 731:	39 f6                	cmp    esi,esi
- 733:	39 ff                	cmp    edi,edi
- 735:	39 db                	cmp    ebx,ebx
- 737:	39 ed                	cmp    ebp,ebp
- 739:	39 f6                	cmp    esi,esi
- 73b:	39 ff                	cmp    edi,edi
+ 72a:	39 db                	cmp    ebx,ebx
+ 72c:	39 ed                	cmp    ebp,ebp
+ 72e:	39 f6                	cmp    esi,esi
+ 730:	39 ff                	cmp    edi,edi
+ 732:	39 db                	cmp    ebx,ebx
+ 734:	39 ed                	cmp    ebp,ebp
+ 736:	39 f6                	cmp    esi,esi
+ 738:	39 ff                	cmp    edi,edi
+ 73a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  73d:	39 db                	cmp    ebx,ebx
  73f:	39 ed                	cmp    ebp,ebp
  741:	39 f6                	cmp    esi,esi
@@ -929,15 +927,15 @@ Disassembly of section .data:
  765:	39 db                	cmp    ebx,ebx
  767:	39 ed                	cmp    ebp,ebp
  769:	39 f6                	cmp    esi,esi
- 76b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 76e:	39 db                	cmp    ebx,ebx
- 770:	39 ed                	cmp    ebp,ebp
- 772:	39 f6                	cmp    esi,esi
- 774:	39 ff                	cmp    edi,edi
- 776:	39 db                	cmp    ebx,ebx
- 778:	39 ed                	cmp    ebp,ebp
- 77a:	39 f6                	cmp    esi,esi
- 77c:	39 ff                	cmp    edi,edi
+ 76b:	39 ff                	cmp    edi,edi
+ 76d:	39 db                	cmp    ebx,ebx
+ 76f:	39 ed                	cmp    ebp,ebp
+ 771:	39 f6                	cmp    esi,esi
+ 773:	39 ff                	cmp    edi,edi
+ 775:	39 db                	cmp    ebx,ebx
+ 777:	39 ed                	cmp    ebp,ebp
+ 779:	39 f6                	cmp    esi,esi
+ 77b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  77e:	39 db                	cmp    ebx,ebx
  780:	39 ed                	cmp    ebp,ebp
  782:	39 f6                	cmp    esi,esi
@@ -945,14 +943,14 @@ Disassembly of section .data:
  786:	39 db                	cmp    ebx,ebx
  788:	39 ed                	cmp    ebp,ebp
  78a:	39 f6                	cmp    esi,esi
- 78c:	39 db                	cmp    ebx,ebx
- 78e:	39 ed                	cmp    ebp,ebp
- 790:	39 f6                	cmp    esi,esi
- 792:	39 ff                	cmp    edi,edi
- 794:	39 db                	cmp    ebx,ebx
- 796:	39 ed                	cmp    ebp,ebp
- 798:	39 f6                	cmp    esi,esi
- 79a:	39 ff                	cmp    edi,edi
+ 78c:	39 ff                	cmp    edi,edi
+ 78e:	39 db                	cmp    ebx,ebx
+ 790:	39 ed                	cmp    ebp,ebp
+ 792:	39 f6                	cmp    esi,esi
+ 794:	39 ff                	cmp    edi,edi
+ 796:	39 db                	cmp    ebx,ebx
+ 798:	39 ed                	cmp    ebp,ebp
+ 79a:	39 f6                	cmp    esi,esi
  79c:	39 db                	cmp    ebx,ebx
  79e:	39 ed                	cmp    ebp,ebp
  7a0:	39 f6                	cmp    esi,esi
@@ -961,15 +959,15 @@ Disassembly of section .data:
  7a6:	39 ed                	cmp    ebp,ebp
  7a8:	39 f6                	cmp    esi,esi
  7aa:	39 ff                	cmp    edi,edi
- 7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 7af:	39 db                	cmp    ebx,ebx
- 7b1:	39 ed                	cmp    ebp,ebp
- 7b3:	39 f6                	cmp    esi,esi
- 7b5:	39 ff                	cmp    edi,edi
- 7b7:	39 db                	cmp    ebx,ebx
- 7b9:	39 ed                	cmp    ebp,ebp
- 7bb:	39 f6                	cmp    esi,esi
- 7bd:	39 ff                	cmp    edi,edi
+ 7ac:	39 db                	cmp    ebx,ebx
+ 7ae:	39 ed                	cmp    ebp,ebp
+ 7b0:	39 f6                	cmp    esi,esi
+ 7b2:	39 ff                	cmp    edi,edi
+ 7b4:	39 db                	cmp    ebx,ebx
+ 7b6:	39 ed                	cmp    ebp,ebp
+ 7b8:	39 f6                	cmp    esi,esi
+ 7ba:	39 ff                	cmp    edi,edi
+ 7bc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  7bf:	39 db                	cmp    ebx,ebx
  7c1:	39 ed                	cmp    ebp,ebp
  7c3:	39 f6                	cmp    esi,esi
@@ -993,15 +991,15 @@ Disassembly of section .data:
  7e7:	39 db                	cmp    ebx,ebx
  7e9:	39 ed                	cmp    ebp,ebp
  7eb:	39 f6                	cmp    esi,esi
- 7ed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 7f0:	39 db                	cmp    ebx,ebx
- 7f2:	39 ed                	cmp    ebp,ebp
- 7f4:	39 f6                	cmp    esi,esi
- 7f6:	39 ff                	cmp    edi,edi
- 7f8:	39 db                	cmp    ebx,ebx
- 7fa:	39 ed                	cmp    ebp,ebp
- 7fc:	39 f6                	cmp    esi,esi
- 7fe:	39 ff                	cmp    edi,edi
+ 7ed:	39 ff                	cmp    edi,edi
+ 7ef:	39 db                	cmp    ebx,ebx
+ 7f1:	39 ed                	cmp    ebp,ebp
+ 7f3:	39 f6                	cmp    esi,esi
+ 7f5:	39 ff                	cmp    edi,edi
+ 7f7:	39 db                	cmp    ebx,ebx
+ 7f9:	39 ed                	cmp    ebp,ebp
+ 7fb:	39 f6                	cmp    esi,esi
+ 7fd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  800:	39 db                	cmp    ebx,ebx
  802:	39 ed                	cmp    ebp,ebp
  804:	39 f6                	cmp    esi,esi
@@ -1009,14 +1007,14 @@ Disassembly of section .data:
  808:	39 db                	cmp    ebx,ebx
  80a:	39 ed                	cmp    ebp,ebp
  80c:	39 f6                	cmp    esi,esi
- 80e:	39 db                	cmp    ebx,ebx
- 810:	39 ed                	cmp    ebp,ebp
- 812:	39 f6                	cmp    esi,esi
- 814:	39 ff                	cmp    edi,edi
- 816:	39 db                	cmp    ebx,ebx
- 818:	39 ed                	cmp    ebp,ebp
- 81a:	39 f6                	cmp    esi,esi
- 81c:	39 ff                	cmp    edi,edi
+ 80e:	39 ff                	cmp    edi,edi
+ 810:	39 db                	cmp    ebx,ebx
+ 812:	39 ed                	cmp    ebp,ebp
+ 814:	39 f6                	cmp    esi,esi
+ 816:	39 ff                	cmp    edi,edi
+ 818:	39 db                	cmp    ebx,ebx
+ 81a:	39 ed                	cmp    ebp,ebp
+ 81c:	39 f6                	cmp    esi,esi
  81e:	39 db                	cmp    ebx,ebx
  820:	39 ed                	cmp    ebp,ebp
  822:	39 f6                	cmp    esi,esi
@@ -1025,15 +1023,15 @@ Disassembly of section .data:
  828:	39 ed                	cmp    ebp,ebp
  82a:	39 f6                	cmp    esi,esi
  82c:	39 ff                	cmp    edi,edi
- 82e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 831:	39 db                	cmp    ebx,ebx
- 833:	39 ed                	cmp    ebp,ebp
- 835:	39 f6                	cmp    esi,esi
- 837:	39 ff                	cmp    edi,edi
- 839:	39 db                	cmp    ebx,ebx
- 83b:	39 ed                	cmp    ebp,ebp
- 83d:	39 f6                	cmp    esi,esi
- 83f:	39 ff                	cmp    edi,edi
+ 82e:	39 db                	cmp    ebx,ebx
+ 830:	39 ed                	cmp    ebp,ebp
+ 832:	39 f6                	cmp    esi,esi
+ 834:	39 ff                	cmp    edi,edi
+ 836:	39 db                	cmp    ebx,ebx
+ 838:	39 ed                	cmp    ebp,ebp
+ 83a:	39 f6                	cmp    esi,esi
+ 83c:	39 ff                	cmp    edi,edi
+ 83e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  841:	39 db                	cmp    ebx,ebx
  843:	39 ed                	cmp    ebp,ebp
  845:	39 f6                	cmp    esi,esi
@@ -1057,15 +1055,15 @@ Disassembly of section .data:
  869:	39 db                	cmp    ebx,ebx
  86b:	39 ed                	cmp    ebp,ebp
  86d:	39 f6                	cmp    esi,esi
- 86f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 872:	39 db                	cmp    ebx,ebx
- 874:	39 ed                	cmp    ebp,ebp
- 876:	39 f6                	cmp    esi,esi
- 878:	39 ff                	cmp    edi,edi
- 87a:	39 db                	cmp    ebx,ebx
- 87c:	39 ed                	cmp    ebp,ebp
- 87e:	39 f6                	cmp    esi,esi
- 880:	39 ff                	cmp    edi,edi
+ 86f:	39 ff                	cmp    edi,edi
+ 871:	39 db                	cmp    ebx,ebx
+ 873:	39 ed                	cmp    ebp,ebp
+ 875:	39 f6                	cmp    esi,esi
+ 877:	39 ff                	cmp    edi,edi
+ 879:	39 db                	cmp    ebx,ebx
+ 87b:	39 ed                	cmp    ebp,ebp
+ 87d:	39 f6                	cmp    esi,esi
+ 87f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  882:	39 db                	cmp    ebx,ebx
  884:	39 ed                	cmp    ebp,ebp
  886:	39 f6                	cmp    esi,esi
@@ -1073,14 +1071,14 @@ Disassembly of section .data:
  88a:	39 db                	cmp    ebx,ebx
  88c:	39 ed                	cmp    ebp,ebp
  88e:	39 f6                	cmp    esi,esi
- 890:	39 db                	cmp    ebx,ebx
- 892:	39 ed                	cmp    ebp,ebp
- 894:	39 f6                	cmp    esi,esi
- 896:	39 ff                	cmp    edi,edi
- 898:	39 db                	cmp    ebx,ebx
- 89a:	39 ed                	cmp    ebp,ebp
- 89c:	39 f6                	cmp    esi,esi
- 89e:	39 ff                	cmp    edi,edi
+ 890:	39 ff                	cmp    edi,edi
+ 892:	39 db                	cmp    ebx,ebx
+ 894:	39 ed                	cmp    ebp,ebp
+ 896:	39 f6                	cmp    esi,esi
+ 898:	39 ff                	cmp    edi,edi
+ 89a:	39 db                	cmp    ebx,ebx
+ 89c:	39 ed                	cmp    ebp,ebp
+ 89e:	39 f6                	cmp    esi,esi
  8a0:	39 db                	cmp    ebx,ebx
  8a2:	39 ed                	cmp    ebp,ebp
  8a4:	39 f6                	cmp    esi,esi
@@ -1089,15 +1087,15 @@ Disassembly of section .data:
  8aa:	39 ed                	cmp    ebp,ebp
  8ac:	39 f6                	cmp    esi,esi
  8ae:	39 ff                	cmp    edi,edi
- 8b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 8b3:	39 db                	cmp    ebx,ebx
- 8b5:	39 ed                	cmp    ebp,ebp
- 8b7:	39 f6                	cmp    esi,esi
- 8b9:	39 ff                	cmp    edi,edi
- 8bb:	39 db                	cmp    ebx,ebx
- 8bd:	39 ed                	cmp    ebp,ebp
- 8bf:	39 f6                	cmp    esi,esi
- 8c1:	39 ff                	cmp    edi,edi
+ 8b0:	39 db                	cmp    ebx,ebx
+ 8b2:	39 ed                	cmp    ebp,ebp
+ 8b4:	39 f6                	cmp    esi,esi
+ 8b6:	39 ff                	cmp    edi,edi
+ 8b8:	39 db                	cmp    ebx,ebx
+ 8ba:	39 ed                	cmp    ebp,ebp
+ 8bc:	39 f6                	cmp    esi,esi
+ 8be:	39 ff                	cmp    edi,edi
+ 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  8c3:	39 db                	cmp    ebx,ebx
  8c5:	39 ed                	cmp    ebp,ebp
  8c7:	39 f6                	cmp    esi,esi
@@ -1121,15 +1119,15 @@ Disassembly of section .data:
  8eb:	39 db                	cmp    ebx,ebx
  8ed:	39 ed                	cmp    ebp,ebp
  8ef:	39 f6                	cmp    esi,esi
- 8f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 8f4:	39 db                	cmp    ebx,ebx
- 8f6:	39 ed                	cmp    ebp,ebp
- 8f8:	39 f6                	cmp    esi,esi
- 8fa:	39 ff                	cmp    edi,edi
- 8fc:	39 db                	cmp    ebx,ebx
- 8fe:	39 ed                	cmp    ebp,ebp
- 900:	39 f6                	cmp    esi,esi
- 902:	39 ff                	cmp    edi,edi
+ 8f1:	39 ff                	cmp    edi,edi
+ 8f3:	39 db                	cmp    ebx,ebx
+ 8f5:	39 ed                	cmp    ebp,ebp
+ 8f7:	39 f6                	cmp    esi,esi
+ 8f9:	39 ff                	cmp    edi,edi
+ 8fb:	39 db                	cmp    ebx,ebx
+ 8fd:	39 ed                	cmp    ebp,ebp
+ 8ff:	39 f6                	cmp    esi,esi
+ 901:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  904:	39 db                	cmp    ebx,ebx
  906:	39 ed                	cmp    ebp,ebp
  908:	39 f6                	cmp    esi,esi
@@ -1137,19 +1135,30 @@ Disassembly of section .data:
  90c:	39 db                	cmp    ebx,ebx
  90e:	39 ed                	cmp    ebp,ebp
  910:	39 f6                	cmp    esi,esi
- 912:	83 e8 01             	sub    eax,0x1
- 915:	0f 85 55 f7 ff ff    	jne    0x70
- 91b:	66 90                	xchg   ax,ax
- 91d:	66 90                	xchg   ax,ax
- 91f:	66 90                	xchg   ax,ax
- 921:	66 90                	xchg   ax,ax
- 923:	66 90                	xchg   ax,ax
- 925:	66 90                	xchg   ax,ax
- 927:	66 90                	xchg   ax,ax
- 929:	66 90                	xchg   ax,ax
- 92b:	5f                   	pop    rdi
- 92c:	5e                   	pop    rsi
- 92d:	5d                   	pop    rbp
- 92e:	5b                   	pop    rbx
- 92f:	0f 77                	emms   
- 931:	c3                   	ret    
+ 912:	39 ff                	cmp    edi,edi
+ 914:	39 db                	cmp    ebx,ebx
+ 916:	39 ed                	cmp    ebp,ebp
+ 918:	39 f6                	cmp    esi,esi
+ 91a:	39 ff                	cmp    edi,edi
+ 91c:	39 db                	cmp    ebx,ebx
+ 91e:	39 ed                	cmp    ebp,ebp
+ 920:	39 f6                	cmp    esi,esi
+ 922:	83 e8 01             	sub    eax,0x1
+ 925:	0f 85 55 f7 ff ff    	jne    0x80
+ 92b:	66 90                	xchg   ax,ax
+ 92d:	66 90                	xchg   ax,ax
+ 92f:	66 90                	xchg   ax,ax
+ 931:	66 90                	xchg   ax,ax
+ 933:	66 90                	xchg   ax,ax
+ 935:	66 90                	xchg   ax,ax
+ 937:	66 90                	xchg   ax,ax
+ 939:	66 90                	xchg   ax,ax
+ 93b:	48 83 c4 40          	add    rsp,0x40
+ 93f:	41 59                	pop    r9
+ 941:	41 58                	pop    r8
+ 943:	5f                   	pop    rdi
+ 944:	5e                   	pop    rsi
+ 945:	5d                   	pop    rbp
+ 946:	5b                   	pop    rbx
+ 947:	0f 77                	emms   
+ 949:	c3                   	ret    

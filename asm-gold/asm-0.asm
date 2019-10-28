@@ -17,46 +17,44 @@ Disassembly of section .data:
   11:	55                   	push   rbp
   12:	56                   	push   rsi
   13:	57                   	push   rdi
-  14:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  1b:	7f 00 00 
-  1e:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  25:	7f 00 00 
-  28:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  2f:	00 00 00 
-  32:	48 83 eb 00          	sub    rbx,0x0
-  36:	48 83 ed 00          	sub    rbp,0x0
-  3a:	48 83 ee 00          	sub    rsi,0x0
-  3e:	48 83 ef 00          	sub    rdi,0x0
-  42:	49 83 e8 00          	sub    r8,0x0
-  46:	49 83 e9 00          	sub    r9,0x0
-  4a:	49 83 ea 00          	sub    r10,0x0
-  4e:	49 83 eb 00          	sub    r11,0x0
-  52:	49 83 ec 00          	sub    r12,0x0
-  56:	49 83 ed 00          	sub    r13,0x0
-  5a:	49 83 ee 00          	sub    r14,0x0
-  5e:	49 83 ef 00          	sub    r15,0x0
-  62:	90                   	nop
-  63:	90                   	nop
-  64:	90                   	nop
-  65:	90                   	nop
-  66:	90                   	nop
-  67:	90                   	nop
-  68:	90                   	nop
-  69:	90                   	nop
-  6a:	90                   	nop
-  6b:	90                   	nop
-  6c:	90                   	nop
-  6d:	90                   	nop
-  6e:	90                   	nop
-  6f:	90                   	nop
-  70:	03 db                	add    ebx,ebx
-  72:	03 ed                	add    ebp,ebp
-  74:	03 f6                	add    esi,esi
-  76:	03 ff                	add    edi,edi
-  78:	03 db                	add    ebx,ebx
-  7a:	03 ed                	add    ebp,ebp
-  7c:	03 f6                	add    esi,esi
-  7e:	03 ff                	add    edi,edi
+  14:	41 50                	push   r8
+  16:	41 51                	push   r9
+  18:	48 83 ec 40          	sub    rsp,0x40
+  1c:	45 31 c0             	xor    r8d,r8d
+  1f:	4c 8d 0c 24          	lea    r9,[rsp]
+  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2a:	7f 00 00 
+  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  34:	7f 00 00 
+  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  3e:	00 00 00 
+  41:	48 83 eb 00          	sub    rbx,0x0
+  45:	48 83 ed 00          	sub    rbp,0x0
+  49:	48 83 ee 00          	sub    rsi,0x0
+  4d:	48 83 ef 00          	sub    rdi,0x0
+  51:	49 83 e8 00          	sub    r8,0x0
+  55:	49 83 e9 00          	sub    r9,0x0
+  59:	49 83 ea 00          	sub    r10,0x0
+  5d:	49 83 eb 00          	sub    r11,0x0
+  61:	49 83 ec 00          	sub    r12,0x0
+  65:	49 83 ed 00          	sub    r13,0x0
+  69:	49 83 ee 00          	sub    r14,0x0
+  6d:	49 83 ef 00          	sub    r15,0x0
+  71:	90                   	nop
+  72:	90                   	nop
+  73:	90                   	nop
+  74:	90                   	nop
+  75:	90                   	nop
+  76:	90                   	nop
+  77:	90                   	nop
+  78:	90                   	nop
+  79:	90                   	nop
+  7a:	90                   	nop
+  7b:	90                   	nop
+  7c:	90                   	nop
+  7d:	90                   	nop
+  7e:	90                   	nop
+  7f:	90                   	nop
   80:	03 db                	add    ebx,ebx
   82:	03 ed                	add    ebp,ebp
   84:	03 f6                	add    esi,esi
@@ -65,15 +63,15 @@ Disassembly of section .data:
   8a:	03 ed                	add    ebp,ebp
   8c:	03 f6                	add    esi,esi
   8e:	03 ff                	add    edi,edi
-  90:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-  93:	03 db                	add    ebx,ebx
-  95:	03 ed                	add    ebp,ebp
-  97:	03 f6                	add    esi,esi
-  99:	03 ff                	add    edi,edi
-  9b:	03 db                	add    ebx,ebx
-  9d:	03 ed                	add    ebp,ebp
-  9f:	03 f6                	add    esi,esi
-  a1:	03 ff                	add    edi,edi
+  90:	03 db                	add    ebx,ebx
+  92:	03 ed                	add    ebp,ebp
+  94:	03 f6                	add    esi,esi
+  96:	03 ff                	add    edi,edi
+  98:	03 db                	add    ebx,ebx
+  9a:	03 ed                	add    ebp,ebp
+  9c:	03 f6                	add    esi,esi
+  9e:	03 ff                	add    edi,edi
+  a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
   a3:	03 db                	add    ebx,ebx
   a5:	03 ed                	add    ebp,ebp
   a7:	03 f6                	add    esi,esi
@@ -97,15 +95,15 @@ Disassembly of section .data:
   cb:	03 db                	add    ebx,ebx
   cd:	03 ed                	add    ebp,ebp
   cf:	03 f6                	add    esi,esi
-  d1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-  d4:	03 db                	add    ebx,ebx
-  d6:	03 ed                	add    ebp,ebp
-  d8:	03 f6                	add    esi,esi
-  da:	03 ff                	add    edi,edi
-  dc:	03 db                	add    ebx,ebx
-  de:	03 ed                	add    ebp,ebp
-  e0:	03 f6                	add    esi,esi
-  e2:	03 ff                	add    edi,edi
+  d1:	03 ff                	add    edi,edi
+  d3:	03 db                	add    ebx,ebx
+  d5:	03 ed                	add    ebp,ebp
+  d7:	03 f6                	add    esi,esi
+  d9:	03 ff                	add    edi,edi
+  db:	03 db                	add    ebx,ebx
+  dd:	03 ed                	add    ebp,ebp
+  df:	03 f6                	add    esi,esi
+  e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e4:	03 db                	add    ebx,ebx
   e6:	03 ed                	add    ebp,ebp
   e8:	03 f6                	add    esi,esi
@@ -113,14 +111,14 @@ Disassembly of section .data:
   ec:	03 db                	add    ebx,ebx
   ee:	03 ed                	add    ebp,ebp
   f0:	03 f6                	add    esi,esi
-  f2:	03 db                	add    ebx,ebx
-  f4:	03 ed                	add    ebp,ebp
-  f6:	03 f6                	add    esi,esi
-  f8:	03 ff                	add    edi,edi
-  fa:	03 db                	add    ebx,ebx
-  fc:	03 ed                	add    ebp,ebp
-  fe:	03 f6                	add    esi,esi
- 100:	03 ff                	add    edi,edi
+  f2:	03 ff                	add    edi,edi
+  f4:	03 db                	add    ebx,ebx
+  f6:	03 ed                	add    ebp,ebp
+  f8:	03 f6                	add    esi,esi
+  fa:	03 ff                	add    edi,edi
+  fc:	03 db                	add    ebx,ebx
+  fe:	03 ed                	add    ebp,ebp
+ 100:	03 f6                	add    esi,esi
  102:	03 db                	add    ebx,ebx
  104:	03 ed                	add    ebp,ebp
  106:	03 f6                	add    esi,esi
@@ -129,15 +127,15 @@ Disassembly of section .data:
  10c:	03 ed                	add    ebp,ebp
  10e:	03 f6                	add    esi,esi
  110:	03 ff                	add    edi,edi
- 112:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 115:	03 db                	add    ebx,ebx
- 117:	03 ed                	add    ebp,ebp
- 119:	03 f6                	add    esi,esi
- 11b:	03 ff                	add    edi,edi
- 11d:	03 db                	add    ebx,ebx
- 11f:	03 ed                	add    ebp,ebp
- 121:	03 f6                	add    esi,esi
- 123:	03 ff                	add    edi,edi
+ 112:	03 db                	add    ebx,ebx
+ 114:	03 ed                	add    ebp,ebp
+ 116:	03 f6                	add    esi,esi
+ 118:	03 ff                	add    edi,edi
+ 11a:	03 db                	add    ebx,ebx
+ 11c:	03 ed                	add    ebp,ebp
+ 11e:	03 f6                	add    esi,esi
+ 120:	03 ff                	add    edi,edi
+ 122:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  125:	03 db                	add    ebx,ebx
  127:	03 ed                	add    ebp,ebp
  129:	03 f6                	add    esi,esi
@@ -161,15 +159,15 @@ Disassembly of section .data:
  14d:	03 db                	add    ebx,ebx
  14f:	03 ed                	add    ebp,ebp
  151:	03 f6                	add    esi,esi
- 153:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 156:	03 db                	add    ebx,ebx
- 158:	03 ed                	add    ebp,ebp
- 15a:	03 f6                	add    esi,esi
- 15c:	03 ff                	add    edi,edi
- 15e:	03 db                	add    ebx,ebx
- 160:	03 ed                	add    ebp,ebp
- 162:	03 f6                	add    esi,esi
- 164:	03 ff                	add    edi,edi
+ 153:	03 ff                	add    edi,edi
+ 155:	03 db                	add    ebx,ebx
+ 157:	03 ed                	add    ebp,ebp
+ 159:	03 f6                	add    esi,esi
+ 15b:	03 ff                	add    edi,edi
+ 15d:	03 db                	add    ebx,ebx
+ 15f:	03 ed                	add    ebp,ebp
+ 161:	03 f6                	add    esi,esi
+ 163:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  166:	03 db                	add    ebx,ebx
  168:	03 ed                	add    ebp,ebp
  16a:	03 f6                	add    esi,esi
@@ -177,14 +175,14 @@ Disassembly of section .data:
  16e:	03 db                	add    ebx,ebx
  170:	03 ed                	add    ebp,ebp
  172:	03 f6                	add    esi,esi
- 174:	03 db                	add    ebx,ebx
- 176:	03 ed                	add    ebp,ebp
- 178:	03 f6                	add    esi,esi
- 17a:	03 ff                	add    edi,edi
- 17c:	03 db                	add    ebx,ebx
- 17e:	03 ed                	add    ebp,ebp
- 180:	03 f6                	add    esi,esi
- 182:	03 ff                	add    edi,edi
+ 174:	03 ff                	add    edi,edi
+ 176:	03 db                	add    ebx,ebx
+ 178:	03 ed                	add    ebp,ebp
+ 17a:	03 f6                	add    esi,esi
+ 17c:	03 ff                	add    edi,edi
+ 17e:	03 db                	add    ebx,ebx
+ 180:	03 ed                	add    ebp,ebp
+ 182:	03 f6                	add    esi,esi
  184:	03 db                	add    ebx,ebx
  186:	03 ed                	add    ebp,ebp
  188:	03 f6                	add    esi,esi
@@ -193,15 +191,15 @@ Disassembly of section .data:
  18e:	03 ed                	add    ebp,ebp
  190:	03 f6                	add    esi,esi
  192:	03 ff                	add    edi,edi
- 194:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 197:	03 db                	add    ebx,ebx
- 199:	03 ed                	add    ebp,ebp
- 19b:	03 f6                	add    esi,esi
- 19d:	03 ff                	add    edi,edi
- 19f:	03 db                	add    ebx,ebx
- 1a1:	03 ed                	add    ebp,ebp
- 1a3:	03 f6                	add    esi,esi
- 1a5:	03 ff                	add    edi,edi
+ 194:	03 db                	add    ebx,ebx
+ 196:	03 ed                	add    ebp,ebp
+ 198:	03 f6                	add    esi,esi
+ 19a:	03 ff                	add    edi,edi
+ 19c:	03 db                	add    ebx,ebx
+ 19e:	03 ed                	add    ebp,ebp
+ 1a0:	03 f6                	add    esi,esi
+ 1a2:	03 ff                	add    edi,edi
+ 1a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  1a7:	03 db                	add    ebx,ebx
  1a9:	03 ed                	add    ebp,ebp
  1ab:	03 f6                	add    esi,esi
@@ -225,15 +223,15 @@ Disassembly of section .data:
  1cf:	03 db                	add    ebx,ebx
  1d1:	03 ed                	add    ebp,ebp
  1d3:	03 f6                	add    esi,esi
- 1d5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 1d8:	03 db                	add    ebx,ebx
- 1da:	03 ed                	add    ebp,ebp
- 1dc:	03 f6                	add    esi,esi
- 1de:	03 ff                	add    edi,edi
- 1e0:	03 db                	add    ebx,ebx
- 1e2:	03 ed                	add    ebp,ebp
- 1e4:	03 f6                	add    esi,esi
- 1e6:	03 ff                	add    edi,edi
+ 1d5:	03 ff                	add    edi,edi
+ 1d7:	03 db                	add    ebx,ebx
+ 1d9:	03 ed                	add    ebp,ebp
+ 1db:	03 f6                	add    esi,esi
+ 1dd:	03 ff                	add    edi,edi
+ 1df:	03 db                	add    ebx,ebx
+ 1e1:	03 ed                	add    ebp,ebp
+ 1e3:	03 f6                	add    esi,esi
+ 1e5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1e8:	03 db                	add    ebx,ebx
  1ea:	03 ed                	add    ebp,ebp
  1ec:	03 f6                	add    esi,esi
@@ -241,14 +239,14 @@ Disassembly of section .data:
  1f0:	03 db                	add    ebx,ebx
  1f2:	03 ed                	add    ebp,ebp
  1f4:	03 f6                	add    esi,esi
- 1f6:	03 db                	add    ebx,ebx
- 1f8:	03 ed                	add    ebp,ebp
- 1fa:	03 f6                	add    esi,esi
- 1fc:	03 ff                	add    edi,edi
- 1fe:	03 db                	add    ebx,ebx
- 200:	03 ed                	add    ebp,ebp
- 202:	03 f6                	add    esi,esi
- 204:	03 ff                	add    edi,edi
+ 1f6:	03 ff                	add    edi,edi
+ 1f8:	03 db                	add    ebx,ebx
+ 1fa:	03 ed                	add    ebp,ebp
+ 1fc:	03 f6                	add    esi,esi
+ 1fe:	03 ff                	add    edi,edi
+ 200:	03 db                	add    ebx,ebx
+ 202:	03 ed                	add    ebp,ebp
+ 204:	03 f6                	add    esi,esi
  206:	03 db                	add    ebx,ebx
  208:	03 ed                	add    ebp,ebp
  20a:	03 f6                	add    esi,esi
@@ -257,15 +255,15 @@ Disassembly of section .data:
  210:	03 ed                	add    ebp,ebp
  212:	03 f6                	add    esi,esi
  214:	03 ff                	add    edi,edi
- 216:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 219:	03 db                	add    ebx,ebx
- 21b:	03 ed                	add    ebp,ebp
- 21d:	03 f6                	add    esi,esi
- 21f:	03 ff                	add    edi,edi
- 221:	03 db                	add    ebx,ebx
- 223:	03 ed                	add    ebp,ebp
- 225:	03 f6                	add    esi,esi
- 227:	03 ff                	add    edi,edi
+ 216:	03 db                	add    ebx,ebx
+ 218:	03 ed                	add    ebp,ebp
+ 21a:	03 f6                	add    esi,esi
+ 21c:	03 ff                	add    edi,edi
+ 21e:	03 db                	add    ebx,ebx
+ 220:	03 ed                	add    ebp,ebp
+ 222:	03 f6                	add    esi,esi
+ 224:	03 ff                	add    edi,edi
+ 226:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  229:	03 db                	add    ebx,ebx
  22b:	03 ed                	add    ebp,ebp
  22d:	03 f6                	add    esi,esi
@@ -289,15 +287,15 @@ Disassembly of section .data:
  251:	03 db                	add    ebx,ebx
  253:	03 ed                	add    ebp,ebp
  255:	03 f6                	add    esi,esi
- 257:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 25a:	03 db                	add    ebx,ebx
- 25c:	03 ed                	add    ebp,ebp
- 25e:	03 f6                	add    esi,esi
- 260:	03 ff                	add    edi,edi
- 262:	03 db                	add    ebx,ebx
- 264:	03 ed                	add    ebp,ebp
- 266:	03 f6                	add    esi,esi
- 268:	03 ff                	add    edi,edi
+ 257:	03 ff                	add    edi,edi
+ 259:	03 db                	add    ebx,ebx
+ 25b:	03 ed                	add    ebp,ebp
+ 25d:	03 f6                	add    esi,esi
+ 25f:	03 ff                	add    edi,edi
+ 261:	03 db                	add    ebx,ebx
+ 263:	03 ed                	add    ebp,ebp
+ 265:	03 f6                	add    esi,esi
+ 267:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  26a:	03 db                	add    ebx,ebx
  26c:	03 ed                	add    ebp,ebp
  26e:	03 f6                	add    esi,esi
@@ -305,14 +303,14 @@ Disassembly of section .data:
  272:	03 db                	add    ebx,ebx
  274:	03 ed                	add    ebp,ebp
  276:	03 f6                	add    esi,esi
- 278:	03 db                	add    ebx,ebx
- 27a:	03 ed                	add    ebp,ebp
- 27c:	03 f6                	add    esi,esi
- 27e:	03 ff                	add    edi,edi
- 280:	03 db                	add    ebx,ebx
- 282:	03 ed                	add    ebp,ebp
- 284:	03 f6                	add    esi,esi
- 286:	03 ff                	add    edi,edi
+ 278:	03 ff                	add    edi,edi
+ 27a:	03 db                	add    ebx,ebx
+ 27c:	03 ed                	add    ebp,ebp
+ 27e:	03 f6                	add    esi,esi
+ 280:	03 ff                	add    edi,edi
+ 282:	03 db                	add    ebx,ebx
+ 284:	03 ed                	add    ebp,ebp
+ 286:	03 f6                	add    esi,esi
  288:	03 db                	add    ebx,ebx
  28a:	03 ed                	add    ebp,ebp
  28c:	03 f6                	add    esi,esi
@@ -321,15 +319,15 @@ Disassembly of section .data:
  292:	03 ed                	add    ebp,ebp
  294:	03 f6                	add    esi,esi
  296:	03 ff                	add    edi,edi
- 298:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 29b:	03 db                	add    ebx,ebx
- 29d:	03 ed                	add    ebp,ebp
- 29f:	03 f6                	add    esi,esi
- 2a1:	03 ff                	add    edi,edi
- 2a3:	03 db                	add    ebx,ebx
- 2a5:	03 ed                	add    ebp,ebp
- 2a7:	03 f6                	add    esi,esi
- 2a9:	03 ff                	add    edi,edi
+ 298:	03 db                	add    ebx,ebx
+ 29a:	03 ed                	add    ebp,ebp
+ 29c:	03 f6                	add    esi,esi
+ 29e:	03 ff                	add    edi,edi
+ 2a0:	03 db                	add    ebx,ebx
+ 2a2:	03 ed                	add    ebp,ebp
+ 2a4:	03 f6                	add    esi,esi
+ 2a6:	03 ff                	add    edi,edi
+ 2a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  2ab:	03 db                	add    ebx,ebx
  2ad:	03 ed                	add    ebp,ebp
  2af:	03 f6                	add    esi,esi
@@ -353,15 +351,15 @@ Disassembly of section .data:
  2d3:	03 db                	add    ebx,ebx
  2d5:	03 ed                	add    ebp,ebp
  2d7:	03 f6                	add    esi,esi
- 2d9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 2dc:	03 db                	add    ebx,ebx
- 2de:	03 ed                	add    ebp,ebp
- 2e0:	03 f6                	add    esi,esi
- 2e2:	03 ff                	add    edi,edi
- 2e4:	03 db                	add    ebx,ebx
- 2e6:	03 ed                	add    ebp,ebp
- 2e8:	03 f6                	add    esi,esi
- 2ea:	03 ff                	add    edi,edi
+ 2d9:	03 ff                	add    edi,edi
+ 2db:	03 db                	add    ebx,ebx
+ 2dd:	03 ed                	add    ebp,ebp
+ 2df:	03 f6                	add    esi,esi
+ 2e1:	03 ff                	add    edi,edi
+ 2e3:	03 db                	add    ebx,ebx
+ 2e5:	03 ed                	add    ebp,ebp
+ 2e7:	03 f6                	add    esi,esi
+ 2e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  2ec:	03 db                	add    ebx,ebx
  2ee:	03 ed                	add    ebp,ebp
  2f0:	03 f6                	add    esi,esi
@@ -369,14 +367,14 @@ Disassembly of section .data:
  2f4:	03 db                	add    ebx,ebx
  2f6:	03 ed                	add    ebp,ebp
  2f8:	03 f6                	add    esi,esi
- 2fa:	03 db                	add    ebx,ebx
- 2fc:	03 ed                	add    ebp,ebp
- 2fe:	03 f6                	add    esi,esi
- 300:	03 ff                	add    edi,edi
- 302:	03 db                	add    ebx,ebx
- 304:	03 ed                	add    ebp,ebp
- 306:	03 f6                	add    esi,esi
- 308:	03 ff                	add    edi,edi
+ 2fa:	03 ff                	add    edi,edi
+ 2fc:	03 db                	add    ebx,ebx
+ 2fe:	03 ed                	add    ebp,ebp
+ 300:	03 f6                	add    esi,esi
+ 302:	03 ff                	add    edi,edi
+ 304:	03 db                	add    ebx,ebx
+ 306:	03 ed                	add    ebp,ebp
+ 308:	03 f6                	add    esi,esi
  30a:	03 db                	add    ebx,ebx
  30c:	03 ed                	add    ebp,ebp
  30e:	03 f6                	add    esi,esi
@@ -385,15 +383,15 @@ Disassembly of section .data:
  314:	03 ed                	add    ebp,ebp
  316:	03 f6                	add    esi,esi
  318:	03 ff                	add    edi,edi
- 31a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 31d:	03 db                	add    ebx,ebx
- 31f:	03 ed                	add    ebp,ebp
- 321:	03 f6                	add    esi,esi
- 323:	03 ff                	add    edi,edi
- 325:	03 db                	add    ebx,ebx
- 327:	03 ed                	add    ebp,ebp
- 329:	03 f6                	add    esi,esi
- 32b:	03 ff                	add    edi,edi
+ 31a:	03 db                	add    ebx,ebx
+ 31c:	03 ed                	add    ebp,ebp
+ 31e:	03 f6                	add    esi,esi
+ 320:	03 ff                	add    edi,edi
+ 322:	03 db                	add    ebx,ebx
+ 324:	03 ed                	add    ebp,ebp
+ 326:	03 f6                	add    esi,esi
+ 328:	03 ff                	add    edi,edi
+ 32a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  32d:	03 db                	add    ebx,ebx
  32f:	03 ed                	add    ebp,ebp
  331:	03 f6                	add    esi,esi
@@ -417,15 +415,15 @@ Disassembly of section .data:
  355:	03 db                	add    ebx,ebx
  357:	03 ed                	add    ebp,ebp
  359:	03 f6                	add    esi,esi
- 35b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 35e:	03 db                	add    ebx,ebx
- 360:	03 ed                	add    ebp,ebp
- 362:	03 f6                	add    esi,esi
- 364:	03 ff                	add    edi,edi
- 366:	03 db                	add    ebx,ebx
- 368:	03 ed                	add    ebp,ebp
- 36a:	03 f6                	add    esi,esi
- 36c:	03 ff                	add    edi,edi
+ 35b:	03 ff                	add    edi,edi
+ 35d:	03 db                	add    ebx,ebx
+ 35f:	03 ed                	add    ebp,ebp
+ 361:	03 f6                	add    esi,esi
+ 363:	03 ff                	add    edi,edi
+ 365:	03 db                	add    ebx,ebx
+ 367:	03 ed                	add    ebp,ebp
+ 369:	03 f6                	add    esi,esi
+ 36b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  36e:	03 db                	add    ebx,ebx
  370:	03 ed                	add    ebp,ebp
  372:	03 f6                	add    esi,esi
@@ -433,14 +431,14 @@ Disassembly of section .data:
  376:	03 db                	add    ebx,ebx
  378:	03 ed                	add    ebp,ebp
  37a:	03 f6                	add    esi,esi
- 37c:	03 db                	add    ebx,ebx
- 37e:	03 ed                	add    ebp,ebp
- 380:	03 f6                	add    esi,esi
- 382:	03 ff                	add    edi,edi
- 384:	03 db                	add    ebx,ebx
- 386:	03 ed                	add    ebp,ebp
- 388:	03 f6                	add    esi,esi
- 38a:	03 ff                	add    edi,edi
+ 37c:	03 ff                	add    edi,edi
+ 37e:	03 db                	add    ebx,ebx
+ 380:	03 ed                	add    ebp,ebp
+ 382:	03 f6                	add    esi,esi
+ 384:	03 ff                	add    edi,edi
+ 386:	03 db                	add    ebx,ebx
+ 388:	03 ed                	add    ebp,ebp
+ 38a:	03 f6                	add    esi,esi
  38c:	03 db                	add    ebx,ebx
  38e:	03 ed                	add    ebp,ebp
  390:	03 f6                	add    esi,esi
@@ -449,15 +447,15 @@ Disassembly of section .data:
  396:	03 ed                	add    ebp,ebp
  398:	03 f6                	add    esi,esi
  39a:	03 ff                	add    edi,edi
- 39c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 39f:	03 db                	add    ebx,ebx
- 3a1:	03 ed                	add    ebp,ebp
- 3a3:	03 f6                	add    esi,esi
- 3a5:	03 ff                	add    edi,edi
- 3a7:	03 db                	add    ebx,ebx
- 3a9:	03 ed                	add    ebp,ebp
- 3ab:	03 f6                	add    esi,esi
- 3ad:	03 ff                	add    edi,edi
+ 39c:	03 db                	add    ebx,ebx
+ 39e:	03 ed                	add    ebp,ebp
+ 3a0:	03 f6                	add    esi,esi
+ 3a2:	03 ff                	add    edi,edi
+ 3a4:	03 db                	add    ebx,ebx
+ 3a6:	03 ed                	add    ebp,ebp
+ 3a8:	03 f6                	add    esi,esi
+ 3aa:	03 ff                	add    edi,edi
+ 3ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  3af:	03 db                	add    ebx,ebx
  3b1:	03 ed                	add    ebp,ebp
  3b3:	03 f6                	add    esi,esi
@@ -481,15 +479,15 @@ Disassembly of section .data:
  3d7:	03 db                	add    ebx,ebx
  3d9:	03 ed                	add    ebp,ebp
  3db:	03 f6                	add    esi,esi
- 3dd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 3e0:	03 db                	add    ebx,ebx
- 3e2:	03 ed                	add    ebp,ebp
- 3e4:	03 f6                	add    esi,esi
- 3e6:	03 ff                	add    edi,edi
- 3e8:	03 db                	add    ebx,ebx
- 3ea:	03 ed                	add    ebp,ebp
- 3ec:	03 f6                	add    esi,esi
- 3ee:	03 ff                	add    edi,edi
+ 3dd:	03 ff                	add    edi,edi
+ 3df:	03 db                	add    ebx,ebx
+ 3e1:	03 ed                	add    ebp,ebp
+ 3e3:	03 f6                	add    esi,esi
+ 3e5:	03 ff                	add    edi,edi
+ 3e7:	03 db                	add    ebx,ebx
+ 3e9:	03 ed                	add    ebp,ebp
+ 3eb:	03 f6                	add    esi,esi
+ 3ed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  3f0:	03 db                	add    ebx,ebx
  3f2:	03 ed                	add    ebp,ebp
  3f4:	03 f6                	add    esi,esi
@@ -497,14 +495,14 @@ Disassembly of section .data:
  3f8:	03 db                	add    ebx,ebx
  3fa:	03 ed                	add    ebp,ebp
  3fc:	03 f6                	add    esi,esi
- 3fe:	03 db                	add    ebx,ebx
- 400:	03 ed                	add    ebp,ebp
- 402:	03 f6                	add    esi,esi
- 404:	03 ff                	add    edi,edi
- 406:	03 db                	add    ebx,ebx
- 408:	03 ed                	add    ebp,ebp
- 40a:	03 f6                	add    esi,esi
- 40c:	03 ff                	add    edi,edi
+ 3fe:	03 ff                	add    edi,edi
+ 400:	03 db                	add    ebx,ebx
+ 402:	03 ed                	add    ebp,ebp
+ 404:	03 f6                	add    esi,esi
+ 406:	03 ff                	add    edi,edi
+ 408:	03 db                	add    ebx,ebx
+ 40a:	03 ed                	add    ebp,ebp
+ 40c:	03 f6                	add    esi,esi
  40e:	03 db                	add    ebx,ebx
  410:	03 ed                	add    ebp,ebp
  412:	03 f6                	add    esi,esi
@@ -513,15 +511,15 @@ Disassembly of section .data:
  418:	03 ed                	add    ebp,ebp
  41a:	03 f6                	add    esi,esi
  41c:	03 ff                	add    edi,edi
- 41e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 421:	03 db                	add    ebx,ebx
- 423:	03 ed                	add    ebp,ebp
- 425:	03 f6                	add    esi,esi
- 427:	03 ff                	add    edi,edi
- 429:	03 db                	add    ebx,ebx
- 42b:	03 ed                	add    ebp,ebp
- 42d:	03 f6                	add    esi,esi
- 42f:	03 ff                	add    edi,edi
+ 41e:	03 db                	add    ebx,ebx
+ 420:	03 ed                	add    ebp,ebp
+ 422:	03 f6                	add    esi,esi
+ 424:	03 ff                	add    edi,edi
+ 426:	03 db                	add    ebx,ebx
+ 428:	03 ed                	add    ebp,ebp
+ 42a:	03 f6                	add    esi,esi
+ 42c:	03 ff                	add    edi,edi
+ 42e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  431:	03 db                	add    ebx,ebx
  433:	03 ed                	add    ebp,ebp
  435:	03 f6                	add    esi,esi
@@ -545,15 +543,15 @@ Disassembly of section .data:
  459:	03 db                	add    ebx,ebx
  45b:	03 ed                	add    ebp,ebp
  45d:	03 f6                	add    esi,esi
- 45f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 462:	03 db                	add    ebx,ebx
- 464:	03 ed                	add    ebp,ebp
- 466:	03 f6                	add    esi,esi
- 468:	03 ff                	add    edi,edi
- 46a:	03 db                	add    ebx,ebx
- 46c:	03 ed                	add    ebp,ebp
- 46e:	03 f6                	add    esi,esi
- 470:	03 ff                	add    edi,edi
+ 45f:	03 ff                	add    edi,edi
+ 461:	03 db                	add    ebx,ebx
+ 463:	03 ed                	add    ebp,ebp
+ 465:	03 f6                	add    esi,esi
+ 467:	03 ff                	add    edi,edi
+ 469:	03 db                	add    ebx,ebx
+ 46b:	03 ed                	add    ebp,ebp
+ 46d:	03 f6                	add    esi,esi
+ 46f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  472:	03 db                	add    ebx,ebx
  474:	03 ed                	add    ebp,ebp
  476:	03 f6                	add    esi,esi
@@ -561,14 +559,14 @@ Disassembly of section .data:
  47a:	03 db                	add    ebx,ebx
  47c:	03 ed                	add    ebp,ebp
  47e:	03 f6                	add    esi,esi
- 480:	03 db                	add    ebx,ebx
- 482:	03 ed                	add    ebp,ebp
- 484:	03 f6                	add    esi,esi
- 486:	03 ff                	add    edi,edi
- 488:	03 db                	add    ebx,ebx
- 48a:	03 ed                	add    ebp,ebp
- 48c:	03 f6                	add    esi,esi
- 48e:	03 ff                	add    edi,edi
+ 480:	03 ff                	add    edi,edi
+ 482:	03 db                	add    ebx,ebx
+ 484:	03 ed                	add    ebp,ebp
+ 486:	03 f6                	add    esi,esi
+ 488:	03 ff                	add    edi,edi
+ 48a:	03 db                	add    ebx,ebx
+ 48c:	03 ed                	add    ebp,ebp
+ 48e:	03 f6                	add    esi,esi
  490:	03 db                	add    ebx,ebx
  492:	03 ed                	add    ebp,ebp
  494:	03 f6                	add    esi,esi
@@ -577,15 +575,15 @@ Disassembly of section .data:
  49a:	03 ed                	add    ebp,ebp
  49c:	03 f6                	add    esi,esi
  49e:	03 ff                	add    edi,edi
- 4a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 4a3:	03 db                	add    ebx,ebx
- 4a5:	03 ed                	add    ebp,ebp
- 4a7:	03 f6                	add    esi,esi
- 4a9:	03 ff                	add    edi,edi
- 4ab:	03 db                	add    ebx,ebx
- 4ad:	03 ed                	add    ebp,ebp
- 4af:	03 f6                	add    esi,esi
- 4b1:	03 ff                	add    edi,edi
+ 4a0:	03 db                	add    ebx,ebx
+ 4a2:	03 ed                	add    ebp,ebp
+ 4a4:	03 f6                	add    esi,esi
+ 4a6:	03 ff                	add    edi,edi
+ 4a8:	03 db                	add    ebx,ebx
+ 4aa:	03 ed                	add    ebp,ebp
+ 4ac:	03 f6                	add    esi,esi
+ 4ae:	03 ff                	add    edi,edi
+ 4b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  4b3:	03 db                	add    ebx,ebx
  4b5:	03 ed                	add    ebp,ebp
  4b7:	03 f6                	add    esi,esi
@@ -609,15 +607,15 @@ Disassembly of section .data:
  4db:	03 db                	add    ebx,ebx
  4dd:	03 ed                	add    ebp,ebp
  4df:	03 f6                	add    esi,esi
- 4e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 4e4:	03 db                	add    ebx,ebx
- 4e6:	03 ed                	add    ebp,ebp
- 4e8:	03 f6                	add    esi,esi
- 4ea:	03 ff                	add    edi,edi
- 4ec:	03 db                	add    ebx,ebx
- 4ee:	03 ed                	add    ebp,ebp
- 4f0:	03 f6                	add    esi,esi
- 4f2:	03 ff                	add    edi,edi
+ 4e1:	03 ff                	add    edi,edi
+ 4e3:	03 db                	add    ebx,ebx
+ 4e5:	03 ed                	add    ebp,ebp
+ 4e7:	03 f6                	add    esi,esi
+ 4e9:	03 ff                	add    edi,edi
+ 4eb:	03 db                	add    ebx,ebx
+ 4ed:	03 ed                	add    ebp,ebp
+ 4ef:	03 f6                	add    esi,esi
+ 4f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4f4:	03 db                	add    ebx,ebx
  4f6:	03 ed                	add    ebp,ebp
  4f8:	03 f6                	add    esi,esi
@@ -625,14 +623,14 @@ Disassembly of section .data:
  4fc:	03 db                	add    ebx,ebx
  4fe:	03 ed                	add    ebp,ebp
  500:	03 f6                	add    esi,esi
- 502:	03 db                	add    ebx,ebx
- 504:	03 ed                	add    ebp,ebp
- 506:	03 f6                	add    esi,esi
- 508:	03 ff                	add    edi,edi
- 50a:	03 db                	add    ebx,ebx
- 50c:	03 ed                	add    ebp,ebp
- 50e:	03 f6                	add    esi,esi
- 510:	03 ff                	add    edi,edi
+ 502:	03 ff                	add    edi,edi
+ 504:	03 db                	add    ebx,ebx
+ 506:	03 ed                	add    ebp,ebp
+ 508:	03 f6                	add    esi,esi
+ 50a:	03 ff                	add    edi,edi
+ 50c:	03 db                	add    ebx,ebx
+ 50e:	03 ed                	add    ebp,ebp
+ 510:	03 f6                	add    esi,esi
  512:	03 db                	add    ebx,ebx
  514:	03 ed                	add    ebp,ebp
  516:	03 f6                	add    esi,esi
@@ -641,15 +639,15 @@ Disassembly of section .data:
  51c:	03 ed                	add    ebp,ebp
  51e:	03 f6                	add    esi,esi
  520:	03 ff                	add    edi,edi
- 522:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 525:	03 db                	add    ebx,ebx
- 527:	03 ed                	add    ebp,ebp
- 529:	03 f6                	add    esi,esi
- 52b:	03 ff                	add    edi,edi
- 52d:	03 db                	add    ebx,ebx
- 52f:	03 ed                	add    ebp,ebp
- 531:	03 f6                	add    esi,esi
- 533:	03 ff                	add    edi,edi
+ 522:	03 db                	add    ebx,ebx
+ 524:	03 ed                	add    ebp,ebp
+ 526:	03 f6                	add    esi,esi
+ 528:	03 ff                	add    edi,edi
+ 52a:	03 db                	add    ebx,ebx
+ 52c:	03 ed                	add    ebp,ebp
+ 52e:	03 f6                	add    esi,esi
+ 530:	03 ff                	add    edi,edi
+ 532:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  535:	03 db                	add    ebx,ebx
  537:	03 ed                	add    ebp,ebp
  539:	03 f6                	add    esi,esi
@@ -673,15 +671,15 @@ Disassembly of section .data:
  55d:	03 db                	add    ebx,ebx
  55f:	03 ed                	add    ebp,ebp
  561:	03 f6                	add    esi,esi
- 563:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 566:	03 db                	add    ebx,ebx
- 568:	03 ed                	add    ebp,ebp
- 56a:	03 f6                	add    esi,esi
- 56c:	03 ff                	add    edi,edi
- 56e:	03 db                	add    ebx,ebx
- 570:	03 ed                	add    ebp,ebp
- 572:	03 f6                	add    esi,esi
- 574:	03 ff                	add    edi,edi
+ 563:	03 ff                	add    edi,edi
+ 565:	03 db                	add    ebx,ebx
+ 567:	03 ed                	add    ebp,ebp
+ 569:	03 f6                	add    esi,esi
+ 56b:	03 ff                	add    edi,edi
+ 56d:	03 db                	add    ebx,ebx
+ 56f:	03 ed                	add    ebp,ebp
+ 571:	03 f6                	add    esi,esi
+ 573:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  576:	03 db                	add    ebx,ebx
  578:	03 ed                	add    ebp,ebp
  57a:	03 f6                	add    esi,esi
@@ -689,14 +687,14 @@ Disassembly of section .data:
  57e:	03 db                	add    ebx,ebx
  580:	03 ed                	add    ebp,ebp
  582:	03 f6                	add    esi,esi
- 584:	03 db                	add    ebx,ebx
- 586:	03 ed                	add    ebp,ebp
- 588:	03 f6                	add    esi,esi
- 58a:	03 ff                	add    edi,edi
- 58c:	03 db                	add    ebx,ebx
- 58e:	03 ed                	add    ebp,ebp
- 590:	03 f6                	add    esi,esi
- 592:	03 ff                	add    edi,edi
+ 584:	03 ff                	add    edi,edi
+ 586:	03 db                	add    ebx,ebx
+ 588:	03 ed                	add    ebp,ebp
+ 58a:	03 f6                	add    esi,esi
+ 58c:	03 ff                	add    edi,edi
+ 58e:	03 db                	add    ebx,ebx
+ 590:	03 ed                	add    ebp,ebp
+ 592:	03 f6                	add    esi,esi
  594:	03 db                	add    ebx,ebx
  596:	03 ed                	add    ebp,ebp
  598:	03 f6                	add    esi,esi
@@ -705,15 +703,15 @@ Disassembly of section .data:
  59e:	03 ed                	add    ebp,ebp
  5a0:	03 f6                	add    esi,esi
  5a2:	03 ff                	add    edi,edi
- 5a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 5a7:	03 db                	add    ebx,ebx
- 5a9:	03 ed                	add    ebp,ebp
- 5ab:	03 f6                	add    esi,esi
- 5ad:	03 ff                	add    edi,edi
- 5af:	03 db                	add    ebx,ebx
- 5b1:	03 ed                	add    ebp,ebp
- 5b3:	03 f6                	add    esi,esi
- 5b5:	03 ff                	add    edi,edi
+ 5a4:	03 db                	add    ebx,ebx
+ 5a6:	03 ed                	add    ebp,ebp
+ 5a8:	03 f6                	add    esi,esi
+ 5aa:	03 ff                	add    edi,edi
+ 5ac:	03 db                	add    ebx,ebx
+ 5ae:	03 ed                	add    ebp,ebp
+ 5b0:	03 f6                	add    esi,esi
+ 5b2:	03 ff                	add    edi,edi
+ 5b4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  5b7:	03 db                	add    ebx,ebx
  5b9:	03 ed                	add    ebp,ebp
  5bb:	03 f6                	add    esi,esi
@@ -737,15 +735,15 @@ Disassembly of section .data:
  5df:	03 db                	add    ebx,ebx
  5e1:	03 ed                	add    ebp,ebp
  5e3:	03 f6                	add    esi,esi
- 5e5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 5e8:	03 db                	add    ebx,ebx
- 5ea:	03 ed                	add    ebp,ebp
- 5ec:	03 f6                	add    esi,esi
- 5ee:	03 ff                	add    edi,edi
- 5f0:	03 db                	add    ebx,ebx
- 5f2:	03 ed                	add    ebp,ebp
- 5f4:	03 f6                	add    esi,esi
- 5f6:	03 ff                	add    edi,edi
+ 5e5:	03 ff                	add    edi,edi
+ 5e7:	03 db                	add    ebx,ebx
+ 5e9:	03 ed                	add    ebp,ebp
+ 5eb:	03 f6                	add    esi,esi
+ 5ed:	03 ff                	add    edi,edi
+ 5ef:	03 db                	add    ebx,ebx
+ 5f1:	03 ed                	add    ebp,ebp
+ 5f3:	03 f6                	add    esi,esi
+ 5f5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  5f8:	03 db                	add    ebx,ebx
  5fa:	03 ed                	add    ebp,ebp
  5fc:	03 f6                	add    esi,esi
@@ -753,14 +751,14 @@ Disassembly of section .data:
  600:	03 db                	add    ebx,ebx
  602:	03 ed                	add    ebp,ebp
  604:	03 f6                	add    esi,esi
- 606:	03 db                	add    ebx,ebx
- 608:	03 ed                	add    ebp,ebp
- 60a:	03 f6                	add    esi,esi
- 60c:	03 ff                	add    edi,edi
- 60e:	03 db                	add    ebx,ebx
- 610:	03 ed                	add    ebp,ebp
- 612:	03 f6                	add    esi,esi
- 614:	03 ff                	add    edi,edi
+ 606:	03 ff                	add    edi,edi
+ 608:	03 db                	add    ebx,ebx
+ 60a:	03 ed                	add    ebp,ebp
+ 60c:	03 f6                	add    esi,esi
+ 60e:	03 ff                	add    edi,edi
+ 610:	03 db                	add    ebx,ebx
+ 612:	03 ed                	add    ebp,ebp
+ 614:	03 f6                	add    esi,esi
  616:	03 db                	add    ebx,ebx
  618:	03 ed                	add    ebp,ebp
  61a:	03 f6                	add    esi,esi
@@ -769,15 +767,15 @@ Disassembly of section .data:
  620:	03 ed                	add    ebp,ebp
  622:	03 f6                	add    esi,esi
  624:	03 ff                	add    edi,edi
- 626:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 629:	03 db                	add    ebx,ebx
- 62b:	03 ed                	add    ebp,ebp
- 62d:	03 f6                	add    esi,esi
- 62f:	03 ff                	add    edi,edi
- 631:	03 db                	add    ebx,ebx
- 633:	03 ed                	add    ebp,ebp
- 635:	03 f6                	add    esi,esi
- 637:	03 ff                	add    edi,edi
+ 626:	03 db                	add    ebx,ebx
+ 628:	03 ed                	add    ebp,ebp
+ 62a:	03 f6                	add    esi,esi
+ 62c:	03 ff                	add    edi,edi
+ 62e:	03 db                	add    ebx,ebx
+ 630:	03 ed                	add    ebp,ebp
+ 632:	03 f6                	add    esi,esi
+ 634:	03 ff                	add    edi,edi
+ 636:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  639:	03 db                	add    ebx,ebx
  63b:	03 ed                	add    ebp,ebp
  63d:	03 f6                	add    esi,esi
@@ -801,15 +799,15 @@ Disassembly of section .data:
  661:	03 db                	add    ebx,ebx
  663:	03 ed                	add    ebp,ebp
  665:	03 f6                	add    esi,esi
- 667:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 66a:	03 db                	add    ebx,ebx
- 66c:	03 ed                	add    ebp,ebp
- 66e:	03 f6                	add    esi,esi
- 670:	03 ff                	add    edi,edi
- 672:	03 db                	add    ebx,ebx
- 674:	03 ed                	add    ebp,ebp
- 676:	03 f6                	add    esi,esi
- 678:	03 ff                	add    edi,edi
+ 667:	03 ff                	add    edi,edi
+ 669:	03 db                	add    ebx,ebx
+ 66b:	03 ed                	add    ebp,ebp
+ 66d:	03 f6                	add    esi,esi
+ 66f:	03 ff                	add    edi,edi
+ 671:	03 db                	add    ebx,ebx
+ 673:	03 ed                	add    ebp,ebp
+ 675:	03 f6                	add    esi,esi
+ 677:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  67a:	03 db                	add    ebx,ebx
  67c:	03 ed                	add    ebp,ebp
  67e:	03 f6                	add    esi,esi
@@ -817,14 +815,14 @@ Disassembly of section .data:
  682:	03 db                	add    ebx,ebx
  684:	03 ed                	add    ebp,ebp
  686:	03 f6                	add    esi,esi
- 688:	03 db                	add    ebx,ebx
- 68a:	03 ed                	add    ebp,ebp
- 68c:	03 f6                	add    esi,esi
- 68e:	03 ff                	add    edi,edi
- 690:	03 db                	add    ebx,ebx
- 692:	03 ed                	add    ebp,ebp
- 694:	03 f6                	add    esi,esi
- 696:	03 ff                	add    edi,edi
+ 688:	03 ff                	add    edi,edi
+ 68a:	03 db                	add    ebx,ebx
+ 68c:	03 ed                	add    ebp,ebp
+ 68e:	03 f6                	add    esi,esi
+ 690:	03 ff                	add    edi,edi
+ 692:	03 db                	add    ebx,ebx
+ 694:	03 ed                	add    ebp,ebp
+ 696:	03 f6                	add    esi,esi
  698:	03 db                	add    ebx,ebx
  69a:	03 ed                	add    ebp,ebp
  69c:	03 f6                	add    esi,esi
@@ -833,15 +831,15 @@ Disassembly of section .data:
  6a2:	03 ed                	add    ebp,ebp
  6a4:	03 f6                	add    esi,esi
  6a6:	03 ff                	add    edi,edi
- 6a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 6ab:	03 db                	add    ebx,ebx
- 6ad:	03 ed                	add    ebp,ebp
- 6af:	03 f6                	add    esi,esi
- 6b1:	03 ff                	add    edi,edi
- 6b3:	03 db                	add    ebx,ebx
- 6b5:	03 ed                	add    ebp,ebp
- 6b7:	03 f6                	add    esi,esi
- 6b9:	03 ff                	add    edi,edi
+ 6a8:	03 db                	add    ebx,ebx
+ 6aa:	03 ed                	add    ebp,ebp
+ 6ac:	03 f6                	add    esi,esi
+ 6ae:	03 ff                	add    edi,edi
+ 6b0:	03 db                	add    ebx,ebx
+ 6b2:	03 ed                	add    ebp,ebp
+ 6b4:	03 f6                	add    esi,esi
+ 6b6:	03 ff                	add    edi,edi
+ 6b8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  6bb:	03 db                	add    ebx,ebx
  6bd:	03 ed                	add    ebp,ebp
  6bf:	03 f6                	add    esi,esi
@@ -865,15 +863,15 @@ Disassembly of section .data:
  6e3:	03 db                	add    ebx,ebx
  6e5:	03 ed                	add    ebp,ebp
  6e7:	03 f6                	add    esi,esi
- 6e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 6ec:	03 db                	add    ebx,ebx
- 6ee:	03 ed                	add    ebp,ebp
- 6f0:	03 f6                	add    esi,esi
- 6f2:	03 ff                	add    edi,edi
- 6f4:	03 db                	add    ebx,ebx
- 6f6:	03 ed                	add    ebp,ebp
- 6f8:	03 f6                	add    esi,esi
- 6fa:	03 ff                	add    edi,edi
+ 6e9:	03 ff                	add    edi,edi
+ 6eb:	03 db                	add    ebx,ebx
+ 6ed:	03 ed                	add    ebp,ebp
+ 6ef:	03 f6                	add    esi,esi
+ 6f1:	03 ff                	add    edi,edi
+ 6f3:	03 db                	add    ebx,ebx
+ 6f5:	03 ed                	add    ebp,ebp
+ 6f7:	03 f6                	add    esi,esi
+ 6f9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  6fc:	03 db                	add    ebx,ebx
  6fe:	03 ed                	add    ebp,ebp
  700:	03 f6                	add    esi,esi
@@ -881,14 +879,14 @@ Disassembly of section .data:
  704:	03 db                	add    ebx,ebx
  706:	03 ed                	add    ebp,ebp
  708:	03 f6                	add    esi,esi
- 70a:	03 db                	add    ebx,ebx
- 70c:	03 ed                	add    ebp,ebp
- 70e:	03 f6                	add    esi,esi
- 710:	03 ff                	add    edi,edi
- 712:	03 db                	add    ebx,ebx
- 714:	03 ed                	add    ebp,ebp
- 716:	03 f6                	add    esi,esi
- 718:	03 ff                	add    edi,edi
+ 70a:	03 ff                	add    edi,edi
+ 70c:	03 db                	add    ebx,ebx
+ 70e:	03 ed                	add    ebp,ebp
+ 710:	03 f6                	add    esi,esi
+ 712:	03 ff                	add    edi,edi
+ 714:	03 db                	add    ebx,ebx
+ 716:	03 ed                	add    ebp,ebp
+ 718:	03 f6                	add    esi,esi
  71a:	03 db                	add    ebx,ebx
  71c:	03 ed                	add    ebp,ebp
  71e:	03 f6                	add    esi,esi
@@ -897,15 +895,15 @@ Disassembly of section .data:
  724:	03 ed                	add    ebp,ebp
  726:	03 f6                	add    esi,esi
  728:	03 ff                	add    edi,edi
- 72a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 72d:	03 db                	add    ebx,ebx
- 72f:	03 ed                	add    ebp,ebp
- 731:	03 f6                	add    esi,esi
- 733:	03 ff                	add    edi,edi
- 735:	03 db                	add    ebx,ebx
- 737:	03 ed                	add    ebp,ebp
- 739:	03 f6                	add    esi,esi
- 73b:	03 ff                	add    edi,edi
+ 72a:	03 db                	add    ebx,ebx
+ 72c:	03 ed                	add    ebp,ebp
+ 72e:	03 f6                	add    esi,esi
+ 730:	03 ff                	add    edi,edi
+ 732:	03 db                	add    ebx,ebx
+ 734:	03 ed                	add    ebp,ebp
+ 736:	03 f6                	add    esi,esi
+ 738:	03 ff                	add    edi,edi
+ 73a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  73d:	03 db                	add    ebx,ebx
  73f:	03 ed                	add    ebp,ebp
  741:	03 f6                	add    esi,esi
@@ -929,15 +927,15 @@ Disassembly of section .data:
  765:	03 db                	add    ebx,ebx
  767:	03 ed                	add    ebp,ebp
  769:	03 f6                	add    esi,esi
- 76b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 76e:	03 db                	add    ebx,ebx
- 770:	03 ed                	add    ebp,ebp
- 772:	03 f6                	add    esi,esi
- 774:	03 ff                	add    edi,edi
- 776:	03 db                	add    ebx,ebx
- 778:	03 ed                	add    ebp,ebp
- 77a:	03 f6                	add    esi,esi
- 77c:	03 ff                	add    edi,edi
+ 76b:	03 ff                	add    edi,edi
+ 76d:	03 db                	add    ebx,ebx
+ 76f:	03 ed                	add    ebp,ebp
+ 771:	03 f6                	add    esi,esi
+ 773:	03 ff                	add    edi,edi
+ 775:	03 db                	add    ebx,ebx
+ 777:	03 ed                	add    ebp,ebp
+ 779:	03 f6                	add    esi,esi
+ 77b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  77e:	03 db                	add    ebx,ebx
  780:	03 ed                	add    ebp,ebp
  782:	03 f6                	add    esi,esi
@@ -945,14 +943,14 @@ Disassembly of section .data:
  786:	03 db                	add    ebx,ebx
  788:	03 ed                	add    ebp,ebp
  78a:	03 f6                	add    esi,esi
- 78c:	03 db                	add    ebx,ebx
- 78e:	03 ed                	add    ebp,ebp
- 790:	03 f6                	add    esi,esi
- 792:	03 ff                	add    edi,edi
- 794:	03 db                	add    ebx,ebx
- 796:	03 ed                	add    ebp,ebp
- 798:	03 f6                	add    esi,esi
- 79a:	03 ff                	add    edi,edi
+ 78c:	03 ff                	add    edi,edi
+ 78e:	03 db                	add    ebx,ebx
+ 790:	03 ed                	add    ebp,ebp
+ 792:	03 f6                	add    esi,esi
+ 794:	03 ff                	add    edi,edi
+ 796:	03 db                	add    ebx,ebx
+ 798:	03 ed                	add    ebp,ebp
+ 79a:	03 f6                	add    esi,esi
  79c:	03 db                	add    ebx,ebx
  79e:	03 ed                	add    ebp,ebp
  7a0:	03 f6                	add    esi,esi
@@ -961,15 +959,15 @@ Disassembly of section .data:
  7a6:	03 ed                	add    ebp,ebp
  7a8:	03 f6                	add    esi,esi
  7aa:	03 ff                	add    edi,edi
- 7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 7af:	03 db                	add    ebx,ebx
- 7b1:	03 ed                	add    ebp,ebp
- 7b3:	03 f6                	add    esi,esi
- 7b5:	03 ff                	add    edi,edi
- 7b7:	03 db                	add    ebx,ebx
- 7b9:	03 ed                	add    ebp,ebp
- 7bb:	03 f6                	add    esi,esi
- 7bd:	03 ff                	add    edi,edi
+ 7ac:	03 db                	add    ebx,ebx
+ 7ae:	03 ed                	add    ebp,ebp
+ 7b0:	03 f6                	add    esi,esi
+ 7b2:	03 ff                	add    edi,edi
+ 7b4:	03 db                	add    ebx,ebx
+ 7b6:	03 ed                	add    ebp,ebp
+ 7b8:	03 f6                	add    esi,esi
+ 7ba:	03 ff                	add    edi,edi
+ 7bc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  7bf:	03 db                	add    ebx,ebx
  7c1:	03 ed                	add    ebp,ebp
  7c3:	03 f6                	add    esi,esi
@@ -993,15 +991,15 @@ Disassembly of section .data:
  7e7:	03 db                	add    ebx,ebx
  7e9:	03 ed                	add    ebp,ebp
  7eb:	03 f6                	add    esi,esi
- 7ed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 7f0:	03 db                	add    ebx,ebx
- 7f2:	03 ed                	add    ebp,ebp
- 7f4:	03 f6                	add    esi,esi
- 7f6:	03 ff                	add    edi,edi
- 7f8:	03 db                	add    ebx,ebx
- 7fa:	03 ed                	add    ebp,ebp
- 7fc:	03 f6                	add    esi,esi
- 7fe:	03 ff                	add    edi,edi
+ 7ed:	03 ff                	add    edi,edi
+ 7ef:	03 db                	add    ebx,ebx
+ 7f1:	03 ed                	add    ebp,ebp
+ 7f3:	03 f6                	add    esi,esi
+ 7f5:	03 ff                	add    edi,edi
+ 7f7:	03 db                	add    ebx,ebx
+ 7f9:	03 ed                	add    ebp,ebp
+ 7fb:	03 f6                	add    esi,esi
+ 7fd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  800:	03 db                	add    ebx,ebx
  802:	03 ed                	add    ebp,ebp
  804:	03 f6                	add    esi,esi
@@ -1009,14 +1007,14 @@ Disassembly of section .data:
  808:	03 db                	add    ebx,ebx
  80a:	03 ed                	add    ebp,ebp
  80c:	03 f6                	add    esi,esi
- 80e:	03 db                	add    ebx,ebx
- 810:	03 ed                	add    ebp,ebp
- 812:	03 f6                	add    esi,esi
- 814:	03 ff                	add    edi,edi
- 816:	03 db                	add    ebx,ebx
- 818:	03 ed                	add    ebp,ebp
- 81a:	03 f6                	add    esi,esi
- 81c:	03 ff                	add    edi,edi
+ 80e:	03 ff                	add    edi,edi
+ 810:	03 db                	add    ebx,ebx
+ 812:	03 ed                	add    ebp,ebp
+ 814:	03 f6                	add    esi,esi
+ 816:	03 ff                	add    edi,edi
+ 818:	03 db                	add    ebx,ebx
+ 81a:	03 ed                	add    ebp,ebp
+ 81c:	03 f6                	add    esi,esi
  81e:	03 db                	add    ebx,ebx
  820:	03 ed                	add    ebp,ebp
  822:	03 f6                	add    esi,esi
@@ -1025,15 +1023,15 @@ Disassembly of section .data:
  828:	03 ed                	add    ebp,ebp
  82a:	03 f6                	add    esi,esi
  82c:	03 ff                	add    edi,edi
- 82e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 831:	03 db                	add    ebx,ebx
- 833:	03 ed                	add    ebp,ebp
- 835:	03 f6                	add    esi,esi
- 837:	03 ff                	add    edi,edi
- 839:	03 db                	add    ebx,ebx
- 83b:	03 ed                	add    ebp,ebp
- 83d:	03 f6                	add    esi,esi
- 83f:	03 ff                	add    edi,edi
+ 82e:	03 db                	add    ebx,ebx
+ 830:	03 ed                	add    ebp,ebp
+ 832:	03 f6                	add    esi,esi
+ 834:	03 ff                	add    edi,edi
+ 836:	03 db                	add    ebx,ebx
+ 838:	03 ed                	add    ebp,ebp
+ 83a:	03 f6                	add    esi,esi
+ 83c:	03 ff                	add    edi,edi
+ 83e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  841:	03 db                	add    ebx,ebx
  843:	03 ed                	add    ebp,ebp
  845:	03 f6                	add    esi,esi
@@ -1057,15 +1055,15 @@ Disassembly of section .data:
  869:	03 db                	add    ebx,ebx
  86b:	03 ed                	add    ebp,ebp
  86d:	03 f6                	add    esi,esi
- 86f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 872:	03 db                	add    ebx,ebx
- 874:	03 ed                	add    ebp,ebp
- 876:	03 f6                	add    esi,esi
- 878:	03 ff                	add    edi,edi
- 87a:	03 db                	add    ebx,ebx
- 87c:	03 ed                	add    ebp,ebp
- 87e:	03 f6                	add    esi,esi
- 880:	03 ff                	add    edi,edi
+ 86f:	03 ff                	add    edi,edi
+ 871:	03 db                	add    ebx,ebx
+ 873:	03 ed                	add    ebp,ebp
+ 875:	03 f6                	add    esi,esi
+ 877:	03 ff                	add    edi,edi
+ 879:	03 db                	add    ebx,ebx
+ 87b:	03 ed                	add    ebp,ebp
+ 87d:	03 f6                	add    esi,esi
+ 87f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  882:	03 db                	add    ebx,ebx
  884:	03 ed                	add    ebp,ebp
  886:	03 f6                	add    esi,esi
@@ -1073,14 +1071,14 @@ Disassembly of section .data:
  88a:	03 db                	add    ebx,ebx
  88c:	03 ed                	add    ebp,ebp
  88e:	03 f6                	add    esi,esi
- 890:	03 db                	add    ebx,ebx
- 892:	03 ed                	add    ebp,ebp
- 894:	03 f6                	add    esi,esi
- 896:	03 ff                	add    edi,edi
- 898:	03 db                	add    ebx,ebx
- 89a:	03 ed                	add    ebp,ebp
- 89c:	03 f6                	add    esi,esi
- 89e:	03 ff                	add    edi,edi
+ 890:	03 ff                	add    edi,edi
+ 892:	03 db                	add    ebx,ebx
+ 894:	03 ed                	add    ebp,ebp
+ 896:	03 f6                	add    esi,esi
+ 898:	03 ff                	add    edi,edi
+ 89a:	03 db                	add    ebx,ebx
+ 89c:	03 ed                	add    ebp,ebp
+ 89e:	03 f6                	add    esi,esi
  8a0:	03 db                	add    ebx,ebx
  8a2:	03 ed                	add    ebp,ebp
  8a4:	03 f6                	add    esi,esi
@@ -1089,15 +1087,15 @@ Disassembly of section .data:
  8aa:	03 ed                	add    ebp,ebp
  8ac:	03 f6                	add    esi,esi
  8ae:	03 ff                	add    edi,edi
- 8b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 8b3:	03 db                	add    ebx,ebx
- 8b5:	03 ed                	add    ebp,ebp
- 8b7:	03 f6                	add    esi,esi
- 8b9:	03 ff                	add    edi,edi
- 8bb:	03 db                	add    ebx,ebx
- 8bd:	03 ed                	add    ebp,ebp
- 8bf:	03 f6                	add    esi,esi
- 8c1:	03 ff                	add    edi,edi
+ 8b0:	03 db                	add    ebx,ebx
+ 8b2:	03 ed                	add    ebp,ebp
+ 8b4:	03 f6                	add    esi,esi
+ 8b6:	03 ff                	add    edi,edi
+ 8b8:	03 db                	add    ebx,ebx
+ 8ba:	03 ed                	add    ebp,ebp
+ 8bc:	03 f6                	add    esi,esi
+ 8be:	03 ff                	add    edi,edi
+ 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  8c3:	03 db                	add    ebx,ebx
  8c5:	03 ed                	add    ebp,ebp
  8c7:	03 f6                	add    esi,esi
@@ -1121,15 +1119,15 @@ Disassembly of section .data:
  8eb:	03 db                	add    ebx,ebx
  8ed:	03 ed                	add    ebp,ebp
  8ef:	03 f6                	add    esi,esi
- 8f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 8f4:	03 db                	add    ebx,ebx
- 8f6:	03 ed                	add    ebp,ebp
- 8f8:	03 f6                	add    esi,esi
- 8fa:	03 ff                	add    edi,edi
- 8fc:	03 db                	add    ebx,ebx
- 8fe:	03 ed                	add    ebp,ebp
- 900:	03 f6                	add    esi,esi
- 902:	03 ff                	add    edi,edi
+ 8f1:	03 ff                	add    edi,edi
+ 8f3:	03 db                	add    ebx,ebx
+ 8f5:	03 ed                	add    ebp,ebp
+ 8f7:	03 f6                	add    esi,esi
+ 8f9:	03 ff                	add    edi,edi
+ 8fb:	03 db                	add    ebx,ebx
+ 8fd:	03 ed                	add    ebp,ebp
+ 8ff:	03 f6                	add    esi,esi
+ 901:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  904:	03 db                	add    ebx,ebx
  906:	03 ed                	add    ebp,ebp
  908:	03 f6                	add    esi,esi
@@ -1137,19 +1135,30 @@ Disassembly of section .data:
  90c:	03 db                	add    ebx,ebx
  90e:	03 ed                	add    ebp,ebp
  910:	03 f6                	add    esi,esi
- 912:	83 e8 01             	sub    eax,0x1
- 915:	0f 85 55 f7 ff ff    	jne    0x70
- 91b:	66 90                	xchg   ax,ax
- 91d:	66 90                	xchg   ax,ax
- 91f:	66 90                	xchg   ax,ax
- 921:	66 90                	xchg   ax,ax
- 923:	66 90                	xchg   ax,ax
- 925:	66 90                	xchg   ax,ax
- 927:	66 90                	xchg   ax,ax
- 929:	66 90                	xchg   ax,ax
- 92b:	5f                   	pop    rdi
- 92c:	5e                   	pop    rsi
- 92d:	5d                   	pop    rbp
- 92e:	5b                   	pop    rbx
- 92f:	0f 77                	emms   
- 931:	c3                   	ret    
+ 912:	03 ff                	add    edi,edi
+ 914:	03 db                	add    ebx,ebx
+ 916:	03 ed                	add    ebp,ebp
+ 918:	03 f6                	add    esi,esi
+ 91a:	03 ff                	add    edi,edi
+ 91c:	03 db                	add    ebx,ebx
+ 91e:	03 ed                	add    ebp,ebp
+ 920:	03 f6                	add    esi,esi
+ 922:	83 e8 01             	sub    eax,0x1
+ 925:	0f 85 55 f7 ff ff    	jne    0x80
+ 92b:	66 90                	xchg   ax,ax
+ 92d:	66 90                	xchg   ax,ax
+ 92f:	66 90                	xchg   ax,ax
+ 931:	66 90                	xchg   ax,ax
+ 933:	66 90                	xchg   ax,ax
+ 935:	66 90                	xchg   ax,ax
+ 937:	66 90                	xchg   ax,ax
+ 939:	66 90                	xchg   ax,ax
+ 93b:	48 83 c4 40          	add    rsp,0x40
+ 93f:	41 59                	pop    r9
+ 941:	41 58                	pop    r8
+ 943:	5f                   	pop    rdi
+ 944:	5e                   	pop    rsi
+ 945:	5d                   	pop    rbp
+ 946:	5b                   	pop    rbx
+ 947:	0f 77                	emms   
+ 949:	c3                   	ret    

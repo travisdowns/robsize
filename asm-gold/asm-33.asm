@@ -17,42 +17,44 @@ Disassembly of section .data:
       11:	55                   	push   rbp
       12:	56                   	push   rsi
       13:	57                   	push   rdi
-      14:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-      1b:	7f 00 00 
-      1e:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-      25:	7f 00 00 
-      28:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-      2f:	00 00 00 
-      32:	48 83 eb 00          	sub    rbx,0x0
-      36:	48 83 ed 00          	sub    rbp,0x0
-      3a:	48 83 ee 00          	sub    rsi,0x0
-      3e:	48 83 ef 00          	sub    rdi,0x0
-      42:	49 83 e8 00          	sub    r8,0x0
-      46:	49 83 e9 00          	sub    r9,0x0
-      4a:	49 83 ea 00          	sub    r10,0x0
-      4e:	49 83 eb 00          	sub    r11,0x0
-      52:	49 83 ec 00          	sub    r12,0x0
-      56:	49 83 ed 00          	sub    r13,0x0
-      5a:	49 83 ee 00          	sub    r14,0x0
-      5e:	49 83 ef 00          	sub    r15,0x0
-      62:	90                   	nop
-      63:	90                   	nop
-      64:	90                   	nop
-      65:	90                   	nop
-      66:	90                   	nop
-      67:	90                   	nop
-      68:	90                   	nop
-      69:	90                   	nop
-      6a:	90                   	nop
-      6b:	90                   	nop
-      6c:	90                   	nop
-      6d:	90                   	nop
-      6e:	90                   	nop
-      6f:	90                   	nop
-      70:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-      74:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-      78:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-      7c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+      14:	41 50                	push   r8
+      16:	41 51                	push   r9
+      18:	48 83 ec 40          	sub    rsp,0x40
+      1c:	45 31 c0             	xor    r8d,r8d
+      1f:	4c 8d 0c 24          	lea    r9,[rsp]
+      23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+      2a:	7f 00 00 
+      2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+      34:	7f 00 00 
+      37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+      3e:	00 00 00 
+      41:	48 83 eb 00          	sub    rbx,0x0
+      45:	48 83 ed 00          	sub    rbp,0x0
+      49:	48 83 ee 00          	sub    rsi,0x0
+      4d:	48 83 ef 00          	sub    rdi,0x0
+      51:	49 83 e8 00          	sub    r8,0x0
+      55:	49 83 e9 00          	sub    r9,0x0
+      59:	49 83 ea 00          	sub    r10,0x0
+      5d:	49 83 eb 00          	sub    r11,0x0
+      61:	49 83 ec 00          	sub    r12,0x0
+      65:	49 83 ed 00          	sub    r13,0x0
+      69:	49 83 ee 00          	sub    r14,0x0
+      6d:	49 83 ef 00          	sub    r15,0x0
+      71:	90                   	nop
+      72:	90                   	nop
+      73:	90                   	nop
+      74:	90                   	nop
+      75:	90                   	nop
+      76:	90                   	nop
+      77:	90                   	nop
+      78:	90                   	nop
+      79:	90                   	nop
+      7a:	90                   	nop
+      7b:	90                   	nop
+      7c:	90                   	nop
+      7d:	90                   	nop
+      7e:	90                   	nop
+      7f:	90                   	nop
       80:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
       84:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
       88:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -65,11 +67,11 @@ Disassembly of section .data:
       a4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
       a8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
       ac:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-      b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-      b3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-      b7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-      bb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-      bf:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+      b0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+      b4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+      b8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+      bc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+      c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
       c3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
       c7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
       cb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -99,11 +101,11 @@ Disassembly of section .data:
      12b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      12f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      133:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     137:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     13a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     13e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     142:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     146:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     137:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     13b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     13f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     143:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     147:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      14a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      14e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      152:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -133,11 +135,11 @@ Disassembly of section .data:
      1b2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      1b6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      1ba:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     1be:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     1c1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     1c5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     1c9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     1cd:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     1be:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     1c2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     1c6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     1ca:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     1ce:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      1d1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      1d5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      1d9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -167,11 +169,11 @@ Disassembly of section .data:
      239:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      23d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      241:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     245:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     248:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     24c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     250:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     254:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     245:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     249:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     24d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     251:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     255:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      258:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      25c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      260:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -201,11 +203,11 @@ Disassembly of section .data:
      2c0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      2c4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      2c8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     2cc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     2cf:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     2d3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     2d7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     2db:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     2cc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     2d0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     2d4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     2d8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     2dc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      2df:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      2e3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      2e7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -235,11 +237,11 @@ Disassembly of section .data:
      347:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      34b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      34f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     353:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     356:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     35a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     35e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     362:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     353:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     357:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     35b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     35f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     363:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      366:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      36a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      36e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -269,11 +271,11 @@ Disassembly of section .data:
      3ce:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      3d2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      3d6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     3da:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     3dd:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     3e1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     3e5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     3e9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     3da:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     3de:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     3e2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     3e6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     3ea:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      3ed:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      3f1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      3f5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -303,11 +305,11 @@ Disassembly of section .data:
      455:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      459:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      45d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     461:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     464:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     468:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     46c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     470:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     461:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     465:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     469:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     46d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     471:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      474:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      478:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      47c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -337,11 +339,11 @@ Disassembly of section .data:
      4dc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      4e0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      4e4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     4e8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     4eb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     4ef:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     4f3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     4f7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     4e8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     4ec:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     4f0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     4f4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     4f8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      4fb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      4ff:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      503:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -371,11 +373,11 @@ Disassembly of section .data:
      563:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      567:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      56b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     56f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     572:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     576:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     57a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     57e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     56f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     573:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     577:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     57b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     57f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      582:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      586:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      58a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -405,11 +407,11 @@ Disassembly of section .data:
      5ea:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      5ee:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      5f2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     5f6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     5f9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     5fd:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     601:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     605:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     5f6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     5fa:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     5fe:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     602:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     606:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      609:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      60d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      611:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -439,11 +441,11 @@ Disassembly of section .data:
      671:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      675:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      679:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     67d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     680:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     684:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     688:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     68c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     67d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     681:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     685:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     689:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     68d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      690:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      694:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      698:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -473,11 +475,11 @@ Disassembly of section .data:
      6f8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      6fc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      700:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     704:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     707:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     70b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     70f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     713:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     704:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     708:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     70c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     710:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     714:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      717:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      71b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      71f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -507,11 +509,11 @@ Disassembly of section .data:
      77f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      783:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      787:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     78b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     78e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     792:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     796:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     79a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     78b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     78f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     793:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     797:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     79b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      79e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      7a2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      7a6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -541,11 +543,11 @@ Disassembly of section .data:
      806:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      80a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      80e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     812:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     815:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     819:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     81d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     821:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     812:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     816:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     81a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     81e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     822:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      825:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      829:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      82d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -575,11 +577,11 @@ Disassembly of section .data:
      88d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      891:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      895:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     899:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     89c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     8a0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     8a4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     8a8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     899:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     89d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     8a1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     8a5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     8a9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      8ac:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      8b0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      8b4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -609,11 +611,11 @@ Disassembly of section .data:
      914:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      918:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      91c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     920:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     923:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     927:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     92b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     92f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     920:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     924:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     928:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     92c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     930:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      933:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      937:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      93b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -643,11 +645,11 @@ Disassembly of section .data:
      99b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      99f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      9a3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     9a7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     9aa:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     9ae:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     9b2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     9b6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     9a7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     9ab:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     9af:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     9b3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     9b7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      9ba:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      9be:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      9c2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -677,11 +679,11 @@ Disassembly of section .data:
      a22:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      a26:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      a2a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     a2e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     a31:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     a35:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     a39:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     a3d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     a2e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     a32:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     a36:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     a3a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     a3e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      a41:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      a45:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      a49:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -711,11 +713,11 @@ Disassembly of section .data:
      aa9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      aad:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ab1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ab5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     ab8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     abc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ac0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ac4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ab5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ab9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     abd:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ac1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ac5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      ac8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      acc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ad0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -745,11 +747,11 @@ Disassembly of section .data:
      b30:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      b34:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      b38:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     b3c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     b3f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     b43:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     b47:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     b4b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     b3c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     b40:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     b44:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     b48:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     b4c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      b4f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      b53:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      b57:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -779,11 +781,11 @@ Disassembly of section .data:
      bb7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      bbb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      bbf:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     bc3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     bc6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     bca:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     bce:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     bd2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     bc3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     bc7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     bcb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     bcf:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     bd3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      bd6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      bda:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      bde:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -813,11 +815,11 @@ Disassembly of section .data:
      c3e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      c42:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      c46:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     c4a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     c4d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     c51:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     c55:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     c59:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     c4a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     c4e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     c52:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     c56:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     c5a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      c5d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      c61:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      c65:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -847,11 +849,11 @@ Disassembly of section .data:
      cc5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      cc9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ccd:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     cd1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     cd4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     cd8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     cdc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ce0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     cd1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     cd5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     cd9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     cdd:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ce1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      ce4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ce8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      cec:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -881,11 +883,11 @@ Disassembly of section .data:
      d4c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      d50:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      d54:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     d58:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     d5b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     d5f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     d63:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     d67:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     d58:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     d5c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     d60:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     d64:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     d68:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      d6b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      d6f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      d73:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -915,11 +917,11 @@ Disassembly of section .data:
      dd3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      dd7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ddb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ddf:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     de2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     de6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     dea:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     dee:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ddf:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     de3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     de7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     deb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     def:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      df2:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      df6:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      dfa:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -949,11 +951,11 @@ Disassembly of section .data:
      e5a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      e5e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      e62:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     e66:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     e69:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     e6d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     e71:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     e75:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     e66:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     e6a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     e6e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     e72:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     e76:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      e79:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      e7d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      e81:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -983,11 +985,11 @@ Disassembly of section .data:
      ee1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ee5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ee9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     eed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     ef0:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ef4:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ef8:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     efc:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     eed:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ef1:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ef5:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ef9:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     efd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      f00:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      f04:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      f08:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -1017,11 +1019,11 @@ Disassembly of section .data:
      f68:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      f6c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      f70:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     f74:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     f77:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     f7b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     f7f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     f83:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     f74:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     f78:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     f7c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     f80:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     f84:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      f87:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      f8b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      f8f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -1051,11 +1053,11 @@ Disassembly of section .data:
      fef:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ff3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
      ff7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-     ffb:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     ffe:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1002:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1006:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    100a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     ffb:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+     fff:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1003:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1007:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    100b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     100e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1012:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1016:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -1085,11 +1087,11 @@ Disassembly of section .data:
     1076:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     107a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     107e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1082:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    1085:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1089:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    108d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1091:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1082:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1086:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    108a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    108e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1092:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     1095:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1099:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     109d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -1119,11 +1121,11 @@ Disassembly of section .data:
     10fd:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1101:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1105:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1109:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    110c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1110:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1114:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1118:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1109:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    110d:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1111:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1115:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1119:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     111c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1120:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1124:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -1153,11 +1155,11 @@ Disassembly of section .data:
     1184:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1188:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     118c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1190:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    1193:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1197:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    119b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    119f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1190:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1194:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1198:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    119c:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    11a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     11a3:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     11a7:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     11ab:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -1187,11 +1189,11 @@ Disassembly of section .data:
     120b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     120f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1213:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1217:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    121a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    121e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1222:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    1226:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1217:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    121b:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    121f:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1223:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1227:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     122a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     122e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1232:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
@@ -1205,19 +1207,26 @@ Disassembly of section .data:
     1252:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     1256:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
     125a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
-    125e:	83 e8 01             	sub    eax,0x1
-    1261:	0f 85 09 ee ff ff    	jne    0x70
-    1267:	66 90                	xchg   ax,ax
-    1269:	66 90                	xchg   ax,ax
-    126b:	66 90                	xchg   ax,ax
-    126d:	66 90                	xchg   ax,ax
-    126f:	66 90                	xchg   ax,ax
-    1271:	66 90                	xchg   ax,ax
-    1273:	66 90                	xchg   ax,ax
-    1275:	66 90                	xchg   ax,ax
-    1277:	5f                   	pop    rdi
-    1278:	5e                   	pop    rsi
-    1279:	5d                   	pop    rbp
-    127a:	5b                   	pop    rbx
-    127b:	0f 77                	emms   
-    127d:	c3                   	ret    
+    125e:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1262:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    1266:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    126a:	89 5c 24 f8          	mov    DWORD PTR [rsp-0x8],ebx
+    126e:	83 e8 01             	sub    eax,0x1
+    1271:	0f 85 09 ee ff ff    	jne    0x80
+    1277:	66 90                	xchg   ax,ax
+    1279:	66 90                	xchg   ax,ax
+    127b:	66 90                	xchg   ax,ax
+    127d:	66 90                	xchg   ax,ax
+    127f:	66 90                	xchg   ax,ax
+    1281:	66 90                	xchg   ax,ax
+    1283:	66 90                	xchg   ax,ax
+    1285:	66 90                	xchg   ax,ax
+    1287:	48 83 c4 40          	add    rsp,0x40
+    128b:	41 59                	pop    r9
+    128d:	41 58                	pop    r8
+    128f:	5f                   	pop    rdi
+    1290:	5e                   	pop    rsi
+    1291:	5d                   	pop    rbp
+    1292:	5b                   	pop    rbx
+    1293:	0f 77                	emms   
+    1295:	c3                   	ret    
