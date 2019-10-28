@@ -98,8 +98,8 @@ Disassembly of section .data:
      154:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      159:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      15e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     163:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     166:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     163:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     168:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      16b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      170:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      175:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -131,9 +131,9 @@ Disassembly of section .data:
      1f7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      1fc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      201:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     206:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     209:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     20e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     206:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     20b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     210:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      213:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      218:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      21d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -164,10 +164,10 @@ Disassembly of section .data:
      29a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      29f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      2a4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     2a9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     2ac:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     2b1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     2b6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     2a9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     2ae:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     2b3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     2b8:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      2bb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      2c0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      2c5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -197,11 +197,11 @@ Disassembly of section .data:
      33d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      342:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      347:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     34c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     34f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     354:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     359:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     35e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     34c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     351:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     356:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     35b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     360:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      363:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      368:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      36d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -230,12 +230,12 @@ Disassembly of section .data:
      3e0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      3e5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      3ea:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     3ef:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     3f2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     3f7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     3fc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     401:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     406:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     3ef:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     3f4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     3f9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     3fe:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     403:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     408:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      40b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      410:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      415:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -263,13 +263,13 @@ Disassembly of section .data:
      483:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      488:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      48d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     492:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     495:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     49a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     49f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     4a4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     4a9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     4ae:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     492:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     497:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     49c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     4a1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     4a6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     4ab:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     4b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      4b3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      4b8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      4bd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -296,14 +296,14 @@ Disassembly of section .data:
      526:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      52b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      530:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     535:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     538:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     53d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     542:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     547:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     54c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     551:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     556:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     535:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     53a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     53f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     544:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     549:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     54e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     553:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     558:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      55b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      560:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      565:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -329,15 +329,15 @@ Disassembly of section .data:
      5c9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      5ce:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      5d3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5d8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     5db:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5e0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5e5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5ea:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5ef:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5f4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5f9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     5fe:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5d8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5dd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5e2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5e7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5ec:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5f1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5f6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     5fb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     600:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      603:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      608:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      60d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -362,16 +362,16 @@ Disassembly of section .data:
      66c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      671:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      676:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     67b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     67e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     683:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     688:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     68d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     692:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     697:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     69c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     6a1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     6a6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     67b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     680:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     685:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     68a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     68f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     694:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     699:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     69e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     6a3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     6a8:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      6ab:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      6b0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      6b5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -395,17 +395,17 @@ Disassembly of section .data:
      70f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      714:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      719:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     71e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     721:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     726:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     72b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     730:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     735:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     73a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     73f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     744:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     749:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     74e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     71e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     723:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     728:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     72d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     732:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     737:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     73c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     741:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     746:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     74b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     750:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      753:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      758:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      75d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -428,18 +428,18 @@ Disassembly of section .data:
      7b2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      7b7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      7bc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7c1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     7c4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7c9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7ce:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7d3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7d8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7dd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7e2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7e7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7ec:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7f1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     7f6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7c1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7c6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7cb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7d0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7d5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7da:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7df:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7e4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7e9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7ee:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7f3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     7f8:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      7fb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      800:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      805:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -461,19 +461,19 @@ Disassembly of section .data:
      855:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      85a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      85f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     864:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     867:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     86c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     871:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     876:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     87b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     880:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     885:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     88a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     88f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     894:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     899:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     89e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     864:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     869:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     86e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     873:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     878:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     87d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     882:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     887:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     88c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     891:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     896:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     89b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     8a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      8a3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      8a8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      8ad:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -494,20 +494,20 @@ Disassembly of section .data:
      8f8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      8fd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      902:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     907:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     90a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     90f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     914:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     919:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     91e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     923:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     928:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     92d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     932:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     937:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     93c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     941:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     946:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     907:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     90c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     911:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     916:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     91b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     920:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     925:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     92a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     92f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     934:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     939:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     93e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     943:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     948:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      94b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      950:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      955:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -527,21 +527,21 @@ Disassembly of section .data:
      99b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      9a0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      9a5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9aa:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     9ad:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9b2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9b7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9bc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9c1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9c6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9cb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9d0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9d5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9da:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9df:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9e4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9e9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     9ee:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9aa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9af:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9b4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9b9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9be:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9c3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9c8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9cd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9d2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9d7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9dc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9e1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9e6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9eb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     9f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      9f3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      9f8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      9fd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -560,22 +560,22 @@ Disassembly of section .data:
      a3e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      a43:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      a48:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a4d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     a50:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a55:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a5a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a5f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a64:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a69:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a6e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a73:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a78:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a7d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a82:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a87:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a8c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a91:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     a96:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a4d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a52:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a57:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a5c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a61:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a66:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a6b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a70:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a75:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a7a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a7f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a84:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a89:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a8e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a93:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     a98:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      a9b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      aa0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      aa5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -593,23 +593,23 @@ Disassembly of section .data:
      ae1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      ae6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      aeb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     af0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     af3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     af8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     afd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b02:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b07:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b0c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b11:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b16:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b1b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b20:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b25:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b2a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b2f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b34:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b39:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b3e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     af0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     af5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     afa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     aff:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b04:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b09:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b0e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b13:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b18:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b1d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b22:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b27:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b2c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b31:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b36:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b3b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      b43:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      b48:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      b4d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -626,24 +626,24 @@ Disassembly of section .data:
      b84:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      b89:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      b8e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b93:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     b96:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     b9b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ba0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ba5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     baa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     baf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bb4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bb9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bbe:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bc3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bc8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bcd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bd2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bd7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     bdc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     be1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     be6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b93:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b98:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     b9d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ba2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ba7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bac:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bb1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bb6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bbb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bc0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bc5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bca:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bcf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bd4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bd9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     bde:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     be3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     be8:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      beb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      bf0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      bf5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -659,25 +659,25 @@ Disassembly of section .data:
      c27:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      c2c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      c31:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c36:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     c39:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c3e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c43:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c48:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c4d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c52:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c57:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c5c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c61:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c66:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c6b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c70:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c75:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c7a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c7f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c84:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c89:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     c8e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c36:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c3b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c40:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c45:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c4a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c4f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c54:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c59:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c5e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c63:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c68:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c6d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c72:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c77:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c7c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c81:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c86:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c8b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     c90:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      c93:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      c98:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      c9d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -692,26 +692,26 @@ Disassembly of section .data:
      cca:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      ccf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      cd4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     cd9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     cdc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ce1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ce6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ceb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     cf0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     cf5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     cfa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     cff:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d04:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d09:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d0e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d13:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d18:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d1d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d22:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d27:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d2c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d31:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d36:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     cd9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     cde:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ce3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ce8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ced:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     cf2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     cf7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     cfc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d01:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d06:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d0b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d10:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d15:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d1a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d1f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d24:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d29:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d2e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d33:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d38:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      d3b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      d40:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      d45:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -725,27 +725,27 @@ Disassembly of section .data:
      d6d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      d72:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      d77:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d7c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     d7f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d84:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d89:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d8e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d93:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d98:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     d9d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     da2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     da7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dac:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     db1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     db6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dbb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dc0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dc5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dca:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dcf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dd4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dd9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     dde:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d7c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d81:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d86:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d8b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d90:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d95:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d9a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     d9f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     da4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     da9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     dae:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     db3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     db8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     dbd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     dc2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     dc7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     dcc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     dd1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     dd6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ddb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     de0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      de3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      de8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      ded:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -758,28 +758,28 @@ Disassembly of section .data:
      e10:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      e15:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      e1a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e1f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     e22:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e27:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e2c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e31:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e36:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e3b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e40:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e45:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e4a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e4f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e54:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e59:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e5e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e63:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e68:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e6d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e72:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e77:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e7c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e81:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     e86:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e1f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e24:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e29:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e2e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e33:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e38:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e3d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e42:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e47:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e4c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e51:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e56:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e5b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e60:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e65:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e6a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e6f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e74:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e79:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e7e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e83:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     e88:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      e8b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      e90:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      e95:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -791,29 +791,29 @@ Disassembly of section .data:
      eb3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      eb8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      ebd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ec2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     ec5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     eca:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ecf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ed4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ed9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ede:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ee3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ee8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     eed:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ef2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     ef7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     efc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f01:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f06:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f0b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f10:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f15:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f1a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f1f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f24:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f29:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f2e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ec2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ec7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ecc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ed1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ed6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     edb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ee0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ee5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     eea:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     eef:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ef4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     ef9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     efe:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f03:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f08:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f0d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f12:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f17:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f1c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f21:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f26:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f2b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f30:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
      f33:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      f38:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      f3d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -824,30 +824,30 @@ Disassembly of section .data:
      f56:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      f5b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      f60:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f65:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     f68:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f6d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f72:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f77:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f7c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f81:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f86:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f8b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f90:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f95:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f9a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     f9f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fa4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fa9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fae:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fb3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fb8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fbd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fc2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fc7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fcc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fd1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-     fd6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f65:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f6a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f6f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f74:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f79:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f7e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f83:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f88:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f8d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f92:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f97:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     f9c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fa1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fa6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fab:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fb0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fb5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fba:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fbf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fc4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fc9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fce:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fd3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+     fd8:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
      fdb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      fe0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      fe5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -857,31 +857,31 @@ Disassembly of section .data:
      ff9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
      ffe:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1003:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1008:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    100b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1010:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1015:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    101a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    101f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1024:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1029:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    102e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1033:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1038:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    103d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1042:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1047:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    104c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1051:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1056:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    105b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1060:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1065:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    106a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    106f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1074:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1079:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    107e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1008:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    100d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1012:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1017:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    101c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1021:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1026:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    102b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1030:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1035:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    103a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    103f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1044:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1049:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    104e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1053:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1058:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    105d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1062:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1067:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    106c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1071:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1076:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    107b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1080:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     1083:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1088:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     108d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -890,32 +890,32 @@ Disassembly of section .data:
     109c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     10a1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     10a6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10ab:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    10ae:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10b3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10b8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10bd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10c2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10c7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10cc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10d1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10d6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10db:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10e0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10e5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10ea:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10ef:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10f4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10f9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    10fe:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1103:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1108:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    110d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1112:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1117:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    111c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1121:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1126:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10ab:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10b0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10b5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10ba:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10bf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10c4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10c9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10ce:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10d3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10d8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10dd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10e2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10e7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10ec:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10f1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10f6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    10fb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1100:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1105:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    110a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    110f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1114:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1119:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    111e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1123:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1128:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     112b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1130:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1135:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
@@ -923,266 +923,301 @@ Disassembly of section .data:
     113f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1144:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1149:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    114e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    1151:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1156:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    115b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1160:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1165:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    116a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    116f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1174:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1179:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    117e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1183:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1188:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    118d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1192:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1197:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    119c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11a1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11a6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11ab:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11b0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11b5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11ba:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11bf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11c4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11c9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11ce:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    114e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1153:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1158:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    115d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1162:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1167:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    116c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1171:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1176:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    117b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1180:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1185:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    118a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    118f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1194:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1199:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    119e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11a3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11a8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11ad:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11b2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11b7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11bc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11c1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11c6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11cb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11d0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     11d3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     11d8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     11dd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     11e2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     11e7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     11ec:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    11f4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11f9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    11fe:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1203:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1208:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    120d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1212:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1217:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    121c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1221:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1226:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    122b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1230:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1235:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    123a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    123f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1244:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1249:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    124e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1253:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1258:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    125d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1262:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1267:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    126c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1271:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1276:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11f1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11f6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    11fb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1200:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1205:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    120a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    120f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1214:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1219:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    121e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1223:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1228:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    122d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1232:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1237:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    123c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1241:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1246:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    124b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1250:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1255:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    125a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    125f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1264:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1269:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    126e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1273:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1278:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     127b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1280:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1285:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     128a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     128f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1294:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    1297:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    129c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12a1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12a6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12ab:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12b0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12b5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12ba:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12bf:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12c4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12c9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12ce:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12d3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12d8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12dd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12e2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12e7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12ec:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12f1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12f6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    12fb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1300:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1305:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    130a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    130f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1314:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1319:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    131e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1294:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1299:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    129e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12a3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12a8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12ad:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12b2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12b7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12bc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12c1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12c6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12cb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12d0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12d5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12da:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12df:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12e4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12e9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12ee:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12f3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12f8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    12fd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1302:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1307:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    130c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1311:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1316:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    131b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1320:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     1323:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1328:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     132d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1332:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1337:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    133a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    133f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1344:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1349:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    134e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1353:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1358:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    135d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1362:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1367:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    136c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1371:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1376:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    137b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1380:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1385:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    138a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    138f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1394:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1399:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    139e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13a3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13a8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13ad:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13b2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13b7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13bc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13c1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13c6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1337:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    133c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1341:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1346:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    134b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1350:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1355:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    135a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    135f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1364:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1369:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    136e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1373:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1378:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    137d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1382:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1387:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    138c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1391:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1396:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    139b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13a0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13a5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13aa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13af:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13b4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13b9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13be:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13c3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13c8:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     13cb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     13d0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     13d5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13da:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    13dd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13e2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13e7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13ec:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13f1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13f6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    13fb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1400:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1405:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    140a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    140f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1414:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1419:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    141e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1423:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1428:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    142d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1432:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1437:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    143c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1441:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1446:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    144b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1450:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1455:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    145a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    145f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1464:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1469:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    146e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13da:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13df:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13e4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13e9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13ee:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13f3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13f8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    13fd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1402:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1407:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    140c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1411:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1416:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    141b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1420:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1425:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    142a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    142f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1434:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1439:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    143e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1443:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1448:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    144d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1452:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1457:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    145c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1461:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1466:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    146b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1470:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
     1473:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1478:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    147d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    1480:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1485:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    148a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    148f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1494:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1499:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    149e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14a3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14a8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14ad:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14b2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14b7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14bc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14c1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14c6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14cb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14d0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14d5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14da:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14df:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14e4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14e9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14ee:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14f3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14f8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    14fd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1502:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1507:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    150c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1511:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1516:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    147d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1482:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1487:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    148c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1491:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1496:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    149b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14a0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14a5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14aa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14af:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14b4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14b9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14be:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14c3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14c8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14cd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14d2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14d7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14dc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14e1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14e6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14eb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14f0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14f5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14fa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    14ff:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1504:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1509:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    150e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1513:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1518:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
     151b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1520:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    1523:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1528:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    152d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1532:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1537:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    153c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1541:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1546:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    154b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1550:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1555:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    155a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    155f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1564:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1569:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    156e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1573:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1578:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    157d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1582:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1587:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    158c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1591:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1596:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    159b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15a0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15a5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15aa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15af:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15b4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15b9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15be:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15c3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    15c6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15cb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15d0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15d5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15da:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15df:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15e4:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15e9:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15ee:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15f3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15f8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    15fd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1602:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1607:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    160c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1611:	83 e8 01             	sub    eax,0x1
-    1614:	0f 85 56 ea ff ff    	jne    0x70
-    161a:	66 90                	xchg   ax,ax
-    161c:	66 90                	xchg   ax,ax
-    161e:	66 90                	xchg   ax,ax
-    1620:	66 90                	xchg   ax,ax
-    1622:	66 90                	xchg   ax,ax
-    1624:	66 90                	xchg   ax,ax
-    1626:	66 90                	xchg   ax,ax
-    1628:	66 90                	xchg   ax,ax
-    162a:	5f                   	pop    rdi
-    162b:	5e                   	pop    rsi
-    162c:	5d                   	pop    rbp
-    162d:	5b                   	pop    rbx
-    162e:	0f 77                	emms   
-    1630:	c3                   	ret    
+    1520:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1525:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    152a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    152f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1534:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1539:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    153e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1543:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1548:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    154d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1552:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1557:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    155c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1561:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1566:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    156b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1570:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1575:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    157a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    157f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1584:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1589:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    158e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1593:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1598:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    159d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15a2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15a7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15ac:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15b1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15b6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15bb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    15c3:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15c8:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15cd:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15d2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15d7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15dc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15e1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15e6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15eb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15f0:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15f5:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15fa:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    15ff:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1604:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1609:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    160e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1613:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1618:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    161d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1622:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1627:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    162c:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1631:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1636:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    163b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1640:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1645:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    164a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    164f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1654:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1659:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    165e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1663:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1668:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    166b:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1670:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1675:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    167a:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    167f:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1684:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1689:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    168e:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1693:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    1698:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    169d:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    16a2:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    16a7:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    16ac:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    16b1:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    16b6:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    16bb:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
+    16c0:	83 e8 01             	sub    eax,0x1
+    16c3:	0f 85 a7 e9 ff ff    	jne    0x70
+    16c9:	66 90                	xchg   ax,ax
+    16cb:	66 90                	xchg   ax,ax
+    16cd:	66 90                	xchg   ax,ax
+    16cf:	66 90                	xchg   ax,ax
+    16d1:	66 90                	xchg   ax,ax
+    16d3:	66 90                	xchg   ax,ax
+    16d5:	66 90                	xchg   ax,ax
+    16d7:	66 90                	xchg   ax,ax
+    16d9:	5f                   	pop    rdi
+    16da:	5e                   	pop    rsi
+    16db:	5d                   	pop    rbp
+    16dc:	5b                   	pop    rbx
+    16dd:	0f 77                	emms   
+    16df:	c3                   	ret    

@@ -97,86 +97,86 @@ Disassembly of section .data:
   f7:	48 03 db             	add    rbx,rbx
   fa:	48 03 ed             	add    rbp,rbp
   fd:	48 03 f6             	add    rsi,rsi
- 100:	48 03 ff             	add    rdi,rdi
- 103:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 106:	48 03 db             	add    rbx,rbx
- 109:	48 03 ed             	add    rbp,rbp
- 10c:	48 03 f6             	add    rsi,rsi
- 10f:	48 03 ff             	add    rdi,rdi
- 112:	48 03 db             	add    rbx,rbx
- 115:	48 03 ed             	add    rbp,rbp
- 118:	48 03 f6             	add    rsi,rsi
- 11b:	48 03 ff             	add    rdi,rdi
- 11e:	48 03 db             	add    rbx,rbx
- 121:	48 03 ed             	add    rbp,rbp
- 124:	48 03 f6             	add    rsi,rsi
- 127:	48 03 ff             	add    rdi,rdi
- 12a:	48 03 db             	add    rbx,rbx
- 12d:	48 03 ed             	add    rbp,rbp
- 130:	48 03 f6             	add    rsi,rsi
- 133:	48 03 ff             	add    rdi,rdi
- 136:	48 03 db             	add    rbx,rbx
- 139:	48 03 ed             	add    rbp,rbp
- 13c:	48 03 f6             	add    rsi,rsi
- 13f:	48 03 ff             	add    rdi,rdi
- 142:	48 03 db             	add    rbx,rbx
- 145:	48 03 ed             	add    rbp,rbp
- 148:	48 03 f6             	add    rsi,rsi
- 14b:	48 03 ff             	add    rdi,rdi
- 14e:	48 03 db             	add    rbx,rbx
- 151:	48 03 ed             	add    rbp,rbp
- 154:	48 03 f6             	add    rsi,rsi
- 157:	48 03 ff             	add    rdi,rdi
- 15a:	48 03 db             	add    rbx,rbx
- 15d:	48 03 ed             	add    rbp,rbp
- 160:	48 03 f6             	add    rsi,rsi
- 163:	48 03 ff             	add    rdi,rdi
- 166:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 169:	48 03 db             	add    rbx,rbx
- 16c:	48 03 ed             	add    rbp,rbp
- 16f:	48 03 f6             	add    rsi,rsi
- 172:	48 03 ff             	add    rdi,rdi
- 175:	48 03 db             	add    rbx,rbx
- 178:	48 03 ed             	add    rbp,rbp
- 17b:	48 03 f6             	add    rsi,rsi
- 17e:	48 03 ff             	add    rdi,rdi
- 181:	48 03 db             	add    rbx,rbx
- 184:	48 03 ed             	add    rbp,rbp
- 187:	48 03 f6             	add    rsi,rsi
- 18a:	48 03 ff             	add    rdi,rdi
- 18d:	48 03 db             	add    rbx,rbx
- 190:	48 03 ed             	add    rbp,rbp
- 193:	48 03 f6             	add    rsi,rsi
- 196:	48 03 ff             	add    rdi,rdi
- 199:	48 03 db             	add    rbx,rbx
- 19c:	48 03 ed             	add    rbp,rbp
- 19f:	48 03 f6             	add    rsi,rsi
- 1a2:	48 03 ff             	add    rdi,rdi
- 1a5:	48 03 db             	add    rbx,rbx
- 1a8:	48 03 ed             	add    rbp,rbp
- 1ab:	48 03 f6             	add    rsi,rsi
- 1ae:	48 03 ff             	add    rdi,rdi
- 1b1:	48 03 db             	add    rbx,rbx
- 1b4:	48 03 ed             	add    rbp,rbp
- 1b7:	48 03 f6             	add    rsi,rsi
- 1ba:	48 03 ff             	add    rdi,rdi
- 1bd:	48 03 db             	add    rbx,rbx
- 1c0:	48 03 ed             	add    rbp,rbp
- 1c3:	48 03 f6             	add    rsi,rsi
- 1c6:	48 03 ff             	add    rdi,rdi
- 1c9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 1cc:	48 03 db             	add    rbx,rbx
- 1cf:	48 03 ed             	add    rbp,rbp
- 1d2:	48 03 f6             	add    rsi,rsi
- 1d5:	48 03 ff             	add    rdi,rdi
- 1d8:	48 03 db             	add    rbx,rbx
- 1db:	48 03 ed             	add    rbp,rbp
- 1de:	48 03 f6             	add    rsi,rsi
- 1e1:	48 03 ff             	add    rdi,rdi
- 1e4:	48 03 db             	add    rbx,rbx
- 1e7:	48 03 ed             	add    rbp,rbp
- 1ea:	48 03 f6             	add    rsi,rsi
- 1ed:	48 03 ff             	add    rdi,rdi
+ 100:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 103:	48 03 db             	add    rbx,rbx
+ 106:	48 03 ed             	add    rbp,rbp
+ 109:	48 03 f6             	add    rsi,rsi
+ 10c:	48 03 ff             	add    rdi,rdi
+ 10f:	48 03 db             	add    rbx,rbx
+ 112:	48 03 ed             	add    rbp,rbp
+ 115:	48 03 f6             	add    rsi,rsi
+ 118:	48 03 ff             	add    rdi,rdi
+ 11b:	48 03 db             	add    rbx,rbx
+ 11e:	48 03 ed             	add    rbp,rbp
+ 121:	48 03 f6             	add    rsi,rsi
+ 124:	48 03 ff             	add    rdi,rdi
+ 127:	48 03 db             	add    rbx,rbx
+ 12a:	48 03 ed             	add    rbp,rbp
+ 12d:	48 03 f6             	add    rsi,rsi
+ 130:	48 03 db             	add    rbx,rbx
+ 133:	48 03 ed             	add    rbp,rbp
+ 136:	48 03 f6             	add    rsi,rsi
+ 139:	48 03 ff             	add    rdi,rdi
+ 13c:	48 03 db             	add    rbx,rbx
+ 13f:	48 03 ed             	add    rbp,rbp
+ 142:	48 03 f6             	add    rsi,rsi
+ 145:	48 03 ff             	add    rdi,rdi
+ 148:	48 03 db             	add    rbx,rbx
+ 14b:	48 03 ed             	add    rbp,rbp
+ 14e:	48 03 f6             	add    rsi,rsi
+ 151:	48 03 ff             	add    rdi,rdi
+ 154:	48 03 db             	add    rbx,rbx
+ 157:	48 03 ed             	add    rbp,rbp
+ 15a:	48 03 f6             	add    rsi,rsi
+ 15d:	48 03 ff             	add    rdi,rdi
+ 160:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 163:	48 03 db             	add    rbx,rbx
+ 166:	48 03 ed             	add    rbp,rbp
+ 169:	48 03 f6             	add    rsi,rsi
+ 16c:	48 03 ff             	add    rdi,rdi
+ 16f:	48 03 db             	add    rbx,rbx
+ 172:	48 03 ed             	add    rbp,rbp
+ 175:	48 03 f6             	add    rsi,rsi
+ 178:	48 03 ff             	add    rdi,rdi
+ 17b:	48 03 db             	add    rbx,rbx
+ 17e:	48 03 ed             	add    rbp,rbp
+ 181:	48 03 f6             	add    rsi,rsi
+ 184:	48 03 ff             	add    rdi,rdi
+ 187:	48 03 db             	add    rbx,rbx
+ 18a:	48 03 ed             	add    rbp,rbp
+ 18d:	48 03 f6             	add    rsi,rsi
+ 190:	48 03 ff             	add    rdi,rdi
+ 193:	48 03 db             	add    rbx,rbx
+ 196:	48 03 ed             	add    rbp,rbp
+ 199:	48 03 f6             	add    rsi,rsi
+ 19c:	48 03 ff             	add    rdi,rdi
+ 19f:	48 03 db             	add    rbx,rbx
+ 1a2:	48 03 ed             	add    rbp,rbp
+ 1a5:	48 03 f6             	add    rsi,rsi
+ 1a8:	48 03 ff             	add    rdi,rdi
+ 1ab:	48 03 db             	add    rbx,rbx
+ 1ae:	48 03 ed             	add    rbp,rbp
+ 1b1:	48 03 f6             	add    rsi,rsi
+ 1b4:	48 03 ff             	add    rdi,rdi
+ 1b7:	48 03 db             	add    rbx,rbx
+ 1ba:	48 03 ed             	add    rbp,rbp
+ 1bd:	48 03 f6             	add    rsi,rsi
+ 1c0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1c3:	48 03 db             	add    rbx,rbx
+ 1c6:	48 03 ed             	add    rbp,rbp
+ 1c9:	48 03 f6             	add    rsi,rsi
+ 1cc:	48 03 ff             	add    rdi,rdi
+ 1cf:	48 03 db             	add    rbx,rbx
+ 1d2:	48 03 ed             	add    rbp,rbp
+ 1d5:	48 03 f6             	add    rsi,rsi
+ 1d8:	48 03 ff             	add    rdi,rdi
+ 1db:	48 03 db             	add    rbx,rbx
+ 1de:	48 03 ed             	add    rbp,rbp
+ 1e1:	48 03 f6             	add    rsi,rsi
+ 1e4:	48 03 ff             	add    rdi,rdi
+ 1e7:	48 03 db             	add    rbx,rbx
+ 1ea:	48 03 ed             	add    rbp,rbp
+ 1ed:	48 03 f6             	add    rsi,rsi
  1f0:	48 03 db             	add    rbx,rbx
  1f3:	48 03 ed             	add    rbp,rbp
  1f6:	48 03 f6             	add    rsi,rsi
@@ -193,11 +193,11 @@ Disassembly of section .data:
  217:	48 03 ed             	add    rbp,rbp
  21a:	48 03 f6             	add    rsi,rsi
  21d:	48 03 ff             	add    rdi,rdi
- 220:	48 03 db             	add    rbx,rbx
- 223:	48 03 ed             	add    rbp,rbp
- 226:	48 03 f6             	add    rsi,rsi
- 229:	48 03 ff             	add    rdi,rdi
- 22c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 220:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 223:	48 03 db             	add    rbx,rbx
+ 226:	48 03 ed             	add    rbp,rbp
+ 229:	48 03 f6             	add    rsi,rsi
+ 22c:	48 03 ff             	add    rdi,rdi
  22f:	48 03 db             	add    rbx,rbx
  232:	48 03 ed             	add    rbp,rbp
  235:	48 03 f6             	add    rsi,rsi
@@ -225,86 +225,86 @@ Disassembly of section .data:
  277:	48 03 db             	add    rbx,rbx
  27a:	48 03 ed             	add    rbp,rbp
  27d:	48 03 f6             	add    rsi,rsi
- 280:	48 03 ff             	add    rdi,rdi
+ 280:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  283:	48 03 db             	add    rbx,rbx
  286:	48 03 ed             	add    rbp,rbp
  289:	48 03 f6             	add    rsi,rsi
  28c:	48 03 ff             	add    rdi,rdi
- 28f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 292:	48 03 db             	add    rbx,rbx
- 295:	48 03 ed             	add    rbp,rbp
- 298:	48 03 f6             	add    rsi,rsi
- 29b:	48 03 ff             	add    rdi,rdi
- 29e:	48 03 db             	add    rbx,rbx
- 2a1:	48 03 ed             	add    rbp,rbp
- 2a4:	48 03 f6             	add    rsi,rsi
- 2a7:	48 03 ff             	add    rdi,rdi
- 2aa:	48 03 db             	add    rbx,rbx
- 2ad:	48 03 ed             	add    rbp,rbp
- 2b0:	48 03 f6             	add    rsi,rsi
- 2b3:	48 03 ff             	add    rdi,rdi
- 2b6:	48 03 db             	add    rbx,rbx
- 2b9:	48 03 ed             	add    rbp,rbp
- 2bc:	48 03 f6             	add    rsi,rsi
- 2bf:	48 03 ff             	add    rdi,rdi
- 2c2:	48 03 db             	add    rbx,rbx
- 2c5:	48 03 ed             	add    rbp,rbp
- 2c8:	48 03 f6             	add    rsi,rsi
- 2cb:	48 03 ff             	add    rdi,rdi
- 2ce:	48 03 db             	add    rbx,rbx
- 2d1:	48 03 ed             	add    rbp,rbp
- 2d4:	48 03 f6             	add    rsi,rsi
- 2d7:	48 03 ff             	add    rdi,rdi
- 2da:	48 03 db             	add    rbx,rbx
- 2dd:	48 03 ed             	add    rbp,rbp
- 2e0:	48 03 f6             	add    rsi,rsi
- 2e3:	48 03 ff             	add    rdi,rdi
- 2e6:	48 03 db             	add    rbx,rbx
- 2e9:	48 03 ed             	add    rbp,rbp
- 2ec:	48 03 f6             	add    rsi,rsi
- 2ef:	48 03 ff             	add    rdi,rdi
- 2f2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 2f5:	48 03 db             	add    rbx,rbx
- 2f8:	48 03 ed             	add    rbp,rbp
- 2fb:	48 03 f6             	add    rsi,rsi
- 2fe:	48 03 ff             	add    rdi,rdi
- 301:	48 03 db             	add    rbx,rbx
- 304:	48 03 ed             	add    rbp,rbp
- 307:	48 03 f6             	add    rsi,rsi
- 30a:	48 03 ff             	add    rdi,rdi
- 30d:	48 03 db             	add    rbx,rbx
- 310:	48 03 ed             	add    rbp,rbp
- 313:	48 03 f6             	add    rsi,rsi
- 316:	48 03 ff             	add    rdi,rdi
- 319:	48 03 db             	add    rbx,rbx
- 31c:	48 03 ed             	add    rbp,rbp
- 31f:	48 03 f6             	add    rsi,rsi
- 322:	48 03 ff             	add    rdi,rdi
- 325:	48 03 db             	add    rbx,rbx
- 328:	48 03 ed             	add    rbp,rbp
- 32b:	48 03 f6             	add    rsi,rsi
- 32e:	48 03 ff             	add    rdi,rdi
- 331:	48 03 db             	add    rbx,rbx
- 334:	48 03 ed             	add    rbp,rbp
- 337:	48 03 f6             	add    rsi,rsi
- 33a:	48 03 ff             	add    rdi,rdi
- 33d:	48 03 db             	add    rbx,rbx
- 340:	48 03 ed             	add    rbp,rbp
- 343:	48 03 f6             	add    rsi,rsi
- 346:	48 03 ff             	add    rdi,rdi
- 349:	48 03 db             	add    rbx,rbx
- 34c:	48 03 ed             	add    rbp,rbp
- 34f:	48 03 f6             	add    rsi,rsi
- 352:	48 03 ff             	add    rdi,rdi
- 355:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 358:	48 03 db             	add    rbx,rbx
- 35b:	48 03 ed             	add    rbp,rbp
- 35e:	48 03 f6             	add    rsi,rsi
- 361:	48 03 ff             	add    rdi,rdi
- 364:	48 03 db             	add    rbx,rbx
- 367:	48 03 ed             	add    rbp,rbp
- 36a:	48 03 f6             	add    rsi,rsi
- 36d:	48 03 ff             	add    rdi,rdi
+ 28f:	48 03 db             	add    rbx,rbx
+ 292:	48 03 ed             	add    rbp,rbp
+ 295:	48 03 f6             	add    rsi,rsi
+ 298:	48 03 ff             	add    rdi,rdi
+ 29b:	48 03 db             	add    rbx,rbx
+ 29e:	48 03 ed             	add    rbp,rbp
+ 2a1:	48 03 f6             	add    rsi,rsi
+ 2a4:	48 03 ff             	add    rdi,rdi
+ 2a7:	48 03 db             	add    rbx,rbx
+ 2aa:	48 03 ed             	add    rbp,rbp
+ 2ad:	48 03 f6             	add    rsi,rsi
+ 2b0:	48 03 db             	add    rbx,rbx
+ 2b3:	48 03 ed             	add    rbp,rbp
+ 2b6:	48 03 f6             	add    rsi,rsi
+ 2b9:	48 03 ff             	add    rdi,rdi
+ 2bc:	48 03 db             	add    rbx,rbx
+ 2bf:	48 03 ed             	add    rbp,rbp
+ 2c2:	48 03 f6             	add    rsi,rsi
+ 2c5:	48 03 ff             	add    rdi,rdi
+ 2c8:	48 03 db             	add    rbx,rbx
+ 2cb:	48 03 ed             	add    rbp,rbp
+ 2ce:	48 03 f6             	add    rsi,rsi
+ 2d1:	48 03 ff             	add    rdi,rdi
+ 2d4:	48 03 db             	add    rbx,rbx
+ 2d7:	48 03 ed             	add    rbp,rbp
+ 2da:	48 03 f6             	add    rsi,rsi
+ 2dd:	48 03 ff             	add    rdi,rdi
+ 2e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2e3:	48 03 db             	add    rbx,rbx
+ 2e6:	48 03 ed             	add    rbp,rbp
+ 2e9:	48 03 f6             	add    rsi,rsi
+ 2ec:	48 03 ff             	add    rdi,rdi
+ 2ef:	48 03 db             	add    rbx,rbx
+ 2f2:	48 03 ed             	add    rbp,rbp
+ 2f5:	48 03 f6             	add    rsi,rsi
+ 2f8:	48 03 ff             	add    rdi,rdi
+ 2fb:	48 03 db             	add    rbx,rbx
+ 2fe:	48 03 ed             	add    rbp,rbp
+ 301:	48 03 f6             	add    rsi,rsi
+ 304:	48 03 ff             	add    rdi,rdi
+ 307:	48 03 db             	add    rbx,rbx
+ 30a:	48 03 ed             	add    rbp,rbp
+ 30d:	48 03 f6             	add    rsi,rsi
+ 310:	48 03 ff             	add    rdi,rdi
+ 313:	48 03 db             	add    rbx,rbx
+ 316:	48 03 ed             	add    rbp,rbp
+ 319:	48 03 f6             	add    rsi,rsi
+ 31c:	48 03 ff             	add    rdi,rdi
+ 31f:	48 03 db             	add    rbx,rbx
+ 322:	48 03 ed             	add    rbp,rbp
+ 325:	48 03 f6             	add    rsi,rsi
+ 328:	48 03 ff             	add    rdi,rdi
+ 32b:	48 03 db             	add    rbx,rbx
+ 32e:	48 03 ed             	add    rbp,rbp
+ 331:	48 03 f6             	add    rsi,rsi
+ 334:	48 03 ff             	add    rdi,rdi
+ 337:	48 03 db             	add    rbx,rbx
+ 33a:	48 03 ed             	add    rbp,rbp
+ 33d:	48 03 f6             	add    rsi,rsi
+ 340:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 343:	48 03 db             	add    rbx,rbx
+ 346:	48 03 ed             	add    rbp,rbp
+ 349:	48 03 f6             	add    rsi,rsi
+ 34c:	48 03 ff             	add    rdi,rdi
+ 34f:	48 03 db             	add    rbx,rbx
+ 352:	48 03 ed             	add    rbp,rbp
+ 355:	48 03 f6             	add    rsi,rsi
+ 358:	48 03 ff             	add    rdi,rdi
+ 35b:	48 03 db             	add    rbx,rbx
+ 35e:	48 03 ed             	add    rbp,rbp
+ 361:	48 03 f6             	add    rsi,rsi
+ 364:	48 03 ff             	add    rdi,rdi
+ 367:	48 03 db             	add    rbx,rbx
+ 36a:	48 03 ed             	add    rbp,rbp
+ 36d:	48 03 f6             	add    rsi,rsi
  370:	48 03 db             	add    rbx,rbx
  373:	48 03 ed             	add    rbp,rbp
  376:	48 03 f6             	add    rsi,rsi
@@ -321,15 +321,15 @@ Disassembly of section .data:
  397:	48 03 ed             	add    rbp,rbp
  39a:	48 03 f6             	add    rsi,rsi
  39d:	48 03 ff             	add    rdi,rdi
- 3a0:	48 03 db             	add    rbx,rbx
- 3a3:	48 03 ed             	add    rbp,rbp
- 3a6:	48 03 f6             	add    rsi,rsi
- 3a9:	48 03 ff             	add    rdi,rdi
- 3ac:	48 03 db             	add    rbx,rbx
- 3af:	48 03 ed             	add    rbp,rbp
- 3b2:	48 03 f6             	add    rsi,rsi
- 3b5:	48 03 ff             	add    rdi,rdi
- 3b8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3a3:	48 03 db             	add    rbx,rbx
+ 3a6:	48 03 ed             	add    rbp,rbp
+ 3a9:	48 03 f6             	add    rsi,rsi
+ 3ac:	48 03 ff             	add    rdi,rdi
+ 3af:	48 03 db             	add    rbx,rbx
+ 3b2:	48 03 ed             	add    rbp,rbp
+ 3b5:	48 03 f6             	add    rsi,rsi
+ 3b8:	48 03 ff             	add    rdi,rdi
  3bb:	48 03 db             	add    rbx,rbx
  3be:	48 03 ed             	add    rbp,rbp
  3c1:	48 03 f6             	add    rsi,rsi
@@ -353,7 +353,7 @@ Disassembly of section .data:
  3f7:	48 03 db             	add    rbx,rbx
  3fa:	48 03 ed             	add    rbp,rbp
  3fd:	48 03 f6             	add    rsi,rsi
- 400:	48 03 ff             	add    rdi,rdi
+ 400:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  403:	48 03 db             	add    rbx,rbx
  406:	48 03 ed             	add    rbp,rbp
  409:	48 03 f6             	add    rsi,rsi
@@ -362,77 +362,77 @@ Disassembly of section .data:
  412:	48 03 ed             	add    rbp,rbp
  415:	48 03 f6             	add    rsi,rsi
  418:	48 03 ff             	add    rdi,rdi
- 41b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 41e:	48 03 db             	add    rbx,rbx
- 421:	48 03 ed             	add    rbp,rbp
- 424:	48 03 f6             	add    rsi,rsi
- 427:	48 03 ff             	add    rdi,rdi
- 42a:	48 03 db             	add    rbx,rbx
- 42d:	48 03 ed             	add    rbp,rbp
- 430:	48 03 f6             	add    rsi,rsi
- 433:	48 03 ff             	add    rdi,rdi
- 436:	48 03 db             	add    rbx,rbx
- 439:	48 03 ed             	add    rbp,rbp
- 43c:	48 03 f6             	add    rsi,rsi
- 43f:	48 03 ff             	add    rdi,rdi
- 442:	48 03 db             	add    rbx,rbx
- 445:	48 03 ed             	add    rbp,rbp
- 448:	48 03 f6             	add    rsi,rsi
- 44b:	48 03 ff             	add    rdi,rdi
- 44e:	48 03 db             	add    rbx,rbx
- 451:	48 03 ed             	add    rbp,rbp
- 454:	48 03 f6             	add    rsi,rsi
- 457:	48 03 ff             	add    rdi,rdi
- 45a:	48 03 db             	add    rbx,rbx
- 45d:	48 03 ed             	add    rbp,rbp
- 460:	48 03 f6             	add    rsi,rsi
- 463:	48 03 ff             	add    rdi,rdi
- 466:	48 03 db             	add    rbx,rbx
- 469:	48 03 ed             	add    rbp,rbp
- 46c:	48 03 f6             	add    rsi,rsi
- 46f:	48 03 ff             	add    rdi,rdi
- 472:	48 03 db             	add    rbx,rbx
- 475:	48 03 ed             	add    rbp,rbp
- 478:	48 03 f6             	add    rsi,rsi
- 47b:	48 03 ff             	add    rdi,rdi
- 47e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 481:	48 03 db             	add    rbx,rbx
- 484:	48 03 ed             	add    rbp,rbp
- 487:	48 03 f6             	add    rsi,rsi
- 48a:	48 03 ff             	add    rdi,rdi
- 48d:	48 03 db             	add    rbx,rbx
- 490:	48 03 ed             	add    rbp,rbp
- 493:	48 03 f6             	add    rsi,rsi
- 496:	48 03 ff             	add    rdi,rdi
- 499:	48 03 db             	add    rbx,rbx
- 49c:	48 03 ed             	add    rbp,rbp
- 49f:	48 03 f6             	add    rsi,rsi
- 4a2:	48 03 ff             	add    rdi,rdi
- 4a5:	48 03 db             	add    rbx,rbx
- 4a8:	48 03 ed             	add    rbp,rbp
- 4ab:	48 03 f6             	add    rsi,rsi
- 4ae:	48 03 ff             	add    rdi,rdi
- 4b1:	48 03 db             	add    rbx,rbx
- 4b4:	48 03 ed             	add    rbp,rbp
- 4b7:	48 03 f6             	add    rsi,rsi
- 4ba:	48 03 ff             	add    rdi,rdi
- 4bd:	48 03 db             	add    rbx,rbx
- 4c0:	48 03 ed             	add    rbp,rbp
- 4c3:	48 03 f6             	add    rsi,rsi
- 4c6:	48 03 ff             	add    rdi,rdi
- 4c9:	48 03 db             	add    rbx,rbx
- 4cc:	48 03 ed             	add    rbp,rbp
- 4cf:	48 03 f6             	add    rsi,rsi
- 4d2:	48 03 ff             	add    rdi,rdi
- 4d5:	48 03 db             	add    rbx,rbx
- 4d8:	48 03 ed             	add    rbp,rbp
- 4db:	48 03 f6             	add    rsi,rsi
- 4de:	48 03 ff             	add    rdi,rdi
- 4e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 4e4:	48 03 db             	add    rbx,rbx
- 4e7:	48 03 ed             	add    rbp,rbp
- 4ea:	48 03 f6             	add    rsi,rsi
- 4ed:	48 03 ff             	add    rdi,rdi
+ 41b:	48 03 db             	add    rbx,rbx
+ 41e:	48 03 ed             	add    rbp,rbp
+ 421:	48 03 f6             	add    rsi,rsi
+ 424:	48 03 ff             	add    rdi,rdi
+ 427:	48 03 db             	add    rbx,rbx
+ 42a:	48 03 ed             	add    rbp,rbp
+ 42d:	48 03 f6             	add    rsi,rsi
+ 430:	48 03 db             	add    rbx,rbx
+ 433:	48 03 ed             	add    rbp,rbp
+ 436:	48 03 f6             	add    rsi,rsi
+ 439:	48 03 ff             	add    rdi,rdi
+ 43c:	48 03 db             	add    rbx,rbx
+ 43f:	48 03 ed             	add    rbp,rbp
+ 442:	48 03 f6             	add    rsi,rsi
+ 445:	48 03 ff             	add    rdi,rdi
+ 448:	48 03 db             	add    rbx,rbx
+ 44b:	48 03 ed             	add    rbp,rbp
+ 44e:	48 03 f6             	add    rsi,rsi
+ 451:	48 03 ff             	add    rdi,rdi
+ 454:	48 03 db             	add    rbx,rbx
+ 457:	48 03 ed             	add    rbp,rbp
+ 45a:	48 03 f6             	add    rsi,rsi
+ 45d:	48 03 ff             	add    rdi,rdi
+ 460:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 463:	48 03 db             	add    rbx,rbx
+ 466:	48 03 ed             	add    rbp,rbp
+ 469:	48 03 f6             	add    rsi,rsi
+ 46c:	48 03 ff             	add    rdi,rdi
+ 46f:	48 03 db             	add    rbx,rbx
+ 472:	48 03 ed             	add    rbp,rbp
+ 475:	48 03 f6             	add    rsi,rsi
+ 478:	48 03 ff             	add    rdi,rdi
+ 47b:	48 03 db             	add    rbx,rbx
+ 47e:	48 03 ed             	add    rbp,rbp
+ 481:	48 03 f6             	add    rsi,rsi
+ 484:	48 03 ff             	add    rdi,rdi
+ 487:	48 03 db             	add    rbx,rbx
+ 48a:	48 03 ed             	add    rbp,rbp
+ 48d:	48 03 f6             	add    rsi,rsi
+ 490:	48 03 ff             	add    rdi,rdi
+ 493:	48 03 db             	add    rbx,rbx
+ 496:	48 03 ed             	add    rbp,rbp
+ 499:	48 03 f6             	add    rsi,rsi
+ 49c:	48 03 ff             	add    rdi,rdi
+ 49f:	48 03 db             	add    rbx,rbx
+ 4a2:	48 03 ed             	add    rbp,rbp
+ 4a5:	48 03 f6             	add    rsi,rsi
+ 4a8:	48 03 ff             	add    rdi,rdi
+ 4ab:	48 03 db             	add    rbx,rbx
+ 4ae:	48 03 ed             	add    rbp,rbp
+ 4b1:	48 03 f6             	add    rsi,rsi
+ 4b4:	48 03 ff             	add    rdi,rdi
+ 4b7:	48 03 db             	add    rbx,rbx
+ 4ba:	48 03 ed             	add    rbp,rbp
+ 4bd:	48 03 f6             	add    rsi,rsi
+ 4c0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4c3:	48 03 db             	add    rbx,rbx
+ 4c6:	48 03 ed             	add    rbp,rbp
+ 4c9:	48 03 f6             	add    rsi,rsi
+ 4cc:	48 03 ff             	add    rdi,rdi
+ 4cf:	48 03 db             	add    rbx,rbx
+ 4d2:	48 03 ed             	add    rbp,rbp
+ 4d5:	48 03 f6             	add    rsi,rsi
+ 4d8:	48 03 ff             	add    rdi,rdi
+ 4db:	48 03 db             	add    rbx,rbx
+ 4de:	48 03 ed             	add    rbp,rbp
+ 4e1:	48 03 f6             	add    rsi,rsi
+ 4e4:	48 03 ff             	add    rdi,rdi
+ 4e7:	48 03 db             	add    rbx,rbx
+ 4ea:	48 03 ed             	add    rbp,rbp
+ 4ed:	48 03 f6             	add    rsi,rsi
  4f0:	48 03 db             	add    rbx,rbx
  4f3:	48 03 ed             	add    rbp,rbp
  4f6:	48 03 f6             	add    rsi,rsi
@@ -449,19 +449,19 @@ Disassembly of section .data:
  517:	48 03 ed             	add    rbp,rbp
  51a:	48 03 f6             	add    rsi,rsi
  51d:	48 03 ff             	add    rdi,rdi
- 520:	48 03 db             	add    rbx,rbx
- 523:	48 03 ed             	add    rbp,rbp
- 526:	48 03 f6             	add    rsi,rsi
- 529:	48 03 ff             	add    rdi,rdi
- 52c:	48 03 db             	add    rbx,rbx
- 52f:	48 03 ed             	add    rbp,rbp
- 532:	48 03 f6             	add    rsi,rsi
- 535:	48 03 ff             	add    rdi,rdi
- 538:	48 03 db             	add    rbx,rbx
- 53b:	48 03 ed             	add    rbp,rbp
- 53e:	48 03 f6             	add    rsi,rsi
- 541:	48 03 ff             	add    rdi,rdi
- 544:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 520:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 523:	48 03 db             	add    rbx,rbx
+ 526:	48 03 ed             	add    rbp,rbp
+ 529:	48 03 f6             	add    rsi,rsi
+ 52c:	48 03 ff             	add    rdi,rdi
+ 52f:	48 03 db             	add    rbx,rbx
+ 532:	48 03 ed             	add    rbp,rbp
+ 535:	48 03 f6             	add    rsi,rsi
+ 538:	48 03 ff             	add    rdi,rdi
+ 53b:	48 03 db             	add    rbx,rbx
+ 53e:	48 03 ed             	add    rbp,rbp
+ 541:	48 03 f6             	add    rsi,rsi
+ 544:	48 03 ff             	add    rdi,rdi
  547:	48 03 db             	add    rbx,rbx
  54a:	48 03 ed             	add    rbp,rbp
  54d:	48 03 f6             	add    rsi,rsi
@@ -481,7 +481,7 @@ Disassembly of section .data:
  577:	48 03 db             	add    rbx,rbx
  57a:	48 03 ed             	add    rbp,rbp
  57d:	48 03 f6             	add    rsi,rsi
- 580:	48 03 ff             	add    rdi,rdi
+ 580:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  583:	48 03 db             	add    rbx,rbx
  586:	48 03 ed             	add    rbp,rbp
  589:	48 03 f6             	add    rsi,rsi
@@ -494,73 +494,73 @@ Disassembly of section .data:
  59e:	48 03 ed             	add    rbp,rbp
  5a1:	48 03 f6             	add    rsi,rsi
  5a4:	48 03 ff             	add    rdi,rdi
- 5a7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 5aa:	48 03 db             	add    rbx,rbx
- 5ad:	48 03 ed             	add    rbp,rbp
- 5b0:	48 03 f6             	add    rsi,rsi
- 5b3:	48 03 ff             	add    rdi,rdi
- 5b6:	48 03 db             	add    rbx,rbx
- 5b9:	48 03 ed             	add    rbp,rbp
- 5bc:	48 03 f6             	add    rsi,rsi
- 5bf:	48 03 ff             	add    rdi,rdi
- 5c2:	48 03 db             	add    rbx,rbx
- 5c5:	48 03 ed             	add    rbp,rbp
- 5c8:	48 03 f6             	add    rsi,rsi
- 5cb:	48 03 ff             	add    rdi,rdi
- 5ce:	48 03 db             	add    rbx,rbx
- 5d1:	48 03 ed             	add    rbp,rbp
- 5d4:	48 03 f6             	add    rsi,rsi
- 5d7:	48 03 ff             	add    rdi,rdi
- 5da:	48 03 db             	add    rbx,rbx
- 5dd:	48 03 ed             	add    rbp,rbp
- 5e0:	48 03 f6             	add    rsi,rsi
- 5e3:	48 03 ff             	add    rdi,rdi
- 5e6:	48 03 db             	add    rbx,rbx
- 5e9:	48 03 ed             	add    rbp,rbp
- 5ec:	48 03 f6             	add    rsi,rsi
- 5ef:	48 03 ff             	add    rdi,rdi
- 5f2:	48 03 db             	add    rbx,rbx
- 5f5:	48 03 ed             	add    rbp,rbp
- 5f8:	48 03 f6             	add    rsi,rsi
- 5fb:	48 03 ff             	add    rdi,rdi
- 5fe:	48 03 db             	add    rbx,rbx
- 601:	48 03 ed             	add    rbp,rbp
- 604:	48 03 f6             	add    rsi,rsi
- 607:	48 03 ff             	add    rdi,rdi
- 60a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 60d:	48 03 db             	add    rbx,rbx
- 610:	48 03 ed             	add    rbp,rbp
- 613:	48 03 f6             	add    rsi,rsi
- 616:	48 03 ff             	add    rdi,rdi
- 619:	48 03 db             	add    rbx,rbx
- 61c:	48 03 ed             	add    rbp,rbp
- 61f:	48 03 f6             	add    rsi,rsi
- 622:	48 03 ff             	add    rdi,rdi
- 625:	48 03 db             	add    rbx,rbx
- 628:	48 03 ed             	add    rbp,rbp
- 62b:	48 03 f6             	add    rsi,rsi
- 62e:	48 03 ff             	add    rdi,rdi
- 631:	48 03 db             	add    rbx,rbx
- 634:	48 03 ed             	add    rbp,rbp
- 637:	48 03 f6             	add    rsi,rsi
- 63a:	48 03 ff             	add    rdi,rdi
- 63d:	48 03 db             	add    rbx,rbx
- 640:	48 03 ed             	add    rbp,rbp
- 643:	48 03 f6             	add    rsi,rsi
- 646:	48 03 ff             	add    rdi,rdi
- 649:	48 03 db             	add    rbx,rbx
- 64c:	48 03 ed             	add    rbp,rbp
- 64f:	48 03 f6             	add    rsi,rsi
- 652:	48 03 ff             	add    rdi,rdi
- 655:	48 03 db             	add    rbx,rbx
- 658:	48 03 ed             	add    rbp,rbp
- 65b:	48 03 f6             	add    rsi,rsi
- 65e:	48 03 ff             	add    rdi,rdi
- 661:	48 03 db             	add    rbx,rbx
- 664:	48 03 ed             	add    rbp,rbp
- 667:	48 03 f6             	add    rsi,rsi
- 66a:	48 03 ff             	add    rdi,rdi
- 66d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5a7:	48 03 db             	add    rbx,rbx
+ 5aa:	48 03 ed             	add    rbp,rbp
+ 5ad:	48 03 f6             	add    rsi,rsi
+ 5b0:	48 03 db             	add    rbx,rbx
+ 5b3:	48 03 ed             	add    rbp,rbp
+ 5b6:	48 03 f6             	add    rsi,rsi
+ 5b9:	48 03 ff             	add    rdi,rdi
+ 5bc:	48 03 db             	add    rbx,rbx
+ 5bf:	48 03 ed             	add    rbp,rbp
+ 5c2:	48 03 f6             	add    rsi,rsi
+ 5c5:	48 03 ff             	add    rdi,rdi
+ 5c8:	48 03 db             	add    rbx,rbx
+ 5cb:	48 03 ed             	add    rbp,rbp
+ 5ce:	48 03 f6             	add    rsi,rsi
+ 5d1:	48 03 ff             	add    rdi,rdi
+ 5d4:	48 03 db             	add    rbx,rbx
+ 5d7:	48 03 ed             	add    rbp,rbp
+ 5da:	48 03 f6             	add    rsi,rsi
+ 5dd:	48 03 ff             	add    rdi,rdi
+ 5e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 5e3:	48 03 db             	add    rbx,rbx
+ 5e6:	48 03 ed             	add    rbp,rbp
+ 5e9:	48 03 f6             	add    rsi,rsi
+ 5ec:	48 03 ff             	add    rdi,rdi
+ 5ef:	48 03 db             	add    rbx,rbx
+ 5f2:	48 03 ed             	add    rbp,rbp
+ 5f5:	48 03 f6             	add    rsi,rsi
+ 5f8:	48 03 ff             	add    rdi,rdi
+ 5fb:	48 03 db             	add    rbx,rbx
+ 5fe:	48 03 ed             	add    rbp,rbp
+ 601:	48 03 f6             	add    rsi,rsi
+ 604:	48 03 ff             	add    rdi,rdi
+ 607:	48 03 db             	add    rbx,rbx
+ 60a:	48 03 ed             	add    rbp,rbp
+ 60d:	48 03 f6             	add    rsi,rsi
+ 610:	48 03 ff             	add    rdi,rdi
+ 613:	48 03 db             	add    rbx,rbx
+ 616:	48 03 ed             	add    rbp,rbp
+ 619:	48 03 f6             	add    rsi,rsi
+ 61c:	48 03 ff             	add    rdi,rdi
+ 61f:	48 03 db             	add    rbx,rbx
+ 622:	48 03 ed             	add    rbp,rbp
+ 625:	48 03 f6             	add    rsi,rsi
+ 628:	48 03 ff             	add    rdi,rdi
+ 62b:	48 03 db             	add    rbx,rbx
+ 62e:	48 03 ed             	add    rbp,rbp
+ 631:	48 03 f6             	add    rsi,rsi
+ 634:	48 03 ff             	add    rdi,rdi
+ 637:	48 03 db             	add    rbx,rbx
+ 63a:	48 03 ed             	add    rbp,rbp
+ 63d:	48 03 f6             	add    rsi,rsi
+ 640:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 643:	48 03 db             	add    rbx,rbx
+ 646:	48 03 ed             	add    rbp,rbp
+ 649:	48 03 f6             	add    rsi,rsi
+ 64c:	48 03 ff             	add    rdi,rdi
+ 64f:	48 03 db             	add    rbx,rbx
+ 652:	48 03 ed             	add    rbp,rbp
+ 655:	48 03 f6             	add    rsi,rsi
+ 658:	48 03 ff             	add    rdi,rdi
+ 65b:	48 03 db             	add    rbx,rbx
+ 65e:	48 03 ed             	add    rbp,rbp
+ 661:	48 03 f6             	add    rsi,rsi
+ 664:	48 03 ff             	add    rdi,rdi
+ 667:	48 03 db             	add    rbx,rbx
+ 66a:	48 03 ed             	add    rbp,rbp
+ 66d:	48 03 f6             	add    rsi,rsi
  670:	48 03 db             	add    rbx,rbx
  673:	48 03 ed             	add    rbp,rbp
  676:	48 03 f6             	add    rsi,rsi
@@ -577,23 +577,23 @@ Disassembly of section .data:
  697:	48 03 ed             	add    rbp,rbp
  69a:	48 03 f6             	add    rsi,rsi
  69d:	48 03 ff             	add    rdi,rdi
- 6a0:	48 03 db             	add    rbx,rbx
- 6a3:	48 03 ed             	add    rbp,rbp
- 6a6:	48 03 f6             	add    rsi,rsi
- 6a9:	48 03 ff             	add    rdi,rdi
- 6ac:	48 03 db             	add    rbx,rbx
- 6af:	48 03 ed             	add    rbp,rbp
- 6b2:	48 03 f6             	add    rsi,rsi
- 6b5:	48 03 ff             	add    rdi,rdi
- 6b8:	48 03 db             	add    rbx,rbx
- 6bb:	48 03 ed             	add    rbp,rbp
- 6be:	48 03 f6             	add    rsi,rsi
- 6c1:	48 03 ff             	add    rdi,rdi
- 6c4:	48 03 db             	add    rbx,rbx
- 6c7:	48 03 ed             	add    rbp,rbp
- 6ca:	48 03 f6             	add    rsi,rsi
- 6cd:	48 03 ff             	add    rdi,rdi
- 6d0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6a3:	48 03 db             	add    rbx,rbx
+ 6a6:	48 03 ed             	add    rbp,rbp
+ 6a9:	48 03 f6             	add    rsi,rsi
+ 6ac:	48 03 ff             	add    rdi,rdi
+ 6af:	48 03 db             	add    rbx,rbx
+ 6b2:	48 03 ed             	add    rbp,rbp
+ 6b5:	48 03 f6             	add    rsi,rsi
+ 6b8:	48 03 ff             	add    rdi,rdi
+ 6bb:	48 03 db             	add    rbx,rbx
+ 6be:	48 03 ed             	add    rbp,rbp
+ 6c1:	48 03 f6             	add    rsi,rsi
+ 6c4:	48 03 ff             	add    rdi,rdi
+ 6c7:	48 03 db             	add    rbx,rbx
+ 6ca:	48 03 ed             	add    rbp,rbp
+ 6cd:	48 03 f6             	add    rsi,rsi
+ 6d0:	48 03 ff             	add    rdi,rdi
  6d3:	48 03 db             	add    rbx,rbx
  6d6:	48 03 ed             	add    rbp,rbp
  6d9:	48 03 f6             	add    rsi,rsi
@@ -609,7 +609,7 @@ Disassembly of section .data:
  6f7:	48 03 db             	add    rbx,rbx
  6fa:	48 03 ed             	add    rbp,rbp
  6fd:	48 03 f6             	add    rsi,rsi
- 700:	48 03 ff             	add    rdi,rdi
+ 700:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  703:	48 03 db             	add    rbx,rbx
  706:	48 03 ed             	add    rbp,rbp
  709:	48 03 f6             	add    rsi,rsi
@@ -625,74 +625,74 @@ Disassembly of section .data:
  727:	48 03 db             	add    rbx,rbx
  72a:	48 03 ed             	add    rbp,rbp
  72d:	48 03 f6             	add    rsi,rsi
- 730:	48 03 ff             	add    rdi,rdi
- 733:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 736:	48 03 db             	add    rbx,rbx
- 739:	48 03 ed             	add    rbp,rbp
- 73c:	48 03 f6             	add    rsi,rsi
- 73f:	48 03 ff             	add    rdi,rdi
- 742:	48 03 db             	add    rbx,rbx
- 745:	48 03 ed             	add    rbp,rbp
- 748:	48 03 f6             	add    rsi,rsi
- 74b:	48 03 ff             	add    rdi,rdi
- 74e:	48 03 db             	add    rbx,rbx
- 751:	48 03 ed             	add    rbp,rbp
- 754:	48 03 f6             	add    rsi,rsi
- 757:	48 03 ff             	add    rdi,rdi
- 75a:	48 03 db             	add    rbx,rbx
- 75d:	48 03 ed             	add    rbp,rbp
- 760:	48 03 f6             	add    rsi,rsi
- 763:	48 03 ff             	add    rdi,rdi
- 766:	48 03 db             	add    rbx,rbx
- 769:	48 03 ed             	add    rbp,rbp
- 76c:	48 03 f6             	add    rsi,rsi
- 76f:	48 03 ff             	add    rdi,rdi
- 772:	48 03 db             	add    rbx,rbx
- 775:	48 03 ed             	add    rbp,rbp
- 778:	48 03 f6             	add    rsi,rsi
- 77b:	48 03 ff             	add    rdi,rdi
- 77e:	48 03 db             	add    rbx,rbx
- 781:	48 03 ed             	add    rbp,rbp
- 784:	48 03 f6             	add    rsi,rsi
- 787:	48 03 ff             	add    rdi,rdi
- 78a:	48 03 db             	add    rbx,rbx
- 78d:	48 03 ed             	add    rbp,rbp
- 790:	48 03 f6             	add    rsi,rsi
- 793:	48 03 ff             	add    rdi,rdi
- 796:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 799:	48 03 db             	add    rbx,rbx
- 79c:	48 03 ed             	add    rbp,rbp
- 79f:	48 03 f6             	add    rsi,rsi
- 7a2:	48 03 ff             	add    rdi,rdi
- 7a5:	48 03 db             	add    rbx,rbx
- 7a8:	48 03 ed             	add    rbp,rbp
- 7ab:	48 03 f6             	add    rsi,rsi
- 7ae:	48 03 ff             	add    rdi,rdi
- 7b1:	48 03 db             	add    rbx,rbx
- 7b4:	48 03 ed             	add    rbp,rbp
- 7b7:	48 03 f6             	add    rsi,rsi
- 7ba:	48 03 ff             	add    rdi,rdi
- 7bd:	48 03 db             	add    rbx,rbx
- 7c0:	48 03 ed             	add    rbp,rbp
- 7c3:	48 03 f6             	add    rsi,rsi
- 7c6:	48 03 ff             	add    rdi,rdi
- 7c9:	48 03 db             	add    rbx,rbx
- 7cc:	48 03 ed             	add    rbp,rbp
- 7cf:	48 03 f6             	add    rsi,rsi
- 7d2:	48 03 ff             	add    rdi,rdi
- 7d5:	48 03 db             	add    rbx,rbx
- 7d8:	48 03 ed             	add    rbp,rbp
- 7db:	48 03 f6             	add    rsi,rsi
- 7de:	48 03 ff             	add    rdi,rdi
- 7e1:	48 03 db             	add    rbx,rbx
- 7e4:	48 03 ed             	add    rbp,rbp
- 7e7:	48 03 f6             	add    rsi,rsi
- 7ea:	48 03 ff             	add    rdi,rdi
- 7ed:	48 03 db             	add    rbx,rbx
- 7f0:	48 03 ed             	add    rbp,rbp
- 7f3:	48 03 f6             	add    rsi,rsi
- 7f6:	48 03 ff             	add    rdi,rdi
- 7f9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 730:	48 03 db             	add    rbx,rbx
+ 733:	48 03 ed             	add    rbp,rbp
+ 736:	48 03 f6             	add    rsi,rsi
+ 739:	48 03 ff             	add    rdi,rdi
+ 73c:	48 03 db             	add    rbx,rbx
+ 73f:	48 03 ed             	add    rbp,rbp
+ 742:	48 03 f6             	add    rsi,rsi
+ 745:	48 03 ff             	add    rdi,rdi
+ 748:	48 03 db             	add    rbx,rbx
+ 74b:	48 03 ed             	add    rbp,rbp
+ 74e:	48 03 f6             	add    rsi,rsi
+ 751:	48 03 ff             	add    rdi,rdi
+ 754:	48 03 db             	add    rbx,rbx
+ 757:	48 03 ed             	add    rbp,rbp
+ 75a:	48 03 f6             	add    rsi,rsi
+ 75d:	48 03 ff             	add    rdi,rdi
+ 760:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 763:	48 03 db             	add    rbx,rbx
+ 766:	48 03 ed             	add    rbp,rbp
+ 769:	48 03 f6             	add    rsi,rsi
+ 76c:	48 03 ff             	add    rdi,rdi
+ 76f:	48 03 db             	add    rbx,rbx
+ 772:	48 03 ed             	add    rbp,rbp
+ 775:	48 03 f6             	add    rsi,rsi
+ 778:	48 03 ff             	add    rdi,rdi
+ 77b:	48 03 db             	add    rbx,rbx
+ 77e:	48 03 ed             	add    rbp,rbp
+ 781:	48 03 f6             	add    rsi,rsi
+ 784:	48 03 ff             	add    rdi,rdi
+ 787:	48 03 db             	add    rbx,rbx
+ 78a:	48 03 ed             	add    rbp,rbp
+ 78d:	48 03 f6             	add    rsi,rsi
+ 790:	48 03 ff             	add    rdi,rdi
+ 793:	48 03 db             	add    rbx,rbx
+ 796:	48 03 ed             	add    rbp,rbp
+ 799:	48 03 f6             	add    rsi,rsi
+ 79c:	48 03 ff             	add    rdi,rdi
+ 79f:	48 03 db             	add    rbx,rbx
+ 7a2:	48 03 ed             	add    rbp,rbp
+ 7a5:	48 03 f6             	add    rsi,rsi
+ 7a8:	48 03 ff             	add    rdi,rdi
+ 7ab:	48 03 db             	add    rbx,rbx
+ 7ae:	48 03 ed             	add    rbp,rbp
+ 7b1:	48 03 f6             	add    rsi,rsi
+ 7b4:	48 03 ff             	add    rdi,rdi
+ 7b7:	48 03 db             	add    rbx,rbx
+ 7ba:	48 03 ed             	add    rbp,rbp
+ 7bd:	48 03 f6             	add    rsi,rsi
+ 7c0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 7c3:	48 03 db             	add    rbx,rbx
+ 7c6:	48 03 ed             	add    rbp,rbp
+ 7c9:	48 03 f6             	add    rsi,rsi
+ 7cc:	48 03 ff             	add    rdi,rdi
+ 7cf:	48 03 db             	add    rbx,rbx
+ 7d2:	48 03 ed             	add    rbp,rbp
+ 7d5:	48 03 f6             	add    rsi,rsi
+ 7d8:	48 03 ff             	add    rdi,rdi
+ 7db:	48 03 db             	add    rbx,rbx
+ 7de:	48 03 ed             	add    rbp,rbp
+ 7e1:	48 03 f6             	add    rsi,rsi
+ 7e4:	48 03 ff             	add    rdi,rdi
+ 7e7:	48 03 db             	add    rbx,rbx
+ 7ea:	48 03 ed             	add    rbp,rbp
+ 7ed:	48 03 f6             	add    rsi,rsi
+ 7f0:	48 03 db             	add    rbx,rbx
+ 7f3:	48 03 ed             	add    rbp,rbp
+ 7f6:	48 03 f6             	add    rsi,rsi
+ 7f9:	48 03 ff             	add    rdi,rdi
  7fc:	48 03 db             	add    rbx,rbx
  7ff:	48 03 ed             	add    rbp,rbp
  802:	48 03 f6             	add    rsi,rsi
@@ -705,27 +705,27 @@ Disassembly of section .data:
  817:	48 03 ed             	add    rbp,rbp
  81a:	48 03 f6             	add    rsi,rsi
  81d:	48 03 ff             	add    rdi,rdi
- 820:	48 03 db             	add    rbx,rbx
- 823:	48 03 ed             	add    rbp,rbp
- 826:	48 03 f6             	add    rsi,rsi
- 829:	48 03 ff             	add    rdi,rdi
- 82c:	48 03 db             	add    rbx,rbx
- 82f:	48 03 ed             	add    rbp,rbp
- 832:	48 03 f6             	add    rsi,rsi
- 835:	48 03 ff             	add    rdi,rdi
- 838:	48 03 db             	add    rbx,rbx
- 83b:	48 03 ed             	add    rbp,rbp
- 83e:	48 03 f6             	add    rsi,rsi
- 841:	48 03 ff             	add    rdi,rdi
- 844:	48 03 db             	add    rbx,rbx
- 847:	48 03 ed             	add    rbp,rbp
- 84a:	48 03 f6             	add    rsi,rsi
- 84d:	48 03 ff             	add    rdi,rdi
- 850:	48 03 db             	add    rbx,rbx
- 853:	48 03 ed             	add    rbp,rbp
- 856:	48 03 f6             	add    rsi,rsi
- 859:	48 03 ff             	add    rdi,rdi
- 85c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 820:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 823:	48 03 db             	add    rbx,rbx
+ 826:	48 03 ed             	add    rbp,rbp
+ 829:	48 03 f6             	add    rsi,rsi
+ 82c:	48 03 ff             	add    rdi,rdi
+ 82f:	48 03 db             	add    rbx,rbx
+ 832:	48 03 ed             	add    rbp,rbp
+ 835:	48 03 f6             	add    rsi,rsi
+ 838:	48 03 ff             	add    rdi,rdi
+ 83b:	48 03 db             	add    rbx,rbx
+ 83e:	48 03 ed             	add    rbp,rbp
+ 841:	48 03 f6             	add    rsi,rsi
+ 844:	48 03 ff             	add    rdi,rdi
+ 847:	48 03 db             	add    rbx,rbx
+ 84a:	48 03 ed             	add    rbp,rbp
+ 84d:	48 03 f6             	add    rsi,rsi
+ 850:	48 03 ff             	add    rdi,rdi
+ 853:	48 03 db             	add    rbx,rbx
+ 856:	48 03 ed             	add    rbp,rbp
+ 859:	48 03 f6             	add    rsi,rsi
+ 85c:	48 03 ff             	add    rdi,rdi
  85f:	48 03 db             	add    rbx,rbx
  862:	48 03 ed             	add    rbp,rbp
  865:	48 03 f6             	add    rsi,rsi
@@ -737,7 +737,7 @@ Disassembly of section .data:
  877:	48 03 db             	add    rbx,rbx
  87a:	48 03 ed             	add    rbp,rbp
  87d:	48 03 f6             	add    rsi,rsi
- 880:	48 03 ff             	add    rdi,rdi
+ 880:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  883:	48 03 db             	add    rbx,rbx
  886:	48 03 ed             	add    rbp,rbp
  889:	48 03 f6             	add    rsi,rsi
@@ -753,78 +753,78 @@ Disassembly of section .data:
  8a7:	48 03 db             	add    rbx,rbx
  8aa:	48 03 ed             	add    rbp,rbp
  8ad:	48 03 f6             	add    rsi,rsi
- 8b0:	48 03 ff             	add    rdi,rdi
- 8b3:	48 03 db             	add    rbx,rbx
- 8b6:	48 03 ed             	add    rbp,rbp
- 8b9:	48 03 f6             	add    rsi,rsi
- 8bc:	48 03 ff             	add    rdi,rdi
- 8bf:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 8c2:	48 03 db             	add    rbx,rbx
- 8c5:	48 03 ed             	add    rbp,rbp
- 8c8:	48 03 f6             	add    rsi,rsi
- 8cb:	48 03 ff             	add    rdi,rdi
- 8ce:	48 03 db             	add    rbx,rbx
- 8d1:	48 03 ed             	add    rbp,rbp
- 8d4:	48 03 f6             	add    rsi,rsi
- 8d7:	48 03 ff             	add    rdi,rdi
- 8da:	48 03 db             	add    rbx,rbx
- 8dd:	48 03 ed             	add    rbp,rbp
- 8e0:	48 03 f6             	add    rsi,rsi
- 8e3:	48 03 ff             	add    rdi,rdi
- 8e6:	48 03 db             	add    rbx,rbx
- 8e9:	48 03 ed             	add    rbp,rbp
- 8ec:	48 03 f6             	add    rsi,rsi
- 8ef:	48 03 ff             	add    rdi,rdi
- 8f2:	48 03 db             	add    rbx,rbx
- 8f5:	48 03 ed             	add    rbp,rbp
- 8f8:	48 03 f6             	add    rsi,rsi
- 8fb:	48 03 ff             	add    rdi,rdi
- 8fe:	48 03 db             	add    rbx,rbx
- 901:	48 03 ed             	add    rbp,rbp
- 904:	48 03 f6             	add    rsi,rsi
- 907:	48 03 ff             	add    rdi,rdi
- 90a:	48 03 db             	add    rbx,rbx
- 90d:	48 03 ed             	add    rbp,rbp
- 910:	48 03 f6             	add    rsi,rsi
- 913:	48 03 ff             	add    rdi,rdi
- 916:	48 03 db             	add    rbx,rbx
- 919:	48 03 ed             	add    rbp,rbp
- 91c:	48 03 f6             	add    rsi,rsi
- 91f:	48 03 ff             	add    rdi,rdi
- 922:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 925:	48 03 db             	add    rbx,rbx
- 928:	48 03 ed             	add    rbp,rbp
- 92b:	48 03 f6             	add    rsi,rsi
- 92e:	48 03 ff             	add    rdi,rdi
- 931:	48 03 db             	add    rbx,rbx
- 934:	48 03 ed             	add    rbp,rbp
- 937:	48 03 f6             	add    rsi,rsi
- 93a:	48 03 ff             	add    rdi,rdi
- 93d:	48 03 db             	add    rbx,rbx
- 940:	48 03 ed             	add    rbp,rbp
- 943:	48 03 f6             	add    rsi,rsi
- 946:	48 03 ff             	add    rdi,rdi
- 949:	48 03 db             	add    rbx,rbx
- 94c:	48 03 ed             	add    rbp,rbp
- 94f:	48 03 f6             	add    rsi,rsi
- 952:	48 03 ff             	add    rdi,rdi
- 955:	48 03 db             	add    rbx,rbx
- 958:	48 03 ed             	add    rbp,rbp
- 95b:	48 03 f6             	add    rsi,rsi
- 95e:	48 03 ff             	add    rdi,rdi
- 961:	48 03 db             	add    rbx,rbx
- 964:	48 03 ed             	add    rbp,rbp
- 967:	48 03 f6             	add    rsi,rsi
- 96a:	48 03 ff             	add    rdi,rdi
- 96d:	48 03 db             	add    rbx,rbx
- 970:	48 03 ed             	add    rbp,rbp
- 973:	48 03 f6             	add    rsi,rsi
- 976:	48 03 ff             	add    rdi,rdi
- 979:	48 03 db             	add    rbx,rbx
- 97c:	48 03 ed             	add    rbp,rbp
- 97f:	48 03 f6             	add    rsi,rsi
- 982:	48 03 ff             	add    rdi,rdi
- 985:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8b0:	48 03 db             	add    rbx,rbx
+ 8b3:	48 03 ed             	add    rbp,rbp
+ 8b6:	48 03 f6             	add    rsi,rsi
+ 8b9:	48 03 ff             	add    rdi,rdi
+ 8bc:	48 03 db             	add    rbx,rbx
+ 8bf:	48 03 ed             	add    rbp,rbp
+ 8c2:	48 03 f6             	add    rsi,rsi
+ 8c5:	48 03 ff             	add    rdi,rdi
+ 8c8:	48 03 db             	add    rbx,rbx
+ 8cb:	48 03 ed             	add    rbp,rbp
+ 8ce:	48 03 f6             	add    rsi,rsi
+ 8d1:	48 03 ff             	add    rdi,rdi
+ 8d4:	48 03 db             	add    rbx,rbx
+ 8d7:	48 03 ed             	add    rbp,rbp
+ 8da:	48 03 f6             	add    rsi,rsi
+ 8dd:	48 03 ff             	add    rdi,rdi
+ 8e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8e3:	48 03 db             	add    rbx,rbx
+ 8e6:	48 03 ed             	add    rbp,rbp
+ 8e9:	48 03 f6             	add    rsi,rsi
+ 8ec:	48 03 ff             	add    rdi,rdi
+ 8ef:	48 03 db             	add    rbx,rbx
+ 8f2:	48 03 ed             	add    rbp,rbp
+ 8f5:	48 03 f6             	add    rsi,rsi
+ 8f8:	48 03 ff             	add    rdi,rdi
+ 8fb:	48 03 db             	add    rbx,rbx
+ 8fe:	48 03 ed             	add    rbp,rbp
+ 901:	48 03 f6             	add    rsi,rsi
+ 904:	48 03 ff             	add    rdi,rdi
+ 907:	48 03 db             	add    rbx,rbx
+ 90a:	48 03 ed             	add    rbp,rbp
+ 90d:	48 03 f6             	add    rsi,rsi
+ 910:	48 03 ff             	add    rdi,rdi
+ 913:	48 03 db             	add    rbx,rbx
+ 916:	48 03 ed             	add    rbp,rbp
+ 919:	48 03 f6             	add    rsi,rsi
+ 91c:	48 03 ff             	add    rdi,rdi
+ 91f:	48 03 db             	add    rbx,rbx
+ 922:	48 03 ed             	add    rbp,rbp
+ 925:	48 03 f6             	add    rsi,rsi
+ 928:	48 03 ff             	add    rdi,rdi
+ 92b:	48 03 db             	add    rbx,rbx
+ 92e:	48 03 ed             	add    rbp,rbp
+ 931:	48 03 f6             	add    rsi,rsi
+ 934:	48 03 ff             	add    rdi,rdi
+ 937:	48 03 db             	add    rbx,rbx
+ 93a:	48 03 ed             	add    rbp,rbp
+ 93d:	48 03 f6             	add    rsi,rsi
+ 940:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 943:	48 03 db             	add    rbx,rbx
+ 946:	48 03 ed             	add    rbp,rbp
+ 949:	48 03 f6             	add    rsi,rsi
+ 94c:	48 03 ff             	add    rdi,rdi
+ 94f:	48 03 db             	add    rbx,rbx
+ 952:	48 03 ed             	add    rbp,rbp
+ 955:	48 03 f6             	add    rsi,rsi
+ 958:	48 03 ff             	add    rdi,rdi
+ 95b:	48 03 db             	add    rbx,rbx
+ 95e:	48 03 ed             	add    rbp,rbp
+ 961:	48 03 f6             	add    rsi,rsi
+ 964:	48 03 ff             	add    rdi,rdi
+ 967:	48 03 db             	add    rbx,rbx
+ 96a:	48 03 ed             	add    rbp,rbp
+ 96d:	48 03 f6             	add    rsi,rsi
+ 970:	48 03 db             	add    rbx,rbx
+ 973:	48 03 ed             	add    rbp,rbp
+ 976:	48 03 f6             	add    rsi,rsi
+ 979:	48 03 ff             	add    rdi,rdi
+ 97c:	48 03 db             	add    rbx,rbx
+ 97f:	48 03 ed             	add    rbp,rbp
+ 982:	48 03 f6             	add    rsi,rsi
+ 985:	48 03 ff             	add    rdi,rdi
  988:	48 03 db             	add    rbx,rbx
  98b:	48 03 ed             	add    rbp,rbp
  98e:	48 03 f6             	add    rsi,rsi
@@ -833,31 +833,31 @@ Disassembly of section .data:
  997:	48 03 ed             	add    rbp,rbp
  99a:	48 03 f6             	add    rsi,rsi
  99d:	48 03 ff             	add    rdi,rdi
- 9a0:	48 03 db             	add    rbx,rbx
- 9a3:	48 03 ed             	add    rbp,rbp
- 9a6:	48 03 f6             	add    rsi,rsi
- 9a9:	48 03 ff             	add    rdi,rdi
- 9ac:	48 03 db             	add    rbx,rbx
- 9af:	48 03 ed             	add    rbp,rbp
- 9b2:	48 03 f6             	add    rsi,rsi
- 9b5:	48 03 ff             	add    rdi,rdi
- 9b8:	48 03 db             	add    rbx,rbx
- 9bb:	48 03 ed             	add    rbp,rbp
- 9be:	48 03 f6             	add    rsi,rsi
- 9c1:	48 03 ff             	add    rdi,rdi
- 9c4:	48 03 db             	add    rbx,rbx
- 9c7:	48 03 ed             	add    rbp,rbp
- 9ca:	48 03 f6             	add    rsi,rsi
- 9cd:	48 03 ff             	add    rdi,rdi
- 9d0:	48 03 db             	add    rbx,rbx
- 9d3:	48 03 ed             	add    rbp,rbp
- 9d6:	48 03 f6             	add    rsi,rsi
- 9d9:	48 03 ff             	add    rdi,rdi
- 9dc:	48 03 db             	add    rbx,rbx
- 9df:	48 03 ed             	add    rbp,rbp
- 9e2:	48 03 f6             	add    rsi,rsi
- 9e5:	48 03 ff             	add    rdi,rdi
- 9e8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 9a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 9a3:	48 03 db             	add    rbx,rbx
+ 9a6:	48 03 ed             	add    rbp,rbp
+ 9a9:	48 03 f6             	add    rsi,rsi
+ 9ac:	48 03 ff             	add    rdi,rdi
+ 9af:	48 03 db             	add    rbx,rbx
+ 9b2:	48 03 ed             	add    rbp,rbp
+ 9b5:	48 03 f6             	add    rsi,rsi
+ 9b8:	48 03 ff             	add    rdi,rdi
+ 9bb:	48 03 db             	add    rbx,rbx
+ 9be:	48 03 ed             	add    rbp,rbp
+ 9c1:	48 03 f6             	add    rsi,rsi
+ 9c4:	48 03 ff             	add    rdi,rdi
+ 9c7:	48 03 db             	add    rbx,rbx
+ 9ca:	48 03 ed             	add    rbp,rbp
+ 9cd:	48 03 f6             	add    rsi,rsi
+ 9d0:	48 03 ff             	add    rdi,rdi
+ 9d3:	48 03 db             	add    rbx,rbx
+ 9d6:	48 03 ed             	add    rbp,rbp
+ 9d9:	48 03 f6             	add    rsi,rsi
+ 9dc:	48 03 ff             	add    rdi,rdi
+ 9df:	48 03 db             	add    rbx,rbx
+ 9e2:	48 03 ed             	add    rbp,rbp
+ 9e5:	48 03 f6             	add    rsi,rsi
+ 9e8:	48 03 ff             	add    rdi,rdi
  9eb:	48 03 db             	add    rbx,rbx
  9ee:	48 03 ed             	add    rbp,rbp
  9f1:	48 03 f6             	add    rsi,rsi
@@ -865,7 +865,7 @@ Disassembly of section .data:
  9f7:	48 03 db             	add    rbx,rbx
  9fa:	48 03 ed             	add    rbp,rbp
  9fd:	48 03 f6             	add    rsi,rsi
- a00:	48 03 ff             	add    rdi,rdi
+ a00:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  a03:	48 03 db             	add    rbx,rbx
  a06:	48 03 ed             	add    rbp,rbp
  a09:	48 03 f6             	add    rsi,rsi
@@ -881,119 +881,119 @@ Disassembly of section .data:
  a27:	48 03 db             	add    rbx,rbx
  a2a:	48 03 ed             	add    rbp,rbp
  a2d:	48 03 f6             	add    rsi,rsi
- a30:	48 03 ff             	add    rdi,rdi
- a33:	48 03 db             	add    rbx,rbx
- a36:	48 03 ed             	add    rbp,rbp
- a39:	48 03 f6             	add    rsi,rsi
- a3c:	48 03 ff             	add    rdi,rdi
- a3f:	48 03 db             	add    rbx,rbx
- a42:	48 03 ed             	add    rbp,rbp
- a45:	48 03 f6             	add    rsi,rsi
- a48:	48 03 ff             	add    rdi,rdi
- a4b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- a4e:	48 03 db             	add    rbx,rbx
- a51:	48 03 ed             	add    rbp,rbp
- a54:	48 03 f6             	add    rsi,rsi
- a57:	48 03 ff             	add    rdi,rdi
- a5a:	48 03 db             	add    rbx,rbx
- a5d:	48 03 ed             	add    rbp,rbp
- a60:	48 03 f6             	add    rsi,rsi
- a63:	48 03 ff             	add    rdi,rdi
- a66:	48 03 db             	add    rbx,rbx
- a69:	48 03 ed             	add    rbp,rbp
- a6c:	48 03 f6             	add    rsi,rsi
- a6f:	48 03 ff             	add    rdi,rdi
- a72:	48 03 db             	add    rbx,rbx
- a75:	48 03 ed             	add    rbp,rbp
- a78:	48 03 f6             	add    rsi,rsi
- a7b:	48 03 ff             	add    rdi,rdi
- a7e:	48 03 db             	add    rbx,rbx
- a81:	48 03 ed             	add    rbp,rbp
- a84:	48 03 f6             	add    rsi,rsi
- a87:	48 03 ff             	add    rdi,rdi
- a8a:	48 03 db             	add    rbx,rbx
- a8d:	48 03 ed             	add    rbp,rbp
- a90:	48 03 f6             	add    rsi,rsi
- a93:	48 03 ff             	add    rdi,rdi
- a96:	48 03 db             	add    rbx,rbx
- a99:	48 03 ed             	add    rbp,rbp
- a9c:	48 03 f6             	add    rsi,rsi
- a9f:	48 03 ff             	add    rdi,rdi
- aa2:	48 03 db             	add    rbx,rbx
- aa5:	48 03 ed             	add    rbp,rbp
- aa8:	48 03 f6             	add    rsi,rsi
- aab:	48 03 ff             	add    rdi,rdi
- aae:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- ab1:	48 03 db             	add    rbx,rbx
- ab4:	48 03 ed             	add    rbp,rbp
- ab7:	48 03 f6             	add    rsi,rsi
- aba:	48 03 ff             	add    rdi,rdi
- abd:	48 03 db             	add    rbx,rbx
- ac0:	48 03 ed             	add    rbp,rbp
- ac3:	48 03 f6             	add    rsi,rsi
- ac6:	48 03 ff             	add    rdi,rdi
- ac9:	48 03 db             	add    rbx,rbx
- acc:	48 03 ed             	add    rbp,rbp
- acf:	48 03 f6             	add    rsi,rsi
- ad2:	48 03 ff             	add    rdi,rdi
- ad5:	48 03 db             	add    rbx,rbx
- ad8:	48 03 ed             	add    rbp,rbp
- adb:	48 03 f6             	add    rsi,rsi
- ade:	48 03 ff             	add    rdi,rdi
- ae1:	48 03 db             	add    rbx,rbx
- ae4:	48 03 ed             	add    rbp,rbp
- ae7:	48 03 f6             	add    rsi,rsi
- aea:	48 03 ff             	add    rdi,rdi
- aed:	48 03 db             	add    rbx,rbx
- af0:	48 03 ed             	add    rbp,rbp
- af3:	48 03 f6             	add    rsi,rsi
- af6:	48 03 ff             	add    rdi,rdi
- af9:	48 03 db             	add    rbx,rbx
- afc:	48 03 ed             	add    rbp,rbp
- aff:	48 03 f6             	add    rsi,rsi
- b02:	48 03 ff             	add    rdi,rdi
- b05:	48 03 db             	add    rbx,rbx
- b08:	48 03 ed             	add    rbp,rbp
- b0b:	48 03 f6             	add    rsi,rsi
- b0e:	48 03 ff             	add    rdi,rdi
- b11:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a30:	48 03 db             	add    rbx,rbx
+ a33:	48 03 ed             	add    rbp,rbp
+ a36:	48 03 f6             	add    rsi,rsi
+ a39:	48 03 ff             	add    rdi,rdi
+ a3c:	48 03 db             	add    rbx,rbx
+ a3f:	48 03 ed             	add    rbp,rbp
+ a42:	48 03 f6             	add    rsi,rsi
+ a45:	48 03 ff             	add    rdi,rdi
+ a48:	48 03 db             	add    rbx,rbx
+ a4b:	48 03 ed             	add    rbp,rbp
+ a4e:	48 03 f6             	add    rsi,rsi
+ a51:	48 03 ff             	add    rdi,rdi
+ a54:	48 03 db             	add    rbx,rbx
+ a57:	48 03 ed             	add    rbp,rbp
+ a5a:	48 03 f6             	add    rsi,rsi
+ a5d:	48 03 ff             	add    rdi,rdi
+ a60:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a63:	48 03 db             	add    rbx,rbx
+ a66:	48 03 ed             	add    rbp,rbp
+ a69:	48 03 f6             	add    rsi,rsi
+ a6c:	48 03 ff             	add    rdi,rdi
+ a6f:	48 03 db             	add    rbx,rbx
+ a72:	48 03 ed             	add    rbp,rbp
+ a75:	48 03 f6             	add    rsi,rsi
+ a78:	48 03 ff             	add    rdi,rdi
+ a7b:	48 03 db             	add    rbx,rbx
+ a7e:	48 03 ed             	add    rbp,rbp
+ a81:	48 03 f6             	add    rsi,rsi
+ a84:	48 03 ff             	add    rdi,rdi
+ a87:	48 03 db             	add    rbx,rbx
+ a8a:	48 03 ed             	add    rbp,rbp
+ a8d:	48 03 f6             	add    rsi,rsi
+ a90:	48 03 ff             	add    rdi,rdi
+ a93:	48 03 db             	add    rbx,rbx
+ a96:	48 03 ed             	add    rbp,rbp
+ a99:	48 03 f6             	add    rsi,rsi
+ a9c:	48 03 ff             	add    rdi,rdi
+ a9f:	48 03 db             	add    rbx,rbx
+ aa2:	48 03 ed             	add    rbp,rbp
+ aa5:	48 03 f6             	add    rsi,rsi
+ aa8:	48 03 ff             	add    rdi,rdi
+ aab:	48 03 db             	add    rbx,rbx
+ aae:	48 03 ed             	add    rbp,rbp
+ ab1:	48 03 f6             	add    rsi,rsi
+ ab4:	48 03 ff             	add    rdi,rdi
+ ab7:	48 03 db             	add    rbx,rbx
+ aba:	48 03 ed             	add    rbp,rbp
+ abd:	48 03 f6             	add    rsi,rsi
+ ac0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ ac3:	48 03 db             	add    rbx,rbx
+ ac6:	48 03 ed             	add    rbp,rbp
+ ac9:	48 03 f6             	add    rsi,rsi
+ acc:	48 03 ff             	add    rdi,rdi
+ acf:	48 03 db             	add    rbx,rbx
+ ad2:	48 03 ed             	add    rbp,rbp
+ ad5:	48 03 f6             	add    rsi,rsi
+ ad8:	48 03 ff             	add    rdi,rdi
+ adb:	48 03 db             	add    rbx,rbx
+ ade:	48 03 ed             	add    rbp,rbp
+ ae1:	48 03 f6             	add    rsi,rsi
+ ae4:	48 03 ff             	add    rdi,rdi
+ ae7:	48 03 db             	add    rbx,rbx
+ aea:	48 03 ed             	add    rbp,rbp
+ aed:	48 03 f6             	add    rsi,rsi
+ af0:	48 03 db             	add    rbx,rbx
+ af3:	48 03 ed             	add    rbp,rbp
+ af6:	48 03 f6             	add    rsi,rsi
+ af9:	48 03 ff             	add    rdi,rdi
+ afc:	48 03 db             	add    rbx,rbx
+ aff:	48 03 ed             	add    rbp,rbp
+ b02:	48 03 f6             	add    rsi,rsi
+ b05:	48 03 ff             	add    rdi,rdi
+ b08:	48 03 db             	add    rbx,rbx
+ b0b:	48 03 ed             	add    rbp,rbp
+ b0e:	48 03 f6             	add    rsi,rsi
+ b11:	48 03 ff             	add    rdi,rdi
  b14:	48 03 db             	add    rbx,rbx
  b17:	48 03 ed             	add    rbp,rbp
  b1a:	48 03 f6             	add    rsi,rsi
  b1d:	48 03 ff             	add    rdi,rdi
- b20:	48 03 db             	add    rbx,rbx
- b23:	48 03 ed             	add    rbp,rbp
- b26:	48 03 f6             	add    rsi,rsi
- b29:	48 03 ff             	add    rdi,rdi
- b2c:	48 03 db             	add    rbx,rbx
- b2f:	48 03 ed             	add    rbp,rbp
- b32:	48 03 f6             	add    rsi,rsi
- b35:	48 03 ff             	add    rdi,rdi
- b38:	48 03 db             	add    rbx,rbx
- b3b:	48 03 ed             	add    rbp,rbp
- b3e:	48 03 f6             	add    rsi,rsi
- b41:	48 03 ff             	add    rdi,rdi
- b44:	48 03 db             	add    rbx,rbx
- b47:	48 03 ed             	add    rbp,rbp
- b4a:	48 03 f6             	add    rsi,rsi
- b4d:	48 03 ff             	add    rdi,rdi
- b50:	48 03 db             	add    rbx,rbx
- b53:	48 03 ed             	add    rbp,rbp
- b56:	48 03 f6             	add    rsi,rsi
- b59:	48 03 ff             	add    rdi,rdi
- b5c:	48 03 db             	add    rbx,rbx
- b5f:	48 03 ed             	add    rbp,rbp
- b62:	48 03 f6             	add    rsi,rsi
- b65:	48 03 ff             	add    rdi,rdi
- b68:	48 03 db             	add    rbx,rbx
- b6b:	48 03 ed             	add    rbp,rbp
- b6e:	48 03 f6             	add    rsi,rsi
- b71:	48 03 ff             	add    rdi,rdi
- b74:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b20:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b23:	48 03 db             	add    rbx,rbx
+ b26:	48 03 ed             	add    rbp,rbp
+ b29:	48 03 f6             	add    rsi,rsi
+ b2c:	48 03 ff             	add    rdi,rdi
+ b2f:	48 03 db             	add    rbx,rbx
+ b32:	48 03 ed             	add    rbp,rbp
+ b35:	48 03 f6             	add    rsi,rsi
+ b38:	48 03 ff             	add    rdi,rdi
+ b3b:	48 03 db             	add    rbx,rbx
+ b3e:	48 03 ed             	add    rbp,rbp
+ b41:	48 03 f6             	add    rsi,rsi
+ b44:	48 03 ff             	add    rdi,rdi
+ b47:	48 03 db             	add    rbx,rbx
+ b4a:	48 03 ed             	add    rbp,rbp
+ b4d:	48 03 f6             	add    rsi,rsi
+ b50:	48 03 ff             	add    rdi,rdi
+ b53:	48 03 db             	add    rbx,rbx
+ b56:	48 03 ed             	add    rbp,rbp
+ b59:	48 03 f6             	add    rsi,rsi
+ b5c:	48 03 ff             	add    rdi,rdi
+ b5f:	48 03 db             	add    rbx,rbx
+ b62:	48 03 ed             	add    rbp,rbp
+ b65:	48 03 f6             	add    rsi,rsi
+ b68:	48 03 ff             	add    rdi,rdi
+ b6b:	48 03 db             	add    rbx,rbx
+ b6e:	48 03 ed             	add    rbp,rbp
+ b71:	48 03 f6             	add    rsi,rsi
+ b74:	48 03 ff             	add    rdi,rdi
  b77:	48 03 db             	add    rbx,rbx
  b7a:	48 03 ed             	add    rbp,rbp
  b7d:	48 03 f6             	add    rsi,rsi
- b80:	48 03 ff             	add    rdi,rdi
+ b80:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  b83:	48 03 db             	add    rbx,rbx
  b86:	48 03 ed             	add    rbp,rbp
  b89:	48 03 f6             	add    rsi,rsi
@@ -1009,119 +1009,119 @@ Disassembly of section .data:
  ba7:	48 03 db             	add    rbx,rbx
  baa:	48 03 ed             	add    rbp,rbp
  bad:	48 03 f6             	add    rsi,rsi
- bb0:	48 03 ff             	add    rdi,rdi
- bb3:	48 03 db             	add    rbx,rbx
- bb6:	48 03 ed             	add    rbp,rbp
- bb9:	48 03 f6             	add    rsi,rsi
- bbc:	48 03 ff             	add    rdi,rdi
- bbf:	48 03 db             	add    rbx,rbx
- bc2:	48 03 ed             	add    rbp,rbp
- bc5:	48 03 f6             	add    rsi,rsi
- bc8:	48 03 ff             	add    rdi,rdi
- bcb:	48 03 db             	add    rbx,rbx
- bce:	48 03 ed             	add    rbp,rbp
- bd1:	48 03 f6             	add    rsi,rsi
- bd4:	48 03 ff             	add    rdi,rdi
- bd7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- bda:	48 03 db             	add    rbx,rbx
- bdd:	48 03 ed             	add    rbp,rbp
- be0:	48 03 f6             	add    rsi,rsi
- be3:	48 03 ff             	add    rdi,rdi
- be6:	48 03 db             	add    rbx,rbx
- be9:	48 03 ed             	add    rbp,rbp
- bec:	48 03 f6             	add    rsi,rsi
- bef:	48 03 ff             	add    rdi,rdi
- bf2:	48 03 db             	add    rbx,rbx
- bf5:	48 03 ed             	add    rbp,rbp
- bf8:	48 03 f6             	add    rsi,rsi
- bfb:	48 03 ff             	add    rdi,rdi
- bfe:	48 03 db             	add    rbx,rbx
- c01:	48 03 ed             	add    rbp,rbp
- c04:	48 03 f6             	add    rsi,rsi
- c07:	48 03 ff             	add    rdi,rdi
- c0a:	48 03 db             	add    rbx,rbx
- c0d:	48 03 ed             	add    rbp,rbp
- c10:	48 03 f6             	add    rsi,rsi
- c13:	48 03 ff             	add    rdi,rdi
- c16:	48 03 db             	add    rbx,rbx
- c19:	48 03 ed             	add    rbp,rbp
- c1c:	48 03 f6             	add    rsi,rsi
- c1f:	48 03 ff             	add    rdi,rdi
- c22:	48 03 db             	add    rbx,rbx
- c25:	48 03 ed             	add    rbp,rbp
- c28:	48 03 f6             	add    rsi,rsi
- c2b:	48 03 ff             	add    rdi,rdi
- c2e:	48 03 db             	add    rbx,rbx
- c31:	48 03 ed             	add    rbp,rbp
- c34:	48 03 f6             	add    rsi,rsi
- c37:	48 03 ff             	add    rdi,rdi
- c3a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- c3d:	48 03 db             	add    rbx,rbx
- c40:	48 03 ed             	add    rbp,rbp
- c43:	48 03 f6             	add    rsi,rsi
- c46:	48 03 ff             	add    rdi,rdi
- c49:	48 03 db             	add    rbx,rbx
- c4c:	48 03 ed             	add    rbp,rbp
- c4f:	48 03 f6             	add    rsi,rsi
- c52:	48 03 ff             	add    rdi,rdi
- c55:	48 03 db             	add    rbx,rbx
- c58:	48 03 ed             	add    rbp,rbp
- c5b:	48 03 f6             	add    rsi,rsi
- c5e:	48 03 ff             	add    rdi,rdi
- c61:	48 03 db             	add    rbx,rbx
- c64:	48 03 ed             	add    rbp,rbp
- c67:	48 03 f6             	add    rsi,rsi
- c6a:	48 03 ff             	add    rdi,rdi
- c6d:	48 03 db             	add    rbx,rbx
- c70:	48 03 ed             	add    rbp,rbp
- c73:	48 03 f6             	add    rsi,rsi
- c76:	48 03 ff             	add    rdi,rdi
- c79:	48 03 db             	add    rbx,rbx
- c7c:	48 03 ed             	add    rbp,rbp
- c7f:	48 03 f6             	add    rsi,rsi
- c82:	48 03 ff             	add    rdi,rdi
- c85:	48 03 db             	add    rbx,rbx
- c88:	48 03 ed             	add    rbp,rbp
- c8b:	48 03 f6             	add    rsi,rsi
- c8e:	48 03 ff             	add    rdi,rdi
- c91:	48 03 db             	add    rbx,rbx
- c94:	48 03 ed             	add    rbp,rbp
- c97:	48 03 f6             	add    rsi,rsi
- c9a:	48 03 ff             	add    rdi,rdi
- c9d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- ca0:	48 03 db             	add    rbx,rbx
- ca3:	48 03 ed             	add    rbp,rbp
- ca6:	48 03 f6             	add    rsi,rsi
- ca9:	48 03 ff             	add    rdi,rdi
- cac:	48 03 db             	add    rbx,rbx
- caf:	48 03 ed             	add    rbp,rbp
- cb2:	48 03 f6             	add    rsi,rsi
- cb5:	48 03 ff             	add    rdi,rdi
- cb8:	48 03 db             	add    rbx,rbx
- cbb:	48 03 ed             	add    rbp,rbp
- cbe:	48 03 f6             	add    rsi,rsi
- cc1:	48 03 ff             	add    rdi,rdi
- cc4:	48 03 db             	add    rbx,rbx
- cc7:	48 03 ed             	add    rbp,rbp
- cca:	48 03 f6             	add    rsi,rsi
- ccd:	48 03 ff             	add    rdi,rdi
- cd0:	48 03 db             	add    rbx,rbx
- cd3:	48 03 ed             	add    rbp,rbp
- cd6:	48 03 f6             	add    rsi,rsi
- cd9:	48 03 ff             	add    rdi,rdi
- cdc:	48 03 db             	add    rbx,rbx
- cdf:	48 03 ed             	add    rbp,rbp
- ce2:	48 03 f6             	add    rsi,rsi
- ce5:	48 03 ff             	add    rdi,rdi
- ce8:	48 03 db             	add    rbx,rbx
- ceb:	48 03 ed             	add    rbp,rbp
- cee:	48 03 f6             	add    rsi,rsi
- cf1:	48 03 ff             	add    rdi,rdi
- cf4:	48 03 db             	add    rbx,rbx
- cf7:	48 03 ed             	add    rbp,rbp
- cfa:	48 03 f6             	add    rsi,rsi
- cfd:	48 03 ff             	add    rdi,rdi
- d00:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bb0:	48 03 db             	add    rbx,rbx
+ bb3:	48 03 ed             	add    rbp,rbp
+ bb6:	48 03 f6             	add    rsi,rsi
+ bb9:	48 03 ff             	add    rdi,rdi
+ bbc:	48 03 db             	add    rbx,rbx
+ bbf:	48 03 ed             	add    rbp,rbp
+ bc2:	48 03 f6             	add    rsi,rsi
+ bc5:	48 03 ff             	add    rdi,rdi
+ bc8:	48 03 db             	add    rbx,rbx
+ bcb:	48 03 ed             	add    rbp,rbp
+ bce:	48 03 f6             	add    rsi,rsi
+ bd1:	48 03 ff             	add    rdi,rdi
+ bd4:	48 03 db             	add    rbx,rbx
+ bd7:	48 03 ed             	add    rbp,rbp
+ bda:	48 03 f6             	add    rsi,rsi
+ bdd:	48 03 ff             	add    rdi,rdi
+ be0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ be3:	48 03 db             	add    rbx,rbx
+ be6:	48 03 ed             	add    rbp,rbp
+ be9:	48 03 f6             	add    rsi,rsi
+ bec:	48 03 ff             	add    rdi,rdi
+ bef:	48 03 db             	add    rbx,rbx
+ bf2:	48 03 ed             	add    rbp,rbp
+ bf5:	48 03 f6             	add    rsi,rsi
+ bf8:	48 03 ff             	add    rdi,rdi
+ bfb:	48 03 db             	add    rbx,rbx
+ bfe:	48 03 ed             	add    rbp,rbp
+ c01:	48 03 f6             	add    rsi,rsi
+ c04:	48 03 ff             	add    rdi,rdi
+ c07:	48 03 db             	add    rbx,rbx
+ c0a:	48 03 ed             	add    rbp,rbp
+ c0d:	48 03 f6             	add    rsi,rsi
+ c10:	48 03 ff             	add    rdi,rdi
+ c13:	48 03 db             	add    rbx,rbx
+ c16:	48 03 ed             	add    rbp,rbp
+ c19:	48 03 f6             	add    rsi,rsi
+ c1c:	48 03 ff             	add    rdi,rdi
+ c1f:	48 03 db             	add    rbx,rbx
+ c22:	48 03 ed             	add    rbp,rbp
+ c25:	48 03 f6             	add    rsi,rsi
+ c28:	48 03 ff             	add    rdi,rdi
+ c2b:	48 03 db             	add    rbx,rbx
+ c2e:	48 03 ed             	add    rbp,rbp
+ c31:	48 03 f6             	add    rsi,rsi
+ c34:	48 03 ff             	add    rdi,rdi
+ c37:	48 03 db             	add    rbx,rbx
+ c3a:	48 03 ed             	add    rbp,rbp
+ c3d:	48 03 f6             	add    rsi,rsi
+ c40:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c43:	48 03 db             	add    rbx,rbx
+ c46:	48 03 ed             	add    rbp,rbp
+ c49:	48 03 f6             	add    rsi,rsi
+ c4c:	48 03 ff             	add    rdi,rdi
+ c4f:	48 03 db             	add    rbx,rbx
+ c52:	48 03 ed             	add    rbp,rbp
+ c55:	48 03 f6             	add    rsi,rsi
+ c58:	48 03 ff             	add    rdi,rdi
+ c5b:	48 03 db             	add    rbx,rbx
+ c5e:	48 03 ed             	add    rbp,rbp
+ c61:	48 03 f6             	add    rsi,rsi
+ c64:	48 03 ff             	add    rdi,rdi
+ c67:	48 03 db             	add    rbx,rbx
+ c6a:	48 03 ed             	add    rbp,rbp
+ c6d:	48 03 f6             	add    rsi,rsi
+ c70:	48 03 db             	add    rbx,rbx
+ c73:	48 03 ed             	add    rbp,rbp
+ c76:	48 03 f6             	add    rsi,rsi
+ c79:	48 03 ff             	add    rdi,rdi
+ c7c:	48 03 db             	add    rbx,rbx
+ c7f:	48 03 ed             	add    rbp,rbp
+ c82:	48 03 f6             	add    rsi,rsi
+ c85:	48 03 ff             	add    rdi,rdi
+ c88:	48 03 db             	add    rbx,rbx
+ c8b:	48 03 ed             	add    rbp,rbp
+ c8e:	48 03 f6             	add    rsi,rsi
+ c91:	48 03 ff             	add    rdi,rdi
+ c94:	48 03 db             	add    rbx,rbx
+ c97:	48 03 ed             	add    rbp,rbp
+ c9a:	48 03 f6             	add    rsi,rsi
+ c9d:	48 03 ff             	add    rdi,rdi
+ ca0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ ca3:	48 03 db             	add    rbx,rbx
+ ca6:	48 03 ed             	add    rbp,rbp
+ ca9:	48 03 f6             	add    rsi,rsi
+ cac:	48 03 ff             	add    rdi,rdi
+ caf:	48 03 db             	add    rbx,rbx
+ cb2:	48 03 ed             	add    rbp,rbp
+ cb5:	48 03 f6             	add    rsi,rsi
+ cb8:	48 03 ff             	add    rdi,rdi
+ cbb:	48 03 db             	add    rbx,rbx
+ cbe:	48 03 ed             	add    rbp,rbp
+ cc1:	48 03 f6             	add    rsi,rsi
+ cc4:	48 03 ff             	add    rdi,rdi
+ cc7:	48 03 db             	add    rbx,rbx
+ cca:	48 03 ed             	add    rbp,rbp
+ ccd:	48 03 f6             	add    rsi,rsi
+ cd0:	48 03 ff             	add    rdi,rdi
+ cd3:	48 03 db             	add    rbx,rbx
+ cd6:	48 03 ed             	add    rbp,rbp
+ cd9:	48 03 f6             	add    rsi,rsi
+ cdc:	48 03 ff             	add    rdi,rdi
+ cdf:	48 03 db             	add    rbx,rbx
+ ce2:	48 03 ed             	add    rbp,rbp
+ ce5:	48 03 f6             	add    rsi,rsi
+ ce8:	48 03 ff             	add    rdi,rdi
+ ceb:	48 03 db             	add    rbx,rbx
+ cee:	48 03 ed             	add    rbp,rbp
+ cf1:	48 03 f6             	add    rsi,rsi
+ cf4:	48 03 ff             	add    rdi,rdi
+ cf7:	48 03 db             	add    rbx,rbx
+ cfa:	48 03 ed             	add    rbp,rbp
+ cfd:	48 03 f6             	add    rsi,rsi
+ d00:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  d03:	48 03 db             	add    rbx,rbx
  d06:	48 03 ed             	add    rbp,rbp
  d09:	48 03 f6             	add    rsi,rsi
@@ -1137,52 +1137,19 @@ Disassembly of section .data:
  d27:	48 03 db             	add    rbx,rbx
  d2a:	48 03 ed             	add    rbp,rbp
  d2d:	48 03 f6             	add    rsi,rsi
- d30:	48 03 ff             	add    rdi,rdi
- d33:	48 03 db             	add    rbx,rbx
- d36:	48 03 ed             	add    rbp,rbp
- d39:	48 03 f6             	add    rsi,rsi
- d3c:	48 03 ff             	add    rdi,rdi
- d3f:	48 03 db             	add    rbx,rbx
- d42:	48 03 ed             	add    rbp,rbp
- d45:	48 03 f6             	add    rsi,rsi
- d48:	48 03 ff             	add    rdi,rdi
- d4b:	48 03 db             	add    rbx,rbx
- d4e:	48 03 ed             	add    rbp,rbp
- d51:	48 03 f6             	add    rsi,rsi
- d54:	48 03 ff             	add    rdi,rdi
- d57:	48 03 db             	add    rbx,rbx
- d5a:	48 03 ed             	add    rbp,rbp
- d5d:	48 03 f6             	add    rsi,rsi
- d60:	48 03 ff             	add    rdi,rdi
- d63:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- d66:	48 03 db             	add    rbx,rbx
- d69:	48 03 ed             	add    rbp,rbp
- d6c:	48 03 f6             	add    rsi,rsi
- d6f:	48 03 ff             	add    rdi,rdi
- d72:	48 03 db             	add    rbx,rbx
- d75:	48 03 ed             	add    rbp,rbp
- d78:	48 03 f6             	add    rsi,rsi
- d7b:	48 03 ff             	add    rdi,rdi
- d7e:	48 03 db             	add    rbx,rbx
- d81:	48 03 ed             	add    rbp,rbp
- d84:	48 03 f6             	add    rsi,rsi
- d87:	48 03 ff             	add    rdi,rdi
- d8a:	48 03 db             	add    rbx,rbx
- d8d:	48 03 ed             	add    rbp,rbp
- d90:	48 03 f6             	add    rsi,rsi
- d93:	83 e8 01             	sub    eax,0x1
- d96:	0f 85 d4 f2 ff ff    	jne    0x70
- d9c:	66 90                	xchg   ax,ax
- d9e:	66 90                	xchg   ax,ax
- da0:	66 90                	xchg   ax,ax
- da2:	66 90                	xchg   ax,ax
- da4:	66 90                	xchg   ax,ax
- da6:	66 90                	xchg   ax,ax
- da8:	66 90                	xchg   ax,ax
- daa:	66 90                	xchg   ax,ax
- dac:	5f                   	pop    rdi
- dad:	5e                   	pop    rsi
- dae:	5d                   	pop    rbp
- daf:	5b                   	pop    rbx
- db0:	0f 77                	emms   
- db2:	c3                   	ret    
+ d30:	83 e8 01             	sub    eax,0x1
+ d33:	0f 85 37 f3 ff ff    	jne    0x70
+ d39:	66 90                	xchg   ax,ax
+ d3b:	66 90                	xchg   ax,ax
+ d3d:	66 90                	xchg   ax,ax
+ d3f:	66 90                	xchg   ax,ax
+ d41:	66 90                	xchg   ax,ax
+ d43:	66 90                	xchg   ax,ax
+ d45:	66 90                	xchg   ax,ax
+ d47:	66 90                	xchg   ax,ax
+ d49:	5f                   	pop    rdi
+ d4a:	5e                   	pop    rsi
+ d4b:	5d                   	pop    rbp
+ d4c:	5b                   	pop    rbx
+ d4d:	0f 77                	emms   
+ d4f:	c3                   	ret    
