@@ -60,6 +60,7 @@ before_install:
 
 
 script:
+- lscpu
 - set -e && echo "CC is ${CC}, CXX is ${CXX}" && ${CC} --version && ${CXX} --version
 - make
 - ./check-gold.sh

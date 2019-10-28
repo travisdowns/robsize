@@ -479,8 +479,8 @@ int main(int argc, const char *argv[])
     unsigned char *ibuf = (unsigned char*)valloc(1048576);
     void ** dbuf = (void**)valloc(memsize);
 
-    fprintf(verbose_file, "ibuf at %p\n", ibuf);
-    fprintf(verbose_file, "dbuf at %p\n", dbuf);
+    fprintf(verbose_file, "ibuf at %p\n", (void *)ibuf);
+    fprintf(verbose_file, "dbuf at %p\n", (void *)dbuf);
 
     init_dbuf(dbuf, memsize/sizeof(void*), 8192/sizeof(void*));
     void(*routine)() = (void(*)())ibuf;
@@ -503,7 +503,7 @@ int main(int argc, const char *argv[])
         long long sum_diff = 0;
         //long long min_diff = 0;
         for (int i=0;i<outer_its;i++) {
-            void(*routine_skip)() = routine + (i % 13);
+            void(*routine_skip)() = (void(*)())((char *)routine + (i % 13));
 
             long long start = rdtsc();
             routine_skip();

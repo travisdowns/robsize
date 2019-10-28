@@ -1,4 +1,4 @@
-CXXFLAGS = -Wall -Wextra -Wno-pointer-arith -O2
+CXXFLAGS = -Wall -Wextra -Wno-pointer-arith -O2 -pedantic -std=c++11
 
 .PHONY = write-gold
 
