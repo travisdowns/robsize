@@ -74,6 +74,7 @@ const test_info tests[] = {
     {       0, "loads: mov ebx, [rsp] (LB size)" },
     { NO_COMP, "stores: mov [rsp - 8], ebx (SB size)" },
     {       0, "loads: mov ebx, [r9 + N] (LB size)" },
+    {       0, "wip" }, // 35
 };
 
 const int test_count = sizeof(tests) / sizeof(tests[0]);
@@ -161,6 +162,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
         case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
         case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
         case 34:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;
+        case 35:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k * 2); break;
     }
 
     return pbuf;
@@ -198,7 +200,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_WORD(0x5041);   // push r8
     ADD_WORD(0x5141);   // push r9
 
-    const int stack_space = MAX_ICOUNT * unroll;
+    const int stack_space = MAX_ICOUNT * unroll * 2;
     ADD_BYTE(0x48); ADD_BYTE(0x81); ADD_BYTE(0xEC); ADD_DWORD(stack_space); // sub rsp, 64
 
     ADD_BYTE(0x45); ADD_BYTE(0x31); ADD_BYTE(0xC0); // xor r8d
