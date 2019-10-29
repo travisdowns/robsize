@@ -1207,23 +1207,22 @@ Disassembly of section .data:
     125e:	66 0f 6f ee          	movdqa xmm5,xmm6
     1262:	66 0f 6f f7          	movdqa xmm6,xmm7
     1266:	66 0f 6f f8          	movdqa xmm7,xmm0
-    126a:	4d 01 c1             	add    r9,r8
-    126d:	83 e8 01             	sub    eax,0x1
-    1270:	0f 85 0a ee ff ff    	jne    0x80
-    1276:	66 90                	xchg   ax,ax
-    1278:	66 90                	xchg   ax,ax
-    127a:	66 90                	xchg   ax,ax
-    127c:	66 90                	xchg   ax,ax
-    127e:	66 90                	xchg   ax,ax
-    1280:	66 90                	xchg   ax,ax
-    1282:	66 90                	xchg   ax,ax
-    1284:	66 90                	xchg   ax,ax
-    1286:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
-    128d:	41 59                	pop    r9
-    128f:	41 58                	pop    r8
-    1291:	5f                   	pop    rdi
-    1292:	5e                   	pop    rsi
-    1293:	5d                   	pop    rbp
-    1294:	5b                   	pop    rbx
-    1295:	0f 77                	emms   
-    1297:	c3                   	ret    
+    126a:	83 e8 01             	sub    eax,0x1
+    126d:	0f 85 0d ee ff ff    	jne    0x80
+    1273:	66 90                	xchg   ax,ax
+    1275:	66 90                	xchg   ax,ax
+    1277:	66 90                	xchg   ax,ax
+    1279:	66 90                	xchg   ax,ax
+    127b:	66 90                	xchg   ax,ax
+    127d:	66 90                	xchg   ax,ax
+    127f:	66 90                	xchg   ax,ax
+    1281:	66 90                	xchg   ax,ax
+    1283:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    128a:	41 59                	pop    r9
+    128c:	41 58                	pop    r8
+    128e:	5f                   	pop    rdi
+    128f:	5e                   	pop    rsi
+    1290:	5d                   	pop    rbp
+    1291:	5b                   	pop    rbx
+    1292:	0f 77                	emms   
+    1294:	c3                   	ret    

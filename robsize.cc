@@ -160,7 +160,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
         case 31:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x1); break;	// mov (ebx, ebp, esi, edi), 1
         case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
         case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
-        case 34:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;
+        case 34:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;  // ebx, DWORD PTR [r9 + K]
     }
 
     return pbuf;
@@ -325,7 +325,11 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
         }
     }
 
-    ADD_BYTE(0x4D); ADD_BYTE(0x01); ADD_BYTE(0xC1);  // add r9, r8 (r9 += 0)
+    // you use this add r9, r8 if you want to be very sure that the CPU can't know
+    // that adds of the form [r9 + N] have the same address across iterations, but
+    // since we unroll by a lot we have 100s of loads and that seems unlikely, so
+    // keep it out for now to avoid polluting (very slightly) the other results
+    // ADD_BYTE(0x4D); ADD_BYTE(0x01); ADD_BYTE(0xC1);  // add r9, r8 (r9 += 0)
     ADD_WORD(0xe883); // sub eax
     ADD_BYTE(0x1);		//    1
     ADD_WORD(0x850f); // jne loop_start

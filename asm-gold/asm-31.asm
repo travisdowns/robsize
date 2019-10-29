@@ -1140,23 +1140,22 @@ Disassembly of section .data:
     156d:	bb 01 00 00 00       	mov    ebx,0x1
     1572:	bd 01 00 00 00       	mov    ebp,0x1
     1577:	be 01 00 00 00       	mov    esi,0x1
-    157c:	4d 01 c1             	add    r9,r8
-    157f:	83 e8 01             	sub    eax,0x1
-    1582:	0f 85 f8 ea ff ff    	jne    0x80
-    1588:	66 90                	xchg   ax,ax
-    158a:	66 90                	xchg   ax,ax
-    158c:	66 90                	xchg   ax,ax
-    158e:	66 90                	xchg   ax,ax
-    1590:	66 90                	xchg   ax,ax
-    1592:	66 90                	xchg   ax,ax
-    1594:	66 90                	xchg   ax,ax
-    1596:	66 90                	xchg   ax,ax
-    1598:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
-    159f:	41 59                	pop    r9
-    15a1:	41 58                	pop    r8
-    15a3:	5f                   	pop    rdi
-    15a4:	5e                   	pop    rsi
-    15a5:	5d                   	pop    rbp
-    15a6:	5b                   	pop    rbx
-    15a7:	0f 77                	emms   
-    15a9:	c3                   	ret    
+    157c:	83 e8 01             	sub    eax,0x1
+    157f:	0f 85 fb ea ff ff    	jne    0x80
+    1585:	66 90                	xchg   ax,ax
+    1587:	66 90                	xchg   ax,ax
+    1589:	66 90                	xchg   ax,ax
+    158b:	66 90                	xchg   ax,ax
+    158d:	66 90                	xchg   ax,ax
+    158f:	66 90                	xchg   ax,ax
+    1591:	66 90                	xchg   ax,ax
+    1593:	66 90                	xchg   ax,ax
+    1595:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    159c:	41 59                	pop    r9
+    159e:	41 58                	pop    r8
+    15a0:	5f                   	pop    rdi
+    15a1:	5e                   	pop    rsi
+    15a2:	5d                   	pop    rbp
+    15a3:	5b                   	pop    rbx
+    15a4:	0f 77                	emms   
+    15a6:	c3                   	ret    

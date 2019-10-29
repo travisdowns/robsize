@@ -1140,23 +1140,22 @@ Disassembly of section .data:
  91c:	8b dd                	mov    ebx,ebp
  91e:	8b ee                	mov    ebp,esi
  920:	8b f7                	mov    esi,edi
- 922:	4d 01 c1             	add    r9,r8
- 925:	83 e8 01             	sub    eax,0x1
- 928:	0f 85 52 f7 ff ff    	jne    0x80
- 92e:	66 90                	xchg   ax,ax
- 930:	66 90                	xchg   ax,ax
- 932:	66 90                	xchg   ax,ax
- 934:	66 90                	xchg   ax,ax
- 936:	66 90                	xchg   ax,ax
- 938:	66 90                	xchg   ax,ax
- 93a:	66 90                	xchg   ax,ax
- 93c:	66 90                	xchg   ax,ax
- 93e:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
- 945:	41 59                	pop    r9
- 947:	41 58                	pop    r8
- 949:	5f                   	pop    rdi
- 94a:	5e                   	pop    rsi
- 94b:	5d                   	pop    rbp
- 94c:	5b                   	pop    rbx
- 94d:	0f 77                	emms   
- 94f:	c3                   	ret    
+ 922:	83 e8 01             	sub    eax,0x1
+ 925:	0f 85 55 f7 ff ff    	jne    0x80
+ 92b:	66 90                	xchg   ax,ax
+ 92d:	66 90                	xchg   ax,ax
+ 92f:	66 90                	xchg   ax,ax
+ 931:	66 90                	xchg   ax,ax
+ 933:	66 90                	xchg   ax,ax
+ 935:	66 90                	xchg   ax,ax
+ 937:	66 90                	xchg   ax,ax
+ 939:	66 90                	xchg   ax,ax
+ 93b:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ 942:	41 59                	pop    r9
+ 944:	41 58                	pop    r8
+ 946:	5f                   	pop    rdi
+ 947:	5e                   	pop    rsi
+ 948:	5d                   	pop    rbp
+ 949:	5b                   	pop    rbx
+ 94a:	0f 77                	emms   
+ 94c:	c3                   	ret    

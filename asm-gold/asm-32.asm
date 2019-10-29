@@ -1140,23 +1140,22 @@ Disassembly of section .data:
  d37:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d3a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d3d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- d40:	4d 01 c1             	add    r9,r8
- d43:	83 e8 01             	sub    eax,0x1
- d46:	0f 85 34 f3 ff ff    	jne    0x80
- d4c:	66 90                	xchg   ax,ax
- d4e:	66 90                	xchg   ax,ax
- d50:	66 90                	xchg   ax,ax
- d52:	66 90                	xchg   ax,ax
- d54:	66 90                	xchg   ax,ax
- d56:	66 90                	xchg   ax,ax
- d58:	66 90                	xchg   ax,ax
- d5a:	66 90                	xchg   ax,ax
- d5c:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
- d63:	41 59                	pop    r9
- d65:	41 58                	pop    r8
- d67:	5f                   	pop    rdi
- d68:	5e                   	pop    rsi
- d69:	5d                   	pop    rbp
- d6a:	5b                   	pop    rbx
- d6b:	0f 77                	emms   
- d6d:	c3                   	ret    
+ d40:	83 e8 01             	sub    eax,0x1
+ d43:	0f 85 37 f3 ff ff    	jne    0x80
+ d49:	66 90                	xchg   ax,ax
+ d4b:	66 90                	xchg   ax,ax
+ d4d:	66 90                	xchg   ax,ax
+ d4f:	66 90                	xchg   ax,ax
+ d51:	66 90                	xchg   ax,ax
+ d53:	66 90                	xchg   ax,ax
+ d55:	66 90                	xchg   ax,ax
+ d57:	66 90                	xchg   ax,ax
+ d59:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ d60:	41 59                	pop    r9
+ d62:	41 58                	pop    r8
+ d64:	5f                   	pop    rdi
+ d65:	5e                   	pop    rsi
+ d66:	5d                   	pop    rbp
+ d67:	5b                   	pop    rbx
+ d68:	0f 77                	emms   
+ d6a:	c3                   	ret    

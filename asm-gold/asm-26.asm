@@ -1207,23 +1207,22 @@ Disassembly of section .data:
     1b1a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
     1b20:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1b26:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1b2c:	4d 01 c1             	add    r9,r8
-    1b2f:	83 e8 01             	sub    eax,0x1
-    1b32:	0f 85 48 e5 ff ff    	jne    0x80
-    1b38:	66 90                	xchg   ax,ax
-    1b3a:	66 90                	xchg   ax,ax
-    1b3c:	66 90                	xchg   ax,ax
-    1b3e:	66 90                	xchg   ax,ax
-    1b40:	66 90                	xchg   ax,ax
-    1b42:	66 90                	xchg   ax,ax
-    1b44:	66 90                	xchg   ax,ax
-    1b46:	66 90                	xchg   ax,ax
-    1b48:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
-    1b4f:	41 59                	pop    r9
-    1b51:	41 58                	pop    r8
-    1b53:	5f                   	pop    rdi
-    1b54:	5e                   	pop    rsi
-    1b55:	5d                   	pop    rbp
-    1b56:	5b                   	pop    rbx
-    1b57:	0f 77                	emms   
-    1b59:	c3                   	ret    
+    1b2c:	83 e8 01             	sub    eax,0x1
+    1b2f:	0f 85 4b e5 ff ff    	jne    0x80
+    1b35:	66 90                	xchg   ax,ax
+    1b37:	66 90                	xchg   ax,ax
+    1b39:	66 90                	xchg   ax,ax
+    1b3b:	66 90                	xchg   ax,ax
+    1b3d:	66 90                	xchg   ax,ax
+    1b3f:	66 90                	xchg   ax,ax
+    1b41:	66 90                	xchg   ax,ax
+    1b43:	66 90                	xchg   ax,ax
+    1b45:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    1b4c:	41 59                	pop    r9
+    1b4e:	41 58                	pop    r8
+    1b50:	5f                   	pop    rdi
+    1b51:	5e                   	pop    rsi
+    1b52:	5d                   	pop    rbp
+    1b53:	5b                   	pop    rbx
+    1b54:	0f 77                	emms   
+    1b56:	c3                   	ret    

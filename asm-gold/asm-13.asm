@@ -1223,23 +1223,22 @@ Disassembly of section .data:
     12ae:	c5 f9 6f ee          	vmovdqa xmm5,xmm6
     12b2:	c5 f9 6f f7          	vmovdqa xmm6,xmm7
     12b6:	c5 f9 6f f8          	vmovdqa xmm7,xmm0
-    12ba:	4d 01 c1             	add    r9,r8
-    12bd:	83 e8 01             	sub    eax,0x1
-    12c0:	0f 85 0a ee ff ff    	jne    0xd0
-    12c6:	66 90                	xchg   ax,ax
-    12c8:	66 90                	xchg   ax,ax
-    12ca:	66 90                	xchg   ax,ax
-    12cc:	66 90                	xchg   ax,ax
-    12ce:	66 90                	xchg   ax,ax
-    12d0:	66 90                	xchg   ax,ax
-    12d2:	66 90                	xchg   ax,ax
-    12d4:	66 90                	xchg   ax,ax
-    12d6:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
-    12dd:	41 59                	pop    r9
-    12df:	41 58                	pop    r8
-    12e1:	5f                   	pop    rdi
-    12e2:	5e                   	pop    rsi
-    12e3:	5d                   	pop    rbp
-    12e4:	5b                   	pop    rbx
-    12e5:	0f 77                	emms   
-    12e7:	c3                   	ret    
+    12ba:	83 e8 01             	sub    eax,0x1
+    12bd:	0f 85 0d ee ff ff    	jne    0xd0
+    12c3:	66 90                	xchg   ax,ax
+    12c5:	66 90                	xchg   ax,ax
+    12c7:	66 90                	xchg   ax,ax
+    12c9:	66 90                	xchg   ax,ax
+    12cb:	66 90                	xchg   ax,ax
+    12cd:	66 90                	xchg   ax,ax
+    12cf:	66 90                	xchg   ax,ax
+    12d1:	66 90                	xchg   ax,ax
+    12d3:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    12da:	41 59                	pop    r9
+    12dc:	41 58                	pop    r8
+    12de:	5f                   	pop    rdi
+    12df:	5e                   	pop    rsi
+    12e0:	5d                   	pop    rbp
+    12e1:	5b                   	pop    rbx
+    12e2:	0f 77                	emms   
+    12e4:	c3                   	ret    

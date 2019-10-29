@@ -1207,23 +1207,22 @@ Disassembly of section .data:
      ffc:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
     1001:	03 f6                	add    esi,esi
     1003:	c4 e1 ed 4a cb       	kaddd  k1,k2,k3
-    1008:	4d 01 c1             	add    r9,r8
-    100b:	83 e8 01             	sub    eax,0x1
-    100e:	0f 85 6c f0 ff ff    	jne    0x80
-    1014:	66 90                	xchg   ax,ax
-    1016:	66 90                	xchg   ax,ax
-    1018:	66 90                	xchg   ax,ax
-    101a:	66 90                	xchg   ax,ax
-    101c:	66 90                	xchg   ax,ax
-    101e:	66 90                	xchg   ax,ax
-    1020:	66 90                	xchg   ax,ax
-    1022:	66 90                	xchg   ax,ax
-    1024:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
-    102b:	41 59                	pop    r9
-    102d:	41 58                	pop    r8
-    102f:	5f                   	pop    rdi
-    1030:	5e                   	pop    rsi
-    1031:	5d                   	pop    rbp
-    1032:	5b                   	pop    rbx
-    1033:	0f 77                	emms   
-    1035:	c3                   	ret    
+    1008:	83 e8 01             	sub    eax,0x1
+    100b:	0f 85 6f f0 ff ff    	jne    0x80
+    1011:	66 90                	xchg   ax,ax
+    1013:	66 90                	xchg   ax,ax
+    1015:	66 90                	xchg   ax,ax
+    1017:	66 90                	xchg   ax,ax
+    1019:	66 90                	xchg   ax,ax
+    101b:	66 90                	xchg   ax,ax
+    101d:	66 90                	xchg   ax,ax
+    101f:	66 90                	xchg   ax,ax
+    1021:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    1028:	41 59                	pop    r9
+    102a:	41 58                	pop    r8
+    102c:	5f                   	pop    rdi
+    102d:	5e                   	pop    rsi
+    102e:	5d                   	pop    rbp
+    102f:	5b                   	pop    rbx
+    1030:	0f 77                	emms   
+    1032:	c3                   	ret    

@@ -1207,23 +1207,22 @@ Disassembly of section .data:
  e00:	0f 57 ee             	xorps  xmm5,xmm6
  e03:	0f 57 f7             	xorps  xmm6,xmm7
  e06:	0f 57 f8             	xorps  xmm7,xmm0
- e09:	4d 01 c1             	add    r9,r8
- e0c:	83 e8 01             	sub    eax,0x1
- e0f:	0f 85 6b f2 ff ff    	jne    0x80
- e15:	66 90                	xchg   ax,ax
- e17:	66 90                	xchg   ax,ax
- e19:	66 90                	xchg   ax,ax
- e1b:	66 90                	xchg   ax,ax
- e1d:	66 90                	xchg   ax,ax
- e1f:	66 90                	xchg   ax,ax
- e21:	66 90                	xchg   ax,ax
- e23:	66 90                	xchg   ax,ax
- e25:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
- e2c:	41 59                	pop    r9
- e2e:	41 58                	pop    r8
- e30:	5f                   	pop    rdi
- e31:	5e                   	pop    rsi
- e32:	5d                   	pop    rbp
- e33:	5b                   	pop    rbx
- e34:	0f 77                	emms   
- e36:	c3                   	ret    
+ e09:	83 e8 01             	sub    eax,0x1
+ e0c:	0f 85 6e f2 ff ff    	jne    0x80
+ e12:	66 90                	xchg   ax,ax
+ e14:	66 90                	xchg   ax,ax
+ e16:	66 90                	xchg   ax,ax
+ e18:	66 90                	xchg   ax,ax
+ e1a:	66 90                	xchg   ax,ax
+ e1c:	66 90                	xchg   ax,ax
+ e1e:	66 90                	xchg   ax,ax
+ e20:	66 90                	xchg   ax,ax
+ e22:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ e29:	41 59                	pop    r9
+ e2b:	41 58                	pop    r8
+ e2d:	5f                   	pop    rdi
+ e2e:	5e                   	pop    rsi
+ e2f:	5d                   	pop    rbp
+ e30:	5b                   	pop    rbx
+ e31:	0f 77                	emms   
+ e33:	c3                   	ret    

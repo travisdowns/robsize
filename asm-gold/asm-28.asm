@@ -1207,23 +1207,22 @@ Disassembly of section .data:
     16bc:	c4 e1 f9 90 ca       	kmovd  k1,k2
     16c1:	c4 e1 f9 90 ca       	kmovd  k1,k2
     16c6:	c4 e1 f9 90 ca       	kmovd  k1,k2
-    16cb:	4d 01 c1             	add    r9,r8
-    16ce:	83 e8 01             	sub    eax,0x1
-    16d1:	0f 85 a9 e9 ff ff    	jne    0x80
-    16d7:	66 90                	xchg   ax,ax
-    16d9:	66 90                	xchg   ax,ax
-    16db:	66 90                	xchg   ax,ax
-    16dd:	66 90                	xchg   ax,ax
-    16df:	66 90                	xchg   ax,ax
-    16e1:	66 90                	xchg   ax,ax
-    16e3:	66 90                	xchg   ax,ax
-    16e5:	66 90                	xchg   ax,ax
-    16e7:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
-    16ee:	41 59                	pop    r9
-    16f0:	41 58                	pop    r8
-    16f2:	5f                   	pop    rdi
-    16f3:	5e                   	pop    rsi
-    16f4:	5d                   	pop    rbp
-    16f5:	5b                   	pop    rbx
-    16f6:	0f 77                	emms   
-    16f8:	c3                   	ret    
+    16cb:	83 e8 01             	sub    eax,0x1
+    16ce:	0f 85 ac e9 ff ff    	jne    0x80
+    16d4:	66 90                	xchg   ax,ax
+    16d6:	66 90                	xchg   ax,ax
+    16d8:	66 90                	xchg   ax,ax
+    16da:	66 90                	xchg   ax,ax
+    16dc:	66 90                	xchg   ax,ax
+    16de:	66 90                	xchg   ax,ax
+    16e0:	66 90                	xchg   ax,ax
+    16e2:	66 90                	xchg   ax,ax
+    16e4:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    16eb:	41 59                	pop    r9
+    16ed:	41 58                	pop    r8
+    16ef:	5f                   	pop    rdi
+    16f0:	5e                   	pop    rsi
+    16f1:	5d                   	pop    rbp
+    16f2:	5b                   	pop    rbx
+    16f3:	0f 77                	emms   
+    16f5:	c3                   	ret    

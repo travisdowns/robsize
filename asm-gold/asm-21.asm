@@ -1156,23 +1156,22 @@ Disassembly of section .data:
  f84:	48 03 db             	add    rbx,rbx
  f87:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  f8b:	48 03 f6             	add    rsi,rsi
- f8e:	4d 01 c1             	add    r9,r8
- f91:	83 e8 01             	sub    eax,0x1
- f94:	0f 85 36 f1 ff ff    	jne    0xd0
- f9a:	66 90                	xchg   ax,ax
- f9c:	66 90                	xchg   ax,ax
- f9e:	66 90                	xchg   ax,ax
- fa0:	66 90                	xchg   ax,ax
- fa2:	66 90                	xchg   ax,ax
- fa4:	66 90                	xchg   ax,ax
- fa6:	66 90                	xchg   ax,ax
- fa8:	66 90                	xchg   ax,ax
- faa:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
- fb1:	41 59                	pop    r9
- fb3:	41 58                	pop    r8
- fb5:	5f                   	pop    rdi
- fb6:	5e                   	pop    rsi
- fb7:	5d                   	pop    rbp
- fb8:	5b                   	pop    rbx
- fb9:	0f 77                	emms   
- fbb:	c3                   	ret    
+ f8e:	83 e8 01             	sub    eax,0x1
+ f91:	0f 85 39 f1 ff ff    	jne    0xd0
+ f97:	66 90                	xchg   ax,ax
+ f99:	66 90                	xchg   ax,ax
+ f9b:	66 90                	xchg   ax,ax
+ f9d:	66 90                	xchg   ax,ax
+ f9f:	66 90                	xchg   ax,ax
+ fa1:	66 90                	xchg   ax,ax
+ fa3:	66 90                	xchg   ax,ax
+ fa5:	66 90                	xchg   ax,ax
+ fa7:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ fae:	41 59                	pop    r9
+ fb0:	41 58                	pop    r8
+ fb2:	5f                   	pop    rdi
+ fb3:	5e                   	pop    rsi
+ fb4:	5d                   	pop    rbp
+ fb5:	5b                   	pop    rbx
+ fb6:	0f 77                	emms   
+ fb8:	c3                   	ret    

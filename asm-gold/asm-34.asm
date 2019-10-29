@@ -1140,23 +1140,22 @@ Disassembly of section .data:
     1da3:	41 8b 99 1b 04 00 00 	mov    ebx,DWORD PTR [r9+0x41b]
     1daa:	41 8b 99 1c 04 00 00 	mov    ebx,DWORD PTR [r9+0x41c]
     1db1:	41 8b 99 1d 04 00 00 	mov    ebx,DWORD PTR [r9+0x41d]
-    1db8:	4d 01 c1             	add    r9,r8
-    1dbb:	83 e8 01             	sub    eax,0x1
-    1dbe:	0f 85 bc e2 ff ff    	jne    0x80
-    1dc4:	66 90                	xchg   ax,ax
-    1dc6:	66 90                	xchg   ax,ax
-    1dc8:	66 90                	xchg   ax,ax
-    1dca:	66 90                	xchg   ax,ax
-    1dcc:	66 90                	xchg   ax,ax
-    1dce:	66 90                	xchg   ax,ax
-    1dd0:	66 90                	xchg   ax,ax
-    1dd2:	66 90                	xchg   ax,ax
-    1dd4:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
-    1ddb:	41 59                	pop    r9
-    1ddd:	41 58                	pop    r8
-    1ddf:	5f                   	pop    rdi
-    1de0:	5e                   	pop    rsi
-    1de1:	5d                   	pop    rbp
-    1de2:	5b                   	pop    rbx
-    1de3:	0f 77                	emms   
-    1de5:	c3                   	ret    
+    1db8:	83 e8 01             	sub    eax,0x1
+    1dbb:	0f 85 bf e2 ff ff    	jne    0x80
+    1dc1:	66 90                	xchg   ax,ax
+    1dc3:	66 90                	xchg   ax,ax
+    1dc5:	66 90                	xchg   ax,ax
+    1dc7:	66 90                	xchg   ax,ax
+    1dc9:	66 90                	xchg   ax,ax
+    1dcb:	66 90                	xchg   ax,ax
+    1dcd:	66 90                	xchg   ax,ax
+    1dcf:	66 90                	xchg   ax,ax
+    1dd1:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    1dd8:	41 59                	pop    r9
+    1dda:	41 58                	pop    r8
+    1ddc:	5f                   	pop    rdi
+    1ddd:	5e                   	pop    rsi
+    1dde:	5d                   	pop    rbp
+    1ddf:	5b                   	pop    rbx
+    1de0:	0f 77                	emms   
+    1de2:	c3                   	ret    

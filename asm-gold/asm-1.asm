@@ -1140,23 +1140,22 @@ Disassembly of section .data:
  501:	90                   	nop
  502:	90                   	nop
  503:	90                   	nop
- 504:	4d 01 c1             	add    r9,r8
- 507:	83 e8 01             	sub    eax,0x1
- 50a:	0f 85 70 fb ff ff    	jne    0x80
- 510:	66 90                	xchg   ax,ax
- 512:	66 90                	xchg   ax,ax
- 514:	66 90                	xchg   ax,ax
- 516:	66 90                	xchg   ax,ax
- 518:	66 90                	xchg   ax,ax
- 51a:	66 90                	xchg   ax,ax
- 51c:	66 90                	xchg   ax,ax
- 51e:	66 90                	xchg   ax,ax
- 520:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
- 527:	41 59                	pop    r9
- 529:	41 58                	pop    r8
- 52b:	5f                   	pop    rdi
- 52c:	5e                   	pop    rsi
- 52d:	5d                   	pop    rbp
- 52e:	5b                   	pop    rbx
- 52f:	0f 77                	emms   
- 531:	c3                   	ret    
+ 504:	83 e8 01             	sub    eax,0x1
+ 507:	0f 85 73 fb ff ff    	jne    0x80
+ 50d:	66 90                	xchg   ax,ax
+ 50f:	66 90                	xchg   ax,ax
+ 511:	66 90                	xchg   ax,ax
+ 513:	66 90                	xchg   ax,ax
+ 515:	66 90                	xchg   ax,ax
+ 517:	66 90                	xchg   ax,ax
+ 519:	66 90                	xchg   ax,ax
+ 51b:	66 90                	xchg   ax,ax
+ 51d:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ 524:	41 59                	pop    r9
+ 526:	41 58                	pop    r8
+ 528:	5f                   	pop    rdi
+ 529:	5e                   	pop    rsi
+ 52a:	5d                   	pop    rbp
+ 52b:	5b                   	pop    rbx
+ 52c:	0f 77                	emms   
+ 52e:	c3                   	ret    
