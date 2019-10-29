@@ -12,6 +12,7 @@
 #include <stdbool.h>
 #include <sys/mman.h>
 #include <unistd.h>
+#include <assert.h>
 
 #define ADD_BYTE(val) do{ibuf[pbuf] = (val); pbuf++;} while(0)
 #define ADD_WORD(val) do{*(unsigned short*)(&ibuf[pbuf]) = (val); pbuf+=2;} while(0)
@@ -89,7 +90,14 @@ const char *test_name(int i) {
     return info ? info->desc : 0;
 }
 
-int add_filler(unsigned char* ibuf, int instr, int i)
+/**
+ * Add the filler instructions, which vary by test.
+ * @param ibuf the buffer to write to
+ * @param insrt the test identifier
+ * @param i the index of the instruction within the "inner chunk", i.e., everything between two loads is one chunk
+ * @param k the index of the instruction within the unrolled loop, i.e., everything in one iteration of the inner loop is one chunk
+ */
+int add_filler(unsigned char* ibuf, int instr, int i, int k)
 {
     const int reg[4] = {3, 5, 6, 7};
 
@@ -152,17 +160,21 @@ int add_filler(unsigned char* ibuf, int instr, int i)
         case 31:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x1); break;	// mov (ebx, ebp, esi, edi), 1
         case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
         case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
-        case 34:  ADD_BYTE(0x43); ADD_BYTE(0x0F); ADD_BYTE(0xB6); ADD_BYTE(0x5C); ADD_BYTE(0x01); ADD_BYTE(i & unroll); break;
+        case 34:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;
     }
 
     return pbuf;
 }
+
+const int MAX_ICOUNT = 400;
 
 /**
  * icount - the number of instructions between loads
  */
 void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, const int instr)
 {
+    assert(icount <= MAX_ICOUNT);
+
     const test_info* info = get_test(instr);
     if (!info) {
         printf("invalid test ID %d\n", instr);
@@ -186,7 +198,8 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_WORD(0x5041);   // push r8
     ADD_WORD(0x5141);   // push r9
 
-    ADD_BYTE(0x48); ADD_BYTE(0x83); ADD_BYTE(0xEC); ADD_BYTE(0x40); // sub rsp, 64
+    const int stack_space = MAX_ICOUNT * unroll;
+    ADD_BYTE(0x48); ADD_BYTE(0x81); ADD_BYTE(0xEC); ADD_DWORD(stack_space); // sub rsp, 64
 
     ADD_BYTE(0x45); ADD_BYTE(0x31); ADD_BYTE(0xC0); // xor r8d
     ADD_BYTE(0x4C); ADD_BYTE(0x8D); ADD_BYTE(0x0C); ADD_BYTE(0x24);  // lea r9
@@ -269,10 +282,10 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     // instructon at either end contribute to resource usage.
     const int adjusted_icount = icount - (info->flags & NO_COMP ? 0 : 2);
 
-    for (int u=unroll-1; u>=0; u--) {
+    for (int u=unroll-1, k = 0; u>=0; u--) {
 
         for (int j = 0; j < 16; j++) {
-            pbuf += add_filler(ibuf+pbuf, instr, j + icount-1-16);
+            pbuf += add_filler(ibuf+pbuf, instr, j + icount-1-16, k++);
         }
 
         if (sizeof(void*) == 4) {
@@ -287,7 +300,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
 
         for (int j = 0; j < adjusted_icount; j++)
         {
-            pbuf += add_filler(ibuf+pbuf, instr, j);
+            pbuf += add_filler(ibuf+pbuf, instr, j, k++);
         }
 
         if (sizeof(void*) == 4) {
@@ -306,7 +319,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
 
         for (int j=0; j < adjusted_icount - 16; j++)
         {
-            pbuf += add_filler(ibuf+pbuf, instr, j);
+            pbuf += add_filler(ibuf+pbuf, instr, j, k++);
         }
     }
 
@@ -321,7 +334,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_DWORD(0x90669066);		// nop padding
     ADD_DWORD(0x90669066);		// nop padding
 
-    ADD_BYTE(0x48); ADD_BYTE(0x83); ADD_BYTE(0xC4); ADD_BYTE(0x40); // add rsp, 64
+    ADD_BYTE(0x48); ADD_BYTE(0x81); ADD_BYTE(0xC4); ADD_DWORD(stack_space); // add rsp, 64
 
     ADD_WORD(0x5941);   // pop r9
     ADD_WORD(0x5841);   // pop r8
