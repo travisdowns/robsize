@@ -298,6 +298,10 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
         {
             ADD_WORD(0x8b48);	// mov r64, r/m64
             ADD_BYTE(0x09);		//	... rcx, [rcx]
+            // ; ADD_BYTE(0x
+            ADD_BYTE(0x49); ADD_BYTE(0x21); ADD_BYTE(0xC8);
+            ADD_BYTE(0x4D); ADD_BYTE(0x09); ADD_BYTE(0xC1);
+            //
         }
 
         for (int j = 0; j < adjusted_icount; j++)
@@ -313,6 +317,8 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
         {
             ADD_WORD(0x8b48);	// mov r64, r/m64
             ADD_BYTE(0x12);	//		... edx, [edx]
+            ADD_BYTE(0x49); ADD_BYTE(0x21); ADD_BYTE(0xD0);
+            ADD_BYTE(0x4D); ADD_BYTE(0x09); ADD_BYTE(0xC1);
         }
 
         // ADD_BYTE(0x0F); // lfence
