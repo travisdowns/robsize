@@ -280,13 +280,10 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     // if the load instructions used to incur the cache misses compete with the filler instruction for
     // resources for the given test, then we subtract 2 from the filler instructions since the load
     // instructon at either end contribute to resource usage.
-    const int adjusted_icount = icount - (info->flags & NO_COMP ? 0 : 2);
+    bool needs_comp = info->flags & NO_COMP;
+    const int adjusted_icount = icount - (needs_comp ? 0 : 2);
 
     for (int u=unroll-1, k = 0; u>=0; u--) {
-
-        for (int j = 0; j < 16; j++) {
-            pbuf += add_filler(ibuf+pbuf, instr, j + icount-1-16, k++);
-        }
 
         if (sizeof(void*) == 4) {
             ADD_BYTE(0x8b);		// mov r32, r/m32
@@ -317,7 +314,12 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
         // ADD_BYTE(0xAE);
         // ADD_BYTE(0xE8);
 
-        for (int j=0; j < adjusted_icount - 16; j++)
+        // we also apply compensation on the last iteration, to allow for the
+        // sub instruction. In principle this is exact only for measuring the PRF
+        // size - for ROB size we should also compensate for the jump (unless macro
+        // fused), and for the load buffer we don't need compensation, unlike with
+        // the fencing loads, etc.
+        for (int j=0; j < adjusted_icount - (u == 0 && needs_comp); j++)
         {
             pbuf += add_filler(ibuf+pbuf, instr, j, k++);
         }

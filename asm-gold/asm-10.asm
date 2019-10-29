@@ -19,30 +19,27 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	90                   	nop
-  72:	90                   	nop
-  73:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
   74:	90                   	nop
   75:	90                   	nop
   76:	90                   	nop
@@ -55,23 +52,23 @@ Disassembly of section .data:
   7d:	90                   	nop
   7e:	90                   	nop
   7f:	90                   	nop
-  80:	0f 57 c0             	xorps  xmm0,xmm0
-  83:	0f 57 c9             	xorps  xmm1,xmm1
-  86:	0f 57 d2             	xorps  xmm2,xmm2
-  89:	0f 57 db             	xorps  xmm3,xmm3
-  8c:	0f 57 e4             	xorps  xmm4,xmm4
-  8f:	0f 57 ed             	xorps  xmm5,xmm5
-  92:	0f 57 f6             	xorps  xmm6,xmm6
-  95:	0f 57 ff             	xorps  xmm7,xmm7
-  98:	0f 57 c0             	xorps  xmm0,xmm0
-  9b:	0f 57 c9             	xorps  xmm1,xmm1
-  9e:	0f 57 d2             	xorps  xmm2,xmm2
-  a1:	0f 57 db             	xorps  xmm3,xmm3
-  a4:	0f 57 e4             	xorps  xmm4,xmm4
-  a7:	0f 57 ed             	xorps  xmm5,xmm5
-  aa:	0f 57 f6             	xorps  xmm6,xmm6
-  ad:	0f 57 ff             	xorps  xmm7,xmm7
-  b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  83:	0f 57 c0             	xorps  xmm0,xmm0
+  86:	0f 57 c9             	xorps  xmm1,xmm1
+  89:	0f 57 d2             	xorps  xmm2,xmm2
+  8c:	0f 57 db             	xorps  xmm3,xmm3
+  8f:	0f 57 e4             	xorps  xmm4,xmm4
+  92:	0f 57 ed             	xorps  xmm5,xmm5
+  95:	0f 57 f6             	xorps  xmm6,xmm6
+  98:	0f 57 ff             	xorps  xmm7,xmm7
+  9b:	0f 57 c0             	xorps  xmm0,xmm0
+  9e:	0f 57 c9             	xorps  xmm1,xmm1
+  a1:	0f 57 d2             	xorps  xmm2,xmm2
+  a4:	0f 57 db             	xorps  xmm3,xmm3
+  a7:	0f 57 e4             	xorps  xmm4,xmm4
+  aa:	0f 57 ed             	xorps  xmm5,xmm5
+  ad:	0f 57 f6             	xorps  xmm6,xmm6
+  b0:	0f 57 ff             	xorps  xmm7,xmm7
   b3:	0f 57 c0             	xorps  xmm0,xmm0
   b6:	0f 57 c9             	xorps  xmm1,xmm1
   b9:	0f 57 d2             	xorps  xmm2,xmm2
@@ -89,23 +86,23 @@ Disassembly of section .data:
   dd:	0f 57 f6             	xorps  xmm6,xmm6
   e0:	0f 57 ff             	xorps  xmm7,xmm7
   e3:	0f 57 c0             	xorps  xmm0,xmm0
-  e6:	0f 57 c9             	xorps  xmm1,xmm1
-  e9:	0f 57 d2             	xorps  xmm2,xmm2
-  ec:	0f 57 db             	xorps  xmm3,xmm3
-  ef:	0f 57 e4             	xorps  xmm4,xmm4
-  f2:	0f 57 ed             	xorps  xmm5,xmm5
-  f5:	0f 57 f6             	xorps  xmm6,xmm6
-  f8:	0f 57 ff             	xorps  xmm7,xmm7
-  fb:	0f 57 c0             	xorps  xmm0,xmm0
-  fe:	0f 57 c9             	xorps  xmm1,xmm1
- 101:	0f 57 d2             	xorps  xmm2,xmm2
- 104:	0f 57 db             	xorps  xmm3,xmm3
- 107:	0f 57 e4             	xorps  xmm4,xmm4
- 10a:	0f 57 ed             	xorps  xmm5,xmm5
- 10d:	0f 57 f6             	xorps  xmm6,xmm6
- 110:	0f 57 ff             	xorps  xmm7,xmm7
- 113:	0f 57 c0             	xorps  xmm0,xmm0
- 116:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  e6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  e9:	0f 57 c0             	xorps  xmm0,xmm0
+  ec:	0f 57 c9             	xorps  xmm1,xmm1
+  ef:	0f 57 d2             	xorps  xmm2,xmm2
+  f2:	0f 57 db             	xorps  xmm3,xmm3
+  f5:	0f 57 e4             	xorps  xmm4,xmm4
+  f8:	0f 57 ed             	xorps  xmm5,xmm5
+  fb:	0f 57 f6             	xorps  xmm6,xmm6
+  fe:	0f 57 ff             	xorps  xmm7,xmm7
+ 101:	0f 57 c0             	xorps  xmm0,xmm0
+ 104:	0f 57 c9             	xorps  xmm1,xmm1
+ 107:	0f 57 d2             	xorps  xmm2,xmm2
+ 10a:	0f 57 db             	xorps  xmm3,xmm3
+ 10d:	0f 57 e4             	xorps  xmm4,xmm4
+ 110:	0f 57 ed             	xorps  xmm5,xmm5
+ 113:	0f 57 f6             	xorps  xmm6,xmm6
+ 116:	0f 57 ff             	xorps  xmm7,xmm7
  119:	0f 57 c0             	xorps  xmm0,xmm0
  11c:	0f 57 c9             	xorps  xmm1,xmm1
  11f:	0f 57 d2             	xorps  xmm2,xmm2
@@ -123,23 +120,23 @@ Disassembly of section .data:
  143:	0f 57 f6             	xorps  xmm6,xmm6
  146:	0f 57 ff             	xorps  xmm7,xmm7
  149:	0f 57 c0             	xorps  xmm0,xmm0
- 14c:	0f 57 c0             	xorps  xmm0,xmm0
- 14f:	0f 57 c9             	xorps  xmm1,xmm1
- 152:	0f 57 d2             	xorps  xmm2,xmm2
- 155:	0f 57 db             	xorps  xmm3,xmm3
- 158:	0f 57 e4             	xorps  xmm4,xmm4
- 15b:	0f 57 ed             	xorps  xmm5,xmm5
- 15e:	0f 57 f6             	xorps  xmm6,xmm6
- 161:	0f 57 ff             	xorps  xmm7,xmm7
- 164:	0f 57 c0             	xorps  xmm0,xmm0
- 167:	0f 57 c9             	xorps  xmm1,xmm1
- 16a:	0f 57 d2             	xorps  xmm2,xmm2
- 16d:	0f 57 db             	xorps  xmm3,xmm3
- 170:	0f 57 e4             	xorps  xmm4,xmm4
- 173:	0f 57 ed             	xorps  xmm5,xmm5
- 176:	0f 57 f6             	xorps  xmm6,xmm6
- 179:	0f 57 ff             	xorps  xmm7,xmm7
- 17c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 14c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 14f:	0f 57 c0             	xorps  xmm0,xmm0
+ 152:	0f 57 c9             	xorps  xmm1,xmm1
+ 155:	0f 57 d2             	xorps  xmm2,xmm2
+ 158:	0f 57 db             	xorps  xmm3,xmm3
+ 15b:	0f 57 e4             	xorps  xmm4,xmm4
+ 15e:	0f 57 ed             	xorps  xmm5,xmm5
+ 161:	0f 57 f6             	xorps  xmm6,xmm6
+ 164:	0f 57 ff             	xorps  xmm7,xmm7
+ 167:	0f 57 c0             	xorps  xmm0,xmm0
+ 16a:	0f 57 c9             	xorps  xmm1,xmm1
+ 16d:	0f 57 d2             	xorps  xmm2,xmm2
+ 170:	0f 57 db             	xorps  xmm3,xmm3
+ 173:	0f 57 e4             	xorps  xmm4,xmm4
+ 176:	0f 57 ed             	xorps  xmm5,xmm5
+ 179:	0f 57 f6             	xorps  xmm6,xmm6
+ 17c:	0f 57 ff             	xorps  xmm7,xmm7
  17f:	0f 57 c0             	xorps  xmm0,xmm0
  182:	0f 57 c9             	xorps  xmm1,xmm1
  185:	0f 57 d2             	xorps  xmm2,xmm2
@@ -157,23 +154,23 @@ Disassembly of section .data:
  1a9:	0f 57 f6             	xorps  xmm6,xmm6
  1ac:	0f 57 ff             	xorps  xmm7,xmm7
  1af:	0f 57 c0             	xorps  xmm0,xmm0
- 1b2:	0f 57 c9             	xorps  xmm1,xmm1
- 1b5:	0f 57 d2             	xorps  xmm2,xmm2
- 1b8:	0f 57 db             	xorps  xmm3,xmm3
- 1bb:	0f 57 e4             	xorps  xmm4,xmm4
- 1be:	0f 57 ed             	xorps  xmm5,xmm5
- 1c1:	0f 57 f6             	xorps  xmm6,xmm6
- 1c4:	0f 57 ff             	xorps  xmm7,xmm7
- 1c7:	0f 57 c0             	xorps  xmm0,xmm0
- 1ca:	0f 57 c9             	xorps  xmm1,xmm1
- 1cd:	0f 57 d2             	xorps  xmm2,xmm2
- 1d0:	0f 57 db             	xorps  xmm3,xmm3
- 1d3:	0f 57 e4             	xorps  xmm4,xmm4
- 1d6:	0f 57 ed             	xorps  xmm5,xmm5
- 1d9:	0f 57 f6             	xorps  xmm6,xmm6
- 1dc:	0f 57 ff             	xorps  xmm7,xmm7
- 1df:	0f 57 c0             	xorps  xmm0,xmm0
- 1e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1b2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1b5:	0f 57 c0             	xorps  xmm0,xmm0
+ 1b8:	0f 57 c9             	xorps  xmm1,xmm1
+ 1bb:	0f 57 d2             	xorps  xmm2,xmm2
+ 1be:	0f 57 db             	xorps  xmm3,xmm3
+ 1c1:	0f 57 e4             	xorps  xmm4,xmm4
+ 1c4:	0f 57 ed             	xorps  xmm5,xmm5
+ 1c7:	0f 57 f6             	xorps  xmm6,xmm6
+ 1ca:	0f 57 ff             	xorps  xmm7,xmm7
+ 1cd:	0f 57 c0             	xorps  xmm0,xmm0
+ 1d0:	0f 57 c9             	xorps  xmm1,xmm1
+ 1d3:	0f 57 d2             	xorps  xmm2,xmm2
+ 1d6:	0f 57 db             	xorps  xmm3,xmm3
+ 1d9:	0f 57 e4             	xorps  xmm4,xmm4
+ 1dc:	0f 57 ed             	xorps  xmm5,xmm5
+ 1df:	0f 57 f6             	xorps  xmm6,xmm6
+ 1e2:	0f 57 ff             	xorps  xmm7,xmm7
  1e5:	0f 57 c0             	xorps  xmm0,xmm0
  1e8:	0f 57 c9             	xorps  xmm1,xmm1
  1eb:	0f 57 d2             	xorps  xmm2,xmm2
@@ -191,23 +188,23 @@ Disassembly of section .data:
  20f:	0f 57 f6             	xorps  xmm6,xmm6
  212:	0f 57 ff             	xorps  xmm7,xmm7
  215:	0f 57 c0             	xorps  xmm0,xmm0
- 218:	0f 57 c0             	xorps  xmm0,xmm0
- 21b:	0f 57 c9             	xorps  xmm1,xmm1
- 21e:	0f 57 d2             	xorps  xmm2,xmm2
- 221:	0f 57 db             	xorps  xmm3,xmm3
- 224:	0f 57 e4             	xorps  xmm4,xmm4
- 227:	0f 57 ed             	xorps  xmm5,xmm5
- 22a:	0f 57 f6             	xorps  xmm6,xmm6
- 22d:	0f 57 ff             	xorps  xmm7,xmm7
- 230:	0f 57 c0             	xorps  xmm0,xmm0
- 233:	0f 57 c9             	xorps  xmm1,xmm1
- 236:	0f 57 d2             	xorps  xmm2,xmm2
- 239:	0f 57 db             	xorps  xmm3,xmm3
- 23c:	0f 57 e4             	xorps  xmm4,xmm4
- 23f:	0f 57 ed             	xorps  xmm5,xmm5
- 242:	0f 57 f6             	xorps  xmm6,xmm6
- 245:	0f 57 ff             	xorps  xmm7,xmm7
- 248:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 218:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 21b:	0f 57 c0             	xorps  xmm0,xmm0
+ 21e:	0f 57 c9             	xorps  xmm1,xmm1
+ 221:	0f 57 d2             	xorps  xmm2,xmm2
+ 224:	0f 57 db             	xorps  xmm3,xmm3
+ 227:	0f 57 e4             	xorps  xmm4,xmm4
+ 22a:	0f 57 ed             	xorps  xmm5,xmm5
+ 22d:	0f 57 f6             	xorps  xmm6,xmm6
+ 230:	0f 57 ff             	xorps  xmm7,xmm7
+ 233:	0f 57 c0             	xorps  xmm0,xmm0
+ 236:	0f 57 c9             	xorps  xmm1,xmm1
+ 239:	0f 57 d2             	xorps  xmm2,xmm2
+ 23c:	0f 57 db             	xorps  xmm3,xmm3
+ 23f:	0f 57 e4             	xorps  xmm4,xmm4
+ 242:	0f 57 ed             	xorps  xmm5,xmm5
+ 245:	0f 57 f6             	xorps  xmm6,xmm6
+ 248:	0f 57 ff             	xorps  xmm7,xmm7
  24b:	0f 57 c0             	xorps  xmm0,xmm0
  24e:	0f 57 c9             	xorps  xmm1,xmm1
  251:	0f 57 d2             	xorps  xmm2,xmm2
@@ -225,23 +222,23 @@ Disassembly of section .data:
  275:	0f 57 f6             	xorps  xmm6,xmm6
  278:	0f 57 ff             	xorps  xmm7,xmm7
  27b:	0f 57 c0             	xorps  xmm0,xmm0
- 27e:	0f 57 c9             	xorps  xmm1,xmm1
- 281:	0f 57 d2             	xorps  xmm2,xmm2
- 284:	0f 57 db             	xorps  xmm3,xmm3
- 287:	0f 57 e4             	xorps  xmm4,xmm4
- 28a:	0f 57 ed             	xorps  xmm5,xmm5
- 28d:	0f 57 f6             	xorps  xmm6,xmm6
- 290:	0f 57 ff             	xorps  xmm7,xmm7
- 293:	0f 57 c0             	xorps  xmm0,xmm0
- 296:	0f 57 c9             	xorps  xmm1,xmm1
- 299:	0f 57 d2             	xorps  xmm2,xmm2
- 29c:	0f 57 db             	xorps  xmm3,xmm3
- 29f:	0f 57 e4             	xorps  xmm4,xmm4
- 2a2:	0f 57 ed             	xorps  xmm5,xmm5
- 2a5:	0f 57 f6             	xorps  xmm6,xmm6
- 2a8:	0f 57 ff             	xorps  xmm7,xmm7
- 2ab:	0f 57 c0             	xorps  xmm0,xmm0
- 2ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 27e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 281:	0f 57 c0             	xorps  xmm0,xmm0
+ 284:	0f 57 c9             	xorps  xmm1,xmm1
+ 287:	0f 57 d2             	xorps  xmm2,xmm2
+ 28a:	0f 57 db             	xorps  xmm3,xmm3
+ 28d:	0f 57 e4             	xorps  xmm4,xmm4
+ 290:	0f 57 ed             	xorps  xmm5,xmm5
+ 293:	0f 57 f6             	xorps  xmm6,xmm6
+ 296:	0f 57 ff             	xorps  xmm7,xmm7
+ 299:	0f 57 c0             	xorps  xmm0,xmm0
+ 29c:	0f 57 c9             	xorps  xmm1,xmm1
+ 29f:	0f 57 d2             	xorps  xmm2,xmm2
+ 2a2:	0f 57 db             	xorps  xmm3,xmm3
+ 2a5:	0f 57 e4             	xorps  xmm4,xmm4
+ 2a8:	0f 57 ed             	xorps  xmm5,xmm5
+ 2ab:	0f 57 f6             	xorps  xmm6,xmm6
+ 2ae:	0f 57 ff             	xorps  xmm7,xmm7
  2b1:	0f 57 c0             	xorps  xmm0,xmm0
  2b4:	0f 57 c9             	xorps  xmm1,xmm1
  2b7:	0f 57 d2             	xorps  xmm2,xmm2
@@ -259,23 +256,23 @@ Disassembly of section .data:
  2db:	0f 57 f6             	xorps  xmm6,xmm6
  2de:	0f 57 ff             	xorps  xmm7,xmm7
  2e1:	0f 57 c0             	xorps  xmm0,xmm0
- 2e4:	0f 57 c0             	xorps  xmm0,xmm0
- 2e7:	0f 57 c9             	xorps  xmm1,xmm1
- 2ea:	0f 57 d2             	xorps  xmm2,xmm2
- 2ed:	0f 57 db             	xorps  xmm3,xmm3
- 2f0:	0f 57 e4             	xorps  xmm4,xmm4
- 2f3:	0f 57 ed             	xorps  xmm5,xmm5
- 2f6:	0f 57 f6             	xorps  xmm6,xmm6
- 2f9:	0f 57 ff             	xorps  xmm7,xmm7
- 2fc:	0f 57 c0             	xorps  xmm0,xmm0
- 2ff:	0f 57 c9             	xorps  xmm1,xmm1
- 302:	0f 57 d2             	xorps  xmm2,xmm2
- 305:	0f 57 db             	xorps  xmm3,xmm3
- 308:	0f 57 e4             	xorps  xmm4,xmm4
- 30b:	0f 57 ed             	xorps  xmm5,xmm5
- 30e:	0f 57 f6             	xorps  xmm6,xmm6
- 311:	0f 57 ff             	xorps  xmm7,xmm7
- 314:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2e4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2e7:	0f 57 c0             	xorps  xmm0,xmm0
+ 2ea:	0f 57 c9             	xorps  xmm1,xmm1
+ 2ed:	0f 57 d2             	xorps  xmm2,xmm2
+ 2f0:	0f 57 db             	xorps  xmm3,xmm3
+ 2f3:	0f 57 e4             	xorps  xmm4,xmm4
+ 2f6:	0f 57 ed             	xorps  xmm5,xmm5
+ 2f9:	0f 57 f6             	xorps  xmm6,xmm6
+ 2fc:	0f 57 ff             	xorps  xmm7,xmm7
+ 2ff:	0f 57 c0             	xorps  xmm0,xmm0
+ 302:	0f 57 c9             	xorps  xmm1,xmm1
+ 305:	0f 57 d2             	xorps  xmm2,xmm2
+ 308:	0f 57 db             	xorps  xmm3,xmm3
+ 30b:	0f 57 e4             	xorps  xmm4,xmm4
+ 30e:	0f 57 ed             	xorps  xmm5,xmm5
+ 311:	0f 57 f6             	xorps  xmm6,xmm6
+ 314:	0f 57 ff             	xorps  xmm7,xmm7
  317:	0f 57 c0             	xorps  xmm0,xmm0
  31a:	0f 57 c9             	xorps  xmm1,xmm1
  31d:	0f 57 d2             	xorps  xmm2,xmm2
@@ -293,23 +290,23 @@ Disassembly of section .data:
  341:	0f 57 f6             	xorps  xmm6,xmm6
  344:	0f 57 ff             	xorps  xmm7,xmm7
  347:	0f 57 c0             	xorps  xmm0,xmm0
- 34a:	0f 57 c9             	xorps  xmm1,xmm1
- 34d:	0f 57 d2             	xorps  xmm2,xmm2
- 350:	0f 57 db             	xorps  xmm3,xmm3
- 353:	0f 57 e4             	xorps  xmm4,xmm4
- 356:	0f 57 ed             	xorps  xmm5,xmm5
- 359:	0f 57 f6             	xorps  xmm6,xmm6
- 35c:	0f 57 ff             	xorps  xmm7,xmm7
- 35f:	0f 57 c0             	xorps  xmm0,xmm0
- 362:	0f 57 c9             	xorps  xmm1,xmm1
- 365:	0f 57 d2             	xorps  xmm2,xmm2
- 368:	0f 57 db             	xorps  xmm3,xmm3
- 36b:	0f 57 e4             	xorps  xmm4,xmm4
- 36e:	0f 57 ed             	xorps  xmm5,xmm5
- 371:	0f 57 f6             	xorps  xmm6,xmm6
- 374:	0f 57 ff             	xorps  xmm7,xmm7
- 377:	0f 57 c0             	xorps  xmm0,xmm0
- 37a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34d:	0f 57 c0             	xorps  xmm0,xmm0
+ 350:	0f 57 c9             	xorps  xmm1,xmm1
+ 353:	0f 57 d2             	xorps  xmm2,xmm2
+ 356:	0f 57 db             	xorps  xmm3,xmm3
+ 359:	0f 57 e4             	xorps  xmm4,xmm4
+ 35c:	0f 57 ed             	xorps  xmm5,xmm5
+ 35f:	0f 57 f6             	xorps  xmm6,xmm6
+ 362:	0f 57 ff             	xorps  xmm7,xmm7
+ 365:	0f 57 c0             	xorps  xmm0,xmm0
+ 368:	0f 57 c9             	xorps  xmm1,xmm1
+ 36b:	0f 57 d2             	xorps  xmm2,xmm2
+ 36e:	0f 57 db             	xorps  xmm3,xmm3
+ 371:	0f 57 e4             	xorps  xmm4,xmm4
+ 374:	0f 57 ed             	xorps  xmm5,xmm5
+ 377:	0f 57 f6             	xorps  xmm6,xmm6
+ 37a:	0f 57 ff             	xorps  xmm7,xmm7
  37d:	0f 57 c0             	xorps  xmm0,xmm0
  380:	0f 57 c9             	xorps  xmm1,xmm1
  383:	0f 57 d2             	xorps  xmm2,xmm2
@@ -327,23 +324,23 @@ Disassembly of section .data:
  3a7:	0f 57 f6             	xorps  xmm6,xmm6
  3aa:	0f 57 ff             	xorps  xmm7,xmm7
  3ad:	0f 57 c0             	xorps  xmm0,xmm0
- 3b0:	0f 57 c0             	xorps  xmm0,xmm0
- 3b3:	0f 57 c9             	xorps  xmm1,xmm1
- 3b6:	0f 57 d2             	xorps  xmm2,xmm2
- 3b9:	0f 57 db             	xorps  xmm3,xmm3
- 3bc:	0f 57 e4             	xorps  xmm4,xmm4
- 3bf:	0f 57 ed             	xorps  xmm5,xmm5
- 3c2:	0f 57 f6             	xorps  xmm6,xmm6
- 3c5:	0f 57 ff             	xorps  xmm7,xmm7
- 3c8:	0f 57 c0             	xorps  xmm0,xmm0
- 3cb:	0f 57 c9             	xorps  xmm1,xmm1
- 3ce:	0f 57 d2             	xorps  xmm2,xmm2
- 3d1:	0f 57 db             	xorps  xmm3,xmm3
- 3d4:	0f 57 e4             	xorps  xmm4,xmm4
- 3d7:	0f 57 ed             	xorps  xmm5,xmm5
- 3da:	0f 57 f6             	xorps  xmm6,xmm6
- 3dd:	0f 57 ff             	xorps  xmm7,xmm7
- 3e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3b3:	0f 57 c0             	xorps  xmm0,xmm0
+ 3b6:	0f 57 c9             	xorps  xmm1,xmm1
+ 3b9:	0f 57 d2             	xorps  xmm2,xmm2
+ 3bc:	0f 57 db             	xorps  xmm3,xmm3
+ 3bf:	0f 57 e4             	xorps  xmm4,xmm4
+ 3c2:	0f 57 ed             	xorps  xmm5,xmm5
+ 3c5:	0f 57 f6             	xorps  xmm6,xmm6
+ 3c8:	0f 57 ff             	xorps  xmm7,xmm7
+ 3cb:	0f 57 c0             	xorps  xmm0,xmm0
+ 3ce:	0f 57 c9             	xorps  xmm1,xmm1
+ 3d1:	0f 57 d2             	xorps  xmm2,xmm2
+ 3d4:	0f 57 db             	xorps  xmm3,xmm3
+ 3d7:	0f 57 e4             	xorps  xmm4,xmm4
+ 3da:	0f 57 ed             	xorps  xmm5,xmm5
+ 3dd:	0f 57 f6             	xorps  xmm6,xmm6
+ 3e0:	0f 57 ff             	xorps  xmm7,xmm7
  3e3:	0f 57 c0             	xorps  xmm0,xmm0
  3e6:	0f 57 c9             	xorps  xmm1,xmm1
  3e9:	0f 57 d2             	xorps  xmm2,xmm2
@@ -361,23 +358,23 @@ Disassembly of section .data:
  40d:	0f 57 f6             	xorps  xmm6,xmm6
  410:	0f 57 ff             	xorps  xmm7,xmm7
  413:	0f 57 c0             	xorps  xmm0,xmm0
- 416:	0f 57 c9             	xorps  xmm1,xmm1
- 419:	0f 57 d2             	xorps  xmm2,xmm2
- 41c:	0f 57 db             	xorps  xmm3,xmm3
- 41f:	0f 57 e4             	xorps  xmm4,xmm4
- 422:	0f 57 ed             	xorps  xmm5,xmm5
- 425:	0f 57 f6             	xorps  xmm6,xmm6
- 428:	0f 57 ff             	xorps  xmm7,xmm7
- 42b:	0f 57 c0             	xorps  xmm0,xmm0
- 42e:	0f 57 c9             	xorps  xmm1,xmm1
- 431:	0f 57 d2             	xorps  xmm2,xmm2
- 434:	0f 57 db             	xorps  xmm3,xmm3
- 437:	0f 57 e4             	xorps  xmm4,xmm4
- 43a:	0f 57 ed             	xorps  xmm5,xmm5
- 43d:	0f 57 f6             	xorps  xmm6,xmm6
- 440:	0f 57 ff             	xorps  xmm7,xmm7
- 443:	0f 57 c0             	xorps  xmm0,xmm0
- 446:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 416:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 419:	0f 57 c0             	xorps  xmm0,xmm0
+ 41c:	0f 57 c9             	xorps  xmm1,xmm1
+ 41f:	0f 57 d2             	xorps  xmm2,xmm2
+ 422:	0f 57 db             	xorps  xmm3,xmm3
+ 425:	0f 57 e4             	xorps  xmm4,xmm4
+ 428:	0f 57 ed             	xorps  xmm5,xmm5
+ 42b:	0f 57 f6             	xorps  xmm6,xmm6
+ 42e:	0f 57 ff             	xorps  xmm7,xmm7
+ 431:	0f 57 c0             	xorps  xmm0,xmm0
+ 434:	0f 57 c9             	xorps  xmm1,xmm1
+ 437:	0f 57 d2             	xorps  xmm2,xmm2
+ 43a:	0f 57 db             	xorps  xmm3,xmm3
+ 43d:	0f 57 e4             	xorps  xmm4,xmm4
+ 440:	0f 57 ed             	xorps  xmm5,xmm5
+ 443:	0f 57 f6             	xorps  xmm6,xmm6
+ 446:	0f 57 ff             	xorps  xmm7,xmm7
  449:	0f 57 c0             	xorps  xmm0,xmm0
  44c:	0f 57 c9             	xorps  xmm1,xmm1
  44f:	0f 57 d2             	xorps  xmm2,xmm2
@@ -395,23 +392,23 @@ Disassembly of section .data:
  473:	0f 57 f6             	xorps  xmm6,xmm6
  476:	0f 57 ff             	xorps  xmm7,xmm7
  479:	0f 57 c0             	xorps  xmm0,xmm0
- 47c:	0f 57 c0             	xorps  xmm0,xmm0
- 47f:	0f 57 c9             	xorps  xmm1,xmm1
- 482:	0f 57 d2             	xorps  xmm2,xmm2
- 485:	0f 57 db             	xorps  xmm3,xmm3
- 488:	0f 57 e4             	xorps  xmm4,xmm4
- 48b:	0f 57 ed             	xorps  xmm5,xmm5
- 48e:	0f 57 f6             	xorps  xmm6,xmm6
- 491:	0f 57 ff             	xorps  xmm7,xmm7
- 494:	0f 57 c0             	xorps  xmm0,xmm0
- 497:	0f 57 c9             	xorps  xmm1,xmm1
- 49a:	0f 57 d2             	xorps  xmm2,xmm2
- 49d:	0f 57 db             	xorps  xmm3,xmm3
- 4a0:	0f 57 e4             	xorps  xmm4,xmm4
- 4a3:	0f 57 ed             	xorps  xmm5,xmm5
- 4a6:	0f 57 f6             	xorps  xmm6,xmm6
- 4a9:	0f 57 ff             	xorps  xmm7,xmm7
- 4ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 47c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 47f:	0f 57 c0             	xorps  xmm0,xmm0
+ 482:	0f 57 c9             	xorps  xmm1,xmm1
+ 485:	0f 57 d2             	xorps  xmm2,xmm2
+ 488:	0f 57 db             	xorps  xmm3,xmm3
+ 48b:	0f 57 e4             	xorps  xmm4,xmm4
+ 48e:	0f 57 ed             	xorps  xmm5,xmm5
+ 491:	0f 57 f6             	xorps  xmm6,xmm6
+ 494:	0f 57 ff             	xorps  xmm7,xmm7
+ 497:	0f 57 c0             	xorps  xmm0,xmm0
+ 49a:	0f 57 c9             	xorps  xmm1,xmm1
+ 49d:	0f 57 d2             	xorps  xmm2,xmm2
+ 4a0:	0f 57 db             	xorps  xmm3,xmm3
+ 4a3:	0f 57 e4             	xorps  xmm4,xmm4
+ 4a6:	0f 57 ed             	xorps  xmm5,xmm5
+ 4a9:	0f 57 f6             	xorps  xmm6,xmm6
+ 4ac:	0f 57 ff             	xorps  xmm7,xmm7
  4af:	0f 57 c0             	xorps  xmm0,xmm0
  4b2:	0f 57 c9             	xorps  xmm1,xmm1
  4b5:	0f 57 d2             	xorps  xmm2,xmm2
@@ -429,23 +426,23 @@ Disassembly of section .data:
  4d9:	0f 57 f6             	xorps  xmm6,xmm6
  4dc:	0f 57 ff             	xorps  xmm7,xmm7
  4df:	0f 57 c0             	xorps  xmm0,xmm0
- 4e2:	0f 57 c9             	xorps  xmm1,xmm1
- 4e5:	0f 57 d2             	xorps  xmm2,xmm2
- 4e8:	0f 57 db             	xorps  xmm3,xmm3
- 4eb:	0f 57 e4             	xorps  xmm4,xmm4
- 4ee:	0f 57 ed             	xorps  xmm5,xmm5
- 4f1:	0f 57 f6             	xorps  xmm6,xmm6
- 4f4:	0f 57 ff             	xorps  xmm7,xmm7
- 4f7:	0f 57 c0             	xorps  xmm0,xmm0
- 4fa:	0f 57 c9             	xorps  xmm1,xmm1
- 4fd:	0f 57 d2             	xorps  xmm2,xmm2
- 500:	0f 57 db             	xorps  xmm3,xmm3
- 503:	0f 57 e4             	xorps  xmm4,xmm4
- 506:	0f 57 ed             	xorps  xmm5,xmm5
- 509:	0f 57 f6             	xorps  xmm6,xmm6
- 50c:	0f 57 ff             	xorps  xmm7,xmm7
- 50f:	0f 57 c0             	xorps  xmm0,xmm0
- 512:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4e5:	0f 57 c0             	xorps  xmm0,xmm0
+ 4e8:	0f 57 c9             	xorps  xmm1,xmm1
+ 4eb:	0f 57 d2             	xorps  xmm2,xmm2
+ 4ee:	0f 57 db             	xorps  xmm3,xmm3
+ 4f1:	0f 57 e4             	xorps  xmm4,xmm4
+ 4f4:	0f 57 ed             	xorps  xmm5,xmm5
+ 4f7:	0f 57 f6             	xorps  xmm6,xmm6
+ 4fa:	0f 57 ff             	xorps  xmm7,xmm7
+ 4fd:	0f 57 c0             	xorps  xmm0,xmm0
+ 500:	0f 57 c9             	xorps  xmm1,xmm1
+ 503:	0f 57 d2             	xorps  xmm2,xmm2
+ 506:	0f 57 db             	xorps  xmm3,xmm3
+ 509:	0f 57 e4             	xorps  xmm4,xmm4
+ 50c:	0f 57 ed             	xorps  xmm5,xmm5
+ 50f:	0f 57 f6             	xorps  xmm6,xmm6
+ 512:	0f 57 ff             	xorps  xmm7,xmm7
  515:	0f 57 c0             	xorps  xmm0,xmm0
  518:	0f 57 c9             	xorps  xmm1,xmm1
  51b:	0f 57 d2             	xorps  xmm2,xmm2
@@ -463,23 +460,23 @@ Disassembly of section .data:
  53f:	0f 57 f6             	xorps  xmm6,xmm6
  542:	0f 57 ff             	xorps  xmm7,xmm7
  545:	0f 57 c0             	xorps  xmm0,xmm0
- 548:	0f 57 c0             	xorps  xmm0,xmm0
- 54b:	0f 57 c9             	xorps  xmm1,xmm1
- 54e:	0f 57 d2             	xorps  xmm2,xmm2
- 551:	0f 57 db             	xorps  xmm3,xmm3
- 554:	0f 57 e4             	xorps  xmm4,xmm4
- 557:	0f 57 ed             	xorps  xmm5,xmm5
- 55a:	0f 57 f6             	xorps  xmm6,xmm6
- 55d:	0f 57 ff             	xorps  xmm7,xmm7
- 560:	0f 57 c0             	xorps  xmm0,xmm0
- 563:	0f 57 c9             	xorps  xmm1,xmm1
- 566:	0f 57 d2             	xorps  xmm2,xmm2
- 569:	0f 57 db             	xorps  xmm3,xmm3
- 56c:	0f 57 e4             	xorps  xmm4,xmm4
- 56f:	0f 57 ed             	xorps  xmm5,xmm5
- 572:	0f 57 f6             	xorps  xmm6,xmm6
- 575:	0f 57 ff             	xorps  xmm7,xmm7
- 578:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 548:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 54b:	0f 57 c0             	xorps  xmm0,xmm0
+ 54e:	0f 57 c9             	xorps  xmm1,xmm1
+ 551:	0f 57 d2             	xorps  xmm2,xmm2
+ 554:	0f 57 db             	xorps  xmm3,xmm3
+ 557:	0f 57 e4             	xorps  xmm4,xmm4
+ 55a:	0f 57 ed             	xorps  xmm5,xmm5
+ 55d:	0f 57 f6             	xorps  xmm6,xmm6
+ 560:	0f 57 ff             	xorps  xmm7,xmm7
+ 563:	0f 57 c0             	xorps  xmm0,xmm0
+ 566:	0f 57 c9             	xorps  xmm1,xmm1
+ 569:	0f 57 d2             	xorps  xmm2,xmm2
+ 56c:	0f 57 db             	xorps  xmm3,xmm3
+ 56f:	0f 57 e4             	xorps  xmm4,xmm4
+ 572:	0f 57 ed             	xorps  xmm5,xmm5
+ 575:	0f 57 f6             	xorps  xmm6,xmm6
+ 578:	0f 57 ff             	xorps  xmm7,xmm7
  57b:	0f 57 c0             	xorps  xmm0,xmm0
  57e:	0f 57 c9             	xorps  xmm1,xmm1
  581:	0f 57 d2             	xorps  xmm2,xmm2
@@ -497,23 +494,23 @@ Disassembly of section .data:
  5a5:	0f 57 f6             	xorps  xmm6,xmm6
  5a8:	0f 57 ff             	xorps  xmm7,xmm7
  5ab:	0f 57 c0             	xorps  xmm0,xmm0
- 5ae:	0f 57 c9             	xorps  xmm1,xmm1
- 5b1:	0f 57 d2             	xorps  xmm2,xmm2
- 5b4:	0f 57 db             	xorps  xmm3,xmm3
- 5b7:	0f 57 e4             	xorps  xmm4,xmm4
- 5ba:	0f 57 ed             	xorps  xmm5,xmm5
- 5bd:	0f 57 f6             	xorps  xmm6,xmm6
- 5c0:	0f 57 ff             	xorps  xmm7,xmm7
- 5c3:	0f 57 c0             	xorps  xmm0,xmm0
- 5c6:	0f 57 c9             	xorps  xmm1,xmm1
- 5c9:	0f 57 d2             	xorps  xmm2,xmm2
- 5cc:	0f 57 db             	xorps  xmm3,xmm3
- 5cf:	0f 57 e4             	xorps  xmm4,xmm4
- 5d2:	0f 57 ed             	xorps  xmm5,xmm5
- 5d5:	0f 57 f6             	xorps  xmm6,xmm6
- 5d8:	0f 57 ff             	xorps  xmm7,xmm7
- 5db:	0f 57 c0             	xorps  xmm0,xmm0
- 5de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5b1:	0f 57 c0             	xorps  xmm0,xmm0
+ 5b4:	0f 57 c9             	xorps  xmm1,xmm1
+ 5b7:	0f 57 d2             	xorps  xmm2,xmm2
+ 5ba:	0f 57 db             	xorps  xmm3,xmm3
+ 5bd:	0f 57 e4             	xorps  xmm4,xmm4
+ 5c0:	0f 57 ed             	xorps  xmm5,xmm5
+ 5c3:	0f 57 f6             	xorps  xmm6,xmm6
+ 5c6:	0f 57 ff             	xorps  xmm7,xmm7
+ 5c9:	0f 57 c0             	xorps  xmm0,xmm0
+ 5cc:	0f 57 c9             	xorps  xmm1,xmm1
+ 5cf:	0f 57 d2             	xorps  xmm2,xmm2
+ 5d2:	0f 57 db             	xorps  xmm3,xmm3
+ 5d5:	0f 57 e4             	xorps  xmm4,xmm4
+ 5d8:	0f 57 ed             	xorps  xmm5,xmm5
+ 5db:	0f 57 f6             	xorps  xmm6,xmm6
+ 5de:	0f 57 ff             	xorps  xmm7,xmm7
  5e1:	0f 57 c0             	xorps  xmm0,xmm0
  5e4:	0f 57 c9             	xorps  xmm1,xmm1
  5e7:	0f 57 d2             	xorps  xmm2,xmm2
@@ -531,23 +528,23 @@ Disassembly of section .data:
  60b:	0f 57 f6             	xorps  xmm6,xmm6
  60e:	0f 57 ff             	xorps  xmm7,xmm7
  611:	0f 57 c0             	xorps  xmm0,xmm0
- 614:	0f 57 c0             	xorps  xmm0,xmm0
- 617:	0f 57 c9             	xorps  xmm1,xmm1
- 61a:	0f 57 d2             	xorps  xmm2,xmm2
- 61d:	0f 57 db             	xorps  xmm3,xmm3
- 620:	0f 57 e4             	xorps  xmm4,xmm4
- 623:	0f 57 ed             	xorps  xmm5,xmm5
- 626:	0f 57 f6             	xorps  xmm6,xmm6
- 629:	0f 57 ff             	xorps  xmm7,xmm7
- 62c:	0f 57 c0             	xorps  xmm0,xmm0
- 62f:	0f 57 c9             	xorps  xmm1,xmm1
- 632:	0f 57 d2             	xorps  xmm2,xmm2
- 635:	0f 57 db             	xorps  xmm3,xmm3
- 638:	0f 57 e4             	xorps  xmm4,xmm4
- 63b:	0f 57 ed             	xorps  xmm5,xmm5
- 63e:	0f 57 f6             	xorps  xmm6,xmm6
- 641:	0f 57 ff             	xorps  xmm7,xmm7
- 644:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 614:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 617:	0f 57 c0             	xorps  xmm0,xmm0
+ 61a:	0f 57 c9             	xorps  xmm1,xmm1
+ 61d:	0f 57 d2             	xorps  xmm2,xmm2
+ 620:	0f 57 db             	xorps  xmm3,xmm3
+ 623:	0f 57 e4             	xorps  xmm4,xmm4
+ 626:	0f 57 ed             	xorps  xmm5,xmm5
+ 629:	0f 57 f6             	xorps  xmm6,xmm6
+ 62c:	0f 57 ff             	xorps  xmm7,xmm7
+ 62f:	0f 57 c0             	xorps  xmm0,xmm0
+ 632:	0f 57 c9             	xorps  xmm1,xmm1
+ 635:	0f 57 d2             	xorps  xmm2,xmm2
+ 638:	0f 57 db             	xorps  xmm3,xmm3
+ 63b:	0f 57 e4             	xorps  xmm4,xmm4
+ 63e:	0f 57 ed             	xorps  xmm5,xmm5
+ 641:	0f 57 f6             	xorps  xmm6,xmm6
+ 644:	0f 57 ff             	xorps  xmm7,xmm7
  647:	0f 57 c0             	xorps  xmm0,xmm0
  64a:	0f 57 c9             	xorps  xmm1,xmm1
  64d:	0f 57 d2             	xorps  xmm2,xmm2
@@ -565,23 +562,23 @@ Disassembly of section .data:
  671:	0f 57 f6             	xorps  xmm6,xmm6
  674:	0f 57 ff             	xorps  xmm7,xmm7
  677:	0f 57 c0             	xorps  xmm0,xmm0
- 67a:	0f 57 c9             	xorps  xmm1,xmm1
- 67d:	0f 57 d2             	xorps  xmm2,xmm2
- 680:	0f 57 db             	xorps  xmm3,xmm3
- 683:	0f 57 e4             	xorps  xmm4,xmm4
- 686:	0f 57 ed             	xorps  xmm5,xmm5
- 689:	0f 57 f6             	xorps  xmm6,xmm6
- 68c:	0f 57 ff             	xorps  xmm7,xmm7
- 68f:	0f 57 c0             	xorps  xmm0,xmm0
- 692:	0f 57 c9             	xorps  xmm1,xmm1
- 695:	0f 57 d2             	xorps  xmm2,xmm2
- 698:	0f 57 db             	xorps  xmm3,xmm3
- 69b:	0f 57 e4             	xorps  xmm4,xmm4
- 69e:	0f 57 ed             	xorps  xmm5,xmm5
- 6a1:	0f 57 f6             	xorps  xmm6,xmm6
- 6a4:	0f 57 ff             	xorps  xmm7,xmm7
- 6a7:	0f 57 c0             	xorps  xmm0,xmm0
- 6aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 67a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 67d:	0f 57 c0             	xorps  xmm0,xmm0
+ 680:	0f 57 c9             	xorps  xmm1,xmm1
+ 683:	0f 57 d2             	xorps  xmm2,xmm2
+ 686:	0f 57 db             	xorps  xmm3,xmm3
+ 689:	0f 57 e4             	xorps  xmm4,xmm4
+ 68c:	0f 57 ed             	xorps  xmm5,xmm5
+ 68f:	0f 57 f6             	xorps  xmm6,xmm6
+ 692:	0f 57 ff             	xorps  xmm7,xmm7
+ 695:	0f 57 c0             	xorps  xmm0,xmm0
+ 698:	0f 57 c9             	xorps  xmm1,xmm1
+ 69b:	0f 57 d2             	xorps  xmm2,xmm2
+ 69e:	0f 57 db             	xorps  xmm3,xmm3
+ 6a1:	0f 57 e4             	xorps  xmm4,xmm4
+ 6a4:	0f 57 ed             	xorps  xmm5,xmm5
+ 6a7:	0f 57 f6             	xorps  xmm6,xmm6
+ 6aa:	0f 57 ff             	xorps  xmm7,xmm7
  6ad:	0f 57 c0             	xorps  xmm0,xmm0
  6b0:	0f 57 c9             	xorps  xmm1,xmm1
  6b3:	0f 57 d2             	xorps  xmm2,xmm2
@@ -599,23 +596,23 @@ Disassembly of section .data:
  6d7:	0f 57 f6             	xorps  xmm6,xmm6
  6da:	0f 57 ff             	xorps  xmm7,xmm7
  6dd:	0f 57 c0             	xorps  xmm0,xmm0
- 6e0:	0f 57 c0             	xorps  xmm0,xmm0
- 6e3:	0f 57 c9             	xorps  xmm1,xmm1
- 6e6:	0f 57 d2             	xorps  xmm2,xmm2
- 6e9:	0f 57 db             	xorps  xmm3,xmm3
- 6ec:	0f 57 e4             	xorps  xmm4,xmm4
- 6ef:	0f 57 ed             	xorps  xmm5,xmm5
- 6f2:	0f 57 f6             	xorps  xmm6,xmm6
- 6f5:	0f 57 ff             	xorps  xmm7,xmm7
- 6f8:	0f 57 c0             	xorps  xmm0,xmm0
- 6fb:	0f 57 c9             	xorps  xmm1,xmm1
- 6fe:	0f 57 d2             	xorps  xmm2,xmm2
- 701:	0f 57 db             	xorps  xmm3,xmm3
- 704:	0f 57 e4             	xorps  xmm4,xmm4
- 707:	0f 57 ed             	xorps  xmm5,xmm5
- 70a:	0f 57 f6             	xorps  xmm6,xmm6
- 70d:	0f 57 ff             	xorps  xmm7,xmm7
- 710:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6e3:	0f 57 c0             	xorps  xmm0,xmm0
+ 6e6:	0f 57 c9             	xorps  xmm1,xmm1
+ 6e9:	0f 57 d2             	xorps  xmm2,xmm2
+ 6ec:	0f 57 db             	xorps  xmm3,xmm3
+ 6ef:	0f 57 e4             	xorps  xmm4,xmm4
+ 6f2:	0f 57 ed             	xorps  xmm5,xmm5
+ 6f5:	0f 57 f6             	xorps  xmm6,xmm6
+ 6f8:	0f 57 ff             	xorps  xmm7,xmm7
+ 6fb:	0f 57 c0             	xorps  xmm0,xmm0
+ 6fe:	0f 57 c9             	xorps  xmm1,xmm1
+ 701:	0f 57 d2             	xorps  xmm2,xmm2
+ 704:	0f 57 db             	xorps  xmm3,xmm3
+ 707:	0f 57 e4             	xorps  xmm4,xmm4
+ 70a:	0f 57 ed             	xorps  xmm5,xmm5
+ 70d:	0f 57 f6             	xorps  xmm6,xmm6
+ 710:	0f 57 ff             	xorps  xmm7,xmm7
  713:	0f 57 c0             	xorps  xmm0,xmm0
  716:	0f 57 c9             	xorps  xmm1,xmm1
  719:	0f 57 d2             	xorps  xmm2,xmm2
@@ -633,23 +630,23 @@ Disassembly of section .data:
  73d:	0f 57 f6             	xorps  xmm6,xmm6
  740:	0f 57 ff             	xorps  xmm7,xmm7
  743:	0f 57 c0             	xorps  xmm0,xmm0
- 746:	0f 57 c9             	xorps  xmm1,xmm1
- 749:	0f 57 d2             	xorps  xmm2,xmm2
- 74c:	0f 57 db             	xorps  xmm3,xmm3
- 74f:	0f 57 e4             	xorps  xmm4,xmm4
- 752:	0f 57 ed             	xorps  xmm5,xmm5
- 755:	0f 57 f6             	xorps  xmm6,xmm6
- 758:	0f 57 ff             	xorps  xmm7,xmm7
- 75b:	0f 57 c0             	xorps  xmm0,xmm0
- 75e:	0f 57 c9             	xorps  xmm1,xmm1
- 761:	0f 57 d2             	xorps  xmm2,xmm2
- 764:	0f 57 db             	xorps  xmm3,xmm3
- 767:	0f 57 e4             	xorps  xmm4,xmm4
- 76a:	0f 57 ed             	xorps  xmm5,xmm5
- 76d:	0f 57 f6             	xorps  xmm6,xmm6
- 770:	0f 57 ff             	xorps  xmm7,xmm7
- 773:	0f 57 c0             	xorps  xmm0,xmm0
- 776:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 746:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 749:	0f 57 c0             	xorps  xmm0,xmm0
+ 74c:	0f 57 c9             	xorps  xmm1,xmm1
+ 74f:	0f 57 d2             	xorps  xmm2,xmm2
+ 752:	0f 57 db             	xorps  xmm3,xmm3
+ 755:	0f 57 e4             	xorps  xmm4,xmm4
+ 758:	0f 57 ed             	xorps  xmm5,xmm5
+ 75b:	0f 57 f6             	xorps  xmm6,xmm6
+ 75e:	0f 57 ff             	xorps  xmm7,xmm7
+ 761:	0f 57 c0             	xorps  xmm0,xmm0
+ 764:	0f 57 c9             	xorps  xmm1,xmm1
+ 767:	0f 57 d2             	xorps  xmm2,xmm2
+ 76a:	0f 57 db             	xorps  xmm3,xmm3
+ 76d:	0f 57 e4             	xorps  xmm4,xmm4
+ 770:	0f 57 ed             	xorps  xmm5,xmm5
+ 773:	0f 57 f6             	xorps  xmm6,xmm6
+ 776:	0f 57 ff             	xorps  xmm7,xmm7
  779:	0f 57 c0             	xorps  xmm0,xmm0
  77c:	0f 57 c9             	xorps  xmm1,xmm1
  77f:	0f 57 d2             	xorps  xmm2,xmm2
@@ -667,23 +664,23 @@ Disassembly of section .data:
  7a3:	0f 57 f6             	xorps  xmm6,xmm6
  7a6:	0f 57 ff             	xorps  xmm7,xmm7
  7a9:	0f 57 c0             	xorps  xmm0,xmm0
- 7ac:	0f 57 c0             	xorps  xmm0,xmm0
- 7af:	0f 57 c9             	xorps  xmm1,xmm1
- 7b2:	0f 57 d2             	xorps  xmm2,xmm2
- 7b5:	0f 57 db             	xorps  xmm3,xmm3
- 7b8:	0f 57 e4             	xorps  xmm4,xmm4
- 7bb:	0f 57 ed             	xorps  xmm5,xmm5
- 7be:	0f 57 f6             	xorps  xmm6,xmm6
- 7c1:	0f 57 ff             	xorps  xmm7,xmm7
- 7c4:	0f 57 c0             	xorps  xmm0,xmm0
- 7c7:	0f 57 c9             	xorps  xmm1,xmm1
- 7ca:	0f 57 d2             	xorps  xmm2,xmm2
- 7cd:	0f 57 db             	xorps  xmm3,xmm3
- 7d0:	0f 57 e4             	xorps  xmm4,xmm4
- 7d3:	0f 57 ed             	xorps  xmm5,xmm5
- 7d6:	0f 57 f6             	xorps  xmm6,xmm6
- 7d9:	0f 57 ff             	xorps  xmm7,xmm7
- 7dc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7af:	0f 57 c0             	xorps  xmm0,xmm0
+ 7b2:	0f 57 c9             	xorps  xmm1,xmm1
+ 7b5:	0f 57 d2             	xorps  xmm2,xmm2
+ 7b8:	0f 57 db             	xorps  xmm3,xmm3
+ 7bb:	0f 57 e4             	xorps  xmm4,xmm4
+ 7be:	0f 57 ed             	xorps  xmm5,xmm5
+ 7c1:	0f 57 f6             	xorps  xmm6,xmm6
+ 7c4:	0f 57 ff             	xorps  xmm7,xmm7
+ 7c7:	0f 57 c0             	xorps  xmm0,xmm0
+ 7ca:	0f 57 c9             	xorps  xmm1,xmm1
+ 7cd:	0f 57 d2             	xorps  xmm2,xmm2
+ 7d0:	0f 57 db             	xorps  xmm3,xmm3
+ 7d3:	0f 57 e4             	xorps  xmm4,xmm4
+ 7d6:	0f 57 ed             	xorps  xmm5,xmm5
+ 7d9:	0f 57 f6             	xorps  xmm6,xmm6
+ 7dc:	0f 57 ff             	xorps  xmm7,xmm7
  7df:	0f 57 c0             	xorps  xmm0,xmm0
  7e2:	0f 57 c9             	xorps  xmm1,xmm1
  7e5:	0f 57 d2             	xorps  xmm2,xmm2
@@ -701,23 +698,23 @@ Disassembly of section .data:
  809:	0f 57 f6             	xorps  xmm6,xmm6
  80c:	0f 57 ff             	xorps  xmm7,xmm7
  80f:	0f 57 c0             	xorps  xmm0,xmm0
- 812:	0f 57 c9             	xorps  xmm1,xmm1
- 815:	0f 57 d2             	xorps  xmm2,xmm2
- 818:	0f 57 db             	xorps  xmm3,xmm3
- 81b:	0f 57 e4             	xorps  xmm4,xmm4
- 81e:	0f 57 ed             	xorps  xmm5,xmm5
- 821:	0f 57 f6             	xorps  xmm6,xmm6
- 824:	0f 57 ff             	xorps  xmm7,xmm7
- 827:	0f 57 c0             	xorps  xmm0,xmm0
- 82a:	0f 57 c9             	xorps  xmm1,xmm1
- 82d:	0f 57 d2             	xorps  xmm2,xmm2
- 830:	0f 57 db             	xorps  xmm3,xmm3
- 833:	0f 57 e4             	xorps  xmm4,xmm4
- 836:	0f 57 ed             	xorps  xmm5,xmm5
- 839:	0f 57 f6             	xorps  xmm6,xmm6
- 83c:	0f 57 ff             	xorps  xmm7,xmm7
- 83f:	0f 57 c0             	xorps  xmm0,xmm0
- 842:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 812:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 815:	0f 57 c0             	xorps  xmm0,xmm0
+ 818:	0f 57 c9             	xorps  xmm1,xmm1
+ 81b:	0f 57 d2             	xorps  xmm2,xmm2
+ 81e:	0f 57 db             	xorps  xmm3,xmm3
+ 821:	0f 57 e4             	xorps  xmm4,xmm4
+ 824:	0f 57 ed             	xorps  xmm5,xmm5
+ 827:	0f 57 f6             	xorps  xmm6,xmm6
+ 82a:	0f 57 ff             	xorps  xmm7,xmm7
+ 82d:	0f 57 c0             	xorps  xmm0,xmm0
+ 830:	0f 57 c9             	xorps  xmm1,xmm1
+ 833:	0f 57 d2             	xorps  xmm2,xmm2
+ 836:	0f 57 db             	xorps  xmm3,xmm3
+ 839:	0f 57 e4             	xorps  xmm4,xmm4
+ 83c:	0f 57 ed             	xorps  xmm5,xmm5
+ 83f:	0f 57 f6             	xorps  xmm6,xmm6
+ 842:	0f 57 ff             	xorps  xmm7,xmm7
  845:	0f 57 c0             	xorps  xmm0,xmm0
  848:	0f 57 c9             	xorps  xmm1,xmm1
  84b:	0f 57 d2             	xorps  xmm2,xmm2
@@ -735,23 +732,23 @@ Disassembly of section .data:
  86f:	0f 57 f6             	xorps  xmm6,xmm6
  872:	0f 57 ff             	xorps  xmm7,xmm7
  875:	0f 57 c0             	xorps  xmm0,xmm0
- 878:	0f 57 c0             	xorps  xmm0,xmm0
- 87b:	0f 57 c9             	xorps  xmm1,xmm1
- 87e:	0f 57 d2             	xorps  xmm2,xmm2
- 881:	0f 57 db             	xorps  xmm3,xmm3
- 884:	0f 57 e4             	xorps  xmm4,xmm4
- 887:	0f 57 ed             	xorps  xmm5,xmm5
- 88a:	0f 57 f6             	xorps  xmm6,xmm6
- 88d:	0f 57 ff             	xorps  xmm7,xmm7
- 890:	0f 57 c0             	xorps  xmm0,xmm0
- 893:	0f 57 c9             	xorps  xmm1,xmm1
- 896:	0f 57 d2             	xorps  xmm2,xmm2
- 899:	0f 57 db             	xorps  xmm3,xmm3
- 89c:	0f 57 e4             	xorps  xmm4,xmm4
- 89f:	0f 57 ed             	xorps  xmm5,xmm5
- 8a2:	0f 57 f6             	xorps  xmm6,xmm6
- 8a5:	0f 57 ff             	xorps  xmm7,xmm7
- 8a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 878:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 87b:	0f 57 c0             	xorps  xmm0,xmm0
+ 87e:	0f 57 c9             	xorps  xmm1,xmm1
+ 881:	0f 57 d2             	xorps  xmm2,xmm2
+ 884:	0f 57 db             	xorps  xmm3,xmm3
+ 887:	0f 57 e4             	xorps  xmm4,xmm4
+ 88a:	0f 57 ed             	xorps  xmm5,xmm5
+ 88d:	0f 57 f6             	xorps  xmm6,xmm6
+ 890:	0f 57 ff             	xorps  xmm7,xmm7
+ 893:	0f 57 c0             	xorps  xmm0,xmm0
+ 896:	0f 57 c9             	xorps  xmm1,xmm1
+ 899:	0f 57 d2             	xorps  xmm2,xmm2
+ 89c:	0f 57 db             	xorps  xmm3,xmm3
+ 89f:	0f 57 e4             	xorps  xmm4,xmm4
+ 8a2:	0f 57 ed             	xorps  xmm5,xmm5
+ 8a5:	0f 57 f6             	xorps  xmm6,xmm6
+ 8a8:	0f 57 ff             	xorps  xmm7,xmm7
  8ab:	0f 57 c0             	xorps  xmm0,xmm0
  8ae:	0f 57 c9             	xorps  xmm1,xmm1
  8b1:	0f 57 d2             	xorps  xmm2,xmm2
@@ -769,23 +766,23 @@ Disassembly of section .data:
  8d5:	0f 57 f6             	xorps  xmm6,xmm6
  8d8:	0f 57 ff             	xorps  xmm7,xmm7
  8db:	0f 57 c0             	xorps  xmm0,xmm0
- 8de:	0f 57 c9             	xorps  xmm1,xmm1
- 8e1:	0f 57 d2             	xorps  xmm2,xmm2
- 8e4:	0f 57 db             	xorps  xmm3,xmm3
- 8e7:	0f 57 e4             	xorps  xmm4,xmm4
- 8ea:	0f 57 ed             	xorps  xmm5,xmm5
- 8ed:	0f 57 f6             	xorps  xmm6,xmm6
- 8f0:	0f 57 ff             	xorps  xmm7,xmm7
- 8f3:	0f 57 c0             	xorps  xmm0,xmm0
- 8f6:	0f 57 c9             	xorps  xmm1,xmm1
- 8f9:	0f 57 d2             	xorps  xmm2,xmm2
- 8fc:	0f 57 db             	xorps  xmm3,xmm3
- 8ff:	0f 57 e4             	xorps  xmm4,xmm4
- 902:	0f 57 ed             	xorps  xmm5,xmm5
- 905:	0f 57 f6             	xorps  xmm6,xmm6
- 908:	0f 57 ff             	xorps  xmm7,xmm7
- 90b:	0f 57 c0             	xorps  xmm0,xmm0
- 90e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8e1:	0f 57 c0             	xorps  xmm0,xmm0
+ 8e4:	0f 57 c9             	xorps  xmm1,xmm1
+ 8e7:	0f 57 d2             	xorps  xmm2,xmm2
+ 8ea:	0f 57 db             	xorps  xmm3,xmm3
+ 8ed:	0f 57 e4             	xorps  xmm4,xmm4
+ 8f0:	0f 57 ed             	xorps  xmm5,xmm5
+ 8f3:	0f 57 f6             	xorps  xmm6,xmm6
+ 8f6:	0f 57 ff             	xorps  xmm7,xmm7
+ 8f9:	0f 57 c0             	xorps  xmm0,xmm0
+ 8fc:	0f 57 c9             	xorps  xmm1,xmm1
+ 8ff:	0f 57 d2             	xorps  xmm2,xmm2
+ 902:	0f 57 db             	xorps  xmm3,xmm3
+ 905:	0f 57 e4             	xorps  xmm4,xmm4
+ 908:	0f 57 ed             	xorps  xmm5,xmm5
+ 90b:	0f 57 f6             	xorps  xmm6,xmm6
+ 90e:	0f 57 ff             	xorps  xmm7,xmm7
  911:	0f 57 c0             	xorps  xmm0,xmm0
  914:	0f 57 c9             	xorps  xmm1,xmm1
  917:	0f 57 d2             	xorps  xmm2,xmm2
@@ -803,23 +800,23 @@ Disassembly of section .data:
  93b:	0f 57 f6             	xorps  xmm6,xmm6
  93e:	0f 57 ff             	xorps  xmm7,xmm7
  941:	0f 57 c0             	xorps  xmm0,xmm0
- 944:	0f 57 c0             	xorps  xmm0,xmm0
- 947:	0f 57 c9             	xorps  xmm1,xmm1
- 94a:	0f 57 d2             	xorps  xmm2,xmm2
- 94d:	0f 57 db             	xorps  xmm3,xmm3
- 950:	0f 57 e4             	xorps  xmm4,xmm4
- 953:	0f 57 ed             	xorps  xmm5,xmm5
- 956:	0f 57 f6             	xorps  xmm6,xmm6
- 959:	0f 57 ff             	xorps  xmm7,xmm7
- 95c:	0f 57 c0             	xorps  xmm0,xmm0
- 95f:	0f 57 c9             	xorps  xmm1,xmm1
- 962:	0f 57 d2             	xorps  xmm2,xmm2
- 965:	0f 57 db             	xorps  xmm3,xmm3
- 968:	0f 57 e4             	xorps  xmm4,xmm4
- 96b:	0f 57 ed             	xorps  xmm5,xmm5
- 96e:	0f 57 f6             	xorps  xmm6,xmm6
- 971:	0f 57 ff             	xorps  xmm7,xmm7
- 974:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 944:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 947:	0f 57 c0             	xorps  xmm0,xmm0
+ 94a:	0f 57 c9             	xorps  xmm1,xmm1
+ 94d:	0f 57 d2             	xorps  xmm2,xmm2
+ 950:	0f 57 db             	xorps  xmm3,xmm3
+ 953:	0f 57 e4             	xorps  xmm4,xmm4
+ 956:	0f 57 ed             	xorps  xmm5,xmm5
+ 959:	0f 57 f6             	xorps  xmm6,xmm6
+ 95c:	0f 57 ff             	xorps  xmm7,xmm7
+ 95f:	0f 57 c0             	xorps  xmm0,xmm0
+ 962:	0f 57 c9             	xorps  xmm1,xmm1
+ 965:	0f 57 d2             	xorps  xmm2,xmm2
+ 968:	0f 57 db             	xorps  xmm3,xmm3
+ 96b:	0f 57 e4             	xorps  xmm4,xmm4
+ 96e:	0f 57 ed             	xorps  xmm5,xmm5
+ 971:	0f 57 f6             	xorps  xmm6,xmm6
+ 974:	0f 57 ff             	xorps  xmm7,xmm7
  977:	0f 57 c0             	xorps  xmm0,xmm0
  97a:	0f 57 c9             	xorps  xmm1,xmm1
  97d:	0f 57 d2             	xorps  xmm2,xmm2
@@ -837,23 +834,23 @@ Disassembly of section .data:
  9a1:	0f 57 f6             	xorps  xmm6,xmm6
  9a4:	0f 57 ff             	xorps  xmm7,xmm7
  9a7:	0f 57 c0             	xorps  xmm0,xmm0
- 9aa:	0f 57 c9             	xorps  xmm1,xmm1
- 9ad:	0f 57 d2             	xorps  xmm2,xmm2
- 9b0:	0f 57 db             	xorps  xmm3,xmm3
- 9b3:	0f 57 e4             	xorps  xmm4,xmm4
- 9b6:	0f 57 ed             	xorps  xmm5,xmm5
- 9b9:	0f 57 f6             	xorps  xmm6,xmm6
- 9bc:	0f 57 ff             	xorps  xmm7,xmm7
- 9bf:	0f 57 c0             	xorps  xmm0,xmm0
- 9c2:	0f 57 c9             	xorps  xmm1,xmm1
- 9c5:	0f 57 d2             	xorps  xmm2,xmm2
- 9c8:	0f 57 db             	xorps  xmm3,xmm3
- 9cb:	0f 57 e4             	xorps  xmm4,xmm4
- 9ce:	0f 57 ed             	xorps  xmm5,xmm5
- 9d1:	0f 57 f6             	xorps  xmm6,xmm6
- 9d4:	0f 57 ff             	xorps  xmm7,xmm7
- 9d7:	0f 57 c0             	xorps  xmm0,xmm0
- 9da:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9ad:	0f 57 c0             	xorps  xmm0,xmm0
+ 9b0:	0f 57 c9             	xorps  xmm1,xmm1
+ 9b3:	0f 57 d2             	xorps  xmm2,xmm2
+ 9b6:	0f 57 db             	xorps  xmm3,xmm3
+ 9b9:	0f 57 e4             	xorps  xmm4,xmm4
+ 9bc:	0f 57 ed             	xorps  xmm5,xmm5
+ 9bf:	0f 57 f6             	xorps  xmm6,xmm6
+ 9c2:	0f 57 ff             	xorps  xmm7,xmm7
+ 9c5:	0f 57 c0             	xorps  xmm0,xmm0
+ 9c8:	0f 57 c9             	xorps  xmm1,xmm1
+ 9cb:	0f 57 d2             	xorps  xmm2,xmm2
+ 9ce:	0f 57 db             	xorps  xmm3,xmm3
+ 9d1:	0f 57 e4             	xorps  xmm4,xmm4
+ 9d4:	0f 57 ed             	xorps  xmm5,xmm5
+ 9d7:	0f 57 f6             	xorps  xmm6,xmm6
+ 9da:	0f 57 ff             	xorps  xmm7,xmm7
  9dd:	0f 57 c0             	xorps  xmm0,xmm0
  9e0:	0f 57 c9             	xorps  xmm1,xmm1
  9e3:	0f 57 d2             	xorps  xmm2,xmm2
@@ -871,23 +868,23 @@ Disassembly of section .data:
  a07:	0f 57 f6             	xorps  xmm6,xmm6
  a0a:	0f 57 ff             	xorps  xmm7,xmm7
  a0d:	0f 57 c0             	xorps  xmm0,xmm0
- a10:	0f 57 c0             	xorps  xmm0,xmm0
- a13:	0f 57 c9             	xorps  xmm1,xmm1
- a16:	0f 57 d2             	xorps  xmm2,xmm2
- a19:	0f 57 db             	xorps  xmm3,xmm3
- a1c:	0f 57 e4             	xorps  xmm4,xmm4
- a1f:	0f 57 ed             	xorps  xmm5,xmm5
- a22:	0f 57 f6             	xorps  xmm6,xmm6
- a25:	0f 57 ff             	xorps  xmm7,xmm7
- a28:	0f 57 c0             	xorps  xmm0,xmm0
- a2b:	0f 57 c9             	xorps  xmm1,xmm1
- a2e:	0f 57 d2             	xorps  xmm2,xmm2
- a31:	0f 57 db             	xorps  xmm3,xmm3
- a34:	0f 57 e4             	xorps  xmm4,xmm4
- a37:	0f 57 ed             	xorps  xmm5,xmm5
- a3a:	0f 57 f6             	xorps  xmm6,xmm6
- a3d:	0f 57 ff             	xorps  xmm7,xmm7
- a40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a10:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a13:	0f 57 c0             	xorps  xmm0,xmm0
+ a16:	0f 57 c9             	xorps  xmm1,xmm1
+ a19:	0f 57 d2             	xorps  xmm2,xmm2
+ a1c:	0f 57 db             	xorps  xmm3,xmm3
+ a1f:	0f 57 e4             	xorps  xmm4,xmm4
+ a22:	0f 57 ed             	xorps  xmm5,xmm5
+ a25:	0f 57 f6             	xorps  xmm6,xmm6
+ a28:	0f 57 ff             	xorps  xmm7,xmm7
+ a2b:	0f 57 c0             	xorps  xmm0,xmm0
+ a2e:	0f 57 c9             	xorps  xmm1,xmm1
+ a31:	0f 57 d2             	xorps  xmm2,xmm2
+ a34:	0f 57 db             	xorps  xmm3,xmm3
+ a37:	0f 57 e4             	xorps  xmm4,xmm4
+ a3a:	0f 57 ed             	xorps  xmm5,xmm5
+ a3d:	0f 57 f6             	xorps  xmm6,xmm6
+ a40:	0f 57 ff             	xorps  xmm7,xmm7
  a43:	0f 57 c0             	xorps  xmm0,xmm0
  a46:	0f 57 c9             	xorps  xmm1,xmm1
  a49:	0f 57 d2             	xorps  xmm2,xmm2
@@ -905,23 +902,23 @@ Disassembly of section .data:
  a6d:	0f 57 f6             	xorps  xmm6,xmm6
  a70:	0f 57 ff             	xorps  xmm7,xmm7
  a73:	0f 57 c0             	xorps  xmm0,xmm0
- a76:	0f 57 c9             	xorps  xmm1,xmm1
- a79:	0f 57 d2             	xorps  xmm2,xmm2
- a7c:	0f 57 db             	xorps  xmm3,xmm3
- a7f:	0f 57 e4             	xorps  xmm4,xmm4
- a82:	0f 57 ed             	xorps  xmm5,xmm5
- a85:	0f 57 f6             	xorps  xmm6,xmm6
- a88:	0f 57 ff             	xorps  xmm7,xmm7
- a8b:	0f 57 c0             	xorps  xmm0,xmm0
- a8e:	0f 57 c9             	xorps  xmm1,xmm1
- a91:	0f 57 d2             	xorps  xmm2,xmm2
- a94:	0f 57 db             	xorps  xmm3,xmm3
- a97:	0f 57 e4             	xorps  xmm4,xmm4
- a9a:	0f 57 ed             	xorps  xmm5,xmm5
- a9d:	0f 57 f6             	xorps  xmm6,xmm6
- aa0:	0f 57 ff             	xorps  xmm7,xmm7
- aa3:	0f 57 c0             	xorps  xmm0,xmm0
- aa6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a76:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a79:	0f 57 c0             	xorps  xmm0,xmm0
+ a7c:	0f 57 c9             	xorps  xmm1,xmm1
+ a7f:	0f 57 d2             	xorps  xmm2,xmm2
+ a82:	0f 57 db             	xorps  xmm3,xmm3
+ a85:	0f 57 e4             	xorps  xmm4,xmm4
+ a88:	0f 57 ed             	xorps  xmm5,xmm5
+ a8b:	0f 57 f6             	xorps  xmm6,xmm6
+ a8e:	0f 57 ff             	xorps  xmm7,xmm7
+ a91:	0f 57 c0             	xorps  xmm0,xmm0
+ a94:	0f 57 c9             	xorps  xmm1,xmm1
+ a97:	0f 57 d2             	xorps  xmm2,xmm2
+ a9a:	0f 57 db             	xorps  xmm3,xmm3
+ a9d:	0f 57 e4             	xorps  xmm4,xmm4
+ aa0:	0f 57 ed             	xorps  xmm5,xmm5
+ aa3:	0f 57 f6             	xorps  xmm6,xmm6
+ aa6:	0f 57 ff             	xorps  xmm7,xmm7
  aa9:	0f 57 c0             	xorps  xmm0,xmm0
  aac:	0f 57 c9             	xorps  xmm1,xmm1
  aaf:	0f 57 d2             	xorps  xmm2,xmm2
@@ -939,23 +936,23 @@ Disassembly of section .data:
  ad3:	0f 57 f6             	xorps  xmm6,xmm6
  ad6:	0f 57 ff             	xorps  xmm7,xmm7
  ad9:	0f 57 c0             	xorps  xmm0,xmm0
- adc:	0f 57 c0             	xorps  xmm0,xmm0
- adf:	0f 57 c9             	xorps  xmm1,xmm1
- ae2:	0f 57 d2             	xorps  xmm2,xmm2
- ae5:	0f 57 db             	xorps  xmm3,xmm3
- ae8:	0f 57 e4             	xorps  xmm4,xmm4
- aeb:	0f 57 ed             	xorps  xmm5,xmm5
- aee:	0f 57 f6             	xorps  xmm6,xmm6
- af1:	0f 57 ff             	xorps  xmm7,xmm7
- af4:	0f 57 c0             	xorps  xmm0,xmm0
- af7:	0f 57 c9             	xorps  xmm1,xmm1
- afa:	0f 57 d2             	xorps  xmm2,xmm2
- afd:	0f 57 db             	xorps  xmm3,xmm3
- b00:	0f 57 e4             	xorps  xmm4,xmm4
- b03:	0f 57 ed             	xorps  xmm5,xmm5
- b06:	0f 57 f6             	xorps  xmm6,xmm6
- b09:	0f 57 ff             	xorps  xmm7,xmm7
- b0c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ adc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ adf:	0f 57 c0             	xorps  xmm0,xmm0
+ ae2:	0f 57 c9             	xorps  xmm1,xmm1
+ ae5:	0f 57 d2             	xorps  xmm2,xmm2
+ ae8:	0f 57 db             	xorps  xmm3,xmm3
+ aeb:	0f 57 e4             	xorps  xmm4,xmm4
+ aee:	0f 57 ed             	xorps  xmm5,xmm5
+ af1:	0f 57 f6             	xorps  xmm6,xmm6
+ af4:	0f 57 ff             	xorps  xmm7,xmm7
+ af7:	0f 57 c0             	xorps  xmm0,xmm0
+ afa:	0f 57 c9             	xorps  xmm1,xmm1
+ afd:	0f 57 d2             	xorps  xmm2,xmm2
+ b00:	0f 57 db             	xorps  xmm3,xmm3
+ b03:	0f 57 e4             	xorps  xmm4,xmm4
+ b06:	0f 57 ed             	xorps  xmm5,xmm5
+ b09:	0f 57 f6             	xorps  xmm6,xmm6
+ b0c:	0f 57 ff             	xorps  xmm7,xmm7
  b0f:	0f 57 c0             	xorps  xmm0,xmm0
  b12:	0f 57 c9             	xorps  xmm1,xmm1
  b15:	0f 57 d2             	xorps  xmm2,xmm2
@@ -973,23 +970,23 @@ Disassembly of section .data:
  b39:	0f 57 f6             	xorps  xmm6,xmm6
  b3c:	0f 57 ff             	xorps  xmm7,xmm7
  b3f:	0f 57 c0             	xorps  xmm0,xmm0
- b42:	0f 57 c9             	xorps  xmm1,xmm1
- b45:	0f 57 d2             	xorps  xmm2,xmm2
- b48:	0f 57 db             	xorps  xmm3,xmm3
- b4b:	0f 57 e4             	xorps  xmm4,xmm4
- b4e:	0f 57 ed             	xorps  xmm5,xmm5
- b51:	0f 57 f6             	xorps  xmm6,xmm6
- b54:	0f 57 ff             	xorps  xmm7,xmm7
- b57:	0f 57 c0             	xorps  xmm0,xmm0
- b5a:	0f 57 c9             	xorps  xmm1,xmm1
- b5d:	0f 57 d2             	xorps  xmm2,xmm2
- b60:	0f 57 db             	xorps  xmm3,xmm3
- b63:	0f 57 e4             	xorps  xmm4,xmm4
- b66:	0f 57 ed             	xorps  xmm5,xmm5
- b69:	0f 57 f6             	xorps  xmm6,xmm6
- b6c:	0f 57 ff             	xorps  xmm7,xmm7
- b6f:	0f 57 c0             	xorps  xmm0,xmm0
- b72:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b42:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b45:	0f 57 c0             	xorps  xmm0,xmm0
+ b48:	0f 57 c9             	xorps  xmm1,xmm1
+ b4b:	0f 57 d2             	xorps  xmm2,xmm2
+ b4e:	0f 57 db             	xorps  xmm3,xmm3
+ b51:	0f 57 e4             	xorps  xmm4,xmm4
+ b54:	0f 57 ed             	xorps  xmm5,xmm5
+ b57:	0f 57 f6             	xorps  xmm6,xmm6
+ b5a:	0f 57 ff             	xorps  xmm7,xmm7
+ b5d:	0f 57 c0             	xorps  xmm0,xmm0
+ b60:	0f 57 c9             	xorps  xmm1,xmm1
+ b63:	0f 57 d2             	xorps  xmm2,xmm2
+ b66:	0f 57 db             	xorps  xmm3,xmm3
+ b69:	0f 57 e4             	xorps  xmm4,xmm4
+ b6c:	0f 57 ed             	xorps  xmm5,xmm5
+ b6f:	0f 57 f6             	xorps  xmm6,xmm6
+ b72:	0f 57 ff             	xorps  xmm7,xmm7
  b75:	0f 57 c0             	xorps  xmm0,xmm0
  b78:	0f 57 c9             	xorps  xmm1,xmm1
  b7b:	0f 57 d2             	xorps  xmm2,xmm2
@@ -1007,23 +1004,23 @@ Disassembly of section .data:
  b9f:	0f 57 f6             	xorps  xmm6,xmm6
  ba2:	0f 57 ff             	xorps  xmm7,xmm7
  ba5:	0f 57 c0             	xorps  xmm0,xmm0
- ba8:	0f 57 c0             	xorps  xmm0,xmm0
- bab:	0f 57 c9             	xorps  xmm1,xmm1
- bae:	0f 57 d2             	xorps  xmm2,xmm2
- bb1:	0f 57 db             	xorps  xmm3,xmm3
- bb4:	0f 57 e4             	xorps  xmm4,xmm4
- bb7:	0f 57 ed             	xorps  xmm5,xmm5
- bba:	0f 57 f6             	xorps  xmm6,xmm6
- bbd:	0f 57 ff             	xorps  xmm7,xmm7
- bc0:	0f 57 c0             	xorps  xmm0,xmm0
- bc3:	0f 57 c9             	xorps  xmm1,xmm1
- bc6:	0f 57 d2             	xorps  xmm2,xmm2
- bc9:	0f 57 db             	xorps  xmm3,xmm3
- bcc:	0f 57 e4             	xorps  xmm4,xmm4
- bcf:	0f 57 ed             	xorps  xmm5,xmm5
- bd2:	0f 57 f6             	xorps  xmm6,xmm6
- bd5:	0f 57 ff             	xorps  xmm7,xmm7
- bd8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ ba8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bab:	0f 57 c0             	xorps  xmm0,xmm0
+ bae:	0f 57 c9             	xorps  xmm1,xmm1
+ bb1:	0f 57 d2             	xorps  xmm2,xmm2
+ bb4:	0f 57 db             	xorps  xmm3,xmm3
+ bb7:	0f 57 e4             	xorps  xmm4,xmm4
+ bba:	0f 57 ed             	xorps  xmm5,xmm5
+ bbd:	0f 57 f6             	xorps  xmm6,xmm6
+ bc0:	0f 57 ff             	xorps  xmm7,xmm7
+ bc3:	0f 57 c0             	xorps  xmm0,xmm0
+ bc6:	0f 57 c9             	xorps  xmm1,xmm1
+ bc9:	0f 57 d2             	xorps  xmm2,xmm2
+ bcc:	0f 57 db             	xorps  xmm3,xmm3
+ bcf:	0f 57 e4             	xorps  xmm4,xmm4
+ bd2:	0f 57 ed             	xorps  xmm5,xmm5
+ bd5:	0f 57 f6             	xorps  xmm6,xmm6
+ bd8:	0f 57 ff             	xorps  xmm7,xmm7
  bdb:	0f 57 c0             	xorps  xmm0,xmm0
  bde:	0f 57 c9             	xorps  xmm1,xmm1
  be1:	0f 57 d2             	xorps  xmm2,xmm2
@@ -1041,23 +1038,23 @@ Disassembly of section .data:
  c05:	0f 57 f6             	xorps  xmm6,xmm6
  c08:	0f 57 ff             	xorps  xmm7,xmm7
  c0b:	0f 57 c0             	xorps  xmm0,xmm0
- c0e:	0f 57 c9             	xorps  xmm1,xmm1
- c11:	0f 57 d2             	xorps  xmm2,xmm2
- c14:	0f 57 db             	xorps  xmm3,xmm3
- c17:	0f 57 e4             	xorps  xmm4,xmm4
- c1a:	0f 57 ed             	xorps  xmm5,xmm5
- c1d:	0f 57 f6             	xorps  xmm6,xmm6
- c20:	0f 57 ff             	xorps  xmm7,xmm7
- c23:	0f 57 c0             	xorps  xmm0,xmm0
- c26:	0f 57 c9             	xorps  xmm1,xmm1
- c29:	0f 57 d2             	xorps  xmm2,xmm2
- c2c:	0f 57 db             	xorps  xmm3,xmm3
- c2f:	0f 57 e4             	xorps  xmm4,xmm4
- c32:	0f 57 ed             	xorps  xmm5,xmm5
- c35:	0f 57 f6             	xorps  xmm6,xmm6
- c38:	0f 57 ff             	xorps  xmm7,xmm7
- c3b:	0f 57 c0             	xorps  xmm0,xmm0
- c3e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c0e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c11:	0f 57 c0             	xorps  xmm0,xmm0
+ c14:	0f 57 c9             	xorps  xmm1,xmm1
+ c17:	0f 57 d2             	xorps  xmm2,xmm2
+ c1a:	0f 57 db             	xorps  xmm3,xmm3
+ c1d:	0f 57 e4             	xorps  xmm4,xmm4
+ c20:	0f 57 ed             	xorps  xmm5,xmm5
+ c23:	0f 57 f6             	xorps  xmm6,xmm6
+ c26:	0f 57 ff             	xorps  xmm7,xmm7
+ c29:	0f 57 c0             	xorps  xmm0,xmm0
+ c2c:	0f 57 c9             	xorps  xmm1,xmm1
+ c2f:	0f 57 d2             	xorps  xmm2,xmm2
+ c32:	0f 57 db             	xorps  xmm3,xmm3
+ c35:	0f 57 e4             	xorps  xmm4,xmm4
+ c38:	0f 57 ed             	xorps  xmm5,xmm5
+ c3b:	0f 57 f6             	xorps  xmm6,xmm6
+ c3e:	0f 57 ff             	xorps  xmm7,xmm7
  c41:	0f 57 c0             	xorps  xmm0,xmm0
  c44:	0f 57 c9             	xorps  xmm1,xmm1
  c47:	0f 57 d2             	xorps  xmm2,xmm2
@@ -1075,23 +1072,23 @@ Disassembly of section .data:
  c6b:	0f 57 f6             	xorps  xmm6,xmm6
  c6e:	0f 57 ff             	xorps  xmm7,xmm7
  c71:	0f 57 c0             	xorps  xmm0,xmm0
- c74:	0f 57 c0             	xorps  xmm0,xmm0
- c77:	0f 57 c9             	xorps  xmm1,xmm1
- c7a:	0f 57 d2             	xorps  xmm2,xmm2
- c7d:	0f 57 db             	xorps  xmm3,xmm3
- c80:	0f 57 e4             	xorps  xmm4,xmm4
- c83:	0f 57 ed             	xorps  xmm5,xmm5
- c86:	0f 57 f6             	xorps  xmm6,xmm6
- c89:	0f 57 ff             	xorps  xmm7,xmm7
- c8c:	0f 57 c0             	xorps  xmm0,xmm0
- c8f:	0f 57 c9             	xorps  xmm1,xmm1
- c92:	0f 57 d2             	xorps  xmm2,xmm2
- c95:	0f 57 db             	xorps  xmm3,xmm3
- c98:	0f 57 e4             	xorps  xmm4,xmm4
- c9b:	0f 57 ed             	xorps  xmm5,xmm5
- c9e:	0f 57 f6             	xorps  xmm6,xmm6
- ca1:	0f 57 ff             	xorps  xmm7,xmm7
- ca4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c74:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c77:	0f 57 c0             	xorps  xmm0,xmm0
+ c7a:	0f 57 c9             	xorps  xmm1,xmm1
+ c7d:	0f 57 d2             	xorps  xmm2,xmm2
+ c80:	0f 57 db             	xorps  xmm3,xmm3
+ c83:	0f 57 e4             	xorps  xmm4,xmm4
+ c86:	0f 57 ed             	xorps  xmm5,xmm5
+ c89:	0f 57 f6             	xorps  xmm6,xmm6
+ c8c:	0f 57 ff             	xorps  xmm7,xmm7
+ c8f:	0f 57 c0             	xorps  xmm0,xmm0
+ c92:	0f 57 c9             	xorps  xmm1,xmm1
+ c95:	0f 57 d2             	xorps  xmm2,xmm2
+ c98:	0f 57 db             	xorps  xmm3,xmm3
+ c9b:	0f 57 e4             	xorps  xmm4,xmm4
+ c9e:	0f 57 ed             	xorps  xmm5,xmm5
+ ca1:	0f 57 f6             	xorps  xmm6,xmm6
+ ca4:	0f 57 ff             	xorps  xmm7,xmm7
  ca7:	0f 57 c0             	xorps  xmm0,xmm0
  caa:	0f 57 c9             	xorps  xmm1,xmm1
  cad:	0f 57 d2             	xorps  xmm2,xmm2
@@ -1109,23 +1106,23 @@ Disassembly of section .data:
  cd1:	0f 57 f6             	xorps  xmm6,xmm6
  cd4:	0f 57 ff             	xorps  xmm7,xmm7
  cd7:	0f 57 c0             	xorps  xmm0,xmm0
- cda:	0f 57 c9             	xorps  xmm1,xmm1
- cdd:	0f 57 d2             	xorps  xmm2,xmm2
- ce0:	0f 57 db             	xorps  xmm3,xmm3
- ce3:	0f 57 e4             	xorps  xmm4,xmm4
- ce6:	0f 57 ed             	xorps  xmm5,xmm5
- ce9:	0f 57 f6             	xorps  xmm6,xmm6
- cec:	0f 57 ff             	xorps  xmm7,xmm7
- cef:	0f 57 c0             	xorps  xmm0,xmm0
- cf2:	0f 57 c9             	xorps  xmm1,xmm1
- cf5:	0f 57 d2             	xorps  xmm2,xmm2
- cf8:	0f 57 db             	xorps  xmm3,xmm3
- cfb:	0f 57 e4             	xorps  xmm4,xmm4
- cfe:	0f 57 ed             	xorps  xmm5,xmm5
- d01:	0f 57 f6             	xorps  xmm6,xmm6
- d04:	0f 57 ff             	xorps  xmm7,xmm7
- d07:	0f 57 c0             	xorps  xmm0,xmm0
- d0a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ cda:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ cdd:	0f 57 c0             	xorps  xmm0,xmm0
+ ce0:	0f 57 c9             	xorps  xmm1,xmm1
+ ce3:	0f 57 d2             	xorps  xmm2,xmm2
+ ce6:	0f 57 db             	xorps  xmm3,xmm3
+ ce9:	0f 57 e4             	xorps  xmm4,xmm4
+ cec:	0f 57 ed             	xorps  xmm5,xmm5
+ cef:	0f 57 f6             	xorps  xmm6,xmm6
+ cf2:	0f 57 ff             	xorps  xmm7,xmm7
+ cf5:	0f 57 c0             	xorps  xmm0,xmm0
+ cf8:	0f 57 c9             	xorps  xmm1,xmm1
+ cfb:	0f 57 d2             	xorps  xmm2,xmm2
+ cfe:	0f 57 db             	xorps  xmm3,xmm3
+ d01:	0f 57 e4             	xorps  xmm4,xmm4
+ d04:	0f 57 ed             	xorps  xmm5,xmm5
+ d07:	0f 57 f6             	xorps  xmm6,xmm6
+ d0a:	0f 57 ff             	xorps  xmm7,xmm7
  d0d:	0f 57 c0             	xorps  xmm0,xmm0
  d10:	0f 57 c9             	xorps  xmm1,xmm1
  d13:	0f 57 d2             	xorps  xmm2,xmm2
@@ -1143,23 +1140,23 @@ Disassembly of section .data:
  d37:	0f 57 f6             	xorps  xmm6,xmm6
  d3a:	0f 57 ff             	xorps  xmm7,xmm7
  d3d:	0f 57 c0             	xorps  xmm0,xmm0
- d40:	0f 57 c0             	xorps  xmm0,xmm0
- d43:	0f 57 c9             	xorps  xmm1,xmm1
- d46:	0f 57 d2             	xorps  xmm2,xmm2
- d49:	0f 57 db             	xorps  xmm3,xmm3
- d4c:	0f 57 e4             	xorps  xmm4,xmm4
- d4f:	0f 57 ed             	xorps  xmm5,xmm5
- d52:	0f 57 f6             	xorps  xmm6,xmm6
- d55:	0f 57 ff             	xorps  xmm7,xmm7
- d58:	0f 57 c0             	xorps  xmm0,xmm0
- d5b:	0f 57 c9             	xorps  xmm1,xmm1
- d5e:	0f 57 d2             	xorps  xmm2,xmm2
- d61:	0f 57 db             	xorps  xmm3,xmm3
- d64:	0f 57 e4             	xorps  xmm4,xmm4
- d67:	0f 57 ed             	xorps  xmm5,xmm5
- d6a:	0f 57 f6             	xorps  xmm6,xmm6
- d6d:	0f 57 ff             	xorps  xmm7,xmm7
- d70:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ d40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ d43:	0f 57 c0             	xorps  xmm0,xmm0
+ d46:	0f 57 c9             	xorps  xmm1,xmm1
+ d49:	0f 57 d2             	xorps  xmm2,xmm2
+ d4c:	0f 57 db             	xorps  xmm3,xmm3
+ d4f:	0f 57 e4             	xorps  xmm4,xmm4
+ d52:	0f 57 ed             	xorps  xmm5,xmm5
+ d55:	0f 57 f6             	xorps  xmm6,xmm6
+ d58:	0f 57 ff             	xorps  xmm7,xmm7
+ d5b:	0f 57 c0             	xorps  xmm0,xmm0
+ d5e:	0f 57 c9             	xorps  xmm1,xmm1
+ d61:	0f 57 d2             	xorps  xmm2,xmm2
+ d64:	0f 57 db             	xorps  xmm3,xmm3
+ d67:	0f 57 e4             	xorps  xmm4,xmm4
+ d6a:	0f 57 ed             	xorps  xmm5,xmm5
+ d6d:	0f 57 f6             	xorps  xmm6,xmm6
+ d70:	0f 57 ff             	xorps  xmm7,xmm7
  d73:	0f 57 c0             	xorps  xmm0,xmm0
  d76:	0f 57 c9             	xorps  xmm1,xmm1
  d79:	0f 57 d2             	xorps  xmm2,xmm2
@@ -1177,23 +1174,23 @@ Disassembly of section .data:
  d9d:	0f 57 f6             	xorps  xmm6,xmm6
  da0:	0f 57 ff             	xorps  xmm7,xmm7
  da3:	0f 57 c0             	xorps  xmm0,xmm0
- da6:	0f 57 c9             	xorps  xmm1,xmm1
- da9:	0f 57 d2             	xorps  xmm2,xmm2
- dac:	0f 57 db             	xorps  xmm3,xmm3
- daf:	0f 57 e4             	xorps  xmm4,xmm4
- db2:	0f 57 ed             	xorps  xmm5,xmm5
- db5:	0f 57 f6             	xorps  xmm6,xmm6
- db8:	0f 57 ff             	xorps  xmm7,xmm7
- dbb:	0f 57 c0             	xorps  xmm0,xmm0
- dbe:	0f 57 c9             	xorps  xmm1,xmm1
- dc1:	0f 57 d2             	xorps  xmm2,xmm2
- dc4:	0f 57 db             	xorps  xmm3,xmm3
- dc7:	0f 57 e4             	xorps  xmm4,xmm4
- dca:	0f 57 ed             	xorps  xmm5,xmm5
- dcd:	0f 57 f6             	xorps  xmm6,xmm6
- dd0:	0f 57 ff             	xorps  xmm7,xmm7
- dd3:	0f 57 c0             	xorps  xmm0,xmm0
- dd6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ da6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ da9:	0f 57 c0             	xorps  xmm0,xmm0
+ dac:	0f 57 c9             	xorps  xmm1,xmm1
+ daf:	0f 57 d2             	xorps  xmm2,xmm2
+ db2:	0f 57 db             	xorps  xmm3,xmm3
+ db5:	0f 57 e4             	xorps  xmm4,xmm4
+ db8:	0f 57 ed             	xorps  xmm5,xmm5
+ dbb:	0f 57 f6             	xorps  xmm6,xmm6
+ dbe:	0f 57 ff             	xorps  xmm7,xmm7
+ dc1:	0f 57 c0             	xorps  xmm0,xmm0
+ dc4:	0f 57 c9             	xorps  xmm1,xmm1
+ dc7:	0f 57 d2             	xorps  xmm2,xmm2
+ dca:	0f 57 db             	xorps  xmm3,xmm3
+ dcd:	0f 57 e4             	xorps  xmm4,xmm4
+ dd0:	0f 57 ed             	xorps  xmm5,xmm5
+ dd3:	0f 57 f6             	xorps  xmm6,xmm6
+ dd6:	0f 57 ff             	xorps  xmm7,xmm7
  dd9:	0f 57 c0             	xorps  xmm0,xmm0
  ddc:	0f 57 c9             	xorps  xmm1,xmm1
  ddf:	0f 57 d2             	xorps  xmm2,xmm2
@@ -1210,7 +1207,7 @@ Disassembly of section .data:
  e00:	0f 57 ed             	xorps  xmm5,xmm5
  e03:	0f 57 f6             	xorps  xmm6,xmm6
  e06:	0f 57 ff             	xorps  xmm7,xmm7
- e09:	0f 57 c0             	xorps  xmm0,xmm0
+ e09:	4d 01 c1             	add    r9,r8
  e0c:	83 e8 01             	sub    eax,0x1
  e0f:	0f 85 6b f2 ff ff    	jne    0x80
  e15:	66 90                	xchg   ax,ax
@@ -1221,12 +1218,12 @@ Disassembly of section .data:
  e1f:	66 90                	xchg   ax,ax
  e21:	66 90                	xchg   ax,ax
  e23:	66 90                	xchg   ax,ax
- e25:	48 83 c4 40          	add    rsp,0x40
- e29:	41 59                	pop    r9
- e2b:	41 58                	pop    r8
- e2d:	5f                   	pop    rdi
- e2e:	5e                   	pop    rsi
- e2f:	5d                   	pop    rbp
- e30:	5b                   	pop    rbx
- e31:	0f 77                	emms   
- e33:	c3                   	ret    
+ e25:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ e2c:	41 59                	pop    r9
+ e2e:	41 58                	pop    r8
+ e30:	5f                   	pop    rdi
+ e31:	5e                   	pop    rsi
+ e32:	5d                   	pop    rbp
+ e33:	5b                   	pop    rbx
+ e34:	0f 77                	emms   
+ e36:	c3                   	ret    

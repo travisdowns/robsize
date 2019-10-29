@@ -19,30 +19,27 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	90                   	nop
-  72:	90                   	nop
-  73:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
   74:	90                   	nop
   75:	90                   	nop
   76:	90                   	nop
@@ -55,23 +52,23 @@ Disassembly of section .data:
   7d:	90                   	nop
   7e:	90                   	nop
   7f:	90                   	nop
-  80:	0f 28 dd             	movaps xmm3,xmm5
-  83:	0f 28 ee             	movaps xmm5,xmm6
-  86:	0f 28 f7             	movaps xmm6,xmm7
-  89:	0f 28 fb             	movaps xmm7,xmm3
-  8c:	0f 28 dd             	movaps xmm3,xmm5
-  8f:	0f 28 ee             	movaps xmm5,xmm6
-  92:	0f 28 f7             	movaps xmm6,xmm7
-  95:	0f 28 fb             	movaps xmm7,xmm3
-  98:	0f 28 dd             	movaps xmm3,xmm5
-  9b:	0f 28 ee             	movaps xmm5,xmm6
-  9e:	0f 28 f7             	movaps xmm6,xmm7
-  a1:	0f 28 fb             	movaps xmm7,xmm3
-  a4:	0f 28 dd             	movaps xmm3,xmm5
-  a7:	0f 28 ee             	movaps xmm5,xmm6
-  aa:	0f 28 f7             	movaps xmm6,xmm7
-  ad:	0f 28 fb             	movaps xmm7,xmm3
-  b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  83:	0f 28 dd             	movaps xmm3,xmm5
+  86:	0f 28 ee             	movaps xmm5,xmm6
+  89:	0f 28 f7             	movaps xmm6,xmm7
+  8c:	0f 28 fb             	movaps xmm7,xmm3
+  8f:	0f 28 dd             	movaps xmm3,xmm5
+  92:	0f 28 ee             	movaps xmm5,xmm6
+  95:	0f 28 f7             	movaps xmm6,xmm7
+  98:	0f 28 fb             	movaps xmm7,xmm3
+  9b:	0f 28 dd             	movaps xmm3,xmm5
+  9e:	0f 28 ee             	movaps xmm5,xmm6
+  a1:	0f 28 f7             	movaps xmm6,xmm7
+  a4:	0f 28 fb             	movaps xmm7,xmm3
+  a7:	0f 28 dd             	movaps xmm3,xmm5
+  aa:	0f 28 ee             	movaps xmm5,xmm6
+  ad:	0f 28 f7             	movaps xmm6,xmm7
+  b0:	0f 28 fb             	movaps xmm7,xmm3
   b3:	0f 28 dd             	movaps xmm3,xmm5
   b6:	0f 28 ee             	movaps xmm5,xmm6
   b9:	0f 28 f7             	movaps xmm6,xmm7
@@ -89,23 +86,23 @@ Disassembly of section .data:
   dd:	0f 28 f7             	movaps xmm6,xmm7
   e0:	0f 28 fb             	movaps xmm7,xmm3
   e3:	0f 28 dd             	movaps xmm3,xmm5
-  e6:	0f 28 ee             	movaps xmm5,xmm6
-  e9:	0f 28 f7             	movaps xmm6,xmm7
-  ec:	0f 28 fb             	movaps xmm7,xmm3
-  ef:	0f 28 dd             	movaps xmm3,xmm5
-  f2:	0f 28 ee             	movaps xmm5,xmm6
-  f5:	0f 28 f7             	movaps xmm6,xmm7
-  f8:	0f 28 fb             	movaps xmm7,xmm3
-  fb:	0f 28 dd             	movaps xmm3,xmm5
-  fe:	0f 28 ee             	movaps xmm5,xmm6
- 101:	0f 28 f7             	movaps xmm6,xmm7
- 104:	0f 28 fb             	movaps xmm7,xmm3
- 107:	0f 28 dd             	movaps xmm3,xmm5
- 10a:	0f 28 ee             	movaps xmm5,xmm6
- 10d:	0f 28 f7             	movaps xmm6,xmm7
- 110:	0f 28 fb             	movaps xmm7,xmm3
- 113:	0f 28 dd             	movaps xmm3,xmm5
- 116:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  e6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  e9:	0f 28 dd             	movaps xmm3,xmm5
+  ec:	0f 28 ee             	movaps xmm5,xmm6
+  ef:	0f 28 f7             	movaps xmm6,xmm7
+  f2:	0f 28 fb             	movaps xmm7,xmm3
+  f5:	0f 28 dd             	movaps xmm3,xmm5
+  f8:	0f 28 ee             	movaps xmm5,xmm6
+  fb:	0f 28 f7             	movaps xmm6,xmm7
+  fe:	0f 28 fb             	movaps xmm7,xmm3
+ 101:	0f 28 dd             	movaps xmm3,xmm5
+ 104:	0f 28 ee             	movaps xmm5,xmm6
+ 107:	0f 28 f7             	movaps xmm6,xmm7
+ 10a:	0f 28 fb             	movaps xmm7,xmm3
+ 10d:	0f 28 dd             	movaps xmm3,xmm5
+ 110:	0f 28 ee             	movaps xmm5,xmm6
+ 113:	0f 28 f7             	movaps xmm6,xmm7
+ 116:	0f 28 fb             	movaps xmm7,xmm3
  119:	0f 28 dd             	movaps xmm3,xmm5
  11c:	0f 28 ee             	movaps xmm5,xmm6
  11f:	0f 28 f7             	movaps xmm6,xmm7
@@ -123,23 +120,23 @@ Disassembly of section .data:
  143:	0f 28 f7             	movaps xmm6,xmm7
  146:	0f 28 fb             	movaps xmm7,xmm3
  149:	0f 28 dd             	movaps xmm3,xmm5
- 14c:	0f 28 dd             	movaps xmm3,xmm5
- 14f:	0f 28 ee             	movaps xmm5,xmm6
- 152:	0f 28 f7             	movaps xmm6,xmm7
- 155:	0f 28 fb             	movaps xmm7,xmm3
- 158:	0f 28 dd             	movaps xmm3,xmm5
- 15b:	0f 28 ee             	movaps xmm5,xmm6
- 15e:	0f 28 f7             	movaps xmm6,xmm7
- 161:	0f 28 fb             	movaps xmm7,xmm3
- 164:	0f 28 dd             	movaps xmm3,xmm5
- 167:	0f 28 ee             	movaps xmm5,xmm6
- 16a:	0f 28 f7             	movaps xmm6,xmm7
- 16d:	0f 28 fb             	movaps xmm7,xmm3
- 170:	0f 28 dd             	movaps xmm3,xmm5
- 173:	0f 28 ee             	movaps xmm5,xmm6
- 176:	0f 28 f7             	movaps xmm6,xmm7
- 179:	0f 28 fb             	movaps xmm7,xmm3
- 17c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 14c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 14f:	0f 28 dd             	movaps xmm3,xmm5
+ 152:	0f 28 ee             	movaps xmm5,xmm6
+ 155:	0f 28 f7             	movaps xmm6,xmm7
+ 158:	0f 28 fb             	movaps xmm7,xmm3
+ 15b:	0f 28 dd             	movaps xmm3,xmm5
+ 15e:	0f 28 ee             	movaps xmm5,xmm6
+ 161:	0f 28 f7             	movaps xmm6,xmm7
+ 164:	0f 28 fb             	movaps xmm7,xmm3
+ 167:	0f 28 dd             	movaps xmm3,xmm5
+ 16a:	0f 28 ee             	movaps xmm5,xmm6
+ 16d:	0f 28 f7             	movaps xmm6,xmm7
+ 170:	0f 28 fb             	movaps xmm7,xmm3
+ 173:	0f 28 dd             	movaps xmm3,xmm5
+ 176:	0f 28 ee             	movaps xmm5,xmm6
+ 179:	0f 28 f7             	movaps xmm6,xmm7
+ 17c:	0f 28 fb             	movaps xmm7,xmm3
  17f:	0f 28 dd             	movaps xmm3,xmm5
  182:	0f 28 ee             	movaps xmm5,xmm6
  185:	0f 28 f7             	movaps xmm6,xmm7
@@ -157,23 +154,23 @@ Disassembly of section .data:
  1a9:	0f 28 f7             	movaps xmm6,xmm7
  1ac:	0f 28 fb             	movaps xmm7,xmm3
  1af:	0f 28 dd             	movaps xmm3,xmm5
- 1b2:	0f 28 ee             	movaps xmm5,xmm6
- 1b5:	0f 28 f7             	movaps xmm6,xmm7
- 1b8:	0f 28 fb             	movaps xmm7,xmm3
- 1bb:	0f 28 dd             	movaps xmm3,xmm5
- 1be:	0f 28 ee             	movaps xmm5,xmm6
- 1c1:	0f 28 f7             	movaps xmm6,xmm7
- 1c4:	0f 28 fb             	movaps xmm7,xmm3
- 1c7:	0f 28 dd             	movaps xmm3,xmm5
- 1ca:	0f 28 ee             	movaps xmm5,xmm6
- 1cd:	0f 28 f7             	movaps xmm6,xmm7
- 1d0:	0f 28 fb             	movaps xmm7,xmm3
- 1d3:	0f 28 dd             	movaps xmm3,xmm5
- 1d6:	0f 28 ee             	movaps xmm5,xmm6
- 1d9:	0f 28 f7             	movaps xmm6,xmm7
- 1dc:	0f 28 fb             	movaps xmm7,xmm3
- 1df:	0f 28 dd             	movaps xmm3,xmm5
- 1e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1b2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1b5:	0f 28 dd             	movaps xmm3,xmm5
+ 1b8:	0f 28 ee             	movaps xmm5,xmm6
+ 1bb:	0f 28 f7             	movaps xmm6,xmm7
+ 1be:	0f 28 fb             	movaps xmm7,xmm3
+ 1c1:	0f 28 dd             	movaps xmm3,xmm5
+ 1c4:	0f 28 ee             	movaps xmm5,xmm6
+ 1c7:	0f 28 f7             	movaps xmm6,xmm7
+ 1ca:	0f 28 fb             	movaps xmm7,xmm3
+ 1cd:	0f 28 dd             	movaps xmm3,xmm5
+ 1d0:	0f 28 ee             	movaps xmm5,xmm6
+ 1d3:	0f 28 f7             	movaps xmm6,xmm7
+ 1d6:	0f 28 fb             	movaps xmm7,xmm3
+ 1d9:	0f 28 dd             	movaps xmm3,xmm5
+ 1dc:	0f 28 ee             	movaps xmm5,xmm6
+ 1df:	0f 28 f7             	movaps xmm6,xmm7
+ 1e2:	0f 28 fb             	movaps xmm7,xmm3
  1e5:	0f 28 dd             	movaps xmm3,xmm5
  1e8:	0f 28 ee             	movaps xmm5,xmm6
  1eb:	0f 28 f7             	movaps xmm6,xmm7
@@ -191,23 +188,23 @@ Disassembly of section .data:
  20f:	0f 28 f7             	movaps xmm6,xmm7
  212:	0f 28 fb             	movaps xmm7,xmm3
  215:	0f 28 dd             	movaps xmm3,xmm5
- 218:	0f 28 dd             	movaps xmm3,xmm5
- 21b:	0f 28 ee             	movaps xmm5,xmm6
- 21e:	0f 28 f7             	movaps xmm6,xmm7
- 221:	0f 28 fb             	movaps xmm7,xmm3
- 224:	0f 28 dd             	movaps xmm3,xmm5
- 227:	0f 28 ee             	movaps xmm5,xmm6
- 22a:	0f 28 f7             	movaps xmm6,xmm7
- 22d:	0f 28 fb             	movaps xmm7,xmm3
- 230:	0f 28 dd             	movaps xmm3,xmm5
- 233:	0f 28 ee             	movaps xmm5,xmm6
- 236:	0f 28 f7             	movaps xmm6,xmm7
- 239:	0f 28 fb             	movaps xmm7,xmm3
- 23c:	0f 28 dd             	movaps xmm3,xmm5
- 23f:	0f 28 ee             	movaps xmm5,xmm6
- 242:	0f 28 f7             	movaps xmm6,xmm7
- 245:	0f 28 fb             	movaps xmm7,xmm3
- 248:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 218:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 21b:	0f 28 dd             	movaps xmm3,xmm5
+ 21e:	0f 28 ee             	movaps xmm5,xmm6
+ 221:	0f 28 f7             	movaps xmm6,xmm7
+ 224:	0f 28 fb             	movaps xmm7,xmm3
+ 227:	0f 28 dd             	movaps xmm3,xmm5
+ 22a:	0f 28 ee             	movaps xmm5,xmm6
+ 22d:	0f 28 f7             	movaps xmm6,xmm7
+ 230:	0f 28 fb             	movaps xmm7,xmm3
+ 233:	0f 28 dd             	movaps xmm3,xmm5
+ 236:	0f 28 ee             	movaps xmm5,xmm6
+ 239:	0f 28 f7             	movaps xmm6,xmm7
+ 23c:	0f 28 fb             	movaps xmm7,xmm3
+ 23f:	0f 28 dd             	movaps xmm3,xmm5
+ 242:	0f 28 ee             	movaps xmm5,xmm6
+ 245:	0f 28 f7             	movaps xmm6,xmm7
+ 248:	0f 28 fb             	movaps xmm7,xmm3
  24b:	0f 28 dd             	movaps xmm3,xmm5
  24e:	0f 28 ee             	movaps xmm5,xmm6
  251:	0f 28 f7             	movaps xmm6,xmm7
@@ -225,23 +222,23 @@ Disassembly of section .data:
  275:	0f 28 f7             	movaps xmm6,xmm7
  278:	0f 28 fb             	movaps xmm7,xmm3
  27b:	0f 28 dd             	movaps xmm3,xmm5
- 27e:	0f 28 ee             	movaps xmm5,xmm6
- 281:	0f 28 f7             	movaps xmm6,xmm7
- 284:	0f 28 fb             	movaps xmm7,xmm3
- 287:	0f 28 dd             	movaps xmm3,xmm5
- 28a:	0f 28 ee             	movaps xmm5,xmm6
- 28d:	0f 28 f7             	movaps xmm6,xmm7
- 290:	0f 28 fb             	movaps xmm7,xmm3
- 293:	0f 28 dd             	movaps xmm3,xmm5
- 296:	0f 28 ee             	movaps xmm5,xmm6
- 299:	0f 28 f7             	movaps xmm6,xmm7
- 29c:	0f 28 fb             	movaps xmm7,xmm3
- 29f:	0f 28 dd             	movaps xmm3,xmm5
- 2a2:	0f 28 ee             	movaps xmm5,xmm6
- 2a5:	0f 28 f7             	movaps xmm6,xmm7
- 2a8:	0f 28 fb             	movaps xmm7,xmm3
- 2ab:	0f 28 dd             	movaps xmm3,xmm5
- 2ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 27e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 281:	0f 28 dd             	movaps xmm3,xmm5
+ 284:	0f 28 ee             	movaps xmm5,xmm6
+ 287:	0f 28 f7             	movaps xmm6,xmm7
+ 28a:	0f 28 fb             	movaps xmm7,xmm3
+ 28d:	0f 28 dd             	movaps xmm3,xmm5
+ 290:	0f 28 ee             	movaps xmm5,xmm6
+ 293:	0f 28 f7             	movaps xmm6,xmm7
+ 296:	0f 28 fb             	movaps xmm7,xmm3
+ 299:	0f 28 dd             	movaps xmm3,xmm5
+ 29c:	0f 28 ee             	movaps xmm5,xmm6
+ 29f:	0f 28 f7             	movaps xmm6,xmm7
+ 2a2:	0f 28 fb             	movaps xmm7,xmm3
+ 2a5:	0f 28 dd             	movaps xmm3,xmm5
+ 2a8:	0f 28 ee             	movaps xmm5,xmm6
+ 2ab:	0f 28 f7             	movaps xmm6,xmm7
+ 2ae:	0f 28 fb             	movaps xmm7,xmm3
  2b1:	0f 28 dd             	movaps xmm3,xmm5
  2b4:	0f 28 ee             	movaps xmm5,xmm6
  2b7:	0f 28 f7             	movaps xmm6,xmm7
@@ -259,23 +256,23 @@ Disassembly of section .data:
  2db:	0f 28 f7             	movaps xmm6,xmm7
  2de:	0f 28 fb             	movaps xmm7,xmm3
  2e1:	0f 28 dd             	movaps xmm3,xmm5
- 2e4:	0f 28 dd             	movaps xmm3,xmm5
- 2e7:	0f 28 ee             	movaps xmm5,xmm6
- 2ea:	0f 28 f7             	movaps xmm6,xmm7
- 2ed:	0f 28 fb             	movaps xmm7,xmm3
- 2f0:	0f 28 dd             	movaps xmm3,xmm5
- 2f3:	0f 28 ee             	movaps xmm5,xmm6
- 2f6:	0f 28 f7             	movaps xmm6,xmm7
- 2f9:	0f 28 fb             	movaps xmm7,xmm3
- 2fc:	0f 28 dd             	movaps xmm3,xmm5
- 2ff:	0f 28 ee             	movaps xmm5,xmm6
- 302:	0f 28 f7             	movaps xmm6,xmm7
- 305:	0f 28 fb             	movaps xmm7,xmm3
- 308:	0f 28 dd             	movaps xmm3,xmm5
- 30b:	0f 28 ee             	movaps xmm5,xmm6
- 30e:	0f 28 f7             	movaps xmm6,xmm7
- 311:	0f 28 fb             	movaps xmm7,xmm3
- 314:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2e4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2e7:	0f 28 dd             	movaps xmm3,xmm5
+ 2ea:	0f 28 ee             	movaps xmm5,xmm6
+ 2ed:	0f 28 f7             	movaps xmm6,xmm7
+ 2f0:	0f 28 fb             	movaps xmm7,xmm3
+ 2f3:	0f 28 dd             	movaps xmm3,xmm5
+ 2f6:	0f 28 ee             	movaps xmm5,xmm6
+ 2f9:	0f 28 f7             	movaps xmm6,xmm7
+ 2fc:	0f 28 fb             	movaps xmm7,xmm3
+ 2ff:	0f 28 dd             	movaps xmm3,xmm5
+ 302:	0f 28 ee             	movaps xmm5,xmm6
+ 305:	0f 28 f7             	movaps xmm6,xmm7
+ 308:	0f 28 fb             	movaps xmm7,xmm3
+ 30b:	0f 28 dd             	movaps xmm3,xmm5
+ 30e:	0f 28 ee             	movaps xmm5,xmm6
+ 311:	0f 28 f7             	movaps xmm6,xmm7
+ 314:	0f 28 fb             	movaps xmm7,xmm3
  317:	0f 28 dd             	movaps xmm3,xmm5
  31a:	0f 28 ee             	movaps xmm5,xmm6
  31d:	0f 28 f7             	movaps xmm6,xmm7
@@ -293,23 +290,23 @@ Disassembly of section .data:
  341:	0f 28 f7             	movaps xmm6,xmm7
  344:	0f 28 fb             	movaps xmm7,xmm3
  347:	0f 28 dd             	movaps xmm3,xmm5
- 34a:	0f 28 ee             	movaps xmm5,xmm6
- 34d:	0f 28 f7             	movaps xmm6,xmm7
- 350:	0f 28 fb             	movaps xmm7,xmm3
- 353:	0f 28 dd             	movaps xmm3,xmm5
- 356:	0f 28 ee             	movaps xmm5,xmm6
- 359:	0f 28 f7             	movaps xmm6,xmm7
- 35c:	0f 28 fb             	movaps xmm7,xmm3
- 35f:	0f 28 dd             	movaps xmm3,xmm5
- 362:	0f 28 ee             	movaps xmm5,xmm6
- 365:	0f 28 f7             	movaps xmm6,xmm7
- 368:	0f 28 fb             	movaps xmm7,xmm3
- 36b:	0f 28 dd             	movaps xmm3,xmm5
- 36e:	0f 28 ee             	movaps xmm5,xmm6
- 371:	0f 28 f7             	movaps xmm6,xmm7
- 374:	0f 28 fb             	movaps xmm7,xmm3
- 377:	0f 28 dd             	movaps xmm3,xmm5
- 37a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34d:	0f 28 dd             	movaps xmm3,xmm5
+ 350:	0f 28 ee             	movaps xmm5,xmm6
+ 353:	0f 28 f7             	movaps xmm6,xmm7
+ 356:	0f 28 fb             	movaps xmm7,xmm3
+ 359:	0f 28 dd             	movaps xmm3,xmm5
+ 35c:	0f 28 ee             	movaps xmm5,xmm6
+ 35f:	0f 28 f7             	movaps xmm6,xmm7
+ 362:	0f 28 fb             	movaps xmm7,xmm3
+ 365:	0f 28 dd             	movaps xmm3,xmm5
+ 368:	0f 28 ee             	movaps xmm5,xmm6
+ 36b:	0f 28 f7             	movaps xmm6,xmm7
+ 36e:	0f 28 fb             	movaps xmm7,xmm3
+ 371:	0f 28 dd             	movaps xmm3,xmm5
+ 374:	0f 28 ee             	movaps xmm5,xmm6
+ 377:	0f 28 f7             	movaps xmm6,xmm7
+ 37a:	0f 28 fb             	movaps xmm7,xmm3
  37d:	0f 28 dd             	movaps xmm3,xmm5
  380:	0f 28 ee             	movaps xmm5,xmm6
  383:	0f 28 f7             	movaps xmm6,xmm7
@@ -327,23 +324,23 @@ Disassembly of section .data:
  3a7:	0f 28 f7             	movaps xmm6,xmm7
  3aa:	0f 28 fb             	movaps xmm7,xmm3
  3ad:	0f 28 dd             	movaps xmm3,xmm5
- 3b0:	0f 28 dd             	movaps xmm3,xmm5
- 3b3:	0f 28 ee             	movaps xmm5,xmm6
- 3b6:	0f 28 f7             	movaps xmm6,xmm7
- 3b9:	0f 28 fb             	movaps xmm7,xmm3
- 3bc:	0f 28 dd             	movaps xmm3,xmm5
- 3bf:	0f 28 ee             	movaps xmm5,xmm6
- 3c2:	0f 28 f7             	movaps xmm6,xmm7
- 3c5:	0f 28 fb             	movaps xmm7,xmm3
- 3c8:	0f 28 dd             	movaps xmm3,xmm5
- 3cb:	0f 28 ee             	movaps xmm5,xmm6
- 3ce:	0f 28 f7             	movaps xmm6,xmm7
- 3d1:	0f 28 fb             	movaps xmm7,xmm3
- 3d4:	0f 28 dd             	movaps xmm3,xmm5
- 3d7:	0f 28 ee             	movaps xmm5,xmm6
- 3da:	0f 28 f7             	movaps xmm6,xmm7
- 3dd:	0f 28 fb             	movaps xmm7,xmm3
- 3e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3b3:	0f 28 dd             	movaps xmm3,xmm5
+ 3b6:	0f 28 ee             	movaps xmm5,xmm6
+ 3b9:	0f 28 f7             	movaps xmm6,xmm7
+ 3bc:	0f 28 fb             	movaps xmm7,xmm3
+ 3bf:	0f 28 dd             	movaps xmm3,xmm5
+ 3c2:	0f 28 ee             	movaps xmm5,xmm6
+ 3c5:	0f 28 f7             	movaps xmm6,xmm7
+ 3c8:	0f 28 fb             	movaps xmm7,xmm3
+ 3cb:	0f 28 dd             	movaps xmm3,xmm5
+ 3ce:	0f 28 ee             	movaps xmm5,xmm6
+ 3d1:	0f 28 f7             	movaps xmm6,xmm7
+ 3d4:	0f 28 fb             	movaps xmm7,xmm3
+ 3d7:	0f 28 dd             	movaps xmm3,xmm5
+ 3da:	0f 28 ee             	movaps xmm5,xmm6
+ 3dd:	0f 28 f7             	movaps xmm6,xmm7
+ 3e0:	0f 28 fb             	movaps xmm7,xmm3
  3e3:	0f 28 dd             	movaps xmm3,xmm5
  3e6:	0f 28 ee             	movaps xmm5,xmm6
  3e9:	0f 28 f7             	movaps xmm6,xmm7
@@ -361,23 +358,23 @@ Disassembly of section .data:
  40d:	0f 28 f7             	movaps xmm6,xmm7
  410:	0f 28 fb             	movaps xmm7,xmm3
  413:	0f 28 dd             	movaps xmm3,xmm5
- 416:	0f 28 ee             	movaps xmm5,xmm6
- 419:	0f 28 f7             	movaps xmm6,xmm7
- 41c:	0f 28 fb             	movaps xmm7,xmm3
- 41f:	0f 28 dd             	movaps xmm3,xmm5
- 422:	0f 28 ee             	movaps xmm5,xmm6
- 425:	0f 28 f7             	movaps xmm6,xmm7
- 428:	0f 28 fb             	movaps xmm7,xmm3
- 42b:	0f 28 dd             	movaps xmm3,xmm5
- 42e:	0f 28 ee             	movaps xmm5,xmm6
- 431:	0f 28 f7             	movaps xmm6,xmm7
- 434:	0f 28 fb             	movaps xmm7,xmm3
- 437:	0f 28 dd             	movaps xmm3,xmm5
- 43a:	0f 28 ee             	movaps xmm5,xmm6
- 43d:	0f 28 f7             	movaps xmm6,xmm7
- 440:	0f 28 fb             	movaps xmm7,xmm3
- 443:	0f 28 dd             	movaps xmm3,xmm5
- 446:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 416:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 419:	0f 28 dd             	movaps xmm3,xmm5
+ 41c:	0f 28 ee             	movaps xmm5,xmm6
+ 41f:	0f 28 f7             	movaps xmm6,xmm7
+ 422:	0f 28 fb             	movaps xmm7,xmm3
+ 425:	0f 28 dd             	movaps xmm3,xmm5
+ 428:	0f 28 ee             	movaps xmm5,xmm6
+ 42b:	0f 28 f7             	movaps xmm6,xmm7
+ 42e:	0f 28 fb             	movaps xmm7,xmm3
+ 431:	0f 28 dd             	movaps xmm3,xmm5
+ 434:	0f 28 ee             	movaps xmm5,xmm6
+ 437:	0f 28 f7             	movaps xmm6,xmm7
+ 43a:	0f 28 fb             	movaps xmm7,xmm3
+ 43d:	0f 28 dd             	movaps xmm3,xmm5
+ 440:	0f 28 ee             	movaps xmm5,xmm6
+ 443:	0f 28 f7             	movaps xmm6,xmm7
+ 446:	0f 28 fb             	movaps xmm7,xmm3
  449:	0f 28 dd             	movaps xmm3,xmm5
  44c:	0f 28 ee             	movaps xmm5,xmm6
  44f:	0f 28 f7             	movaps xmm6,xmm7
@@ -395,23 +392,23 @@ Disassembly of section .data:
  473:	0f 28 f7             	movaps xmm6,xmm7
  476:	0f 28 fb             	movaps xmm7,xmm3
  479:	0f 28 dd             	movaps xmm3,xmm5
- 47c:	0f 28 dd             	movaps xmm3,xmm5
- 47f:	0f 28 ee             	movaps xmm5,xmm6
- 482:	0f 28 f7             	movaps xmm6,xmm7
- 485:	0f 28 fb             	movaps xmm7,xmm3
- 488:	0f 28 dd             	movaps xmm3,xmm5
- 48b:	0f 28 ee             	movaps xmm5,xmm6
- 48e:	0f 28 f7             	movaps xmm6,xmm7
- 491:	0f 28 fb             	movaps xmm7,xmm3
- 494:	0f 28 dd             	movaps xmm3,xmm5
- 497:	0f 28 ee             	movaps xmm5,xmm6
- 49a:	0f 28 f7             	movaps xmm6,xmm7
- 49d:	0f 28 fb             	movaps xmm7,xmm3
- 4a0:	0f 28 dd             	movaps xmm3,xmm5
- 4a3:	0f 28 ee             	movaps xmm5,xmm6
- 4a6:	0f 28 f7             	movaps xmm6,xmm7
- 4a9:	0f 28 fb             	movaps xmm7,xmm3
- 4ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 47c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 47f:	0f 28 dd             	movaps xmm3,xmm5
+ 482:	0f 28 ee             	movaps xmm5,xmm6
+ 485:	0f 28 f7             	movaps xmm6,xmm7
+ 488:	0f 28 fb             	movaps xmm7,xmm3
+ 48b:	0f 28 dd             	movaps xmm3,xmm5
+ 48e:	0f 28 ee             	movaps xmm5,xmm6
+ 491:	0f 28 f7             	movaps xmm6,xmm7
+ 494:	0f 28 fb             	movaps xmm7,xmm3
+ 497:	0f 28 dd             	movaps xmm3,xmm5
+ 49a:	0f 28 ee             	movaps xmm5,xmm6
+ 49d:	0f 28 f7             	movaps xmm6,xmm7
+ 4a0:	0f 28 fb             	movaps xmm7,xmm3
+ 4a3:	0f 28 dd             	movaps xmm3,xmm5
+ 4a6:	0f 28 ee             	movaps xmm5,xmm6
+ 4a9:	0f 28 f7             	movaps xmm6,xmm7
+ 4ac:	0f 28 fb             	movaps xmm7,xmm3
  4af:	0f 28 dd             	movaps xmm3,xmm5
  4b2:	0f 28 ee             	movaps xmm5,xmm6
  4b5:	0f 28 f7             	movaps xmm6,xmm7
@@ -429,23 +426,23 @@ Disassembly of section .data:
  4d9:	0f 28 f7             	movaps xmm6,xmm7
  4dc:	0f 28 fb             	movaps xmm7,xmm3
  4df:	0f 28 dd             	movaps xmm3,xmm5
- 4e2:	0f 28 ee             	movaps xmm5,xmm6
- 4e5:	0f 28 f7             	movaps xmm6,xmm7
- 4e8:	0f 28 fb             	movaps xmm7,xmm3
- 4eb:	0f 28 dd             	movaps xmm3,xmm5
- 4ee:	0f 28 ee             	movaps xmm5,xmm6
- 4f1:	0f 28 f7             	movaps xmm6,xmm7
- 4f4:	0f 28 fb             	movaps xmm7,xmm3
- 4f7:	0f 28 dd             	movaps xmm3,xmm5
- 4fa:	0f 28 ee             	movaps xmm5,xmm6
- 4fd:	0f 28 f7             	movaps xmm6,xmm7
- 500:	0f 28 fb             	movaps xmm7,xmm3
- 503:	0f 28 dd             	movaps xmm3,xmm5
- 506:	0f 28 ee             	movaps xmm5,xmm6
- 509:	0f 28 f7             	movaps xmm6,xmm7
- 50c:	0f 28 fb             	movaps xmm7,xmm3
- 50f:	0f 28 dd             	movaps xmm3,xmm5
- 512:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4e5:	0f 28 dd             	movaps xmm3,xmm5
+ 4e8:	0f 28 ee             	movaps xmm5,xmm6
+ 4eb:	0f 28 f7             	movaps xmm6,xmm7
+ 4ee:	0f 28 fb             	movaps xmm7,xmm3
+ 4f1:	0f 28 dd             	movaps xmm3,xmm5
+ 4f4:	0f 28 ee             	movaps xmm5,xmm6
+ 4f7:	0f 28 f7             	movaps xmm6,xmm7
+ 4fa:	0f 28 fb             	movaps xmm7,xmm3
+ 4fd:	0f 28 dd             	movaps xmm3,xmm5
+ 500:	0f 28 ee             	movaps xmm5,xmm6
+ 503:	0f 28 f7             	movaps xmm6,xmm7
+ 506:	0f 28 fb             	movaps xmm7,xmm3
+ 509:	0f 28 dd             	movaps xmm3,xmm5
+ 50c:	0f 28 ee             	movaps xmm5,xmm6
+ 50f:	0f 28 f7             	movaps xmm6,xmm7
+ 512:	0f 28 fb             	movaps xmm7,xmm3
  515:	0f 28 dd             	movaps xmm3,xmm5
  518:	0f 28 ee             	movaps xmm5,xmm6
  51b:	0f 28 f7             	movaps xmm6,xmm7
@@ -463,23 +460,23 @@ Disassembly of section .data:
  53f:	0f 28 f7             	movaps xmm6,xmm7
  542:	0f 28 fb             	movaps xmm7,xmm3
  545:	0f 28 dd             	movaps xmm3,xmm5
- 548:	0f 28 dd             	movaps xmm3,xmm5
- 54b:	0f 28 ee             	movaps xmm5,xmm6
- 54e:	0f 28 f7             	movaps xmm6,xmm7
- 551:	0f 28 fb             	movaps xmm7,xmm3
- 554:	0f 28 dd             	movaps xmm3,xmm5
- 557:	0f 28 ee             	movaps xmm5,xmm6
- 55a:	0f 28 f7             	movaps xmm6,xmm7
- 55d:	0f 28 fb             	movaps xmm7,xmm3
- 560:	0f 28 dd             	movaps xmm3,xmm5
- 563:	0f 28 ee             	movaps xmm5,xmm6
- 566:	0f 28 f7             	movaps xmm6,xmm7
- 569:	0f 28 fb             	movaps xmm7,xmm3
- 56c:	0f 28 dd             	movaps xmm3,xmm5
- 56f:	0f 28 ee             	movaps xmm5,xmm6
- 572:	0f 28 f7             	movaps xmm6,xmm7
- 575:	0f 28 fb             	movaps xmm7,xmm3
- 578:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 548:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 54b:	0f 28 dd             	movaps xmm3,xmm5
+ 54e:	0f 28 ee             	movaps xmm5,xmm6
+ 551:	0f 28 f7             	movaps xmm6,xmm7
+ 554:	0f 28 fb             	movaps xmm7,xmm3
+ 557:	0f 28 dd             	movaps xmm3,xmm5
+ 55a:	0f 28 ee             	movaps xmm5,xmm6
+ 55d:	0f 28 f7             	movaps xmm6,xmm7
+ 560:	0f 28 fb             	movaps xmm7,xmm3
+ 563:	0f 28 dd             	movaps xmm3,xmm5
+ 566:	0f 28 ee             	movaps xmm5,xmm6
+ 569:	0f 28 f7             	movaps xmm6,xmm7
+ 56c:	0f 28 fb             	movaps xmm7,xmm3
+ 56f:	0f 28 dd             	movaps xmm3,xmm5
+ 572:	0f 28 ee             	movaps xmm5,xmm6
+ 575:	0f 28 f7             	movaps xmm6,xmm7
+ 578:	0f 28 fb             	movaps xmm7,xmm3
  57b:	0f 28 dd             	movaps xmm3,xmm5
  57e:	0f 28 ee             	movaps xmm5,xmm6
  581:	0f 28 f7             	movaps xmm6,xmm7
@@ -497,23 +494,23 @@ Disassembly of section .data:
  5a5:	0f 28 f7             	movaps xmm6,xmm7
  5a8:	0f 28 fb             	movaps xmm7,xmm3
  5ab:	0f 28 dd             	movaps xmm3,xmm5
- 5ae:	0f 28 ee             	movaps xmm5,xmm6
- 5b1:	0f 28 f7             	movaps xmm6,xmm7
- 5b4:	0f 28 fb             	movaps xmm7,xmm3
- 5b7:	0f 28 dd             	movaps xmm3,xmm5
- 5ba:	0f 28 ee             	movaps xmm5,xmm6
- 5bd:	0f 28 f7             	movaps xmm6,xmm7
- 5c0:	0f 28 fb             	movaps xmm7,xmm3
- 5c3:	0f 28 dd             	movaps xmm3,xmm5
- 5c6:	0f 28 ee             	movaps xmm5,xmm6
- 5c9:	0f 28 f7             	movaps xmm6,xmm7
- 5cc:	0f 28 fb             	movaps xmm7,xmm3
- 5cf:	0f 28 dd             	movaps xmm3,xmm5
- 5d2:	0f 28 ee             	movaps xmm5,xmm6
- 5d5:	0f 28 f7             	movaps xmm6,xmm7
- 5d8:	0f 28 fb             	movaps xmm7,xmm3
- 5db:	0f 28 dd             	movaps xmm3,xmm5
- 5de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5b1:	0f 28 dd             	movaps xmm3,xmm5
+ 5b4:	0f 28 ee             	movaps xmm5,xmm6
+ 5b7:	0f 28 f7             	movaps xmm6,xmm7
+ 5ba:	0f 28 fb             	movaps xmm7,xmm3
+ 5bd:	0f 28 dd             	movaps xmm3,xmm5
+ 5c0:	0f 28 ee             	movaps xmm5,xmm6
+ 5c3:	0f 28 f7             	movaps xmm6,xmm7
+ 5c6:	0f 28 fb             	movaps xmm7,xmm3
+ 5c9:	0f 28 dd             	movaps xmm3,xmm5
+ 5cc:	0f 28 ee             	movaps xmm5,xmm6
+ 5cf:	0f 28 f7             	movaps xmm6,xmm7
+ 5d2:	0f 28 fb             	movaps xmm7,xmm3
+ 5d5:	0f 28 dd             	movaps xmm3,xmm5
+ 5d8:	0f 28 ee             	movaps xmm5,xmm6
+ 5db:	0f 28 f7             	movaps xmm6,xmm7
+ 5de:	0f 28 fb             	movaps xmm7,xmm3
  5e1:	0f 28 dd             	movaps xmm3,xmm5
  5e4:	0f 28 ee             	movaps xmm5,xmm6
  5e7:	0f 28 f7             	movaps xmm6,xmm7
@@ -531,23 +528,23 @@ Disassembly of section .data:
  60b:	0f 28 f7             	movaps xmm6,xmm7
  60e:	0f 28 fb             	movaps xmm7,xmm3
  611:	0f 28 dd             	movaps xmm3,xmm5
- 614:	0f 28 dd             	movaps xmm3,xmm5
- 617:	0f 28 ee             	movaps xmm5,xmm6
- 61a:	0f 28 f7             	movaps xmm6,xmm7
- 61d:	0f 28 fb             	movaps xmm7,xmm3
- 620:	0f 28 dd             	movaps xmm3,xmm5
- 623:	0f 28 ee             	movaps xmm5,xmm6
- 626:	0f 28 f7             	movaps xmm6,xmm7
- 629:	0f 28 fb             	movaps xmm7,xmm3
- 62c:	0f 28 dd             	movaps xmm3,xmm5
- 62f:	0f 28 ee             	movaps xmm5,xmm6
- 632:	0f 28 f7             	movaps xmm6,xmm7
- 635:	0f 28 fb             	movaps xmm7,xmm3
- 638:	0f 28 dd             	movaps xmm3,xmm5
- 63b:	0f 28 ee             	movaps xmm5,xmm6
- 63e:	0f 28 f7             	movaps xmm6,xmm7
- 641:	0f 28 fb             	movaps xmm7,xmm3
- 644:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 614:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 617:	0f 28 dd             	movaps xmm3,xmm5
+ 61a:	0f 28 ee             	movaps xmm5,xmm6
+ 61d:	0f 28 f7             	movaps xmm6,xmm7
+ 620:	0f 28 fb             	movaps xmm7,xmm3
+ 623:	0f 28 dd             	movaps xmm3,xmm5
+ 626:	0f 28 ee             	movaps xmm5,xmm6
+ 629:	0f 28 f7             	movaps xmm6,xmm7
+ 62c:	0f 28 fb             	movaps xmm7,xmm3
+ 62f:	0f 28 dd             	movaps xmm3,xmm5
+ 632:	0f 28 ee             	movaps xmm5,xmm6
+ 635:	0f 28 f7             	movaps xmm6,xmm7
+ 638:	0f 28 fb             	movaps xmm7,xmm3
+ 63b:	0f 28 dd             	movaps xmm3,xmm5
+ 63e:	0f 28 ee             	movaps xmm5,xmm6
+ 641:	0f 28 f7             	movaps xmm6,xmm7
+ 644:	0f 28 fb             	movaps xmm7,xmm3
  647:	0f 28 dd             	movaps xmm3,xmm5
  64a:	0f 28 ee             	movaps xmm5,xmm6
  64d:	0f 28 f7             	movaps xmm6,xmm7
@@ -565,23 +562,23 @@ Disassembly of section .data:
  671:	0f 28 f7             	movaps xmm6,xmm7
  674:	0f 28 fb             	movaps xmm7,xmm3
  677:	0f 28 dd             	movaps xmm3,xmm5
- 67a:	0f 28 ee             	movaps xmm5,xmm6
- 67d:	0f 28 f7             	movaps xmm6,xmm7
- 680:	0f 28 fb             	movaps xmm7,xmm3
- 683:	0f 28 dd             	movaps xmm3,xmm5
- 686:	0f 28 ee             	movaps xmm5,xmm6
- 689:	0f 28 f7             	movaps xmm6,xmm7
- 68c:	0f 28 fb             	movaps xmm7,xmm3
- 68f:	0f 28 dd             	movaps xmm3,xmm5
- 692:	0f 28 ee             	movaps xmm5,xmm6
- 695:	0f 28 f7             	movaps xmm6,xmm7
- 698:	0f 28 fb             	movaps xmm7,xmm3
- 69b:	0f 28 dd             	movaps xmm3,xmm5
- 69e:	0f 28 ee             	movaps xmm5,xmm6
- 6a1:	0f 28 f7             	movaps xmm6,xmm7
- 6a4:	0f 28 fb             	movaps xmm7,xmm3
- 6a7:	0f 28 dd             	movaps xmm3,xmm5
- 6aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 67a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 67d:	0f 28 dd             	movaps xmm3,xmm5
+ 680:	0f 28 ee             	movaps xmm5,xmm6
+ 683:	0f 28 f7             	movaps xmm6,xmm7
+ 686:	0f 28 fb             	movaps xmm7,xmm3
+ 689:	0f 28 dd             	movaps xmm3,xmm5
+ 68c:	0f 28 ee             	movaps xmm5,xmm6
+ 68f:	0f 28 f7             	movaps xmm6,xmm7
+ 692:	0f 28 fb             	movaps xmm7,xmm3
+ 695:	0f 28 dd             	movaps xmm3,xmm5
+ 698:	0f 28 ee             	movaps xmm5,xmm6
+ 69b:	0f 28 f7             	movaps xmm6,xmm7
+ 69e:	0f 28 fb             	movaps xmm7,xmm3
+ 6a1:	0f 28 dd             	movaps xmm3,xmm5
+ 6a4:	0f 28 ee             	movaps xmm5,xmm6
+ 6a7:	0f 28 f7             	movaps xmm6,xmm7
+ 6aa:	0f 28 fb             	movaps xmm7,xmm3
  6ad:	0f 28 dd             	movaps xmm3,xmm5
  6b0:	0f 28 ee             	movaps xmm5,xmm6
  6b3:	0f 28 f7             	movaps xmm6,xmm7
@@ -599,23 +596,23 @@ Disassembly of section .data:
  6d7:	0f 28 f7             	movaps xmm6,xmm7
  6da:	0f 28 fb             	movaps xmm7,xmm3
  6dd:	0f 28 dd             	movaps xmm3,xmm5
- 6e0:	0f 28 dd             	movaps xmm3,xmm5
- 6e3:	0f 28 ee             	movaps xmm5,xmm6
- 6e6:	0f 28 f7             	movaps xmm6,xmm7
- 6e9:	0f 28 fb             	movaps xmm7,xmm3
- 6ec:	0f 28 dd             	movaps xmm3,xmm5
- 6ef:	0f 28 ee             	movaps xmm5,xmm6
- 6f2:	0f 28 f7             	movaps xmm6,xmm7
- 6f5:	0f 28 fb             	movaps xmm7,xmm3
- 6f8:	0f 28 dd             	movaps xmm3,xmm5
- 6fb:	0f 28 ee             	movaps xmm5,xmm6
- 6fe:	0f 28 f7             	movaps xmm6,xmm7
- 701:	0f 28 fb             	movaps xmm7,xmm3
- 704:	0f 28 dd             	movaps xmm3,xmm5
- 707:	0f 28 ee             	movaps xmm5,xmm6
- 70a:	0f 28 f7             	movaps xmm6,xmm7
- 70d:	0f 28 fb             	movaps xmm7,xmm3
- 710:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6e3:	0f 28 dd             	movaps xmm3,xmm5
+ 6e6:	0f 28 ee             	movaps xmm5,xmm6
+ 6e9:	0f 28 f7             	movaps xmm6,xmm7
+ 6ec:	0f 28 fb             	movaps xmm7,xmm3
+ 6ef:	0f 28 dd             	movaps xmm3,xmm5
+ 6f2:	0f 28 ee             	movaps xmm5,xmm6
+ 6f5:	0f 28 f7             	movaps xmm6,xmm7
+ 6f8:	0f 28 fb             	movaps xmm7,xmm3
+ 6fb:	0f 28 dd             	movaps xmm3,xmm5
+ 6fe:	0f 28 ee             	movaps xmm5,xmm6
+ 701:	0f 28 f7             	movaps xmm6,xmm7
+ 704:	0f 28 fb             	movaps xmm7,xmm3
+ 707:	0f 28 dd             	movaps xmm3,xmm5
+ 70a:	0f 28 ee             	movaps xmm5,xmm6
+ 70d:	0f 28 f7             	movaps xmm6,xmm7
+ 710:	0f 28 fb             	movaps xmm7,xmm3
  713:	0f 28 dd             	movaps xmm3,xmm5
  716:	0f 28 ee             	movaps xmm5,xmm6
  719:	0f 28 f7             	movaps xmm6,xmm7
@@ -633,23 +630,23 @@ Disassembly of section .data:
  73d:	0f 28 f7             	movaps xmm6,xmm7
  740:	0f 28 fb             	movaps xmm7,xmm3
  743:	0f 28 dd             	movaps xmm3,xmm5
- 746:	0f 28 ee             	movaps xmm5,xmm6
- 749:	0f 28 f7             	movaps xmm6,xmm7
- 74c:	0f 28 fb             	movaps xmm7,xmm3
- 74f:	0f 28 dd             	movaps xmm3,xmm5
- 752:	0f 28 ee             	movaps xmm5,xmm6
- 755:	0f 28 f7             	movaps xmm6,xmm7
- 758:	0f 28 fb             	movaps xmm7,xmm3
- 75b:	0f 28 dd             	movaps xmm3,xmm5
- 75e:	0f 28 ee             	movaps xmm5,xmm6
- 761:	0f 28 f7             	movaps xmm6,xmm7
- 764:	0f 28 fb             	movaps xmm7,xmm3
- 767:	0f 28 dd             	movaps xmm3,xmm5
- 76a:	0f 28 ee             	movaps xmm5,xmm6
- 76d:	0f 28 f7             	movaps xmm6,xmm7
- 770:	0f 28 fb             	movaps xmm7,xmm3
- 773:	0f 28 dd             	movaps xmm3,xmm5
- 776:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 746:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 749:	0f 28 dd             	movaps xmm3,xmm5
+ 74c:	0f 28 ee             	movaps xmm5,xmm6
+ 74f:	0f 28 f7             	movaps xmm6,xmm7
+ 752:	0f 28 fb             	movaps xmm7,xmm3
+ 755:	0f 28 dd             	movaps xmm3,xmm5
+ 758:	0f 28 ee             	movaps xmm5,xmm6
+ 75b:	0f 28 f7             	movaps xmm6,xmm7
+ 75e:	0f 28 fb             	movaps xmm7,xmm3
+ 761:	0f 28 dd             	movaps xmm3,xmm5
+ 764:	0f 28 ee             	movaps xmm5,xmm6
+ 767:	0f 28 f7             	movaps xmm6,xmm7
+ 76a:	0f 28 fb             	movaps xmm7,xmm3
+ 76d:	0f 28 dd             	movaps xmm3,xmm5
+ 770:	0f 28 ee             	movaps xmm5,xmm6
+ 773:	0f 28 f7             	movaps xmm6,xmm7
+ 776:	0f 28 fb             	movaps xmm7,xmm3
  779:	0f 28 dd             	movaps xmm3,xmm5
  77c:	0f 28 ee             	movaps xmm5,xmm6
  77f:	0f 28 f7             	movaps xmm6,xmm7
@@ -667,23 +664,23 @@ Disassembly of section .data:
  7a3:	0f 28 f7             	movaps xmm6,xmm7
  7a6:	0f 28 fb             	movaps xmm7,xmm3
  7a9:	0f 28 dd             	movaps xmm3,xmm5
- 7ac:	0f 28 dd             	movaps xmm3,xmm5
- 7af:	0f 28 ee             	movaps xmm5,xmm6
- 7b2:	0f 28 f7             	movaps xmm6,xmm7
- 7b5:	0f 28 fb             	movaps xmm7,xmm3
- 7b8:	0f 28 dd             	movaps xmm3,xmm5
- 7bb:	0f 28 ee             	movaps xmm5,xmm6
- 7be:	0f 28 f7             	movaps xmm6,xmm7
- 7c1:	0f 28 fb             	movaps xmm7,xmm3
- 7c4:	0f 28 dd             	movaps xmm3,xmm5
- 7c7:	0f 28 ee             	movaps xmm5,xmm6
- 7ca:	0f 28 f7             	movaps xmm6,xmm7
- 7cd:	0f 28 fb             	movaps xmm7,xmm3
- 7d0:	0f 28 dd             	movaps xmm3,xmm5
- 7d3:	0f 28 ee             	movaps xmm5,xmm6
- 7d6:	0f 28 f7             	movaps xmm6,xmm7
- 7d9:	0f 28 fb             	movaps xmm7,xmm3
- 7dc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7af:	0f 28 dd             	movaps xmm3,xmm5
+ 7b2:	0f 28 ee             	movaps xmm5,xmm6
+ 7b5:	0f 28 f7             	movaps xmm6,xmm7
+ 7b8:	0f 28 fb             	movaps xmm7,xmm3
+ 7bb:	0f 28 dd             	movaps xmm3,xmm5
+ 7be:	0f 28 ee             	movaps xmm5,xmm6
+ 7c1:	0f 28 f7             	movaps xmm6,xmm7
+ 7c4:	0f 28 fb             	movaps xmm7,xmm3
+ 7c7:	0f 28 dd             	movaps xmm3,xmm5
+ 7ca:	0f 28 ee             	movaps xmm5,xmm6
+ 7cd:	0f 28 f7             	movaps xmm6,xmm7
+ 7d0:	0f 28 fb             	movaps xmm7,xmm3
+ 7d3:	0f 28 dd             	movaps xmm3,xmm5
+ 7d6:	0f 28 ee             	movaps xmm5,xmm6
+ 7d9:	0f 28 f7             	movaps xmm6,xmm7
+ 7dc:	0f 28 fb             	movaps xmm7,xmm3
  7df:	0f 28 dd             	movaps xmm3,xmm5
  7e2:	0f 28 ee             	movaps xmm5,xmm6
  7e5:	0f 28 f7             	movaps xmm6,xmm7
@@ -701,23 +698,23 @@ Disassembly of section .data:
  809:	0f 28 f7             	movaps xmm6,xmm7
  80c:	0f 28 fb             	movaps xmm7,xmm3
  80f:	0f 28 dd             	movaps xmm3,xmm5
- 812:	0f 28 ee             	movaps xmm5,xmm6
- 815:	0f 28 f7             	movaps xmm6,xmm7
- 818:	0f 28 fb             	movaps xmm7,xmm3
- 81b:	0f 28 dd             	movaps xmm3,xmm5
- 81e:	0f 28 ee             	movaps xmm5,xmm6
- 821:	0f 28 f7             	movaps xmm6,xmm7
- 824:	0f 28 fb             	movaps xmm7,xmm3
- 827:	0f 28 dd             	movaps xmm3,xmm5
- 82a:	0f 28 ee             	movaps xmm5,xmm6
- 82d:	0f 28 f7             	movaps xmm6,xmm7
- 830:	0f 28 fb             	movaps xmm7,xmm3
- 833:	0f 28 dd             	movaps xmm3,xmm5
- 836:	0f 28 ee             	movaps xmm5,xmm6
- 839:	0f 28 f7             	movaps xmm6,xmm7
- 83c:	0f 28 fb             	movaps xmm7,xmm3
- 83f:	0f 28 dd             	movaps xmm3,xmm5
- 842:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 812:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 815:	0f 28 dd             	movaps xmm3,xmm5
+ 818:	0f 28 ee             	movaps xmm5,xmm6
+ 81b:	0f 28 f7             	movaps xmm6,xmm7
+ 81e:	0f 28 fb             	movaps xmm7,xmm3
+ 821:	0f 28 dd             	movaps xmm3,xmm5
+ 824:	0f 28 ee             	movaps xmm5,xmm6
+ 827:	0f 28 f7             	movaps xmm6,xmm7
+ 82a:	0f 28 fb             	movaps xmm7,xmm3
+ 82d:	0f 28 dd             	movaps xmm3,xmm5
+ 830:	0f 28 ee             	movaps xmm5,xmm6
+ 833:	0f 28 f7             	movaps xmm6,xmm7
+ 836:	0f 28 fb             	movaps xmm7,xmm3
+ 839:	0f 28 dd             	movaps xmm3,xmm5
+ 83c:	0f 28 ee             	movaps xmm5,xmm6
+ 83f:	0f 28 f7             	movaps xmm6,xmm7
+ 842:	0f 28 fb             	movaps xmm7,xmm3
  845:	0f 28 dd             	movaps xmm3,xmm5
  848:	0f 28 ee             	movaps xmm5,xmm6
  84b:	0f 28 f7             	movaps xmm6,xmm7
@@ -735,23 +732,23 @@ Disassembly of section .data:
  86f:	0f 28 f7             	movaps xmm6,xmm7
  872:	0f 28 fb             	movaps xmm7,xmm3
  875:	0f 28 dd             	movaps xmm3,xmm5
- 878:	0f 28 dd             	movaps xmm3,xmm5
- 87b:	0f 28 ee             	movaps xmm5,xmm6
- 87e:	0f 28 f7             	movaps xmm6,xmm7
- 881:	0f 28 fb             	movaps xmm7,xmm3
- 884:	0f 28 dd             	movaps xmm3,xmm5
- 887:	0f 28 ee             	movaps xmm5,xmm6
- 88a:	0f 28 f7             	movaps xmm6,xmm7
- 88d:	0f 28 fb             	movaps xmm7,xmm3
- 890:	0f 28 dd             	movaps xmm3,xmm5
- 893:	0f 28 ee             	movaps xmm5,xmm6
- 896:	0f 28 f7             	movaps xmm6,xmm7
- 899:	0f 28 fb             	movaps xmm7,xmm3
- 89c:	0f 28 dd             	movaps xmm3,xmm5
- 89f:	0f 28 ee             	movaps xmm5,xmm6
- 8a2:	0f 28 f7             	movaps xmm6,xmm7
- 8a5:	0f 28 fb             	movaps xmm7,xmm3
- 8a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 878:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 87b:	0f 28 dd             	movaps xmm3,xmm5
+ 87e:	0f 28 ee             	movaps xmm5,xmm6
+ 881:	0f 28 f7             	movaps xmm6,xmm7
+ 884:	0f 28 fb             	movaps xmm7,xmm3
+ 887:	0f 28 dd             	movaps xmm3,xmm5
+ 88a:	0f 28 ee             	movaps xmm5,xmm6
+ 88d:	0f 28 f7             	movaps xmm6,xmm7
+ 890:	0f 28 fb             	movaps xmm7,xmm3
+ 893:	0f 28 dd             	movaps xmm3,xmm5
+ 896:	0f 28 ee             	movaps xmm5,xmm6
+ 899:	0f 28 f7             	movaps xmm6,xmm7
+ 89c:	0f 28 fb             	movaps xmm7,xmm3
+ 89f:	0f 28 dd             	movaps xmm3,xmm5
+ 8a2:	0f 28 ee             	movaps xmm5,xmm6
+ 8a5:	0f 28 f7             	movaps xmm6,xmm7
+ 8a8:	0f 28 fb             	movaps xmm7,xmm3
  8ab:	0f 28 dd             	movaps xmm3,xmm5
  8ae:	0f 28 ee             	movaps xmm5,xmm6
  8b1:	0f 28 f7             	movaps xmm6,xmm7
@@ -769,23 +766,23 @@ Disassembly of section .data:
  8d5:	0f 28 f7             	movaps xmm6,xmm7
  8d8:	0f 28 fb             	movaps xmm7,xmm3
  8db:	0f 28 dd             	movaps xmm3,xmm5
- 8de:	0f 28 ee             	movaps xmm5,xmm6
- 8e1:	0f 28 f7             	movaps xmm6,xmm7
- 8e4:	0f 28 fb             	movaps xmm7,xmm3
- 8e7:	0f 28 dd             	movaps xmm3,xmm5
- 8ea:	0f 28 ee             	movaps xmm5,xmm6
- 8ed:	0f 28 f7             	movaps xmm6,xmm7
- 8f0:	0f 28 fb             	movaps xmm7,xmm3
- 8f3:	0f 28 dd             	movaps xmm3,xmm5
- 8f6:	0f 28 ee             	movaps xmm5,xmm6
- 8f9:	0f 28 f7             	movaps xmm6,xmm7
- 8fc:	0f 28 fb             	movaps xmm7,xmm3
- 8ff:	0f 28 dd             	movaps xmm3,xmm5
- 902:	0f 28 ee             	movaps xmm5,xmm6
- 905:	0f 28 f7             	movaps xmm6,xmm7
- 908:	0f 28 fb             	movaps xmm7,xmm3
- 90b:	0f 28 dd             	movaps xmm3,xmm5
- 90e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8e1:	0f 28 dd             	movaps xmm3,xmm5
+ 8e4:	0f 28 ee             	movaps xmm5,xmm6
+ 8e7:	0f 28 f7             	movaps xmm6,xmm7
+ 8ea:	0f 28 fb             	movaps xmm7,xmm3
+ 8ed:	0f 28 dd             	movaps xmm3,xmm5
+ 8f0:	0f 28 ee             	movaps xmm5,xmm6
+ 8f3:	0f 28 f7             	movaps xmm6,xmm7
+ 8f6:	0f 28 fb             	movaps xmm7,xmm3
+ 8f9:	0f 28 dd             	movaps xmm3,xmm5
+ 8fc:	0f 28 ee             	movaps xmm5,xmm6
+ 8ff:	0f 28 f7             	movaps xmm6,xmm7
+ 902:	0f 28 fb             	movaps xmm7,xmm3
+ 905:	0f 28 dd             	movaps xmm3,xmm5
+ 908:	0f 28 ee             	movaps xmm5,xmm6
+ 90b:	0f 28 f7             	movaps xmm6,xmm7
+ 90e:	0f 28 fb             	movaps xmm7,xmm3
  911:	0f 28 dd             	movaps xmm3,xmm5
  914:	0f 28 ee             	movaps xmm5,xmm6
  917:	0f 28 f7             	movaps xmm6,xmm7
@@ -803,23 +800,23 @@ Disassembly of section .data:
  93b:	0f 28 f7             	movaps xmm6,xmm7
  93e:	0f 28 fb             	movaps xmm7,xmm3
  941:	0f 28 dd             	movaps xmm3,xmm5
- 944:	0f 28 dd             	movaps xmm3,xmm5
- 947:	0f 28 ee             	movaps xmm5,xmm6
- 94a:	0f 28 f7             	movaps xmm6,xmm7
- 94d:	0f 28 fb             	movaps xmm7,xmm3
- 950:	0f 28 dd             	movaps xmm3,xmm5
- 953:	0f 28 ee             	movaps xmm5,xmm6
- 956:	0f 28 f7             	movaps xmm6,xmm7
- 959:	0f 28 fb             	movaps xmm7,xmm3
- 95c:	0f 28 dd             	movaps xmm3,xmm5
- 95f:	0f 28 ee             	movaps xmm5,xmm6
- 962:	0f 28 f7             	movaps xmm6,xmm7
- 965:	0f 28 fb             	movaps xmm7,xmm3
- 968:	0f 28 dd             	movaps xmm3,xmm5
- 96b:	0f 28 ee             	movaps xmm5,xmm6
- 96e:	0f 28 f7             	movaps xmm6,xmm7
- 971:	0f 28 fb             	movaps xmm7,xmm3
- 974:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 944:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 947:	0f 28 dd             	movaps xmm3,xmm5
+ 94a:	0f 28 ee             	movaps xmm5,xmm6
+ 94d:	0f 28 f7             	movaps xmm6,xmm7
+ 950:	0f 28 fb             	movaps xmm7,xmm3
+ 953:	0f 28 dd             	movaps xmm3,xmm5
+ 956:	0f 28 ee             	movaps xmm5,xmm6
+ 959:	0f 28 f7             	movaps xmm6,xmm7
+ 95c:	0f 28 fb             	movaps xmm7,xmm3
+ 95f:	0f 28 dd             	movaps xmm3,xmm5
+ 962:	0f 28 ee             	movaps xmm5,xmm6
+ 965:	0f 28 f7             	movaps xmm6,xmm7
+ 968:	0f 28 fb             	movaps xmm7,xmm3
+ 96b:	0f 28 dd             	movaps xmm3,xmm5
+ 96e:	0f 28 ee             	movaps xmm5,xmm6
+ 971:	0f 28 f7             	movaps xmm6,xmm7
+ 974:	0f 28 fb             	movaps xmm7,xmm3
  977:	0f 28 dd             	movaps xmm3,xmm5
  97a:	0f 28 ee             	movaps xmm5,xmm6
  97d:	0f 28 f7             	movaps xmm6,xmm7
@@ -837,23 +834,23 @@ Disassembly of section .data:
  9a1:	0f 28 f7             	movaps xmm6,xmm7
  9a4:	0f 28 fb             	movaps xmm7,xmm3
  9a7:	0f 28 dd             	movaps xmm3,xmm5
- 9aa:	0f 28 ee             	movaps xmm5,xmm6
- 9ad:	0f 28 f7             	movaps xmm6,xmm7
- 9b0:	0f 28 fb             	movaps xmm7,xmm3
- 9b3:	0f 28 dd             	movaps xmm3,xmm5
- 9b6:	0f 28 ee             	movaps xmm5,xmm6
- 9b9:	0f 28 f7             	movaps xmm6,xmm7
- 9bc:	0f 28 fb             	movaps xmm7,xmm3
- 9bf:	0f 28 dd             	movaps xmm3,xmm5
- 9c2:	0f 28 ee             	movaps xmm5,xmm6
- 9c5:	0f 28 f7             	movaps xmm6,xmm7
- 9c8:	0f 28 fb             	movaps xmm7,xmm3
- 9cb:	0f 28 dd             	movaps xmm3,xmm5
- 9ce:	0f 28 ee             	movaps xmm5,xmm6
- 9d1:	0f 28 f7             	movaps xmm6,xmm7
- 9d4:	0f 28 fb             	movaps xmm7,xmm3
- 9d7:	0f 28 dd             	movaps xmm3,xmm5
- 9da:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9ad:	0f 28 dd             	movaps xmm3,xmm5
+ 9b0:	0f 28 ee             	movaps xmm5,xmm6
+ 9b3:	0f 28 f7             	movaps xmm6,xmm7
+ 9b6:	0f 28 fb             	movaps xmm7,xmm3
+ 9b9:	0f 28 dd             	movaps xmm3,xmm5
+ 9bc:	0f 28 ee             	movaps xmm5,xmm6
+ 9bf:	0f 28 f7             	movaps xmm6,xmm7
+ 9c2:	0f 28 fb             	movaps xmm7,xmm3
+ 9c5:	0f 28 dd             	movaps xmm3,xmm5
+ 9c8:	0f 28 ee             	movaps xmm5,xmm6
+ 9cb:	0f 28 f7             	movaps xmm6,xmm7
+ 9ce:	0f 28 fb             	movaps xmm7,xmm3
+ 9d1:	0f 28 dd             	movaps xmm3,xmm5
+ 9d4:	0f 28 ee             	movaps xmm5,xmm6
+ 9d7:	0f 28 f7             	movaps xmm6,xmm7
+ 9da:	0f 28 fb             	movaps xmm7,xmm3
  9dd:	0f 28 dd             	movaps xmm3,xmm5
  9e0:	0f 28 ee             	movaps xmm5,xmm6
  9e3:	0f 28 f7             	movaps xmm6,xmm7
@@ -871,23 +868,23 @@ Disassembly of section .data:
  a07:	0f 28 f7             	movaps xmm6,xmm7
  a0a:	0f 28 fb             	movaps xmm7,xmm3
  a0d:	0f 28 dd             	movaps xmm3,xmm5
- a10:	0f 28 dd             	movaps xmm3,xmm5
- a13:	0f 28 ee             	movaps xmm5,xmm6
- a16:	0f 28 f7             	movaps xmm6,xmm7
- a19:	0f 28 fb             	movaps xmm7,xmm3
- a1c:	0f 28 dd             	movaps xmm3,xmm5
- a1f:	0f 28 ee             	movaps xmm5,xmm6
- a22:	0f 28 f7             	movaps xmm6,xmm7
- a25:	0f 28 fb             	movaps xmm7,xmm3
- a28:	0f 28 dd             	movaps xmm3,xmm5
- a2b:	0f 28 ee             	movaps xmm5,xmm6
- a2e:	0f 28 f7             	movaps xmm6,xmm7
- a31:	0f 28 fb             	movaps xmm7,xmm3
- a34:	0f 28 dd             	movaps xmm3,xmm5
- a37:	0f 28 ee             	movaps xmm5,xmm6
- a3a:	0f 28 f7             	movaps xmm6,xmm7
- a3d:	0f 28 fb             	movaps xmm7,xmm3
- a40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a10:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a13:	0f 28 dd             	movaps xmm3,xmm5
+ a16:	0f 28 ee             	movaps xmm5,xmm6
+ a19:	0f 28 f7             	movaps xmm6,xmm7
+ a1c:	0f 28 fb             	movaps xmm7,xmm3
+ a1f:	0f 28 dd             	movaps xmm3,xmm5
+ a22:	0f 28 ee             	movaps xmm5,xmm6
+ a25:	0f 28 f7             	movaps xmm6,xmm7
+ a28:	0f 28 fb             	movaps xmm7,xmm3
+ a2b:	0f 28 dd             	movaps xmm3,xmm5
+ a2e:	0f 28 ee             	movaps xmm5,xmm6
+ a31:	0f 28 f7             	movaps xmm6,xmm7
+ a34:	0f 28 fb             	movaps xmm7,xmm3
+ a37:	0f 28 dd             	movaps xmm3,xmm5
+ a3a:	0f 28 ee             	movaps xmm5,xmm6
+ a3d:	0f 28 f7             	movaps xmm6,xmm7
+ a40:	0f 28 fb             	movaps xmm7,xmm3
  a43:	0f 28 dd             	movaps xmm3,xmm5
  a46:	0f 28 ee             	movaps xmm5,xmm6
  a49:	0f 28 f7             	movaps xmm6,xmm7
@@ -905,23 +902,23 @@ Disassembly of section .data:
  a6d:	0f 28 f7             	movaps xmm6,xmm7
  a70:	0f 28 fb             	movaps xmm7,xmm3
  a73:	0f 28 dd             	movaps xmm3,xmm5
- a76:	0f 28 ee             	movaps xmm5,xmm6
- a79:	0f 28 f7             	movaps xmm6,xmm7
- a7c:	0f 28 fb             	movaps xmm7,xmm3
- a7f:	0f 28 dd             	movaps xmm3,xmm5
- a82:	0f 28 ee             	movaps xmm5,xmm6
- a85:	0f 28 f7             	movaps xmm6,xmm7
- a88:	0f 28 fb             	movaps xmm7,xmm3
- a8b:	0f 28 dd             	movaps xmm3,xmm5
- a8e:	0f 28 ee             	movaps xmm5,xmm6
- a91:	0f 28 f7             	movaps xmm6,xmm7
- a94:	0f 28 fb             	movaps xmm7,xmm3
- a97:	0f 28 dd             	movaps xmm3,xmm5
- a9a:	0f 28 ee             	movaps xmm5,xmm6
- a9d:	0f 28 f7             	movaps xmm6,xmm7
- aa0:	0f 28 fb             	movaps xmm7,xmm3
- aa3:	0f 28 dd             	movaps xmm3,xmm5
- aa6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a76:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a79:	0f 28 dd             	movaps xmm3,xmm5
+ a7c:	0f 28 ee             	movaps xmm5,xmm6
+ a7f:	0f 28 f7             	movaps xmm6,xmm7
+ a82:	0f 28 fb             	movaps xmm7,xmm3
+ a85:	0f 28 dd             	movaps xmm3,xmm5
+ a88:	0f 28 ee             	movaps xmm5,xmm6
+ a8b:	0f 28 f7             	movaps xmm6,xmm7
+ a8e:	0f 28 fb             	movaps xmm7,xmm3
+ a91:	0f 28 dd             	movaps xmm3,xmm5
+ a94:	0f 28 ee             	movaps xmm5,xmm6
+ a97:	0f 28 f7             	movaps xmm6,xmm7
+ a9a:	0f 28 fb             	movaps xmm7,xmm3
+ a9d:	0f 28 dd             	movaps xmm3,xmm5
+ aa0:	0f 28 ee             	movaps xmm5,xmm6
+ aa3:	0f 28 f7             	movaps xmm6,xmm7
+ aa6:	0f 28 fb             	movaps xmm7,xmm3
  aa9:	0f 28 dd             	movaps xmm3,xmm5
  aac:	0f 28 ee             	movaps xmm5,xmm6
  aaf:	0f 28 f7             	movaps xmm6,xmm7
@@ -939,23 +936,23 @@ Disassembly of section .data:
  ad3:	0f 28 f7             	movaps xmm6,xmm7
  ad6:	0f 28 fb             	movaps xmm7,xmm3
  ad9:	0f 28 dd             	movaps xmm3,xmm5
- adc:	0f 28 dd             	movaps xmm3,xmm5
- adf:	0f 28 ee             	movaps xmm5,xmm6
- ae2:	0f 28 f7             	movaps xmm6,xmm7
- ae5:	0f 28 fb             	movaps xmm7,xmm3
- ae8:	0f 28 dd             	movaps xmm3,xmm5
- aeb:	0f 28 ee             	movaps xmm5,xmm6
- aee:	0f 28 f7             	movaps xmm6,xmm7
- af1:	0f 28 fb             	movaps xmm7,xmm3
- af4:	0f 28 dd             	movaps xmm3,xmm5
- af7:	0f 28 ee             	movaps xmm5,xmm6
- afa:	0f 28 f7             	movaps xmm6,xmm7
- afd:	0f 28 fb             	movaps xmm7,xmm3
- b00:	0f 28 dd             	movaps xmm3,xmm5
- b03:	0f 28 ee             	movaps xmm5,xmm6
- b06:	0f 28 f7             	movaps xmm6,xmm7
- b09:	0f 28 fb             	movaps xmm7,xmm3
- b0c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ adc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ adf:	0f 28 dd             	movaps xmm3,xmm5
+ ae2:	0f 28 ee             	movaps xmm5,xmm6
+ ae5:	0f 28 f7             	movaps xmm6,xmm7
+ ae8:	0f 28 fb             	movaps xmm7,xmm3
+ aeb:	0f 28 dd             	movaps xmm3,xmm5
+ aee:	0f 28 ee             	movaps xmm5,xmm6
+ af1:	0f 28 f7             	movaps xmm6,xmm7
+ af4:	0f 28 fb             	movaps xmm7,xmm3
+ af7:	0f 28 dd             	movaps xmm3,xmm5
+ afa:	0f 28 ee             	movaps xmm5,xmm6
+ afd:	0f 28 f7             	movaps xmm6,xmm7
+ b00:	0f 28 fb             	movaps xmm7,xmm3
+ b03:	0f 28 dd             	movaps xmm3,xmm5
+ b06:	0f 28 ee             	movaps xmm5,xmm6
+ b09:	0f 28 f7             	movaps xmm6,xmm7
+ b0c:	0f 28 fb             	movaps xmm7,xmm3
  b0f:	0f 28 dd             	movaps xmm3,xmm5
  b12:	0f 28 ee             	movaps xmm5,xmm6
  b15:	0f 28 f7             	movaps xmm6,xmm7
@@ -973,23 +970,23 @@ Disassembly of section .data:
  b39:	0f 28 f7             	movaps xmm6,xmm7
  b3c:	0f 28 fb             	movaps xmm7,xmm3
  b3f:	0f 28 dd             	movaps xmm3,xmm5
- b42:	0f 28 ee             	movaps xmm5,xmm6
- b45:	0f 28 f7             	movaps xmm6,xmm7
- b48:	0f 28 fb             	movaps xmm7,xmm3
- b4b:	0f 28 dd             	movaps xmm3,xmm5
- b4e:	0f 28 ee             	movaps xmm5,xmm6
- b51:	0f 28 f7             	movaps xmm6,xmm7
- b54:	0f 28 fb             	movaps xmm7,xmm3
- b57:	0f 28 dd             	movaps xmm3,xmm5
- b5a:	0f 28 ee             	movaps xmm5,xmm6
- b5d:	0f 28 f7             	movaps xmm6,xmm7
- b60:	0f 28 fb             	movaps xmm7,xmm3
- b63:	0f 28 dd             	movaps xmm3,xmm5
- b66:	0f 28 ee             	movaps xmm5,xmm6
- b69:	0f 28 f7             	movaps xmm6,xmm7
- b6c:	0f 28 fb             	movaps xmm7,xmm3
- b6f:	0f 28 dd             	movaps xmm3,xmm5
- b72:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b42:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b45:	0f 28 dd             	movaps xmm3,xmm5
+ b48:	0f 28 ee             	movaps xmm5,xmm6
+ b4b:	0f 28 f7             	movaps xmm6,xmm7
+ b4e:	0f 28 fb             	movaps xmm7,xmm3
+ b51:	0f 28 dd             	movaps xmm3,xmm5
+ b54:	0f 28 ee             	movaps xmm5,xmm6
+ b57:	0f 28 f7             	movaps xmm6,xmm7
+ b5a:	0f 28 fb             	movaps xmm7,xmm3
+ b5d:	0f 28 dd             	movaps xmm3,xmm5
+ b60:	0f 28 ee             	movaps xmm5,xmm6
+ b63:	0f 28 f7             	movaps xmm6,xmm7
+ b66:	0f 28 fb             	movaps xmm7,xmm3
+ b69:	0f 28 dd             	movaps xmm3,xmm5
+ b6c:	0f 28 ee             	movaps xmm5,xmm6
+ b6f:	0f 28 f7             	movaps xmm6,xmm7
+ b72:	0f 28 fb             	movaps xmm7,xmm3
  b75:	0f 28 dd             	movaps xmm3,xmm5
  b78:	0f 28 ee             	movaps xmm5,xmm6
  b7b:	0f 28 f7             	movaps xmm6,xmm7
@@ -1007,23 +1004,23 @@ Disassembly of section .data:
  b9f:	0f 28 f7             	movaps xmm6,xmm7
  ba2:	0f 28 fb             	movaps xmm7,xmm3
  ba5:	0f 28 dd             	movaps xmm3,xmm5
- ba8:	0f 28 dd             	movaps xmm3,xmm5
- bab:	0f 28 ee             	movaps xmm5,xmm6
- bae:	0f 28 f7             	movaps xmm6,xmm7
- bb1:	0f 28 fb             	movaps xmm7,xmm3
- bb4:	0f 28 dd             	movaps xmm3,xmm5
- bb7:	0f 28 ee             	movaps xmm5,xmm6
- bba:	0f 28 f7             	movaps xmm6,xmm7
- bbd:	0f 28 fb             	movaps xmm7,xmm3
- bc0:	0f 28 dd             	movaps xmm3,xmm5
- bc3:	0f 28 ee             	movaps xmm5,xmm6
- bc6:	0f 28 f7             	movaps xmm6,xmm7
- bc9:	0f 28 fb             	movaps xmm7,xmm3
- bcc:	0f 28 dd             	movaps xmm3,xmm5
- bcf:	0f 28 ee             	movaps xmm5,xmm6
- bd2:	0f 28 f7             	movaps xmm6,xmm7
- bd5:	0f 28 fb             	movaps xmm7,xmm3
- bd8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ ba8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bab:	0f 28 dd             	movaps xmm3,xmm5
+ bae:	0f 28 ee             	movaps xmm5,xmm6
+ bb1:	0f 28 f7             	movaps xmm6,xmm7
+ bb4:	0f 28 fb             	movaps xmm7,xmm3
+ bb7:	0f 28 dd             	movaps xmm3,xmm5
+ bba:	0f 28 ee             	movaps xmm5,xmm6
+ bbd:	0f 28 f7             	movaps xmm6,xmm7
+ bc0:	0f 28 fb             	movaps xmm7,xmm3
+ bc3:	0f 28 dd             	movaps xmm3,xmm5
+ bc6:	0f 28 ee             	movaps xmm5,xmm6
+ bc9:	0f 28 f7             	movaps xmm6,xmm7
+ bcc:	0f 28 fb             	movaps xmm7,xmm3
+ bcf:	0f 28 dd             	movaps xmm3,xmm5
+ bd2:	0f 28 ee             	movaps xmm5,xmm6
+ bd5:	0f 28 f7             	movaps xmm6,xmm7
+ bd8:	0f 28 fb             	movaps xmm7,xmm3
  bdb:	0f 28 dd             	movaps xmm3,xmm5
  bde:	0f 28 ee             	movaps xmm5,xmm6
  be1:	0f 28 f7             	movaps xmm6,xmm7
@@ -1041,23 +1038,23 @@ Disassembly of section .data:
  c05:	0f 28 f7             	movaps xmm6,xmm7
  c08:	0f 28 fb             	movaps xmm7,xmm3
  c0b:	0f 28 dd             	movaps xmm3,xmm5
- c0e:	0f 28 ee             	movaps xmm5,xmm6
- c11:	0f 28 f7             	movaps xmm6,xmm7
- c14:	0f 28 fb             	movaps xmm7,xmm3
- c17:	0f 28 dd             	movaps xmm3,xmm5
- c1a:	0f 28 ee             	movaps xmm5,xmm6
- c1d:	0f 28 f7             	movaps xmm6,xmm7
- c20:	0f 28 fb             	movaps xmm7,xmm3
- c23:	0f 28 dd             	movaps xmm3,xmm5
- c26:	0f 28 ee             	movaps xmm5,xmm6
- c29:	0f 28 f7             	movaps xmm6,xmm7
- c2c:	0f 28 fb             	movaps xmm7,xmm3
- c2f:	0f 28 dd             	movaps xmm3,xmm5
- c32:	0f 28 ee             	movaps xmm5,xmm6
- c35:	0f 28 f7             	movaps xmm6,xmm7
- c38:	0f 28 fb             	movaps xmm7,xmm3
- c3b:	0f 28 dd             	movaps xmm3,xmm5
- c3e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c0e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c11:	0f 28 dd             	movaps xmm3,xmm5
+ c14:	0f 28 ee             	movaps xmm5,xmm6
+ c17:	0f 28 f7             	movaps xmm6,xmm7
+ c1a:	0f 28 fb             	movaps xmm7,xmm3
+ c1d:	0f 28 dd             	movaps xmm3,xmm5
+ c20:	0f 28 ee             	movaps xmm5,xmm6
+ c23:	0f 28 f7             	movaps xmm6,xmm7
+ c26:	0f 28 fb             	movaps xmm7,xmm3
+ c29:	0f 28 dd             	movaps xmm3,xmm5
+ c2c:	0f 28 ee             	movaps xmm5,xmm6
+ c2f:	0f 28 f7             	movaps xmm6,xmm7
+ c32:	0f 28 fb             	movaps xmm7,xmm3
+ c35:	0f 28 dd             	movaps xmm3,xmm5
+ c38:	0f 28 ee             	movaps xmm5,xmm6
+ c3b:	0f 28 f7             	movaps xmm6,xmm7
+ c3e:	0f 28 fb             	movaps xmm7,xmm3
  c41:	0f 28 dd             	movaps xmm3,xmm5
  c44:	0f 28 ee             	movaps xmm5,xmm6
  c47:	0f 28 f7             	movaps xmm6,xmm7
@@ -1075,23 +1072,23 @@ Disassembly of section .data:
  c6b:	0f 28 f7             	movaps xmm6,xmm7
  c6e:	0f 28 fb             	movaps xmm7,xmm3
  c71:	0f 28 dd             	movaps xmm3,xmm5
- c74:	0f 28 dd             	movaps xmm3,xmm5
- c77:	0f 28 ee             	movaps xmm5,xmm6
- c7a:	0f 28 f7             	movaps xmm6,xmm7
- c7d:	0f 28 fb             	movaps xmm7,xmm3
- c80:	0f 28 dd             	movaps xmm3,xmm5
- c83:	0f 28 ee             	movaps xmm5,xmm6
- c86:	0f 28 f7             	movaps xmm6,xmm7
- c89:	0f 28 fb             	movaps xmm7,xmm3
- c8c:	0f 28 dd             	movaps xmm3,xmm5
- c8f:	0f 28 ee             	movaps xmm5,xmm6
- c92:	0f 28 f7             	movaps xmm6,xmm7
- c95:	0f 28 fb             	movaps xmm7,xmm3
- c98:	0f 28 dd             	movaps xmm3,xmm5
- c9b:	0f 28 ee             	movaps xmm5,xmm6
- c9e:	0f 28 f7             	movaps xmm6,xmm7
- ca1:	0f 28 fb             	movaps xmm7,xmm3
- ca4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c74:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c77:	0f 28 dd             	movaps xmm3,xmm5
+ c7a:	0f 28 ee             	movaps xmm5,xmm6
+ c7d:	0f 28 f7             	movaps xmm6,xmm7
+ c80:	0f 28 fb             	movaps xmm7,xmm3
+ c83:	0f 28 dd             	movaps xmm3,xmm5
+ c86:	0f 28 ee             	movaps xmm5,xmm6
+ c89:	0f 28 f7             	movaps xmm6,xmm7
+ c8c:	0f 28 fb             	movaps xmm7,xmm3
+ c8f:	0f 28 dd             	movaps xmm3,xmm5
+ c92:	0f 28 ee             	movaps xmm5,xmm6
+ c95:	0f 28 f7             	movaps xmm6,xmm7
+ c98:	0f 28 fb             	movaps xmm7,xmm3
+ c9b:	0f 28 dd             	movaps xmm3,xmm5
+ c9e:	0f 28 ee             	movaps xmm5,xmm6
+ ca1:	0f 28 f7             	movaps xmm6,xmm7
+ ca4:	0f 28 fb             	movaps xmm7,xmm3
  ca7:	0f 28 dd             	movaps xmm3,xmm5
  caa:	0f 28 ee             	movaps xmm5,xmm6
  cad:	0f 28 f7             	movaps xmm6,xmm7
@@ -1109,23 +1106,23 @@ Disassembly of section .data:
  cd1:	0f 28 f7             	movaps xmm6,xmm7
  cd4:	0f 28 fb             	movaps xmm7,xmm3
  cd7:	0f 28 dd             	movaps xmm3,xmm5
- cda:	0f 28 ee             	movaps xmm5,xmm6
- cdd:	0f 28 f7             	movaps xmm6,xmm7
- ce0:	0f 28 fb             	movaps xmm7,xmm3
- ce3:	0f 28 dd             	movaps xmm3,xmm5
- ce6:	0f 28 ee             	movaps xmm5,xmm6
- ce9:	0f 28 f7             	movaps xmm6,xmm7
- cec:	0f 28 fb             	movaps xmm7,xmm3
- cef:	0f 28 dd             	movaps xmm3,xmm5
- cf2:	0f 28 ee             	movaps xmm5,xmm6
- cf5:	0f 28 f7             	movaps xmm6,xmm7
- cf8:	0f 28 fb             	movaps xmm7,xmm3
- cfb:	0f 28 dd             	movaps xmm3,xmm5
- cfe:	0f 28 ee             	movaps xmm5,xmm6
- d01:	0f 28 f7             	movaps xmm6,xmm7
- d04:	0f 28 fb             	movaps xmm7,xmm3
- d07:	0f 28 dd             	movaps xmm3,xmm5
- d0a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ cda:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ cdd:	0f 28 dd             	movaps xmm3,xmm5
+ ce0:	0f 28 ee             	movaps xmm5,xmm6
+ ce3:	0f 28 f7             	movaps xmm6,xmm7
+ ce6:	0f 28 fb             	movaps xmm7,xmm3
+ ce9:	0f 28 dd             	movaps xmm3,xmm5
+ cec:	0f 28 ee             	movaps xmm5,xmm6
+ cef:	0f 28 f7             	movaps xmm6,xmm7
+ cf2:	0f 28 fb             	movaps xmm7,xmm3
+ cf5:	0f 28 dd             	movaps xmm3,xmm5
+ cf8:	0f 28 ee             	movaps xmm5,xmm6
+ cfb:	0f 28 f7             	movaps xmm6,xmm7
+ cfe:	0f 28 fb             	movaps xmm7,xmm3
+ d01:	0f 28 dd             	movaps xmm3,xmm5
+ d04:	0f 28 ee             	movaps xmm5,xmm6
+ d07:	0f 28 f7             	movaps xmm6,xmm7
+ d0a:	0f 28 fb             	movaps xmm7,xmm3
  d0d:	0f 28 dd             	movaps xmm3,xmm5
  d10:	0f 28 ee             	movaps xmm5,xmm6
  d13:	0f 28 f7             	movaps xmm6,xmm7
@@ -1143,23 +1140,23 @@ Disassembly of section .data:
  d37:	0f 28 f7             	movaps xmm6,xmm7
  d3a:	0f 28 fb             	movaps xmm7,xmm3
  d3d:	0f 28 dd             	movaps xmm3,xmm5
- d40:	0f 28 dd             	movaps xmm3,xmm5
- d43:	0f 28 ee             	movaps xmm5,xmm6
- d46:	0f 28 f7             	movaps xmm6,xmm7
- d49:	0f 28 fb             	movaps xmm7,xmm3
- d4c:	0f 28 dd             	movaps xmm3,xmm5
- d4f:	0f 28 ee             	movaps xmm5,xmm6
- d52:	0f 28 f7             	movaps xmm6,xmm7
- d55:	0f 28 fb             	movaps xmm7,xmm3
- d58:	0f 28 dd             	movaps xmm3,xmm5
- d5b:	0f 28 ee             	movaps xmm5,xmm6
- d5e:	0f 28 f7             	movaps xmm6,xmm7
- d61:	0f 28 fb             	movaps xmm7,xmm3
- d64:	0f 28 dd             	movaps xmm3,xmm5
- d67:	0f 28 ee             	movaps xmm5,xmm6
- d6a:	0f 28 f7             	movaps xmm6,xmm7
- d6d:	0f 28 fb             	movaps xmm7,xmm3
- d70:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ d40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ d43:	0f 28 dd             	movaps xmm3,xmm5
+ d46:	0f 28 ee             	movaps xmm5,xmm6
+ d49:	0f 28 f7             	movaps xmm6,xmm7
+ d4c:	0f 28 fb             	movaps xmm7,xmm3
+ d4f:	0f 28 dd             	movaps xmm3,xmm5
+ d52:	0f 28 ee             	movaps xmm5,xmm6
+ d55:	0f 28 f7             	movaps xmm6,xmm7
+ d58:	0f 28 fb             	movaps xmm7,xmm3
+ d5b:	0f 28 dd             	movaps xmm3,xmm5
+ d5e:	0f 28 ee             	movaps xmm5,xmm6
+ d61:	0f 28 f7             	movaps xmm6,xmm7
+ d64:	0f 28 fb             	movaps xmm7,xmm3
+ d67:	0f 28 dd             	movaps xmm3,xmm5
+ d6a:	0f 28 ee             	movaps xmm5,xmm6
+ d6d:	0f 28 f7             	movaps xmm6,xmm7
+ d70:	0f 28 fb             	movaps xmm7,xmm3
  d73:	0f 28 dd             	movaps xmm3,xmm5
  d76:	0f 28 ee             	movaps xmm5,xmm6
  d79:	0f 28 f7             	movaps xmm6,xmm7
@@ -1177,23 +1174,23 @@ Disassembly of section .data:
  d9d:	0f 28 f7             	movaps xmm6,xmm7
  da0:	0f 28 fb             	movaps xmm7,xmm3
  da3:	0f 28 dd             	movaps xmm3,xmm5
- da6:	0f 28 ee             	movaps xmm5,xmm6
- da9:	0f 28 f7             	movaps xmm6,xmm7
- dac:	0f 28 fb             	movaps xmm7,xmm3
- daf:	0f 28 dd             	movaps xmm3,xmm5
- db2:	0f 28 ee             	movaps xmm5,xmm6
- db5:	0f 28 f7             	movaps xmm6,xmm7
- db8:	0f 28 fb             	movaps xmm7,xmm3
- dbb:	0f 28 dd             	movaps xmm3,xmm5
- dbe:	0f 28 ee             	movaps xmm5,xmm6
- dc1:	0f 28 f7             	movaps xmm6,xmm7
- dc4:	0f 28 fb             	movaps xmm7,xmm3
- dc7:	0f 28 dd             	movaps xmm3,xmm5
- dca:	0f 28 ee             	movaps xmm5,xmm6
- dcd:	0f 28 f7             	movaps xmm6,xmm7
- dd0:	0f 28 fb             	movaps xmm7,xmm3
- dd3:	0f 28 dd             	movaps xmm3,xmm5
- dd6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ da6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ da9:	0f 28 dd             	movaps xmm3,xmm5
+ dac:	0f 28 ee             	movaps xmm5,xmm6
+ daf:	0f 28 f7             	movaps xmm6,xmm7
+ db2:	0f 28 fb             	movaps xmm7,xmm3
+ db5:	0f 28 dd             	movaps xmm3,xmm5
+ db8:	0f 28 ee             	movaps xmm5,xmm6
+ dbb:	0f 28 f7             	movaps xmm6,xmm7
+ dbe:	0f 28 fb             	movaps xmm7,xmm3
+ dc1:	0f 28 dd             	movaps xmm3,xmm5
+ dc4:	0f 28 ee             	movaps xmm5,xmm6
+ dc7:	0f 28 f7             	movaps xmm6,xmm7
+ dca:	0f 28 fb             	movaps xmm7,xmm3
+ dcd:	0f 28 dd             	movaps xmm3,xmm5
+ dd0:	0f 28 ee             	movaps xmm5,xmm6
+ dd3:	0f 28 f7             	movaps xmm6,xmm7
+ dd6:	0f 28 fb             	movaps xmm7,xmm3
  dd9:	0f 28 dd             	movaps xmm3,xmm5
  ddc:	0f 28 ee             	movaps xmm5,xmm6
  ddf:	0f 28 f7             	movaps xmm6,xmm7
@@ -1210,7 +1207,7 @@ Disassembly of section .data:
  e00:	0f 28 ee             	movaps xmm5,xmm6
  e03:	0f 28 f7             	movaps xmm6,xmm7
  e06:	0f 28 fb             	movaps xmm7,xmm3
- e09:	0f 28 dd             	movaps xmm3,xmm5
+ e09:	4d 01 c1             	add    r9,r8
  e0c:	83 e8 01             	sub    eax,0x1
  e0f:	0f 85 6b f2 ff ff    	jne    0x80
  e15:	66 90                	xchg   ax,ax
@@ -1221,12 +1218,12 @@ Disassembly of section .data:
  e1f:	66 90                	xchg   ax,ax
  e21:	66 90                	xchg   ax,ax
  e23:	66 90                	xchg   ax,ax
- e25:	48 83 c4 40          	add    rsp,0x40
- e29:	41 59                	pop    r9
- e2b:	41 58                	pop    r8
- e2d:	5f                   	pop    rdi
- e2e:	5e                   	pop    rsi
- e2f:	5d                   	pop    rbp
- e30:	5b                   	pop    rbx
- e31:	0f 77                	emms   
- e33:	c3                   	ret    
+ e25:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ e2c:	41 59                	pop    r9
+ e2e:	41 58                	pop    r8
+ e30:	5f                   	pop    rdi
+ e31:	5e                   	pop    rsi
+ e32:	5d                   	pop    rbp
+ e33:	5b                   	pop    rbx
+ e34:	0f 77                	emms   
+ e36:	c3                   	ret    

@@ -19,46 +19,43 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	c5 fc c2 c0 00       	vcmpeqps ymm0,ymm0,ymm0
-  76:	c5 3c c2 c0 00       	vcmpeqps ymm8,ymm8,ymm0
-  7b:	c5 f4 c2 c9 00       	vcmpeqps ymm1,ymm1,ymm1
-  80:	c5 34 c2 c9 00       	vcmpeqps ymm9,ymm9,ymm1
-  85:	c5 ec c2 d2 00       	vcmpeqps ymm2,ymm2,ymm2
-  8a:	c5 2c c2 d2 00       	vcmpeqps ymm10,ymm10,ymm2
-  8f:	c5 e4 c2 db 00       	vcmpeqps ymm3,ymm3,ymm3
-  94:	c5 24 c2 db 00       	vcmpeqps ymm11,ymm11,ymm3
-  99:	c5 dc c2 e4 00       	vcmpeqps ymm4,ymm4,ymm4
-  9e:	c5 1c c2 e4 00       	vcmpeqps ymm12,ymm12,ymm4
-  a3:	c5 d4 c2 ed 00       	vcmpeqps ymm5,ymm5,ymm5
-  a8:	c5 14 c2 ed 00       	vcmpeqps ymm13,ymm13,ymm5
-  ad:	c5 cc c2 f6 00       	vcmpeqps ymm6,ymm6,ymm6
-  b2:	c5 0c c2 f6 00       	vcmpeqps ymm14,ymm14,ymm6
-  b7:	c5 c4 c2 ff 00       	vcmpeqps ymm7,ymm7,ymm7
-  bc:	c5 04 c2 ff 00       	vcmpeqps ymm15,ymm15,ymm7
-  c1:	90                   	nop
-  c2:	90                   	nop
-  c3:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
+  74:	c5 fc c2 c0 00       	vcmpeqps ymm0,ymm0,ymm0
+  79:	c5 3c c2 c0 00       	vcmpeqps ymm8,ymm8,ymm0
+  7e:	c5 f4 c2 c9 00       	vcmpeqps ymm1,ymm1,ymm1
+  83:	c5 34 c2 c9 00       	vcmpeqps ymm9,ymm9,ymm1
+  88:	c5 ec c2 d2 00       	vcmpeqps ymm2,ymm2,ymm2
+  8d:	c5 2c c2 d2 00       	vcmpeqps ymm10,ymm10,ymm2
+  92:	c5 e4 c2 db 00       	vcmpeqps ymm3,ymm3,ymm3
+  97:	c5 24 c2 db 00       	vcmpeqps ymm11,ymm11,ymm3
+  9c:	c5 dc c2 e4 00       	vcmpeqps ymm4,ymm4,ymm4
+  a1:	c5 1c c2 e4 00       	vcmpeqps ymm12,ymm12,ymm4
+  a6:	c5 d4 c2 ed 00       	vcmpeqps ymm5,ymm5,ymm5
+  ab:	c5 14 c2 ed 00       	vcmpeqps ymm13,ymm13,ymm5
+  b0:	c5 cc c2 f6 00       	vcmpeqps ymm6,ymm6,ymm6
+  b5:	c5 0c c2 f6 00       	vcmpeqps ymm14,ymm14,ymm6
+  ba:	c5 c4 c2 ff 00       	vcmpeqps ymm7,ymm7,ymm7
+  bf:	c5 04 c2 ff 00       	vcmpeqps ymm15,ymm15,ymm7
   c4:	90                   	nop
   c5:	90                   	nop
   c6:	90                   	nop
@@ -71,23 +68,23 @@ Disassembly of section .data:
   cd:	90                   	nop
   ce:	90                   	nop
   cf:	90                   	nop
-  d0:	48 03 db             	add    rbx,rbx
-  d3:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
-  d7:	48 03 f6             	add    rsi,rsi
-  da:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
-  de:	48 03 db             	add    rbx,rbx
-  e1:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
-  e5:	48 03 f6             	add    rsi,rsi
-  e8:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
-  ec:	48 03 db             	add    rbx,rbx
-  ef:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
-  f3:	48 03 f6             	add    rsi,rsi
-  f6:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
-  fa:	48 03 db             	add    rbx,rbx
-  fd:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 101:	48 03 f6             	add    rsi,rsi
- 104:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 108:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  d0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  d3:	48 03 db             	add    rbx,rbx
+  d6:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+  da:	48 03 f6             	add    rsi,rsi
+  dd:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+  e1:	48 03 db             	add    rbx,rbx
+  e4:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+  e8:	48 03 f6             	add    rsi,rsi
+  eb:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+  ef:	48 03 db             	add    rbx,rbx
+  f2:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+  f6:	48 03 f6             	add    rsi,rsi
+  f9:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+  fd:	48 03 db             	add    rbx,rbx
+ 100:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 104:	48 03 f6             	add    rsi,rsi
+ 107:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  10b:	48 03 db             	add    rbx,rbx
  10e:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  112:	48 03 f6             	add    rsi,rsi
@@ -103,23 +100,23 @@ Disassembly of section .data:
  135:	48 03 db             	add    rbx,rbx
  138:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  13c:	48 03 f6             	add    rsi,rsi
- 13f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 143:	48 03 db             	add    rbx,rbx
- 146:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 14a:	48 03 f6             	add    rsi,rsi
- 14d:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 151:	48 03 db             	add    rbx,rbx
- 154:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 158:	48 03 f6             	add    rsi,rsi
- 15b:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 15f:	48 03 db             	add    rbx,rbx
- 162:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 166:	48 03 f6             	add    rsi,rsi
- 169:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 16d:	48 03 db             	add    rbx,rbx
- 170:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 174:	48 03 f6             	add    rsi,rsi
- 177:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 13f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 142:	48 03 db             	add    rbx,rbx
+ 145:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 149:	48 03 f6             	add    rsi,rsi
+ 14c:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 150:	48 03 db             	add    rbx,rbx
+ 153:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 157:	48 03 f6             	add    rsi,rsi
+ 15a:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 15e:	48 03 db             	add    rbx,rbx
+ 161:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 165:	48 03 f6             	add    rsi,rsi
+ 168:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 16c:	48 03 db             	add    rbx,rbx
+ 16f:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 173:	48 03 f6             	add    rsi,rsi
+ 176:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  17a:	48 03 db             	add    rbx,rbx
  17d:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  181:	48 03 f6             	add    rsi,rsi
@@ -135,23 +132,23 @@ Disassembly of section .data:
  1a4:	48 03 db             	add    rbx,rbx
  1a7:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  1ab:	48 03 f6             	add    rsi,rsi
- 1ae:	48 03 db             	add    rbx,rbx
- 1b1:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 1b5:	48 03 f6             	add    rsi,rsi
- 1b8:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 1bc:	48 03 db             	add    rbx,rbx
- 1bf:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 1c3:	48 03 f6             	add    rsi,rsi
- 1c6:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 1ca:	48 03 db             	add    rbx,rbx
- 1cd:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 1d1:	48 03 f6             	add    rsi,rsi
- 1d4:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 1d8:	48 03 db             	add    rbx,rbx
- 1db:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 1df:	48 03 f6             	add    rsi,rsi
- 1e2:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 1e6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 1ae:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 1b1:	48 03 db             	add    rbx,rbx
+ 1b4:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 1b8:	48 03 f6             	add    rsi,rsi
+ 1bb:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 1bf:	48 03 db             	add    rbx,rbx
+ 1c2:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 1c6:	48 03 f6             	add    rsi,rsi
+ 1c9:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 1cd:	48 03 db             	add    rbx,rbx
+ 1d0:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 1d4:	48 03 f6             	add    rsi,rsi
+ 1d7:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 1db:	48 03 db             	add    rbx,rbx
+ 1de:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 1e2:	48 03 f6             	add    rsi,rsi
+ 1e5:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  1e9:	48 03 db             	add    rbx,rbx
  1ec:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  1f0:	48 03 f6             	add    rsi,rsi
@@ -167,23 +164,23 @@ Disassembly of section .data:
  213:	48 03 db             	add    rbx,rbx
  216:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  21a:	48 03 f6             	add    rsi,rsi
- 21d:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 221:	48 03 db             	add    rbx,rbx
- 224:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 228:	48 03 f6             	add    rsi,rsi
- 22b:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 22f:	48 03 db             	add    rbx,rbx
- 232:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 236:	48 03 f6             	add    rsi,rsi
- 239:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 23d:	48 03 db             	add    rbx,rbx
- 240:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 244:	48 03 f6             	add    rsi,rsi
- 247:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 24b:	48 03 db             	add    rbx,rbx
- 24e:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 252:	48 03 f6             	add    rsi,rsi
- 255:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 21d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 220:	48 03 db             	add    rbx,rbx
+ 223:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 227:	48 03 f6             	add    rsi,rsi
+ 22a:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 22e:	48 03 db             	add    rbx,rbx
+ 231:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 235:	48 03 f6             	add    rsi,rsi
+ 238:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 23c:	48 03 db             	add    rbx,rbx
+ 23f:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 243:	48 03 f6             	add    rsi,rsi
+ 246:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 24a:	48 03 db             	add    rbx,rbx
+ 24d:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 251:	48 03 f6             	add    rsi,rsi
+ 254:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  258:	48 03 db             	add    rbx,rbx
  25b:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  25f:	48 03 f6             	add    rsi,rsi
@@ -199,23 +196,23 @@ Disassembly of section .data:
  282:	48 03 db             	add    rbx,rbx
  285:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  289:	48 03 f6             	add    rsi,rsi
- 28c:	48 03 db             	add    rbx,rbx
- 28f:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 293:	48 03 f6             	add    rsi,rsi
- 296:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 29a:	48 03 db             	add    rbx,rbx
- 29d:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 2a1:	48 03 f6             	add    rsi,rsi
- 2a4:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 2a8:	48 03 db             	add    rbx,rbx
- 2ab:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 2af:	48 03 f6             	add    rsi,rsi
- 2b2:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 2b6:	48 03 db             	add    rbx,rbx
- 2b9:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 2bd:	48 03 f6             	add    rsi,rsi
- 2c0:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 2c4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 28c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 28f:	48 03 db             	add    rbx,rbx
+ 292:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 296:	48 03 f6             	add    rsi,rsi
+ 299:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 29d:	48 03 db             	add    rbx,rbx
+ 2a0:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 2a4:	48 03 f6             	add    rsi,rsi
+ 2a7:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 2ab:	48 03 db             	add    rbx,rbx
+ 2ae:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 2b2:	48 03 f6             	add    rsi,rsi
+ 2b5:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 2b9:	48 03 db             	add    rbx,rbx
+ 2bc:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 2c0:	48 03 f6             	add    rsi,rsi
+ 2c3:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  2c7:	48 03 db             	add    rbx,rbx
  2ca:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  2ce:	48 03 f6             	add    rsi,rsi
@@ -231,23 +228,23 @@ Disassembly of section .data:
  2f1:	48 03 db             	add    rbx,rbx
  2f4:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  2f8:	48 03 f6             	add    rsi,rsi
- 2fb:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 2ff:	48 03 db             	add    rbx,rbx
- 302:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 306:	48 03 f6             	add    rsi,rsi
- 309:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 30d:	48 03 db             	add    rbx,rbx
- 310:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 314:	48 03 f6             	add    rsi,rsi
- 317:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 31b:	48 03 db             	add    rbx,rbx
- 31e:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 322:	48 03 f6             	add    rsi,rsi
- 325:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 329:	48 03 db             	add    rbx,rbx
- 32c:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 330:	48 03 f6             	add    rsi,rsi
- 333:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 2fb:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 2fe:	48 03 db             	add    rbx,rbx
+ 301:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 305:	48 03 f6             	add    rsi,rsi
+ 308:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 30c:	48 03 db             	add    rbx,rbx
+ 30f:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 313:	48 03 f6             	add    rsi,rsi
+ 316:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 31a:	48 03 db             	add    rbx,rbx
+ 31d:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 321:	48 03 f6             	add    rsi,rsi
+ 324:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 328:	48 03 db             	add    rbx,rbx
+ 32b:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 32f:	48 03 f6             	add    rsi,rsi
+ 332:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  336:	48 03 db             	add    rbx,rbx
  339:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  33d:	48 03 f6             	add    rsi,rsi
@@ -263,23 +260,23 @@ Disassembly of section .data:
  360:	48 03 db             	add    rbx,rbx
  363:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  367:	48 03 f6             	add    rsi,rsi
- 36a:	48 03 db             	add    rbx,rbx
- 36d:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 371:	48 03 f6             	add    rsi,rsi
- 374:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 378:	48 03 db             	add    rbx,rbx
- 37b:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 37f:	48 03 f6             	add    rsi,rsi
- 382:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 386:	48 03 db             	add    rbx,rbx
- 389:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 38d:	48 03 f6             	add    rsi,rsi
- 390:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 394:	48 03 db             	add    rbx,rbx
- 397:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 39b:	48 03 f6             	add    rsi,rsi
- 39e:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 3a2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 36a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 36d:	48 03 db             	add    rbx,rbx
+ 370:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 374:	48 03 f6             	add    rsi,rsi
+ 377:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 37b:	48 03 db             	add    rbx,rbx
+ 37e:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 382:	48 03 f6             	add    rsi,rsi
+ 385:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 389:	48 03 db             	add    rbx,rbx
+ 38c:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 390:	48 03 f6             	add    rsi,rsi
+ 393:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 397:	48 03 db             	add    rbx,rbx
+ 39a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 39e:	48 03 f6             	add    rsi,rsi
+ 3a1:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  3a5:	48 03 db             	add    rbx,rbx
  3a8:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  3ac:	48 03 f6             	add    rsi,rsi
@@ -295,23 +292,23 @@ Disassembly of section .data:
  3cf:	48 03 db             	add    rbx,rbx
  3d2:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  3d6:	48 03 f6             	add    rsi,rsi
- 3d9:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 3dd:	48 03 db             	add    rbx,rbx
- 3e0:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 3e4:	48 03 f6             	add    rsi,rsi
- 3e7:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 3eb:	48 03 db             	add    rbx,rbx
- 3ee:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 3f2:	48 03 f6             	add    rsi,rsi
- 3f5:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 3f9:	48 03 db             	add    rbx,rbx
- 3fc:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 400:	48 03 f6             	add    rsi,rsi
- 403:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 407:	48 03 db             	add    rbx,rbx
- 40a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 40e:	48 03 f6             	add    rsi,rsi
- 411:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 3d9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 3dc:	48 03 db             	add    rbx,rbx
+ 3df:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 3e3:	48 03 f6             	add    rsi,rsi
+ 3e6:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 3ea:	48 03 db             	add    rbx,rbx
+ 3ed:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 3f1:	48 03 f6             	add    rsi,rsi
+ 3f4:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 3f8:	48 03 db             	add    rbx,rbx
+ 3fb:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 3ff:	48 03 f6             	add    rsi,rsi
+ 402:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 406:	48 03 db             	add    rbx,rbx
+ 409:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 40d:	48 03 f6             	add    rsi,rsi
+ 410:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  414:	48 03 db             	add    rbx,rbx
  417:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  41b:	48 03 f6             	add    rsi,rsi
@@ -327,23 +324,23 @@ Disassembly of section .data:
  43e:	48 03 db             	add    rbx,rbx
  441:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  445:	48 03 f6             	add    rsi,rsi
- 448:	48 03 db             	add    rbx,rbx
- 44b:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 44f:	48 03 f6             	add    rsi,rsi
- 452:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 456:	48 03 db             	add    rbx,rbx
- 459:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 45d:	48 03 f6             	add    rsi,rsi
- 460:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 464:	48 03 db             	add    rbx,rbx
- 467:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 46b:	48 03 f6             	add    rsi,rsi
- 46e:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 472:	48 03 db             	add    rbx,rbx
- 475:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 479:	48 03 f6             	add    rsi,rsi
- 47c:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 480:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 448:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 44b:	48 03 db             	add    rbx,rbx
+ 44e:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 452:	48 03 f6             	add    rsi,rsi
+ 455:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 459:	48 03 db             	add    rbx,rbx
+ 45c:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 460:	48 03 f6             	add    rsi,rsi
+ 463:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 467:	48 03 db             	add    rbx,rbx
+ 46a:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 46e:	48 03 f6             	add    rsi,rsi
+ 471:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 475:	48 03 db             	add    rbx,rbx
+ 478:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 47c:	48 03 f6             	add    rsi,rsi
+ 47f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  483:	48 03 db             	add    rbx,rbx
  486:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  48a:	48 03 f6             	add    rsi,rsi
@@ -359,23 +356,23 @@ Disassembly of section .data:
  4ad:	48 03 db             	add    rbx,rbx
  4b0:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  4b4:	48 03 f6             	add    rsi,rsi
- 4b7:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 4bb:	48 03 db             	add    rbx,rbx
- 4be:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 4c2:	48 03 f6             	add    rsi,rsi
- 4c5:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 4c9:	48 03 db             	add    rbx,rbx
- 4cc:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 4d0:	48 03 f6             	add    rsi,rsi
- 4d3:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 4d7:	48 03 db             	add    rbx,rbx
- 4da:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 4de:	48 03 f6             	add    rsi,rsi
- 4e1:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 4e5:	48 03 db             	add    rbx,rbx
- 4e8:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 4ec:	48 03 f6             	add    rsi,rsi
- 4ef:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4b7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4ba:	48 03 db             	add    rbx,rbx
+ 4bd:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 4c1:	48 03 f6             	add    rsi,rsi
+ 4c4:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 4c8:	48 03 db             	add    rbx,rbx
+ 4cb:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 4cf:	48 03 f6             	add    rsi,rsi
+ 4d2:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 4d6:	48 03 db             	add    rbx,rbx
+ 4d9:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 4dd:	48 03 f6             	add    rsi,rsi
+ 4e0:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 4e4:	48 03 db             	add    rbx,rbx
+ 4e7:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 4eb:	48 03 f6             	add    rsi,rsi
+ 4ee:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  4f2:	48 03 db             	add    rbx,rbx
  4f5:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  4f9:	48 03 f6             	add    rsi,rsi
@@ -391,23 +388,23 @@ Disassembly of section .data:
  51c:	48 03 db             	add    rbx,rbx
  51f:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  523:	48 03 f6             	add    rsi,rsi
- 526:	48 03 db             	add    rbx,rbx
- 529:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 52d:	48 03 f6             	add    rsi,rsi
- 530:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 534:	48 03 db             	add    rbx,rbx
- 537:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 53b:	48 03 f6             	add    rsi,rsi
- 53e:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 542:	48 03 db             	add    rbx,rbx
- 545:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 549:	48 03 f6             	add    rsi,rsi
- 54c:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 550:	48 03 db             	add    rbx,rbx
- 553:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 557:	48 03 f6             	add    rsi,rsi
- 55a:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 55e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 526:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 529:	48 03 db             	add    rbx,rbx
+ 52c:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 530:	48 03 f6             	add    rsi,rsi
+ 533:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 537:	48 03 db             	add    rbx,rbx
+ 53a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 53e:	48 03 f6             	add    rsi,rsi
+ 541:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 545:	48 03 db             	add    rbx,rbx
+ 548:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 54c:	48 03 f6             	add    rsi,rsi
+ 54f:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 553:	48 03 db             	add    rbx,rbx
+ 556:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 55a:	48 03 f6             	add    rsi,rsi
+ 55d:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  561:	48 03 db             	add    rbx,rbx
  564:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  568:	48 03 f6             	add    rsi,rsi
@@ -423,23 +420,23 @@ Disassembly of section .data:
  58b:	48 03 db             	add    rbx,rbx
  58e:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  592:	48 03 f6             	add    rsi,rsi
- 595:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 599:	48 03 db             	add    rbx,rbx
- 59c:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 5a0:	48 03 f6             	add    rsi,rsi
- 5a3:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 5a7:	48 03 db             	add    rbx,rbx
- 5aa:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 5ae:	48 03 f6             	add    rsi,rsi
- 5b1:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 5b5:	48 03 db             	add    rbx,rbx
- 5b8:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 5bc:	48 03 f6             	add    rsi,rsi
- 5bf:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 5c3:	48 03 db             	add    rbx,rbx
- 5c6:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 5ca:	48 03 f6             	add    rsi,rsi
- 5cd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 595:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 598:	48 03 db             	add    rbx,rbx
+ 59b:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 59f:	48 03 f6             	add    rsi,rsi
+ 5a2:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 5a6:	48 03 db             	add    rbx,rbx
+ 5a9:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 5ad:	48 03 f6             	add    rsi,rsi
+ 5b0:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 5b4:	48 03 db             	add    rbx,rbx
+ 5b7:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 5bb:	48 03 f6             	add    rsi,rsi
+ 5be:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 5c2:	48 03 db             	add    rbx,rbx
+ 5c5:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 5c9:	48 03 f6             	add    rsi,rsi
+ 5cc:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  5d0:	48 03 db             	add    rbx,rbx
  5d3:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  5d7:	48 03 f6             	add    rsi,rsi
@@ -455,23 +452,23 @@ Disassembly of section .data:
  5fa:	48 03 db             	add    rbx,rbx
  5fd:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  601:	48 03 f6             	add    rsi,rsi
- 604:	48 03 db             	add    rbx,rbx
- 607:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 60b:	48 03 f6             	add    rsi,rsi
- 60e:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 612:	48 03 db             	add    rbx,rbx
- 615:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 619:	48 03 f6             	add    rsi,rsi
- 61c:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 620:	48 03 db             	add    rbx,rbx
- 623:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 627:	48 03 f6             	add    rsi,rsi
- 62a:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 62e:	48 03 db             	add    rbx,rbx
- 631:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 635:	48 03 f6             	add    rsi,rsi
- 638:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 63c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 604:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 607:	48 03 db             	add    rbx,rbx
+ 60a:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 60e:	48 03 f6             	add    rsi,rsi
+ 611:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 615:	48 03 db             	add    rbx,rbx
+ 618:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 61c:	48 03 f6             	add    rsi,rsi
+ 61f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 623:	48 03 db             	add    rbx,rbx
+ 626:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 62a:	48 03 f6             	add    rsi,rsi
+ 62d:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 631:	48 03 db             	add    rbx,rbx
+ 634:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 638:	48 03 f6             	add    rsi,rsi
+ 63b:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  63f:	48 03 db             	add    rbx,rbx
  642:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  646:	48 03 f6             	add    rsi,rsi
@@ -487,23 +484,23 @@ Disassembly of section .data:
  669:	48 03 db             	add    rbx,rbx
  66c:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  670:	48 03 f6             	add    rsi,rsi
- 673:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 677:	48 03 db             	add    rbx,rbx
- 67a:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 67e:	48 03 f6             	add    rsi,rsi
- 681:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 685:	48 03 db             	add    rbx,rbx
- 688:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 68c:	48 03 f6             	add    rsi,rsi
- 68f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 693:	48 03 db             	add    rbx,rbx
- 696:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 69a:	48 03 f6             	add    rsi,rsi
- 69d:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 6a1:	48 03 db             	add    rbx,rbx
- 6a4:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 6a8:	48 03 f6             	add    rsi,rsi
- 6ab:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 673:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 676:	48 03 db             	add    rbx,rbx
+ 679:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 67d:	48 03 f6             	add    rsi,rsi
+ 680:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 684:	48 03 db             	add    rbx,rbx
+ 687:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 68b:	48 03 f6             	add    rsi,rsi
+ 68e:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 692:	48 03 db             	add    rbx,rbx
+ 695:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 699:	48 03 f6             	add    rsi,rsi
+ 69c:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 6a0:	48 03 db             	add    rbx,rbx
+ 6a3:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 6a7:	48 03 f6             	add    rsi,rsi
+ 6aa:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  6ae:	48 03 db             	add    rbx,rbx
  6b1:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  6b5:	48 03 f6             	add    rsi,rsi
@@ -519,23 +516,23 @@ Disassembly of section .data:
  6d8:	48 03 db             	add    rbx,rbx
  6db:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  6df:	48 03 f6             	add    rsi,rsi
- 6e2:	48 03 db             	add    rbx,rbx
- 6e5:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 6e9:	48 03 f6             	add    rsi,rsi
- 6ec:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 6f0:	48 03 db             	add    rbx,rbx
- 6f3:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 6f7:	48 03 f6             	add    rsi,rsi
- 6fa:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 6fe:	48 03 db             	add    rbx,rbx
- 701:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 705:	48 03 f6             	add    rsi,rsi
- 708:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 70c:	48 03 db             	add    rbx,rbx
- 70f:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 713:	48 03 f6             	add    rsi,rsi
- 716:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 71a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6e2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6e5:	48 03 db             	add    rbx,rbx
+ 6e8:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 6ec:	48 03 f6             	add    rsi,rsi
+ 6ef:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 6f3:	48 03 db             	add    rbx,rbx
+ 6f6:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 6fa:	48 03 f6             	add    rsi,rsi
+ 6fd:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 701:	48 03 db             	add    rbx,rbx
+ 704:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 708:	48 03 f6             	add    rsi,rsi
+ 70b:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 70f:	48 03 db             	add    rbx,rbx
+ 712:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 716:	48 03 f6             	add    rsi,rsi
+ 719:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  71d:	48 03 db             	add    rbx,rbx
  720:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  724:	48 03 f6             	add    rsi,rsi
@@ -551,23 +548,23 @@ Disassembly of section .data:
  747:	48 03 db             	add    rbx,rbx
  74a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  74e:	48 03 f6             	add    rsi,rsi
- 751:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 755:	48 03 db             	add    rbx,rbx
- 758:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 75c:	48 03 f6             	add    rsi,rsi
- 75f:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 763:	48 03 db             	add    rbx,rbx
- 766:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 76a:	48 03 f6             	add    rsi,rsi
- 76d:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 771:	48 03 db             	add    rbx,rbx
- 774:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 778:	48 03 f6             	add    rsi,rsi
- 77b:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 77f:	48 03 db             	add    rbx,rbx
- 782:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 786:	48 03 f6             	add    rsi,rsi
- 789:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 751:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 754:	48 03 db             	add    rbx,rbx
+ 757:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 75b:	48 03 f6             	add    rsi,rsi
+ 75e:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 762:	48 03 db             	add    rbx,rbx
+ 765:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 769:	48 03 f6             	add    rsi,rsi
+ 76c:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 770:	48 03 db             	add    rbx,rbx
+ 773:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 777:	48 03 f6             	add    rsi,rsi
+ 77a:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 77e:	48 03 db             	add    rbx,rbx
+ 781:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 785:	48 03 f6             	add    rsi,rsi
+ 788:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  78c:	48 03 db             	add    rbx,rbx
  78f:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  793:	48 03 f6             	add    rsi,rsi
@@ -583,23 +580,23 @@ Disassembly of section .data:
  7b6:	48 03 db             	add    rbx,rbx
  7b9:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  7bd:	48 03 f6             	add    rsi,rsi
- 7c0:	48 03 db             	add    rbx,rbx
- 7c3:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 7c7:	48 03 f6             	add    rsi,rsi
- 7ca:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 7ce:	48 03 db             	add    rbx,rbx
- 7d1:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 7d5:	48 03 f6             	add    rsi,rsi
- 7d8:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 7dc:	48 03 db             	add    rbx,rbx
- 7df:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 7e3:	48 03 f6             	add    rsi,rsi
- 7e6:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 7ea:	48 03 db             	add    rbx,rbx
- 7ed:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 7f1:	48 03 f6             	add    rsi,rsi
- 7f4:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 7f8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7c3:	48 03 db             	add    rbx,rbx
+ 7c6:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 7ca:	48 03 f6             	add    rsi,rsi
+ 7cd:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 7d1:	48 03 db             	add    rbx,rbx
+ 7d4:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 7d8:	48 03 f6             	add    rsi,rsi
+ 7db:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 7df:	48 03 db             	add    rbx,rbx
+ 7e2:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 7e6:	48 03 f6             	add    rsi,rsi
+ 7e9:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 7ed:	48 03 db             	add    rbx,rbx
+ 7f0:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 7f4:	48 03 f6             	add    rsi,rsi
+ 7f7:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  7fb:	48 03 db             	add    rbx,rbx
  7fe:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  802:	48 03 f6             	add    rsi,rsi
@@ -615,23 +612,23 @@ Disassembly of section .data:
  825:	48 03 db             	add    rbx,rbx
  828:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  82c:	48 03 f6             	add    rsi,rsi
- 82f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 833:	48 03 db             	add    rbx,rbx
- 836:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 83a:	48 03 f6             	add    rsi,rsi
- 83d:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 841:	48 03 db             	add    rbx,rbx
- 844:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 848:	48 03 f6             	add    rsi,rsi
- 84b:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 84f:	48 03 db             	add    rbx,rbx
- 852:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 856:	48 03 f6             	add    rsi,rsi
- 859:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 85d:	48 03 db             	add    rbx,rbx
- 860:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 864:	48 03 f6             	add    rsi,rsi
- 867:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 82f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 832:	48 03 db             	add    rbx,rbx
+ 835:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 839:	48 03 f6             	add    rsi,rsi
+ 83c:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 840:	48 03 db             	add    rbx,rbx
+ 843:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 847:	48 03 f6             	add    rsi,rsi
+ 84a:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 84e:	48 03 db             	add    rbx,rbx
+ 851:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 855:	48 03 f6             	add    rsi,rsi
+ 858:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 85c:	48 03 db             	add    rbx,rbx
+ 85f:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 863:	48 03 f6             	add    rsi,rsi
+ 866:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  86a:	48 03 db             	add    rbx,rbx
  86d:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  871:	48 03 f6             	add    rsi,rsi
@@ -647,23 +644,23 @@ Disassembly of section .data:
  894:	48 03 db             	add    rbx,rbx
  897:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  89b:	48 03 f6             	add    rsi,rsi
- 89e:	48 03 db             	add    rbx,rbx
- 8a1:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 8a5:	48 03 f6             	add    rsi,rsi
- 8a8:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 8ac:	48 03 db             	add    rbx,rbx
- 8af:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 8b3:	48 03 f6             	add    rsi,rsi
- 8b6:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 8ba:	48 03 db             	add    rbx,rbx
- 8bd:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 8c1:	48 03 f6             	add    rsi,rsi
- 8c4:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 8c8:	48 03 db             	add    rbx,rbx
- 8cb:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 8cf:	48 03 f6             	add    rsi,rsi
- 8d2:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 8d6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 89e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8a1:	48 03 db             	add    rbx,rbx
+ 8a4:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 8a8:	48 03 f6             	add    rsi,rsi
+ 8ab:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 8af:	48 03 db             	add    rbx,rbx
+ 8b2:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 8b6:	48 03 f6             	add    rsi,rsi
+ 8b9:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 8bd:	48 03 db             	add    rbx,rbx
+ 8c0:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 8c4:	48 03 f6             	add    rsi,rsi
+ 8c7:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 8cb:	48 03 db             	add    rbx,rbx
+ 8ce:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 8d2:	48 03 f6             	add    rsi,rsi
+ 8d5:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  8d9:	48 03 db             	add    rbx,rbx
  8dc:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  8e0:	48 03 f6             	add    rsi,rsi
@@ -679,23 +676,23 @@ Disassembly of section .data:
  903:	48 03 db             	add    rbx,rbx
  906:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  90a:	48 03 f6             	add    rsi,rsi
- 90d:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 911:	48 03 db             	add    rbx,rbx
- 914:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 918:	48 03 f6             	add    rsi,rsi
- 91b:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 91f:	48 03 db             	add    rbx,rbx
- 922:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 926:	48 03 f6             	add    rsi,rsi
- 929:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 92d:	48 03 db             	add    rbx,rbx
- 930:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 934:	48 03 f6             	add    rsi,rsi
- 937:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 93b:	48 03 db             	add    rbx,rbx
- 93e:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 942:	48 03 f6             	add    rsi,rsi
- 945:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 90d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 910:	48 03 db             	add    rbx,rbx
+ 913:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 917:	48 03 f6             	add    rsi,rsi
+ 91a:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 91e:	48 03 db             	add    rbx,rbx
+ 921:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 925:	48 03 f6             	add    rsi,rsi
+ 928:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 92c:	48 03 db             	add    rbx,rbx
+ 92f:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 933:	48 03 f6             	add    rsi,rsi
+ 936:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 93a:	48 03 db             	add    rbx,rbx
+ 93d:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 941:	48 03 f6             	add    rsi,rsi
+ 944:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  948:	48 03 db             	add    rbx,rbx
  94b:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  94f:	48 03 f6             	add    rsi,rsi
@@ -711,23 +708,23 @@ Disassembly of section .data:
  972:	48 03 db             	add    rbx,rbx
  975:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  979:	48 03 f6             	add    rsi,rsi
- 97c:	48 03 db             	add    rbx,rbx
- 97f:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 983:	48 03 f6             	add    rsi,rsi
- 986:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 98a:	48 03 db             	add    rbx,rbx
- 98d:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 991:	48 03 f6             	add    rsi,rsi
- 994:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 998:	48 03 db             	add    rbx,rbx
- 99b:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 99f:	48 03 f6             	add    rsi,rsi
- 9a2:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 9a6:	48 03 db             	add    rbx,rbx
- 9a9:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- 9ad:	48 03 f6             	add    rsi,rsi
- 9b0:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 9b4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 97c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 97f:	48 03 db             	add    rbx,rbx
+ 982:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 986:	48 03 f6             	add    rsi,rsi
+ 989:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 98d:	48 03 db             	add    rbx,rbx
+ 990:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 994:	48 03 f6             	add    rsi,rsi
+ 997:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ 99b:	48 03 db             	add    rbx,rbx
+ 99e:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 9a2:	48 03 f6             	add    rsi,rsi
+ 9a5:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 9a9:	48 03 db             	add    rbx,rbx
+ 9ac:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ 9b0:	48 03 f6             	add    rsi,rsi
+ 9b3:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  9b7:	48 03 db             	add    rbx,rbx
  9ba:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  9be:	48 03 f6             	add    rsi,rsi
@@ -743,23 +740,23 @@ Disassembly of section .data:
  9e1:	48 03 db             	add    rbx,rbx
  9e4:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  9e8:	48 03 f6             	add    rsi,rsi
- 9eb:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- 9ef:	48 03 db             	add    rbx,rbx
- 9f2:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- 9f6:	48 03 f6             	add    rsi,rsi
- 9f9:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- 9fd:	48 03 db             	add    rbx,rbx
- a00:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- a04:	48 03 f6             	add    rsi,rsi
- a07:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- a0b:	48 03 db             	add    rbx,rbx
- a0e:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- a12:	48 03 f6             	add    rsi,rsi
- a15:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- a19:	48 03 db             	add    rbx,rbx
- a1c:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- a20:	48 03 f6             	add    rsi,rsi
- a23:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9eb:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9ee:	48 03 db             	add    rbx,rbx
+ 9f1:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ 9f5:	48 03 f6             	add    rsi,rsi
+ 9f8:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ 9fc:	48 03 db             	add    rbx,rbx
+ 9ff:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ a03:	48 03 f6             	add    rsi,rsi
+ a06:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ a0a:	48 03 db             	add    rbx,rbx
+ a0d:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ a11:	48 03 f6             	add    rsi,rsi
+ a14:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ a18:	48 03 db             	add    rbx,rbx
+ a1b:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ a1f:	48 03 f6             	add    rsi,rsi
+ a22:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  a26:	48 03 db             	add    rbx,rbx
  a29:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  a2d:	48 03 f6             	add    rsi,rsi
@@ -775,23 +772,23 @@ Disassembly of section .data:
  a50:	48 03 db             	add    rbx,rbx
  a53:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  a57:	48 03 f6             	add    rsi,rsi
- a5a:	48 03 db             	add    rbx,rbx
- a5d:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- a61:	48 03 f6             	add    rsi,rsi
- a64:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- a68:	48 03 db             	add    rbx,rbx
- a6b:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- a6f:	48 03 f6             	add    rsi,rsi
- a72:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- a76:	48 03 db             	add    rbx,rbx
- a79:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- a7d:	48 03 f6             	add    rsi,rsi
- a80:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- a84:	48 03 db             	add    rbx,rbx
- a87:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- a8b:	48 03 f6             	add    rsi,rsi
- a8e:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- a92:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a5a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a5d:	48 03 db             	add    rbx,rbx
+ a60:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ a64:	48 03 f6             	add    rsi,rsi
+ a67:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ a6b:	48 03 db             	add    rbx,rbx
+ a6e:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ a72:	48 03 f6             	add    rsi,rsi
+ a75:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ a79:	48 03 db             	add    rbx,rbx
+ a7c:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ a80:	48 03 f6             	add    rsi,rsi
+ a83:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ a87:	48 03 db             	add    rbx,rbx
+ a8a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ a8e:	48 03 f6             	add    rsi,rsi
+ a91:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  a95:	48 03 db             	add    rbx,rbx
  a98:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  a9c:	48 03 f6             	add    rsi,rsi
@@ -807,23 +804,23 @@ Disassembly of section .data:
  abf:	48 03 db             	add    rbx,rbx
  ac2:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  ac6:	48 03 f6             	add    rsi,rsi
- ac9:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- acd:	48 03 db             	add    rbx,rbx
- ad0:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- ad4:	48 03 f6             	add    rsi,rsi
- ad7:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- adb:	48 03 db             	add    rbx,rbx
- ade:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- ae2:	48 03 f6             	add    rsi,rsi
- ae5:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- ae9:	48 03 db             	add    rbx,rbx
- aec:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- af0:	48 03 f6             	add    rsi,rsi
- af3:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- af7:	48 03 db             	add    rbx,rbx
- afa:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- afe:	48 03 f6             	add    rsi,rsi
- b01:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ ac9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ acc:	48 03 db             	add    rbx,rbx
+ acf:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ ad3:	48 03 f6             	add    rsi,rsi
+ ad6:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ ada:	48 03 db             	add    rbx,rbx
+ add:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ ae1:	48 03 f6             	add    rsi,rsi
+ ae4:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ ae8:	48 03 db             	add    rbx,rbx
+ aeb:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ aef:	48 03 f6             	add    rsi,rsi
+ af2:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ af6:	48 03 db             	add    rbx,rbx
+ af9:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ afd:	48 03 f6             	add    rsi,rsi
+ b00:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  b04:	48 03 db             	add    rbx,rbx
  b07:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  b0b:	48 03 f6             	add    rsi,rsi
@@ -839,23 +836,23 @@ Disassembly of section .data:
  b2e:	48 03 db             	add    rbx,rbx
  b31:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  b35:	48 03 f6             	add    rsi,rsi
- b38:	48 03 db             	add    rbx,rbx
- b3b:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- b3f:	48 03 f6             	add    rsi,rsi
- b42:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- b46:	48 03 db             	add    rbx,rbx
- b49:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- b4d:	48 03 f6             	add    rsi,rsi
- b50:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- b54:	48 03 db             	add    rbx,rbx
- b57:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- b5b:	48 03 f6             	add    rsi,rsi
- b5e:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- b62:	48 03 db             	add    rbx,rbx
- b65:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- b69:	48 03 f6             	add    rsi,rsi
- b6c:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- b70:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b38:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b3b:	48 03 db             	add    rbx,rbx
+ b3e:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ b42:	48 03 f6             	add    rsi,rsi
+ b45:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ b49:	48 03 db             	add    rbx,rbx
+ b4c:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ b50:	48 03 f6             	add    rsi,rsi
+ b53:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ b57:	48 03 db             	add    rbx,rbx
+ b5a:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ b5e:	48 03 f6             	add    rsi,rsi
+ b61:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ b65:	48 03 db             	add    rbx,rbx
+ b68:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ b6c:	48 03 f6             	add    rsi,rsi
+ b6f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  b73:	48 03 db             	add    rbx,rbx
  b76:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  b7a:	48 03 f6             	add    rsi,rsi
@@ -871,23 +868,23 @@ Disassembly of section .data:
  b9d:	48 03 db             	add    rbx,rbx
  ba0:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  ba4:	48 03 f6             	add    rsi,rsi
- ba7:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- bab:	48 03 db             	add    rbx,rbx
- bae:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- bb2:	48 03 f6             	add    rsi,rsi
- bb5:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- bb9:	48 03 db             	add    rbx,rbx
- bbc:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- bc0:	48 03 f6             	add    rsi,rsi
- bc3:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- bc7:	48 03 db             	add    rbx,rbx
- bca:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- bce:	48 03 f6             	add    rsi,rsi
- bd1:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- bd5:	48 03 db             	add    rbx,rbx
- bd8:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- bdc:	48 03 f6             	add    rsi,rsi
- bdf:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ ba7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ baa:	48 03 db             	add    rbx,rbx
+ bad:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ bb1:	48 03 f6             	add    rsi,rsi
+ bb4:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ bb8:	48 03 db             	add    rbx,rbx
+ bbb:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ bbf:	48 03 f6             	add    rsi,rsi
+ bc2:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ bc6:	48 03 db             	add    rbx,rbx
+ bc9:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ bcd:	48 03 f6             	add    rsi,rsi
+ bd0:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ bd4:	48 03 db             	add    rbx,rbx
+ bd7:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ bdb:	48 03 f6             	add    rsi,rsi
+ bde:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  be2:	48 03 db             	add    rbx,rbx
  be5:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  be9:	48 03 f6             	add    rsi,rsi
@@ -903,23 +900,23 @@ Disassembly of section .data:
  c0c:	48 03 db             	add    rbx,rbx
  c0f:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  c13:	48 03 f6             	add    rsi,rsi
- c16:	48 03 db             	add    rbx,rbx
- c19:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- c1d:	48 03 f6             	add    rsi,rsi
- c20:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- c24:	48 03 db             	add    rbx,rbx
- c27:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- c2b:	48 03 f6             	add    rsi,rsi
- c2e:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- c32:	48 03 db             	add    rbx,rbx
- c35:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- c39:	48 03 f6             	add    rsi,rsi
- c3c:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- c40:	48 03 db             	add    rbx,rbx
- c43:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- c47:	48 03 f6             	add    rsi,rsi
- c4a:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- c4e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c16:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c19:	48 03 db             	add    rbx,rbx
+ c1c:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ c20:	48 03 f6             	add    rsi,rsi
+ c23:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ c27:	48 03 db             	add    rbx,rbx
+ c2a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ c2e:	48 03 f6             	add    rsi,rsi
+ c31:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ c35:	48 03 db             	add    rbx,rbx
+ c38:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ c3c:	48 03 f6             	add    rsi,rsi
+ c3f:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ c43:	48 03 db             	add    rbx,rbx
+ c46:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ c4a:	48 03 f6             	add    rsi,rsi
+ c4d:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  c51:	48 03 db             	add    rbx,rbx
  c54:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  c58:	48 03 f6             	add    rsi,rsi
@@ -935,23 +932,23 @@ Disassembly of section .data:
  c7b:	48 03 db             	add    rbx,rbx
  c7e:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  c82:	48 03 f6             	add    rsi,rsi
- c85:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- c89:	48 03 db             	add    rbx,rbx
- c8c:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- c90:	48 03 f6             	add    rsi,rsi
- c93:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- c97:	48 03 db             	add    rbx,rbx
- c9a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- c9e:	48 03 f6             	add    rsi,rsi
- ca1:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- ca5:	48 03 db             	add    rbx,rbx
- ca8:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- cac:	48 03 f6             	add    rsi,rsi
- caf:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- cb3:	48 03 db             	add    rbx,rbx
- cb6:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- cba:	48 03 f6             	add    rsi,rsi
- cbd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c85:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c88:	48 03 db             	add    rbx,rbx
+ c8b:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ c8f:	48 03 f6             	add    rsi,rsi
+ c92:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ c96:	48 03 db             	add    rbx,rbx
+ c99:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ c9d:	48 03 f6             	add    rsi,rsi
+ ca0:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ ca4:	48 03 db             	add    rbx,rbx
+ ca7:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ cab:	48 03 f6             	add    rsi,rsi
+ cae:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ cb2:	48 03 db             	add    rbx,rbx
+ cb5:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ cb9:	48 03 f6             	add    rsi,rsi
+ cbc:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  cc0:	48 03 db             	add    rbx,rbx
  cc3:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  cc7:	48 03 f6             	add    rsi,rsi
@@ -967,23 +964,23 @@ Disassembly of section .data:
  cea:	48 03 db             	add    rbx,rbx
  ced:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  cf1:	48 03 f6             	add    rsi,rsi
- cf4:	48 03 db             	add    rbx,rbx
- cf7:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- cfb:	48 03 f6             	add    rsi,rsi
- cfe:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- d02:	48 03 db             	add    rbx,rbx
- d05:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- d09:	48 03 f6             	add    rsi,rsi
- d0c:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- d10:	48 03 db             	add    rbx,rbx
- d13:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- d17:	48 03 f6             	add    rsi,rsi
- d1a:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- d1e:	48 03 db             	add    rbx,rbx
- d21:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- d25:	48 03 f6             	add    rsi,rsi
- d28:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- d2c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ cf4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ cf7:	48 03 db             	add    rbx,rbx
+ cfa:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ cfe:	48 03 f6             	add    rsi,rsi
+ d01:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ d05:	48 03 db             	add    rbx,rbx
+ d08:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ d0c:	48 03 f6             	add    rsi,rsi
+ d0f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ d13:	48 03 db             	add    rbx,rbx
+ d16:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ d1a:	48 03 f6             	add    rsi,rsi
+ d1d:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ d21:	48 03 db             	add    rbx,rbx
+ d24:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ d28:	48 03 f6             	add    rsi,rsi
+ d2b:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  d2f:	48 03 db             	add    rbx,rbx
  d32:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  d36:	48 03 f6             	add    rsi,rsi
@@ -999,23 +996,23 @@ Disassembly of section .data:
  d59:	48 03 db             	add    rbx,rbx
  d5c:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  d60:	48 03 f6             	add    rsi,rsi
- d63:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- d67:	48 03 db             	add    rbx,rbx
- d6a:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- d6e:	48 03 f6             	add    rsi,rsi
- d71:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- d75:	48 03 db             	add    rbx,rbx
- d78:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- d7c:	48 03 f6             	add    rsi,rsi
- d7f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- d83:	48 03 db             	add    rbx,rbx
- d86:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- d8a:	48 03 f6             	add    rsi,rsi
- d8d:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- d91:	48 03 db             	add    rbx,rbx
- d94:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- d98:	48 03 f6             	add    rsi,rsi
- d9b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ d63:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ d66:	48 03 db             	add    rbx,rbx
+ d69:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ d6d:	48 03 f6             	add    rsi,rsi
+ d70:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ d74:	48 03 db             	add    rbx,rbx
+ d77:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ d7b:	48 03 f6             	add    rsi,rsi
+ d7e:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ d82:	48 03 db             	add    rbx,rbx
+ d85:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ d89:	48 03 f6             	add    rsi,rsi
+ d8c:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ d90:	48 03 db             	add    rbx,rbx
+ d93:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ d97:	48 03 f6             	add    rsi,rsi
+ d9a:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  d9e:	48 03 db             	add    rbx,rbx
  da1:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  da5:	48 03 f6             	add    rsi,rsi
@@ -1031,23 +1028,23 @@ Disassembly of section .data:
  dc8:	48 03 db             	add    rbx,rbx
  dcb:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  dcf:	48 03 f6             	add    rsi,rsi
- dd2:	48 03 db             	add    rbx,rbx
- dd5:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- dd9:	48 03 f6             	add    rsi,rsi
- ddc:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- de0:	48 03 db             	add    rbx,rbx
- de3:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- de7:	48 03 f6             	add    rsi,rsi
- dea:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- dee:	48 03 db             	add    rbx,rbx
- df1:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- df5:	48 03 f6             	add    rsi,rsi
- df8:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- dfc:	48 03 db             	add    rbx,rbx
- dff:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- e03:	48 03 f6             	add    rsi,rsi
- e06:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- e0a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ dd2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ dd5:	48 03 db             	add    rbx,rbx
+ dd8:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ ddc:	48 03 f6             	add    rsi,rsi
+ ddf:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ de3:	48 03 db             	add    rbx,rbx
+ de6:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ dea:	48 03 f6             	add    rsi,rsi
+ ded:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ df1:	48 03 db             	add    rbx,rbx
+ df4:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ df8:	48 03 f6             	add    rsi,rsi
+ dfb:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ dff:	48 03 db             	add    rbx,rbx
+ e02:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ e06:	48 03 f6             	add    rsi,rsi
+ e09:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  e0d:	48 03 db             	add    rbx,rbx
  e10:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  e14:	48 03 f6             	add    rsi,rsi
@@ -1063,23 +1060,23 @@ Disassembly of section .data:
  e37:	48 03 db             	add    rbx,rbx
  e3a:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  e3e:	48 03 f6             	add    rsi,rsi
- e41:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- e45:	48 03 db             	add    rbx,rbx
- e48:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- e4c:	48 03 f6             	add    rsi,rsi
- e4f:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- e53:	48 03 db             	add    rbx,rbx
- e56:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- e5a:	48 03 f6             	add    rsi,rsi
- e5d:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- e61:	48 03 db             	add    rbx,rbx
- e64:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- e68:	48 03 f6             	add    rsi,rsi
- e6b:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- e6f:	48 03 db             	add    rbx,rbx
- e72:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- e76:	48 03 f6             	add    rsi,rsi
- e79:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ e41:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ e44:	48 03 db             	add    rbx,rbx
+ e47:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ e4b:	48 03 f6             	add    rsi,rsi
+ e4e:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ e52:	48 03 db             	add    rbx,rbx
+ e55:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ e59:	48 03 f6             	add    rsi,rsi
+ e5c:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ e60:	48 03 db             	add    rbx,rbx
+ e63:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ e67:	48 03 f6             	add    rsi,rsi
+ e6a:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ e6e:	48 03 db             	add    rbx,rbx
+ e71:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ e75:	48 03 f6             	add    rsi,rsi
+ e78:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  e7c:	48 03 db             	add    rbx,rbx
  e7f:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  e83:	48 03 f6             	add    rsi,rsi
@@ -1095,23 +1092,23 @@ Disassembly of section .data:
  ea6:	48 03 db             	add    rbx,rbx
  ea9:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  ead:	48 03 f6             	add    rsi,rsi
- eb0:	48 03 db             	add    rbx,rbx
- eb3:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- eb7:	48 03 f6             	add    rsi,rsi
- eba:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- ebe:	48 03 db             	add    rbx,rbx
- ec1:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- ec5:	48 03 f6             	add    rsi,rsi
- ec8:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- ecc:	48 03 db             	add    rbx,rbx
- ecf:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- ed3:	48 03 f6             	add    rsi,rsi
- ed6:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- eda:	48 03 db             	add    rbx,rbx
- edd:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- ee1:	48 03 f6             	add    rsi,rsi
- ee4:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- ee8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ eb0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ eb3:	48 03 db             	add    rbx,rbx
+ eb6:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ eba:	48 03 f6             	add    rsi,rsi
+ ebd:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ ec1:	48 03 db             	add    rbx,rbx
+ ec4:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ ec8:	48 03 f6             	add    rsi,rsi
+ ecb:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ ecf:	48 03 db             	add    rbx,rbx
+ ed2:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ ed6:	48 03 f6             	add    rsi,rsi
+ ed9:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ edd:	48 03 db             	add    rbx,rbx
+ ee0:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ ee4:	48 03 f6             	add    rsi,rsi
+ ee7:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  eeb:	48 03 db             	add    rbx,rbx
  eee:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  ef2:	48 03 f6             	add    rsi,rsi
@@ -1127,23 +1124,23 @@ Disassembly of section .data:
  f15:	48 03 db             	add    rbx,rbx
  f18:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  f1c:	48 03 f6             	add    rsi,rsi
- f1f:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- f23:	48 03 db             	add    rbx,rbx
- f26:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- f2a:	48 03 f6             	add    rsi,rsi
- f2d:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- f31:	48 03 db             	add    rbx,rbx
- f34:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- f38:	48 03 f6             	add    rsi,rsi
- f3b:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
- f3f:	48 03 db             	add    rbx,rbx
- f42:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
- f46:	48 03 f6             	add    rsi,rsi
- f49:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
- f4d:	48 03 db             	add    rbx,rbx
- f50:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
- f54:	48 03 f6             	add    rsi,rsi
- f57:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ f1f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ f22:	48 03 db             	add    rbx,rbx
+ f25:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ f29:	48 03 f6             	add    rsi,rsi
+ f2c:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ f30:	48 03 db             	add    rbx,rbx
+ f33:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ f37:	48 03 f6             	add    rsi,rsi
+ f3a:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
+ f3e:	48 03 db             	add    rbx,rbx
+ f41:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
+ f45:	48 03 f6             	add    rsi,rsi
+ f48:	c5 e4 57 dc          	vxorps ymm3,ymm3,ymm4
+ f4c:	48 03 db             	add    rbx,rbx
+ f4f:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
+ f53:	48 03 f6             	add    rsi,rsi
+ f56:	c5 c4 57 f8          	vxorps ymm7,ymm7,ymm0
  f5a:	48 03 db             	add    rbx,rbx
  f5d:	c5 f4 57 ca          	vxorps ymm1,ymm1,ymm2
  f61:	48 03 f6             	add    rsi,rsi
@@ -1159,22 +1156,23 @@ Disassembly of section .data:
  f84:	48 03 db             	add    rbx,rbx
  f87:	c5 d4 57 ee          	vxorps ymm5,ymm5,ymm6
  f8b:	48 03 f6             	add    rsi,rsi
- f8e:	83 e8 01             	sub    eax,0x1
- f91:	0f 85 39 f1 ff ff    	jne    0xd0
- f97:	66 90                	xchg   ax,ax
- f99:	66 90                	xchg   ax,ax
- f9b:	66 90                	xchg   ax,ax
- f9d:	66 90                	xchg   ax,ax
- f9f:	66 90                	xchg   ax,ax
- fa1:	66 90                	xchg   ax,ax
- fa3:	66 90                	xchg   ax,ax
- fa5:	66 90                	xchg   ax,ax
- fa7:	48 83 c4 40          	add    rsp,0x40
- fab:	41 59                	pop    r9
- fad:	41 58                	pop    r8
- faf:	5f                   	pop    rdi
- fb0:	5e                   	pop    rsi
- fb1:	5d                   	pop    rbp
- fb2:	5b                   	pop    rbx
- fb3:	0f 77                	emms   
- fb5:	c3                   	ret    
+ f8e:	4d 01 c1             	add    r9,r8
+ f91:	83 e8 01             	sub    eax,0x1
+ f94:	0f 85 36 f1 ff ff    	jne    0xd0
+ f9a:	66 90                	xchg   ax,ax
+ f9c:	66 90                	xchg   ax,ax
+ f9e:	66 90                	xchg   ax,ax
+ fa0:	66 90                	xchg   ax,ax
+ fa2:	66 90                	xchg   ax,ax
+ fa4:	66 90                	xchg   ax,ax
+ fa6:	66 90                	xchg   ax,ax
+ fa8:	66 90                	xchg   ax,ax
+ faa:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ fb1:	41 59                	pop    r9
+ fb3:	41 58                	pop    r8
+ fb5:	5f                   	pop    rdi
+ fb6:	5e                   	pop    rsi
+ fb7:	5d                   	pop    rbp
+ fb8:	5b                   	pop    rbx
+ fb9:	0f 77                	emms   
+ fbb:	c3                   	ret    

@@ -19,30 +19,27 @@ Disassembly of section .data:
       13:	57                   	push   rdi
       14:	41 50                	push   r8
       16:	41 51                	push   r9
-      18:	48 83 ec 40          	sub    rsp,0x40
-      1c:	45 31 c0             	xor    r8d,r8d
-      1f:	4c 8d 0c 24          	lea    r9,[rsp]
-      23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-      2a:	7f 00 00 
-      2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-      34:	7f 00 00 
-      37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-      3e:	00 00 00 
-      41:	48 83 eb 00          	sub    rbx,0x0
-      45:	48 83 ed 00          	sub    rbp,0x0
-      49:	48 83 ee 00          	sub    rsi,0x0
-      4d:	48 83 ef 00          	sub    rdi,0x0
-      51:	49 83 e8 00          	sub    r8,0x0
-      55:	49 83 e9 00          	sub    r9,0x0
-      59:	49 83 ea 00          	sub    r10,0x0
-      5d:	49 83 eb 00          	sub    r11,0x0
-      61:	49 83 ec 00          	sub    r12,0x0
-      65:	49 83 ed 00          	sub    r13,0x0
-      69:	49 83 ee 00          	sub    r14,0x0
-      6d:	49 83 ef 00          	sub    r15,0x0
-      71:	90                   	nop
-      72:	90                   	nop
-      73:	90                   	nop
+      18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+      1f:	45 31 c0             	xor    r8d,r8d
+      22:	4c 8d 0c 24          	lea    r9,[rsp]
+      26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+      2d:	7f 00 00 
+      30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+      37:	7f 00 00 
+      3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+      41:	00 00 00 
+      44:	48 83 eb 00          	sub    rbx,0x0
+      48:	48 83 ed 00          	sub    rbp,0x0
+      4c:	48 83 ee 00          	sub    rsi,0x0
+      50:	48 83 ef 00          	sub    rdi,0x0
+      54:	49 83 e8 00          	sub    r8,0x0
+      58:	49 83 e9 00          	sub    r9,0x0
+      5c:	49 83 ea 00          	sub    r10,0x0
+      60:	49 83 eb 00          	sub    r11,0x0
+      64:	49 83 ec 00          	sub    r12,0x0
+      68:	49 83 ed 00          	sub    r13,0x0
+      6c:	49 83 ee 00          	sub    r14,0x0
+      70:	49 83 ef 00          	sub    r15,0x0
       74:	90                   	nop
       75:	90                   	nop
       76:	90                   	nop
@@ -55,23 +52,23 @@ Disassembly of section .data:
       7d:	90                   	nop
       7e:	90                   	nop
       7f:	90                   	nop
-      80:	bb 01 00 00 00       	mov    ebx,0x1
-      85:	bd 01 00 00 00       	mov    ebp,0x1
-      8a:	be 01 00 00 00       	mov    esi,0x1
-      8f:	bf 01 00 00 00       	mov    edi,0x1
-      94:	bb 01 00 00 00       	mov    ebx,0x1
-      99:	bd 01 00 00 00       	mov    ebp,0x1
-      9e:	be 01 00 00 00       	mov    esi,0x1
-      a3:	bf 01 00 00 00       	mov    edi,0x1
-      a8:	bb 01 00 00 00       	mov    ebx,0x1
-      ad:	bd 01 00 00 00       	mov    ebp,0x1
-      b2:	be 01 00 00 00       	mov    esi,0x1
-      b7:	bf 01 00 00 00       	mov    edi,0x1
-      bc:	bb 01 00 00 00       	mov    ebx,0x1
-      c1:	bd 01 00 00 00       	mov    ebp,0x1
-      c6:	be 01 00 00 00       	mov    esi,0x1
-      cb:	bf 01 00 00 00       	mov    edi,0x1
-      d0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+      80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+      83:	bb 01 00 00 00       	mov    ebx,0x1
+      88:	bd 01 00 00 00       	mov    ebp,0x1
+      8d:	be 01 00 00 00       	mov    esi,0x1
+      92:	bf 01 00 00 00       	mov    edi,0x1
+      97:	bb 01 00 00 00       	mov    ebx,0x1
+      9c:	bd 01 00 00 00       	mov    ebp,0x1
+      a1:	be 01 00 00 00       	mov    esi,0x1
+      a6:	bf 01 00 00 00       	mov    edi,0x1
+      ab:	bb 01 00 00 00       	mov    ebx,0x1
+      b0:	bd 01 00 00 00       	mov    ebp,0x1
+      b5:	be 01 00 00 00       	mov    esi,0x1
+      ba:	bf 01 00 00 00       	mov    edi,0x1
+      bf:	bb 01 00 00 00       	mov    ebx,0x1
+      c4:	bd 01 00 00 00       	mov    ebp,0x1
+      c9:	be 01 00 00 00       	mov    esi,0x1
+      ce:	bf 01 00 00 00       	mov    edi,0x1
       d3:	bb 01 00 00 00       	mov    ebx,0x1
       d8:	bd 01 00 00 00       	mov    ebp,0x1
       dd:	be 01 00 00 00       	mov    esi,0x1
@@ -87,23 +84,23 @@ Disassembly of section .data:
      10f:	bb 01 00 00 00       	mov    ebx,0x1
      114:	bd 01 00 00 00       	mov    ebp,0x1
      119:	be 01 00 00 00       	mov    esi,0x1
-     11e:	bf 01 00 00 00       	mov    edi,0x1
-     123:	bb 01 00 00 00       	mov    ebx,0x1
-     128:	bd 01 00 00 00       	mov    ebp,0x1
-     12d:	be 01 00 00 00       	mov    esi,0x1
-     132:	bf 01 00 00 00       	mov    edi,0x1
-     137:	bb 01 00 00 00       	mov    ebx,0x1
-     13c:	bd 01 00 00 00       	mov    ebp,0x1
-     141:	be 01 00 00 00       	mov    esi,0x1
-     146:	bf 01 00 00 00       	mov    edi,0x1
-     14b:	bb 01 00 00 00       	mov    ebx,0x1
-     150:	bd 01 00 00 00       	mov    ebp,0x1
-     155:	be 01 00 00 00       	mov    esi,0x1
-     15a:	bf 01 00 00 00       	mov    edi,0x1
-     15f:	bb 01 00 00 00       	mov    ebx,0x1
-     164:	bd 01 00 00 00       	mov    ebp,0x1
-     169:	be 01 00 00 00       	mov    esi,0x1
-     16e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     11e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     121:	bb 01 00 00 00       	mov    ebx,0x1
+     126:	bd 01 00 00 00       	mov    ebp,0x1
+     12b:	be 01 00 00 00       	mov    esi,0x1
+     130:	bf 01 00 00 00       	mov    edi,0x1
+     135:	bb 01 00 00 00       	mov    ebx,0x1
+     13a:	bd 01 00 00 00       	mov    ebp,0x1
+     13f:	be 01 00 00 00       	mov    esi,0x1
+     144:	bf 01 00 00 00       	mov    edi,0x1
+     149:	bb 01 00 00 00       	mov    ebx,0x1
+     14e:	bd 01 00 00 00       	mov    ebp,0x1
+     153:	be 01 00 00 00       	mov    esi,0x1
+     158:	bf 01 00 00 00       	mov    edi,0x1
+     15d:	bb 01 00 00 00       	mov    ebx,0x1
+     162:	bd 01 00 00 00       	mov    ebp,0x1
+     167:	be 01 00 00 00       	mov    esi,0x1
+     16c:	bf 01 00 00 00       	mov    edi,0x1
      171:	bb 01 00 00 00       	mov    ebx,0x1
      176:	bd 01 00 00 00       	mov    ebp,0x1
      17b:	be 01 00 00 00       	mov    esi,0x1
@@ -119,23 +116,23 @@ Disassembly of section .data:
      1ad:	bb 01 00 00 00       	mov    ebx,0x1
      1b2:	bd 01 00 00 00       	mov    ebp,0x1
      1b7:	be 01 00 00 00       	mov    esi,0x1
-     1bc:	bb 01 00 00 00       	mov    ebx,0x1
-     1c1:	bd 01 00 00 00       	mov    ebp,0x1
-     1c6:	be 01 00 00 00       	mov    esi,0x1
-     1cb:	bf 01 00 00 00       	mov    edi,0x1
-     1d0:	bb 01 00 00 00       	mov    ebx,0x1
-     1d5:	bd 01 00 00 00       	mov    ebp,0x1
-     1da:	be 01 00 00 00       	mov    esi,0x1
-     1df:	bf 01 00 00 00       	mov    edi,0x1
-     1e4:	bb 01 00 00 00       	mov    ebx,0x1
-     1e9:	bd 01 00 00 00       	mov    ebp,0x1
-     1ee:	be 01 00 00 00       	mov    esi,0x1
-     1f3:	bf 01 00 00 00       	mov    edi,0x1
-     1f8:	bb 01 00 00 00       	mov    ebx,0x1
-     1fd:	bd 01 00 00 00       	mov    ebp,0x1
-     202:	be 01 00 00 00       	mov    esi,0x1
-     207:	bf 01 00 00 00       	mov    edi,0x1
-     20c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     1bc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     1bf:	bb 01 00 00 00       	mov    ebx,0x1
+     1c4:	bd 01 00 00 00       	mov    ebp,0x1
+     1c9:	be 01 00 00 00       	mov    esi,0x1
+     1ce:	bf 01 00 00 00       	mov    edi,0x1
+     1d3:	bb 01 00 00 00       	mov    ebx,0x1
+     1d8:	bd 01 00 00 00       	mov    ebp,0x1
+     1dd:	be 01 00 00 00       	mov    esi,0x1
+     1e2:	bf 01 00 00 00       	mov    edi,0x1
+     1e7:	bb 01 00 00 00       	mov    ebx,0x1
+     1ec:	bd 01 00 00 00       	mov    ebp,0x1
+     1f1:	be 01 00 00 00       	mov    esi,0x1
+     1f6:	bf 01 00 00 00       	mov    edi,0x1
+     1fb:	bb 01 00 00 00       	mov    ebx,0x1
+     200:	bd 01 00 00 00       	mov    ebp,0x1
+     205:	be 01 00 00 00       	mov    esi,0x1
+     20a:	bf 01 00 00 00       	mov    edi,0x1
      20f:	bb 01 00 00 00       	mov    ebx,0x1
      214:	bd 01 00 00 00       	mov    ebp,0x1
      219:	be 01 00 00 00       	mov    esi,0x1
@@ -151,23 +148,23 @@ Disassembly of section .data:
      24b:	bb 01 00 00 00       	mov    ebx,0x1
      250:	bd 01 00 00 00       	mov    ebp,0x1
      255:	be 01 00 00 00       	mov    esi,0x1
-     25a:	bf 01 00 00 00       	mov    edi,0x1
-     25f:	bb 01 00 00 00       	mov    ebx,0x1
-     264:	bd 01 00 00 00       	mov    ebp,0x1
-     269:	be 01 00 00 00       	mov    esi,0x1
-     26e:	bf 01 00 00 00       	mov    edi,0x1
-     273:	bb 01 00 00 00       	mov    ebx,0x1
-     278:	bd 01 00 00 00       	mov    ebp,0x1
-     27d:	be 01 00 00 00       	mov    esi,0x1
-     282:	bf 01 00 00 00       	mov    edi,0x1
-     287:	bb 01 00 00 00       	mov    ebx,0x1
-     28c:	bd 01 00 00 00       	mov    ebp,0x1
-     291:	be 01 00 00 00       	mov    esi,0x1
-     296:	bf 01 00 00 00       	mov    edi,0x1
-     29b:	bb 01 00 00 00       	mov    ebx,0x1
-     2a0:	bd 01 00 00 00       	mov    ebp,0x1
-     2a5:	be 01 00 00 00       	mov    esi,0x1
-     2aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     25a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     25d:	bb 01 00 00 00       	mov    ebx,0x1
+     262:	bd 01 00 00 00       	mov    ebp,0x1
+     267:	be 01 00 00 00       	mov    esi,0x1
+     26c:	bf 01 00 00 00       	mov    edi,0x1
+     271:	bb 01 00 00 00       	mov    ebx,0x1
+     276:	bd 01 00 00 00       	mov    ebp,0x1
+     27b:	be 01 00 00 00       	mov    esi,0x1
+     280:	bf 01 00 00 00       	mov    edi,0x1
+     285:	bb 01 00 00 00       	mov    ebx,0x1
+     28a:	bd 01 00 00 00       	mov    ebp,0x1
+     28f:	be 01 00 00 00       	mov    esi,0x1
+     294:	bf 01 00 00 00       	mov    edi,0x1
+     299:	bb 01 00 00 00       	mov    ebx,0x1
+     29e:	bd 01 00 00 00       	mov    ebp,0x1
+     2a3:	be 01 00 00 00       	mov    esi,0x1
+     2a8:	bf 01 00 00 00       	mov    edi,0x1
      2ad:	bb 01 00 00 00       	mov    ebx,0x1
      2b2:	bd 01 00 00 00       	mov    ebp,0x1
      2b7:	be 01 00 00 00       	mov    esi,0x1
@@ -183,23 +180,23 @@ Disassembly of section .data:
      2e9:	bb 01 00 00 00       	mov    ebx,0x1
      2ee:	bd 01 00 00 00       	mov    ebp,0x1
      2f3:	be 01 00 00 00       	mov    esi,0x1
-     2f8:	bb 01 00 00 00       	mov    ebx,0x1
-     2fd:	bd 01 00 00 00       	mov    ebp,0x1
-     302:	be 01 00 00 00       	mov    esi,0x1
-     307:	bf 01 00 00 00       	mov    edi,0x1
-     30c:	bb 01 00 00 00       	mov    ebx,0x1
-     311:	bd 01 00 00 00       	mov    ebp,0x1
-     316:	be 01 00 00 00       	mov    esi,0x1
-     31b:	bf 01 00 00 00       	mov    edi,0x1
-     320:	bb 01 00 00 00       	mov    ebx,0x1
-     325:	bd 01 00 00 00       	mov    ebp,0x1
-     32a:	be 01 00 00 00       	mov    esi,0x1
-     32f:	bf 01 00 00 00       	mov    edi,0x1
-     334:	bb 01 00 00 00       	mov    ebx,0x1
-     339:	bd 01 00 00 00       	mov    ebp,0x1
-     33e:	be 01 00 00 00       	mov    esi,0x1
-     343:	bf 01 00 00 00       	mov    edi,0x1
-     348:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     2f8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     2fb:	bb 01 00 00 00       	mov    ebx,0x1
+     300:	bd 01 00 00 00       	mov    ebp,0x1
+     305:	be 01 00 00 00       	mov    esi,0x1
+     30a:	bf 01 00 00 00       	mov    edi,0x1
+     30f:	bb 01 00 00 00       	mov    ebx,0x1
+     314:	bd 01 00 00 00       	mov    ebp,0x1
+     319:	be 01 00 00 00       	mov    esi,0x1
+     31e:	bf 01 00 00 00       	mov    edi,0x1
+     323:	bb 01 00 00 00       	mov    ebx,0x1
+     328:	bd 01 00 00 00       	mov    ebp,0x1
+     32d:	be 01 00 00 00       	mov    esi,0x1
+     332:	bf 01 00 00 00       	mov    edi,0x1
+     337:	bb 01 00 00 00       	mov    ebx,0x1
+     33c:	bd 01 00 00 00       	mov    ebp,0x1
+     341:	be 01 00 00 00       	mov    esi,0x1
+     346:	bf 01 00 00 00       	mov    edi,0x1
      34b:	bb 01 00 00 00       	mov    ebx,0x1
      350:	bd 01 00 00 00       	mov    ebp,0x1
      355:	be 01 00 00 00       	mov    esi,0x1
@@ -215,23 +212,23 @@ Disassembly of section .data:
      387:	bb 01 00 00 00       	mov    ebx,0x1
      38c:	bd 01 00 00 00       	mov    ebp,0x1
      391:	be 01 00 00 00       	mov    esi,0x1
-     396:	bf 01 00 00 00       	mov    edi,0x1
-     39b:	bb 01 00 00 00       	mov    ebx,0x1
-     3a0:	bd 01 00 00 00       	mov    ebp,0x1
-     3a5:	be 01 00 00 00       	mov    esi,0x1
-     3aa:	bf 01 00 00 00       	mov    edi,0x1
-     3af:	bb 01 00 00 00       	mov    ebx,0x1
-     3b4:	bd 01 00 00 00       	mov    ebp,0x1
-     3b9:	be 01 00 00 00       	mov    esi,0x1
-     3be:	bf 01 00 00 00       	mov    edi,0x1
-     3c3:	bb 01 00 00 00       	mov    ebx,0x1
-     3c8:	bd 01 00 00 00       	mov    ebp,0x1
-     3cd:	be 01 00 00 00       	mov    esi,0x1
-     3d2:	bf 01 00 00 00       	mov    edi,0x1
-     3d7:	bb 01 00 00 00       	mov    ebx,0x1
-     3dc:	bd 01 00 00 00       	mov    ebp,0x1
-     3e1:	be 01 00 00 00       	mov    esi,0x1
-     3e6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     396:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     399:	bb 01 00 00 00       	mov    ebx,0x1
+     39e:	bd 01 00 00 00       	mov    ebp,0x1
+     3a3:	be 01 00 00 00       	mov    esi,0x1
+     3a8:	bf 01 00 00 00       	mov    edi,0x1
+     3ad:	bb 01 00 00 00       	mov    ebx,0x1
+     3b2:	bd 01 00 00 00       	mov    ebp,0x1
+     3b7:	be 01 00 00 00       	mov    esi,0x1
+     3bc:	bf 01 00 00 00       	mov    edi,0x1
+     3c1:	bb 01 00 00 00       	mov    ebx,0x1
+     3c6:	bd 01 00 00 00       	mov    ebp,0x1
+     3cb:	be 01 00 00 00       	mov    esi,0x1
+     3d0:	bf 01 00 00 00       	mov    edi,0x1
+     3d5:	bb 01 00 00 00       	mov    ebx,0x1
+     3da:	bd 01 00 00 00       	mov    ebp,0x1
+     3df:	be 01 00 00 00       	mov    esi,0x1
+     3e4:	bf 01 00 00 00       	mov    edi,0x1
      3e9:	bb 01 00 00 00       	mov    ebx,0x1
      3ee:	bd 01 00 00 00       	mov    ebp,0x1
      3f3:	be 01 00 00 00       	mov    esi,0x1
@@ -247,23 +244,23 @@ Disassembly of section .data:
      425:	bb 01 00 00 00       	mov    ebx,0x1
      42a:	bd 01 00 00 00       	mov    ebp,0x1
      42f:	be 01 00 00 00       	mov    esi,0x1
-     434:	bb 01 00 00 00       	mov    ebx,0x1
-     439:	bd 01 00 00 00       	mov    ebp,0x1
-     43e:	be 01 00 00 00       	mov    esi,0x1
-     443:	bf 01 00 00 00       	mov    edi,0x1
-     448:	bb 01 00 00 00       	mov    ebx,0x1
-     44d:	bd 01 00 00 00       	mov    ebp,0x1
-     452:	be 01 00 00 00       	mov    esi,0x1
-     457:	bf 01 00 00 00       	mov    edi,0x1
-     45c:	bb 01 00 00 00       	mov    ebx,0x1
-     461:	bd 01 00 00 00       	mov    ebp,0x1
-     466:	be 01 00 00 00       	mov    esi,0x1
-     46b:	bf 01 00 00 00       	mov    edi,0x1
-     470:	bb 01 00 00 00       	mov    ebx,0x1
-     475:	bd 01 00 00 00       	mov    ebp,0x1
-     47a:	be 01 00 00 00       	mov    esi,0x1
-     47f:	bf 01 00 00 00       	mov    edi,0x1
-     484:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     434:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     437:	bb 01 00 00 00       	mov    ebx,0x1
+     43c:	bd 01 00 00 00       	mov    ebp,0x1
+     441:	be 01 00 00 00       	mov    esi,0x1
+     446:	bf 01 00 00 00       	mov    edi,0x1
+     44b:	bb 01 00 00 00       	mov    ebx,0x1
+     450:	bd 01 00 00 00       	mov    ebp,0x1
+     455:	be 01 00 00 00       	mov    esi,0x1
+     45a:	bf 01 00 00 00       	mov    edi,0x1
+     45f:	bb 01 00 00 00       	mov    ebx,0x1
+     464:	bd 01 00 00 00       	mov    ebp,0x1
+     469:	be 01 00 00 00       	mov    esi,0x1
+     46e:	bf 01 00 00 00       	mov    edi,0x1
+     473:	bb 01 00 00 00       	mov    ebx,0x1
+     478:	bd 01 00 00 00       	mov    ebp,0x1
+     47d:	be 01 00 00 00       	mov    esi,0x1
+     482:	bf 01 00 00 00       	mov    edi,0x1
      487:	bb 01 00 00 00       	mov    ebx,0x1
      48c:	bd 01 00 00 00       	mov    ebp,0x1
      491:	be 01 00 00 00       	mov    esi,0x1
@@ -279,23 +276,23 @@ Disassembly of section .data:
      4c3:	bb 01 00 00 00       	mov    ebx,0x1
      4c8:	bd 01 00 00 00       	mov    ebp,0x1
      4cd:	be 01 00 00 00       	mov    esi,0x1
-     4d2:	bf 01 00 00 00       	mov    edi,0x1
-     4d7:	bb 01 00 00 00       	mov    ebx,0x1
-     4dc:	bd 01 00 00 00       	mov    ebp,0x1
-     4e1:	be 01 00 00 00       	mov    esi,0x1
-     4e6:	bf 01 00 00 00       	mov    edi,0x1
-     4eb:	bb 01 00 00 00       	mov    ebx,0x1
-     4f0:	bd 01 00 00 00       	mov    ebp,0x1
-     4f5:	be 01 00 00 00       	mov    esi,0x1
-     4fa:	bf 01 00 00 00       	mov    edi,0x1
-     4ff:	bb 01 00 00 00       	mov    ebx,0x1
-     504:	bd 01 00 00 00       	mov    ebp,0x1
-     509:	be 01 00 00 00       	mov    esi,0x1
-     50e:	bf 01 00 00 00       	mov    edi,0x1
-     513:	bb 01 00 00 00       	mov    ebx,0x1
-     518:	bd 01 00 00 00       	mov    ebp,0x1
-     51d:	be 01 00 00 00       	mov    esi,0x1
-     522:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     4d2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     4d5:	bb 01 00 00 00       	mov    ebx,0x1
+     4da:	bd 01 00 00 00       	mov    ebp,0x1
+     4df:	be 01 00 00 00       	mov    esi,0x1
+     4e4:	bf 01 00 00 00       	mov    edi,0x1
+     4e9:	bb 01 00 00 00       	mov    ebx,0x1
+     4ee:	bd 01 00 00 00       	mov    ebp,0x1
+     4f3:	be 01 00 00 00       	mov    esi,0x1
+     4f8:	bf 01 00 00 00       	mov    edi,0x1
+     4fd:	bb 01 00 00 00       	mov    ebx,0x1
+     502:	bd 01 00 00 00       	mov    ebp,0x1
+     507:	be 01 00 00 00       	mov    esi,0x1
+     50c:	bf 01 00 00 00       	mov    edi,0x1
+     511:	bb 01 00 00 00       	mov    ebx,0x1
+     516:	bd 01 00 00 00       	mov    ebp,0x1
+     51b:	be 01 00 00 00       	mov    esi,0x1
+     520:	bf 01 00 00 00       	mov    edi,0x1
      525:	bb 01 00 00 00       	mov    ebx,0x1
      52a:	bd 01 00 00 00       	mov    ebp,0x1
      52f:	be 01 00 00 00       	mov    esi,0x1
@@ -311,23 +308,23 @@ Disassembly of section .data:
      561:	bb 01 00 00 00       	mov    ebx,0x1
      566:	bd 01 00 00 00       	mov    ebp,0x1
      56b:	be 01 00 00 00       	mov    esi,0x1
-     570:	bb 01 00 00 00       	mov    ebx,0x1
-     575:	bd 01 00 00 00       	mov    ebp,0x1
-     57a:	be 01 00 00 00       	mov    esi,0x1
-     57f:	bf 01 00 00 00       	mov    edi,0x1
-     584:	bb 01 00 00 00       	mov    ebx,0x1
-     589:	bd 01 00 00 00       	mov    ebp,0x1
-     58e:	be 01 00 00 00       	mov    esi,0x1
-     593:	bf 01 00 00 00       	mov    edi,0x1
-     598:	bb 01 00 00 00       	mov    ebx,0x1
-     59d:	bd 01 00 00 00       	mov    ebp,0x1
-     5a2:	be 01 00 00 00       	mov    esi,0x1
-     5a7:	bf 01 00 00 00       	mov    edi,0x1
-     5ac:	bb 01 00 00 00       	mov    ebx,0x1
-     5b1:	bd 01 00 00 00       	mov    ebp,0x1
-     5b6:	be 01 00 00 00       	mov    esi,0x1
-     5bb:	bf 01 00 00 00       	mov    edi,0x1
-     5c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     570:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     573:	bb 01 00 00 00       	mov    ebx,0x1
+     578:	bd 01 00 00 00       	mov    ebp,0x1
+     57d:	be 01 00 00 00       	mov    esi,0x1
+     582:	bf 01 00 00 00       	mov    edi,0x1
+     587:	bb 01 00 00 00       	mov    ebx,0x1
+     58c:	bd 01 00 00 00       	mov    ebp,0x1
+     591:	be 01 00 00 00       	mov    esi,0x1
+     596:	bf 01 00 00 00       	mov    edi,0x1
+     59b:	bb 01 00 00 00       	mov    ebx,0x1
+     5a0:	bd 01 00 00 00       	mov    ebp,0x1
+     5a5:	be 01 00 00 00       	mov    esi,0x1
+     5aa:	bf 01 00 00 00       	mov    edi,0x1
+     5af:	bb 01 00 00 00       	mov    ebx,0x1
+     5b4:	bd 01 00 00 00       	mov    ebp,0x1
+     5b9:	be 01 00 00 00       	mov    esi,0x1
+     5be:	bf 01 00 00 00       	mov    edi,0x1
      5c3:	bb 01 00 00 00       	mov    ebx,0x1
      5c8:	bd 01 00 00 00       	mov    ebp,0x1
      5cd:	be 01 00 00 00       	mov    esi,0x1
@@ -343,23 +340,23 @@ Disassembly of section .data:
      5ff:	bb 01 00 00 00       	mov    ebx,0x1
      604:	bd 01 00 00 00       	mov    ebp,0x1
      609:	be 01 00 00 00       	mov    esi,0x1
-     60e:	bf 01 00 00 00       	mov    edi,0x1
-     613:	bb 01 00 00 00       	mov    ebx,0x1
-     618:	bd 01 00 00 00       	mov    ebp,0x1
-     61d:	be 01 00 00 00       	mov    esi,0x1
-     622:	bf 01 00 00 00       	mov    edi,0x1
-     627:	bb 01 00 00 00       	mov    ebx,0x1
-     62c:	bd 01 00 00 00       	mov    ebp,0x1
-     631:	be 01 00 00 00       	mov    esi,0x1
-     636:	bf 01 00 00 00       	mov    edi,0x1
-     63b:	bb 01 00 00 00       	mov    ebx,0x1
-     640:	bd 01 00 00 00       	mov    ebp,0x1
-     645:	be 01 00 00 00       	mov    esi,0x1
-     64a:	bf 01 00 00 00       	mov    edi,0x1
-     64f:	bb 01 00 00 00       	mov    ebx,0x1
-     654:	bd 01 00 00 00       	mov    ebp,0x1
-     659:	be 01 00 00 00       	mov    esi,0x1
-     65e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     60e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     611:	bb 01 00 00 00       	mov    ebx,0x1
+     616:	bd 01 00 00 00       	mov    ebp,0x1
+     61b:	be 01 00 00 00       	mov    esi,0x1
+     620:	bf 01 00 00 00       	mov    edi,0x1
+     625:	bb 01 00 00 00       	mov    ebx,0x1
+     62a:	bd 01 00 00 00       	mov    ebp,0x1
+     62f:	be 01 00 00 00       	mov    esi,0x1
+     634:	bf 01 00 00 00       	mov    edi,0x1
+     639:	bb 01 00 00 00       	mov    ebx,0x1
+     63e:	bd 01 00 00 00       	mov    ebp,0x1
+     643:	be 01 00 00 00       	mov    esi,0x1
+     648:	bf 01 00 00 00       	mov    edi,0x1
+     64d:	bb 01 00 00 00       	mov    ebx,0x1
+     652:	bd 01 00 00 00       	mov    ebp,0x1
+     657:	be 01 00 00 00       	mov    esi,0x1
+     65c:	bf 01 00 00 00       	mov    edi,0x1
      661:	bb 01 00 00 00       	mov    ebx,0x1
      666:	bd 01 00 00 00       	mov    ebp,0x1
      66b:	be 01 00 00 00       	mov    esi,0x1
@@ -375,23 +372,23 @@ Disassembly of section .data:
      69d:	bb 01 00 00 00       	mov    ebx,0x1
      6a2:	bd 01 00 00 00       	mov    ebp,0x1
      6a7:	be 01 00 00 00       	mov    esi,0x1
-     6ac:	bb 01 00 00 00       	mov    ebx,0x1
-     6b1:	bd 01 00 00 00       	mov    ebp,0x1
-     6b6:	be 01 00 00 00       	mov    esi,0x1
-     6bb:	bf 01 00 00 00       	mov    edi,0x1
-     6c0:	bb 01 00 00 00       	mov    ebx,0x1
-     6c5:	bd 01 00 00 00       	mov    ebp,0x1
-     6ca:	be 01 00 00 00       	mov    esi,0x1
-     6cf:	bf 01 00 00 00       	mov    edi,0x1
-     6d4:	bb 01 00 00 00       	mov    ebx,0x1
-     6d9:	bd 01 00 00 00       	mov    ebp,0x1
-     6de:	be 01 00 00 00       	mov    esi,0x1
-     6e3:	bf 01 00 00 00       	mov    edi,0x1
-     6e8:	bb 01 00 00 00       	mov    ebx,0x1
-     6ed:	bd 01 00 00 00       	mov    ebp,0x1
-     6f2:	be 01 00 00 00       	mov    esi,0x1
-     6f7:	bf 01 00 00 00       	mov    edi,0x1
-     6fc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     6ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     6af:	bb 01 00 00 00       	mov    ebx,0x1
+     6b4:	bd 01 00 00 00       	mov    ebp,0x1
+     6b9:	be 01 00 00 00       	mov    esi,0x1
+     6be:	bf 01 00 00 00       	mov    edi,0x1
+     6c3:	bb 01 00 00 00       	mov    ebx,0x1
+     6c8:	bd 01 00 00 00       	mov    ebp,0x1
+     6cd:	be 01 00 00 00       	mov    esi,0x1
+     6d2:	bf 01 00 00 00       	mov    edi,0x1
+     6d7:	bb 01 00 00 00       	mov    ebx,0x1
+     6dc:	bd 01 00 00 00       	mov    ebp,0x1
+     6e1:	be 01 00 00 00       	mov    esi,0x1
+     6e6:	bf 01 00 00 00       	mov    edi,0x1
+     6eb:	bb 01 00 00 00       	mov    ebx,0x1
+     6f0:	bd 01 00 00 00       	mov    ebp,0x1
+     6f5:	be 01 00 00 00       	mov    esi,0x1
+     6fa:	bf 01 00 00 00       	mov    edi,0x1
      6ff:	bb 01 00 00 00       	mov    ebx,0x1
      704:	bd 01 00 00 00       	mov    ebp,0x1
      709:	be 01 00 00 00       	mov    esi,0x1
@@ -407,23 +404,23 @@ Disassembly of section .data:
      73b:	bb 01 00 00 00       	mov    ebx,0x1
      740:	bd 01 00 00 00       	mov    ebp,0x1
      745:	be 01 00 00 00       	mov    esi,0x1
-     74a:	bf 01 00 00 00       	mov    edi,0x1
-     74f:	bb 01 00 00 00       	mov    ebx,0x1
-     754:	bd 01 00 00 00       	mov    ebp,0x1
-     759:	be 01 00 00 00       	mov    esi,0x1
-     75e:	bf 01 00 00 00       	mov    edi,0x1
-     763:	bb 01 00 00 00       	mov    ebx,0x1
-     768:	bd 01 00 00 00       	mov    ebp,0x1
-     76d:	be 01 00 00 00       	mov    esi,0x1
-     772:	bf 01 00 00 00       	mov    edi,0x1
-     777:	bb 01 00 00 00       	mov    ebx,0x1
-     77c:	bd 01 00 00 00       	mov    ebp,0x1
-     781:	be 01 00 00 00       	mov    esi,0x1
-     786:	bf 01 00 00 00       	mov    edi,0x1
-     78b:	bb 01 00 00 00       	mov    ebx,0x1
-     790:	bd 01 00 00 00       	mov    ebp,0x1
-     795:	be 01 00 00 00       	mov    esi,0x1
-     79a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     74a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     74d:	bb 01 00 00 00       	mov    ebx,0x1
+     752:	bd 01 00 00 00       	mov    ebp,0x1
+     757:	be 01 00 00 00       	mov    esi,0x1
+     75c:	bf 01 00 00 00       	mov    edi,0x1
+     761:	bb 01 00 00 00       	mov    ebx,0x1
+     766:	bd 01 00 00 00       	mov    ebp,0x1
+     76b:	be 01 00 00 00       	mov    esi,0x1
+     770:	bf 01 00 00 00       	mov    edi,0x1
+     775:	bb 01 00 00 00       	mov    ebx,0x1
+     77a:	bd 01 00 00 00       	mov    ebp,0x1
+     77f:	be 01 00 00 00       	mov    esi,0x1
+     784:	bf 01 00 00 00       	mov    edi,0x1
+     789:	bb 01 00 00 00       	mov    ebx,0x1
+     78e:	bd 01 00 00 00       	mov    ebp,0x1
+     793:	be 01 00 00 00       	mov    esi,0x1
+     798:	bf 01 00 00 00       	mov    edi,0x1
      79d:	bb 01 00 00 00       	mov    ebx,0x1
      7a2:	bd 01 00 00 00       	mov    ebp,0x1
      7a7:	be 01 00 00 00       	mov    esi,0x1
@@ -439,23 +436,23 @@ Disassembly of section .data:
      7d9:	bb 01 00 00 00       	mov    ebx,0x1
      7de:	bd 01 00 00 00       	mov    ebp,0x1
      7e3:	be 01 00 00 00       	mov    esi,0x1
-     7e8:	bb 01 00 00 00       	mov    ebx,0x1
-     7ed:	bd 01 00 00 00       	mov    ebp,0x1
-     7f2:	be 01 00 00 00       	mov    esi,0x1
-     7f7:	bf 01 00 00 00       	mov    edi,0x1
-     7fc:	bb 01 00 00 00       	mov    ebx,0x1
-     801:	bd 01 00 00 00       	mov    ebp,0x1
-     806:	be 01 00 00 00       	mov    esi,0x1
-     80b:	bf 01 00 00 00       	mov    edi,0x1
-     810:	bb 01 00 00 00       	mov    ebx,0x1
-     815:	bd 01 00 00 00       	mov    ebp,0x1
-     81a:	be 01 00 00 00       	mov    esi,0x1
-     81f:	bf 01 00 00 00       	mov    edi,0x1
-     824:	bb 01 00 00 00       	mov    ebx,0x1
-     829:	bd 01 00 00 00       	mov    ebp,0x1
-     82e:	be 01 00 00 00       	mov    esi,0x1
-     833:	bf 01 00 00 00       	mov    edi,0x1
-     838:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     7e8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     7eb:	bb 01 00 00 00       	mov    ebx,0x1
+     7f0:	bd 01 00 00 00       	mov    ebp,0x1
+     7f5:	be 01 00 00 00       	mov    esi,0x1
+     7fa:	bf 01 00 00 00       	mov    edi,0x1
+     7ff:	bb 01 00 00 00       	mov    ebx,0x1
+     804:	bd 01 00 00 00       	mov    ebp,0x1
+     809:	be 01 00 00 00       	mov    esi,0x1
+     80e:	bf 01 00 00 00       	mov    edi,0x1
+     813:	bb 01 00 00 00       	mov    ebx,0x1
+     818:	bd 01 00 00 00       	mov    ebp,0x1
+     81d:	be 01 00 00 00       	mov    esi,0x1
+     822:	bf 01 00 00 00       	mov    edi,0x1
+     827:	bb 01 00 00 00       	mov    ebx,0x1
+     82c:	bd 01 00 00 00       	mov    ebp,0x1
+     831:	be 01 00 00 00       	mov    esi,0x1
+     836:	bf 01 00 00 00       	mov    edi,0x1
      83b:	bb 01 00 00 00       	mov    ebx,0x1
      840:	bd 01 00 00 00       	mov    ebp,0x1
      845:	be 01 00 00 00       	mov    esi,0x1
@@ -471,23 +468,23 @@ Disassembly of section .data:
      877:	bb 01 00 00 00       	mov    ebx,0x1
      87c:	bd 01 00 00 00       	mov    ebp,0x1
      881:	be 01 00 00 00       	mov    esi,0x1
-     886:	bf 01 00 00 00       	mov    edi,0x1
-     88b:	bb 01 00 00 00       	mov    ebx,0x1
-     890:	bd 01 00 00 00       	mov    ebp,0x1
-     895:	be 01 00 00 00       	mov    esi,0x1
-     89a:	bf 01 00 00 00       	mov    edi,0x1
-     89f:	bb 01 00 00 00       	mov    ebx,0x1
-     8a4:	bd 01 00 00 00       	mov    ebp,0x1
-     8a9:	be 01 00 00 00       	mov    esi,0x1
-     8ae:	bf 01 00 00 00       	mov    edi,0x1
-     8b3:	bb 01 00 00 00       	mov    ebx,0x1
-     8b8:	bd 01 00 00 00       	mov    ebp,0x1
-     8bd:	be 01 00 00 00       	mov    esi,0x1
-     8c2:	bf 01 00 00 00       	mov    edi,0x1
-     8c7:	bb 01 00 00 00       	mov    ebx,0x1
-     8cc:	bd 01 00 00 00       	mov    ebp,0x1
-     8d1:	be 01 00 00 00       	mov    esi,0x1
-     8d6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     886:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     889:	bb 01 00 00 00       	mov    ebx,0x1
+     88e:	bd 01 00 00 00       	mov    ebp,0x1
+     893:	be 01 00 00 00       	mov    esi,0x1
+     898:	bf 01 00 00 00       	mov    edi,0x1
+     89d:	bb 01 00 00 00       	mov    ebx,0x1
+     8a2:	bd 01 00 00 00       	mov    ebp,0x1
+     8a7:	be 01 00 00 00       	mov    esi,0x1
+     8ac:	bf 01 00 00 00       	mov    edi,0x1
+     8b1:	bb 01 00 00 00       	mov    ebx,0x1
+     8b6:	bd 01 00 00 00       	mov    ebp,0x1
+     8bb:	be 01 00 00 00       	mov    esi,0x1
+     8c0:	bf 01 00 00 00       	mov    edi,0x1
+     8c5:	bb 01 00 00 00       	mov    ebx,0x1
+     8ca:	bd 01 00 00 00       	mov    ebp,0x1
+     8cf:	be 01 00 00 00       	mov    esi,0x1
+     8d4:	bf 01 00 00 00       	mov    edi,0x1
      8d9:	bb 01 00 00 00       	mov    ebx,0x1
      8de:	bd 01 00 00 00       	mov    ebp,0x1
      8e3:	be 01 00 00 00       	mov    esi,0x1
@@ -503,23 +500,23 @@ Disassembly of section .data:
      915:	bb 01 00 00 00       	mov    ebx,0x1
      91a:	bd 01 00 00 00       	mov    ebp,0x1
      91f:	be 01 00 00 00       	mov    esi,0x1
-     924:	bb 01 00 00 00       	mov    ebx,0x1
-     929:	bd 01 00 00 00       	mov    ebp,0x1
-     92e:	be 01 00 00 00       	mov    esi,0x1
-     933:	bf 01 00 00 00       	mov    edi,0x1
-     938:	bb 01 00 00 00       	mov    ebx,0x1
-     93d:	bd 01 00 00 00       	mov    ebp,0x1
-     942:	be 01 00 00 00       	mov    esi,0x1
-     947:	bf 01 00 00 00       	mov    edi,0x1
-     94c:	bb 01 00 00 00       	mov    ebx,0x1
-     951:	bd 01 00 00 00       	mov    ebp,0x1
-     956:	be 01 00 00 00       	mov    esi,0x1
-     95b:	bf 01 00 00 00       	mov    edi,0x1
-     960:	bb 01 00 00 00       	mov    ebx,0x1
-     965:	bd 01 00 00 00       	mov    ebp,0x1
-     96a:	be 01 00 00 00       	mov    esi,0x1
-     96f:	bf 01 00 00 00       	mov    edi,0x1
-     974:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     924:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     927:	bb 01 00 00 00       	mov    ebx,0x1
+     92c:	bd 01 00 00 00       	mov    ebp,0x1
+     931:	be 01 00 00 00       	mov    esi,0x1
+     936:	bf 01 00 00 00       	mov    edi,0x1
+     93b:	bb 01 00 00 00       	mov    ebx,0x1
+     940:	bd 01 00 00 00       	mov    ebp,0x1
+     945:	be 01 00 00 00       	mov    esi,0x1
+     94a:	bf 01 00 00 00       	mov    edi,0x1
+     94f:	bb 01 00 00 00       	mov    ebx,0x1
+     954:	bd 01 00 00 00       	mov    ebp,0x1
+     959:	be 01 00 00 00       	mov    esi,0x1
+     95e:	bf 01 00 00 00       	mov    edi,0x1
+     963:	bb 01 00 00 00       	mov    ebx,0x1
+     968:	bd 01 00 00 00       	mov    ebp,0x1
+     96d:	be 01 00 00 00       	mov    esi,0x1
+     972:	bf 01 00 00 00       	mov    edi,0x1
      977:	bb 01 00 00 00       	mov    ebx,0x1
      97c:	bd 01 00 00 00       	mov    ebp,0x1
      981:	be 01 00 00 00       	mov    esi,0x1
@@ -535,23 +532,23 @@ Disassembly of section .data:
      9b3:	bb 01 00 00 00       	mov    ebx,0x1
      9b8:	bd 01 00 00 00       	mov    ebp,0x1
      9bd:	be 01 00 00 00       	mov    esi,0x1
-     9c2:	bf 01 00 00 00       	mov    edi,0x1
-     9c7:	bb 01 00 00 00       	mov    ebx,0x1
-     9cc:	bd 01 00 00 00       	mov    ebp,0x1
-     9d1:	be 01 00 00 00       	mov    esi,0x1
-     9d6:	bf 01 00 00 00       	mov    edi,0x1
-     9db:	bb 01 00 00 00       	mov    ebx,0x1
-     9e0:	bd 01 00 00 00       	mov    ebp,0x1
-     9e5:	be 01 00 00 00       	mov    esi,0x1
-     9ea:	bf 01 00 00 00       	mov    edi,0x1
-     9ef:	bb 01 00 00 00       	mov    ebx,0x1
-     9f4:	bd 01 00 00 00       	mov    ebp,0x1
-     9f9:	be 01 00 00 00       	mov    esi,0x1
-     9fe:	bf 01 00 00 00       	mov    edi,0x1
-     a03:	bb 01 00 00 00       	mov    ebx,0x1
-     a08:	bd 01 00 00 00       	mov    ebp,0x1
-     a0d:	be 01 00 00 00       	mov    esi,0x1
-     a12:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     9c2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     9c5:	bb 01 00 00 00       	mov    ebx,0x1
+     9ca:	bd 01 00 00 00       	mov    ebp,0x1
+     9cf:	be 01 00 00 00       	mov    esi,0x1
+     9d4:	bf 01 00 00 00       	mov    edi,0x1
+     9d9:	bb 01 00 00 00       	mov    ebx,0x1
+     9de:	bd 01 00 00 00       	mov    ebp,0x1
+     9e3:	be 01 00 00 00       	mov    esi,0x1
+     9e8:	bf 01 00 00 00       	mov    edi,0x1
+     9ed:	bb 01 00 00 00       	mov    ebx,0x1
+     9f2:	bd 01 00 00 00       	mov    ebp,0x1
+     9f7:	be 01 00 00 00       	mov    esi,0x1
+     9fc:	bf 01 00 00 00       	mov    edi,0x1
+     a01:	bb 01 00 00 00       	mov    ebx,0x1
+     a06:	bd 01 00 00 00       	mov    ebp,0x1
+     a0b:	be 01 00 00 00       	mov    esi,0x1
+     a10:	bf 01 00 00 00       	mov    edi,0x1
      a15:	bb 01 00 00 00       	mov    ebx,0x1
      a1a:	bd 01 00 00 00       	mov    ebp,0x1
      a1f:	be 01 00 00 00       	mov    esi,0x1
@@ -567,23 +564,23 @@ Disassembly of section .data:
      a51:	bb 01 00 00 00       	mov    ebx,0x1
      a56:	bd 01 00 00 00       	mov    ebp,0x1
      a5b:	be 01 00 00 00       	mov    esi,0x1
-     a60:	bb 01 00 00 00       	mov    ebx,0x1
-     a65:	bd 01 00 00 00       	mov    ebp,0x1
-     a6a:	be 01 00 00 00       	mov    esi,0x1
-     a6f:	bf 01 00 00 00       	mov    edi,0x1
-     a74:	bb 01 00 00 00       	mov    ebx,0x1
-     a79:	bd 01 00 00 00       	mov    ebp,0x1
-     a7e:	be 01 00 00 00       	mov    esi,0x1
-     a83:	bf 01 00 00 00       	mov    edi,0x1
-     a88:	bb 01 00 00 00       	mov    ebx,0x1
-     a8d:	bd 01 00 00 00       	mov    ebp,0x1
-     a92:	be 01 00 00 00       	mov    esi,0x1
-     a97:	bf 01 00 00 00       	mov    edi,0x1
-     a9c:	bb 01 00 00 00       	mov    ebx,0x1
-     aa1:	bd 01 00 00 00       	mov    ebp,0x1
-     aa6:	be 01 00 00 00       	mov    esi,0x1
-     aab:	bf 01 00 00 00       	mov    edi,0x1
-     ab0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     a60:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     a63:	bb 01 00 00 00       	mov    ebx,0x1
+     a68:	bd 01 00 00 00       	mov    ebp,0x1
+     a6d:	be 01 00 00 00       	mov    esi,0x1
+     a72:	bf 01 00 00 00       	mov    edi,0x1
+     a77:	bb 01 00 00 00       	mov    ebx,0x1
+     a7c:	bd 01 00 00 00       	mov    ebp,0x1
+     a81:	be 01 00 00 00       	mov    esi,0x1
+     a86:	bf 01 00 00 00       	mov    edi,0x1
+     a8b:	bb 01 00 00 00       	mov    ebx,0x1
+     a90:	bd 01 00 00 00       	mov    ebp,0x1
+     a95:	be 01 00 00 00       	mov    esi,0x1
+     a9a:	bf 01 00 00 00       	mov    edi,0x1
+     a9f:	bb 01 00 00 00       	mov    ebx,0x1
+     aa4:	bd 01 00 00 00       	mov    ebp,0x1
+     aa9:	be 01 00 00 00       	mov    esi,0x1
+     aae:	bf 01 00 00 00       	mov    edi,0x1
      ab3:	bb 01 00 00 00       	mov    ebx,0x1
      ab8:	bd 01 00 00 00       	mov    ebp,0x1
      abd:	be 01 00 00 00       	mov    esi,0x1
@@ -599,23 +596,23 @@ Disassembly of section .data:
      aef:	bb 01 00 00 00       	mov    ebx,0x1
      af4:	bd 01 00 00 00       	mov    ebp,0x1
      af9:	be 01 00 00 00       	mov    esi,0x1
-     afe:	bf 01 00 00 00       	mov    edi,0x1
-     b03:	bb 01 00 00 00       	mov    ebx,0x1
-     b08:	bd 01 00 00 00       	mov    ebp,0x1
-     b0d:	be 01 00 00 00       	mov    esi,0x1
-     b12:	bf 01 00 00 00       	mov    edi,0x1
-     b17:	bb 01 00 00 00       	mov    ebx,0x1
-     b1c:	bd 01 00 00 00       	mov    ebp,0x1
-     b21:	be 01 00 00 00       	mov    esi,0x1
-     b26:	bf 01 00 00 00       	mov    edi,0x1
-     b2b:	bb 01 00 00 00       	mov    ebx,0x1
-     b30:	bd 01 00 00 00       	mov    ebp,0x1
-     b35:	be 01 00 00 00       	mov    esi,0x1
-     b3a:	bf 01 00 00 00       	mov    edi,0x1
-     b3f:	bb 01 00 00 00       	mov    ebx,0x1
-     b44:	bd 01 00 00 00       	mov    ebp,0x1
-     b49:	be 01 00 00 00       	mov    esi,0x1
-     b4e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     afe:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     b01:	bb 01 00 00 00       	mov    ebx,0x1
+     b06:	bd 01 00 00 00       	mov    ebp,0x1
+     b0b:	be 01 00 00 00       	mov    esi,0x1
+     b10:	bf 01 00 00 00       	mov    edi,0x1
+     b15:	bb 01 00 00 00       	mov    ebx,0x1
+     b1a:	bd 01 00 00 00       	mov    ebp,0x1
+     b1f:	be 01 00 00 00       	mov    esi,0x1
+     b24:	bf 01 00 00 00       	mov    edi,0x1
+     b29:	bb 01 00 00 00       	mov    ebx,0x1
+     b2e:	bd 01 00 00 00       	mov    ebp,0x1
+     b33:	be 01 00 00 00       	mov    esi,0x1
+     b38:	bf 01 00 00 00       	mov    edi,0x1
+     b3d:	bb 01 00 00 00       	mov    ebx,0x1
+     b42:	bd 01 00 00 00       	mov    ebp,0x1
+     b47:	be 01 00 00 00       	mov    esi,0x1
+     b4c:	bf 01 00 00 00       	mov    edi,0x1
      b51:	bb 01 00 00 00       	mov    ebx,0x1
      b56:	bd 01 00 00 00       	mov    ebp,0x1
      b5b:	be 01 00 00 00       	mov    esi,0x1
@@ -631,23 +628,23 @@ Disassembly of section .data:
      b8d:	bb 01 00 00 00       	mov    ebx,0x1
      b92:	bd 01 00 00 00       	mov    ebp,0x1
      b97:	be 01 00 00 00       	mov    esi,0x1
-     b9c:	bb 01 00 00 00       	mov    ebx,0x1
-     ba1:	bd 01 00 00 00       	mov    ebp,0x1
-     ba6:	be 01 00 00 00       	mov    esi,0x1
-     bab:	bf 01 00 00 00       	mov    edi,0x1
-     bb0:	bb 01 00 00 00       	mov    ebx,0x1
-     bb5:	bd 01 00 00 00       	mov    ebp,0x1
-     bba:	be 01 00 00 00       	mov    esi,0x1
-     bbf:	bf 01 00 00 00       	mov    edi,0x1
-     bc4:	bb 01 00 00 00       	mov    ebx,0x1
-     bc9:	bd 01 00 00 00       	mov    ebp,0x1
-     bce:	be 01 00 00 00       	mov    esi,0x1
-     bd3:	bf 01 00 00 00       	mov    edi,0x1
-     bd8:	bb 01 00 00 00       	mov    ebx,0x1
-     bdd:	bd 01 00 00 00       	mov    ebp,0x1
-     be2:	be 01 00 00 00       	mov    esi,0x1
-     be7:	bf 01 00 00 00       	mov    edi,0x1
-     bec:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     b9c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     b9f:	bb 01 00 00 00       	mov    ebx,0x1
+     ba4:	bd 01 00 00 00       	mov    ebp,0x1
+     ba9:	be 01 00 00 00       	mov    esi,0x1
+     bae:	bf 01 00 00 00       	mov    edi,0x1
+     bb3:	bb 01 00 00 00       	mov    ebx,0x1
+     bb8:	bd 01 00 00 00       	mov    ebp,0x1
+     bbd:	be 01 00 00 00       	mov    esi,0x1
+     bc2:	bf 01 00 00 00       	mov    edi,0x1
+     bc7:	bb 01 00 00 00       	mov    ebx,0x1
+     bcc:	bd 01 00 00 00       	mov    ebp,0x1
+     bd1:	be 01 00 00 00       	mov    esi,0x1
+     bd6:	bf 01 00 00 00       	mov    edi,0x1
+     bdb:	bb 01 00 00 00       	mov    ebx,0x1
+     be0:	bd 01 00 00 00       	mov    ebp,0x1
+     be5:	be 01 00 00 00       	mov    esi,0x1
+     bea:	bf 01 00 00 00       	mov    edi,0x1
      bef:	bb 01 00 00 00       	mov    ebx,0x1
      bf4:	bd 01 00 00 00       	mov    ebp,0x1
      bf9:	be 01 00 00 00       	mov    esi,0x1
@@ -663,23 +660,23 @@ Disassembly of section .data:
      c2b:	bb 01 00 00 00       	mov    ebx,0x1
      c30:	bd 01 00 00 00       	mov    ebp,0x1
      c35:	be 01 00 00 00       	mov    esi,0x1
-     c3a:	bf 01 00 00 00       	mov    edi,0x1
-     c3f:	bb 01 00 00 00       	mov    ebx,0x1
-     c44:	bd 01 00 00 00       	mov    ebp,0x1
-     c49:	be 01 00 00 00       	mov    esi,0x1
-     c4e:	bf 01 00 00 00       	mov    edi,0x1
-     c53:	bb 01 00 00 00       	mov    ebx,0x1
-     c58:	bd 01 00 00 00       	mov    ebp,0x1
-     c5d:	be 01 00 00 00       	mov    esi,0x1
-     c62:	bf 01 00 00 00       	mov    edi,0x1
-     c67:	bb 01 00 00 00       	mov    ebx,0x1
-     c6c:	bd 01 00 00 00       	mov    ebp,0x1
-     c71:	be 01 00 00 00       	mov    esi,0x1
-     c76:	bf 01 00 00 00       	mov    edi,0x1
-     c7b:	bb 01 00 00 00       	mov    ebx,0x1
-     c80:	bd 01 00 00 00       	mov    ebp,0x1
-     c85:	be 01 00 00 00       	mov    esi,0x1
-     c8a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     c3a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     c3d:	bb 01 00 00 00       	mov    ebx,0x1
+     c42:	bd 01 00 00 00       	mov    ebp,0x1
+     c47:	be 01 00 00 00       	mov    esi,0x1
+     c4c:	bf 01 00 00 00       	mov    edi,0x1
+     c51:	bb 01 00 00 00       	mov    ebx,0x1
+     c56:	bd 01 00 00 00       	mov    ebp,0x1
+     c5b:	be 01 00 00 00       	mov    esi,0x1
+     c60:	bf 01 00 00 00       	mov    edi,0x1
+     c65:	bb 01 00 00 00       	mov    ebx,0x1
+     c6a:	bd 01 00 00 00       	mov    ebp,0x1
+     c6f:	be 01 00 00 00       	mov    esi,0x1
+     c74:	bf 01 00 00 00       	mov    edi,0x1
+     c79:	bb 01 00 00 00       	mov    ebx,0x1
+     c7e:	bd 01 00 00 00       	mov    ebp,0x1
+     c83:	be 01 00 00 00       	mov    esi,0x1
+     c88:	bf 01 00 00 00       	mov    edi,0x1
      c8d:	bb 01 00 00 00       	mov    ebx,0x1
      c92:	bd 01 00 00 00       	mov    ebp,0x1
      c97:	be 01 00 00 00       	mov    esi,0x1
@@ -695,23 +692,23 @@ Disassembly of section .data:
      cc9:	bb 01 00 00 00       	mov    ebx,0x1
      cce:	bd 01 00 00 00       	mov    ebp,0x1
      cd3:	be 01 00 00 00       	mov    esi,0x1
-     cd8:	bb 01 00 00 00       	mov    ebx,0x1
-     cdd:	bd 01 00 00 00       	mov    ebp,0x1
-     ce2:	be 01 00 00 00       	mov    esi,0x1
-     ce7:	bf 01 00 00 00       	mov    edi,0x1
-     cec:	bb 01 00 00 00       	mov    ebx,0x1
-     cf1:	bd 01 00 00 00       	mov    ebp,0x1
-     cf6:	be 01 00 00 00       	mov    esi,0x1
-     cfb:	bf 01 00 00 00       	mov    edi,0x1
-     d00:	bb 01 00 00 00       	mov    ebx,0x1
-     d05:	bd 01 00 00 00       	mov    ebp,0x1
-     d0a:	be 01 00 00 00       	mov    esi,0x1
-     d0f:	bf 01 00 00 00       	mov    edi,0x1
-     d14:	bb 01 00 00 00       	mov    ebx,0x1
-     d19:	bd 01 00 00 00       	mov    ebp,0x1
-     d1e:	be 01 00 00 00       	mov    esi,0x1
-     d23:	bf 01 00 00 00       	mov    edi,0x1
-     d28:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     cd8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     cdb:	bb 01 00 00 00       	mov    ebx,0x1
+     ce0:	bd 01 00 00 00       	mov    ebp,0x1
+     ce5:	be 01 00 00 00       	mov    esi,0x1
+     cea:	bf 01 00 00 00       	mov    edi,0x1
+     cef:	bb 01 00 00 00       	mov    ebx,0x1
+     cf4:	bd 01 00 00 00       	mov    ebp,0x1
+     cf9:	be 01 00 00 00       	mov    esi,0x1
+     cfe:	bf 01 00 00 00       	mov    edi,0x1
+     d03:	bb 01 00 00 00       	mov    ebx,0x1
+     d08:	bd 01 00 00 00       	mov    ebp,0x1
+     d0d:	be 01 00 00 00       	mov    esi,0x1
+     d12:	bf 01 00 00 00       	mov    edi,0x1
+     d17:	bb 01 00 00 00       	mov    ebx,0x1
+     d1c:	bd 01 00 00 00       	mov    ebp,0x1
+     d21:	be 01 00 00 00       	mov    esi,0x1
+     d26:	bf 01 00 00 00       	mov    edi,0x1
      d2b:	bb 01 00 00 00       	mov    ebx,0x1
      d30:	bd 01 00 00 00       	mov    ebp,0x1
      d35:	be 01 00 00 00       	mov    esi,0x1
@@ -727,23 +724,23 @@ Disassembly of section .data:
      d67:	bb 01 00 00 00       	mov    ebx,0x1
      d6c:	bd 01 00 00 00       	mov    ebp,0x1
      d71:	be 01 00 00 00       	mov    esi,0x1
-     d76:	bf 01 00 00 00       	mov    edi,0x1
-     d7b:	bb 01 00 00 00       	mov    ebx,0x1
-     d80:	bd 01 00 00 00       	mov    ebp,0x1
-     d85:	be 01 00 00 00       	mov    esi,0x1
-     d8a:	bf 01 00 00 00       	mov    edi,0x1
-     d8f:	bb 01 00 00 00       	mov    ebx,0x1
-     d94:	bd 01 00 00 00       	mov    ebp,0x1
-     d99:	be 01 00 00 00       	mov    esi,0x1
-     d9e:	bf 01 00 00 00       	mov    edi,0x1
-     da3:	bb 01 00 00 00       	mov    ebx,0x1
-     da8:	bd 01 00 00 00       	mov    ebp,0x1
-     dad:	be 01 00 00 00       	mov    esi,0x1
-     db2:	bf 01 00 00 00       	mov    edi,0x1
-     db7:	bb 01 00 00 00       	mov    ebx,0x1
-     dbc:	bd 01 00 00 00       	mov    ebp,0x1
-     dc1:	be 01 00 00 00       	mov    esi,0x1
-     dc6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     d76:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     d79:	bb 01 00 00 00       	mov    ebx,0x1
+     d7e:	bd 01 00 00 00       	mov    ebp,0x1
+     d83:	be 01 00 00 00       	mov    esi,0x1
+     d88:	bf 01 00 00 00       	mov    edi,0x1
+     d8d:	bb 01 00 00 00       	mov    ebx,0x1
+     d92:	bd 01 00 00 00       	mov    ebp,0x1
+     d97:	be 01 00 00 00       	mov    esi,0x1
+     d9c:	bf 01 00 00 00       	mov    edi,0x1
+     da1:	bb 01 00 00 00       	mov    ebx,0x1
+     da6:	bd 01 00 00 00       	mov    ebp,0x1
+     dab:	be 01 00 00 00       	mov    esi,0x1
+     db0:	bf 01 00 00 00       	mov    edi,0x1
+     db5:	bb 01 00 00 00       	mov    ebx,0x1
+     dba:	bd 01 00 00 00       	mov    ebp,0x1
+     dbf:	be 01 00 00 00       	mov    esi,0x1
+     dc4:	bf 01 00 00 00       	mov    edi,0x1
      dc9:	bb 01 00 00 00       	mov    ebx,0x1
      dce:	bd 01 00 00 00       	mov    ebp,0x1
      dd3:	be 01 00 00 00       	mov    esi,0x1
@@ -759,23 +756,23 @@ Disassembly of section .data:
      e05:	bb 01 00 00 00       	mov    ebx,0x1
      e0a:	bd 01 00 00 00       	mov    ebp,0x1
      e0f:	be 01 00 00 00       	mov    esi,0x1
-     e14:	bb 01 00 00 00       	mov    ebx,0x1
-     e19:	bd 01 00 00 00       	mov    ebp,0x1
-     e1e:	be 01 00 00 00       	mov    esi,0x1
-     e23:	bf 01 00 00 00       	mov    edi,0x1
-     e28:	bb 01 00 00 00       	mov    ebx,0x1
-     e2d:	bd 01 00 00 00       	mov    ebp,0x1
-     e32:	be 01 00 00 00       	mov    esi,0x1
-     e37:	bf 01 00 00 00       	mov    edi,0x1
-     e3c:	bb 01 00 00 00       	mov    ebx,0x1
-     e41:	bd 01 00 00 00       	mov    ebp,0x1
-     e46:	be 01 00 00 00       	mov    esi,0x1
-     e4b:	bf 01 00 00 00       	mov    edi,0x1
-     e50:	bb 01 00 00 00       	mov    ebx,0x1
-     e55:	bd 01 00 00 00       	mov    ebp,0x1
-     e5a:	be 01 00 00 00       	mov    esi,0x1
-     e5f:	bf 01 00 00 00       	mov    edi,0x1
-     e64:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     e14:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     e17:	bb 01 00 00 00       	mov    ebx,0x1
+     e1c:	bd 01 00 00 00       	mov    ebp,0x1
+     e21:	be 01 00 00 00       	mov    esi,0x1
+     e26:	bf 01 00 00 00       	mov    edi,0x1
+     e2b:	bb 01 00 00 00       	mov    ebx,0x1
+     e30:	bd 01 00 00 00       	mov    ebp,0x1
+     e35:	be 01 00 00 00       	mov    esi,0x1
+     e3a:	bf 01 00 00 00       	mov    edi,0x1
+     e3f:	bb 01 00 00 00       	mov    ebx,0x1
+     e44:	bd 01 00 00 00       	mov    ebp,0x1
+     e49:	be 01 00 00 00       	mov    esi,0x1
+     e4e:	bf 01 00 00 00       	mov    edi,0x1
+     e53:	bb 01 00 00 00       	mov    ebx,0x1
+     e58:	bd 01 00 00 00       	mov    ebp,0x1
+     e5d:	be 01 00 00 00       	mov    esi,0x1
+     e62:	bf 01 00 00 00       	mov    edi,0x1
      e67:	bb 01 00 00 00       	mov    ebx,0x1
      e6c:	bd 01 00 00 00       	mov    ebp,0x1
      e71:	be 01 00 00 00       	mov    esi,0x1
@@ -791,23 +788,23 @@ Disassembly of section .data:
      ea3:	bb 01 00 00 00       	mov    ebx,0x1
      ea8:	bd 01 00 00 00       	mov    ebp,0x1
      ead:	be 01 00 00 00       	mov    esi,0x1
-     eb2:	bf 01 00 00 00       	mov    edi,0x1
-     eb7:	bb 01 00 00 00       	mov    ebx,0x1
-     ebc:	bd 01 00 00 00       	mov    ebp,0x1
-     ec1:	be 01 00 00 00       	mov    esi,0x1
-     ec6:	bf 01 00 00 00       	mov    edi,0x1
-     ecb:	bb 01 00 00 00       	mov    ebx,0x1
-     ed0:	bd 01 00 00 00       	mov    ebp,0x1
-     ed5:	be 01 00 00 00       	mov    esi,0x1
-     eda:	bf 01 00 00 00       	mov    edi,0x1
-     edf:	bb 01 00 00 00       	mov    ebx,0x1
-     ee4:	bd 01 00 00 00       	mov    ebp,0x1
-     ee9:	be 01 00 00 00       	mov    esi,0x1
-     eee:	bf 01 00 00 00       	mov    edi,0x1
-     ef3:	bb 01 00 00 00       	mov    ebx,0x1
-     ef8:	bd 01 00 00 00       	mov    ebp,0x1
-     efd:	be 01 00 00 00       	mov    esi,0x1
-     f02:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     eb2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     eb5:	bb 01 00 00 00       	mov    ebx,0x1
+     eba:	bd 01 00 00 00       	mov    ebp,0x1
+     ebf:	be 01 00 00 00       	mov    esi,0x1
+     ec4:	bf 01 00 00 00       	mov    edi,0x1
+     ec9:	bb 01 00 00 00       	mov    ebx,0x1
+     ece:	bd 01 00 00 00       	mov    ebp,0x1
+     ed3:	be 01 00 00 00       	mov    esi,0x1
+     ed8:	bf 01 00 00 00       	mov    edi,0x1
+     edd:	bb 01 00 00 00       	mov    ebx,0x1
+     ee2:	bd 01 00 00 00       	mov    ebp,0x1
+     ee7:	be 01 00 00 00       	mov    esi,0x1
+     eec:	bf 01 00 00 00       	mov    edi,0x1
+     ef1:	bb 01 00 00 00       	mov    ebx,0x1
+     ef6:	bd 01 00 00 00       	mov    ebp,0x1
+     efb:	be 01 00 00 00       	mov    esi,0x1
+     f00:	bf 01 00 00 00       	mov    edi,0x1
      f05:	bb 01 00 00 00       	mov    ebx,0x1
      f0a:	bd 01 00 00 00       	mov    ebp,0x1
      f0f:	be 01 00 00 00       	mov    esi,0x1
@@ -823,23 +820,23 @@ Disassembly of section .data:
      f41:	bb 01 00 00 00       	mov    ebx,0x1
      f46:	bd 01 00 00 00       	mov    ebp,0x1
      f4b:	be 01 00 00 00       	mov    esi,0x1
-     f50:	bb 01 00 00 00       	mov    ebx,0x1
-     f55:	bd 01 00 00 00       	mov    ebp,0x1
-     f5a:	be 01 00 00 00       	mov    esi,0x1
-     f5f:	bf 01 00 00 00       	mov    edi,0x1
-     f64:	bb 01 00 00 00       	mov    ebx,0x1
-     f69:	bd 01 00 00 00       	mov    ebp,0x1
-     f6e:	be 01 00 00 00       	mov    esi,0x1
-     f73:	bf 01 00 00 00       	mov    edi,0x1
-     f78:	bb 01 00 00 00       	mov    ebx,0x1
-     f7d:	bd 01 00 00 00       	mov    ebp,0x1
-     f82:	be 01 00 00 00       	mov    esi,0x1
-     f87:	bf 01 00 00 00       	mov    edi,0x1
-     f8c:	bb 01 00 00 00       	mov    ebx,0x1
-     f91:	bd 01 00 00 00       	mov    ebp,0x1
-     f96:	be 01 00 00 00       	mov    esi,0x1
-     f9b:	bf 01 00 00 00       	mov    edi,0x1
-     fa0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     f50:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     f53:	bb 01 00 00 00       	mov    ebx,0x1
+     f58:	bd 01 00 00 00       	mov    ebp,0x1
+     f5d:	be 01 00 00 00       	mov    esi,0x1
+     f62:	bf 01 00 00 00       	mov    edi,0x1
+     f67:	bb 01 00 00 00       	mov    ebx,0x1
+     f6c:	bd 01 00 00 00       	mov    ebp,0x1
+     f71:	be 01 00 00 00       	mov    esi,0x1
+     f76:	bf 01 00 00 00       	mov    edi,0x1
+     f7b:	bb 01 00 00 00       	mov    ebx,0x1
+     f80:	bd 01 00 00 00       	mov    ebp,0x1
+     f85:	be 01 00 00 00       	mov    esi,0x1
+     f8a:	bf 01 00 00 00       	mov    edi,0x1
+     f8f:	bb 01 00 00 00       	mov    ebx,0x1
+     f94:	bd 01 00 00 00       	mov    ebp,0x1
+     f99:	be 01 00 00 00       	mov    esi,0x1
+     f9e:	bf 01 00 00 00       	mov    edi,0x1
      fa3:	bb 01 00 00 00       	mov    ebx,0x1
      fa8:	bd 01 00 00 00       	mov    ebp,0x1
      fad:	be 01 00 00 00       	mov    esi,0x1
@@ -855,23 +852,23 @@ Disassembly of section .data:
      fdf:	bb 01 00 00 00       	mov    ebx,0x1
      fe4:	bd 01 00 00 00       	mov    ebp,0x1
      fe9:	be 01 00 00 00       	mov    esi,0x1
-     fee:	bf 01 00 00 00       	mov    edi,0x1
-     ff3:	bb 01 00 00 00       	mov    ebx,0x1
-     ff8:	bd 01 00 00 00       	mov    ebp,0x1
-     ffd:	be 01 00 00 00       	mov    esi,0x1
-    1002:	bf 01 00 00 00       	mov    edi,0x1
-    1007:	bb 01 00 00 00       	mov    ebx,0x1
-    100c:	bd 01 00 00 00       	mov    ebp,0x1
-    1011:	be 01 00 00 00       	mov    esi,0x1
-    1016:	bf 01 00 00 00       	mov    edi,0x1
-    101b:	bb 01 00 00 00       	mov    ebx,0x1
-    1020:	bd 01 00 00 00       	mov    ebp,0x1
-    1025:	be 01 00 00 00       	mov    esi,0x1
-    102a:	bf 01 00 00 00       	mov    edi,0x1
-    102f:	bb 01 00 00 00       	mov    ebx,0x1
-    1034:	bd 01 00 00 00       	mov    ebp,0x1
-    1039:	be 01 00 00 00       	mov    esi,0x1
-    103e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     fee:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     ff1:	bb 01 00 00 00       	mov    ebx,0x1
+     ff6:	bd 01 00 00 00       	mov    ebp,0x1
+     ffb:	be 01 00 00 00       	mov    esi,0x1
+    1000:	bf 01 00 00 00       	mov    edi,0x1
+    1005:	bb 01 00 00 00       	mov    ebx,0x1
+    100a:	bd 01 00 00 00       	mov    ebp,0x1
+    100f:	be 01 00 00 00       	mov    esi,0x1
+    1014:	bf 01 00 00 00       	mov    edi,0x1
+    1019:	bb 01 00 00 00       	mov    ebx,0x1
+    101e:	bd 01 00 00 00       	mov    ebp,0x1
+    1023:	be 01 00 00 00       	mov    esi,0x1
+    1028:	bf 01 00 00 00       	mov    edi,0x1
+    102d:	bb 01 00 00 00       	mov    ebx,0x1
+    1032:	bd 01 00 00 00       	mov    ebp,0x1
+    1037:	be 01 00 00 00       	mov    esi,0x1
+    103c:	bf 01 00 00 00       	mov    edi,0x1
     1041:	bb 01 00 00 00       	mov    ebx,0x1
     1046:	bd 01 00 00 00       	mov    ebp,0x1
     104b:	be 01 00 00 00       	mov    esi,0x1
@@ -887,23 +884,23 @@ Disassembly of section .data:
     107d:	bb 01 00 00 00       	mov    ebx,0x1
     1082:	bd 01 00 00 00       	mov    ebp,0x1
     1087:	be 01 00 00 00       	mov    esi,0x1
-    108c:	bb 01 00 00 00       	mov    ebx,0x1
-    1091:	bd 01 00 00 00       	mov    ebp,0x1
-    1096:	be 01 00 00 00       	mov    esi,0x1
-    109b:	bf 01 00 00 00       	mov    edi,0x1
-    10a0:	bb 01 00 00 00       	mov    ebx,0x1
-    10a5:	bd 01 00 00 00       	mov    ebp,0x1
-    10aa:	be 01 00 00 00       	mov    esi,0x1
-    10af:	bf 01 00 00 00       	mov    edi,0x1
-    10b4:	bb 01 00 00 00       	mov    ebx,0x1
-    10b9:	bd 01 00 00 00       	mov    ebp,0x1
-    10be:	be 01 00 00 00       	mov    esi,0x1
-    10c3:	bf 01 00 00 00       	mov    edi,0x1
-    10c8:	bb 01 00 00 00       	mov    ebx,0x1
-    10cd:	bd 01 00 00 00       	mov    ebp,0x1
-    10d2:	be 01 00 00 00       	mov    esi,0x1
-    10d7:	bf 01 00 00 00       	mov    edi,0x1
-    10dc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    108c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    108f:	bb 01 00 00 00       	mov    ebx,0x1
+    1094:	bd 01 00 00 00       	mov    ebp,0x1
+    1099:	be 01 00 00 00       	mov    esi,0x1
+    109e:	bf 01 00 00 00       	mov    edi,0x1
+    10a3:	bb 01 00 00 00       	mov    ebx,0x1
+    10a8:	bd 01 00 00 00       	mov    ebp,0x1
+    10ad:	be 01 00 00 00       	mov    esi,0x1
+    10b2:	bf 01 00 00 00       	mov    edi,0x1
+    10b7:	bb 01 00 00 00       	mov    ebx,0x1
+    10bc:	bd 01 00 00 00       	mov    ebp,0x1
+    10c1:	be 01 00 00 00       	mov    esi,0x1
+    10c6:	bf 01 00 00 00       	mov    edi,0x1
+    10cb:	bb 01 00 00 00       	mov    ebx,0x1
+    10d0:	bd 01 00 00 00       	mov    ebp,0x1
+    10d5:	be 01 00 00 00       	mov    esi,0x1
+    10da:	bf 01 00 00 00       	mov    edi,0x1
     10df:	bb 01 00 00 00       	mov    ebx,0x1
     10e4:	bd 01 00 00 00       	mov    ebp,0x1
     10e9:	be 01 00 00 00       	mov    esi,0x1
@@ -919,23 +916,23 @@ Disassembly of section .data:
     111b:	bb 01 00 00 00       	mov    ebx,0x1
     1120:	bd 01 00 00 00       	mov    ebp,0x1
     1125:	be 01 00 00 00       	mov    esi,0x1
-    112a:	bf 01 00 00 00       	mov    edi,0x1
-    112f:	bb 01 00 00 00       	mov    ebx,0x1
-    1134:	bd 01 00 00 00       	mov    ebp,0x1
-    1139:	be 01 00 00 00       	mov    esi,0x1
-    113e:	bf 01 00 00 00       	mov    edi,0x1
-    1143:	bb 01 00 00 00       	mov    ebx,0x1
-    1148:	bd 01 00 00 00       	mov    ebp,0x1
-    114d:	be 01 00 00 00       	mov    esi,0x1
-    1152:	bf 01 00 00 00       	mov    edi,0x1
-    1157:	bb 01 00 00 00       	mov    ebx,0x1
-    115c:	bd 01 00 00 00       	mov    ebp,0x1
-    1161:	be 01 00 00 00       	mov    esi,0x1
-    1166:	bf 01 00 00 00       	mov    edi,0x1
-    116b:	bb 01 00 00 00       	mov    ebx,0x1
-    1170:	bd 01 00 00 00       	mov    ebp,0x1
-    1175:	be 01 00 00 00       	mov    esi,0x1
-    117a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    112a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    112d:	bb 01 00 00 00       	mov    ebx,0x1
+    1132:	bd 01 00 00 00       	mov    ebp,0x1
+    1137:	be 01 00 00 00       	mov    esi,0x1
+    113c:	bf 01 00 00 00       	mov    edi,0x1
+    1141:	bb 01 00 00 00       	mov    ebx,0x1
+    1146:	bd 01 00 00 00       	mov    ebp,0x1
+    114b:	be 01 00 00 00       	mov    esi,0x1
+    1150:	bf 01 00 00 00       	mov    edi,0x1
+    1155:	bb 01 00 00 00       	mov    ebx,0x1
+    115a:	bd 01 00 00 00       	mov    ebp,0x1
+    115f:	be 01 00 00 00       	mov    esi,0x1
+    1164:	bf 01 00 00 00       	mov    edi,0x1
+    1169:	bb 01 00 00 00       	mov    ebx,0x1
+    116e:	bd 01 00 00 00       	mov    ebp,0x1
+    1173:	be 01 00 00 00       	mov    esi,0x1
+    1178:	bf 01 00 00 00       	mov    edi,0x1
     117d:	bb 01 00 00 00       	mov    ebx,0x1
     1182:	bd 01 00 00 00       	mov    ebp,0x1
     1187:	be 01 00 00 00       	mov    esi,0x1
@@ -951,23 +948,23 @@ Disassembly of section .data:
     11b9:	bb 01 00 00 00       	mov    ebx,0x1
     11be:	bd 01 00 00 00       	mov    ebp,0x1
     11c3:	be 01 00 00 00       	mov    esi,0x1
-    11c8:	bb 01 00 00 00       	mov    ebx,0x1
-    11cd:	bd 01 00 00 00       	mov    ebp,0x1
-    11d2:	be 01 00 00 00       	mov    esi,0x1
-    11d7:	bf 01 00 00 00       	mov    edi,0x1
-    11dc:	bb 01 00 00 00       	mov    ebx,0x1
-    11e1:	bd 01 00 00 00       	mov    ebp,0x1
-    11e6:	be 01 00 00 00       	mov    esi,0x1
-    11eb:	bf 01 00 00 00       	mov    edi,0x1
-    11f0:	bb 01 00 00 00       	mov    ebx,0x1
-    11f5:	bd 01 00 00 00       	mov    ebp,0x1
-    11fa:	be 01 00 00 00       	mov    esi,0x1
-    11ff:	bf 01 00 00 00       	mov    edi,0x1
-    1204:	bb 01 00 00 00       	mov    ebx,0x1
-    1209:	bd 01 00 00 00       	mov    ebp,0x1
-    120e:	be 01 00 00 00       	mov    esi,0x1
-    1213:	bf 01 00 00 00       	mov    edi,0x1
-    1218:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    11c8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    11cb:	bb 01 00 00 00       	mov    ebx,0x1
+    11d0:	bd 01 00 00 00       	mov    ebp,0x1
+    11d5:	be 01 00 00 00       	mov    esi,0x1
+    11da:	bf 01 00 00 00       	mov    edi,0x1
+    11df:	bb 01 00 00 00       	mov    ebx,0x1
+    11e4:	bd 01 00 00 00       	mov    ebp,0x1
+    11e9:	be 01 00 00 00       	mov    esi,0x1
+    11ee:	bf 01 00 00 00       	mov    edi,0x1
+    11f3:	bb 01 00 00 00       	mov    ebx,0x1
+    11f8:	bd 01 00 00 00       	mov    ebp,0x1
+    11fd:	be 01 00 00 00       	mov    esi,0x1
+    1202:	bf 01 00 00 00       	mov    edi,0x1
+    1207:	bb 01 00 00 00       	mov    ebx,0x1
+    120c:	bd 01 00 00 00       	mov    ebp,0x1
+    1211:	be 01 00 00 00       	mov    esi,0x1
+    1216:	bf 01 00 00 00       	mov    edi,0x1
     121b:	bb 01 00 00 00       	mov    ebx,0x1
     1220:	bd 01 00 00 00       	mov    ebp,0x1
     1225:	be 01 00 00 00       	mov    esi,0x1
@@ -983,23 +980,23 @@ Disassembly of section .data:
     1257:	bb 01 00 00 00       	mov    ebx,0x1
     125c:	bd 01 00 00 00       	mov    ebp,0x1
     1261:	be 01 00 00 00       	mov    esi,0x1
-    1266:	bf 01 00 00 00       	mov    edi,0x1
-    126b:	bb 01 00 00 00       	mov    ebx,0x1
-    1270:	bd 01 00 00 00       	mov    ebp,0x1
-    1275:	be 01 00 00 00       	mov    esi,0x1
-    127a:	bf 01 00 00 00       	mov    edi,0x1
-    127f:	bb 01 00 00 00       	mov    ebx,0x1
-    1284:	bd 01 00 00 00       	mov    ebp,0x1
-    1289:	be 01 00 00 00       	mov    esi,0x1
-    128e:	bf 01 00 00 00       	mov    edi,0x1
-    1293:	bb 01 00 00 00       	mov    ebx,0x1
-    1298:	bd 01 00 00 00       	mov    ebp,0x1
-    129d:	be 01 00 00 00       	mov    esi,0x1
-    12a2:	bf 01 00 00 00       	mov    edi,0x1
-    12a7:	bb 01 00 00 00       	mov    ebx,0x1
-    12ac:	bd 01 00 00 00       	mov    ebp,0x1
-    12b1:	be 01 00 00 00       	mov    esi,0x1
-    12b6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1266:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1269:	bb 01 00 00 00       	mov    ebx,0x1
+    126e:	bd 01 00 00 00       	mov    ebp,0x1
+    1273:	be 01 00 00 00       	mov    esi,0x1
+    1278:	bf 01 00 00 00       	mov    edi,0x1
+    127d:	bb 01 00 00 00       	mov    ebx,0x1
+    1282:	bd 01 00 00 00       	mov    ebp,0x1
+    1287:	be 01 00 00 00       	mov    esi,0x1
+    128c:	bf 01 00 00 00       	mov    edi,0x1
+    1291:	bb 01 00 00 00       	mov    ebx,0x1
+    1296:	bd 01 00 00 00       	mov    ebp,0x1
+    129b:	be 01 00 00 00       	mov    esi,0x1
+    12a0:	bf 01 00 00 00       	mov    edi,0x1
+    12a5:	bb 01 00 00 00       	mov    ebx,0x1
+    12aa:	bd 01 00 00 00       	mov    ebp,0x1
+    12af:	be 01 00 00 00       	mov    esi,0x1
+    12b4:	bf 01 00 00 00       	mov    edi,0x1
     12b9:	bb 01 00 00 00       	mov    ebx,0x1
     12be:	bd 01 00 00 00       	mov    ebp,0x1
     12c3:	be 01 00 00 00       	mov    esi,0x1
@@ -1015,23 +1012,23 @@ Disassembly of section .data:
     12f5:	bb 01 00 00 00       	mov    ebx,0x1
     12fa:	bd 01 00 00 00       	mov    ebp,0x1
     12ff:	be 01 00 00 00       	mov    esi,0x1
-    1304:	bb 01 00 00 00       	mov    ebx,0x1
-    1309:	bd 01 00 00 00       	mov    ebp,0x1
-    130e:	be 01 00 00 00       	mov    esi,0x1
-    1313:	bf 01 00 00 00       	mov    edi,0x1
-    1318:	bb 01 00 00 00       	mov    ebx,0x1
-    131d:	bd 01 00 00 00       	mov    ebp,0x1
-    1322:	be 01 00 00 00       	mov    esi,0x1
-    1327:	bf 01 00 00 00       	mov    edi,0x1
-    132c:	bb 01 00 00 00       	mov    ebx,0x1
-    1331:	bd 01 00 00 00       	mov    ebp,0x1
-    1336:	be 01 00 00 00       	mov    esi,0x1
-    133b:	bf 01 00 00 00       	mov    edi,0x1
-    1340:	bb 01 00 00 00       	mov    ebx,0x1
-    1345:	bd 01 00 00 00       	mov    ebp,0x1
-    134a:	be 01 00 00 00       	mov    esi,0x1
-    134f:	bf 01 00 00 00       	mov    edi,0x1
-    1354:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1304:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1307:	bb 01 00 00 00       	mov    ebx,0x1
+    130c:	bd 01 00 00 00       	mov    ebp,0x1
+    1311:	be 01 00 00 00       	mov    esi,0x1
+    1316:	bf 01 00 00 00       	mov    edi,0x1
+    131b:	bb 01 00 00 00       	mov    ebx,0x1
+    1320:	bd 01 00 00 00       	mov    ebp,0x1
+    1325:	be 01 00 00 00       	mov    esi,0x1
+    132a:	bf 01 00 00 00       	mov    edi,0x1
+    132f:	bb 01 00 00 00       	mov    ebx,0x1
+    1334:	bd 01 00 00 00       	mov    ebp,0x1
+    1339:	be 01 00 00 00       	mov    esi,0x1
+    133e:	bf 01 00 00 00       	mov    edi,0x1
+    1343:	bb 01 00 00 00       	mov    ebx,0x1
+    1348:	bd 01 00 00 00       	mov    ebp,0x1
+    134d:	be 01 00 00 00       	mov    esi,0x1
+    1352:	bf 01 00 00 00       	mov    edi,0x1
     1357:	bb 01 00 00 00       	mov    ebx,0x1
     135c:	bd 01 00 00 00       	mov    ebp,0x1
     1361:	be 01 00 00 00       	mov    esi,0x1
@@ -1047,23 +1044,23 @@ Disassembly of section .data:
     1393:	bb 01 00 00 00       	mov    ebx,0x1
     1398:	bd 01 00 00 00       	mov    ebp,0x1
     139d:	be 01 00 00 00       	mov    esi,0x1
-    13a2:	bf 01 00 00 00       	mov    edi,0x1
-    13a7:	bb 01 00 00 00       	mov    ebx,0x1
-    13ac:	bd 01 00 00 00       	mov    ebp,0x1
-    13b1:	be 01 00 00 00       	mov    esi,0x1
-    13b6:	bf 01 00 00 00       	mov    edi,0x1
-    13bb:	bb 01 00 00 00       	mov    ebx,0x1
-    13c0:	bd 01 00 00 00       	mov    ebp,0x1
-    13c5:	be 01 00 00 00       	mov    esi,0x1
-    13ca:	bf 01 00 00 00       	mov    edi,0x1
-    13cf:	bb 01 00 00 00       	mov    ebx,0x1
-    13d4:	bd 01 00 00 00       	mov    ebp,0x1
-    13d9:	be 01 00 00 00       	mov    esi,0x1
-    13de:	bf 01 00 00 00       	mov    edi,0x1
-    13e3:	bb 01 00 00 00       	mov    ebx,0x1
-    13e8:	bd 01 00 00 00       	mov    ebp,0x1
-    13ed:	be 01 00 00 00       	mov    esi,0x1
-    13f2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    13a2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    13a5:	bb 01 00 00 00       	mov    ebx,0x1
+    13aa:	bd 01 00 00 00       	mov    ebp,0x1
+    13af:	be 01 00 00 00       	mov    esi,0x1
+    13b4:	bf 01 00 00 00       	mov    edi,0x1
+    13b9:	bb 01 00 00 00       	mov    ebx,0x1
+    13be:	bd 01 00 00 00       	mov    ebp,0x1
+    13c3:	be 01 00 00 00       	mov    esi,0x1
+    13c8:	bf 01 00 00 00       	mov    edi,0x1
+    13cd:	bb 01 00 00 00       	mov    ebx,0x1
+    13d2:	bd 01 00 00 00       	mov    ebp,0x1
+    13d7:	be 01 00 00 00       	mov    esi,0x1
+    13dc:	bf 01 00 00 00       	mov    edi,0x1
+    13e1:	bb 01 00 00 00       	mov    ebx,0x1
+    13e6:	bd 01 00 00 00       	mov    ebp,0x1
+    13eb:	be 01 00 00 00       	mov    esi,0x1
+    13f0:	bf 01 00 00 00       	mov    edi,0x1
     13f5:	bb 01 00 00 00       	mov    ebx,0x1
     13fa:	bd 01 00 00 00       	mov    ebp,0x1
     13ff:	be 01 00 00 00       	mov    esi,0x1
@@ -1079,23 +1076,23 @@ Disassembly of section .data:
     1431:	bb 01 00 00 00       	mov    ebx,0x1
     1436:	bd 01 00 00 00       	mov    ebp,0x1
     143b:	be 01 00 00 00       	mov    esi,0x1
-    1440:	bb 01 00 00 00       	mov    ebx,0x1
-    1445:	bd 01 00 00 00       	mov    ebp,0x1
-    144a:	be 01 00 00 00       	mov    esi,0x1
-    144f:	bf 01 00 00 00       	mov    edi,0x1
-    1454:	bb 01 00 00 00       	mov    ebx,0x1
-    1459:	bd 01 00 00 00       	mov    ebp,0x1
-    145e:	be 01 00 00 00       	mov    esi,0x1
-    1463:	bf 01 00 00 00       	mov    edi,0x1
-    1468:	bb 01 00 00 00       	mov    ebx,0x1
-    146d:	bd 01 00 00 00       	mov    ebp,0x1
-    1472:	be 01 00 00 00       	mov    esi,0x1
-    1477:	bf 01 00 00 00       	mov    edi,0x1
-    147c:	bb 01 00 00 00       	mov    ebx,0x1
-    1481:	bd 01 00 00 00       	mov    ebp,0x1
-    1486:	be 01 00 00 00       	mov    esi,0x1
-    148b:	bf 01 00 00 00       	mov    edi,0x1
-    1490:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1440:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1443:	bb 01 00 00 00       	mov    ebx,0x1
+    1448:	bd 01 00 00 00       	mov    ebp,0x1
+    144d:	be 01 00 00 00       	mov    esi,0x1
+    1452:	bf 01 00 00 00       	mov    edi,0x1
+    1457:	bb 01 00 00 00       	mov    ebx,0x1
+    145c:	bd 01 00 00 00       	mov    ebp,0x1
+    1461:	be 01 00 00 00       	mov    esi,0x1
+    1466:	bf 01 00 00 00       	mov    edi,0x1
+    146b:	bb 01 00 00 00       	mov    ebx,0x1
+    1470:	bd 01 00 00 00       	mov    ebp,0x1
+    1475:	be 01 00 00 00       	mov    esi,0x1
+    147a:	bf 01 00 00 00       	mov    edi,0x1
+    147f:	bb 01 00 00 00       	mov    ebx,0x1
+    1484:	bd 01 00 00 00       	mov    ebp,0x1
+    1489:	be 01 00 00 00       	mov    esi,0x1
+    148e:	bf 01 00 00 00       	mov    edi,0x1
     1493:	bb 01 00 00 00       	mov    ebx,0x1
     1498:	bd 01 00 00 00       	mov    ebp,0x1
     149d:	be 01 00 00 00       	mov    esi,0x1
@@ -1111,23 +1108,23 @@ Disassembly of section .data:
     14cf:	bb 01 00 00 00       	mov    ebx,0x1
     14d4:	bd 01 00 00 00       	mov    ebp,0x1
     14d9:	be 01 00 00 00       	mov    esi,0x1
-    14de:	bf 01 00 00 00       	mov    edi,0x1
-    14e3:	bb 01 00 00 00       	mov    ebx,0x1
-    14e8:	bd 01 00 00 00       	mov    ebp,0x1
-    14ed:	be 01 00 00 00       	mov    esi,0x1
-    14f2:	bf 01 00 00 00       	mov    edi,0x1
-    14f7:	bb 01 00 00 00       	mov    ebx,0x1
-    14fc:	bd 01 00 00 00       	mov    ebp,0x1
-    1501:	be 01 00 00 00       	mov    esi,0x1
-    1506:	bf 01 00 00 00       	mov    edi,0x1
-    150b:	bb 01 00 00 00       	mov    ebx,0x1
-    1510:	bd 01 00 00 00       	mov    ebp,0x1
-    1515:	be 01 00 00 00       	mov    esi,0x1
-    151a:	bf 01 00 00 00       	mov    edi,0x1
-    151f:	bb 01 00 00 00       	mov    ebx,0x1
-    1524:	bd 01 00 00 00       	mov    ebp,0x1
-    1529:	be 01 00 00 00       	mov    esi,0x1
-    152e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    14de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    14e1:	bb 01 00 00 00       	mov    ebx,0x1
+    14e6:	bd 01 00 00 00       	mov    ebp,0x1
+    14eb:	be 01 00 00 00       	mov    esi,0x1
+    14f0:	bf 01 00 00 00       	mov    edi,0x1
+    14f5:	bb 01 00 00 00       	mov    ebx,0x1
+    14fa:	bd 01 00 00 00       	mov    ebp,0x1
+    14ff:	be 01 00 00 00       	mov    esi,0x1
+    1504:	bf 01 00 00 00       	mov    edi,0x1
+    1509:	bb 01 00 00 00       	mov    ebx,0x1
+    150e:	bd 01 00 00 00       	mov    ebp,0x1
+    1513:	be 01 00 00 00       	mov    esi,0x1
+    1518:	bf 01 00 00 00       	mov    edi,0x1
+    151d:	bb 01 00 00 00       	mov    ebx,0x1
+    1522:	bd 01 00 00 00       	mov    ebp,0x1
+    1527:	be 01 00 00 00       	mov    esi,0x1
+    152c:	bf 01 00 00 00       	mov    edi,0x1
     1531:	bb 01 00 00 00       	mov    ebx,0x1
     1536:	bd 01 00 00 00       	mov    ebp,0x1
     153b:	be 01 00 00 00       	mov    esi,0x1
@@ -1143,22 +1140,23 @@ Disassembly of section .data:
     156d:	bb 01 00 00 00       	mov    ebx,0x1
     1572:	bd 01 00 00 00       	mov    ebp,0x1
     1577:	be 01 00 00 00       	mov    esi,0x1
-    157c:	83 e8 01             	sub    eax,0x1
-    157f:	0f 85 fb ea ff ff    	jne    0x80
-    1585:	66 90                	xchg   ax,ax
-    1587:	66 90                	xchg   ax,ax
-    1589:	66 90                	xchg   ax,ax
-    158b:	66 90                	xchg   ax,ax
-    158d:	66 90                	xchg   ax,ax
-    158f:	66 90                	xchg   ax,ax
-    1591:	66 90                	xchg   ax,ax
-    1593:	66 90                	xchg   ax,ax
-    1595:	48 83 c4 40          	add    rsp,0x40
-    1599:	41 59                	pop    r9
-    159b:	41 58                	pop    r8
-    159d:	5f                   	pop    rdi
-    159e:	5e                   	pop    rsi
-    159f:	5d                   	pop    rbp
-    15a0:	5b                   	pop    rbx
-    15a1:	0f 77                	emms   
-    15a3:	c3                   	ret    
+    157c:	4d 01 c1             	add    r9,r8
+    157f:	83 e8 01             	sub    eax,0x1
+    1582:	0f 85 f8 ea ff ff    	jne    0x80
+    1588:	66 90                	xchg   ax,ax
+    158a:	66 90                	xchg   ax,ax
+    158c:	66 90                	xchg   ax,ax
+    158e:	66 90                	xchg   ax,ax
+    1590:	66 90                	xchg   ax,ax
+    1592:	66 90                	xchg   ax,ax
+    1594:	66 90                	xchg   ax,ax
+    1596:	66 90                	xchg   ax,ax
+    1598:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    159f:	41 59                	pop    r9
+    15a1:	41 58                	pop    r8
+    15a3:	5f                   	pop    rdi
+    15a4:	5e                   	pop    rsi
+    15a5:	5d                   	pop    rbp
+    15a6:	5b                   	pop    rbx
+    15a7:	0f 77                	emms   
+    15a9:	c3                   	ret    

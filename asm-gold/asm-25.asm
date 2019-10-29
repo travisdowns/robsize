@@ -19,30 +19,27 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	90                   	nop
-  72:	90                   	nop
-  73:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
   74:	90                   	nop
   75:	90                   	nop
   76:	90                   	nop
@@ -55,23 +52,23 @@ Disassembly of section .data:
   7d:	90                   	nop
   7e:	90                   	nop
   7f:	90                   	nop
-  80:	48 8b dd             	mov    rbx,rbp
-  83:	48 8b ee             	mov    rbp,rsi
-  86:	48 8b f7             	mov    rsi,rdi
-  89:	48 8b fb             	mov    rdi,rbx
-  8c:	48 8b dd             	mov    rbx,rbp
-  8f:	48 8b ee             	mov    rbp,rsi
-  92:	48 8b f7             	mov    rsi,rdi
-  95:	48 8b fb             	mov    rdi,rbx
-  98:	48 8b dd             	mov    rbx,rbp
-  9b:	48 8b ee             	mov    rbp,rsi
-  9e:	48 8b f7             	mov    rsi,rdi
-  a1:	48 8b fb             	mov    rdi,rbx
-  a4:	48 8b dd             	mov    rbx,rbp
-  a7:	48 8b ee             	mov    rbp,rsi
-  aa:	48 8b f7             	mov    rsi,rdi
-  ad:	48 8b fb             	mov    rdi,rbx
-  b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  83:	48 8b dd             	mov    rbx,rbp
+  86:	48 8b ee             	mov    rbp,rsi
+  89:	48 8b f7             	mov    rsi,rdi
+  8c:	48 8b fb             	mov    rdi,rbx
+  8f:	48 8b dd             	mov    rbx,rbp
+  92:	48 8b ee             	mov    rbp,rsi
+  95:	48 8b f7             	mov    rsi,rdi
+  98:	48 8b fb             	mov    rdi,rbx
+  9b:	48 8b dd             	mov    rbx,rbp
+  9e:	48 8b ee             	mov    rbp,rsi
+  a1:	48 8b f7             	mov    rsi,rdi
+  a4:	48 8b fb             	mov    rdi,rbx
+  a7:	48 8b dd             	mov    rbx,rbp
+  aa:	48 8b ee             	mov    rbp,rsi
+  ad:	48 8b f7             	mov    rsi,rdi
+  b0:	48 8b fb             	mov    rdi,rbx
   b3:	48 8b dd             	mov    rbx,rbp
   b6:	48 8b ee             	mov    rbp,rsi
   b9:	48 8b f7             	mov    rsi,rdi
@@ -87,7 +84,7 @@ Disassembly of section .data:
   d7:	48 8b dd             	mov    rbx,rbp
   da:	48 8b ee             	mov    rbp,rsi
   dd:	48 8b f7             	mov    rsi,rdi
-  e0:	48 8b fb             	mov    rdi,rbx
+  e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e3:	48 8b dd             	mov    rbx,rbp
   e6:	48 8b ee             	mov    rbp,rsi
   e9:	48 8b f7             	mov    rsi,rdi
@@ -103,7 +100,7 @@ Disassembly of section .data:
  107:	48 8b dd             	mov    rbx,rbp
  10a:	48 8b ee             	mov    rbp,rsi
  10d:	48 8b f7             	mov    rsi,rdi
- 110:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 110:	48 8b fb             	mov    rdi,rbx
  113:	48 8b dd             	mov    rbx,rbp
  116:	48 8b ee             	mov    rbp,rsi
  119:	48 8b f7             	mov    rsi,rdi
@@ -119,23 +116,23 @@ Disassembly of section .data:
  137:	48 8b dd             	mov    rbx,rbp
  13a:	48 8b ee             	mov    rbp,rsi
  13d:	48 8b f7             	mov    rsi,rdi
- 140:	48 8b dd             	mov    rbx,rbp
- 143:	48 8b ee             	mov    rbp,rsi
- 146:	48 8b f7             	mov    rsi,rdi
- 149:	48 8b fb             	mov    rdi,rbx
- 14c:	48 8b dd             	mov    rbx,rbp
- 14f:	48 8b ee             	mov    rbp,rsi
- 152:	48 8b f7             	mov    rsi,rdi
- 155:	48 8b fb             	mov    rdi,rbx
- 158:	48 8b dd             	mov    rbx,rbp
- 15b:	48 8b ee             	mov    rbp,rsi
- 15e:	48 8b f7             	mov    rsi,rdi
- 161:	48 8b fb             	mov    rdi,rbx
- 164:	48 8b dd             	mov    rbx,rbp
- 167:	48 8b ee             	mov    rbp,rsi
- 16a:	48 8b f7             	mov    rsi,rdi
- 16d:	48 8b fb             	mov    rdi,rbx
- 170:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 140:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 143:	48 8b dd             	mov    rbx,rbp
+ 146:	48 8b ee             	mov    rbp,rsi
+ 149:	48 8b f7             	mov    rsi,rdi
+ 14c:	48 8b fb             	mov    rdi,rbx
+ 14f:	48 8b dd             	mov    rbx,rbp
+ 152:	48 8b ee             	mov    rbp,rsi
+ 155:	48 8b f7             	mov    rsi,rdi
+ 158:	48 8b fb             	mov    rdi,rbx
+ 15b:	48 8b dd             	mov    rbx,rbp
+ 15e:	48 8b ee             	mov    rbp,rsi
+ 161:	48 8b f7             	mov    rsi,rdi
+ 164:	48 8b fb             	mov    rdi,rbx
+ 167:	48 8b dd             	mov    rbx,rbp
+ 16a:	48 8b ee             	mov    rbp,rsi
+ 16d:	48 8b f7             	mov    rsi,rdi
+ 170:	48 8b fb             	mov    rdi,rbx
  173:	48 8b dd             	mov    rbx,rbp
  176:	48 8b ee             	mov    rbp,rsi
  179:	48 8b f7             	mov    rsi,rdi
@@ -151,7 +148,7 @@ Disassembly of section .data:
  197:	48 8b dd             	mov    rbx,rbp
  19a:	48 8b ee             	mov    rbp,rsi
  19d:	48 8b f7             	mov    rsi,rdi
- 1a0:	48 8b fb             	mov    rdi,rbx
+ 1a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1a3:	48 8b dd             	mov    rbx,rbp
  1a6:	48 8b ee             	mov    rbp,rsi
  1a9:	48 8b f7             	mov    rsi,rdi
@@ -167,7 +164,7 @@ Disassembly of section .data:
  1c7:	48 8b dd             	mov    rbx,rbp
  1ca:	48 8b ee             	mov    rbp,rsi
  1cd:	48 8b f7             	mov    rsi,rdi
- 1d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1d0:	48 8b fb             	mov    rdi,rbx
  1d3:	48 8b dd             	mov    rbx,rbp
  1d6:	48 8b ee             	mov    rbp,rsi
  1d9:	48 8b f7             	mov    rsi,rdi
@@ -183,23 +180,23 @@ Disassembly of section .data:
  1f7:	48 8b dd             	mov    rbx,rbp
  1fa:	48 8b ee             	mov    rbp,rsi
  1fd:	48 8b f7             	mov    rsi,rdi
- 200:	48 8b dd             	mov    rbx,rbp
- 203:	48 8b ee             	mov    rbp,rsi
- 206:	48 8b f7             	mov    rsi,rdi
- 209:	48 8b fb             	mov    rdi,rbx
- 20c:	48 8b dd             	mov    rbx,rbp
- 20f:	48 8b ee             	mov    rbp,rsi
- 212:	48 8b f7             	mov    rsi,rdi
- 215:	48 8b fb             	mov    rdi,rbx
- 218:	48 8b dd             	mov    rbx,rbp
- 21b:	48 8b ee             	mov    rbp,rsi
- 21e:	48 8b f7             	mov    rsi,rdi
- 221:	48 8b fb             	mov    rdi,rbx
- 224:	48 8b dd             	mov    rbx,rbp
- 227:	48 8b ee             	mov    rbp,rsi
- 22a:	48 8b f7             	mov    rsi,rdi
- 22d:	48 8b fb             	mov    rdi,rbx
- 230:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 200:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 203:	48 8b dd             	mov    rbx,rbp
+ 206:	48 8b ee             	mov    rbp,rsi
+ 209:	48 8b f7             	mov    rsi,rdi
+ 20c:	48 8b fb             	mov    rdi,rbx
+ 20f:	48 8b dd             	mov    rbx,rbp
+ 212:	48 8b ee             	mov    rbp,rsi
+ 215:	48 8b f7             	mov    rsi,rdi
+ 218:	48 8b fb             	mov    rdi,rbx
+ 21b:	48 8b dd             	mov    rbx,rbp
+ 21e:	48 8b ee             	mov    rbp,rsi
+ 221:	48 8b f7             	mov    rsi,rdi
+ 224:	48 8b fb             	mov    rdi,rbx
+ 227:	48 8b dd             	mov    rbx,rbp
+ 22a:	48 8b ee             	mov    rbp,rsi
+ 22d:	48 8b f7             	mov    rsi,rdi
+ 230:	48 8b fb             	mov    rdi,rbx
  233:	48 8b dd             	mov    rbx,rbp
  236:	48 8b ee             	mov    rbp,rsi
  239:	48 8b f7             	mov    rsi,rdi
@@ -215,7 +212,7 @@ Disassembly of section .data:
  257:	48 8b dd             	mov    rbx,rbp
  25a:	48 8b ee             	mov    rbp,rsi
  25d:	48 8b f7             	mov    rsi,rdi
- 260:	48 8b fb             	mov    rdi,rbx
+ 260:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  263:	48 8b dd             	mov    rbx,rbp
  266:	48 8b ee             	mov    rbp,rsi
  269:	48 8b f7             	mov    rsi,rdi
@@ -231,7 +228,7 @@ Disassembly of section .data:
  287:	48 8b dd             	mov    rbx,rbp
  28a:	48 8b ee             	mov    rbp,rsi
  28d:	48 8b f7             	mov    rsi,rdi
- 290:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 290:	48 8b fb             	mov    rdi,rbx
  293:	48 8b dd             	mov    rbx,rbp
  296:	48 8b ee             	mov    rbp,rsi
  299:	48 8b f7             	mov    rsi,rdi
@@ -247,23 +244,23 @@ Disassembly of section .data:
  2b7:	48 8b dd             	mov    rbx,rbp
  2ba:	48 8b ee             	mov    rbp,rsi
  2bd:	48 8b f7             	mov    rsi,rdi
- 2c0:	48 8b dd             	mov    rbx,rbp
- 2c3:	48 8b ee             	mov    rbp,rsi
- 2c6:	48 8b f7             	mov    rsi,rdi
- 2c9:	48 8b fb             	mov    rdi,rbx
- 2cc:	48 8b dd             	mov    rbx,rbp
- 2cf:	48 8b ee             	mov    rbp,rsi
- 2d2:	48 8b f7             	mov    rsi,rdi
- 2d5:	48 8b fb             	mov    rdi,rbx
- 2d8:	48 8b dd             	mov    rbx,rbp
- 2db:	48 8b ee             	mov    rbp,rsi
- 2de:	48 8b f7             	mov    rsi,rdi
- 2e1:	48 8b fb             	mov    rdi,rbx
- 2e4:	48 8b dd             	mov    rbx,rbp
- 2e7:	48 8b ee             	mov    rbp,rsi
- 2ea:	48 8b f7             	mov    rsi,rdi
- 2ed:	48 8b fb             	mov    rdi,rbx
- 2f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2c3:	48 8b dd             	mov    rbx,rbp
+ 2c6:	48 8b ee             	mov    rbp,rsi
+ 2c9:	48 8b f7             	mov    rsi,rdi
+ 2cc:	48 8b fb             	mov    rdi,rbx
+ 2cf:	48 8b dd             	mov    rbx,rbp
+ 2d2:	48 8b ee             	mov    rbp,rsi
+ 2d5:	48 8b f7             	mov    rsi,rdi
+ 2d8:	48 8b fb             	mov    rdi,rbx
+ 2db:	48 8b dd             	mov    rbx,rbp
+ 2de:	48 8b ee             	mov    rbp,rsi
+ 2e1:	48 8b f7             	mov    rsi,rdi
+ 2e4:	48 8b fb             	mov    rdi,rbx
+ 2e7:	48 8b dd             	mov    rbx,rbp
+ 2ea:	48 8b ee             	mov    rbp,rsi
+ 2ed:	48 8b f7             	mov    rsi,rdi
+ 2f0:	48 8b fb             	mov    rdi,rbx
  2f3:	48 8b dd             	mov    rbx,rbp
  2f6:	48 8b ee             	mov    rbp,rsi
  2f9:	48 8b f7             	mov    rsi,rdi
@@ -279,7 +276,7 @@ Disassembly of section .data:
  317:	48 8b dd             	mov    rbx,rbp
  31a:	48 8b ee             	mov    rbp,rsi
  31d:	48 8b f7             	mov    rsi,rdi
- 320:	48 8b fb             	mov    rdi,rbx
+ 320:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  323:	48 8b dd             	mov    rbx,rbp
  326:	48 8b ee             	mov    rbp,rsi
  329:	48 8b f7             	mov    rsi,rdi
@@ -295,7 +292,7 @@ Disassembly of section .data:
  347:	48 8b dd             	mov    rbx,rbp
  34a:	48 8b ee             	mov    rbp,rsi
  34d:	48 8b f7             	mov    rsi,rdi
- 350:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 350:	48 8b fb             	mov    rdi,rbx
  353:	48 8b dd             	mov    rbx,rbp
  356:	48 8b ee             	mov    rbp,rsi
  359:	48 8b f7             	mov    rsi,rdi
@@ -311,23 +308,23 @@ Disassembly of section .data:
  377:	48 8b dd             	mov    rbx,rbp
  37a:	48 8b ee             	mov    rbp,rsi
  37d:	48 8b f7             	mov    rsi,rdi
- 380:	48 8b dd             	mov    rbx,rbp
- 383:	48 8b ee             	mov    rbp,rsi
- 386:	48 8b f7             	mov    rsi,rdi
- 389:	48 8b fb             	mov    rdi,rbx
- 38c:	48 8b dd             	mov    rbx,rbp
- 38f:	48 8b ee             	mov    rbp,rsi
- 392:	48 8b f7             	mov    rsi,rdi
- 395:	48 8b fb             	mov    rdi,rbx
- 398:	48 8b dd             	mov    rbx,rbp
- 39b:	48 8b ee             	mov    rbp,rsi
- 39e:	48 8b f7             	mov    rsi,rdi
- 3a1:	48 8b fb             	mov    rdi,rbx
- 3a4:	48 8b dd             	mov    rbx,rbp
- 3a7:	48 8b ee             	mov    rbp,rsi
- 3aa:	48 8b f7             	mov    rsi,rdi
- 3ad:	48 8b fb             	mov    rdi,rbx
- 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 380:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 383:	48 8b dd             	mov    rbx,rbp
+ 386:	48 8b ee             	mov    rbp,rsi
+ 389:	48 8b f7             	mov    rsi,rdi
+ 38c:	48 8b fb             	mov    rdi,rbx
+ 38f:	48 8b dd             	mov    rbx,rbp
+ 392:	48 8b ee             	mov    rbp,rsi
+ 395:	48 8b f7             	mov    rsi,rdi
+ 398:	48 8b fb             	mov    rdi,rbx
+ 39b:	48 8b dd             	mov    rbx,rbp
+ 39e:	48 8b ee             	mov    rbp,rsi
+ 3a1:	48 8b f7             	mov    rsi,rdi
+ 3a4:	48 8b fb             	mov    rdi,rbx
+ 3a7:	48 8b dd             	mov    rbx,rbp
+ 3aa:	48 8b ee             	mov    rbp,rsi
+ 3ad:	48 8b f7             	mov    rsi,rdi
+ 3b0:	48 8b fb             	mov    rdi,rbx
  3b3:	48 8b dd             	mov    rbx,rbp
  3b6:	48 8b ee             	mov    rbp,rsi
  3b9:	48 8b f7             	mov    rsi,rdi
@@ -343,7 +340,7 @@ Disassembly of section .data:
  3d7:	48 8b dd             	mov    rbx,rbp
  3da:	48 8b ee             	mov    rbp,rsi
  3dd:	48 8b f7             	mov    rsi,rdi
- 3e0:	48 8b fb             	mov    rdi,rbx
+ 3e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  3e3:	48 8b dd             	mov    rbx,rbp
  3e6:	48 8b ee             	mov    rbp,rsi
  3e9:	48 8b f7             	mov    rsi,rdi
@@ -359,7 +356,7 @@ Disassembly of section .data:
  407:	48 8b dd             	mov    rbx,rbp
  40a:	48 8b ee             	mov    rbp,rsi
  40d:	48 8b f7             	mov    rsi,rdi
- 410:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 410:	48 8b fb             	mov    rdi,rbx
  413:	48 8b dd             	mov    rbx,rbp
  416:	48 8b ee             	mov    rbp,rsi
  419:	48 8b f7             	mov    rsi,rdi
@@ -375,23 +372,23 @@ Disassembly of section .data:
  437:	48 8b dd             	mov    rbx,rbp
  43a:	48 8b ee             	mov    rbp,rsi
  43d:	48 8b f7             	mov    rsi,rdi
- 440:	48 8b dd             	mov    rbx,rbp
- 443:	48 8b ee             	mov    rbp,rsi
- 446:	48 8b f7             	mov    rsi,rdi
- 449:	48 8b fb             	mov    rdi,rbx
- 44c:	48 8b dd             	mov    rbx,rbp
- 44f:	48 8b ee             	mov    rbp,rsi
- 452:	48 8b f7             	mov    rsi,rdi
- 455:	48 8b fb             	mov    rdi,rbx
- 458:	48 8b dd             	mov    rbx,rbp
- 45b:	48 8b ee             	mov    rbp,rsi
- 45e:	48 8b f7             	mov    rsi,rdi
- 461:	48 8b fb             	mov    rdi,rbx
- 464:	48 8b dd             	mov    rbx,rbp
- 467:	48 8b ee             	mov    rbp,rsi
- 46a:	48 8b f7             	mov    rsi,rdi
- 46d:	48 8b fb             	mov    rdi,rbx
- 470:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 440:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 443:	48 8b dd             	mov    rbx,rbp
+ 446:	48 8b ee             	mov    rbp,rsi
+ 449:	48 8b f7             	mov    rsi,rdi
+ 44c:	48 8b fb             	mov    rdi,rbx
+ 44f:	48 8b dd             	mov    rbx,rbp
+ 452:	48 8b ee             	mov    rbp,rsi
+ 455:	48 8b f7             	mov    rsi,rdi
+ 458:	48 8b fb             	mov    rdi,rbx
+ 45b:	48 8b dd             	mov    rbx,rbp
+ 45e:	48 8b ee             	mov    rbp,rsi
+ 461:	48 8b f7             	mov    rsi,rdi
+ 464:	48 8b fb             	mov    rdi,rbx
+ 467:	48 8b dd             	mov    rbx,rbp
+ 46a:	48 8b ee             	mov    rbp,rsi
+ 46d:	48 8b f7             	mov    rsi,rdi
+ 470:	48 8b fb             	mov    rdi,rbx
  473:	48 8b dd             	mov    rbx,rbp
  476:	48 8b ee             	mov    rbp,rsi
  479:	48 8b f7             	mov    rsi,rdi
@@ -407,7 +404,7 @@ Disassembly of section .data:
  497:	48 8b dd             	mov    rbx,rbp
  49a:	48 8b ee             	mov    rbp,rsi
  49d:	48 8b f7             	mov    rsi,rdi
- 4a0:	48 8b fb             	mov    rdi,rbx
+ 4a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4a3:	48 8b dd             	mov    rbx,rbp
  4a6:	48 8b ee             	mov    rbp,rsi
  4a9:	48 8b f7             	mov    rsi,rdi
@@ -423,7 +420,7 @@ Disassembly of section .data:
  4c7:	48 8b dd             	mov    rbx,rbp
  4ca:	48 8b ee             	mov    rbp,rsi
  4cd:	48 8b f7             	mov    rsi,rdi
- 4d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4d0:	48 8b fb             	mov    rdi,rbx
  4d3:	48 8b dd             	mov    rbx,rbp
  4d6:	48 8b ee             	mov    rbp,rsi
  4d9:	48 8b f7             	mov    rsi,rdi
@@ -439,23 +436,23 @@ Disassembly of section .data:
  4f7:	48 8b dd             	mov    rbx,rbp
  4fa:	48 8b ee             	mov    rbp,rsi
  4fd:	48 8b f7             	mov    rsi,rdi
- 500:	48 8b dd             	mov    rbx,rbp
- 503:	48 8b ee             	mov    rbp,rsi
- 506:	48 8b f7             	mov    rsi,rdi
- 509:	48 8b fb             	mov    rdi,rbx
- 50c:	48 8b dd             	mov    rbx,rbp
- 50f:	48 8b ee             	mov    rbp,rsi
- 512:	48 8b f7             	mov    rsi,rdi
- 515:	48 8b fb             	mov    rdi,rbx
- 518:	48 8b dd             	mov    rbx,rbp
- 51b:	48 8b ee             	mov    rbp,rsi
- 51e:	48 8b f7             	mov    rsi,rdi
- 521:	48 8b fb             	mov    rdi,rbx
- 524:	48 8b dd             	mov    rbx,rbp
- 527:	48 8b ee             	mov    rbp,rsi
- 52a:	48 8b f7             	mov    rsi,rdi
- 52d:	48 8b fb             	mov    rdi,rbx
- 530:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 500:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 503:	48 8b dd             	mov    rbx,rbp
+ 506:	48 8b ee             	mov    rbp,rsi
+ 509:	48 8b f7             	mov    rsi,rdi
+ 50c:	48 8b fb             	mov    rdi,rbx
+ 50f:	48 8b dd             	mov    rbx,rbp
+ 512:	48 8b ee             	mov    rbp,rsi
+ 515:	48 8b f7             	mov    rsi,rdi
+ 518:	48 8b fb             	mov    rdi,rbx
+ 51b:	48 8b dd             	mov    rbx,rbp
+ 51e:	48 8b ee             	mov    rbp,rsi
+ 521:	48 8b f7             	mov    rsi,rdi
+ 524:	48 8b fb             	mov    rdi,rbx
+ 527:	48 8b dd             	mov    rbx,rbp
+ 52a:	48 8b ee             	mov    rbp,rsi
+ 52d:	48 8b f7             	mov    rsi,rdi
+ 530:	48 8b fb             	mov    rdi,rbx
  533:	48 8b dd             	mov    rbx,rbp
  536:	48 8b ee             	mov    rbp,rsi
  539:	48 8b f7             	mov    rsi,rdi
@@ -471,7 +468,7 @@ Disassembly of section .data:
  557:	48 8b dd             	mov    rbx,rbp
  55a:	48 8b ee             	mov    rbp,rsi
  55d:	48 8b f7             	mov    rsi,rdi
- 560:	48 8b fb             	mov    rdi,rbx
+ 560:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  563:	48 8b dd             	mov    rbx,rbp
  566:	48 8b ee             	mov    rbp,rsi
  569:	48 8b f7             	mov    rsi,rdi
@@ -487,7 +484,7 @@ Disassembly of section .data:
  587:	48 8b dd             	mov    rbx,rbp
  58a:	48 8b ee             	mov    rbp,rsi
  58d:	48 8b f7             	mov    rsi,rdi
- 590:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 590:	48 8b fb             	mov    rdi,rbx
  593:	48 8b dd             	mov    rbx,rbp
  596:	48 8b ee             	mov    rbp,rsi
  599:	48 8b f7             	mov    rsi,rdi
@@ -503,23 +500,23 @@ Disassembly of section .data:
  5b7:	48 8b dd             	mov    rbx,rbp
  5ba:	48 8b ee             	mov    rbp,rsi
  5bd:	48 8b f7             	mov    rsi,rdi
- 5c0:	48 8b dd             	mov    rbx,rbp
- 5c3:	48 8b ee             	mov    rbp,rsi
- 5c6:	48 8b f7             	mov    rsi,rdi
- 5c9:	48 8b fb             	mov    rdi,rbx
- 5cc:	48 8b dd             	mov    rbx,rbp
- 5cf:	48 8b ee             	mov    rbp,rsi
- 5d2:	48 8b f7             	mov    rsi,rdi
- 5d5:	48 8b fb             	mov    rdi,rbx
- 5d8:	48 8b dd             	mov    rbx,rbp
- 5db:	48 8b ee             	mov    rbp,rsi
- 5de:	48 8b f7             	mov    rsi,rdi
- 5e1:	48 8b fb             	mov    rdi,rbx
- 5e4:	48 8b dd             	mov    rbx,rbp
- 5e7:	48 8b ee             	mov    rbp,rsi
- 5ea:	48 8b f7             	mov    rsi,rdi
- 5ed:	48 8b fb             	mov    rdi,rbx
- 5f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 5c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 5c3:	48 8b dd             	mov    rbx,rbp
+ 5c6:	48 8b ee             	mov    rbp,rsi
+ 5c9:	48 8b f7             	mov    rsi,rdi
+ 5cc:	48 8b fb             	mov    rdi,rbx
+ 5cf:	48 8b dd             	mov    rbx,rbp
+ 5d2:	48 8b ee             	mov    rbp,rsi
+ 5d5:	48 8b f7             	mov    rsi,rdi
+ 5d8:	48 8b fb             	mov    rdi,rbx
+ 5db:	48 8b dd             	mov    rbx,rbp
+ 5de:	48 8b ee             	mov    rbp,rsi
+ 5e1:	48 8b f7             	mov    rsi,rdi
+ 5e4:	48 8b fb             	mov    rdi,rbx
+ 5e7:	48 8b dd             	mov    rbx,rbp
+ 5ea:	48 8b ee             	mov    rbp,rsi
+ 5ed:	48 8b f7             	mov    rsi,rdi
+ 5f0:	48 8b fb             	mov    rdi,rbx
  5f3:	48 8b dd             	mov    rbx,rbp
  5f6:	48 8b ee             	mov    rbp,rsi
  5f9:	48 8b f7             	mov    rsi,rdi
@@ -535,7 +532,7 @@ Disassembly of section .data:
  617:	48 8b dd             	mov    rbx,rbp
  61a:	48 8b ee             	mov    rbp,rsi
  61d:	48 8b f7             	mov    rsi,rdi
- 620:	48 8b fb             	mov    rdi,rbx
+ 620:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  623:	48 8b dd             	mov    rbx,rbp
  626:	48 8b ee             	mov    rbp,rsi
  629:	48 8b f7             	mov    rsi,rdi
@@ -551,7 +548,7 @@ Disassembly of section .data:
  647:	48 8b dd             	mov    rbx,rbp
  64a:	48 8b ee             	mov    rbp,rsi
  64d:	48 8b f7             	mov    rsi,rdi
- 650:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 650:	48 8b fb             	mov    rdi,rbx
  653:	48 8b dd             	mov    rbx,rbp
  656:	48 8b ee             	mov    rbp,rsi
  659:	48 8b f7             	mov    rsi,rdi
@@ -567,23 +564,23 @@ Disassembly of section .data:
  677:	48 8b dd             	mov    rbx,rbp
  67a:	48 8b ee             	mov    rbp,rsi
  67d:	48 8b f7             	mov    rsi,rdi
- 680:	48 8b dd             	mov    rbx,rbp
- 683:	48 8b ee             	mov    rbp,rsi
- 686:	48 8b f7             	mov    rsi,rdi
- 689:	48 8b fb             	mov    rdi,rbx
- 68c:	48 8b dd             	mov    rbx,rbp
- 68f:	48 8b ee             	mov    rbp,rsi
- 692:	48 8b f7             	mov    rsi,rdi
- 695:	48 8b fb             	mov    rdi,rbx
- 698:	48 8b dd             	mov    rbx,rbp
- 69b:	48 8b ee             	mov    rbp,rsi
- 69e:	48 8b f7             	mov    rsi,rdi
- 6a1:	48 8b fb             	mov    rdi,rbx
- 6a4:	48 8b dd             	mov    rbx,rbp
- 6a7:	48 8b ee             	mov    rbp,rsi
- 6aa:	48 8b f7             	mov    rsi,rdi
- 6ad:	48 8b fb             	mov    rdi,rbx
- 6b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 680:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 683:	48 8b dd             	mov    rbx,rbp
+ 686:	48 8b ee             	mov    rbp,rsi
+ 689:	48 8b f7             	mov    rsi,rdi
+ 68c:	48 8b fb             	mov    rdi,rbx
+ 68f:	48 8b dd             	mov    rbx,rbp
+ 692:	48 8b ee             	mov    rbp,rsi
+ 695:	48 8b f7             	mov    rsi,rdi
+ 698:	48 8b fb             	mov    rdi,rbx
+ 69b:	48 8b dd             	mov    rbx,rbp
+ 69e:	48 8b ee             	mov    rbp,rsi
+ 6a1:	48 8b f7             	mov    rsi,rdi
+ 6a4:	48 8b fb             	mov    rdi,rbx
+ 6a7:	48 8b dd             	mov    rbx,rbp
+ 6aa:	48 8b ee             	mov    rbp,rsi
+ 6ad:	48 8b f7             	mov    rsi,rdi
+ 6b0:	48 8b fb             	mov    rdi,rbx
  6b3:	48 8b dd             	mov    rbx,rbp
  6b6:	48 8b ee             	mov    rbp,rsi
  6b9:	48 8b f7             	mov    rsi,rdi
@@ -599,7 +596,7 @@ Disassembly of section .data:
  6d7:	48 8b dd             	mov    rbx,rbp
  6da:	48 8b ee             	mov    rbp,rsi
  6dd:	48 8b f7             	mov    rsi,rdi
- 6e0:	48 8b fb             	mov    rdi,rbx
+ 6e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  6e3:	48 8b dd             	mov    rbx,rbp
  6e6:	48 8b ee             	mov    rbp,rsi
  6e9:	48 8b f7             	mov    rsi,rdi
@@ -615,7 +612,7 @@ Disassembly of section .data:
  707:	48 8b dd             	mov    rbx,rbp
  70a:	48 8b ee             	mov    rbp,rsi
  70d:	48 8b f7             	mov    rsi,rdi
- 710:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 710:	48 8b fb             	mov    rdi,rbx
  713:	48 8b dd             	mov    rbx,rbp
  716:	48 8b ee             	mov    rbp,rsi
  719:	48 8b f7             	mov    rsi,rdi
@@ -631,23 +628,23 @@ Disassembly of section .data:
  737:	48 8b dd             	mov    rbx,rbp
  73a:	48 8b ee             	mov    rbp,rsi
  73d:	48 8b f7             	mov    rsi,rdi
- 740:	48 8b dd             	mov    rbx,rbp
- 743:	48 8b ee             	mov    rbp,rsi
- 746:	48 8b f7             	mov    rsi,rdi
- 749:	48 8b fb             	mov    rdi,rbx
- 74c:	48 8b dd             	mov    rbx,rbp
- 74f:	48 8b ee             	mov    rbp,rsi
- 752:	48 8b f7             	mov    rsi,rdi
- 755:	48 8b fb             	mov    rdi,rbx
- 758:	48 8b dd             	mov    rbx,rbp
- 75b:	48 8b ee             	mov    rbp,rsi
- 75e:	48 8b f7             	mov    rsi,rdi
- 761:	48 8b fb             	mov    rdi,rbx
- 764:	48 8b dd             	mov    rbx,rbp
- 767:	48 8b ee             	mov    rbp,rsi
- 76a:	48 8b f7             	mov    rsi,rdi
- 76d:	48 8b fb             	mov    rdi,rbx
- 770:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 740:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 743:	48 8b dd             	mov    rbx,rbp
+ 746:	48 8b ee             	mov    rbp,rsi
+ 749:	48 8b f7             	mov    rsi,rdi
+ 74c:	48 8b fb             	mov    rdi,rbx
+ 74f:	48 8b dd             	mov    rbx,rbp
+ 752:	48 8b ee             	mov    rbp,rsi
+ 755:	48 8b f7             	mov    rsi,rdi
+ 758:	48 8b fb             	mov    rdi,rbx
+ 75b:	48 8b dd             	mov    rbx,rbp
+ 75e:	48 8b ee             	mov    rbp,rsi
+ 761:	48 8b f7             	mov    rsi,rdi
+ 764:	48 8b fb             	mov    rdi,rbx
+ 767:	48 8b dd             	mov    rbx,rbp
+ 76a:	48 8b ee             	mov    rbp,rsi
+ 76d:	48 8b f7             	mov    rsi,rdi
+ 770:	48 8b fb             	mov    rdi,rbx
  773:	48 8b dd             	mov    rbx,rbp
  776:	48 8b ee             	mov    rbp,rsi
  779:	48 8b f7             	mov    rsi,rdi
@@ -663,7 +660,7 @@ Disassembly of section .data:
  797:	48 8b dd             	mov    rbx,rbp
  79a:	48 8b ee             	mov    rbp,rsi
  79d:	48 8b f7             	mov    rsi,rdi
- 7a0:	48 8b fb             	mov    rdi,rbx
+ 7a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  7a3:	48 8b dd             	mov    rbx,rbp
  7a6:	48 8b ee             	mov    rbp,rsi
  7a9:	48 8b f7             	mov    rsi,rdi
@@ -679,7 +676,7 @@ Disassembly of section .data:
  7c7:	48 8b dd             	mov    rbx,rbp
  7ca:	48 8b ee             	mov    rbp,rsi
  7cd:	48 8b f7             	mov    rsi,rdi
- 7d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 7d0:	48 8b fb             	mov    rdi,rbx
  7d3:	48 8b dd             	mov    rbx,rbp
  7d6:	48 8b ee             	mov    rbp,rsi
  7d9:	48 8b f7             	mov    rsi,rdi
@@ -695,23 +692,23 @@ Disassembly of section .data:
  7f7:	48 8b dd             	mov    rbx,rbp
  7fa:	48 8b ee             	mov    rbp,rsi
  7fd:	48 8b f7             	mov    rsi,rdi
- 800:	48 8b dd             	mov    rbx,rbp
- 803:	48 8b ee             	mov    rbp,rsi
- 806:	48 8b f7             	mov    rsi,rdi
- 809:	48 8b fb             	mov    rdi,rbx
- 80c:	48 8b dd             	mov    rbx,rbp
- 80f:	48 8b ee             	mov    rbp,rsi
- 812:	48 8b f7             	mov    rsi,rdi
- 815:	48 8b fb             	mov    rdi,rbx
- 818:	48 8b dd             	mov    rbx,rbp
- 81b:	48 8b ee             	mov    rbp,rsi
- 81e:	48 8b f7             	mov    rsi,rdi
- 821:	48 8b fb             	mov    rdi,rbx
- 824:	48 8b dd             	mov    rbx,rbp
- 827:	48 8b ee             	mov    rbp,rsi
- 82a:	48 8b f7             	mov    rsi,rdi
- 82d:	48 8b fb             	mov    rdi,rbx
- 830:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 800:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 803:	48 8b dd             	mov    rbx,rbp
+ 806:	48 8b ee             	mov    rbp,rsi
+ 809:	48 8b f7             	mov    rsi,rdi
+ 80c:	48 8b fb             	mov    rdi,rbx
+ 80f:	48 8b dd             	mov    rbx,rbp
+ 812:	48 8b ee             	mov    rbp,rsi
+ 815:	48 8b f7             	mov    rsi,rdi
+ 818:	48 8b fb             	mov    rdi,rbx
+ 81b:	48 8b dd             	mov    rbx,rbp
+ 81e:	48 8b ee             	mov    rbp,rsi
+ 821:	48 8b f7             	mov    rsi,rdi
+ 824:	48 8b fb             	mov    rdi,rbx
+ 827:	48 8b dd             	mov    rbx,rbp
+ 82a:	48 8b ee             	mov    rbp,rsi
+ 82d:	48 8b f7             	mov    rsi,rdi
+ 830:	48 8b fb             	mov    rdi,rbx
  833:	48 8b dd             	mov    rbx,rbp
  836:	48 8b ee             	mov    rbp,rsi
  839:	48 8b f7             	mov    rsi,rdi
@@ -727,7 +724,7 @@ Disassembly of section .data:
  857:	48 8b dd             	mov    rbx,rbp
  85a:	48 8b ee             	mov    rbp,rsi
  85d:	48 8b f7             	mov    rsi,rdi
- 860:	48 8b fb             	mov    rdi,rbx
+ 860:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  863:	48 8b dd             	mov    rbx,rbp
  866:	48 8b ee             	mov    rbp,rsi
  869:	48 8b f7             	mov    rsi,rdi
@@ -743,7 +740,7 @@ Disassembly of section .data:
  887:	48 8b dd             	mov    rbx,rbp
  88a:	48 8b ee             	mov    rbp,rsi
  88d:	48 8b f7             	mov    rsi,rdi
- 890:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 890:	48 8b fb             	mov    rdi,rbx
  893:	48 8b dd             	mov    rbx,rbp
  896:	48 8b ee             	mov    rbp,rsi
  899:	48 8b f7             	mov    rsi,rdi
@@ -759,23 +756,23 @@ Disassembly of section .data:
  8b7:	48 8b dd             	mov    rbx,rbp
  8ba:	48 8b ee             	mov    rbp,rsi
  8bd:	48 8b f7             	mov    rsi,rdi
- 8c0:	48 8b dd             	mov    rbx,rbp
- 8c3:	48 8b ee             	mov    rbp,rsi
- 8c6:	48 8b f7             	mov    rsi,rdi
- 8c9:	48 8b fb             	mov    rdi,rbx
- 8cc:	48 8b dd             	mov    rbx,rbp
- 8cf:	48 8b ee             	mov    rbp,rsi
- 8d2:	48 8b f7             	mov    rsi,rdi
- 8d5:	48 8b fb             	mov    rdi,rbx
- 8d8:	48 8b dd             	mov    rbx,rbp
- 8db:	48 8b ee             	mov    rbp,rsi
- 8de:	48 8b f7             	mov    rsi,rdi
- 8e1:	48 8b fb             	mov    rdi,rbx
- 8e4:	48 8b dd             	mov    rbx,rbp
- 8e7:	48 8b ee             	mov    rbp,rsi
- 8ea:	48 8b f7             	mov    rsi,rdi
- 8ed:	48 8b fb             	mov    rdi,rbx
- 8f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8c3:	48 8b dd             	mov    rbx,rbp
+ 8c6:	48 8b ee             	mov    rbp,rsi
+ 8c9:	48 8b f7             	mov    rsi,rdi
+ 8cc:	48 8b fb             	mov    rdi,rbx
+ 8cf:	48 8b dd             	mov    rbx,rbp
+ 8d2:	48 8b ee             	mov    rbp,rsi
+ 8d5:	48 8b f7             	mov    rsi,rdi
+ 8d8:	48 8b fb             	mov    rdi,rbx
+ 8db:	48 8b dd             	mov    rbx,rbp
+ 8de:	48 8b ee             	mov    rbp,rsi
+ 8e1:	48 8b f7             	mov    rsi,rdi
+ 8e4:	48 8b fb             	mov    rdi,rbx
+ 8e7:	48 8b dd             	mov    rbx,rbp
+ 8ea:	48 8b ee             	mov    rbp,rsi
+ 8ed:	48 8b f7             	mov    rsi,rdi
+ 8f0:	48 8b fb             	mov    rdi,rbx
  8f3:	48 8b dd             	mov    rbx,rbp
  8f6:	48 8b ee             	mov    rbp,rsi
  8f9:	48 8b f7             	mov    rsi,rdi
@@ -791,7 +788,7 @@ Disassembly of section .data:
  917:	48 8b dd             	mov    rbx,rbp
  91a:	48 8b ee             	mov    rbp,rsi
  91d:	48 8b f7             	mov    rsi,rdi
- 920:	48 8b fb             	mov    rdi,rbx
+ 920:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  923:	48 8b dd             	mov    rbx,rbp
  926:	48 8b ee             	mov    rbp,rsi
  929:	48 8b f7             	mov    rsi,rdi
@@ -807,7 +804,7 @@ Disassembly of section .data:
  947:	48 8b dd             	mov    rbx,rbp
  94a:	48 8b ee             	mov    rbp,rsi
  94d:	48 8b f7             	mov    rsi,rdi
- 950:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 950:	48 8b fb             	mov    rdi,rbx
  953:	48 8b dd             	mov    rbx,rbp
  956:	48 8b ee             	mov    rbp,rsi
  959:	48 8b f7             	mov    rsi,rdi
@@ -823,23 +820,23 @@ Disassembly of section .data:
  977:	48 8b dd             	mov    rbx,rbp
  97a:	48 8b ee             	mov    rbp,rsi
  97d:	48 8b f7             	mov    rsi,rdi
- 980:	48 8b dd             	mov    rbx,rbp
- 983:	48 8b ee             	mov    rbp,rsi
- 986:	48 8b f7             	mov    rsi,rdi
- 989:	48 8b fb             	mov    rdi,rbx
- 98c:	48 8b dd             	mov    rbx,rbp
- 98f:	48 8b ee             	mov    rbp,rsi
- 992:	48 8b f7             	mov    rsi,rdi
- 995:	48 8b fb             	mov    rdi,rbx
- 998:	48 8b dd             	mov    rbx,rbp
- 99b:	48 8b ee             	mov    rbp,rsi
- 99e:	48 8b f7             	mov    rsi,rdi
- 9a1:	48 8b fb             	mov    rdi,rbx
- 9a4:	48 8b dd             	mov    rbx,rbp
- 9a7:	48 8b ee             	mov    rbp,rsi
- 9aa:	48 8b f7             	mov    rsi,rdi
- 9ad:	48 8b fb             	mov    rdi,rbx
- 9b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 980:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 983:	48 8b dd             	mov    rbx,rbp
+ 986:	48 8b ee             	mov    rbp,rsi
+ 989:	48 8b f7             	mov    rsi,rdi
+ 98c:	48 8b fb             	mov    rdi,rbx
+ 98f:	48 8b dd             	mov    rbx,rbp
+ 992:	48 8b ee             	mov    rbp,rsi
+ 995:	48 8b f7             	mov    rsi,rdi
+ 998:	48 8b fb             	mov    rdi,rbx
+ 99b:	48 8b dd             	mov    rbx,rbp
+ 99e:	48 8b ee             	mov    rbp,rsi
+ 9a1:	48 8b f7             	mov    rsi,rdi
+ 9a4:	48 8b fb             	mov    rdi,rbx
+ 9a7:	48 8b dd             	mov    rbx,rbp
+ 9aa:	48 8b ee             	mov    rbp,rsi
+ 9ad:	48 8b f7             	mov    rsi,rdi
+ 9b0:	48 8b fb             	mov    rdi,rbx
  9b3:	48 8b dd             	mov    rbx,rbp
  9b6:	48 8b ee             	mov    rbp,rsi
  9b9:	48 8b f7             	mov    rsi,rdi
@@ -855,7 +852,7 @@ Disassembly of section .data:
  9d7:	48 8b dd             	mov    rbx,rbp
  9da:	48 8b ee             	mov    rbp,rsi
  9dd:	48 8b f7             	mov    rsi,rdi
- 9e0:	48 8b fb             	mov    rdi,rbx
+ 9e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  9e3:	48 8b dd             	mov    rbx,rbp
  9e6:	48 8b ee             	mov    rbp,rsi
  9e9:	48 8b f7             	mov    rsi,rdi
@@ -871,7 +868,7 @@ Disassembly of section .data:
  a07:	48 8b dd             	mov    rbx,rbp
  a0a:	48 8b ee             	mov    rbp,rsi
  a0d:	48 8b f7             	mov    rsi,rdi
- a10:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a10:	48 8b fb             	mov    rdi,rbx
  a13:	48 8b dd             	mov    rbx,rbp
  a16:	48 8b ee             	mov    rbp,rsi
  a19:	48 8b f7             	mov    rsi,rdi
@@ -887,23 +884,23 @@ Disassembly of section .data:
  a37:	48 8b dd             	mov    rbx,rbp
  a3a:	48 8b ee             	mov    rbp,rsi
  a3d:	48 8b f7             	mov    rsi,rdi
- a40:	48 8b dd             	mov    rbx,rbp
- a43:	48 8b ee             	mov    rbp,rsi
- a46:	48 8b f7             	mov    rsi,rdi
- a49:	48 8b fb             	mov    rdi,rbx
- a4c:	48 8b dd             	mov    rbx,rbp
- a4f:	48 8b ee             	mov    rbp,rsi
- a52:	48 8b f7             	mov    rsi,rdi
- a55:	48 8b fb             	mov    rdi,rbx
- a58:	48 8b dd             	mov    rbx,rbp
- a5b:	48 8b ee             	mov    rbp,rsi
- a5e:	48 8b f7             	mov    rsi,rdi
- a61:	48 8b fb             	mov    rdi,rbx
- a64:	48 8b dd             	mov    rbx,rbp
- a67:	48 8b ee             	mov    rbp,rsi
- a6a:	48 8b f7             	mov    rsi,rdi
- a6d:	48 8b fb             	mov    rdi,rbx
- a70:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a43:	48 8b dd             	mov    rbx,rbp
+ a46:	48 8b ee             	mov    rbp,rsi
+ a49:	48 8b f7             	mov    rsi,rdi
+ a4c:	48 8b fb             	mov    rdi,rbx
+ a4f:	48 8b dd             	mov    rbx,rbp
+ a52:	48 8b ee             	mov    rbp,rsi
+ a55:	48 8b f7             	mov    rsi,rdi
+ a58:	48 8b fb             	mov    rdi,rbx
+ a5b:	48 8b dd             	mov    rbx,rbp
+ a5e:	48 8b ee             	mov    rbp,rsi
+ a61:	48 8b f7             	mov    rsi,rdi
+ a64:	48 8b fb             	mov    rdi,rbx
+ a67:	48 8b dd             	mov    rbx,rbp
+ a6a:	48 8b ee             	mov    rbp,rsi
+ a6d:	48 8b f7             	mov    rsi,rdi
+ a70:	48 8b fb             	mov    rdi,rbx
  a73:	48 8b dd             	mov    rbx,rbp
  a76:	48 8b ee             	mov    rbp,rsi
  a79:	48 8b f7             	mov    rsi,rdi
@@ -919,7 +916,7 @@ Disassembly of section .data:
  a97:	48 8b dd             	mov    rbx,rbp
  a9a:	48 8b ee             	mov    rbp,rsi
  a9d:	48 8b f7             	mov    rsi,rdi
- aa0:	48 8b fb             	mov    rdi,rbx
+ aa0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  aa3:	48 8b dd             	mov    rbx,rbp
  aa6:	48 8b ee             	mov    rbp,rsi
  aa9:	48 8b f7             	mov    rsi,rdi
@@ -935,7 +932,7 @@ Disassembly of section .data:
  ac7:	48 8b dd             	mov    rbx,rbp
  aca:	48 8b ee             	mov    rbp,rsi
  acd:	48 8b f7             	mov    rsi,rdi
- ad0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ ad0:	48 8b fb             	mov    rdi,rbx
  ad3:	48 8b dd             	mov    rbx,rbp
  ad6:	48 8b ee             	mov    rbp,rsi
  ad9:	48 8b f7             	mov    rsi,rdi
@@ -951,23 +948,23 @@ Disassembly of section .data:
  af7:	48 8b dd             	mov    rbx,rbp
  afa:	48 8b ee             	mov    rbp,rsi
  afd:	48 8b f7             	mov    rsi,rdi
- b00:	48 8b dd             	mov    rbx,rbp
- b03:	48 8b ee             	mov    rbp,rsi
- b06:	48 8b f7             	mov    rsi,rdi
- b09:	48 8b fb             	mov    rdi,rbx
- b0c:	48 8b dd             	mov    rbx,rbp
- b0f:	48 8b ee             	mov    rbp,rsi
- b12:	48 8b f7             	mov    rsi,rdi
- b15:	48 8b fb             	mov    rdi,rbx
- b18:	48 8b dd             	mov    rbx,rbp
- b1b:	48 8b ee             	mov    rbp,rsi
- b1e:	48 8b f7             	mov    rsi,rdi
- b21:	48 8b fb             	mov    rdi,rbx
- b24:	48 8b dd             	mov    rbx,rbp
- b27:	48 8b ee             	mov    rbp,rsi
- b2a:	48 8b f7             	mov    rsi,rdi
- b2d:	48 8b fb             	mov    rdi,rbx
- b30:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b00:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b03:	48 8b dd             	mov    rbx,rbp
+ b06:	48 8b ee             	mov    rbp,rsi
+ b09:	48 8b f7             	mov    rsi,rdi
+ b0c:	48 8b fb             	mov    rdi,rbx
+ b0f:	48 8b dd             	mov    rbx,rbp
+ b12:	48 8b ee             	mov    rbp,rsi
+ b15:	48 8b f7             	mov    rsi,rdi
+ b18:	48 8b fb             	mov    rdi,rbx
+ b1b:	48 8b dd             	mov    rbx,rbp
+ b1e:	48 8b ee             	mov    rbp,rsi
+ b21:	48 8b f7             	mov    rsi,rdi
+ b24:	48 8b fb             	mov    rdi,rbx
+ b27:	48 8b dd             	mov    rbx,rbp
+ b2a:	48 8b ee             	mov    rbp,rsi
+ b2d:	48 8b f7             	mov    rsi,rdi
+ b30:	48 8b fb             	mov    rdi,rbx
  b33:	48 8b dd             	mov    rbx,rbp
  b36:	48 8b ee             	mov    rbp,rsi
  b39:	48 8b f7             	mov    rsi,rdi
@@ -983,7 +980,7 @@ Disassembly of section .data:
  b57:	48 8b dd             	mov    rbx,rbp
  b5a:	48 8b ee             	mov    rbp,rsi
  b5d:	48 8b f7             	mov    rsi,rdi
- b60:	48 8b fb             	mov    rdi,rbx
+ b60:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  b63:	48 8b dd             	mov    rbx,rbp
  b66:	48 8b ee             	mov    rbp,rsi
  b69:	48 8b f7             	mov    rsi,rdi
@@ -999,7 +996,7 @@ Disassembly of section .data:
  b87:	48 8b dd             	mov    rbx,rbp
  b8a:	48 8b ee             	mov    rbp,rsi
  b8d:	48 8b f7             	mov    rsi,rdi
- b90:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b90:	48 8b fb             	mov    rdi,rbx
  b93:	48 8b dd             	mov    rbx,rbp
  b96:	48 8b ee             	mov    rbp,rsi
  b99:	48 8b f7             	mov    rsi,rdi
@@ -1015,23 +1012,23 @@ Disassembly of section .data:
  bb7:	48 8b dd             	mov    rbx,rbp
  bba:	48 8b ee             	mov    rbp,rsi
  bbd:	48 8b f7             	mov    rsi,rdi
- bc0:	48 8b dd             	mov    rbx,rbp
- bc3:	48 8b ee             	mov    rbp,rsi
- bc6:	48 8b f7             	mov    rsi,rdi
- bc9:	48 8b fb             	mov    rdi,rbx
- bcc:	48 8b dd             	mov    rbx,rbp
- bcf:	48 8b ee             	mov    rbp,rsi
- bd2:	48 8b f7             	mov    rsi,rdi
- bd5:	48 8b fb             	mov    rdi,rbx
- bd8:	48 8b dd             	mov    rbx,rbp
- bdb:	48 8b ee             	mov    rbp,rsi
- bde:	48 8b f7             	mov    rsi,rdi
- be1:	48 8b fb             	mov    rdi,rbx
- be4:	48 8b dd             	mov    rbx,rbp
- be7:	48 8b ee             	mov    rbp,rsi
- bea:	48 8b f7             	mov    rsi,rdi
- bed:	48 8b fb             	mov    rdi,rbx
- bf0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bc0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bc3:	48 8b dd             	mov    rbx,rbp
+ bc6:	48 8b ee             	mov    rbp,rsi
+ bc9:	48 8b f7             	mov    rsi,rdi
+ bcc:	48 8b fb             	mov    rdi,rbx
+ bcf:	48 8b dd             	mov    rbx,rbp
+ bd2:	48 8b ee             	mov    rbp,rsi
+ bd5:	48 8b f7             	mov    rsi,rdi
+ bd8:	48 8b fb             	mov    rdi,rbx
+ bdb:	48 8b dd             	mov    rbx,rbp
+ bde:	48 8b ee             	mov    rbp,rsi
+ be1:	48 8b f7             	mov    rsi,rdi
+ be4:	48 8b fb             	mov    rdi,rbx
+ be7:	48 8b dd             	mov    rbx,rbp
+ bea:	48 8b ee             	mov    rbp,rsi
+ bed:	48 8b f7             	mov    rsi,rdi
+ bf0:	48 8b fb             	mov    rdi,rbx
  bf3:	48 8b dd             	mov    rbx,rbp
  bf6:	48 8b ee             	mov    rbp,rsi
  bf9:	48 8b f7             	mov    rsi,rdi
@@ -1047,7 +1044,7 @@ Disassembly of section .data:
  c17:	48 8b dd             	mov    rbx,rbp
  c1a:	48 8b ee             	mov    rbp,rsi
  c1d:	48 8b f7             	mov    rsi,rdi
- c20:	48 8b fb             	mov    rdi,rbx
+ c20:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  c23:	48 8b dd             	mov    rbx,rbp
  c26:	48 8b ee             	mov    rbp,rsi
  c29:	48 8b f7             	mov    rsi,rdi
@@ -1063,7 +1060,7 @@ Disassembly of section .data:
  c47:	48 8b dd             	mov    rbx,rbp
  c4a:	48 8b ee             	mov    rbp,rsi
  c4d:	48 8b f7             	mov    rsi,rdi
- c50:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c50:	48 8b fb             	mov    rdi,rbx
  c53:	48 8b dd             	mov    rbx,rbp
  c56:	48 8b ee             	mov    rbp,rsi
  c59:	48 8b f7             	mov    rsi,rdi
@@ -1079,23 +1076,23 @@ Disassembly of section .data:
  c77:	48 8b dd             	mov    rbx,rbp
  c7a:	48 8b ee             	mov    rbp,rsi
  c7d:	48 8b f7             	mov    rsi,rdi
- c80:	48 8b dd             	mov    rbx,rbp
- c83:	48 8b ee             	mov    rbp,rsi
- c86:	48 8b f7             	mov    rsi,rdi
- c89:	48 8b fb             	mov    rdi,rbx
- c8c:	48 8b dd             	mov    rbx,rbp
- c8f:	48 8b ee             	mov    rbp,rsi
- c92:	48 8b f7             	mov    rsi,rdi
- c95:	48 8b fb             	mov    rdi,rbx
- c98:	48 8b dd             	mov    rbx,rbp
- c9b:	48 8b ee             	mov    rbp,rsi
- c9e:	48 8b f7             	mov    rsi,rdi
- ca1:	48 8b fb             	mov    rdi,rbx
- ca4:	48 8b dd             	mov    rbx,rbp
- ca7:	48 8b ee             	mov    rbp,rsi
- caa:	48 8b f7             	mov    rsi,rdi
- cad:	48 8b fb             	mov    rdi,rbx
- cb0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c83:	48 8b dd             	mov    rbx,rbp
+ c86:	48 8b ee             	mov    rbp,rsi
+ c89:	48 8b f7             	mov    rsi,rdi
+ c8c:	48 8b fb             	mov    rdi,rbx
+ c8f:	48 8b dd             	mov    rbx,rbp
+ c92:	48 8b ee             	mov    rbp,rsi
+ c95:	48 8b f7             	mov    rsi,rdi
+ c98:	48 8b fb             	mov    rdi,rbx
+ c9b:	48 8b dd             	mov    rbx,rbp
+ c9e:	48 8b ee             	mov    rbp,rsi
+ ca1:	48 8b f7             	mov    rsi,rdi
+ ca4:	48 8b fb             	mov    rdi,rbx
+ ca7:	48 8b dd             	mov    rbx,rbp
+ caa:	48 8b ee             	mov    rbp,rsi
+ cad:	48 8b f7             	mov    rsi,rdi
+ cb0:	48 8b fb             	mov    rdi,rbx
  cb3:	48 8b dd             	mov    rbx,rbp
  cb6:	48 8b ee             	mov    rbp,rsi
  cb9:	48 8b f7             	mov    rsi,rdi
@@ -1111,7 +1108,7 @@ Disassembly of section .data:
  cd7:	48 8b dd             	mov    rbx,rbp
  cda:	48 8b ee             	mov    rbp,rsi
  cdd:	48 8b f7             	mov    rsi,rdi
- ce0:	48 8b fb             	mov    rdi,rbx
+ ce0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  ce3:	48 8b dd             	mov    rbx,rbp
  ce6:	48 8b ee             	mov    rbp,rsi
  ce9:	48 8b f7             	mov    rsi,rdi
@@ -1127,7 +1124,7 @@ Disassembly of section .data:
  d07:	48 8b dd             	mov    rbx,rbp
  d0a:	48 8b ee             	mov    rbp,rsi
  d0d:	48 8b f7             	mov    rsi,rdi
- d10:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ d10:	48 8b fb             	mov    rdi,rbx
  d13:	48 8b dd             	mov    rbx,rbp
  d16:	48 8b ee             	mov    rbp,rsi
  d19:	48 8b f7             	mov    rsi,rdi
@@ -1143,22 +1140,23 @@ Disassembly of section .data:
  d37:	48 8b dd             	mov    rbx,rbp
  d3a:	48 8b ee             	mov    rbp,rsi
  d3d:	48 8b f7             	mov    rsi,rdi
- d40:	83 e8 01             	sub    eax,0x1
- d43:	0f 85 37 f3 ff ff    	jne    0x80
- d49:	66 90                	xchg   ax,ax
- d4b:	66 90                	xchg   ax,ax
- d4d:	66 90                	xchg   ax,ax
- d4f:	66 90                	xchg   ax,ax
- d51:	66 90                	xchg   ax,ax
- d53:	66 90                	xchg   ax,ax
- d55:	66 90                	xchg   ax,ax
- d57:	66 90                	xchg   ax,ax
- d59:	48 83 c4 40          	add    rsp,0x40
- d5d:	41 59                	pop    r9
- d5f:	41 58                	pop    r8
- d61:	5f                   	pop    rdi
- d62:	5e                   	pop    rsi
- d63:	5d                   	pop    rbp
- d64:	5b                   	pop    rbx
- d65:	0f 77                	emms   
- d67:	c3                   	ret    
+ d40:	4d 01 c1             	add    r9,r8
+ d43:	83 e8 01             	sub    eax,0x1
+ d46:	0f 85 34 f3 ff ff    	jne    0x80
+ d4c:	66 90                	xchg   ax,ax
+ d4e:	66 90                	xchg   ax,ax
+ d50:	66 90                	xchg   ax,ax
+ d52:	66 90                	xchg   ax,ax
+ d54:	66 90                	xchg   ax,ax
+ d56:	66 90                	xchg   ax,ax
+ d58:	66 90                	xchg   ax,ax
+ d5a:	66 90                	xchg   ax,ax
+ d5c:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ d63:	41 59                	pop    r9
+ d65:	41 58                	pop    r8
+ d67:	5f                   	pop    rdi
+ d68:	5e                   	pop    rsi
+ d69:	5d                   	pop    rbp
+ d6a:	5b                   	pop    rbx
+ d6b:	0f 77                	emms   
+ d6d:	c3                   	ret    

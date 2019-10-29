@@ -19,30 +19,27 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	90                   	nop
-  72:	90                   	nop
-  73:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
   74:	90                   	nop
   75:	90                   	nop
   76:	90                   	nop
@@ -55,23 +52,23 @@ Disassembly of section .data:
   7d:	90                   	nop
   7e:	90                   	nop
   7f:	90                   	nop
-  80:	66 90                	xchg   ax,ax
-  82:	66 90                	xchg   ax,ax
-  84:	66 90                	xchg   ax,ax
-  86:	66 90                	xchg   ax,ax
-  88:	66 90                	xchg   ax,ax
-  8a:	66 90                	xchg   ax,ax
-  8c:	66 90                	xchg   ax,ax
-  8e:	66 90                	xchg   ax,ax
-  90:	66 90                	xchg   ax,ax
-  92:	66 90                	xchg   ax,ax
-  94:	66 90                	xchg   ax,ax
-  96:	66 90                	xchg   ax,ax
-  98:	66 90                	xchg   ax,ax
-  9a:	66 90                	xchg   ax,ax
-  9c:	66 90                	xchg   ax,ax
-  9e:	66 90                	xchg   ax,ax
-  a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  83:	66 90                	xchg   ax,ax
+  85:	66 90                	xchg   ax,ax
+  87:	66 90                	xchg   ax,ax
+  89:	66 90                	xchg   ax,ax
+  8b:	66 90                	xchg   ax,ax
+  8d:	66 90                	xchg   ax,ax
+  8f:	66 90                	xchg   ax,ax
+  91:	66 90                	xchg   ax,ax
+  93:	66 90                	xchg   ax,ax
+  95:	66 90                	xchg   ax,ax
+  97:	66 90                	xchg   ax,ax
+  99:	66 90                	xchg   ax,ax
+  9b:	66 90                	xchg   ax,ax
+  9d:	66 90                	xchg   ax,ax
+  9f:	66 90                	xchg   ax,ax
+  a1:	66 90                	xchg   ax,ax
   a3:	66 90                	xchg   ax,ax
   a5:	66 90                	xchg   ax,ax
   a7:	66 90                	xchg   ax,ax
@@ -87,23 +84,23 @@ Disassembly of section .data:
   bb:	66 90                	xchg   ax,ax
   bd:	66 90                	xchg   ax,ax
   bf:	66 90                	xchg   ax,ax
-  c1:	66 90                	xchg   ax,ax
-  c3:	66 90                	xchg   ax,ax
-  c5:	66 90                	xchg   ax,ax
-  c7:	66 90                	xchg   ax,ax
-  c9:	66 90                	xchg   ax,ax
-  cb:	66 90                	xchg   ax,ax
-  cd:	66 90                	xchg   ax,ax
-  cf:	66 90                	xchg   ax,ax
-  d1:	66 90                	xchg   ax,ax
-  d3:	66 90                	xchg   ax,ax
-  d5:	66 90                	xchg   ax,ax
-  d7:	66 90                	xchg   ax,ax
-  d9:	66 90                	xchg   ax,ax
-  db:	66 90                	xchg   ax,ax
-  dd:	66 90                	xchg   ax,ax
-  df:	66 90                	xchg   ax,ax
-  e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  c1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  c4:	66 90                	xchg   ax,ax
+  c6:	66 90                	xchg   ax,ax
+  c8:	66 90                	xchg   ax,ax
+  ca:	66 90                	xchg   ax,ax
+  cc:	66 90                	xchg   ax,ax
+  ce:	66 90                	xchg   ax,ax
+  d0:	66 90                	xchg   ax,ax
+  d2:	66 90                	xchg   ax,ax
+  d4:	66 90                	xchg   ax,ax
+  d6:	66 90                	xchg   ax,ax
+  d8:	66 90                	xchg   ax,ax
+  da:	66 90                	xchg   ax,ax
+  dc:	66 90                	xchg   ax,ax
+  de:	66 90                	xchg   ax,ax
+  e0:	66 90                	xchg   ax,ax
+  e2:	66 90                	xchg   ax,ax
   e4:	66 90                	xchg   ax,ax
   e6:	66 90                	xchg   ax,ax
   e8:	66 90                	xchg   ax,ax
@@ -119,23 +116,23 @@ Disassembly of section .data:
   fc:	66 90                	xchg   ax,ax
   fe:	66 90                	xchg   ax,ax
  100:	66 90                	xchg   ax,ax
- 102:	66 90                	xchg   ax,ax
- 104:	66 90                	xchg   ax,ax
- 106:	66 90                	xchg   ax,ax
- 108:	66 90                	xchg   ax,ax
- 10a:	66 90                	xchg   ax,ax
- 10c:	66 90                	xchg   ax,ax
- 10e:	66 90                	xchg   ax,ax
- 110:	66 90                	xchg   ax,ax
- 112:	66 90                	xchg   ax,ax
- 114:	66 90                	xchg   ax,ax
- 116:	66 90                	xchg   ax,ax
- 118:	66 90                	xchg   ax,ax
- 11a:	66 90                	xchg   ax,ax
- 11c:	66 90                	xchg   ax,ax
- 11e:	66 90                	xchg   ax,ax
- 120:	66 90                	xchg   ax,ax
- 122:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 102:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 105:	66 90                	xchg   ax,ax
+ 107:	66 90                	xchg   ax,ax
+ 109:	66 90                	xchg   ax,ax
+ 10b:	66 90                	xchg   ax,ax
+ 10d:	66 90                	xchg   ax,ax
+ 10f:	66 90                	xchg   ax,ax
+ 111:	66 90                	xchg   ax,ax
+ 113:	66 90                	xchg   ax,ax
+ 115:	66 90                	xchg   ax,ax
+ 117:	66 90                	xchg   ax,ax
+ 119:	66 90                	xchg   ax,ax
+ 11b:	66 90                	xchg   ax,ax
+ 11d:	66 90                	xchg   ax,ax
+ 11f:	66 90                	xchg   ax,ax
+ 121:	66 90                	xchg   ax,ax
+ 123:	66 90                	xchg   ax,ax
  125:	66 90                	xchg   ax,ax
  127:	66 90                	xchg   ax,ax
  129:	66 90                	xchg   ax,ax
@@ -151,23 +148,23 @@ Disassembly of section .data:
  13d:	66 90                	xchg   ax,ax
  13f:	66 90                	xchg   ax,ax
  141:	66 90                	xchg   ax,ax
- 143:	66 90                	xchg   ax,ax
- 145:	66 90                	xchg   ax,ax
- 147:	66 90                	xchg   ax,ax
- 149:	66 90                	xchg   ax,ax
- 14b:	66 90                	xchg   ax,ax
- 14d:	66 90                	xchg   ax,ax
- 14f:	66 90                	xchg   ax,ax
- 151:	66 90                	xchg   ax,ax
- 153:	66 90                	xchg   ax,ax
- 155:	66 90                	xchg   ax,ax
- 157:	66 90                	xchg   ax,ax
- 159:	66 90                	xchg   ax,ax
- 15b:	66 90                	xchg   ax,ax
- 15d:	66 90                	xchg   ax,ax
- 15f:	66 90                	xchg   ax,ax
- 161:	66 90                	xchg   ax,ax
- 163:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 143:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 146:	66 90                	xchg   ax,ax
+ 148:	66 90                	xchg   ax,ax
+ 14a:	66 90                	xchg   ax,ax
+ 14c:	66 90                	xchg   ax,ax
+ 14e:	66 90                	xchg   ax,ax
+ 150:	66 90                	xchg   ax,ax
+ 152:	66 90                	xchg   ax,ax
+ 154:	66 90                	xchg   ax,ax
+ 156:	66 90                	xchg   ax,ax
+ 158:	66 90                	xchg   ax,ax
+ 15a:	66 90                	xchg   ax,ax
+ 15c:	66 90                	xchg   ax,ax
+ 15e:	66 90                	xchg   ax,ax
+ 160:	66 90                	xchg   ax,ax
+ 162:	66 90                	xchg   ax,ax
+ 164:	66 90                	xchg   ax,ax
  166:	66 90                	xchg   ax,ax
  168:	66 90                	xchg   ax,ax
  16a:	66 90                	xchg   ax,ax
@@ -183,23 +180,23 @@ Disassembly of section .data:
  17e:	66 90                	xchg   ax,ax
  180:	66 90                	xchg   ax,ax
  182:	66 90                	xchg   ax,ax
- 184:	66 90                	xchg   ax,ax
- 186:	66 90                	xchg   ax,ax
- 188:	66 90                	xchg   ax,ax
- 18a:	66 90                	xchg   ax,ax
- 18c:	66 90                	xchg   ax,ax
- 18e:	66 90                	xchg   ax,ax
- 190:	66 90                	xchg   ax,ax
- 192:	66 90                	xchg   ax,ax
- 194:	66 90                	xchg   ax,ax
- 196:	66 90                	xchg   ax,ax
- 198:	66 90                	xchg   ax,ax
- 19a:	66 90                	xchg   ax,ax
- 19c:	66 90                	xchg   ax,ax
- 19e:	66 90                	xchg   ax,ax
- 1a0:	66 90                	xchg   ax,ax
- 1a2:	66 90                	xchg   ax,ax
- 1a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 184:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 187:	66 90                	xchg   ax,ax
+ 189:	66 90                	xchg   ax,ax
+ 18b:	66 90                	xchg   ax,ax
+ 18d:	66 90                	xchg   ax,ax
+ 18f:	66 90                	xchg   ax,ax
+ 191:	66 90                	xchg   ax,ax
+ 193:	66 90                	xchg   ax,ax
+ 195:	66 90                	xchg   ax,ax
+ 197:	66 90                	xchg   ax,ax
+ 199:	66 90                	xchg   ax,ax
+ 19b:	66 90                	xchg   ax,ax
+ 19d:	66 90                	xchg   ax,ax
+ 19f:	66 90                	xchg   ax,ax
+ 1a1:	66 90                	xchg   ax,ax
+ 1a3:	66 90                	xchg   ax,ax
+ 1a5:	66 90                	xchg   ax,ax
  1a7:	66 90                	xchg   ax,ax
  1a9:	66 90                	xchg   ax,ax
  1ab:	66 90                	xchg   ax,ax
@@ -215,23 +212,23 @@ Disassembly of section .data:
  1bf:	66 90                	xchg   ax,ax
  1c1:	66 90                	xchg   ax,ax
  1c3:	66 90                	xchg   ax,ax
- 1c5:	66 90                	xchg   ax,ax
- 1c7:	66 90                	xchg   ax,ax
- 1c9:	66 90                	xchg   ax,ax
- 1cb:	66 90                	xchg   ax,ax
- 1cd:	66 90                	xchg   ax,ax
- 1cf:	66 90                	xchg   ax,ax
- 1d1:	66 90                	xchg   ax,ax
- 1d3:	66 90                	xchg   ax,ax
- 1d5:	66 90                	xchg   ax,ax
- 1d7:	66 90                	xchg   ax,ax
- 1d9:	66 90                	xchg   ax,ax
- 1db:	66 90                	xchg   ax,ax
- 1dd:	66 90                	xchg   ax,ax
- 1df:	66 90                	xchg   ax,ax
- 1e1:	66 90                	xchg   ax,ax
- 1e3:	66 90                	xchg   ax,ax
- 1e5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1c5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1c8:	66 90                	xchg   ax,ax
+ 1ca:	66 90                	xchg   ax,ax
+ 1cc:	66 90                	xchg   ax,ax
+ 1ce:	66 90                	xchg   ax,ax
+ 1d0:	66 90                	xchg   ax,ax
+ 1d2:	66 90                	xchg   ax,ax
+ 1d4:	66 90                	xchg   ax,ax
+ 1d6:	66 90                	xchg   ax,ax
+ 1d8:	66 90                	xchg   ax,ax
+ 1da:	66 90                	xchg   ax,ax
+ 1dc:	66 90                	xchg   ax,ax
+ 1de:	66 90                	xchg   ax,ax
+ 1e0:	66 90                	xchg   ax,ax
+ 1e2:	66 90                	xchg   ax,ax
+ 1e4:	66 90                	xchg   ax,ax
+ 1e6:	66 90                	xchg   ax,ax
  1e8:	66 90                	xchg   ax,ax
  1ea:	66 90                	xchg   ax,ax
  1ec:	66 90                	xchg   ax,ax
@@ -247,23 +244,23 @@ Disassembly of section .data:
  200:	66 90                	xchg   ax,ax
  202:	66 90                	xchg   ax,ax
  204:	66 90                	xchg   ax,ax
- 206:	66 90                	xchg   ax,ax
- 208:	66 90                	xchg   ax,ax
- 20a:	66 90                	xchg   ax,ax
- 20c:	66 90                	xchg   ax,ax
- 20e:	66 90                	xchg   ax,ax
- 210:	66 90                	xchg   ax,ax
- 212:	66 90                	xchg   ax,ax
- 214:	66 90                	xchg   ax,ax
- 216:	66 90                	xchg   ax,ax
- 218:	66 90                	xchg   ax,ax
- 21a:	66 90                	xchg   ax,ax
- 21c:	66 90                	xchg   ax,ax
- 21e:	66 90                	xchg   ax,ax
- 220:	66 90                	xchg   ax,ax
- 222:	66 90                	xchg   ax,ax
- 224:	66 90                	xchg   ax,ax
- 226:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 206:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 209:	66 90                	xchg   ax,ax
+ 20b:	66 90                	xchg   ax,ax
+ 20d:	66 90                	xchg   ax,ax
+ 20f:	66 90                	xchg   ax,ax
+ 211:	66 90                	xchg   ax,ax
+ 213:	66 90                	xchg   ax,ax
+ 215:	66 90                	xchg   ax,ax
+ 217:	66 90                	xchg   ax,ax
+ 219:	66 90                	xchg   ax,ax
+ 21b:	66 90                	xchg   ax,ax
+ 21d:	66 90                	xchg   ax,ax
+ 21f:	66 90                	xchg   ax,ax
+ 221:	66 90                	xchg   ax,ax
+ 223:	66 90                	xchg   ax,ax
+ 225:	66 90                	xchg   ax,ax
+ 227:	66 90                	xchg   ax,ax
  229:	66 90                	xchg   ax,ax
  22b:	66 90                	xchg   ax,ax
  22d:	66 90                	xchg   ax,ax
@@ -279,23 +276,23 @@ Disassembly of section .data:
  241:	66 90                	xchg   ax,ax
  243:	66 90                	xchg   ax,ax
  245:	66 90                	xchg   ax,ax
- 247:	66 90                	xchg   ax,ax
- 249:	66 90                	xchg   ax,ax
- 24b:	66 90                	xchg   ax,ax
- 24d:	66 90                	xchg   ax,ax
- 24f:	66 90                	xchg   ax,ax
- 251:	66 90                	xchg   ax,ax
- 253:	66 90                	xchg   ax,ax
- 255:	66 90                	xchg   ax,ax
- 257:	66 90                	xchg   ax,ax
- 259:	66 90                	xchg   ax,ax
- 25b:	66 90                	xchg   ax,ax
- 25d:	66 90                	xchg   ax,ax
- 25f:	66 90                	xchg   ax,ax
- 261:	66 90                	xchg   ax,ax
- 263:	66 90                	xchg   ax,ax
- 265:	66 90                	xchg   ax,ax
- 267:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 247:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 24a:	66 90                	xchg   ax,ax
+ 24c:	66 90                	xchg   ax,ax
+ 24e:	66 90                	xchg   ax,ax
+ 250:	66 90                	xchg   ax,ax
+ 252:	66 90                	xchg   ax,ax
+ 254:	66 90                	xchg   ax,ax
+ 256:	66 90                	xchg   ax,ax
+ 258:	66 90                	xchg   ax,ax
+ 25a:	66 90                	xchg   ax,ax
+ 25c:	66 90                	xchg   ax,ax
+ 25e:	66 90                	xchg   ax,ax
+ 260:	66 90                	xchg   ax,ax
+ 262:	66 90                	xchg   ax,ax
+ 264:	66 90                	xchg   ax,ax
+ 266:	66 90                	xchg   ax,ax
+ 268:	66 90                	xchg   ax,ax
  26a:	66 90                	xchg   ax,ax
  26c:	66 90                	xchg   ax,ax
  26e:	66 90                	xchg   ax,ax
@@ -311,23 +308,23 @@ Disassembly of section .data:
  282:	66 90                	xchg   ax,ax
  284:	66 90                	xchg   ax,ax
  286:	66 90                	xchg   ax,ax
- 288:	66 90                	xchg   ax,ax
- 28a:	66 90                	xchg   ax,ax
- 28c:	66 90                	xchg   ax,ax
- 28e:	66 90                	xchg   ax,ax
- 290:	66 90                	xchg   ax,ax
- 292:	66 90                	xchg   ax,ax
- 294:	66 90                	xchg   ax,ax
- 296:	66 90                	xchg   ax,ax
- 298:	66 90                	xchg   ax,ax
- 29a:	66 90                	xchg   ax,ax
- 29c:	66 90                	xchg   ax,ax
- 29e:	66 90                	xchg   ax,ax
- 2a0:	66 90                	xchg   ax,ax
- 2a2:	66 90                	xchg   ax,ax
- 2a4:	66 90                	xchg   ax,ax
- 2a6:	66 90                	xchg   ax,ax
- 2a8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 288:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 28b:	66 90                	xchg   ax,ax
+ 28d:	66 90                	xchg   ax,ax
+ 28f:	66 90                	xchg   ax,ax
+ 291:	66 90                	xchg   ax,ax
+ 293:	66 90                	xchg   ax,ax
+ 295:	66 90                	xchg   ax,ax
+ 297:	66 90                	xchg   ax,ax
+ 299:	66 90                	xchg   ax,ax
+ 29b:	66 90                	xchg   ax,ax
+ 29d:	66 90                	xchg   ax,ax
+ 29f:	66 90                	xchg   ax,ax
+ 2a1:	66 90                	xchg   ax,ax
+ 2a3:	66 90                	xchg   ax,ax
+ 2a5:	66 90                	xchg   ax,ax
+ 2a7:	66 90                	xchg   ax,ax
+ 2a9:	66 90                	xchg   ax,ax
  2ab:	66 90                	xchg   ax,ax
  2ad:	66 90                	xchg   ax,ax
  2af:	66 90                	xchg   ax,ax
@@ -343,23 +340,23 @@ Disassembly of section .data:
  2c3:	66 90                	xchg   ax,ax
  2c5:	66 90                	xchg   ax,ax
  2c7:	66 90                	xchg   ax,ax
- 2c9:	66 90                	xchg   ax,ax
- 2cb:	66 90                	xchg   ax,ax
- 2cd:	66 90                	xchg   ax,ax
- 2cf:	66 90                	xchg   ax,ax
- 2d1:	66 90                	xchg   ax,ax
- 2d3:	66 90                	xchg   ax,ax
- 2d5:	66 90                	xchg   ax,ax
- 2d7:	66 90                	xchg   ax,ax
- 2d9:	66 90                	xchg   ax,ax
- 2db:	66 90                	xchg   ax,ax
- 2dd:	66 90                	xchg   ax,ax
- 2df:	66 90                	xchg   ax,ax
- 2e1:	66 90                	xchg   ax,ax
- 2e3:	66 90                	xchg   ax,ax
- 2e5:	66 90                	xchg   ax,ax
- 2e7:	66 90                	xchg   ax,ax
- 2e9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 2c9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 2cc:	66 90                	xchg   ax,ax
+ 2ce:	66 90                	xchg   ax,ax
+ 2d0:	66 90                	xchg   ax,ax
+ 2d2:	66 90                	xchg   ax,ax
+ 2d4:	66 90                	xchg   ax,ax
+ 2d6:	66 90                	xchg   ax,ax
+ 2d8:	66 90                	xchg   ax,ax
+ 2da:	66 90                	xchg   ax,ax
+ 2dc:	66 90                	xchg   ax,ax
+ 2de:	66 90                	xchg   ax,ax
+ 2e0:	66 90                	xchg   ax,ax
+ 2e2:	66 90                	xchg   ax,ax
+ 2e4:	66 90                	xchg   ax,ax
+ 2e6:	66 90                	xchg   ax,ax
+ 2e8:	66 90                	xchg   ax,ax
+ 2ea:	66 90                	xchg   ax,ax
  2ec:	66 90                	xchg   ax,ax
  2ee:	66 90                	xchg   ax,ax
  2f0:	66 90                	xchg   ax,ax
@@ -375,23 +372,23 @@ Disassembly of section .data:
  304:	66 90                	xchg   ax,ax
  306:	66 90                	xchg   ax,ax
  308:	66 90                	xchg   ax,ax
- 30a:	66 90                	xchg   ax,ax
- 30c:	66 90                	xchg   ax,ax
- 30e:	66 90                	xchg   ax,ax
- 310:	66 90                	xchg   ax,ax
- 312:	66 90                	xchg   ax,ax
- 314:	66 90                	xchg   ax,ax
- 316:	66 90                	xchg   ax,ax
- 318:	66 90                	xchg   ax,ax
- 31a:	66 90                	xchg   ax,ax
- 31c:	66 90                	xchg   ax,ax
- 31e:	66 90                	xchg   ax,ax
- 320:	66 90                	xchg   ax,ax
- 322:	66 90                	xchg   ax,ax
- 324:	66 90                	xchg   ax,ax
- 326:	66 90                	xchg   ax,ax
- 328:	66 90                	xchg   ax,ax
- 32a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 30a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 30d:	66 90                	xchg   ax,ax
+ 30f:	66 90                	xchg   ax,ax
+ 311:	66 90                	xchg   ax,ax
+ 313:	66 90                	xchg   ax,ax
+ 315:	66 90                	xchg   ax,ax
+ 317:	66 90                	xchg   ax,ax
+ 319:	66 90                	xchg   ax,ax
+ 31b:	66 90                	xchg   ax,ax
+ 31d:	66 90                	xchg   ax,ax
+ 31f:	66 90                	xchg   ax,ax
+ 321:	66 90                	xchg   ax,ax
+ 323:	66 90                	xchg   ax,ax
+ 325:	66 90                	xchg   ax,ax
+ 327:	66 90                	xchg   ax,ax
+ 329:	66 90                	xchg   ax,ax
+ 32b:	66 90                	xchg   ax,ax
  32d:	66 90                	xchg   ax,ax
  32f:	66 90                	xchg   ax,ax
  331:	66 90                	xchg   ax,ax
@@ -407,23 +404,23 @@ Disassembly of section .data:
  345:	66 90                	xchg   ax,ax
  347:	66 90                	xchg   ax,ax
  349:	66 90                	xchg   ax,ax
- 34b:	66 90                	xchg   ax,ax
- 34d:	66 90                	xchg   ax,ax
- 34f:	66 90                	xchg   ax,ax
- 351:	66 90                	xchg   ax,ax
- 353:	66 90                	xchg   ax,ax
- 355:	66 90                	xchg   ax,ax
- 357:	66 90                	xchg   ax,ax
- 359:	66 90                	xchg   ax,ax
- 35b:	66 90                	xchg   ax,ax
- 35d:	66 90                	xchg   ax,ax
- 35f:	66 90                	xchg   ax,ax
- 361:	66 90                	xchg   ax,ax
- 363:	66 90                	xchg   ax,ax
- 365:	66 90                	xchg   ax,ax
- 367:	66 90                	xchg   ax,ax
- 369:	66 90                	xchg   ax,ax
- 36b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34e:	66 90                	xchg   ax,ax
+ 350:	66 90                	xchg   ax,ax
+ 352:	66 90                	xchg   ax,ax
+ 354:	66 90                	xchg   ax,ax
+ 356:	66 90                	xchg   ax,ax
+ 358:	66 90                	xchg   ax,ax
+ 35a:	66 90                	xchg   ax,ax
+ 35c:	66 90                	xchg   ax,ax
+ 35e:	66 90                	xchg   ax,ax
+ 360:	66 90                	xchg   ax,ax
+ 362:	66 90                	xchg   ax,ax
+ 364:	66 90                	xchg   ax,ax
+ 366:	66 90                	xchg   ax,ax
+ 368:	66 90                	xchg   ax,ax
+ 36a:	66 90                	xchg   ax,ax
+ 36c:	66 90                	xchg   ax,ax
  36e:	66 90                	xchg   ax,ax
  370:	66 90                	xchg   ax,ax
  372:	66 90                	xchg   ax,ax
@@ -439,23 +436,23 @@ Disassembly of section .data:
  386:	66 90                	xchg   ax,ax
  388:	66 90                	xchg   ax,ax
  38a:	66 90                	xchg   ax,ax
- 38c:	66 90                	xchg   ax,ax
- 38e:	66 90                	xchg   ax,ax
- 390:	66 90                	xchg   ax,ax
- 392:	66 90                	xchg   ax,ax
- 394:	66 90                	xchg   ax,ax
- 396:	66 90                	xchg   ax,ax
- 398:	66 90                	xchg   ax,ax
- 39a:	66 90                	xchg   ax,ax
- 39c:	66 90                	xchg   ax,ax
- 39e:	66 90                	xchg   ax,ax
- 3a0:	66 90                	xchg   ax,ax
- 3a2:	66 90                	xchg   ax,ax
- 3a4:	66 90                	xchg   ax,ax
- 3a6:	66 90                	xchg   ax,ax
- 3a8:	66 90                	xchg   ax,ax
- 3aa:	66 90                	xchg   ax,ax
- 3ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 38c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 38f:	66 90                	xchg   ax,ax
+ 391:	66 90                	xchg   ax,ax
+ 393:	66 90                	xchg   ax,ax
+ 395:	66 90                	xchg   ax,ax
+ 397:	66 90                	xchg   ax,ax
+ 399:	66 90                	xchg   ax,ax
+ 39b:	66 90                	xchg   ax,ax
+ 39d:	66 90                	xchg   ax,ax
+ 39f:	66 90                	xchg   ax,ax
+ 3a1:	66 90                	xchg   ax,ax
+ 3a3:	66 90                	xchg   ax,ax
+ 3a5:	66 90                	xchg   ax,ax
+ 3a7:	66 90                	xchg   ax,ax
+ 3a9:	66 90                	xchg   ax,ax
+ 3ab:	66 90                	xchg   ax,ax
+ 3ad:	66 90                	xchg   ax,ax
  3af:	66 90                	xchg   ax,ax
  3b1:	66 90                	xchg   ax,ax
  3b3:	66 90                	xchg   ax,ax
@@ -471,23 +468,23 @@ Disassembly of section .data:
  3c7:	66 90                	xchg   ax,ax
  3c9:	66 90                	xchg   ax,ax
  3cb:	66 90                	xchg   ax,ax
- 3cd:	66 90                	xchg   ax,ax
- 3cf:	66 90                	xchg   ax,ax
- 3d1:	66 90                	xchg   ax,ax
- 3d3:	66 90                	xchg   ax,ax
- 3d5:	66 90                	xchg   ax,ax
- 3d7:	66 90                	xchg   ax,ax
- 3d9:	66 90                	xchg   ax,ax
- 3db:	66 90                	xchg   ax,ax
- 3dd:	66 90                	xchg   ax,ax
- 3df:	66 90                	xchg   ax,ax
- 3e1:	66 90                	xchg   ax,ax
- 3e3:	66 90                	xchg   ax,ax
- 3e5:	66 90                	xchg   ax,ax
- 3e7:	66 90                	xchg   ax,ax
- 3e9:	66 90                	xchg   ax,ax
- 3eb:	66 90                	xchg   ax,ax
- 3ed:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 3cd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 3d0:	66 90                	xchg   ax,ax
+ 3d2:	66 90                	xchg   ax,ax
+ 3d4:	66 90                	xchg   ax,ax
+ 3d6:	66 90                	xchg   ax,ax
+ 3d8:	66 90                	xchg   ax,ax
+ 3da:	66 90                	xchg   ax,ax
+ 3dc:	66 90                	xchg   ax,ax
+ 3de:	66 90                	xchg   ax,ax
+ 3e0:	66 90                	xchg   ax,ax
+ 3e2:	66 90                	xchg   ax,ax
+ 3e4:	66 90                	xchg   ax,ax
+ 3e6:	66 90                	xchg   ax,ax
+ 3e8:	66 90                	xchg   ax,ax
+ 3ea:	66 90                	xchg   ax,ax
+ 3ec:	66 90                	xchg   ax,ax
+ 3ee:	66 90                	xchg   ax,ax
  3f0:	66 90                	xchg   ax,ax
  3f2:	66 90                	xchg   ax,ax
  3f4:	66 90                	xchg   ax,ax
@@ -503,23 +500,23 @@ Disassembly of section .data:
  408:	66 90                	xchg   ax,ax
  40a:	66 90                	xchg   ax,ax
  40c:	66 90                	xchg   ax,ax
- 40e:	66 90                	xchg   ax,ax
- 410:	66 90                	xchg   ax,ax
- 412:	66 90                	xchg   ax,ax
- 414:	66 90                	xchg   ax,ax
- 416:	66 90                	xchg   ax,ax
- 418:	66 90                	xchg   ax,ax
- 41a:	66 90                	xchg   ax,ax
- 41c:	66 90                	xchg   ax,ax
- 41e:	66 90                	xchg   ax,ax
- 420:	66 90                	xchg   ax,ax
- 422:	66 90                	xchg   ax,ax
- 424:	66 90                	xchg   ax,ax
- 426:	66 90                	xchg   ax,ax
- 428:	66 90                	xchg   ax,ax
- 42a:	66 90                	xchg   ax,ax
- 42c:	66 90                	xchg   ax,ax
- 42e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 40e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 411:	66 90                	xchg   ax,ax
+ 413:	66 90                	xchg   ax,ax
+ 415:	66 90                	xchg   ax,ax
+ 417:	66 90                	xchg   ax,ax
+ 419:	66 90                	xchg   ax,ax
+ 41b:	66 90                	xchg   ax,ax
+ 41d:	66 90                	xchg   ax,ax
+ 41f:	66 90                	xchg   ax,ax
+ 421:	66 90                	xchg   ax,ax
+ 423:	66 90                	xchg   ax,ax
+ 425:	66 90                	xchg   ax,ax
+ 427:	66 90                	xchg   ax,ax
+ 429:	66 90                	xchg   ax,ax
+ 42b:	66 90                	xchg   ax,ax
+ 42d:	66 90                	xchg   ax,ax
+ 42f:	66 90                	xchg   ax,ax
  431:	66 90                	xchg   ax,ax
  433:	66 90                	xchg   ax,ax
  435:	66 90                	xchg   ax,ax
@@ -535,23 +532,23 @@ Disassembly of section .data:
  449:	66 90                	xchg   ax,ax
  44b:	66 90                	xchg   ax,ax
  44d:	66 90                	xchg   ax,ax
- 44f:	66 90                	xchg   ax,ax
- 451:	66 90                	xchg   ax,ax
- 453:	66 90                	xchg   ax,ax
- 455:	66 90                	xchg   ax,ax
- 457:	66 90                	xchg   ax,ax
- 459:	66 90                	xchg   ax,ax
- 45b:	66 90                	xchg   ax,ax
- 45d:	66 90                	xchg   ax,ax
- 45f:	66 90                	xchg   ax,ax
- 461:	66 90                	xchg   ax,ax
- 463:	66 90                	xchg   ax,ax
- 465:	66 90                	xchg   ax,ax
- 467:	66 90                	xchg   ax,ax
- 469:	66 90                	xchg   ax,ax
- 46b:	66 90                	xchg   ax,ax
- 46d:	66 90                	xchg   ax,ax
- 46f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 44f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 452:	66 90                	xchg   ax,ax
+ 454:	66 90                	xchg   ax,ax
+ 456:	66 90                	xchg   ax,ax
+ 458:	66 90                	xchg   ax,ax
+ 45a:	66 90                	xchg   ax,ax
+ 45c:	66 90                	xchg   ax,ax
+ 45e:	66 90                	xchg   ax,ax
+ 460:	66 90                	xchg   ax,ax
+ 462:	66 90                	xchg   ax,ax
+ 464:	66 90                	xchg   ax,ax
+ 466:	66 90                	xchg   ax,ax
+ 468:	66 90                	xchg   ax,ax
+ 46a:	66 90                	xchg   ax,ax
+ 46c:	66 90                	xchg   ax,ax
+ 46e:	66 90                	xchg   ax,ax
+ 470:	66 90                	xchg   ax,ax
  472:	66 90                	xchg   ax,ax
  474:	66 90                	xchg   ax,ax
  476:	66 90                	xchg   ax,ax
@@ -567,23 +564,23 @@ Disassembly of section .data:
  48a:	66 90                	xchg   ax,ax
  48c:	66 90                	xchg   ax,ax
  48e:	66 90                	xchg   ax,ax
- 490:	66 90                	xchg   ax,ax
- 492:	66 90                	xchg   ax,ax
- 494:	66 90                	xchg   ax,ax
- 496:	66 90                	xchg   ax,ax
- 498:	66 90                	xchg   ax,ax
- 49a:	66 90                	xchg   ax,ax
- 49c:	66 90                	xchg   ax,ax
- 49e:	66 90                	xchg   ax,ax
- 4a0:	66 90                	xchg   ax,ax
- 4a2:	66 90                	xchg   ax,ax
- 4a4:	66 90                	xchg   ax,ax
- 4a6:	66 90                	xchg   ax,ax
- 4a8:	66 90                	xchg   ax,ax
- 4aa:	66 90                	xchg   ax,ax
- 4ac:	66 90                	xchg   ax,ax
- 4ae:	66 90                	xchg   ax,ax
- 4b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 490:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 493:	66 90                	xchg   ax,ax
+ 495:	66 90                	xchg   ax,ax
+ 497:	66 90                	xchg   ax,ax
+ 499:	66 90                	xchg   ax,ax
+ 49b:	66 90                	xchg   ax,ax
+ 49d:	66 90                	xchg   ax,ax
+ 49f:	66 90                	xchg   ax,ax
+ 4a1:	66 90                	xchg   ax,ax
+ 4a3:	66 90                	xchg   ax,ax
+ 4a5:	66 90                	xchg   ax,ax
+ 4a7:	66 90                	xchg   ax,ax
+ 4a9:	66 90                	xchg   ax,ax
+ 4ab:	66 90                	xchg   ax,ax
+ 4ad:	66 90                	xchg   ax,ax
+ 4af:	66 90                	xchg   ax,ax
+ 4b1:	66 90                	xchg   ax,ax
  4b3:	66 90                	xchg   ax,ax
  4b5:	66 90                	xchg   ax,ax
  4b7:	66 90                	xchg   ax,ax
@@ -599,23 +596,23 @@ Disassembly of section .data:
  4cb:	66 90                	xchg   ax,ax
  4cd:	66 90                	xchg   ax,ax
  4cf:	66 90                	xchg   ax,ax
- 4d1:	66 90                	xchg   ax,ax
- 4d3:	66 90                	xchg   ax,ax
- 4d5:	66 90                	xchg   ax,ax
- 4d7:	66 90                	xchg   ax,ax
- 4d9:	66 90                	xchg   ax,ax
- 4db:	66 90                	xchg   ax,ax
- 4dd:	66 90                	xchg   ax,ax
- 4df:	66 90                	xchg   ax,ax
- 4e1:	66 90                	xchg   ax,ax
- 4e3:	66 90                	xchg   ax,ax
- 4e5:	66 90                	xchg   ax,ax
- 4e7:	66 90                	xchg   ax,ax
- 4e9:	66 90                	xchg   ax,ax
- 4eb:	66 90                	xchg   ax,ax
- 4ed:	66 90                	xchg   ax,ax
- 4ef:	66 90                	xchg   ax,ax
- 4f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4d1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4d4:	66 90                	xchg   ax,ax
+ 4d6:	66 90                	xchg   ax,ax
+ 4d8:	66 90                	xchg   ax,ax
+ 4da:	66 90                	xchg   ax,ax
+ 4dc:	66 90                	xchg   ax,ax
+ 4de:	66 90                	xchg   ax,ax
+ 4e0:	66 90                	xchg   ax,ax
+ 4e2:	66 90                	xchg   ax,ax
+ 4e4:	66 90                	xchg   ax,ax
+ 4e6:	66 90                	xchg   ax,ax
+ 4e8:	66 90                	xchg   ax,ax
+ 4ea:	66 90                	xchg   ax,ax
+ 4ec:	66 90                	xchg   ax,ax
+ 4ee:	66 90                	xchg   ax,ax
+ 4f0:	66 90                	xchg   ax,ax
+ 4f2:	66 90                	xchg   ax,ax
  4f4:	66 90                	xchg   ax,ax
  4f6:	66 90                	xchg   ax,ax
  4f8:	66 90                	xchg   ax,ax
@@ -631,23 +628,23 @@ Disassembly of section .data:
  50c:	66 90                	xchg   ax,ax
  50e:	66 90                	xchg   ax,ax
  510:	66 90                	xchg   ax,ax
- 512:	66 90                	xchg   ax,ax
- 514:	66 90                	xchg   ax,ax
- 516:	66 90                	xchg   ax,ax
- 518:	66 90                	xchg   ax,ax
- 51a:	66 90                	xchg   ax,ax
- 51c:	66 90                	xchg   ax,ax
- 51e:	66 90                	xchg   ax,ax
- 520:	66 90                	xchg   ax,ax
- 522:	66 90                	xchg   ax,ax
- 524:	66 90                	xchg   ax,ax
- 526:	66 90                	xchg   ax,ax
- 528:	66 90                	xchg   ax,ax
- 52a:	66 90                	xchg   ax,ax
- 52c:	66 90                	xchg   ax,ax
- 52e:	66 90                	xchg   ax,ax
- 530:	66 90                	xchg   ax,ax
- 532:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 512:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 515:	66 90                	xchg   ax,ax
+ 517:	66 90                	xchg   ax,ax
+ 519:	66 90                	xchg   ax,ax
+ 51b:	66 90                	xchg   ax,ax
+ 51d:	66 90                	xchg   ax,ax
+ 51f:	66 90                	xchg   ax,ax
+ 521:	66 90                	xchg   ax,ax
+ 523:	66 90                	xchg   ax,ax
+ 525:	66 90                	xchg   ax,ax
+ 527:	66 90                	xchg   ax,ax
+ 529:	66 90                	xchg   ax,ax
+ 52b:	66 90                	xchg   ax,ax
+ 52d:	66 90                	xchg   ax,ax
+ 52f:	66 90                	xchg   ax,ax
+ 531:	66 90                	xchg   ax,ax
+ 533:	66 90                	xchg   ax,ax
  535:	66 90                	xchg   ax,ax
  537:	66 90                	xchg   ax,ax
  539:	66 90                	xchg   ax,ax
@@ -663,23 +660,23 @@ Disassembly of section .data:
  54d:	66 90                	xchg   ax,ax
  54f:	66 90                	xchg   ax,ax
  551:	66 90                	xchg   ax,ax
- 553:	66 90                	xchg   ax,ax
- 555:	66 90                	xchg   ax,ax
- 557:	66 90                	xchg   ax,ax
- 559:	66 90                	xchg   ax,ax
- 55b:	66 90                	xchg   ax,ax
- 55d:	66 90                	xchg   ax,ax
- 55f:	66 90                	xchg   ax,ax
- 561:	66 90                	xchg   ax,ax
- 563:	66 90                	xchg   ax,ax
- 565:	66 90                	xchg   ax,ax
- 567:	66 90                	xchg   ax,ax
- 569:	66 90                	xchg   ax,ax
- 56b:	66 90                	xchg   ax,ax
- 56d:	66 90                	xchg   ax,ax
- 56f:	66 90                	xchg   ax,ax
- 571:	66 90                	xchg   ax,ax
- 573:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 553:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 556:	66 90                	xchg   ax,ax
+ 558:	66 90                	xchg   ax,ax
+ 55a:	66 90                	xchg   ax,ax
+ 55c:	66 90                	xchg   ax,ax
+ 55e:	66 90                	xchg   ax,ax
+ 560:	66 90                	xchg   ax,ax
+ 562:	66 90                	xchg   ax,ax
+ 564:	66 90                	xchg   ax,ax
+ 566:	66 90                	xchg   ax,ax
+ 568:	66 90                	xchg   ax,ax
+ 56a:	66 90                	xchg   ax,ax
+ 56c:	66 90                	xchg   ax,ax
+ 56e:	66 90                	xchg   ax,ax
+ 570:	66 90                	xchg   ax,ax
+ 572:	66 90                	xchg   ax,ax
+ 574:	66 90                	xchg   ax,ax
  576:	66 90                	xchg   ax,ax
  578:	66 90                	xchg   ax,ax
  57a:	66 90                	xchg   ax,ax
@@ -695,23 +692,23 @@ Disassembly of section .data:
  58e:	66 90                	xchg   ax,ax
  590:	66 90                	xchg   ax,ax
  592:	66 90                	xchg   ax,ax
- 594:	66 90                	xchg   ax,ax
- 596:	66 90                	xchg   ax,ax
- 598:	66 90                	xchg   ax,ax
- 59a:	66 90                	xchg   ax,ax
- 59c:	66 90                	xchg   ax,ax
- 59e:	66 90                	xchg   ax,ax
- 5a0:	66 90                	xchg   ax,ax
- 5a2:	66 90                	xchg   ax,ax
- 5a4:	66 90                	xchg   ax,ax
- 5a6:	66 90                	xchg   ax,ax
- 5a8:	66 90                	xchg   ax,ax
- 5aa:	66 90                	xchg   ax,ax
- 5ac:	66 90                	xchg   ax,ax
- 5ae:	66 90                	xchg   ax,ax
- 5b0:	66 90                	xchg   ax,ax
- 5b2:	66 90                	xchg   ax,ax
- 5b4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 594:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 597:	66 90                	xchg   ax,ax
+ 599:	66 90                	xchg   ax,ax
+ 59b:	66 90                	xchg   ax,ax
+ 59d:	66 90                	xchg   ax,ax
+ 59f:	66 90                	xchg   ax,ax
+ 5a1:	66 90                	xchg   ax,ax
+ 5a3:	66 90                	xchg   ax,ax
+ 5a5:	66 90                	xchg   ax,ax
+ 5a7:	66 90                	xchg   ax,ax
+ 5a9:	66 90                	xchg   ax,ax
+ 5ab:	66 90                	xchg   ax,ax
+ 5ad:	66 90                	xchg   ax,ax
+ 5af:	66 90                	xchg   ax,ax
+ 5b1:	66 90                	xchg   ax,ax
+ 5b3:	66 90                	xchg   ax,ax
+ 5b5:	66 90                	xchg   ax,ax
  5b7:	66 90                	xchg   ax,ax
  5b9:	66 90                	xchg   ax,ax
  5bb:	66 90                	xchg   ax,ax
@@ -727,23 +724,23 @@ Disassembly of section .data:
  5cf:	66 90                	xchg   ax,ax
  5d1:	66 90                	xchg   ax,ax
  5d3:	66 90                	xchg   ax,ax
- 5d5:	66 90                	xchg   ax,ax
- 5d7:	66 90                	xchg   ax,ax
- 5d9:	66 90                	xchg   ax,ax
- 5db:	66 90                	xchg   ax,ax
- 5dd:	66 90                	xchg   ax,ax
- 5df:	66 90                	xchg   ax,ax
- 5e1:	66 90                	xchg   ax,ax
- 5e3:	66 90                	xchg   ax,ax
- 5e5:	66 90                	xchg   ax,ax
- 5e7:	66 90                	xchg   ax,ax
- 5e9:	66 90                	xchg   ax,ax
- 5eb:	66 90                	xchg   ax,ax
- 5ed:	66 90                	xchg   ax,ax
- 5ef:	66 90                	xchg   ax,ax
- 5f1:	66 90                	xchg   ax,ax
- 5f3:	66 90                	xchg   ax,ax
- 5f5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5d5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5d8:	66 90                	xchg   ax,ax
+ 5da:	66 90                	xchg   ax,ax
+ 5dc:	66 90                	xchg   ax,ax
+ 5de:	66 90                	xchg   ax,ax
+ 5e0:	66 90                	xchg   ax,ax
+ 5e2:	66 90                	xchg   ax,ax
+ 5e4:	66 90                	xchg   ax,ax
+ 5e6:	66 90                	xchg   ax,ax
+ 5e8:	66 90                	xchg   ax,ax
+ 5ea:	66 90                	xchg   ax,ax
+ 5ec:	66 90                	xchg   ax,ax
+ 5ee:	66 90                	xchg   ax,ax
+ 5f0:	66 90                	xchg   ax,ax
+ 5f2:	66 90                	xchg   ax,ax
+ 5f4:	66 90                	xchg   ax,ax
+ 5f6:	66 90                	xchg   ax,ax
  5f8:	66 90                	xchg   ax,ax
  5fa:	66 90                	xchg   ax,ax
  5fc:	66 90                	xchg   ax,ax
@@ -759,23 +756,23 @@ Disassembly of section .data:
  610:	66 90                	xchg   ax,ax
  612:	66 90                	xchg   ax,ax
  614:	66 90                	xchg   ax,ax
- 616:	66 90                	xchg   ax,ax
- 618:	66 90                	xchg   ax,ax
- 61a:	66 90                	xchg   ax,ax
- 61c:	66 90                	xchg   ax,ax
- 61e:	66 90                	xchg   ax,ax
- 620:	66 90                	xchg   ax,ax
- 622:	66 90                	xchg   ax,ax
- 624:	66 90                	xchg   ax,ax
- 626:	66 90                	xchg   ax,ax
- 628:	66 90                	xchg   ax,ax
- 62a:	66 90                	xchg   ax,ax
- 62c:	66 90                	xchg   ax,ax
- 62e:	66 90                	xchg   ax,ax
- 630:	66 90                	xchg   ax,ax
- 632:	66 90                	xchg   ax,ax
- 634:	66 90                	xchg   ax,ax
- 636:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 616:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 619:	66 90                	xchg   ax,ax
+ 61b:	66 90                	xchg   ax,ax
+ 61d:	66 90                	xchg   ax,ax
+ 61f:	66 90                	xchg   ax,ax
+ 621:	66 90                	xchg   ax,ax
+ 623:	66 90                	xchg   ax,ax
+ 625:	66 90                	xchg   ax,ax
+ 627:	66 90                	xchg   ax,ax
+ 629:	66 90                	xchg   ax,ax
+ 62b:	66 90                	xchg   ax,ax
+ 62d:	66 90                	xchg   ax,ax
+ 62f:	66 90                	xchg   ax,ax
+ 631:	66 90                	xchg   ax,ax
+ 633:	66 90                	xchg   ax,ax
+ 635:	66 90                	xchg   ax,ax
+ 637:	66 90                	xchg   ax,ax
  639:	66 90                	xchg   ax,ax
  63b:	66 90                	xchg   ax,ax
  63d:	66 90                	xchg   ax,ax
@@ -791,23 +788,23 @@ Disassembly of section .data:
  651:	66 90                	xchg   ax,ax
  653:	66 90                	xchg   ax,ax
  655:	66 90                	xchg   ax,ax
- 657:	66 90                	xchg   ax,ax
- 659:	66 90                	xchg   ax,ax
- 65b:	66 90                	xchg   ax,ax
- 65d:	66 90                	xchg   ax,ax
- 65f:	66 90                	xchg   ax,ax
- 661:	66 90                	xchg   ax,ax
- 663:	66 90                	xchg   ax,ax
- 665:	66 90                	xchg   ax,ax
- 667:	66 90                	xchg   ax,ax
- 669:	66 90                	xchg   ax,ax
- 66b:	66 90                	xchg   ax,ax
- 66d:	66 90                	xchg   ax,ax
- 66f:	66 90                	xchg   ax,ax
- 671:	66 90                	xchg   ax,ax
- 673:	66 90                	xchg   ax,ax
- 675:	66 90                	xchg   ax,ax
- 677:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 657:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 65a:	66 90                	xchg   ax,ax
+ 65c:	66 90                	xchg   ax,ax
+ 65e:	66 90                	xchg   ax,ax
+ 660:	66 90                	xchg   ax,ax
+ 662:	66 90                	xchg   ax,ax
+ 664:	66 90                	xchg   ax,ax
+ 666:	66 90                	xchg   ax,ax
+ 668:	66 90                	xchg   ax,ax
+ 66a:	66 90                	xchg   ax,ax
+ 66c:	66 90                	xchg   ax,ax
+ 66e:	66 90                	xchg   ax,ax
+ 670:	66 90                	xchg   ax,ax
+ 672:	66 90                	xchg   ax,ax
+ 674:	66 90                	xchg   ax,ax
+ 676:	66 90                	xchg   ax,ax
+ 678:	66 90                	xchg   ax,ax
  67a:	66 90                	xchg   ax,ax
  67c:	66 90                	xchg   ax,ax
  67e:	66 90                	xchg   ax,ax
@@ -823,23 +820,23 @@ Disassembly of section .data:
  692:	66 90                	xchg   ax,ax
  694:	66 90                	xchg   ax,ax
  696:	66 90                	xchg   ax,ax
- 698:	66 90                	xchg   ax,ax
- 69a:	66 90                	xchg   ax,ax
- 69c:	66 90                	xchg   ax,ax
- 69e:	66 90                	xchg   ax,ax
- 6a0:	66 90                	xchg   ax,ax
- 6a2:	66 90                	xchg   ax,ax
- 6a4:	66 90                	xchg   ax,ax
- 6a6:	66 90                	xchg   ax,ax
- 6a8:	66 90                	xchg   ax,ax
- 6aa:	66 90                	xchg   ax,ax
- 6ac:	66 90                	xchg   ax,ax
- 6ae:	66 90                	xchg   ax,ax
- 6b0:	66 90                	xchg   ax,ax
- 6b2:	66 90                	xchg   ax,ax
- 6b4:	66 90                	xchg   ax,ax
- 6b6:	66 90                	xchg   ax,ax
- 6b8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 698:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 69b:	66 90                	xchg   ax,ax
+ 69d:	66 90                	xchg   ax,ax
+ 69f:	66 90                	xchg   ax,ax
+ 6a1:	66 90                	xchg   ax,ax
+ 6a3:	66 90                	xchg   ax,ax
+ 6a5:	66 90                	xchg   ax,ax
+ 6a7:	66 90                	xchg   ax,ax
+ 6a9:	66 90                	xchg   ax,ax
+ 6ab:	66 90                	xchg   ax,ax
+ 6ad:	66 90                	xchg   ax,ax
+ 6af:	66 90                	xchg   ax,ax
+ 6b1:	66 90                	xchg   ax,ax
+ 6b3:	66 90                	xchg   ax,ax
+ 6b5:	66 90                	xchg   ax,ax
+ 6b7:	66 90                	xchg   ax,ax
+ 6b9:	66 90                	xchg   ax,ax
  6bb:	66 90                	xchg   ax,ax
  6bd:	66 90                	xchg   ax,ax
  6bf:	66 90                	xchg   ax,ax
@@ -855,23 +852,23 @@ Disassembly of section .data:
  6d3:	66 90                	xchg   ax,ax
  6d5:	66 90                	xchg   ax,ax
  6d7:	66 90                	xchg   ax,ax
- 6d9:	66 90                	xchg   ax,ax
- 6db:	66 90                	xchg   ax,ax
- 6dd:	66 90                	xchg   ax,ax
- 6df:	66 90                	xchg   ax,ax
- 6e1:	66 90                	xchg   ax,ax
- 6e3:	66 90                	xchg   ax,ax
- 6e5:	66 90                	xchg   ax,ax
- 6e7:	66 90                	xchg   ax,ax
- 6e9:	66 90                	xchg   ax,ax
- 6eb:	66 90                	xchg   ax,ax
- 6ed:	66 90                	xchg   ax,ax
- 6ef:	66 90                	xchg   ax,ax
- 6f1:	66 90                	xchg   ax,ax
- 6f3:	66 90                	xchg   ax,ax
- 6f5:	66 90                	xchg   ax,ax
- 6f7:	66 90                	xchg   ax,ax
- 6f9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 6d9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 6dc:	66 90                	xchg   ax,ax
+ 6de:	66 90                	xchg   ax,ax
+ 6e0:	66 90                	xchg   ax,ax
+ 6e2:	66 90                	xchg   ax,ax
+ 6e4:	66 90                	xchg   ax,ax
+ 6e6:	66 90                	xchg   ax,ax
+ 6e8:	66 90                	xchg   ax,ax
+ 6ea:	66 90                	xchg   ax,ax
+ 6ec:	66 90                	xchg   ax,ax
+ 6ee:	66 90                	xchg   ax,ax
+ 6f0:	66 90                	xchg   ax,ax
+ 6f2:	66 90                	xchg   ax,ax
+ 6f4:	66 90                	xchg   ax,ax
+ 6f6:	66 90                	xchg   ax,ax
+ 6f8:	66 90                	xchg   ax,ax
+ 6fa:	66 90                	xchg   ax,ax
  6fc:	66 90                	xchg   ax,ax
  6fe:	66 90                	xchg   ax,ax
  700:	66 90                	xchg   ax,ax
@@ -887,23 +884,23 @@ Disassembly of section .data:
  714:	66 90                	xchg   ax,ax
  716:	66 90                	xchg   ax,ax
  718:	66 90                	xchg   ax,ax
- 71a:	66 90                	xchg   ax,ax
- 71c:	66 90                	xchg   ax,ax
- 71e:	66 90                	xchg   ax,ax
- 720:	66 90                	xchg   ax,ax
- 722:	66 90                	xchg   ax,ax
- 724:	66 90                	xchg   ax,ax
- 726:	66 90                	xchg   ax,ax
- 728:	66 90                	xchg   ax,ax
- 72a:	66 90                	xchg   ax,ax
- 72c:	66 90                	xchg   ax,ax
- 72e:	66 90                	xchg   ax,ax
- 730:	66 90                	xchg   ax,ax
- 732:	66 90                	xchg   ax,ax
- 734:	66 90                	xchg   ax,ax
- 736:	66 90                	xchg   ax,ax
- 738:	66 90                	xchg   ax,ax
- 73a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 71a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 71d:	66 90                	xchg   ax,ax
+ 71f:	66 90                	xchg   ax,ax
+ 721:	66 90                	xchg   ax,ax
+ 723:	66 90                	xchg   ax,ax
+ 725:	66 90                	xchg   ax,ax
+ 727:	66 90                	xchg   ax,ax
+ 729:	66 90                	xchg   ax,ax
+ 72b:	66 90                	xchg   ax,ax
+ 72d:	66 90                	xchg   ax,ax
+ 72f:	66 90                	xchg   ax,ax
+ 731:	66 90                	xchg   ax,ax
+ 733:	66 90                	xchg   ax,ax
+ 735:	66 90                	xchg   ax,ax
+ 737:	66 90                	xchg   ax,ax
+ 739:	66 90                	xchg   ax,ax
+ 73b:	66 90                	xchg   ax,ax
  73d:	66 90                	xchg   ax,ax
  73f:	66 90                	xchg   ax,ax
  741:	66 90                	xchg   ax,ax
@@ -919,23 +916,23 @@ Disassembly of section .data:
  755:	66 90                	xchg   ax,ax
  757:	66 90                	xchg   ax,ax
  759:	66 90                	xchg   ax,ax
- 75b:	66 90                	xchg   ax,ax
- 75d:	66 90                	xchg   ax,ax
- 75f:	66 90                	xchg   ax,ax
- 761:	66 90                	xchg   ax,ax
- 763:	66 90                	xchg   ax,ax
- 765:	66 90                	xchg   ax,ax
- 767:	66 90                	xchg   ax,ax
- 769:	66 90                	xchg   ax,ax
- 76b:	66 90                	xchg   ax,ax
- 76d:	66 90                	xchg   ax,ax
- 76f:	66 90                	xchg   ax,ax
- 771:	66 90                	xchg   ax,ax
- 773:	66 90                	xchg   ax,ax
- 775:	66 90                	xchg   ax,ax
- 777:	66 90                	xchg   ax,ax
- 779:	66 90                	xchg   ax,ax
- 77b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 75b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 75e:	66 90                	xchg   ax,ax
+ 760:	66 90                	xchg   ax,ax
+ 762:	66 90                	xchg   ax,ax
+ 764:	66 90                	xchg   ax,ax
+ 766:	66 90                	xchg   ax,ax
+ 768:	66 90                	xchg   ax,ax
+ 76a:	66 90                	xchg   ax,ax
+ 76c:	66 90                	xchg   ax,ax
+ 76e:	66 90                	xchg   ax,ax
+ 770:	66 90                	xchg   ax,ax
+ 772:	66 90                	xchg   ax,ax
+ 774:	66 90                	xchg   ax,ax
+ 776:	66 90                	xchg   ax,ax
+ 778:	66 90                	xchg   ax,ax
+ 77a:	66 90                	xchg   ax,ax
+ 77c:	66 90                	xchg   ax,ax
  77e:	66 90                	xchg   ax,ax
  780:	66 90                	xchg   ax,ax
  782:	66 90                	xchg   ax,ax
@@ -951,23 +948,23 @@ Disassembly of section .data:
  796:	66 90                	xchg   ax,ax
  798:	66 90                	xchg   ax,ax
  79a:	66 90                	xchg   ax,ax
- 79c:	66 90                	xchg   ax,ax
- 79e:	66 90                	xchg   ax,ax
- 7a0:	66 90                	xchg   ax,ax
- 7a2:	66 90                	xchg   ax,ax
- 7a4:	66 90                	xchg   ax,ax
- 7a6:	66 90                	xchg   ax,ax
- 7a8:	66 90                	xchg   ax,ax
- 7aa:	66 90                	xchg   ax,ax
- 7ac:	66 90                	xchg   ax,ax
- 7ae:	66 90                	xchg   ax,ax
- 7b0:	66 90                	xchg   ax,ax
- 7b2:	66 90                	xchg   ax,ax
- 7b4:	66 90                	xchg   ax,ax
- 7b6:	66 90                	xchg   ax,ax
- 7b8:	66 90                	xchg   ax,ax
- 7ba:	66 90                	xchg   ax,ax
- 7bc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 79c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 79f:	66 90                	xchg   ax,ax
+ 7a1:	66 90                	xchg   ax,ax
+ 7a3:	66 90                	xchg   ax,ax
+ 7a5:	66 90                	xchg   ax,ax
+ 7a7:	66 90                	xchg   ax,ax
+ 7a9:	66 90                	xchg   ax,ax
+ 7ab:	66 90                	xchg   ax,ax
+ 7ad:	66 90                	xchg   ax,ax
+ 7af:	66 90                	xchg   ax,ax
+ 7b1:	66 90                	xchg   ax,ax
+ 7b3:	66 90                	xchg   ax,ax
+ 7b5:	66 90                	xchg   ax,ax
+ 7b7:	66 90                	xchg   ax,ax
+ 7b9:	66 90                	xchg   ax,ax
+ 7bb:	66 90                	xchg   ax,ax
+ 7bd:	66 90                	xchg   ax,ax
  7bf:	66 90                	xchg   ax,ax
  7c1:	66 90                	xchg   ax,ax
  7c3:	66 90                	xchg   ax,ax
@@ -983,23 +980,23 @@ Disassembly of section .data:
  7d7:	66 90                	xchg   ax,ax
  7d9:	66 90                	xchg   ax,ax
  7db:	66 90                	xchg   ax,ax
- 7dd:	66 90                	xchg   ax,ax
- 7df:	66 90                	xchg   ax,ax
- 7e1:	66 90                	xchg   ax,ax
- 7e3:	66 90                	xchg   ax,ax
- 7e5:	66 90                	xchg   ax,ax
- 7e7:	66 90                	xchg   ax,ax
- 7e9:	66 90                	xchg   ax,ax
- 7eb:	66 90                	xchg   ax,ax
- 7ed:	66 90                	xchg   ax,ax
- 7ef:	66 90                	xchg   ax,ax
- 7f1:	66 90                	xchg   ax,ax
- 7f3:	66 90                	xchg   ax,ax
- 7f5:	66 90                	xchg   ax,ax
- 7f7:	66 90                	xchg   ax,ax
- 7f9:	66 90                	xchg   ax,ax
- 7fb:	66 90                	xchg   ax,ax
- 7fd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 7dd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 7e0:	66 90                	xchg   ax,ax
+ 7e2:	66 90                	xchg   ax,ax
+ 7e4:	66 90                	xchg   ax,ax
+ 7e6:	66 90                	xchg   ax,ax
+ 7e8:	66 90                	xchg   ax,ax
+ 7ea:	66 90                	xchg   ax,ax
+ 7ec:	66 90                	xchg   ax,ax
+ 7ee:	66 90                	xchg   ax,ax
+ 7f0:	66 90                	xchg   ax,ax
+ 7f2:	66 90                	xchg   ax,ax
+ 7f4:	66 90                	xchg   ax,ax
+ 7f6:	66 90                	xchg   ax,ax
+ 7f8:	66 90                	xchg   ax,ax
+ 7fa:	66 90                	xchg   ax,ax
+ 7fc:	66 90                	xchg   ax,ax
+ 7fe:	66 90                	xchg   ax,ax
  800:	66 90                	xchg   ax,ax
  802:	66 90                	xchg   ax,ax
  804:	66 90                	xchg   ax,ax
@@ -1015,23 +1012,23 @@ Disassembly of section .data:
  818:	66 90                	xchg   ax,ax
  81a:	66 90                	xchg   ax,ax
  81c:	66 90                	xchg   ax,ax
- 81e:	66 90                	xchg   ax,ax
- 820:	66 90                	xchg   ax,ax
- 822:	66 90                	xchg   ax,ax
- 824:	66 90                	xchg   ax,ax
- 826:	66 90                	xchg   ax,ax
- 828:	66 90                	xchg   ax,ax
- 82a:	66 90                	xchg   ax,ax
- 82c:	66 90                	xchg   ax,ax
- 82e:	66 90                	xchg   ax,ax
- 830:	66 90                	xchg   ax,ax
- 832:	66 90                	xchg   ax,ax
- 834:	66 90                	xchg   ax,ax
- 836:	66 90                	xchg   ax,ax
- 838:	66 90                	xchg   ax,ax
- 83a:	66 90                	xchg   ax,ax
- 83c:	66 90                	xchg   ax,ax
- 83e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 81e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 821:	66 90                	xchg   ax,ax
+ 823:	66 90                	xchg   ax,ax
+ 825:	66 90                	xchg   ax,ax
+ 827:	66 90                	xchg   ax,ax
+ 829:	66 90                	xchg   ax,ax
+ 82b:	66 90                	xchg   ax,ax
+ 82d:	66 90                	xchg   ax,ax
+ 82f:	66 90                	xchg   ax,ax
+ 831:	66 90                	xchg   ax,ax
+ 833:	66 90                	xchg   ax,ax
+ 835:	66 90                	xchg   ax,ax
+ 837:	66 90                	xchg   ax,ax
+ 839:	66 90                	xchg   ax,ax
+ 83b:	66 90                	xchg   ax,ax
+ 83d:	66 90                	xchg   ax,ax
+ 83f:	66 90                	xchg   ax,ax
  841:	66 90                	xchg   ax,ax
  843:	66 90                	xchg   ax,ax
  845:	66 90                	xchg   ax,ax
@@ -1047,23 +1044,23 @@ Disassembly of section .data:
  859:	66 90                	xchg   ax,ax
  85b:	66 90                	xchg   ax,ax
  85d:	66 90                	xchg   ax,ax
- 85f:	66 90                	xchg   ax,ax
- 861:	66 90                	xchg   ax,ax
- 863:	66 90                	xchg   ax,ax
- 865:	66 90                	xchg   ax,ax
- 867:	66 90                	xchg   ax,ax
- 869:	66 90                	xchg   ax,ax
- 86b:	66 90                	xchg   ax,ax
- 86d:	66 90                	xchg   ax,ax
- 86f:	66 90                	xchg   ax,ax
- 871:	66 90                	xchg   ax,ax
- 873:	66 90                	xchg   ax,ax
- 875:	66 90                	xchg   ax,ax
- 877:	66 90                	xchg   ax,ax
- 879:	66 90                	xchg   ax,ax
- 87b:	66 90                	xchg   ax,ax
- 87d:	66 90                	xchg   ax,ax
- 87f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 85f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 862:	66 90                	xchg   ax,ax
+ 864:	66 90                	xchg   ax,ax
+ 866:	66 90                	xchg   ax,ax
+ 868:	66 90                	xchg   ax,ax
+ 86a:	66 90                	xchg   ax,ax
+ 86c:	66 90                	xchg   ax,ax
+ 86e:	66 90                	xchg   ax,ax
+ 870:	66 90                	xchg   ax,ax
+ 872:	66 90                	xchg   ax,ax
+ 874:	66 90                	xchg   ax,ax
+ 876:	66 90                	xchg   ax,ax
+ 878:	66 90                	xchg   ax,ax
+ 87a:	66 90                	xchg   ax,ax
+ 87c:	66 90                	xchg   ax,ax
+ 87e:	66 90                	xchg   ax,ax
+ 880:	66 90                	xchg   ax,ax
  882:	66 90                	xchg   ax,ax
  884:	66 90                	xchg   ax,ax
  886:	66 90                	xchg   ax,ax
@@ -1079,23 +1076,23 @@ Disassembly of section .data:
  89a:	66 90                	xchg   ax,ax
  89c:	66 90                	xchg   ax,ax
  89e:	66 90                	xchg   ax,ax
- 8a0:	66 90                	xchg   ax,ax
- 8a2:	66 90                	xchg   ax,ax
- 8a4:	66 90                	xchg   ax,ax
- 8a6:	66 90                	xchg   ax,ax
- 8a8:	66 90                	xchg   ax,ax
- 8aa:	66 90                	xchg   ax,ax
- 8ac:	66 90                	xchg   ax,ax
- 8ae:	66 90                	xchg   ax,ax
- 8b0:	66 90                	xchg   ax,ax
- 8b2:	66 90                	xchg   ax,ax
- 8b4:	66 90                	xchg   ax,ax
- 8b6:	66 90                	xchg   ax,ax
- 8b8:	66 90                	xchg   ax,ax
- 8ba:	66 90                	xchg   ax,ax
- 8bc:	66 90                	xchg   ax,ax
- 8be:	66 90                	xchg   ax,ax
- 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8a3:	66 90                	xchg   ax,ax
+ 8a5:	66 90                	xchg   ax,ax
+ 8a7:	66 90                	xchg   ax,ax
+ 8a9:	66 90                	xchg   ax,ax
+ 8ab:	66 90                	xchg   ax,ax
+ 8ad:	66 90                	xchg   ax,ax
+ 8af:	66 90                	xchg   ax,ax
+ 8b1:	66 90                	xchg   ax,ax
+ 8b3:	66 90                	xchg   ax,ax
+ 8b5:	66 90                	xchg   ax,ax
+ 8b7:	66 90                	xchg   ax,ax
+ 8b9:	66 90                	xchg   ax,ax
+ 8bb:	66 90                	xchg   ax,ax
+ 8bd:	66 90                	xchg   ax,ax
+ 8bf:	66 90                	xchg   ax,ax
+ 8c1:	66 90                	xchg   ax,ax
  8c3:	66 90                	xchg   ax,ax
  8c5:	66 90                	xchg   ax,ax
  8c7:	66 90                	xchg   ax,ax
@@ -1111,23 +1108,23 @@ Disassembly of section .data:
  8db:	66 90                	xchg   ax,ax
  8dd:	66 90                	xchg   ax,ax
  8df:	66 90                	xchg   ax,ax
- 8e1:	66 90                	xchg   ax,ax
- 8e3:	66 90                	xchg   ax,ax
- 8e5:	66 90                	xchg   ax,ax
- 8e7:	66 90                	xchg   ax,ax
- 8e9:	66 90                	xchg   ax,ax
- 8eb:	66 90                	xchg   ax,ax
- 8ed:	66 90                	xchg   ax,ax
- 8ef:	66 90                	xchg   ax,ax
- 8f1:	66 90                	xchg   ax,ax
- 8f3:	66 90                	xchg   ax,ax
- 8f5:	66 90                	xchg   ax,ax
- 8f7:	66 90                	xchg   ax,ax
- 8f9:	66 90                	xchg   ax,ax
- 8fb:	66 90                	xchg   ax,ax
- 8fd:	66 90                	xchg   ax,ax
- 8ff:	66 90                	xchg   ax,ax
- 901:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8e1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8e4:	66 90                	xchg   ax,ax
+ 8e6:	66 90                	xchg   ax,ax
+ 8e8:	66 90                	xchg   ax,ax
+ 8ea:	66 90                	xchg   ax,ax
+ 8ec:	66 90                	xchg   ax,ax
+ 8ee:	66 90                	xchg   ax,ax
+ 8f0:	66 90                	xchg   ax,ax
+ 8f2:	66 90                	xchg   ax,ax
+ 8f4:	66 90                	xchg   ax,ax
+ 8f6:	66 90                	xchg   ax,ax
+ 8f8:	66 90                	xchg   ax,ax
+ 8fa:	66 90                	xchg   ax,ax
+ 8fc:	66 90                	xchg   ax,ax
+ 8fe:	66 90                	xchg   ax,ax
+ 900:	66 90                	xchg   ax,ax
+ 902:	66 90                	xchg   ax,ax
  904:	66 90                	xchg   ax,ax
  906:	66 90                	xchg   ax,ax
  908:	66 90                	xchg   ax,ax
@@ -1143,22 +1140,23 @@ Disassembly of section .data:
  91c:	66 90                	xchg   ax,ax
  91e:	66 90                	xchg   ax,ax
  920:	66 90                	xchg   ax,ax
- 922:	83 e8 01             	sub    eax,0x1
- 925:	0f 85 55 f7 ff ff    	jne    0x80
- 92b:	66 90                	xchg   ax,ax
- 92d:	66 90                	xchg   ax,ax
- 92f:	66 90                	xchg   ax,ax
- 931:	66 90                	xchg   ax,ax
- 933:	66 90                	xchg   ax,ax
- 935:	66 90                	xchg   ax,ax
- 937:	66 90                	xchg   ax,ax
- 939:	66 90                	xchg   ax,ax
- 93b:	48 83 c4 40          	add    rsp,0x40
- 93f:	41 59                	pop    r9
- 941:	41 58                	pop    r8
- 943:	5f                   	pop    rdi
- 944:	5e                   	pop    rsi
- 945:	5d                   	pop    rbp
- 946:	5b                   	pop    rbx
- 947:	0f 77                	emms   
- 949:	c3                   	ret    
+ 922:	4d 01 c1             	add    r9,r8
+ 925:	83 e8 01             	sub    eax,0x1
+ 928:	0f 85 52 f7 ff ff    	jne    0x80
+ 92e:	66 90                	xchg   ax,ax
+ 930:	66 90                	xchg   ax,ax
+ 932:	66 90                	xchg   ax,ax
+ 934:	66 90                	xchg   ax,ax
+ 936:	66 90                	xchg   ax,ax
+ 938:	66 90                	xchg   ax,ax
+ 93a:	66 90                	xchg   ax,ax
+ 93c:	66 90                	xchg   ax,ax
+ 93e:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ 945:	41 59                	pop    r9
+ 947:	41 58                	pop    r8
+ 949:	5f                   	pop    rdi
+ 94a:	5e                   	pop    rsi
+ 94b:	5d                   	pop    rbp
+ 94c:	5b                   	pop    rbx
+ 94d:	0f 77                	emms   
+ 94f:	c3                   	ret    

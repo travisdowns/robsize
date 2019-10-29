@@ -19,30 +19,27 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	90                   	nop
-  72:	90                   	nop
-  73:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
   74:	90                   	nop
   75:	90                   	nop
   76:	90                   	nop
@@ -55,9 +52,7 @@ Disassembly of section .data:
   7d:	90                   	nop
   7e:	90                   	nop
   7f:	90                   	nop
-  80:	90                   	nop
-  81:	90                   	nop
-  82:	90                   	nop
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
   83:	90                   	nop
   84:	90                   	nop
   85:	90                   	nop
@@ -71,7 +66,9 @@ Disassembly of section .data:
   8d:	90                   	nop
   8e:	90                   	nop
   8f:	90                   	nop
-  90:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  90:	90                   	nop
+  91:	90                   	nop
+  92:	90                   	nop
   93:	90                   	nop
   94:	90                   	nop
   95:	90                   	nop
@@ -87,9 +84,7 @@ Disassembly of section .data:
   9f:	90                   	nop
   a0:	90                   	nop
   a1:	90                   	nop
-  a2:	90                   	nop
-  a3:	90                   	nop
-  a4:	90                   	nop
+  a2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   a5:	90                   	nop
   a6:	90                   	nop
   a7:	90                   	nop
@@ -103,7 +98,9 @@ Disassembly of section .data:
   af:	90                   	nop
   b0:	90                   	nop
   b1:	90                   	nop
-  b2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  b2:	90                   	nop
+  b3:	90                   	nop
+  b4:	90                   	nop
   b5:	90                   	nop
   b6:	90                   	nop
   b7:	90                   	nop
@@ -119,9 +116,7 @@ Disassembly of section .data:
   c1:	90                   	nop
   c2:	90                   	nop
   c3:	90                   	nop
-  c4:	90                   	nop
-  c5:	90                   	nop
-  c6:	90                   	nop
+  c4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
   c7:	90                   	nop
   c8:	90                   	nop
   c9:	90                   	nop
@@ -135,7 +130,9 @@ Disassembly of section .data:
   d1:	90                   	nop
   d2:	90                   	nop
   d3:	90                   	nop
-  d4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  d4:	90                   	nop
+  d5:	90                   	nop
+  d6:	90                   	nop
   d7:	90                   	nop
   d8:	90                   	nop
   d9:	90                   	nop
@@ -151,9 +148,7 @@ Disassembly of section .data:
   e3:	90                   	nop
   e4:	90                   	nop
   e5:	90                   	nop
-  e6:	90                   	nop
-  e7:	90                   	nop
-  e8:	90                   	nop
+  e6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e9:	90                   	nop
   ea:	90                   	nop
   eb:	90                   	nop
@@ -167,7 +162,9 @@ Disassembly of section .data:
   f3:	90                   	nop
   f4:	90                   	nop
   f5:	90                   	nop
-  f6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  f6:	90                   	nop
+  f7:	90                   	nop
+  f8:	90                   	nop
   f9:	90                   	nop
   fa:	90                   	nop
   fb:	90                   	nop
@@ -183,9 +180,7 @@ Disassembly of section .data:
  105:	90                   	nop
  106:	90                   	nop
  107:	90                   	nop
- 108:	90                   	nop
- 109:	90                   	nop
- 10a:	90                   	nop
+ 108:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  10b:	90                   	nop
  10c:	90                   	nop
  10d:	90                   	nop
@@ -199,7 +194,9 @@ Disassembly of section .data:
  115:	90                   	nop
  116:	90                   	nop
  117:	90                   	nop
- 118:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 118:	90                   	nop
+ 119:	90                   	nop
+ 11a:	90                   	nop
  11b:	90                   	nop
  11c:	90                   	nop
  11d:	90                   	nop
@@ -215,9 +212,7 @@ Disassembly of section .data:
  127:	90                   	nop
  128:	90                   	nop
  129:	90                   	nop
- 12a:	90                   	nop
- 12b:	90                   	nop
- 12c:	90                   	nop
+ 12a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  12d:	90                   	nop
  12e:	90                   	nop
  12f:	90                   	nop
@@ -231,7 +226,9 @@ Disassembly of section .data:
  137:	90                   	nop
  138:	90                   	nop
  139:	90                   	nop
- 13a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 13a:	90                   	nop
+ 13b:	90                   	nop
+ 13c:	90                   	nop
  13d:	90                   	nop
  13e:	90                   	nop
  13f:	90                   	nop
@@ -247,9 +244,7 @@ Disassembly of section .data:
  149:	90                   	nop
  14a:	90                   	nop
  14b:	90                   	nop
- 14c:	90                   	nop
- 14d:	90                   	nop
- 14e:	90                   	nop
+ 14c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  14f:	90                   	nop
  150:	90                   	nop
  151:	90                   	nop
@@ -263,7 +258,9 @@ Disassembly of section .data:
  159:	90                   	nop
  15a:	90                   	nop
  15b:	90                   	nop
- 15c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 15c:	90                   	nop
+ 15d:	90                   	nop
+ 15e:	90                   	nop
  15f:	90                   	nop
  160:	90                   	nop
  161:	90                   	nop
@@ -279,9 +276,7 @@ Disassembly of section .data:
  16b:	90                   	nop
  16c:	90                   	nop
  16d:	90                   	nop
- 16e:	90                   	nop
- 16f:	90                   	nop
- 170:	90                   	nop
+ 16e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  171:	90                   	nop
  172:	90                   	nop
  173:	90                   	nop
@@ -295,7 +290,9 @@ Disassembly of section .data:
  17b:	90                   	nop
  17c:	90                   	nop
  17d:	90                   	nop
- 17e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 17e:	90                   	nop
+ 17f:	90                   	nop
+ 180:	90                   	nop
  181:	90                   	nop
  182:	90                   	nop
  183:	90                   	nop
@@ -311,9 +308,7 @@ Disassembly of section .data:
  18d:	90                   	nop
  18e:	90                   	nop
  18f:	90                   	nop
- 190:	90                   	nop
- 191:	90                   	nop
- 192:	90                   	nop
+ 190:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  193:	90                   	nop
  194:	90                   	nop
  195:	90                   	nop
@@ -327,7 +322,9 @@ Disassembly of section .data:
  19d:	90                   	nop
  19e:	90                   	nop
  19f:	90                   	nop
- 1a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 1a0:	90                   	nop
+ 1a1:	90                   	nop
+ 1a2:	90                   	nop
  1a3:	90                   	nop
  1a4:	90                   	nop
  1a5:	90                   	nop
@@ -343,9 +340,7 @@ Disassembly of section .data:
  1af:	90                   	nop
  1b0:	90                   	nop
  1b1:	90                   	nop
- 1b2:	90                   	nop
- 1b3:	90                   	nop
- 1b4:	90                   	nop
+ 1b2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1b5:	90                   	nop
  1b6:	90                   	nop
  1b7:	90                   	nop
@@ -359,7 +354,9 @@ Disassembly of section .data:
  1bf:	90                   	nop
  1c0:	90                   	nop
  1c1:	90                   	nop
- 1c2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1c2:	90                   	nop
+ 1c3:	90                   	nop
+ 1c4:	90                   	nop
  1c5:	90                   	nop
  1c6:	90                   	nop
  1c7:	90                   	nop
@@ -375,9 +372,7 @@ Disassembly of section .data:
  1d1:	90                   	nop
  1d2:	90                   	nop
  1d3:	90                   	nop
- 1d4:	90                   	nop
- 1d5:	90                   	nop
- 1d6:	90                   	nop
+ 1d4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  1d7:	90                   	nop
  1d8:	90                   	nop
  1d9:	90                   	nop
@@ -391,7 +386,9 @@ Disassembly of section .data:
  1e1:	90                   	nop
  1e2:	90                   	nop
  1e3:	90                   	nop
- 1e4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 1e4:	90                   	nop
+ 1e5:	90                   	nop
+ 1e6:	90                   	nop
  1e7:	90                   	nop
  1e8:	90                   	nop
  1e9:	90                   	nop
@@ -407,9 +404,7 @@ Disassembly of section .data:
  1f3:	90                   	nop
  1f4:	90                   	nop
  1f5:	90                   	nop
- 1f6:	90                   	nop
- 1f7:	90                   	nop
- 1f8:	90                   	nop
+ 1f6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1f9:	90                   	nop
  1fa:	90                   	nop
  1fb:	90                   	nop
@@ -423,7 +418,9 @@ Disassembly of section .data:
  203:	90                   	nop
  204:	90                   	nop
  205:	90                   	nop
- 206:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 206:	90                   	nop
+ 207:	90                   	nop
+ 208:	90                   	nop
  209:	90                   	nop
  20a:	90                   	nop
  20b:	90                   	nop
@@ -439,9 +436,7 @@ Disassembly of section .data:
  215:	90                   	nop
  216:	90                   	nop
  217:	90                   	nop
- 218:	90                   	nop
- 219:	90                   	nop
- 21a:	90                   	nop
+ 218:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  21b:	90                   	nop
  21c:	90                   	nop
  21d:	90                   	nop
@@ -455,7 +450,9 @@ Disassembly of section .data:
  225:	90                   	nop
  226:	90                   	nop
  227:	90                   	nop
- 228:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 228:	90                   	nop
+ 229:	90                   	nop
+ 22a:	90                   	nop
  22b:	90                   	nop
  22c:	90                   	nop
  22d:	90                   	nop
@@ -471,9 +468,7 @@ Disassembly of section .data:
  237:	90                   	nop
  238:	90                   	nop
  239:	90                   	nop
- 23a:	90                   	nop
- 23b:	90                   	nop
- 23c:	90                   	nop
+ 23a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  23d:	90                   	nop
  23e:	90                   	nop
  23f:	90                   	nop
@@ -487,7 +482,9 @@ Disassembly of section .data:
  247:	90                   	nop
  248:	90                   	nop
  249:	90                   	nop
- 24a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 24a:	90                   	nop
+ 24b:	90                   	nop
+ 24c:	90                   	nop
  24d:	90                   	nop
  24e:	90                   	nop
  24f:	90                   	nop
@@ -503,9 +500,7 @@ Disassembly of section .data:
  259:	90                   	nop
  25a:	90                   	nop
  25b:	90                   	nop
- 25c:	90                   	nop
- 25d:	90                   	nop
- 25e:	90                   	nop
+ 25c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  25f:	90                   	nop
  260:	90                   	nop
  261:	90                   	nop
@@ -519,7 +514,9 @@ Disassembly of section .data:
  269:	90                   	nop
  26a:	90                   	nop
  26b:	90                   	nop
- 26c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 26c:	90                   	nop
+ 26d:	90                   	nop
+ 26e:	90                   	nop
  26f:	90                   	nop
  270:	90                   	nop
  271:	90                   	nop
@@ -535,9 +532,7 @@ Disassembly of section .data:
  27b:	90                   	nop
  27c:	90                   	nop
  27d:	90                   	nop
- 27e:	90                   	nop
- 27f:	90                   	nop
- 280:	90                   	nop
+ 27e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  281:	90                   	nop
  282:	90                   	nop
  283:	90                   	nop
@@ -551,7 +546,9 @@ Disassembly of section .data:
  28b:	90                   	nop
  28c:	90                   	nop
  28d:	90                   	nop
- 28e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 28e:	90                   	nop
+ 28f:	90                   	nop
+ 290:	90                   	nop
  291:	90                   	nop
  292:	90                   	nop
  293:	90                   	nop
@@ -567,9 +564,7 @@ Disassembly of section .data:
  29d:	90                   	nop
  29e:	90                   	nop
  29f:	90                   	nop
- 2a0:	90                   	nop
- 2a1:	90                   	nop
- 2a2:	90                   	nop
+ 2a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  2a3:	90                   	nop
  2a4:	90                   	nop
  2a5:	90                   	nop
@@ -583,7 +578,9 @@ Disassembly of section .data:
  2ad:	90                   	nop
  2ae:	90                   	nop
  2af:	90                   	nop
- 2b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2b0:	90                   	nop
+ 2b1:	90                   	nop
+ 2b2:	90                   	nop
  2b3:	90                   	nop
  2b4:	90                   	nop
  2b5:	90                   	nop
@@ -599,9 +596,7 @@ Disassembly of section .data:
  2bf:	90                   	nop
  2c0:	90                   	nop
  2c1:	90                   	nop
- 2c2:	90                   	nop
- 2c3:	90                   	nop
- 2c4:	90                   	nop
+ 2c2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  2c5:	90                   	nop
  2c6:	90                   	nop
  2c7:	90                   	nop
@@ -615,7 +610,9 @@ Disassembly of section .data:
  2cf:	90                   	nop
  2d0:	90                   	nop
  2d1:	90                   	nop
- 2d2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 2d2:	90                   	nop
+ 2d3:	90                   	nop
+ 2d4:	90                   	nop
  2d5:	90                   	nop
  2d6:	90                   	nop
  2d7:	90                   	nop
@@ -631,9 +628,7 @@ Disassembly of section .data:
  2e1:	90                   	nop
  2e2:	90                   	nop
  2e3:	90                   	nop
- 2e4:	90                   	nop
- 2e5:	90                   	nop
- 2e6:	90                   	nop
+ 2e4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  2e7:	90                   	nop
  2e8:	90                   	nop
  2e9:	90                   	nop
@@ -647,7 +642,9 @@ Disassembly of section .data:
  2f1:	90                   	nop
  2f2:	90                   	nop
  2f3:	90                   	nop
- 2f4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2f4:	90                   	nop
+ 2f5:	90                   	nop
+ 2f6:	90                   	nop
  2f7:	90                   	nop
  2f8:	90                   	nop
  2f9:	90                   	nop
@@ -663,9 +660,7 @@ Disassembly of section .data:
  303:	90                   	nop
  304:	90                   	nop
  305:	90                   	nop
- 306:	90                   	nop
- 307:	90                   	nop
- 308:	90                   	nop
+ 306:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  309:	90                   	nop
  30a:	90                   	nop
  30b:	90                   	nop
@@ -679,7 +674,9 @@ Disassembly of section .data:
  313:	90                   	nop
  314:	90                   	nop
  315:	90                   	nop
- 316:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 316:	90                   	nop
+ 317:	90                   	nop
+ 318:	90                   	nop
  319:	90                   	nop
  31a:	90                   	nop
  31b:	90                   	nop
@@ -695,9 +692,7 @@ Disassembly of section .data:
  325:	90                   	nop
  326:	90                   	nop
  327:	90                   	nop
- 328:	90                   	nop
- 329:	90                   	nop
- 32a:	90                   	nop
+ 328:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  32b:	90                   	nop
  32c:	90                   	nop
  32d:	90                   	nop
@@ -711,7 +706,9 @@ Disassembly of section .data:
  335:	90                   	nop
  336:	90                   	nop
  337:	90                   	nop
- 338:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 338:	90                   	nop
+ 339:	90                   	nop
+ 33a:	90                   	nop
  33b:	90                   	nop
  33c:	90                   	nop
  33d:	90                   	nop
@@ -727,9 +724,7 @@ Disassembly of section .data:
  347:	90                   	nop
  348:	90                   	nop
  349:	90                   	nop
- 34a:	90                   	nop
- 34b:	90                   	nop
- 34c:	90                   	nop
+ 34a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  34d:	90                   	nop
  34e:	90                   	nop
  34f:	90                   	nop
@@ -743,7 +738,9 @@ Disassembly of section .data:
  357:	90                   	nop
  358:	90                   	nop
  359:	90                   	nop
- 35a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 35a:	90                   	nop
+ 35b:	90                   	nop
+ 35c:	90                   	nop
  35d:	90                   	nop
  35e:	90                   	nop
  35f:	90                   	nop
@@ -759,9 +756,7 @@ Disassembly of section .data:
  369:	90                   	nop
  36a:	90                   	nop
  36b:	90                   	nop
- 36c:	90                   	nop
- 36d:	90                   	nop
- 36e:	90                   	nop
+ 36c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  36f:	90                   	nop
  370:	90                   	nop
  371:	90                   	nop
@@ -775,7 +770,9 @@ Disassembly of section .data:
  379:	90                   	nop
  37a:	90                   	nop
  37b:	90                   	nop
- 37c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 37c:	90                   	nop
+ 37d:	90                   	nop
+ 37e:	90                   	nop
  37f:	90                   	nop
  380:	90                   	nop
  381:	90                   	nop
@@ -791,9 +788,7 @@ Disassembly of section .data:
  38b:	90                   	nop
  38c:	90                   	nop
  38d:	90                   	nop
- 38e:	90                   	nop
- 38f:	90                   	nop
- 390:	90                   	nop
+ 38e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  391:	90                   	nop
  392:	90                   	nop
  393:	90                   	nop
@@ -807,7 +802,9 @@ Disassembly of section .data:
  39b:	90                   	nop
  39c:	90                   	nop
  39d:	90                   	nop
- 39e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 39e:	90                   	nop
+ 39f:	90                   	nop
+ 3a0:	90                   	nop
  3a1:	90                   	nop
  3a2:	90                   	nop
  3a3:	90                   	nop
@@ -823,9 +820,7 @@ Disassembly of section .data:
  3ad:	90                   	nop
  3ae:	90                   	nop
  3af:	90                   	nop
- 3b0:	90                   	nop
- 3b1:	90                   	nop
- 3b2:	90                   	nop
+ 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  3b3:	90                   	nop
  3b4:	90                   	nop
  3b5:	90                   	nop
@@ -839,7 +834,9 @@ Disassembly of section .data:
  3bd:	90                   	nop
  3be:	90                   	nop
  3bf:	90                   	nop
- 3c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3c0:	90                   	nop
+ 3c1:	90                   	nop
+ 3c2:	90                   	nop
  3c3:	90                   	nop
  3c4:	90                   	nop
  3c5:	90                   	nop
@@ -855,9 +852,7 @@ Disassembly of section .data:
  3cf:	90                   	nop
  3d0:	90                   	nop
  3d1:	90                   	nop
- 3d2:	90                   	nop
- 3d3:	90                   	nop
- 3d4:	90                   	nop
+ 3d2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  3d5:	90                   	nop
  3d6:	90                   	nop
  3d7:	90                   	nop
@@ -871,7 +866,9 @@ Disassembly of section .data:
  3df:	90                   	nop
  3e0:	90                   	nop
  3e1:	90                   	nop
- 3e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 3e2:	90                   	nop
+ 3e3:	90                   	nop
+ 3e4:	90                   	nop
  3e5:	90                   	nop
  3e6:	90                   	nop
  3e7:	90                   	nop
@@ -887,9 +884,7 @@ Disassembly of section .data:
  3f1:	90                   	nop
  3f2:	90                   	nop
  3f3:	90                   	nop
- 3f4:	90                   	nop
- 3f5:	90                   	nop
- 3f6:	90                   	nop
+ 3f4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  3f7:	90                   	nop
  3f8:	90                   	nop
  3f9:	90                   	nop
@@ -903,7 +898,9 @@ Disassembly of section .data:
  401:	90                   	nop
  402:	90                   	nop
  403:	90                   	nop
- 404:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 404:	90                   	nop
+ 405:	90                   	nop
+ 406:	90                   	nop
  407:	90                   	nop
  408:	90                   	nop
  409:	90                   	nop
@@ -919,9 +916,7 @@ Disassembly of section .data:
  413:	90                   	nop
  414:	90                   	nop
  415:	90                   	nop
- 416:	90                   	nop
- 417:	90                   	nop
- 418:	90                   	nop
+ 416:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  419:	90                   	nop
  41a:	90                   	nop
  41b:	90                   	nop
@@ -935,7 +930,9 @@ Disassembly of section .data:
  423:	90                   	nop
  424:	90                   	nop
  425:	90                   	nop
- 426:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 426:	90                   	nop
+ 427:	90                   	nop
+ 428:	90                   	nop
  429:	90                   	nop
  42a:	90                   	nop
  42b:	90                   	nop
@@ -951,9 +948,7 @@ Disassembly of section .data:
  435:	90                   	nop
  436:	90                   	nop
  437:	90                   	nop
- 438:	90                   	nop
- 439:	90                   	nop
- 43a:	90                   	nop
+ 438:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  43b:	90                   	nop
  43c:	90                   	nop
  43d:	90                   	nop
@@ -967,7 +962,9 @@ Disassembly of section .data:
  445:	90                   	nop
  446:	90                   	nop
  447:	90                   	nop
- 448:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 448:	90                   	nop
+ 449:	90                   	nop
+ 44a:	90                   	nop
  44b:	90                   	nop
  44c:	90                   	nop
  44d:	90                   	nop
@@ -983,9 +980,7 @@ Disassembly of section .data:
  457:	90                   	nop
  458:	90                   	nop
  459:	90                   	nop
- 45a:	90                   	nop
- 45b:	90                   	nop
- 45c:	90                   	nop
+ 45a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  45d:	90                   	nop
  45e:	90                   	nop
  45f:	90                   	nop
@@ -999,7 +994,9 @@ Disassembly of section .data:
  467:	90                   	nop
  468:	90                   	nop
  469:	90                   	nop
- 46a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 46a:	90                   	nop
+ 46b:	90                   	nop
+ 46c:	90                   	nop
  46d:	90                   	nop
  46e:	90                   	nop
  46f:	90                   	nop
@@ -1015,9 +1012,7 @@ Disassembly of section .data:
  479:	90                   	nop
  47a:	90                   	nop
  47b:	90                   	nop
- 47c:	90                   	nop
- 47d:	90                   	nop
- 47e:	90                   	nop
+ 47c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  47f:	90                   	nop
  480:	90                   	nop
  481:	90                   	nop
@@ -1031,7 +1026,9 @@ Disassembly of section .data:
  489:	90                   	nop
  48a:	90                   	nop
  48b:	90                   	nop
- 48c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 48c:	90                   	nop
+ 48d:	90                   	nop
+ 48e:	90                   	nop
  48f:	90                   	nop
  490:	90                   	nop
  491:	90                   	nop
@@ -1047,9 +1044,7 @@ Disassembly of section .data:
  49b:	90                   	nop
  49c:	90                   	nop
  49d:	90                   	nop
- 49e:	90                   	nop
- 49f:	90                   	nop
- 4a0:	90                   	nop
+ 49e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4a1:	90                   	nop
  4a2:	90                   	nop
  4a3:	90                   	nop
@@ -1063,7 +1058,9 @@ Disassembly of section .data:
  4ab:	90                   	nop
  4ac:	90                   	nop
  4ad:	90                   	nop
- 4ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4ae:	90                   	nop
+ 4af:	90                   	nop
+ 4b0:	90                   	nop
  4b1:	90                   	nop
  4b2:	90                   	nop
  4b3:	90                   	nop
@@ -1079,9 +1076,7 @@ Disassembly of section .data:
  4bd:	90                   	nop
  4be:	90                   	nop
  4bf:	90                   	nop
- 4c0:	90                   	nop
- 4c1:	90                   	nop
- 4c2:	90                   	nop
+ 4c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  4c3:	90                   	nop
  4c4:	90                   	nop
  4c5:	90                   	nop
@@ -1095,7 +1090,9 @@ Disassembly of section .data:
  4cd:	90                   	nop
  4ce:	90                   	nop
  4cf:	90                   	nop
- 4d0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 4d0:	90                   	nop
+ 4d1:	90                   	nop
+ 4d2:	90                   	nop
  4d3:	90                   	nop
  4d4:	90                   	nop
  4d5:	90                   	nop
@@ -1111,9 +1108,7 @@ Disassembly of section .data:
  4df:	90                   	nop
  4e0:	90                   	nop
  4e1:	90                   	nop
- 4e2:	90                   	nop
- 4e3:	90                   	nop
- 4e4:	90                   	nop
+ 4e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4e5:	90                   	nop
  4e6:	90                   	nop
  4e7:	90                   	nop
@@ -1127,7 +1122,9 @@ Disassembly of section .data:
  4ef:	90                   	nop
  4f0:	90                   	nop
  4f1:	90                   	nop
- 4f2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4f2:	90                   	nop
+ 4f3:	90                   	nop
+ 4f4:	90                   	nop
  4f5:	90                   	nop
  4f6:	90                   	nop
  4f7:	90                   	nop
@@ -1143,22 +1140,23 @@ Disassembly of section .data:
  501:	90                   	nop
  502:	90                   	nop
  503:	90                   	nop
- 504:	83 e8 01             	sub    eax,0x1
- 507:	0f 85 73 fb ff ff    	jne    0x80
- 50d:	66 90                	xchg   ax,ax
- 50f:	66 90                	xchg   ax,ax
- 511:	66 90                	xchg   ax,ax
- 513:	66 90                	xchg   ax,ax
- 515:	66 90                	xchg   ax,ax
- 517:	66 90                	xchg   ax,ax
- 519:	66 90                	xchg   ax,ax
- 51b:	66 90                	xchg   ax,ax
- 51d:	48 83 c4 40          	add    rsp,0x40
- 521:	41 59                	pop    r9
- 523:	41 58                	pop    r8
- 525:	5f                   	pop    rdi
- 526:	5e                   	pop    rsi
- 527:	5d                   	pop    rbp
- 528:	5b                   	pop    rbx
- 529:	0f 77                	emms   
- 52b:	c3                   	ret    
+ 504:	4d 01 c1             	add    r9,r8
+ 507:	83 e8 01             	sub    eax,0x1
+ 50a:	0f 85 70 fb ff ff    	jne    0x80
+ 510:	66 90                	xchg   ax,ax
+ 512:	66 90                	xchg   ax,ax
+ 514:	66 90                	xchg   ax,ax
+ 516:	66 90                	xchg   ax,ax
+ 518:	66 90                	xchg   ax,ax
+ 51a:	66 90                	xchg   ax,ax
+ 51c:	66 90                	xchg   ax,ax
+ 51e:	66 90                	xchg   ax,ax
+ 520:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ 527:	41 59                	pop    r9
+ 529:	41 58                	pop    r8
+ 52b:	5f                   	pop    rdi
+ 52c:	5e                   	pop    rsi
+ 52d:	5d                   	pop    rbp
+ 52e:	5b                   	pop    rbx
+ 52f:	0f 77                	emms   
+ 531:	c3                   	ret    

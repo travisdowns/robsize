@@ -19,30 +19,27 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	90                   	nop
-  72:	90                   	nop
-  73:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
   74:	90                   	nop
   75:	90                   	nop
   76:	90                   	nop
@@ -55,23 +52,23 @@ Disassembly of section .data:
   7d:	90                   	nop
   7e:	90                   	nop
   7f:	90                   	nop
-  80:	48 03 db             	add    rbx,rbx
-  83:	48 03 ed             	add    rbp,rbp
-  86:	48 03 f6             	add    rsi,rsi
-  89:	48 03 ff             	add    rdi,rdi
-  8c:	48 03 db             	add    rbx,rbx
-  8f:	48 03 ed             	add    rbp,rbp
-  92:	48 03 f6             	add    rsi,rsi
-  95:	48 03 ff             	add    rdi,rdi
-  98:	48 03 db             	add    rbx,rbx
-  9b:	48 03 ed             	add    rbp,rbp
-  9e:	48 03 f6             	add    rsi,rsi
-  a1:	48 03 ff             	add    rdi,rdi
-  a4:	48 03 db             	add    rbx,rbx
-  a7:	48 03 ed             	add    rbp,rbp
-  aa:	48 03 f6             	add    rsi,rsi
-  ad:	48 03 ff             	add    rdi,rdi
-  b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  83:	48 03 db             	add    rbx,rbx
+  86:	48 03 ed             	add    rbp,rbp
+  89:	48 03 f6             	add    rsi,rsi
+  8c:	48 03 ff             	add    rdi,rdi
+  8f:	48 03 db             	add    rbx,rbx
+  92:	48 03 ed             	add    rbp,rbp
+  95:	48 03 f6             	add    rsi,rsi
+  98:	48 03 ff             	add    rdi,rdi
+  9b:	48 03 db             	add    rbx,rbx
+  9e:	48 03 ed             	add    rbp,rbp
+  a1:	48 03 f6             	add    rsi,rsi
+  a4:	48 03 ff             	add    rdi,rdi
+  a7:	48 03 db             	add    rbx,rbx
+  aa:	48 03 ed             	add    rbp,rbp
+  ad:	48 03 f6             	add    rsi,rsi
+  b0:	48 03 ff             	add    rdi,rdi
   b3:	48 03 db             	add    rbx,rbx
   b6:	48 03 ed             	add    rbp,rbp
   b9:	48 03 f6             	add    rsi,rsi
@@ -87,7 +84,7 @@ Disassembly of section .data:
   d7:	48 03 db             	add    rbx,rbx
   da:	48 03 ed             	add    rbp,rbp
   dd:	48 03 f6             	add    rsi,rsi
-  e0:	48 03 ff             	add    rdi,rdi
+  e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e3:	48 03 db             	add    rbx,rbx
   e6:	48 03 ed             	add    rbp,rbp
   e9:	48 03 f6             	add    rsi,rsi
@@ -103,7 +100,7 @@ Disassembly of section .data:
  107:	48 03 db             	add    rbx,rbx
  10a:	48 03 ed             	add    rbp,rbp
  10d:	48 03 f6             	add    rsi,rsi
- 110:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 110:	48 03 ff             	add    rdi,rdi
  113:	48 03 db             	add    rbx,rbx
  116:	48 03 ed             	add    rbp,rbp
  119:	48 03 f6             	add    rsi,rsi
@@ -119,23 +116,23 @@ Disassembly of section .data:
  137:	48 03 db             	add    rbx,rbx
  13a:	48 03 ed             	add    rbp,rbp
  13d:	48 03 f6             	add    rsi,rsi
- 140:	48 03 db             	add    rbx,rbx
- 143:	48 03 ed             	add    rbp,rbp
- 146:	48 03 f6             	add    rsi,rsi
- 149:	48 03 ff             	add    rdi,rdi
- 14c:	48 03 db             	add    rbx,rbx
- 14f:	48 03 ed             	add    rbp,rbp
- 152:	48 03 f6             	add    rsi,rsi
- 155:	48 03 ff             	add    rdi,rdi
- 158:	48 03 db             	add    rbx,rbx
- 15b:	48 03 ed             	add    rbp,rbp
- 15e:	48 03 f6             	add    rsi,rsi
- 161:	48 03 ff             	add    rdi,rdi
- 164:	48 03 db             	add    rbx,rbx
- 167:	48 03 ed             	add    rbp,rbp
- 16a:	48 03 f6             	add    rsi,rsi
- 16d:	48 03 ff             	add    rdi,rdi
- 170:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 140:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 143:	48 03 db             	add    rbx,rbx
+ 146:	48 03 ed             	add    rbp,rbp
+ 149:	48 03 f6             	add    rsi,rsi
+ 14c:	48 03 ff             	add    rdi,rdi
+ 14f:	48 03 db             	add    rbx,rbx
+ 152:	48 03 ed             	add    rbp,rbp
+ 155:	48 03 f6             	add    rsi,rsi
+ 158:	48 03 ff             	add    rdi,rdi
+ 15b:	48 03 db             	add    rbx,rbx
+ 15e:	48 03 ed             	add    rbp,rbp
+ 161:	48 03 f6             	add    rsi,rsi
+ 164:	48 03 ff             	add    rdi,rdi
+ 167:	48 03 db             	add    rbx,rbx
+ 16a:	48 03 ed             	add    rbp,rbp
+ 16d:	48 03 f6             	add    rsi,rsi
+ 170:	48 03 ff             	add    rdi,rdi
  173:	48 03 db             	add    rbx,rbx
  176:	48 03 ed             	add    rbp,rbp
  179:	48 03 f6             	add    rsi,rsi
@@ -151,7 +148,7 @@ Disassembly of section .data:
  197:	48 03 db             	add    rbx,rbx
  19a:	48 03 ed             	add    rbp,rbp
  19d:	48 03 f6             	add    rsi,rsi
- 1a0:	48 03 ff             	add    rdi,rdi
+ 1a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1a3:	48 03 db             	add    rbx,rbx
  1a6:	48 03 ed             	add    rbp,rbp
  1a9:	48 03 f6             	add    rsi,rsi
@@ -167,7 +164,7 @@ Disassembly of section .data:
  1c7:	48 03 db             	add    rbx,rbx
  1ca:	48 03 ed             	add    rbp,rbp
  1cd:	48 03 f6             	add    rsi,rsi
- 1d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1d0:	48 03 ff             	add    rdi,rdi
  1d3:	48 03 db             	add    rbx,rbx
  1d6:	48 03 ed             	add    rbp,rbp
  1d9:	48 03 f6             	add    rsi,rsi
@@ -183,23 +180,23 @@ Disassembly of section .data:
  1f7:	48 03 db             	add    rbx,rbx
  1fa:	48 03 ed             	add    rbp,rbp
  1fd:	48 03 f6             	add    rsi,rsi
- 200:	48 03 db             	add    rbx,rbx
- 203:	48 03 ed             	add    rbp,rbp
- 206:	48 03 f6             	add    rsi,rsi
- 209:	48 03 ff             	add    rdi,rdi
- 20c:	48 03 db             	add    rbx,rbx
- 20f:	48 03 ed             	add    rbp,rbp
- 212:	48 03 f6             	add    rsi,rsi
- 215:	48 03 ff             	add    rdi,rdi
- 218:	48 03 db             	add    rbx,rbx
- 21b:	48 03 ed             	add    rbp,rbp
- 21e:	48 03 f6             	add    rsi,rsi
- 221:	48 03 ff             	add    rdi,rdi
- 224:	48 03 db             	add    rbx,rbx
- 227:	48 03 ed             	add    rbp,rbp
- 22a:	48 03 f6             	add    rsi,rsi
- 22d:	48 03 ff             	add    rdi,rdi
- 230:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 200:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 203:	48 03 db             	add    rbx,rbx
+ 206:	48 03 ed             	add    rbp,rbp
+ 209:	48 03 f6             	add    rsi,rsi
+ 20c:	48 03 ff             	add    rdi,rdi
+ 20f:	48 03 db             	add    rbx,rbx
+ 212:	48 03 ed             	add    rbp,rbp
+ 215:	48 03 f6             	add    rsi,rsi
+ 218:	48 03 ff             	add    rdi,rdi
+ 21b:	48 03 db             	add    rbx,rbx
+ 21e:	48 03 ed             	add    rbp,rbp
+ 221:	48 03 f6             	add    rsi,rsi
+ 224:	48 03 ff             	add    rdi,rdi
+ 227:	48 03 db             	add    rbx,rbx
+ 22a:	48 03 ed             	add    rbp,rbp
+ 22d:	48 03 f6             	add    rsi,rsi
+ 230:	48 03 ff             	add    rdi,rdi
  233:	48 03 db             	add    rbx,rbx
  236:	48 03 ed             	add    rbp,rbp
  239:	48 03 f6             	add    rsi,rsi
@@ -215,7 +212,7 @@ Disassembly of section .data:
  257:	48 03 db             	add    rbx,rbx
  25a:	48 03 ed             	add    rbp,rbp
  25d:	48 03 f6             	add    rsi,rsi
- 260:	48 03 ff             	add    rdi,rdi
+ 260:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  263:	48 03 db             	add    rbx,rbx
  266:	48 03 ed             	add    rbp,rbp
  269:	48 03 f6             	add    rsi,rsi
@@ -231,7 +228,7 @@ Disassembly of section .data:
  287:	48 03 db             	add    rbx,rbx
  28a:	48 03 ed             	add    rbp,rbp
  28d:	48 03 f6             	add    rsi,rsi
- 290:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 290:	48 03 ff             	add    rdi,rdi
  293:	48 03 db             	add    rbx,rbx
  296:	48 03 ed             	add    rbp,rbp
  299:	48 03 f6             	add    rsi,rsi
@@ -247,23 +244,23 @@ Disassembly of section .data:
  2b7:	48 03 db             	add    rbx,rbx
  2ba:	48 03 ed             	add    rbp,rbp
  2bd:	48 03 f6             	add    rsi,rsi
- 2c0:	48 03 db             	add    rbx,rbx
- 2c3:	48 03 ed             	add    rbp,rbp
- 2c6:	48 03 f6             	add    rsi,rsi
- 2c9:	48 03 ff             	add    rdi,rdi
- 2cc:	48 03 db             	add    rbx,rbx
- 2cf:	48 03 ed             	add    rbp,rbp
- 2d2:	48 03 f6             	add    rsi,rsi
- 2d5:	48 03 ff             	add    rdi,rdi
- 2d8:	48 03 db             	add    rbx,rbx
- 2db:	48 03 ed             	add    rbp,rbp
- 2de:	48 03 f6             	add    rsi,rsi
- 2e1:	48 03 ff             	add    rdi,rdi
- 2e4:	48 03 db             	add    rbx,rbx
- 2e7:	48 03 ed             	add    rbp,rbp
- 2ea:	48 03 f6             	add    rsi,rsi
- 2ed:	48 03 ff             	add    rdi,rdi
- 2f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2c3:	48 03 db             	add    rbx,rbx
+ 2c6:	48 03 ed             	add    rbp,rbp
+ 2c9:	48 03 f6             	add    rsi,rsi
+ 2cc:	48 03 ff             	add    rdi,rdi
+ 2cf:	48 03 db             	add    rbx,rbx
+ 2d2:	48 03 ed             	add    rbp,rbp
+ 2d5:	48 03 f6             	add    rsi,rsi
+ 2d8:	48 03 ff             	add    rdi,rdi
+ 2db:	48 03 db             	add    rbx,rbx
+ 2de:	48 03 ed             	add    rbp,rbp
+ 2e1:	48 03 f6             	add    rsi,rsi
+ 2e4:	48 03 ff             	add    rdi,rdi
+ 2e7:	48 03 db             	add    rbx,rbx
+ 2ea:	48 03 ed             	add    rbp,rbp
+ 2ed:	48 03 f6             	add    rsi,rsi
+ 2f0:	48 03 ff             	add    rdi,rdi
  2f3:	48 03 db             	add    rbx,rbx
  2f6:	48 03 ed             	add    rbp,rbp
  2f9:	48 03 f6             	add    rsi,rsi
@@ -279,7 +276,7 @@ Disassembly of section .data:
  317:	48 03 db             	add    rbx,rbx
  31a:	48 03 ed             	add    rbp,rbp
  31d:	48 03 f6             	add    rsi,rsi
- 320:	48 03 ff             	add    rdi,rdi
+ 320:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  323:	48 03 db             	add    rbx,rbx
  326:	48 03 ed             	add    rbp,rbp
  329:	48 03 f6             	add    rsi,rsi
@@ -295,7 +292,7 @@ Disassembly of section .data:
  347:	48 03 db             	add    rbx,rbx
  34a:	48 03 ed             	add    rbp,rbp
  34d:	48 03 f6             	add    rsi,rsi
- 350:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 350:	48 03 ff             	add    rdi,rdi
  353:	48 03 db             	add    rbx,rbx
  356:	48 03 ed             	add    rbp,rbp
  359:	48 03 f6             	add    rsi,rsi
@@ -311,23 +308,23 @@ Disassembly of section .data:
  377:	48 03 db             	add    rbx,rbx
  37a:	48 03 ed             	add    rbp,rbp
  37d:	48 03 f6             	add    rsi,rsi
- 380:	48 03 db             	add    rbx,rbx
- 383:	48 03 ed             	add    rbp,rbp
- 386:	48 03 f6             	add    rsi,rsi
- 389:	48 03 ff             	add    rdi,rdi
- 38c:	48 03 db             	add    rbx,rbx
- 38f:	48 03 ed             	add    rbp,rbp
- 392:	48 03 f6             	add    rsi,rsi
- 395:	48 03 ff             	add    rdi,rdi
- 398:	48 03 db             	add    rbx,rbx
- 39b:	48 03 ed             	add    rbp,rbp
- 39e:	48 03 f6             	add    rsi,rsi
- 3a1:	48 03 ff             	add    rdi,rdi
- 3a4:	48 03 db             	add    rbx,rbx
- 3a7:	48 03 ed             	add    rbp,rbp
- 3aa:	48 03 f6             	add    rsi,rsi
- 3ad:	48 03 ff             	add    rdi,rdi
- 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 380:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 383:	48 03 db             	add    rbx,rbx
+ 386:	48 03 ed             	add    rbp,rbp
+ 389:	48 03 f6             	add    rsi,rsi
+ 38c:	48 03 ff             	add    rdi,rdi
+ 38f:	48 03 db             	add    rbx,rbx
+ 392:	48 03 ed             	add    rbp,rbp
+ 395:	48 03 f6             	add    rsi,rsi
+ 398:	48 03 ff             	add    rdi,rdi
+ 39b:	48 03 db             	add    rbx,rbx
+ 39e:	48 03 ed             	add    rbp,rbp
+ 3a1:	48 03 f6             	add    rsi,rsi
+ 3a4:	48 03 ff             	add    rdi,rdi
+ 3a7:	48 03 db             	add    rbx,rbx
+ 3aa:	48 03 ed             	add    rbp,rbp
+ 3ad:	48 03 f6             	add    rsi,rsi
+ 3b0:	48 03 ff             	add    rdi,rdi
  3b3:	48 03 db             	add    rbx,rbx
  3b6:	48 03 ed             	add    rbp,rbp
  3b9:	48 03 f6             	add    rsi,rsi
@@ -343,7 +340,7 @@ Disassembly of section .data:
  3d7:	48 03 db             	add    rbx,rbx
  3da:	48 03 ed             	add    rbp,rbp
  3dd:	48 03 f6             	add    rsi,rsi
- 3e0:	48 03 ff             	add    rdi,rdi
+ 3e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  3e3:	48 03 db             	add    rbx,rbx
  3e6:	48 03 ed             	add    rbp,rbp
  3e9:	48 03 f6             	add    rsi,rsi
@@ -359,7 +356,7 @@ Disassembly of section .data:
  407:	48 03 db             	add    rbx,rbx
  40a:	48 03 ed             	add    rbp,rbp
  40d:	48 03 f6             	add    rsi,rsi
- 410:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 410:	48 03 ff             	add    rdi,rdi
  413:	48 03 db             	add    rbx,rbx
  416:	48 03 ed             	add    rbp,rbp
  419:	48 03 f6             	add    rsi,rsi
@@ -375,23 +372,23 @@ Disassembly of section .data:
  437:	48 03 db             	add    rbx,rbx
  43a:	48 03 ed             	add    rbp,rbp
  43d:	48 03 f6             	add    rsi,rsi
- 440:	48 03 db             	add    rbx,rbx
- 443:	48 03 ed             	add    rbp,rbp
- 446:	48 03 f6             	add    rsi,rsi
- 449:	48 03 ff             	add    rdi,rdi
- 44c:	48 03 db             	add    rbx,rbx
- 44f:	48 03 ed             	add    rbp,rbp
- 452:	48 03 f6             	add    rsi,rsi
- 455:	48 03 ff             	add    rdi,rdi
- 458:	48 03 db             	add    rbx,rbx
- 45b:	48 03 ed             	add    rbp,rbp
- 45e:	48 03 f6             	add    rsi,rsi
- 461:	48 03 ff             	add    rdi,rdi
- 464:	48 03 db             	add    rbx,rbx
- 467:	48 03 ed             	add    rbp,rbp
- 46a:	48 03 f6             	add    rsi,rsi
- 46d:	48 03 ff             	add    rdi,rdi
- 470:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 440:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 443:	48 03 db             	add    rbx,rbx
+ 446:	48 03 ed             	add    rbp,rbp
+ 449:	48 03 f6             	add    rsi,rsi
+ 44c:	48 03 ff             	add    rdi,rdi
+ 44f:	48 03 db             	add    rbx,rbx
+ 452:	48 03 ed             	add    rbp,rbp
+ 455:	48 03 f6             	add    rsi,rsi
+ 458:	48 03 ff             	add    rdi,rdi
+ 45b:	48 03 db             	add    rbx,rbx
+ 45e:	48 03 ed             	add    rbp,rbp
+ 461:	48 03 f6             	add    rsi,rsi
+ 464:	48 03 ff             	add    rdi,rdi
+ 467:	48 03 db             	add    rbx,rbx
+ 46a:	48 03 ed             	add    rbp,rbp
+ 46d:	48 03 f6             	add    rsi,rsi
+ 470:	48 03 ff             	add    rdi,rdi
  473:	48 03 db             	add    rbx,rbx
  476:	48 03 ed             	add    rbp,rbp
  479:	48 03 f6             	add    rsi,rsi
@@ -407,7 +404,7 @@ Disassembly of section .data:
  497:	48 03 db             	add    rbx,rbx
  49a:	48 03 ed             	add    rbp,rbp
  49d:	48 03 f6             	add    rsi,rsi
- 4a0:	48 03 ff             	add    rdi,rdi
+ 4a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4a3:	48 03 db             	add    rbx,rbx
  4a6:	48 03 ed             	add    rbp,rbp
  4a9:	48 03 f6             	add    rsi,rsi
@@ -423,7 +420,7 @@ Disassembly of section .data:
  4c7:	48 03 db             	add    rbx,rbx
  4ca:	48 03 ed             	add    rbp,rbp
  4cd:	48 03 f6             	add    rsi,rsi
- 4d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4d0:	48 03 ff             	add    rdi,rdi
  4d3:	48 03 db             	add    rbx,rbx
  4d6:	48 03 ed             	add    rbp,rbp
  4d9:	48 03 f6             	add    rsi,rsi
@@ -439,23 +436,23 @@ Disassembly of section .data:
  4f7:	48 03 db             	add    rbx,rbx
  4fa:	48 03 ed             	add    rbp,rbp
  4fd:	48 03 f6             	add    rsi,rsi
- 500:	48 03 db             	add    rbx,rbx
- 503:	48 03 ed             	add    rbp,rbp
- 506:	48 03 f6             	add    rsi,rsi
- 509:	48 03 ff             	add    rdi,rdi
- 50c:	48 03 db             	add    rbx,rbx
- 50f:	48 03 ed             	add    rbp,rbp
- 512:	48 03 f6             	add    rsi,rsi
- 515:	48 03 ff             	add    rdi,rdi
- 518:	48 03 db             	add    rbx,rbx
- 51b:	48 03 ed             	add    rbp,rbp
- 51e:	48 03 f6             	add    rsi,rsi
- 521:	48 03 ff             	add    rdi,rdi
- 524:	48 03 db             	add    rbx,rbx
- 527:	48 03 ed             	add    rbp,rbp
- 52a:	48 03 f6             	add    rsi,rsi
- 52d:	48 03 ff             	add    rdi,rdi
- 530:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 500:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 503:	48 03 db             	add    rbx,rbx
+ 506:	48 03 ed             	add    rbp,rbp
+ 509:	48 03 f6             	add    rsi,rsi
+ 50c:	48 03 ff             	add    rdi,rdi
+ 50f:	48 03 db             	add    rbx,rbx
+ 512:	48 03 ed             	add    rbp,rbp
+ 515:	48 03 f6             	add    rsi,rsi
+ 518:	48 03 ff             	add    rdi,rdi
+ 51b:	48 03 db             	add    rbx,rbx
+ 51e:	48 03 ed             	add    rbp,rbp
+ 521:	48 03 f6             	add    rsi,rsi
+ 524:	48 03 ff             	add    rdi,rdi
+ 527:	48 03 db             	add    rbx,rbx
+ 52a:	48 03 ed             	add    rbp,rbp
+ 52d:	48 03 f6             	add    rsi,rsi
+ 530:	48 03 ff             	add    rdi,rdi
  533:	48 03 db             	add    rbx,rbx
  536:	48 03 ed             	add    rbp,rbp
  539:	48 03 f6             	add    rsi,rsi
@@ -471,7 +468,7 @@ Disassembly of section .data:
  557:	48 03 db             	add    rbx,rbx
  55a:	48 03 ed             	add    rbp,rbp
  55d:	48 03 f6             	add    rsi,rsi
- 560:	48 03 ff             	add    rdi,rdi
+ 560:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  563:	48 03 db             	add    rbx,rbx
  566:	48 03 ed             	add    rbp,rbp
  569:	48 03 f6             	add    rsi,rsi
@@ -487,7 +484,7 @@ Disassembly of section .data:
  587:	48 03 db             	add    rbx,rbx
  58a:	48 03 ed             	add    rbp,rbp
  58d:	48 03 f6             	add    rsi,rsi
- 590:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 590:	48 03 ff             	add    rdi,rdi
  593:	48 03 db             	add    rbx,rbx
  596:	48 03 ed             	add    rbp,rbp
  599:	48 03 f6             	add    rsi,rsi
@@ -503,23 +500,23 @@ Disassembly of section .data:
  5b7:	48 03 db             	add    rbx,rbx
  5ba:	48 03 ed             	add    rbp,rbp
  5bd:	48 03 f6             	add    rsi,rsi
- 5c0:	48 03 db             	add    rbx,rbx
- 5c3:	48 03 ed             	add    rbp,rbp
- 5c6:	48 03 f6             	add    rsi,rsi
- 5c9:	48 03 ff             	add    rdi,rdi
- 5cc:	48 03 db             	add    rbx,rbx
- 5cf:	48 03 ed             	add    rbp,rbp
- 5d2:	48 03 f6             	add    rsi,rsi
- 5d5:	48 03 ff             	add    rdi,rdi
- 5d8:	48 03 db             	add    rbx,rbx
- 5db:	48 03 ed             	add    rbp,rbp
- 5de:	48 03 f6             	add    rsi,rsi
- 5e1:	48 03 ff             	add    rdi,rdi
- 5e4:	48 03 db             	add    rbx,rbx
- 5e7:	48 03 ed             	add    rbp,rbp
- 5ea:	48 03 f6             	add    rsi,rsi
- 5ed:	48 03 ff             	add    rdi,rdi
- 5f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 5c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 5c3:	48 03 db             	add    rbx,rbx
+ 5c6:	48 03 ed             	add    rbp,rbp
+ 5c9:	48 03 f6             	add    rsi,rsi
+ 5cc:	48 03 ff             	add    rdi,rdi
+ 5cf:	48 03 db             	add    rbx,rbx
+ 5d2:	48 03 ed             	add    rbp,rbp
+ 5d5:	48 03 f6             	add    rsi,rsi
+ 5d8:	48 03 ff             	add    rdi,rdi
+ 5db:	48 03 db             	add    rbx,rbx
+ 5de:	48 03 ed             	add    rbp,rbp
+ 5e1:	48 03 f6             	add    rsi,rsi
+ 5e4:	48 03 ff             	add    rdi,rdi
+ 5e7:	48 03 db             	add    rbx,rbx
+ 5ea:	48 03 ed             	add    rbp,rbp
+ 5ed:	48 03 f6             	add    rsi,rsi
+ 5f0:	48 03 ff             	add    rdi,rdi
  5f3:	48 03 db             	add    rbx,rbx
  5f6:	48 03 ed             	add    rbp,rbp
  5f9:	48 03 f6             	add    rsi,rsi
@@ -535,7 +532,7 @@ Disassembly of section .data:
  617:	48 03 db             	add    rbx,rbx
  61a:	48 03 ed             	add    rbp,rbp
  61d:	48 03 f6             	add    rsi,rsi
- 620:	48 03 ff             	add    rdi,rdi
+ 620:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  623:	48 03 db             	add    rbx,rbx
  626:	48 03 ed             	add    rbp,rbp
  629:	48 03 f6             	add    rsi,rsi
@@ -551,7 +548,7 @@ Disassembly of section .data:
  647:	48 03 db             	add    rbx,rbx
  64a:	48 03 ed             	add    rbp,rbp
  64d:	48 03 f6             	add    rsi,rsi
- 650:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 650:	48 03 ff             	add    rdi,rdi
  653:	48 03 db             	add    rbx,rbx
  656:	48 03 ed             	add    rbp,rbp
  659:	48 03 f6             	add    rsi,rsi
@@ -567,23 +564,23 @@ Disassembly of section .data:
  677:	48 03 db             	add    rbx,rbx
  67a:	48 03 ed             	add    rbp,rbp
  67d:	48 03 f6             	add    rsi,rsi
- 680:	48 03 db             	add    rbx,rbx
- 683:	48 03 ed             	add    rbp,rbp
- 686:	48 03 f6             	add    rsi,rsi
- 689:	48 03 ff             	add    rdi,rdi
- 68c:	48 03 db             	add    rbx,rbx
- 68f:	48 03 ed             	add    rbp,rbp
- 692:	48 03 f6             	add    rsi,rsi
- 695:	48 03 ff             	add    rdi,rdi
- 698:	48 03 db             	add    rbx,rbx
- 69b:	48 03 ed             	add    rbp,rbp
- 69e:	48 03 f6             	add    rsi,rsi
- 6a1:	48 03 ff             	add    rdi,rdi
- 6a4:	48 03 db             	add    rbx,rbx
- 6a7:	48 03 ed             	add    rbp,rbp
- 6aa:	48 03 f6             	add    rsi,rsi
- 6ad:	48 03 ff             	add    rdi,rdi
- 6b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 680:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 683:	48 03 db             	add    rbx,rbx
+ 686:	48 03 ed             	add    rbp,rbp
+ 689:	48 03 f6             	add    rsi,rsi
+ 68c:	48 03 ff             	add    rdi,rdi
+ 68f:	48 03 db             	add    rbx,rbx
+ 692:	48 03 ed             	add    rbp,rbp
+ 695:	48 03 f6             	add    rsi,rsi
+ 698:	48 03 ff             	add    rdi,rdi
+ 69b:	48 03 db             	add    rbx,rbx
+ 69e:	48 03 ed             	add    rbp,rbp
+ 6a1:	48 03 f6             	add    rsi,rsi
+ 6a4:	48 03 ff             	add    rdi,rdi
+ 6a7:	48 03 db             	add    rbx,rbx
+ 6aa:	48 03 ed             	add    rbp,rbp
+ 6ad:	48 03 f6             	add    rsi,rsi
+ 6b0:	48 03 ff             	add    rdi,rdi
  6b3:	48 03 db             	add    rbx,rbx
  6b6:	48 03 ed             	add    rbp,rbp
  6b9:	48 03 f6             	add    rsi,rsi
@@ -599,7 +596,7 @@ Disassembly of section .data:
  6d7:	48 03 db             	add    rbx,rbx
  6da:	48 03 ed             	add    rbp,rbp
  6dd:	48 03 f6             	add    rsi,rsi
- 6e0:	48 03 ff             	add    rdi,rdi
+ 6e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  6e3:	48 03 db             	add    rbx,rbx
  6e6:	48 03 ed             	add    rbp,rbp
  6e9:	48 03 f6             	add    rsi,rsi
@@ -615,7 +612,7 @@ Disassembly of section .data:
  707:	48 03 db             	add    rbx,rbx
  70a:	48 03 ed             	add    rbp,rbp
  70d:	48 03 f6             	add    rsi,rsi
- 710:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 710:	48 03 ff             	add    rdi,rdi
  713:	48 03 db             	add    rbx,rbx
  716:	48 03 ed             	add    rbp,rbp
  719:	48 03 f6             	add    rsi,rsi
@@ -631,23 +628,23 @@ Disassembly of section .data:
  737:	48 03 db             	add    rbx,rbx
  73a:	48 03 ed             	add    rbp,rbp
  73d:	48 03 f6             	add    rsi,rsi
- 740:	48 03 db             	add    rbx,rbx
- 743:	48 03 ed             	add    rbp,rbp
- 746:	48 03 f6             	add    rsi,rsi
- 749:	48 03 ff             	add    rdi,rdi
- 74c:	48 03 db             	add    rbx,rbx
- 74f:	48 03 ed             	add    rbp,rbp
- 752:	48 03 f6             	add    rsi,rsi
- 755:	48 03 ff             	add    rdi,rdi
- 758:	48 03 db             	add    rbx,rbx
- 75b:	48 03 ed             	add    rbp,rbp
- 75e:	48 03 f6             	add    rsi,rsi
- 761:	48 03 ff             	add    rdi,rdi
- 764:	48 03 db             	add    rbx,rbx
- 767:	48 03 ed             	add    rbp,rbp
- 76a:	48 03 f6             	add    rsi,rsi
- 76d:	48 03 ff             	add    rdi,rdi
- 770:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 740:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 743:	48 03 db             	add    rbx,rbx
+ 746:	48 03 ed             	add    rbp,rbp
+ 749:	48 03 f6             	add    rsi,rsi
+ 74c:	48 03 ff             	add    rdi,rdi
+ 74f:	48 03 db             	add    rbx,rbx
+ 752:	48 03 ed             	add    rbp,rbp
+ 755:	48 03 f6             	add    rsi,rsi
+ 758:	48 03 ff             	add    rdi,rdi
+ 75b:	48 03 db             	add    rbx,rbx
+ 75e:	48 03 ed             	add    rbp,rbp
+ 761:	48 03 f6             	add    rsi,rsi
+ 764:	48 03 ff             	add    rdi,rdi
+ 767:	48 03 db             	add    rbx,rbx
+ 76a:	48 03 ed             	add    rbp,rbp
+ 76d:	48 03 f6             	add    rsi,rsi
+ 770:	48 03 ff             	add    rdi,rdi
  773:	48 03 db             	add    rbx,rbx
  776:	48 03 ed             	add    rbp,rbp
  779:	48 03 f6             	add    rsi,rsi
@@ -663,7 +660,7 @@ Disassembly of section .data:
  797:	48 03 db             	add    rbx,rbx
  79a:	48 03 ed             	add    rbp,rbp
  79d:	48 03 f6             	add    rsi,rsi
- 7a0:	48 03 ff             	add    rdi,rdi
+ 7a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  7a3:	48 03 db             	add    rbx,rbx
  7a6:	48 03 ed             	add    rbp,rbp
  7a9:	48 03 f6             	add    rsi,rsi
@@ -679,7 +676,7 @@ Disassembly of section .data:
  7c7:	48 03 db             	add    rbx,rbx
  7ca:	48 03 ed             	add    rbp,rbp
  7cd:	48 03 f6             	add    rsi,rsi
- 7d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 7d0:	48 03 ff             	add    rdi,rdi
  7d3:	48 03 db             	add    rbx,rbx
  7d6:	48 03 ed             	add    rbp,rbp
  7d9:	48 03 f6             	add    rsi,rsi
@@ -695,23 +692,23 @@ Disassembly of section .data:
  7f7:	48 03 db             	add    rbx,rbx
  7fa:	48 03 ed             	add    rbp,rbp
  7fd:	48 03 f6             	add    rsi,rsi
- 800:	48 03 db             	add    rbx,rbx
- 803:	48 03 ed             	add    rbp,rbp
- 806:	48 03 f6             	add    rsi,rsi
- 809:	48 03 ff             	add    rdi,rdi
- 80c:	48 03 db             	add    rbx,rbx
- 80f:	48 03 ed             	add    rbp,rbp
- 812:	48 03 f6             	add    rsi,rsi
- 815:	48 03 ff             	add    rdi,rdi
- 818:	48 03 db             	add    rbx,rbx
- 81b:	48 03 ed             	add    rbp,rbp
- 81e:	48 03 f6             	add    rsi,rsi
- 821:	48 03 ff             	add    rdi,rdi
- 824:	48 03 db             	add    rbx,rbx
- 827:	48 03 ed             	add    rbp,rbp
- 82a:	48 03 f6             	add    rsi,rsi
- 82d:	48 03 ff             	add    rdi,rdi
- 830:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 800:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 803:	48 03 db             	add    rbx,rbx
+ 806:	48 03 ed             	add    rbp,rbp
+ 809:	48 03 f6             	add    rsi,rsi
+ 80c:	48 03 ff             	add    rdi,rdi
+ 80f:	48 03 db             	add    rbx,rbx
+ 812:	48 03 ed             	add    rbp,rbp
+ 815:	48 03 f6             	add    rsi,rsi
+ 818:	48 03 ff             	add    rdi,rdi
+ 81b:	48 03 db             	add    rbx,rbx
+ 81e:	48 03 ed             	add    rbp,rbp
+ 821:	48 03 f6             	add    rsi,rsi
+ 824:	48 03 ff             	add    rdi,rdi
+ 827:	48 03 db             	add    rbx,rbx
+ 82a:	48 03 ed             	add    rbp,rbp
+ 82d:	48 03 f6             	add    rsi,rsi
+ 830:	48 03 ff             	add    rdi,rdi
  833:	48 03 db             	add    rbx,rbx
  836:	48 03 ed             	add    rbp,rbp
  839:	48 03 f6             	add    rsi,rsi
@@ -727,7 +724,7 @@ Disassembly of section .data:
  857:	48 03 db             	add    rbx,rbx
  85a:	48 03 ed             	add    rbp,rbp
  85d:	48 03 f6             	add    rsi,rsi
- 860:	48 03 ff             	add    rdi,rdi
+ 860:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  863:	48 03 db             	add    rbx,rbx
  866:	48 03 ed             	add    rbp,rbp
  869:	48 03 f6             	add    rsi,rsi
@@ -743,7 +740,7 @@ Disassembly of section .data:
  887:	48 03 db             	add    rbx,rbx
  88a:	48 03 ed             	add    rbp,rbp
  88d:	48 03 f6             	add    rsi,rsi
- 890:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 890:	48 03 ff             	add    rdi,rdi
  893:	48 03 db             	add    rbx,rbx
  896:	48 03 ed             	add    rbp,rbp
  899:	48 03 f6             	add    rsi,rsi
@@ -759,23 +756,23 @@ Disassembly of section .data:
  8b7:	48 03 db             	add    rbx,rbx
  8ba:	48 03 ed             	add    rbp,rbp
  8bd:	48 03 f6             	add    rsi,rsi
- 8c0:	48 03 db             	add    rbx,rbx
- 8c3:	48 03 ed             	add    rbp,rbp
- 8c6:	48 03 f6             	add    rsi,rsi
- 8c9:	48 03 ff             	add    rdi,rdi
- 8cc:	48 03 db             	add    rbx,rbx
- 8cf:	48 03 ed             	add    rbp,rbp
- 8d2:	48 03 f6             	add    rsi,rsi
- 8d5:	48 03 ff             	add    rdi,rdi
- 8d8:	48 03 db             	add    rbx,rbx
- 8db:	48 03 ed             	add    rbp,rbp
- 8de:	48 03 f6             	add    rsi,rsi
- 8e1:	48 03 ff             	add    rdi,rdi
- 8e4:	48 03 db             	add    rbx,rbx
- 8e7:	48 03 ed             	add    rbp,rbp
- 8ea:	48 03 f6             	add    rsi,rsi
- 8ed:	48 03 ff             	add    rdi,rdi
- 8f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8c3:	48 03 db             	add    rbx,rbx
+ 8c6:	48 03 ed             	add    rbp,rbp
+ 8c9:	48 03 f6             	add    rsi,rsi
+ 8cc:	48 03 ff             	add    rdi,rdi
+ 8cf:	48 03 db             	add    rbx,rbx
+ 8d2:	48 03 ed             	add    rbp,rbp
+ 8d5:	48 03 f6             	add    rsi,rsi
+ 8d8:	48 03 ff             	add    rdi,rdi
+ 8db:	48 03 db             	add    rbx,rbx
+ 8de:	48 03 ed             	add    rbp,rbp
+ 8e1:	48 03 f6             	add    rsi,rsi
+ 8e4:	48 03 ff             	add    rdi,rdi
+ 8e7:	48 03 db             	add    rbx,rbx
+ 8ea:	48 03 ed             	add    rbp,rbp
+ 8ed:	48 03 f6             	add    rsi,rsi
+ 8f0:	48 03 ff             	add    rdi,rdi
  8f3:	48 03 db             	add    rbx,rbx
  8f6:	48 03 ed             	add    rbp,rbp
  8f9:	48 03 f6             	add    rsi,rsi
@@ -791,7 +788,7 @@ Disassembly of section .data:
  917:	48 03 db             	add    rbx,rbx
  91a:	48 03 ed             	add    rbp,rbp
  91d:	48 03 f6             	add    rsi,rsi
- 920:	48 03 ff             	add    rdi,rdi
+ 920:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  923:	48 03 db             	add    rbx,rbx
  926:	48 03 ed             	add    rbp,rbp
  929:	48 03 f6             	add    rsi,rsi
@@ -807,7 +804,7 @@ Disassembly of section .data:
  947:	48 03 db             	add    rbx,rbx
  94a:	48 03 ed             	add    rbp,rbp
  94d:	48 03 f6             	add    rsi,rsi
- 950:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 950:	48 03 ff             	add    rdi,rdi
  953:	48 03 db             	add    rbx,rbx
  956:	48 03 ed             	add    rbp,rbp
  959:	48 03 f6             	add    rsi,rsi
@@ -823,23 +820,23 @@ Disassembly of section .data:
  977:	48 03 db             	add    rbx,rbx
  97a:	48 03 ed             	add    rbp,rbp
  97d:	48 03 f6             	add    rsi,rsi
- 980:	48 03 db             	add    rbx,rbx
- 983:	48 03 ed             	add    rbp,rbp
- 986:	48 03 f6             	add    rsi,rsi
- 989:	48 03 ff             	add    rdi,rdi
- 98c:	48 03 db             	add    rbx,rbx
- 98f:	48 03 ed             	add    rbp,rbp
- 992:	48 03 f6             	add    rsi,rsi
- 995:	48 03 ff             	add    rdi,rdi
- 998:	48 03 db             	add    rbx,rbx
- 99b:	48 03 ed             	add    rbp,rbp
- 99e:	48 03 f6             	add    rsi,rsi
- 9a1:	48 03 ff             	add    rdi,rdi
- 9a4:	48 03 db             	add    rbx,rbx
- 9a7:	48 03 ed             	add    rbp,rbp
- 9aa:	48 03 f6             	add    rsi,rsi
- 9ad:	48 03 ff             	add    rdi,rdi
- 9b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 980:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 983:	48 03 db             	add    rbx,rbx
+ 986:	48 03 ed             	add    rbp,rbp
+ 989:	48 03 f6             	add    rsi,rsi
+ 98c:	48 03 ff             	add    rdi,rdi
+ 98f:	48 03 db             	add    rbx,rbx
+ 992:	48 03 ed             	add    rbp,rbp
+ 995:	48 03 f6             	add    rsi,rsi
+ 998:	48 03 ff             	add    rdi,rdi
+ 99b:	48 03 db             	add    rbx,rbx
+ 99e:	48 03 ed             	add    rbp,rbp
+ 9a1:	48 03 f6             	add    rsi,rsi
+ 9a4:	48 03 ff             	add    rdi,rdi
+ 9a7:	48 03 db             	add    rbx,rbx
+ 9aa:	48 03 ed             	add    rbp,rbp
+ 9ad:	48 03 f6             	add    rsi,rsi
+ 9b0:	48 03 ff             	add    rdi,rdi
  9b3:	48 03 db             	add    rbx,rbx
  9b6:	48 03 ed             	add    rbp,rbp
  9b9:	48 03 f6             	add    rsi,rsi
@@ -855,7 +852,7 @@ Disassembly of section .data:
  9d7:	48 03 db             	add    rbx,rbx
  9da:	48 03 ed             	add    rbp,rbp
  9dd:	48 03 f6             	add    rsi,rsi
- 9e0:	48 03 ff             	add    rdi,rdi
+ 9e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  9e3:	48 03 db             	add    rbx,rbx
  9e6:	48 03 ed             	add    rbp,rbp
  9e9:	48 03 f6             	add    rsi,rsi
@@ -871,7 +868,7 @@ Disassembly of section .data:
  a07:	48 03 db             	add    rbx,rbx
  a0a:	48 03 ed             	add    rbp,rbp
  a0d:	48 03 f6             	add    rsi,rsi
- a10:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a10:	48 03 ff             	add    rdi,rdi
  a13:	48 03 db             	add    rbx,rbx
  a16:	48 03 ed             	add    rbp,rbp
  a19:	48 03 f6             	add    rsi,rsi
@@ -887,23 +884,23 @@ Disassembly of section .data:
  a37:	48 03 db             	add    rbx,rbx
  a3a:	48 03 ed             	add    rbp,rbp
  a3d:	48 03 f6             	add    rsi,rsi
- a40:	48 03 db             	add    rbx,rbx
- a43:	48 03 ed             	add    rbp,rbp
- a46:	48 03 f6             	add    rsi,rsi
- a49:	48 03 ff             	add    rdi,rdi
- a4c:	48 03 db             	add    rbx,rbx
- a4f:	48 03 ed             	add    rbp,rbp
- a52:	48 03 f6             	add    rsi,rsi
- a55:	48 03 ff             	add    rdi,rdi
- a58:	48 03 db             	add    rbx,rbx
- a5b:	48 03 ed             	add    rbp,rbp
- a5e:	48 03 f6             	add    rsi,rsi
- a61:	48 03 ff             	add    rdi,rdi
- a64:	48 03 db             	add    rbx,rbx
- a67:	48 03 ed             	add    rbp,rbp
- a6a:	48 03 f6             	add    rsi,rsi
- a6d:	48 03 ff             	add    rdi,rdi
- a70:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a43:	48 03 db             	add    rbx,rbx
+ a46:	48 03 ed             	add    rbp,rbp
+ a49:	48 03 f6             	add    rsi,rsi
+ a4c:	48 03 ff             	add    rdi,rdi
+ a4f:	48 03 db             	add    rbx,rbx
+ a52:	48 03 ed             	add    rbp,rbp
+ a55:	48 03 f6             	add    rsi,rsi
+ a58:	48 03 ff             	add    rdi,rdi
+ a5b:	48 03 db             	add    rbx,rbx
+ a5e:	48 03 ed             	add    rbp,rbp
+ a61:	48 03 f6             	add    rsi,rsi
+ a64:	48 03 ff             	add    rdi,rdi
+ a67:	48 03 db             	add    rbx,rbx
+ a6a:	48 03 ed             	add    rbp,rbp
+ a6d:	48 03 f6             	add    rsi,rsi
+ a70:	48 03 ff             	add    rdi,rdi
  a73:	48 03 db             	add    rbx,rbx
  a76:	48 03 ed             	add    rbp,rbp
  a79:	48 03 f6             	add    rsi,rsi
@@ -919,7 +916,7 @@ Disassembly of section .data:
  a97:	48 03 db             	add    rbx,rbx
  a9a:	48 03 ed             	add    rbp,rbp
  a9d:	48 03 f6             	add    rsi,rsi
- aa0:	48 03 ff             	add    rdi,rdi
+ aa0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  aa3:	48 03 db             	add    rbx,rbx
  aa6:	48 03 ed             	add    rbp,rbp
  aa9:	48 03 f6             	add    rsi,rsi
@@ -935,7 +932,7 @@ Disassembly of section .data:
  ac7:	48 03 db             	add    rbx,rbx
  aca:	48 03 ed             	add    rbp,rbp
  acd:	48 03 f6             	add    rsi,rsi
- ad0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ ad0:	48 03 ff             	add    rdi,rdi
  ad3:	48 03 db             	add    rbx,rbx
  ad6:	48 03 ed             	add    rbp,rbp
  ad9:	48 03 f6             	add    rsi,rsi
@@ -951,23 +948,23 @@ Disassembly of section .data:
  af7:	48 03 db             	add    rbx,rbx
  afa:	48 03 ed             	add    rbp,rbp
  afd:	48 03 f6             	add    rsi,rsi
- b00:	48 03 db             	add    rbx,rbx
- b03:	48 03 ed             	add    rbp,rbp
- b06:	48 03 f6             	add    rsi,rsi
- b09:	48 03 ff             	add    rdi,rdi
- b0c:	48 03 db             	add    rbx,rbx
- b0f:	48 03 ed             	add    rbp,rbp
- b12:	48 03 f6             	add    rsi,rsi
- b15:	48 03 ff             	add    rdi,rdi
- b18:	48 03 db             	add    rbx,rbx
- b1b:	48 03 ed             	add    rbp,rbp
- b1e:	48 03 f6             	add    rsi,rsi
- b21:	48 03 ff             	add    rdi,rdi
- b24:	48 03 db             	add    rbx,rbx
- b27:	48 03 ed             	add    rbp,rbp
- b2a:	48 03 f6             	add    rsi,rsi
- b2d:	48 03 ff             	add    rdi,rdi
- b30:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b00:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b03:	48 03 db             	add    rbx,rbx
+ b06:	48 03 ed             	add    rbp,rbp
+ b09:	48 03 f6             	add    rsi,rsi
+ b0c:	48 03 ff             	add    rdi,rdi
+ b0f:	48 03 db             	add    rbx,rbx
+ b12:	48 03 ed             	add    rbp,rbp
+ b15:	48 03 f6             	add    rsi,rsi
+ b18:	48 03 ff             	add    rdi,rdi
+ b1b:	48 03 db             	add    rbx,rbx
+ b1e:	48 03 ed             	add    rbp,rbp
+ b21:	48 03 f6             	add    rsi,rsi
+ b24:	48 03 ff             	add    rdi,rdi
+ b27:	48 03 db             	add    rbx,rbx
+ b2a:	48 03 ed             	add    rbp,rbp
+ b2d:	48 03 f6             	add    rsi,rsi
+ b30:	48 03 ff             	add    rdi,rdi
  b33:	48 03 db             	add    rbx,rbx
  b36:	48 03 ed             	add    rbp,rbp
  b39:	48 03 f6             	add    rsi,rsi
@@ -983,7 +980,7 @@ Disassembly of section .data:
  b57:	48 03 db             	add    rbx,rbx
  b5a:	48 03 ed             	add    rbp,rbp
  b5d:	48 03 f6             	add    rsi,rsi
- b60:	48 03 ff             	add    rdi,rdi
+ b60:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  b63:	48 03 db             	add    rbx,rbx
  b66:	48 03 ed             	add    rbp,rbp
  b69:	48 03 f6             	add    rsi,rsi
@@ -999,7 +996,7 @@ Disassembly of section .data:
  b87:	48 03 db             	add    rbx,rbx
  b8a:	48 03 ed             	add    rbp,rbp
  b8d:	48 03 f6             	add    rsi,rsi
- b90:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b90:	48 03 ff             	add    rdi,rdi
  b93:	48 03 db             	add    rbx,rbx
  b96:	48 03 ed             	add    rbp,rbp
  b99:	48 03 f6             	add    rsi,rsi
@@ -1015,23 +1012,23 @@ Disassembly of section .data:
  bb7:	48 03 db             	add    rbx,rbx
  bba:	48 03 ed             	add    rbp,rbp
  bbd:	48 03 f6             	add    rsi,rsi
- bc0:	48 03 db             	add    rbx,rbx
- bc3:	48 03 ed             	add    rbp,rbp
- bc6:	48 03 f6             	add    rsi,rsi
- bc9:	48 03 ff             	add    rdi,rdi
- bcc:	48 03 db             	add    rbx,rbx
- bcf:	48 03 ed             	add    rbp,rbp
- bd2:	48 03 f6             	add    rsi,rsi
- bd5:	48 03 ff             	add    rdi,rdi
- bd8:	48 03 db             	add    rbx,rbx
- bdb:	48 03 ed             	add    rbp,rbp
- bde:	48 03 f6             	add    rsi,rsi
- be1:	48 03 ff             	add    rdi,rdi
- be4:	48 03 db             	add    rbx,rbx
- be7:	48 03 ed             	add    rbp,rbp
- bea:	48 03 f6             	add    rsi,rsi
- bed:	48 03 ff             	add    rdi,rdi
- bf0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bc0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bc3:	48 03 db             	add    rbx,rbx
+ bc6:	48 03 ed             	add    rbp,rbp
+ bc9:	48 03 f6             	add    rsi,rsi
+ bcc:	48 03 ff             	add    rdi,rdi
+ bcf:	48 03 db             	add    rbx,rbx
+ bd2:	48 03 ed             	add    rbp,rbp
+ bd5:	48 03 f6             	add    rsi,rsi
+ bd8:	48 03 ff             	add    rdi,rdi
+ bdb:	48 03 db             	add    rbx,rbx
+ bde:	48 03 ed             	add    rbp,rbp
+ be1:	48 03 f6             	add    rsi,rsi
+ be4:	48 03 ff             	add    rdi,rdi
+ be7:	48 03 db             	add    rbx,rbx
+ bea:	48 03 ed             	add    rbp,rbp
+ bed:	48 03 f6             	add    rsi,rsi
+ bf0:	48 03 ff             	add    rdi,rdi
  bf3:	48 03 db             	add    rbx,rbx
  bf6:	48 03 ed             	add    rbp,rbp
  bf9:	48 03 f6             	add    rsi,rsi
@@ -1047,7 +1044,7 @@ Disassembly of section .data:
  c17:	48 03 db             	add    rbx,rbx
  c1a:	48 03 ed             	add    rbp,rbp
  c1d:	48 03 f6             	add    rsi,rsi
- c20:	48 03 ff             	add    rdi,rdi
+ c20:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  c23:	48 03 db             	add    rbx,rbx
  c26:	48 03 ed             	add    rbp,rbp
  c29:	48 03 f6             	add    rsi,rsi
@@ -1063,7 +1060,7 @@ Disassembly of section .data:
  c47:	48 03 db             	add    rbx,rbx
  c4a:	48 03 ed             	add    rbp,rbp
  c4d:	48 03 f6             	add    rsi,rsi
- c50:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c50:	48 03 ff             	add    rdi,rdi
  c53:	48 03 db             	add    rbx,rbx
  c56:	48 03 ed             	add    rbp,rbp
  c59:	48 03 f6             	add    rsi,rsi
@@ -1079,23 +1076,23 @@ Disassembly of section .data:
  c77:	48 03 db             	add    rbx,rbx
  c7a:	48 03 ed             	add    rbp,rbp
  c7d:	48 03 f6             	add    rsi,rsi
- c80:	48 03 db             	add    rbx,rbx
- c83:	48 03 ed             	add    rbp,rbp
- c86:	48 03 f6             	add    rsi,rsi
- c89:	48 03 ff             	add    rdi,rdi
- c8c:	48 03 db             	add    rbx,rbx
- c8f:	48 03 ed             	add    rbp,rbp
- c92:	48 03 f6             	add    rsi,rsi
- c95:	48 03 ff             	add    rdi,rdi
- c98:	48 03 db             	add    rbx,rbx
- c9b:	48 03 ed             	add    rbp,rbp
- c9e:	48 03 f6             	add    rsi,rsi
- ca1:	48 03 ff             	add    rdi,rdi
- ca4:	48 03 db             	add    rbx,rbx
- ca7:	48 03 ed             	add    rbp,rbp
- caa:	48 03 f6             	add    rsi,rsi
- cad:	48 03 ff             	add    rdi,rdi
- cb0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c83:	48 03 db             	add    rbx,rbx
+ c86:	48 03 ed             	add    rbp,rbp
+ c89:	48 03 f6             	add    rsi,rsi
+ c8c:	48 03 ff             	add    rdi,rdi
+ c8f:	48 03 db             	add    rbx,rbx
+ c92:	48 03 ed             	add    rbp,rbp
+ c95:	48 03 f6             	add    rsi,rsi
+ c98:	48 03 ff             	add    rdi,rdi
+ c9b:	48 03 db             	add    rbx,rbx
+ c9e:	48 03 ed             	add    rbp,rbp
+ ca1:	48 03 f6             	add    rsi,rsi
+ ca4:	48 03 ff             	add    rdi,rdi
+ ca7:	48 03 db             	add    rbx,rbx
+ caa:	48 03 ed             	add    rbp,rbp
+ cad:	48 03 f6             	add    rsi,rsi
+ cb0:	48 03 ff             	add    rdi,rdi
  cb3:	48 03 db             	add    rbx,rbx
  cb6:	48 03 ed             	add    rbp,rbp
  cb9:	48 03 f6             	add    rsi,rsi
@@ -1111,7 +1108,7 @@ Disassembly of section .data:
  cd7:	48 03 db             	add    rbx,rbx
  cda:	48 03 ed             	add    rbp,rbp
  cdd:	48 03 f6             	add    rsi,rsi
- ce0:	48 03 ff             	add    rdi,rdi
+ ce0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  ce3:	48 03 db             	add    rbx,rbx
  ce6:	48 03 ed             	add    rbp,rbp
  ce9:	48 03 f6             	add    rsi,rsi
@@ -1127,7 +1124,7 @@ Disassembly of section .data:
  d07:	48 03 db             	add    rbx,rbx
  d0a:	48 03 ed             	add    rbp,rbp
  d0d:	48 03 f6             	add    rsi,rsi
- d10:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ d10:	48 03 ff             	add    rdi,rdi
  d13:	48 03 db             	add    rbx,rbx
  d16:	48 03 ed             	add    rbp,rbp
  d19:	48 03 f6             	add    rsi,rsi
@@ -1143,22 +1140,23 @@ Disassembly of section .data:
  d37:	48 03 db             	add    rbx,rbx
  d3a:	48 03 ed             	add    rbp,rbp
  d3d:	48 03 f6             	add    rsi,rsi
- d40:	83 e8 01             	sub    eax,0x1
- d43:	0f 85 37 f3 ff ff    	jne    0x80
- d49:	66 90                	xchg   ax,ax
- d4b:	66 90                	xchg   ax,ax
- d4d:	66 90                	xchg   ax,ax
- d4f:	66 90                	xchg   ax,ax
- d51:	66 90                	xchg   ax,ax
- d53:	66 90                	xchg   ax,ax
- d55:	66 90                	xchg   ax,ax
- d57:	66 90                	xchg   ax,ax
- d59:	48 83 c4 40          	add    rsp,0x40
- d5d:	41 59                	pop    r9
- d5f:	41 58                	pop    r8
- d61:	5f                   	pop    rdi
- d62:	5e                   	pop    rsi
- d63:	5d                   	pop    rbp
- d64:	5b                   	pop    rbx
- d65:	0f 77                	emms   
- d67:	c3                   	ret    
+ d40:	4d 01 c1             	add    r9,r8
+ d43:	83 e8 01             	sub    eax,0x1
+ d46:	0f 85 34 f3 ff ff    	jne    0x80
+ d4c:	66 90                	xchg   ax,ax
+ d4e:	66 90                	xchg   ax,ax
+ d50:	66 90                	xchg   ax,ax
+ d52:	66 90                	xchg   ax,ax
+ d54:	66 90                	xchg   ax,ax
+ d56:	66 90                	xchg   ax,ax
+ d58:	66 90                	xchg   ax,ax
+ d5a:	66 90                	xchg   ax,ax
+ d5c:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ d63:	41 59                	pop    r9
+ d65:	41 58                	pop    r8
+ d67:	5f                   	pop    rdi
+ d68:	5e                   	pop    rsi
+ d69:	5d                   	pop    rbp
+ d6a:	5b                   	pop    rbx
+ d6b:	0f 77                	emms   
+ d6d:	c3                   	ret    

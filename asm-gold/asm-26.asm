@@ -19,30 +19,27 @@ Disassembly of section .data:
       13:	57                   	push   rdi
       14:	41 50                	push   r8
       16:	41 51                	push   r9
-      18:	48 83 ec 40          	sub    rsp,0x40
-      1c:	45 31 c0             	xor    r8d,r8d
-      1f:	4c 8d 0c 24          	lea    r9,[rsp]
-      23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-      2a:	7f 00 00 
-      2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-      34:	7f 00 00 
-      37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-      3e:	00 00 00 
-      41:	48 83 eb 00          	sub    rbx,0x0
-      45:	48 83 ed 00          	sub    rbp,0x0
-      49:	48 83 ee 00          	sub    rsi,0x0
-      4d:	48 83 ef 00          	sub    rdi,0x0
-      51:	49 83 e8 00          	sub    r8,0x0
-      55:	49 83 e9 00          	sub    r9,0x0
-      59:	49 83 ea 00          	sub    r10,0x0
-      5d:	49 83 eb 00          	sub    r11,0x0
-      61:	49 83 ec 00          	sub    r12,0x0
-      65:	49 83 ed 00          	sub    r13,0x0
-      69:	49 83 ee 00          	sub    r14,0x0
-      6d:	49 83 ef 00          	sub    r15,0x0
-      71:	90                   	nop
-      72:	90                   	nop
-      73:	90                   	nop
+      18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+      1f:	45 31 c0             	xor    r8d,r8d
+      22:	4c 8d 0c 24          	lea    r9,[rsp]
+      26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+      2d:	7f 00 00 
+      30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+      37:	7f 00 00 
+      3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+      41:	00 00 00 
+      44:	48 83 eb 00          	sub    rbx,0x0
+      48:	48 83 ed 00          	sub    rbp,0x0
+      4c:	48 83 ee 00          	sub    rsi,0x0
+      50:	48 83 ef 00          	sub    rdi,0x0
+      54:	49 83 e8 00          	sub    r8,0x0
+      58:	49 83 e9 00          	sub    r9,0x0
+      5c:	49 83 ea 00          	sub    r10,0x0
+      60:	49 83 eb 00          	sub    r11,0x0
+      64:	49 83 ec 00          	sub    r12,0x0
+      68:	49 83 ed 00          	sub    r13,0x0
+      6c:	49 83 ee 00          	sub    r14,0x0
+      70:	49 83 ef 00          	sub    r15,0x0
       74:	90                   	nop
       75:	90                   	nop
       76:	90                   	nop
@@ -55,23 +52,23 @@ Disassembly of section .data:
       7d:	90                   	nop
       7e:	90                   	nop
       7f:	90                   	nop
-      80:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-      86:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-      8c:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-      92:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-      98:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-      9e:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-      a4:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-      aa:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-      b0:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-      b6:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-      bc:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-      c2:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-      c8:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-      ce:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-      d4:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-      da:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-      e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+      80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+      83:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+      89:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+      8f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+      95:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+      9b:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+      a1:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+      a7:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+      ad:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+      b3:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+      b9:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+      bf:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+      c5:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+      cb:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+      d1:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+      d7:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+      dd:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
       e3:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
       e9:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
       ef:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -89,23 +86,23 @@ Disassembly of section .data:
      137:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      13d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      143:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     149:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     14f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     155:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     15b:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     161:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     167:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     16d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     173:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     179:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     17f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     185:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     18b:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     191:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     197:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     19d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     1a3:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     1a9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     149:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     14c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     152:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     158:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     15e:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     164:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     16a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     170:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     176:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     17c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     182:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     188:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     18e:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     194:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     19a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     1a0:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     1a6:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      1ac:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      1b2:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      1b8:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -123,23 +120,23 @@ Disassembly of section .data:
      200:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      206:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      20c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     212:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     218:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     21e:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     224:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     22a:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     230:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     236:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     23c:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     242:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     248:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     24e:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     254:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     25a:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     260:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     266:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     26c:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     272:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     212:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     215:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     21b:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     221:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     227:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     22d:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     233:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     239:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     23f:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     245:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     24b:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     251:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     257:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     25d:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     263:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     269:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     26f:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      275:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      27b:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      281:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -157,23 +154,23 @@ Disassembly of section .data:
      2c9:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      2cf:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      2d5:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     2db:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     2e1:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     2e7:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     2ed:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     2f3:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     2f9:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     2ff:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     305:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     30b:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     311:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     317:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     31d:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     323:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     329:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     32f:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     335:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     33b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     2db:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     2de:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     2e4:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     2ea:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     2f0:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     2f6:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     2fc:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     302:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     308:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     30e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     314:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     31a:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     320:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     326:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     32c:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     332:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     338:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      33e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      344:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      34a:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -191,23 +188,23 @@ Disassembly of section .data:
      392:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      398:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      39e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     3a4:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     3aa:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     3b0:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     3b6:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     3bc:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     3c2:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     3c8:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     3ce:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     3d4:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     3da:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     3e0:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     3e6:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     3ec:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     3f2:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     3f8:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     3fe:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     404:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     3a4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     3a7:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     3ad:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     3b3:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     3b9:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     3bf:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     3c5:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     3cb:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     3d1:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     3d7:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     3dd:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     3e3:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     3e9:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     3ef:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     3f5:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     3fb:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     401:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      407:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      40d:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      413:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -225,23 +222,23 @@ Disassembly of section .data:
      45b:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      461:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      467:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     46d:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     473:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     479:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     47f:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     485:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     48b:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     491:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     497:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     49d:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     4a3:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     4a9:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     4af:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     4b5:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     4bb:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     4c1:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     4c7:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     4cd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     46d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     470:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     476:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     47c:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     482:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     488:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     48e:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     494:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     49a:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     4a0:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     4a6:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     4ac:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     4b2:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     4b8:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     4be:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     4c4:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     4ca:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      4d0:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      4d6:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      4dc:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -259,23 +256,23 @@ Disassembly of section .data:
      524:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      52a:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      530:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     536:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     53c:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     542:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     548:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     54e:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     554:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     55a:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     560:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     566:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     56c:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     572:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     578:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     57e:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     584:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     58a:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     590:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     596:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     536:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     539:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     53f:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     545:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     54b:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     551:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     557:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     55d:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     563:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     569:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     56f:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     575:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     57b:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     581:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     587:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     58d:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     593:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      599:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      59f:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      5a5:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -293,23 +290,23 @@ Disassembly of section .data:
      5ed:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      5f3:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      5f9:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     5ff:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     605:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     60b:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     611:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     617:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     61d:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     623:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     629:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     62f:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     635:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     63b:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     641:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     647:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     64d:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     653:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     659:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     65f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     5ff:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     602:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     608:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     60e:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     614:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     61a:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     620:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     626:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     62c:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     632:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     638:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     63e:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     644:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     64a:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     650:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     656:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     65c:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      662:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      668:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      66e:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -327,23 +324,23 @@ Disassembly of section .data:
      6b6:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      6bc:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      6c2:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     6c8:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     6ce:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     6d4:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     6da:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     6e0:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     6e6:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     6ec:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     6f2:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     6f8:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     6fe:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     704:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     70a:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     710:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     716:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     71c:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     722:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     728:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     6c8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     6cb:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     6d1:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     6d7:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     6dd:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     6e3:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     6e9:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     6ef:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     6f5:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     6fb:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     701:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     707:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     70d:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     713:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     719:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     71f:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     725:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      72b:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      731:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      737:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -361,23 +358,23 @@ Disassembly of section .data:
      77f:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      785:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      78b:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     791:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     797:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     79d:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     7a3:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     7a9:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     7af:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     7b5:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     7bb:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     7c1:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     7c7:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     7cd:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     7d3:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     7d9:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     7df:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     7e5:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     7eb:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     7f1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     791:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     794:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     79a:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     7a0:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     7a6:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     7ac:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     7b2:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     7b8:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     7be:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     7c4:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     7ca:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     7d0:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     7d6:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     7dc:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     7e2:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     7e8:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     7ee:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      7f4:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      7fa:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      800:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -395,23 +392,23 @@ Disassembly of section .data:
      848:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      84e:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      854:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     85a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     860:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     866:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     86c:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     872:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     878:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     87e:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     884:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     88a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     890:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     896:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     89c:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     8a2:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     8a8:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     8ae:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     8b4:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     8ba:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     85a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     85d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     863:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     869:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     86f:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     875:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     87b:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     881:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     887:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     88d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     893:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     899:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     89f:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     8a5:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     8ab:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     8b1:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     8b7:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      8bd:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      8c3:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      8c9:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -429,23 +426,23 @@ Disassembly of section .data:
      911:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      917:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      91d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     923:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     929:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     92f:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     935:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     93b:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     941:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     947:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     94d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     953:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     959:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     95f:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     965:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     96b:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     971:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     977:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     97d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     983:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     923:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     926:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     92c:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     932:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     938:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     93e:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     944:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     94a:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     950:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     956:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     95c:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     962:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     968:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     96e:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     974:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     97a:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     980:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      986:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      98c:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      992:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -463,23 +460,23 @@ Disassembly of section .data:
      9da:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      9e0:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      9e6:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     9ec:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     9f2:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     9f8:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     9fe:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     a04:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     a0a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     a10:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     a16:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     a1c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     a22:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     a28:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     a2e:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     a34:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     a3a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     a40:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     a46:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     a4c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     9ec:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     9ef:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     9f5:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     9fb:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     a01:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     a07:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     a0d:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     a13:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     a19:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     a1f:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     a25:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     a2b:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     a31:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     a37:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     a3d:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     a43:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     a49:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      a4f:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      a55:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      a5b:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -497,23 +494,23 @@ Disassembly of section .data:
      aa3:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      aa9:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      aaf:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     ab5:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     abb:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     ac1:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     ac7:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     acd:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     ad3:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     ad9:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     adf:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     ae5:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     aeb:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     af1:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     af7:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     afd:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     b03:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     b09:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     b0f:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     b15:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     ab5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     ab8:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     abe:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     ac4:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     aca:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     ad0:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     ad6:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     adc:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     ae2:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     ae8:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     aee:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     af4:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     afa:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     b00:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     b06:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     b0c:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     b12:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      b18:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      b1e:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      b24:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -531,23 +528,23 @@ Disassembly of section .data:
      b6c:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      b72:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      b78:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     b7e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     b84:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     b8a:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     b90:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     b96:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     b9c:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     ba2:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     ba8:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     bae:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     bb4:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     bba:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     bc0:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     bc6:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     bcc:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     bd2:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     bd8:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     bde:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     b7e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     b81:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     b87:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     b8d:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     b93:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     b99:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     b9f:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     ba5:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     bab:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     bb1:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     bb7:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     bbd:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     bc3:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     bc9:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     bcf:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     bd5:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     bdb:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      be1:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      be7:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      bed:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -565,23 +562,23 @@ Disassembly of section .data:
      c35:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      c3b:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      c41:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     c47:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     c4d:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     c53:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     c59:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     c5f:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     c65:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     c6b:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     c71:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     c77:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     c7d:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     c83:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     c89:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     c8f:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     c95:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     c9b:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     ca1:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     ca7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     c47:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     c4a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     c50:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     c56:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     c5c:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     c62:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     c68:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     c6e:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     c74:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     c7a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     c80:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     c86:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     c8c:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     c92:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     c98:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     c9e:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     ca4:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      caa:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      cb0:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      cb6:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -599,23 +596,23 @@ Disassembly of section .data:
      cfe:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      d04:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      d0a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     d10:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     d16:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     d1c:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     d22:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     d28:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     d2e:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     d34:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     d3a:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     d40:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     d46:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     d4c:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     d52:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     d58:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     d5e:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     d64:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     d6a:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     d70:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     d10:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     d13:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     d19:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     d1f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     d25:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     d2b:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     d31:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     d37:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     d3d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     d43:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     d49:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     d4f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     d55:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     d5b:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     d61:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     d67:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     d6d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      d73:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      d79:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      d7f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -633,23 +630,23 @@ Disassembly of section .data:
      dc7:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      dcd:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      dd3:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     dd9:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     ddf:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     de5:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     deb:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     df1:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     df7:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     dfd:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     e03:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     e09:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     e0f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     e15:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     e1b:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     e21:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     e27:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     e2d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     e33:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     e39:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     dd9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     ddc:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     de2:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     de8:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     dee:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     df4:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     dfa:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     e00:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     e06:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     e0c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     e12:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     e18:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     e1e:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     e24:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     e2a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     e30:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     e36:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      e3c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      e42:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      e48:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -667,23 +664,23 @@ Disassembly of section .data:
      e90:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      e96:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      e9c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     ea2:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     ea8:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     eae:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     eb4:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     eba:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     ec0:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     ec6:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     ecc:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     ed2:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     ed8:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     ede:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     ee4:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     eea:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     ef0:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     ef6:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     efc:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     f02:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     ea2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     ea5:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     eab:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     eb1:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     eb7:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     ebd:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     ec3:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     ec9:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     ecf:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     ed5:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     edb:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     ee1:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     ee7:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     eed:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     ef3:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     ef9:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     eff:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      f05:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      f0b:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      f11:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -701,23 +698,23 @@ Disassembly of section .data:
      f59:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
      f5f:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      f65:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     f6b:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     f71:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     f77:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     f7d:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     f83:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     f89:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     f8f:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     f95:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     f9b:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-     fa1:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-     fa7:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-     fad:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-     fb3:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-     fb9:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-     fbf:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-     fc5:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-     fcb:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     f6b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     f6e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     f74:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     f7a:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     f80:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     f86:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     f8c:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     f92:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     f98:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+     f9e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+     fa4:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+     faa:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+     fb0:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+     fb6:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+     fbc:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+     fc2:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+     fc8:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
      fce:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
      fd4:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
      fda:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -735,23 +732,23 @@ Disassembly of section .data:
     1022:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1028:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     102e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1034:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    103a:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1040:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1046:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    104c:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1052:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1058:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    105e:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1064:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    106a:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1070:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1076:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    107c:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1082:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1088:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    108e:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1094:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1034:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1037:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    103d:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1043:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1049:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    104f:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1055:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    105b:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1061:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    1067:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    106d:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1073:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1079:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    107f:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1085:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    108b:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1091:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1097:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     109d:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     10a3:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -769,23 +766,23 @@ Disassembly of section .data:
     10eb:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     10f1:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     10f7:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    10fd:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1103:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1109:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    110f:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1115:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    111b:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1121:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1127:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    112d:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1133:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1139:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    113f:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1145:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    114b:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1151:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1157:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    115d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    10fd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1100:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1106:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    110c:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1112:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1118:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    111e:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1124:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    112a:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    1130:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1136:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    113c:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1142:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1148:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    114e:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1154:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    115a:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1160:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     1166:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     116c:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -803,23 +800,23 @@ Disassembly of section .data:
     11b4:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     11ba:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     11c0:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    11c6:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    11cc:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    11d2:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    11d8:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    11de:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    11e4:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    11ea:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    11f0:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    11f6:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    11fc:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1202:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1208:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    120e:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1214:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    121a:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1220:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1226:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    11c6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    11c9:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    11cf:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    11d5:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    11db:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    11e1:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    11e7:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    11ed:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    11f3:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    11f9:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    11ff:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1205:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    120b:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1211:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1217:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    121d:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1223:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1229:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     122f:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     1235:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -837,23 +834,23 @@ Disassembly of section .data:
     127d:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1283:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1289:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    128f:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1295:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    129b:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    12a1:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    12a7:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    12ad:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    12b3:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    12b9:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    12bf:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    12c5:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    12cb:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    12d1:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    12d7:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    12dd:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    12e3:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    12e9:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    12ef:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    128f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1292:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1298:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    129e:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    12a4:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    12aa:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    12b0:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    12b6:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    12bc:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    12c2:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    12c8:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    12ce:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    12d4:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    12da:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    12e0:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    12e6:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    12ec:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     12f2:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     12f8:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     12fe:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -871,23 +868,23 @@ Disassembly of section .data:
     1346:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     134c:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1352:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1358:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    135e:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1364:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    136a:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1370:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1376:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    137c:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1382:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1388:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    138e:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1394:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    139a:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    13a0:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    13a6:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    13ac:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    13b2:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    13b8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1358:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    135b:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1361:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1367:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    136d:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1373:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1379:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    137f:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1385:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    138b:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1391:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1397:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    139d:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    13a3:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    13a9:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    13af:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    13b5:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     13bb:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     13c1:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     13c7:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -905,23 +902,23 @@ Disassembly of section .data:
     140f:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1415:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     141b:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1421:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1427:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    142d:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1433:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1439:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    143f:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1445:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    144b:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1451:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1457:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    145d:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1463:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1469:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    146f:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1475:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    147b:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1481:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1421:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1424:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    142a:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1430:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1436:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    143c:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1442:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1448:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    144e:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    1454:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    145a:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1460:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1466:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    146c:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1472:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1478:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    147e:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1484:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     148a:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     1490:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -939,23 +936,23 @@ Disassembly of section .data:
     14d8:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     14de:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     14e4:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    14ea:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    14f0:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    14f6:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    14fc:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1502:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1508:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    150e:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1514:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    151a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1520:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1526:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    152c:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1532:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1538:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    153e:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1544:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    154a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    14ea:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    14ed:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    14f3:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    14f9:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    14ff:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1505:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    150b:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1511:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1517:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    151d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1523:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1529:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    152f:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1535:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    153b:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1541:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1547:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     154d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     1553:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     1559:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -973,23 +970,23 @@ Disassembly of section .data:
     15a1:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     15a7:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     15ad:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    15b3:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    15b9:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    15bf:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    15c5:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    15cb:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    15d1:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    15d7:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    15dd:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    15e3:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    15e9:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    15ef:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    15f5:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    15fb:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1601:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1607:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    160d:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1613:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    15b3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    15b6:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    15bc:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    15c2:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    15c8:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    15ce:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    15d4:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    15da:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    15e0:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    15e6:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    15ec:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    15f2:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    15f8:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    15fe:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1604:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    160a:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1610:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1616:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     161c:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     1622:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -1007,23 +1004,23 @@ Disassembly of section .data:
     166a:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1670:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1676:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    167c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1682:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1688:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    168e:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1694:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    169a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    16a0:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    16a6:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    16ac:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    16b2:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    16b8:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    16be:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    16c4:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    16ca:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    16d0:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    16d6:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    16dc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    167c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    167f:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1685:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    168b:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1691:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1697:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    169d:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    16a3:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    16a9:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    16af:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    16b5:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    16bb:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    16c1:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    16c7:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    16cd:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    16d3:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    16d9:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     16df:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     16e5:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     16eb:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -1041,23 +1038,23 @@ Disassembly of section .data:
     1733:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1739:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     173f:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1745:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    174b:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1751:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1757:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    175d:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1763:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1769:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    176f:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1775:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    177b:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1781:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1787:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    178d:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1793:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1799:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    179f:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    17a5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1745:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1748:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    174e:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1754:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    175a:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1760:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1766:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    176c:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1772:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    1778:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    177e:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1784:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    178a:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1790:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1796:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    179c:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    17a2:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     17a8:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     17ae:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     17b4:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -1075,23 +1072,23 @@ Disassembly of section .data:
     17fc:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1802:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1808:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    180e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1814:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    181a:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1820:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1826:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    182c:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1832:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1838:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    183e:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1844:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    184a:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1850:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1856:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    185c:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1862:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1868:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    186e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    180e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    1811:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1817:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    181d:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1823:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1829:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    182f:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1835:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    183b:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    1841:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1847:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    184d:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1853:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1859:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    185f:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1865:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    186b:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1871:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     1877:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     187d:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -1109,23 +1106,23 @@ Disassembly of section .data:
     18c5:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     18cb:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     18d1:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    18d7:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    18dd:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    18e3:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    18e9:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    18ef:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    18f5:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    18fb:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1901:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1907:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    190d:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1913:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1919:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    191f:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1925:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    192b:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1931:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1937:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    18d7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    18da:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    18e0:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    18e6:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    18ec:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    18f2:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    18f8:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    18fe:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1904:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    190a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1910:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1916:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    191c:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1922:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1928:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    192e:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1934:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     193a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     1940:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     1946:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -1143,23 +1140,23 @@ Disassembly of section .data:
     198e:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1994:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     199a:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    19a0:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    19a6:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    19ac:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    19b2:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    19b8:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    19be:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    19c4:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    19ca:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    19d0:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    19d6:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    19dc:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    19e2:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    19e8:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    19ee:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    19f4:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    19fa:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1a00:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    19a0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    19a3:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    19a9:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    19af:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    19b5:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    19bb:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    19c1:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    19c7:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    19cd:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    19d3:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    19d9:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    19df:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    19e5:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    19eb:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    19f1:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    19f7:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    19fd:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1a03:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     1a09:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     1a0f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -1177,23 +1174,23 @@ Disassembly of section .data:
     1a57:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1a5d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1a63:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1a69:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1a6f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1a75:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1a7b:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1a81:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1a87:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1a8d:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1a93:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1a99:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
-    1a9f:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
-    1aa5:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
-    1aab:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
-    1ab1:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
-    1ab7:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
-    1abd:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1ac3:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1ac9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1a69:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1a6c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1a72:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1a78:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1a7e:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1a84:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1a8a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1a90:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1a96:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
+    1a9c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
+    1aa2:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
+    1aa8:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
+    1aae:	62 f1 65 48 ef dc    	vpxord zmm3,zmm3,zmm4
+    1ab4:	62 f1 5d 48 ef e5    	vpxord zmm4,zmm4,zmm5
+    1aba:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
+    1ac0:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
+    1ac6:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
     1acc:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
     1ad2:	62 f1 75 48 ef ca    	vpxord zmm1,zmm1,zmm2
     1ad8:	62 f1 6d 48 ef d3    	vpxord zmm2,zmm2,zmm3
@@ -1210,18 +1207,18 @@ Disassembly of section .data:
     1b1a:	62 f1 55 48 ef ee    	vpxord zmm5,zmm5,zmm6
     1b20:	62 f1 4d 48 ef f7    	vpxord zmm6,zmm6,zmm7
     1b26:	62 f1 45 48 ef f8    	vpxord zmm7,zmm7,zmm0
-    1b2c:	62 f1 7d 48 ef c1    	vpxord zmm0,zmm0,zmm1
-    1b32:	83 e8 01             	sub    eax,0x1
-    1b35:	0f 85 45 e5 ff ff    	jne    0x80
-    1b3b:	66 90                	xchg   ax,ax
-    1b3d:	66 90                	xchg   ax,ax
-    1b3f:	66 90                	xchg   ax,ax
-    1b41:	66 90                	xchg   ax,ax
-    1b43:	66 90                	xchg   ax,ax
-    1b45:	66 90                	xchg   ax,ax
-    1b47:	66 90                	xchg   ax,ax
-    1b49:	66 90                	xchg   ax,ax
-    1b4b:	48 83 c4 40          	add    rsp,0x40
+    1b2c:	4d 01 c1             	add    r9,r8
+    1b2f:	83 e8 01             	sub    eax,0x1
+    1b32:	0f 85 48 e5 ff ff    	jne    0x80
+    1b38:	66 90                	xchg   ax,ax
+    1b3a:	66 90                	xchg   ax,ax
+    1b3c:	66 90                	xchg   ax,ax
+    1b3e:	66 90                	xchg   ax,ax
+    1b40:	66 90                	xchg   ax,ax
+    1b42:	66 90                	xchg   ax,ax
+    1b44:	66 90                	xchg   ax,ax
+    1b46:	66 90                	xchg   ax,ax
+    1b48:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
     1b4f:	41 59                	pop    r9
     1b51:	41 58                	pop    r8
     1b53:	5f                   	pop    rdi

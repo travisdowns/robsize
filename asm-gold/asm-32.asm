@@ -19,30 +19,27 @@ Disassembly of section .data:
   13:	57                   	push   rdi
   14:	41 50                	push   r8
   16:	41 51                	push   r9
-  18:	48 83 ec 40          	sub    rsp,0x40
-  1c:	45 31 c0             	xor    r8d,r8d
-  1f:	4c 8d 0c 24          	lea    r9,[rsp]
-  23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2a:	7f 00 00 
-  2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  34:	7f 00 00 
-  37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-  3e:	00 00 00 
-  41:	48 83 eb 00          	sub    rbx,0x0
-  45:	48 83 ed 00          	sub    rbp,0x0
-  49:	48 83 ee 00          	sub    rsi,0x0
-  4d:	48 83 ef 00          	sub    rdi,0x0
-  51:	49 83 e8 00          	sub    r8,0x0
-  55:	49 83 e9 00          	sub    r9,0x0
-  59:	49 83 ea 00          	sub    r10,0x0
-  5d:	49 83 eb 00          	sub    r11,0x0
-  61:	49 83 ec 00          	sub    r12,0x0
-  65:	49 83 ed 00          	sub    r13,0x0
-  69:	49 83 ee 00          	sub    r14,0x0
-  6d:	49 83 ef 00          	sub    r15,0x0
-  71:	90                   	nop
-  72:	90                   	nop
-  73:	90                   	nop
+  18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+  2d:	7f 00 00 
+  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+  37:	7f 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
   74:	90                   	nop
   75:	90                   	nop
   76:	90                   	nop
@@ -55,7 +52,7 @@ Disassembly of section .data:
   7d:	90                   	nop
   7e:	90                   	nop
   7f:	90                   	nop
-  80:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
   83:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   86:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   89:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -71,7 +68,7 @@ Disassembly of section .data:
   a7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   aa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   ad:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
-  b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  b0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   b3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   b6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   b9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -87,7 +84,7 @@ Disassembly of section .data:
   d7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   da:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   dd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
-  e0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+  e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   e6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
   e9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -103,7 +100,7 @@ Disassembly of section .data:
  107:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  10a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  10d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 110:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 110:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  113:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  116:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  119:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -119,7 +116,7 @@ Disassembly of section .data:
  137:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  13a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  13d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 140:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 140:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  143:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  146:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  149:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -135,7 +132,7 @@ Disassembly of section .data:
  167:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  16a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  16d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 170:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 170:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  173:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  176:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  179:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -151,7 +148,7 @@ Disassembly of section .data:
  197:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  19a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  19d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 1a0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 1a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1a3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1a6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1a9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -167,7 +164,7 @@ Disassembly of section .data:
  1c7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1ca:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1cd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 1d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1d0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1d3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1d6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1d9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -183,7 +180,7 @@ Disassembly of section .data:
  1f7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1fa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  1fd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 200:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 200:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  203:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  206:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  209:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -199,7 +196,7 @@ Disassembly of section .data:
  227:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  22a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  22d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 230:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 230:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  233:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  236:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  239:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -215,7 +212,7 @@ Disassembly of section .data:
  257:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  25a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  25d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 260:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 260:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  263:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  266:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  269:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -231,7 +228,7 @@ Disassembly of section .data:
  287:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  28a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  28d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 290:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 290:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  293:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  296:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  299:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -247,7 +244,7 @@ Disassembly of section .data:
  2b7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2ba:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2bd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 2c0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 2c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  2c3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2c6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2c9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -263,7 +260,7 @@ Disassembly of section .data:
  2e7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2ea:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2ed:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 2f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2f0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2f3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2f6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  2f9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -279,7 +276,7 @@ Disassembly of section .data:
  317:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  31a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  31d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 320:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 320:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  323:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  326:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  329:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -295,7 +292,7 @@ Disassembly of section .data:
  347:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  34a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  34d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 350:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 350:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  353:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  356:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  359:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -311,7 +308,7 @@ Disassembly of section .data:
  377:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  37a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  37d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 380:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 380:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  383:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  386:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  389:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -327,7 +324,7 @@ Disassembly of section .data:
  3a7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3aa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3ad:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3b0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3b3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3b6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3b9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -343,7 +340,7 @@ Disassembly of section .data:
  3d7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3da:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3dd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 3e0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 3e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  3e3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3e6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  3e9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -359,7 +356,7 @@ Disassembly of section .data:
  407:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  40a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  40d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 410:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 410:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  413:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  416:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  419:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -375,7 +372,7 @@ Disassembly of section .data:
  437:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  43a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  43d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 440:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 440:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  443:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  446:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  449:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -391,7 +388,7 @@ Disassembly of section .data:
  467:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  46a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  46d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 470:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 470:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  473:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  476:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  479:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -407,7 +404,7 @@ Disassembly of section .data:
  497:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  49a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  49d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 4a0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 4a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4a3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4a6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4a9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -423,7 +420,7 @@ Disassembly of section .data:
  4c7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4ca:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4cd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 4d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4d0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4d3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4d6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4d9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -439,7 +436,7 @@ Disassembly of section .data:
  4f7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4fa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  4fd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 500:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 500:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  503:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  506:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  509:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -455,7 +452,7 @@ Disassembly of section .data:
  527:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  52a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  52d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 530:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 530:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  533:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  536:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  539:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -471,7 +468,7 @@ Disassembly of section .data:
  557:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  55a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  55d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 560:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 560:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  563:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  566:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  569:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -487,7 +484,7 @@ Disassembly of section .data:
  587:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  58a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  58d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 590:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 590:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  593:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  596:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  599:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -503,7 +500,7 @@ Disassembly of section .data:
  5b7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5ba:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5bd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 5c0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 5c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  5c3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5c6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5c9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -519,7 +516,7 @@ Disassembly of section .data:
  5e7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5ea:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5ed:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 5f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 5f0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5f3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5f6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  5f9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -535,7 +532,7 @@ Disassembly of section .data:
  617:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  61a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  61d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 620:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 620:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  623:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  626:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  629:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -551,7 +548,7 @@ Disassembly of section .data:
  647:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  64a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  64d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 650:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 650:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  653:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  656:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  659:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -567,7 +564,7 @@ Disassembly of section .data:
  677:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  67a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  67d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 680:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 680:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  683:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  686:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  689:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -583,7 +580,7 @@ Disassembly of section .data:
  6a7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6aa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6ad:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 6b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6b0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6b3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6b6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6b9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -599,7 +596,7 @@ Disassembly of section .data:
  6d7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6da:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6dd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 6e0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 6e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  6e3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6e6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  6e9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -615,7 +612,7 @@ Disassembly of section .data:
  707:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  70a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  70d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 710:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 710:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  713:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  716:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  719:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -631,7 +628,7 @@ Disassembly of section .data:
  737:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  73a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  73d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 740:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 740:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  743:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  746:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  749:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -647,7 +644,7 @@ Disassembly of section .data:
  767:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  76a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  76d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 770:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 770:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  773:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  776:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  779:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -663,7 +660,7 @@ Disassembly of section .data:
  797:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  79a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  79d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 7a0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 7a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  7a3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7a6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7a9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -679,7 +676,7 @@ Disassembly of section .data:
  7c7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7ca:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7cd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 7d0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 7d0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7d3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7d6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7d9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -695,7 +692,7 @@ Disassembly of section .data:
  7f7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7fa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  7fd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 800:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 800:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  803:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  806:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  809:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -711,7 +708,7 @@ Disassembly of section .data:
  827:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  82a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  82d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 830:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 830:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  833:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  836:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  839:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -727,7 +724,7 @@ Disassembly of section .data:
  857:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  85a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  85d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 860:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 860:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  863:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  866:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  869:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -743,7 +740,7 @@ Disassembly of section .data:
  887:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  88a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  88d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 890:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 890:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  893:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  896:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  899:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -759,7 +756,7 @@ Disassembly of section .data:
  8b7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8ba:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8bd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 8c0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  8c3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8c6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8c9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -775,7 +772,7 @@ Disassembly of section .data:
  8e7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8ea:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8ed:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 8f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8f0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8f3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8f6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  8f9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -791,7 +788,7 @@ Disassembly of section .data:
  917:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  91a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  91d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 920:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 920:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  923:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  926:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  929:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -807,7 +804,7 @@ Disassembly of section .data:
  947:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  94a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  94d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 950:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 950:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  953:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  956:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  959:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -823,7 +820,7 @@ Disassembly of section .data:
  977:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  97a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  97d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 980:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 980:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  983:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  986:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  989:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -839,7 +836,7 @@ Disassembly of section .data:
  9a7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9aa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9ad:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 9b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 9b0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9b3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9b6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9b9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -855,7 +852,7 @@ Disassembly of section .data:
  9d7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9da:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9dd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- 9e0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ 9e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  9e3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9e6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  9e9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -871,7 +868,7 @@ Disassembly of section .data:
  a07:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a0a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a0d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- a10:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a10:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a13:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a16:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a19:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -887,7 +884,7 @@ Disassembly of section .data:
  a37:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a3a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a3d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- a40:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ a40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  a43:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a46:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a49:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -903,7 +900,7 @@ Disassembly of section .data:
  a67:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a6a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a6d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- a70:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a70:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a73:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a76:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a79:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -919,7 +916,7 @@ Disassembly of section .data:
  a97:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a9a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  a9d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- aa0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ aa0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  aa3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  aa6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  aa9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -935,7 +932,7 @@ Disassembly of section .data:
  ac7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  aca:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  acd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- ad0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ ad0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  ad3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  ad6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  ad9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -951,7 +948,7 @@ Disassembly of section .data:
  af7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  afa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  afd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- b00:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ b00:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  b03:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b06:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b09:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -967,7 +964,7 @@ Disassembly of section .data:
  b27:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b2a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b2d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- b30:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ b30:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b33:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b36:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b39:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -983,7 +980,7 @@ Disassembly of section .data:
  b57:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b5a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b5d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- b60:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ b60:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  b63:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b66:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b69:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -999,7 +996,7 @@ Disassembly of section .data:
  b87:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b8a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b8d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- b90:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b90:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b93:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b96:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  b99:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1015,7 +1012,7 @@ Disassembly of section .data:
  bb7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bba:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bbd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- bc0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ bc0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  bc3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bc6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bc9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1031,7 +1028,7 @@ Disassembly of section .data:
  be7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bea:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bed:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- bf0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bf0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bf3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bf6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  bf9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1047,7 +1044,7 @@ Disassembly of section .data:
  c17:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c1a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c1d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- c20:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ c20:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  c23:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c26:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c29:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1063,7 +1060,7 @@ Disassembly of section .data:
  c47:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c4a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c4d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- c50:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c50:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c53:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c56:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c59:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1079,7 +1076,7 @@ Disassembly of section .data:
  c77:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c7a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c7d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- c80:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ c80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  c83:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c86:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  c89:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1095,7 +1092,7 @@ Disassembly of section .data:
  ca7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  caa:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  cad:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- cb0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ cb0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  cb3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  cb6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  cb9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1111,7 +1108,7 @@ Disassembly of section .data:
  cd7:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  cda:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  cdd:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- ce0:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
+ ce0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  ce3:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  ce6:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  ce9:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1127,7 +1124,7 @@ Disassembly of section .data:
  d07:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d0a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d0d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- d10:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ d10:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d13:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d16:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d19:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
@@ -1143,22 +1140,23 @@ Disassembly of section .data:
  d37:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d3a:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
  d3d:	8b 1c 24             	mov    ebx,DWORD PTR [rsp]
- d40:	83 e8 01             	sub    eax,0x1
- d43:	0f 85 37 f3 ff ff    	jne    0x80
- d49:	66 90                	xchg   ax,ax
- d4b:	66 90                	xchg   ax,ax
- d4d:	66 90                	xchg   ax,ax
- d4f:	66 90                	xchg   ax,ax
- d51:	66 90                	xchg   ax,ax
- d53:	66 90                	xchg   ax,ax
- d55:	66 90                	xchg   ax,ax
- d57:	66 90                	xchg   ax,ax
- d59:	48 83 c4 40          	add    rsp,0x40
- d5d:	41 59                	pop    r9
- d5f:	41 58                	pop    r8
- d61:	5f                   	pop    rdi
- d62:	5e                   	pop    rsi
- d63:	5d                   	pop    rbp
- d64:	5b                   	pop    rbx
- d65:	0f 77                	emms   
- d67:	c3                   	ret    
+ d40:	4d 01 c1             	add    r9,r8
+ d43:	83 e8 01             	sub    eax,0x1
+ d46:	0f 85 34 f3 ff ff    	jne    0x80
+ d4c:	66 90                	xchg   ax,ax
+ d4e:	66 90                	xchg   ax,ax
+ d50:	66 90                	xchg   ax,ax
+ d52:	66 90                	xchg   ax,ax
+ d54:	66 90                	xchg   ax,ax
+ d56:	66 90                	xchg   ax,ax
+ d58:	66 90                	xchg   ax,ax
+ d5a:	66 90                	xchg   ax,ax
+ d5c:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+ d63:	41 59                	pop    r9
+ d65:	41 58                	pop    r8
+ d67:	5f                   	pop    rdi
+ d68:	5e                   	pop    rsi
+ d69:	5d                   	pop    rbp
+ d6a:	5b                   	pop    rbx
+ d6b:	0f 77                	emms   
+ d6d:	c3                   	ret    

@@ -19,46 +19,43 @@ Disassembly of section .data:
       13:	57                   	push   rdi
       14:	41 50                	push   r8
       16:	41 51                	push   r9
-      18:	48 83 ec 40          	sub    rsp,0x40
-      1c:	45 31 c0             	xor    r8d,r8d
-      1f:	4c 8d 0c 24          	lea    r9,[rsp]
-      23:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-      2a:	7f 00 00 
-      2d:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-      34:	7f 00 00 
-      37:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-      3e:	00 00 00 
-      41:	48 83 eb 00          	sub    rbx,0x0
-      45:	48 83 ed 00          	sub    rbp,0x0
-      49:	48 83 ee 00          	sub    rsi,0x0
-      4d:	48 83 ef 00          	sub    rdi,0x0
-      51:	49 83 e8 00          	sub    r8,0x0
-      55:	49 83 e9 00          	sub    r9,0x0
-      59:	49 83 ea 00          	sub    r10,0x0
-      5d:	49 83 eb 00          	sub    r11,0x0
-      61:	49 83 ec 00          	sub    r12,0x0
-      65:	49 83 ed 00          	sub    r13,0x0
-      69:	49 83 ee 00          	sub    r14,0x0
-      6d:	49 83 ef 00          	sub    r15,0x0
-      71:	c5 fc c2 c0 00       	vcmpeqps ymm0,ymm0,ymm0
-      76:	c5 3c c2 c0 00       	vcmpeqps ymm8,ymm8,ymm0
-      7b:	c5 f4 c2 c9 00       	vcmpeqps ymm1,ymm1,ymm1
-      80:	c5 34 c2 c9 00       	vcmpeqps ymm9,ymm9,ymm1
-      85:	c5 ec c2 d2 00       	vcmpeqps ymm2,ymm2,ymm2
-      8a:	c5 2c c2 d2 00       	vcmpeqps ymm10,ymm10,ymm2
-      8f:	c5 e4 c2 db 00       	vcmpeqps ymm3,ymm3,ymm3
-      94:	c5 24 c2 db 00       	vcmpeqps ymm11,ymm11,ymm3
-      99:	c5 dc c2 e4 00       	vcmpeqps ymm4,ymm4,ymm4
-      9e:	c5 1c c2 e4 00       	vcmpeqps ymm12,ymm12,ymm4
-      a3:	c5 d4 c2 ed 00       	vcmpeqps ymm5,ymm5,ymm5
-      a8:	c5 14 c2 ed 00       	vcmpeqps ymm13,ymm13,ymm5
-      ad:	c5 cc c2 f6 00       	vcmpeqps ymm6,ymm6,ymm6
-      b2:	c5 0c c2 f6 00       	vcmpeqps ymm14,ymm14,ymm6
-      b7:	c5 c4 c2 ff 00       	vcmpeqps ymm7,ymm7,ymm7
-      bc:	c5 04 c2 ff 00       	vcmpeqps ymm15,ymm15,ymm7
-      c1:	90                   	nop
-      c2:	90                   	nop
-      c3:	90                   	nop
+      18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+      1f:	45 31 c0             	xor    r8d,r8d
+      22:	4c 8d 0c 24          	lea    r9,[rsp]
+      26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
+      2d:	7f 00 00 
+      30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
+      37:	7f 00 00 
+      3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+      41:	00 00 00 
+      44:	48 83 eb 00          	sub    rbx,0x0
+      48:	48 83 ed 00          	sub    rbp,0x0
+      4c:	48 83 ee 00          	sub    rsi,0x0
+      50:	48 83 ef 00          	sub    rdi,0x0
+      54:	49 83 e8 00          	sub    r8,0x0
+      58:	49 83 e9 00          	sub    r9,0x0
+      5c:	49 83 ea 00          	sub    r10,0x0
+      60:	49 83 eb 00          	sub    r11,0x0
+      64:	49 83 ec 00          	sub    r12,0x0
+      68:	49 83 ed 00          	sub    r13,0x0
+      6c:	49 83 ee 00          	sub    r14,0x0
+      70:	49 83 ef 00          	sub    r15,0x0
+      74:	c5 fc c2 c0 00       	vcmpeqps ymm0,ymm0,ymm0
+      79:	c5 3c c2 c0 00       	vcmpeqps ymm8,ymm8,ymm0
+      7e:	c5 f4 c2 c9 00       	vcmpeqps ymm1,ymm1,ymm1
+      83:	c5 34 c2 c9 00       	vcmpeqps ymm9,ymm9,ymm1
+      88:	c5 ec c2 d2 00       	vcmpeqps ymm2,ymm2,ymm2
+      8d:	c5 2c c2 d2 00       	vcmpeqps ymm10,ymm10,ymm2
+      92:	c5 e4 c2 db 00       	vcmpeqps ymm3,ymm3,ymm3
+      97:	c5 24 c2 db 00       	vcmpeqps ymm11,ymm11,ymm3
+      9c:	c5 dc c2 e4 00       	vcmpeqps ymm4,ymm4,ymm4
+      a1:	c5 1c c2 e4 00       	vcmpeqps ymm12,ymm12,ymm4
+      a6:	c5 d4 c2 ed 00       	vcmpeqps ymm5,ymm5,ymm5
+      ab:	c5 14 c2 ed 00       	vcmpeqps ymm13,ymm13,ymm5
+      b0:	c5 cc c2 f6 00       	vcmpeqps ymm6,ymm6,ymm6
+      b5:	c5 0c c2 f6 00       	vcmpeqps ymm14,ymm14,ymm6
+      ba:	c5 c4 c2 ff 00       	vcmpeqps ymm7,ymm7,ymm7
+      bf:	c5 04 c2 ff 00       	vcmpeqps ymm15,ymm15,ymm7
       c4:	90                   	nop
       c5:	90                   	nop
       c6:	90                   	nop
@@ -71,23 +68,23 @@ Disassembly of section .data:
       cd:	90                   	nop
       ce:	90                   	nop
       cf:	90                   	nop
-      d0:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-      d4:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-      d8:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-      dc:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-      e0:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-      e4:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-      e8:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-      ec:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-      f0:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-      f4:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-      f8:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-      fc:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     100:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     104:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     108:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     10c:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     110:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+      d0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+      d3:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+      d7:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+      db:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+      df:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+      e3:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+      e7:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+      eb:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+      ef:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+      f3:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+      f7:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+      fb:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+      ff:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     103:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     107:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     10b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     10f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      113:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      117:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      11b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -105,23 +102,23 @@ Disassembly of section .data:
      14b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      14f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      153:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     157:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     15b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     15f:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     163:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     167:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     16b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     16f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     173:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     177:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     17b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     17f:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     183:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     187:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     18b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     18f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     193:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     197:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     157:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     15a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     15e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     162:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     166:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     16a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     16e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     172:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     176:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     17a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     17e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     182:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     186:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     18a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     18e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     192:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     196:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      19a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      19e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      1a2:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -139,23 +136,23 @@ Disassembly of section .data:
      1d2:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      1d6:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      1da:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     1de:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     1e2:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     1e6:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     1ea:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     1ee:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     1f2:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     1f6:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     1fa:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     1fe:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     202:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     206:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     20a:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     20e:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     212:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     216:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     21a:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     21e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     1de:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     1e1:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     1e5:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     1e9:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     1ed:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     1f1:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     1f5:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     1f9:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     1fd:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     201:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     205:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     209:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     20d:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     211:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     215:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     219:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     21d:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      221:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      225:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      229:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -173,23 +170,23 @@ Disassembly of section .data:
      259:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      25d:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      261:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     265:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     269:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     26d:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     271:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     275:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     279:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     27d:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     281:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     285:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     289:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     28d:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     291:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     295:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     299:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     29d:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     2a1:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     2a5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     265:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     268:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     26c:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     270:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     274:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     278:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     27c:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     280:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     284:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     288:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     28c:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     290:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     294:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     298:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     29c:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     2a0:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     2a4:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      2a8:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      2ac:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      2b0:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -207,23 +204,23 @@ Disassembly of section .data:
      2e0:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      2e4:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      2e8:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     2ec:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     2f0:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     2f4:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     2f8:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     2fc:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     300:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     304:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     308:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     30c:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     310:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     314:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     318:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     31c:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     320:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     324:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     328:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     32c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     2ec:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     2ef:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     2f3:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     2f7:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     2fb:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     2ff:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     303:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     307:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     30b:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     30f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     313:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     317:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     31b:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     31f:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     323:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     327:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     32b:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      32f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      333:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      337:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -241,23 +238,23 @@ Disassembly of section .data:
      367:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      36b:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      36f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     373:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     377:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     37b:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     37f:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     383:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     387:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     38b:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     38f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     393:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     397:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     39b:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     39f:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     3a3:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     3a7:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     3ab:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     3af:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     3b3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     373:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     376:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     37a:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     37e:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     382:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     386:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     38a:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     38e:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     392:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     396:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     39a:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     39e:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     3a2:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     3a6:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     3aa:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     3ae:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     3b2:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      3b6:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      3ba:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      3be:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -275,23 +272,23 @@ Disassembly of section .data:
      3ee:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      3f2:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      3f6:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     3fa:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     3fe:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     402:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     406:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     40a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     40e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     412:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     416:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     41a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     41e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     422:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     426:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     42a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     42e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     432:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     436:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     43a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     3fa:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     3fd:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     401:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     405:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     409:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     40d:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     411:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     415:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     419:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     41d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     421:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     425:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     429:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     42d:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     431:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     435:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     439:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      43d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      441:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      445:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -309,23 +306,23 @@ Disassembly of section .data:
      475:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      479:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      47d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     481:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     485:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     489:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     48d:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     491:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     495:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     499:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     49d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     4a1:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     4a5:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     4a9:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     4ad:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     4b1:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     4b5:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     4b9:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     4bd:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     4c1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     481:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     484:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     488:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     48c:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     490:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     494:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     498:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     49c:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     4a0:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     4a4:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     4a8:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     4ac:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     4b0:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     4b4:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     4b8:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     4bc:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     4c0:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      4c4:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      4c8:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      4cc:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -343,23 +340,23 @@ Disassembly of section .data:
      4fc:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      500:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      504:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     508:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     50c:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     510:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     514:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     518:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     51c:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     520:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     524:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     528:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     52c:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     530:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     534:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     538:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     53c:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     540:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     544:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     548:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     508:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     50b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     50f:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     513:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     517:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     51b:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     51f:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     523:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     527:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     52b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     52f:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     533:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     537:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     53b:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     53f:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     543:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     547:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      54b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      54f:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      553:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -377,23 +374,23 @@ Disassembly of section .data:
      583:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      587:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      58b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     58f:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     593:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     597:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     59b:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     59f:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     5a3:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     5a7:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     5ab:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     5af:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     5b3:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     5b7:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     5bb:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     5bf:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     5c3:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     5c7:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     5cb:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     5cf:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     58f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     592:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     596:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     59a:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     59e:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     5a2:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     5a6:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     5aa:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     5ae:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     5b2:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     5b6:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     5ba:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     5be:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     5c2:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     5c6:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     5ca:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     5ce:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      5d2:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      5d6:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      5da:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -411,23 +408,23 @@ Disassembly of section .data:
      60a:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      60e:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      612:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     616:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     61a:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     61e:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     622:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     626:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     62a:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     62e:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     632:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     636:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     63a:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     63e:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     642:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     646:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     64a:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     64e:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     652:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     656:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     616:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     619:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     61d:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     621:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     625:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     629:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     62d:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     631:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     635:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     639:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     63d:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     641:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     645:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     649:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     64d:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     651:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     655:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      659:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      65d:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      661:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -445,23 +442,23 @@ Disassembly of section .data:
      691:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      695:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      699:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     69d:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     6a1:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     6a5:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     6a9:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     6ad:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     6b1:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     6b5:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     6b9:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     6bd:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     6c1:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     6c5:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     6c9:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     6cd:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     6d1:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     6d5:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     6d9:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     6dd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     69d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     6a0:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     6a4:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     6a8:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     6ac:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     6b0:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     6b4:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     6b8:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     6bc:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     6c0:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     6c4:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     6c8:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     6cc:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     6d0:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     6d4:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     6d8:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     6dc:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      6e0:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      6e4:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      6e8:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -479,23 +476,23 @@ Disassembly of section .data:
      718:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      71c:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      720:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     724:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     728:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     72c:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     730:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     734:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     738:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     73c:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     740:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     744:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     748:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     74c:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     750:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     754:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     758:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     75c:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     760:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     764:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     724:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     727:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     72b:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     72f:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     733:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     737:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     73b:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     73f:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     743:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     747:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     74b:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     74f:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     753:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     757:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     75b:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     75f:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     763:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      767:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      76b:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      76f:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -513,23 +510,23 @@ Disassembly of section .data:
      79f:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      7a3:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      7a7:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     7ab:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     7af:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     7b3:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     7b7:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     7bb:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     7bf:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     7c3:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     7c7:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     7cb:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     7cf:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     7d3:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     7d7:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     7db:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     7df:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     7e3:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     7e7:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     7eb:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     7ab:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     7ae:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     7b2:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     7b6:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     7ba:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     7be:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     7c2:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     7c6:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     7ca:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     7ce:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     7d2:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     7d6:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     7da:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     7de:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     7e2:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     7e6:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     7ea:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      7ee:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      7f2:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      7f6:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -547,23 +544,23 @@ Disassembly of section .data:
      826:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      82a:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      82e:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     832:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     836:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     83a:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     83e:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     842:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     846:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     84a:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     84e:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     852:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     856:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     85a:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     85e:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     862:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     866:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     86a:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     86e:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     872:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     832:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     835:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     839:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     83d:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     841:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     845:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     849:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     84d:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     851:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     855:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     859:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     85d:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     861:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     865:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     869:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     86d:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     871:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      875:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      879:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      87d:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -581,23 +578,23 @@ Disassembly of section .data:
      8ad:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      8b1:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      8b5:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     8b9:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     8bd:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     8c1:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     8c5:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     8c9:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     8cd:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     8d1:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     8d5:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     8d9:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     8dd:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     8e1:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     8e5:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     8e9:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     8ed:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     8f1:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     8f5:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     8f9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     8b9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     8bc:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     8c0:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     8c4:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     8c8:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     8cc:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     8d0:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     8d4:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     8d8:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     8dc:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     8e0:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     8e4:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     8e8:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     8ec:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     8f0:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     8f4:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     8f8:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      8fc:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      900:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      904:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -615,23 +612,23 @@ Disassembly of section .data:
      934:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      938:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      93c:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     940:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     944:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     948:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     94c:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     950:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     954:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     958:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     95c:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     960:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     964:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     968:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     96c:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     970:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     974:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     978:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     97c:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     980:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     940:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     943:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     947:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     94b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     94f:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     953:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     957:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     95b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     95f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     963:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     967:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     96b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     96f:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     973:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     977:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     97b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     97f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      983:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      987:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      98b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -649,23 +646,23 @@ Disassembly of section .data:
      9bb:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      9bf:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      9c3:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     9c7:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     9cb:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     9cf:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     9d3:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     9d7:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     9db:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     9df:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     9e3:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     9e7:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     9eb:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     9ef:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     9f3:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     9f7:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     9fb:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     9ff:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     a03:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     a07:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     9c7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     9ca:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     9ce:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     9d2:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     9d6:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     9da:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     9de:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     9e2:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     9e6:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     9ea:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     9ee:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     9f2:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     9f6:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     9fa:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     9fe:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     a02:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     a06:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      a0a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      a0e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      a12:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -683,23 +680,23 @@ Disassembly of section .data:
      a42:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      a46:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      a4a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     a4e:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     a52:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     a56:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     a5a:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     a5e:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     a62:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     a66:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     a6a:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     a6e:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     a72:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     a76:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     a7a:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     a7e:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     a82:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     a86:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     a8a:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     a8e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     a4e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     a51:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     a55:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     a59:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     a5d:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     a61:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     a65:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     a69:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     a6d:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     a71:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     a75:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     a79:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     a7d:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     a81:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     a85:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     a89:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     a8d:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      a91:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      a95:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      a99:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -717,23 +714,23 @@ Disassembly of section .data:
      ac9:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      acd:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      ad1:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     ad5:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     ad9:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     add:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     ae1:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     ae5:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     ae9:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     aed:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     af1:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     af5:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     af9:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     afd:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     b01:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     b05:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     b09:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     b0d:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     b11:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     b15:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     ad5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     ad8:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     adc:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     ae0:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     ae4:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     ae8:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     aec:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     af0:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     af4:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     af8:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     afc:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     b00:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     b04:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     b08:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     b0c:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     b10:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     b14:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      b18:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      b1c:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      b20:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -751,23 +748,23 @@ Disassembly of section .data:
      b50:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      b54:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      b58:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     b5c:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     b60:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     b64:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     b68:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     b6c:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     b70:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     b74:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     b78:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     b7c:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     b80:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     b84:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     b88:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     b8c:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     b90:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     b94:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     b98:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     b9c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     b5c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     b5f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     b63:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     b67:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     b6b:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     b6f:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     b73:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     b77:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     b7b:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     b7f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     b83:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     b87:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     b8b:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     b8f:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     b93:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     b97:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     b9b:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      b9f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      ba3:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      ba7:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -785,23 +782,23 @@ Disassembly of section .data:
      bd7:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      bdb:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      bdf:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     be3:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     be7:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     beb:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     bef:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     bf3:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     bf7:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     bfb:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     bff:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     c03:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     c07:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     c0b:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     c0f:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     c13:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     c17:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     c1b:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     c1f:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     c23:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     be3:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     be6:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     bea:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     bee:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     bf2:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     bf6:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     bfa:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     bfe:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     c02:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     c06:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     c0a:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     c0e:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     c12:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     c16:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     c1a:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     c1e:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     c22:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      c26:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      c2a:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      c2e:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -819,23 +816,23 @@ Disassembly of section .data:
      c5e:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      c62:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      c66:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     c6a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     c6e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     c72:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     c76:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     c7a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     c7e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     c82:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     c86:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     c8a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     c8e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     c92:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     c96:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     c9a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     c9e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     ca2:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     ca6:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     caa:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     c6a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     c6d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     c71:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     c75:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     c79:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     c7d:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     c81:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     c85:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     c89:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     c8d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     c91:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     c95:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     c99:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     c9d:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     ca1:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     ca5:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     ca9:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      cad:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      cb1:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      cb5:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -853,23 +850,23 @@ Disassembly of section .data:
      ce5:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      ce9:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      ced:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     cf1:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     cf5:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     cf9:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     cfd:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     d01:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     d05:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     d09:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     d0d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     d11:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     d15:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     d19:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     d1d:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     d21:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     d25:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     d29:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     d2d:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     d31:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     cf1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     cf4:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     cf8:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     cfc:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     d00:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     d04:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     d08:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     d0c:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     d10:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     d14:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     d18:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     d1c:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     d20:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     d24:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     d28:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     d2c:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     d30:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      d34:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      d38:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      d3c:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -887,23 +884,23 @@ Disassembly of section .data:
      d6c:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      d70:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      d74:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     d78:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     d7c:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     d80:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     d84:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     d88:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     d8c:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     d90:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     d94:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     d98:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     d9c:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     da0:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     da4:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     da8:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     dac:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     db0:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     db4:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     db8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     d78:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     d7b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     d7f:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     d83:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     d87:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     d8b:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     d8f:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     d93:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     d97:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     d9b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     d9f:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     da3:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     da7:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     dab:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     daf:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     db3:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     db7:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      dbb:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      dbf:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      dc3:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -921,23 +918,23 @@ Disassembly of section .data:
      df3:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      df7:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      dfb:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     dff:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     e03:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     e07:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     e0b:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     e0f:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     e13:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     e17:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     e1b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     e1f:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     e23:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     e27:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     e2b:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     e2f:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     e33:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     e37:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     e3b:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     e3f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     dff:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     e02:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     e06:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     e0a:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     e0e:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     e12:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     e16:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     e1a:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     e1e:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     e22:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     e26:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     e2a:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     e2e:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     e32:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     e36:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     e3a:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     e3e:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      e42:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      e46:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      e4a:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -955,23 +952,23 @@ Disassembly of section .data:
      e7a:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      e7e:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      e82:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     e86:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     e8a:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     e8e:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     e92:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     e96:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     e9a:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     e9e:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     ea2:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     ea6:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     eaa:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     eae:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     eb2:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     eb6:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     eba:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     ebe:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     ec2:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     ec6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     e86:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     e89:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     e8d:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     e91:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     e95:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     e99:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     e9d:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     ea1:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     ea5:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     ea9:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     ead:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     eb1:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     eb5:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     eb9:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     ebd:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     ec1:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     ec5:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      ec9:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      ecd:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      ed1:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -989,23 +986,23 @@ Disassembly of section .data:
      f01:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      f05:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      f09:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     f0d:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     f11:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     f15:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     f19:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     f1d:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     f21:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     f25:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     f29:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     f2d:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     f31:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     f35:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     f39:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     f3d:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     f41:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     f45:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     f49:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     f4d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     f0d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+     f10:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     f14:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     f18:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     f1c:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     f20:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     f24:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     f28:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     f2c:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     f30:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     f34:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     f38:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     f3c:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     f40:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     f44:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     f48:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     f4c:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      f50:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      f54:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      f58:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -1023,23 +1020,23 @@ Disassembly of section .data:
      f88:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
      f8c:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      f90:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     f94:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     f98:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     f9c:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     fa0:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     fa4:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     fa8:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     fac:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     fb0:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     fb4:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-     fb8:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-     fbc:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-     fc0:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-     fc4:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-     fc8:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-     fcc:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-     fd0:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-     fd4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     f94:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+     f97:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     f9b:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     f9f:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     fa3:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     fa7:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     fab:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     faf:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     fb3:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+     fb7:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+     fbb:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+     fbf:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+     fc3:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+     fc7:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+     fcb:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+     fcf:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+     fd3:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
      fd7:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
      fdb:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
      fdf:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -1057,23 +1054,23 @@ Disassembly of section .data:
     100f:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
     1013:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     1017:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    101b:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    101f:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    1023:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    1027:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    102b:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    102f:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    1033:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    1037:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    103b:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    103f:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    1043:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    1047:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    104b:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    104f:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    1053:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    1057:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    105b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    101b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    101e:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    1022:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    1026:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    102a:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    102e:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    1032:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    1036:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    103a:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+    103e:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    1042:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    1046:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    104a:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    104e:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    1052:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    1056:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    105a:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     105e:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
     1062:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
     1066:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -1091,23 +1088,23 @@ Disassembly of section .data:
     1096:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
     109a:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     109e:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    10a2:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    10a6:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    10aa:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    10ae:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    10b2:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    10b6:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    10ba:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    10be:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    10c2:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    10c6:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    10ca:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    10ce:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    10d2:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    10d6:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    10da:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    10de:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    10e2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    10a2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    10a5:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    10a9:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    10ad:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    10b1:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    10b5:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    10b9:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    10bd:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    10c1:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+    10c5:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    10c9:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    10cd:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    10d1:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    10d5:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    10d9:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    10dd:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    10e1:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     10e5:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
     10e9:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
     10ed:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -1125,23 +1122,23 @@ Disassembly of section .data:
     111d:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
     1121:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     1125:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    1129:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    112d:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    1131:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    1135:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    1139:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    113d:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    1141:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    1145:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    1149:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    114d:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    1151:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    1155:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    1159:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    115d:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    1161:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    1165:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    1169:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1129:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    112c:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    1130:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    1134:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    1138:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    113c:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    1140:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    1144:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    1148:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+    114c:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    1150:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    1154:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    1158:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    115c:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    1160:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    1164:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    1168:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     116c:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
     1170:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
     1174:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -1159,23 +1156,23 @@ Disassembly of section .data:
     11a4:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
     11a8:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     11ac:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    11b0:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    11b4:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    11b8:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    11bc:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    11c0:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    11c4:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    11c8:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    11cc:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    11d0:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    11d4:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    11d8:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    11dc:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    11e0:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    11e4:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    11e8:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    11ec:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    11f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    11b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+    11b3:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    11b7:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    11bb:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    11bf:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    11c3:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    11c7:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    11cb:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    11cf:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+    11d3:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    11d7:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    11db:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    11df:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    11e3:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    11e7:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    11eb:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    11ef:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     11f3:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
     11f7:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
     11fb:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -1193,23 +1190,23 @@ Disassembly of section .data:
     122b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
     122f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     1233:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    1237:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    123b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    123f:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    1243:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    1247:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    124b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    124f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    1253:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    1257:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
-    125b:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
-    125f:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
-    1263:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
-    1267:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
-    126b:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
-    126f:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    1273:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    1277:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1237:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    123a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    123e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    1242:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    1246:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    124a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    124e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    1252:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    1256:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
+    125a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
+    125e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
+    1262:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
+    1266:	c5 e4 57 db          	vxorps ymm3,ymm3,ymm3
+    126a:	c5 dc 57 e4          	vxorps ymm4,ymm4,ymm4
+    126e:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
+    1272:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
+    1276:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
     127a:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
     127e:	c5 f4 57 c9          	vxorps ymm1,ymm1,ymm1
     1282:	c5 ec 57 d2          	vxorps ymm2,ymm2,ymm2
@@ -1226,23 +1223,23 @@ Disassembly of section .data:
     12ae:	c5 d4 57 ed          	vxorps ymm5,ymm5,ymm5
     12b2:	c5 cc 57 f6          	vxorps ymm6,ymm6,ymm6
     12b6:	c5 c4 57 ff          	vxorps ymm7,ymm7,ymm7
-    12ba:	c5 fc 57 c0          	vxorps ymm0,ymm0,ymm0
-    12be:	83 e8 01             	sub    eax,0x1
-    12c1:	0f 85 09 ee ff ff    	jne    0xd0
-    12c7:	66 90                	xchg   ax,ax
-    12c9:	66 90                	xchg   ax,ax
-    12cb:	66 90                	xchg   ax,ax
-    12cd:	66 90                	xchg   ax,ax
-    12cf:	66 90                	xchg   ax,ax
-    12d1:	66 90                	xchg   ax,ax
-    12d3:	66 90                	xchg   ax,ax
-    12d5:	66 90                	xchg   ax,ax
-    12d7:	48 83 c4 40          	add    rsp,0x40
-    12db:	41 59                	pop    r9
-    12dd:	41 58                	pop    r8
-    12df:	5f                   	pop    rdi
-    12e0:	5e                   	pop    rsi
-    12e1:	5d                   	pop    rbp
-    12e2:	5b                   	pop    rbx
-    12e3:	0f 77                	emms   
-    12e5:	c3                   	ret    
+    12ba:	4d 01 c1             	add    r9,r8
+    12bd:	83 e8 01             	sub    eax,0x1
+    12c0:	0f 85 0a ee ff ff    	jne    0xd0
+    12c6:	66 90                	xchg   ax,ax
+    12c8:	66 90                	xchg   ax,ax
+    12ca:	66 90                	xchg   ax,ax
+    12cc:	66 90                	xchg   ax,ax
+    12ce:	66 90                	xchg   ax,ax
+    12d0:	66 90                	xchg   ax,ax
+    12d2:	66 90                	xchg   ax,ax
+    12d4:	66 90                	xchg   ax,ax
+    12d6:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    12dd:	41 59                	pop    r9
+    12df:	41 58                	pop    r8
+    12e1:	5f                   	pop    rdi
+    12e2:	5e                   	pop    rsi
+    12e3:	5d                   	pop    rbp
+    12e4:	5b                   	pop    rbx
+    12e5:	0f 77                	emms   
+    12e7:	c3                   	ret    
