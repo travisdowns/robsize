@@ -162,7 +162,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
         case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
         case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
         case 34:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;
-        case 35:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k * 2); break;
+        case 35:  ADD_BYTE(0x41); ADD_BYTE(0x02); ADD_BYTE(0x99); ADD_DWORD(k * 2); break;
     }
 
     return pbuf;
