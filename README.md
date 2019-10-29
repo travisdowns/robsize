@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/travisdowns/robsize.svg?branch=master)](https://travis-ci.org/travisdowns/robsize)
+
 This is an updated copy of the [ROB](https://en.wikipedia.org/wiki/Re-order_buffer) size testing tool described by [Henry Wong on his blog](http://blog.stuffedcow.net/2013/05/measuring-rob-capacity) and reproduced here with permission. It can be used to measure the size of not only the ROB, but various other microarchitectural buffer sizes, such as the load and store buffers, the GP, vector and mask phystical register file sizes, and so on. It includes several additional tests beyond those used in the original blog post.
 
 Build it with `make` and run it like `./robsize ID` where `ID` is a test ID from 0 to 33 (run `./robsize --list` to show the available tests).
