@@ -7,12 +7,14 @@ There are a few options that you can see with `./robsize --help`:
 ```
 Usage: robsize [TEST_ID] [OPTIONS]
 
-	--csv      	Output in csv format suitable for plotting
-	--slow     	Run more iterations making the test slower but potentiallly more accurate
-	--fast     	Run fewer iterations making the test faster but potentiallly less accurate
-	--superfast	Run at ludicrous speed which is even less accurate than --fast
-	--write-asm	Print the raw generated instructions to a file and quit
-	--list     	List the available tests and their IDs
+	--csv      	  Output in csv format suitable for plotting
+	--slow     	  Run more iterations making the test slower but potentiallly more accurate
+	--fast     	  Run fewer iterations making the test faster but potentiallly less accurate
+	--superfast	  Run at ludicrous speed which is even less accurate than --fast
+	--write-asm	  Print the raw generated instructions to a file and quit
+	--list     	  List the available tests and their IDs
+	--start=START Use START to specify the initial value of filler instruction count (Default = 16)
+	--stop=STOP   Use STOP to specify the maximum value of filler instruction count (Default = 256)
 ```
 
 ## Interesting Tests
