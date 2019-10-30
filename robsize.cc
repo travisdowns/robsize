@@ -5,14 +5,15 @@
   2014-10-14
 */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <assert.h>
+#include <getopt.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <sys/mman.h>
 #include <unistd.h>
-#include <assert.h>
 
 #define ADD_BYTE(val) do{ibuf[pbuf] = (val); pbuf++;} while(0)
 #define ADD_WORD(val) do{*(unsigned short*)(&ibuf[pbuf]) = (val); pbuf+=2;} while(0)
@@ -416,42 +417,64 @@ void print_tests() {
     }
 }
 
-/** handle the arguments, return true if everything OK */
-bool handle_args(int argc, const char *argv[]) {
-    int firstopt = 2;
-    if (argc >= 2) {
-        if (sscanf(argv[1], "%d", &instr_type) == 0) {
-            firstopt = 1;
-        }
-    }
-    for (int i = firstopt; i < argc; i++)
-    {
-        if (!strcmp(argv[i], "--fast")) {
-            its >>=2;
-            outer_its >>=2;
-        } else if (!strcmp(argv[i], "--help")) {
-            print_usage();
-            exit(EXIT_SUCCESS);
-        } else if (!strcmp(argv[i], "--list")) {
-            print_tests();
-            exit(EXIT_SUCCESS);
-        } else if (!strcmp(argv[i], "--csv")) {
-            plot_mode = true;
-        } else if (!strcmp(argv[i], "--slow")) {
-            outer_its <<=1;
-        } else if (!strcmp(argv[i], "--superfast")) {
-            its >>=4;
-            outer_its >>=3;
-        } else if (!strcmp(argv[i], "--write-asm")) {
-            // print the generated instructions to a file and quit
-            print_ibuf = true;
-        } else {
-            fprintf(stderr, "Uncognized argument: %s\n", argv[i]);
-            return false;
+/* Command line options for getopt_long() */
+static struct option long_options[] = {
+    {"help",       no_argument, NULL, 'h'},
+    {"list",       no_argument, NULL, 'h'},
+    {"csv",        no_argument, NULL, 'c'},
+    {"write-asm",  no_argument, NULL, 'w'},
+    {"slow",       no_argument, NULL, 's'},
+    {"fast",       no_argument, NULL, 'f'},
+    {"superfast",  no_argument, NULL, 'g'},
+    {0, 0, 0, 0}
+};
+
+void handle_args(int argc, char *argv[]) {
+    int optval = 0;
+    int opt_idx = 0;
+    while ((optval = getopt_long(argc, argv, "", long_options, &opt_idx)) >= 0) {
+        switch (optval) {
+            case 'h': /* help */
+                print_usage();
+                exit(EXIT_SUCCESS);
+                break;
+            case 'c': /* csv */
+                plot_mode = true;
+                break;
+            case 'w': /* write-asm */
+                print_ibuf = true;
+                break;
+            case 's': /* slow */
+                outer_its <<= 1;
+                break;
+            case 'f': /* fast */
+                its >>= 2;
+                outer_its >>= 2;
+                break;
+            case 'g': /* super-fast */
+                its >>= 4;
+                outer_its >>= 3;
+                break;
+            default:
+                print_usage();
+                exit(EXIT_FAILURE);
         }
     }
 
-    return true;
+    // At most one non-option argument is the positional arg for the test ID
+    // getopt moves this to the end, so we cannot sue argv[1] here!
+    if (optind < argc) {
+        optind += (sscanf(argv[optind], "%d", &instr_type) > 0);
+    }
+
+    // any other non-option arg is not recognized
+    if (optind < argc) {
+        for (int i = optind; i < argc; i++) {
+            fprintf(stderr, "Unrecognized argument: %s\n", argv[i]);
+        }
+        print_usage();
+        exit(EXIT_FAILURE);
+    }
 }
 
 int getenv_int(const char *var, int def) {
@@ -459,13 +482,9 @@ int getenv_int(const char *var, int def) {
     return val ? atoi(val) : def;
 }
 
-
-int main(int argc, const char *argv[])
+int main(int argc, char *argv[])
 {
-    if (!handle_args(argc, argv)) {
-        print_usage();
-        return EXIT_FAILURE;
-    }
+    handle_args(argc, argv);
 
     FILE *verbose_file = plot_mode ? stderr : stdout;
     fprintf(verbose_file, "Compiled %s %s\n", __DATE__, __TIME__);
