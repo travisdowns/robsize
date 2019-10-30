@@ -27,6 +27,8 @@ static int its = 8192;
 static const int unroll = 17;
 static bool print_ibuf;
 static bool plot_mode; // make csv output, extraneous output to stdout
+static int start_icount = 16;
+static int stop_icount = 256;
 
 enum FLAGS {
     // doesn't need compensation for the load op, i.e., it uses different
@@ -406,6 +408,8 @@ void print_usage() {
     "\t--superfast\tRun at ludicrous speed which is even less accurate than --fast\n"
     "\t--write-asm\tPrint the raw generated instructions to a file and quit\n"
     "\t--list     \tList the available tests and their IDs\n"
+    "\t--start    \t(int) Value to start filler instruction count at.\n"
+    "\t--stop     \t(int) Value to stop filler instruction count at.\n"
     );
 }
 
@@ -426,6 +430,8 @@ static struct option long_options[] = {
     {"slow",      no_argument, NULL, 's'},
     {"fast",      no_argument, NULL, 'f'},
     {"superfast", no_argument, NULL, 'g'},
+    {"start", required_argument, NULL, 'i'},
+    {"stop",  required_argument, NULL, 'j'},
     {0, 0, 0, 0}
 };
 
@@ -455,6 +461,20 @@ void handle_args(int argc, char *argv[]) {
                 its >>= 4;
                 outer_its >>= 3;
                 break;
+            case 'i': /* start */
+                if (sscanf(optarg, "%d", &start_icount) <= 0) {
+                    fprintf(stderr, "Unrecognized value for --start: %s\n",  optarg);
+                    print_usage();
+                    exit(EXIT_FAILURE);
+                }
+                break;
+            case 'j': /* stop */
+                if (sscanf(optarg, "%d", &stop_icount) <= 0) {
+                    fprintf(stderr, "Unrecognized value for --stop: %s\n",  optarg);
+                    print_usage();
+                    exit(EXIT_FAILURE);
+                }
+                break;
             default:
                 print_usage();
                 exit(EXIT_FAILURE);
@@ -470,18 +490,12 @@ void handle_args(int argc, char *argv[]) {
     // any other non-option arg is not recognized
     if (optind < argc) {
         for (int i = optind; i < argc; i++) {
-            printf ("Unrecognized argument: %s\n", argv[i]);
+            fprintf(stderr, "Unrecognized argument: %s\n", argv[i]);
         }
         print_usage();
         exit(EXIT_FAILURE);
     }
 }
-
-int getenv_int(const char *var, int def) {
-    const char *val = getenv(var);
-    return val ? atoi(val) : def;
-}
-
 
 int main(int argc, char *argv[])
 {
@@ -511,8 +525,6 @@ int main(int argc, char *argv[])
 
     // use 100 if we are printing the buffer because some things don't show up
     // until more instructions are used
-    int start_icount = getenv_int("START", print_ibuf ? 33 : 16);
-    int stop_icount  = getenv_int("STOP", 250);
     for (int icount = start_icount; icount < stop_icount; icount += 1)
     {
         make_routine(ibuf, dbuf, dbuf+((8388608+4096)/sizeof(void*)), icount, instr_type);
