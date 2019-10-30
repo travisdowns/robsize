@@ -424,7 +424,7 @@ void print_tests() {
 /* Command line options for getopt_long() */
 static struct option long_options[] = {
     {"help",       no_argument, NULL, 'h'},
-    {"list",       no_argument, NULL, 'h'},
+    {"list",       no_argument, NULL, 'l'},
     {"csv",        no_argument, NULL, 'c'},
     {"write-asm",  no_argument, NULL, 'w'},
     {"slow",       no_argument, NULL, 's'},
@@ -442,6 +442,10 @@ void handle_args(int argc, char *argv[]) {
         switch (optval) {
             case 'h': /* help */
                 print_usage();
+                exit(EXIT_SUCCESS);
+                break;
+            case 'l': /* list */
+                print_tests();
                 exit(EXIT_SUCCESS);
                 break;
             case 'c': /* csv */
