@@ -402,14 +402,14 @@ static int instr_type = 4;	// Default to two-byte nop
 
 void print_usage() {
     fprintf(stderr, "Usage: robsize [TEST_ID] [OPTIONS]\n\n"
-    "\t--csv      \tOutput in csv format suitable for plotting\n"
-    "\t--slow     \tRun more iterations making the test slower but potentiallly more accurate\n"
-    "\t--fast     \tRun fewer iterations making the test faster but potentiallly less accurate\n"
-    "\t--superfast\tRun at ludicrous speed which is even less accurate than --fast\n"
-    "\t--write-asm\tPrint the raw generated instructions to a file and quit\n"
-    "\t--list     \tList the available tests and their IDs\n"
-    "\t--start    \t(int) Value to start filler instruction count at.\n"
-    "\t--stop     \t(int) Value to stop filler instruction count at.\n"
+    "\t--csv        \tOutput in csv format suitable for plotting\n"
+    "\t--slow       \tRun more iterations making the test slower but potentiallly more accurate\n"
+    "\t--fast       \tRun fewer iterations making the test faster but potentiallly less accurate\n"
+    "\t--superfast  \tRun at ludicrous speed which is even less accurate than --fast\n"
+    "\t--write-asm  \tPrint the raw generated instructions to a file and quit\n"
+    "\t--list       \tList the available tests and their IDs\n"
+    "\t--start=START\tUse START to specify the initial value of filler instruction count (Default = 16)\n"
+    "\t--stop=STOP  \tUse STOP to specify the maximum value of filler instruction count (Default = 256)\n"
     );
 }
 
