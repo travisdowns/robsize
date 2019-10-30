@@ -426,7 +426,7 @@ static struct option long_options[] = {
     {"help",      no_argument, NULL, 'h'},
     {"list",      no_argument, NULL, 'h'},
     {"csv",       no_argument, NULL, 'c'},
-    {"wite-asm",  no_argument, NULL, 'w'},
+    {"write-asm",  no_argument, NULL, 'w'},
     {"slow",      no_argument, NULL, 's'},
     {"fast",      no_argument, NULL, 'f'},
     {"superfast", no_argument, NULL, 'g'},
