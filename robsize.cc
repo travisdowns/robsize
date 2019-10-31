@@ -5,14 +5,15 @@
   2014-10-14
 */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <assert.h>
+#include <getopt.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <sys/mman.h>
 #include <unistd.h>
-#include <assert.h>
 
 #define ADD_BYTE(val) do{ibuf[pbuf] = (val); pbuf++;} while(0)
 #define ADD_WORD(val) do{*(unsigned short*)(&ibuf[pbuf]) = (val); pbuf+=2;} while(0)
@@ -26,6 +27,8 @@ static int its = 8192;
 static const int unroll = 17;
 static bool print_ibuf;
 static bool plot_mode; // make csv output, extraneous output to stdout
+static int start_icount = 16;
+static int stop_icount = 256;
 
 enum FLAGS {
     // doesn't need compensation for the load op, i.e., it uses different
@@ -405,12 +408,14 @@ static int instr_type = 4;	// Default to two-byte nop
 
 void print_usage() {
     fprintf(stderr, "Usage: robsize [TEST_ID] [OPTIONS]\n\n"
-    "\t--csv      \tOutput in csv format suitable for plotting\n"
-    "\t--slow     \tRun more iterations making the test slower but potentiallly more accurate\n"
-    "\t--fast     \tRun fewer iterations making the test faster but potentiallly less accurate\n"
-    "\t--superfast\tRun at ludicrous speed which is even less accurate than --fast\n"
-    "\t--write-asm\tPrint the raw generated instructions to a file and quit\n"
-    "\t--list     \tList the available tests and their IDs\n"
+    "\t--csv        \tOutput in csv format suitable for plotting\n"
+    "\t--slow       \tRun more iterations making the test slower but potentiallly more accurate\n"
+    "\t--fast       \tRun fewer iterations making the test faster but potentiallly less accurate\n"
+    "\t--superfast  \tRun at ludicrous speed which is even less accurate than --fast\n"
+    "\t--write-asm  \tPrint the raw generated instructions to a file and quit\n"
+    "\t--list       \tList the available tests and their IDs\n"
+    "\t--start=START\tUse START to specify the initial value of filler instruction count (Default = 16)\n"
+    "\t--stop=STOP  \tUse STOP to specify the maximum value of filler instruction count (Default = 256)\n"
     );
 }
 
@@ -422,56 +427,89 @@ void print_tests() {
     }
 }
 
-/** handle the arguments, return true if everything OK */
-bool handle_args(int argc, const char *argv[]) {
-    int firstopt = 2;
-    if (argc >= 2) {
-        if (sscanf(argv[1], "%d", &instr_type) == 0) {
-            firstopt = 1;
+/* Command line options for getopt_long() */
+static struct option long_options[] = {
+    {"help",       no_argument, NULL, 'h'},
+    {"list",       no_argument, NULL, 'l'},
+    {"csv",        no_argument, NULL, 'c'},
+    {"write-asm",  no_argument, NULL, 'w'},
+    {"slow",       no_argument, NULL, 's'},
+    {"fast",       no_argument, NULL, 'f'},
+    {"superfast",  no_argument, NULL, 'g'},
+    {"start", required_argument, NULL, 'i'},
+    {"stop",  required_argument, NULL, 'j'},
+    {0, 0, 0, 0}
+};
+
+void handle_args(int argc, char *argv[]) {
+    int optval = 0;
+    int opt_idx = 0;
+    while ((optval = getopt_long(argc, argv, "", long_options, &opt_idx)) >= 0) {
+        switch (optval) {
+            case 'h': /* help */
+                print_usage();
+                exit(EXIT_SUCCESS);
+                break;
+            case 'l': /* list */
+                print_tests();
+                exit(EXIT_SUCCESS);
+                break;
+            case 'c': /* csv */
+                plot_mode = true;
+                break;
+            case 'w': /* write-asm */
+                print_ibuf = true;
+                break;
+            case 's': /* slow */
+                outer_its <<= 1;
+                break;
+            case 'f': /* fast */
+                its >>= 2;
+                outer_its >>= 2;
+                break;
+            case 'g': /* super-fast */
+                its >>= 4;
+                outer_its >>= 3;
+                break;
+            case 'i': /* start */
+                if (sscanf(optarg, "%d", &start_icount) <= 0) {
+                    fprintf(stderr, "Unrecognized value for --start: %s\n",  optarg);
+                    print_usage();
+                    exit(EXIT_FAILURE);
+                }
+                break;
+            case 'j': /* stop */
+                if (sscanf(optarg, "%d", &stop_icount) <= 0) {
+                    fprintf(stderr, "Unrecognized value for --stop: %s\n",  optarg);
+                    print_usage();
+                    exit(EXIT_FAILURE);
+                }
+                break;
+            default:
+                print_usage();
+                exit(EXIT_FAILURE);
         }
     }
-    for (int i = firstopt; i < argc; i++)
-    {
-        if (!strcmp(argv[i], "--fast")) {
-            its >>=2;
-            outer_its >>=2;
-        } else if (!strcmp(argv[i], "--help")) {
-            print_usage();
-            exit(EXIT_SUCCESS);
-        } else if (!strcmp(argv[i], "--list")) {
-            print_tests();
-            exit(EXIT_SUCCESS);
-        } else if (!strcmp(argv[i], "--csv")) {
-            plot_mode = true;
-        } else if (!strcmp(argv[i], "--slow")) {
-            outer_its <<=1;
-        } else if (!strcmp(argv[i], "--superfast")) {
-            its >>=4;
-            outer_its >>=3;
-        } else if (!strcmp(argv[i], "--write-asm")) {
-            // print the generated instructions to a file and quit
-            print_ibuf = true;
-        } else {
-            fprintf(stderr, "Uncognized argument: %s\n", argv[i]);
-            return false;
-        }
+
+    // At most one non-option argument is the positional arg for the test ID
+    // getopt moves this to the end, so we cannot sue argv[1] here!
+    if (optind < argc) {
+        optind += (sscanf(argv[optind], "%d", &instr_type) > 0);
     }
 
-    return true;
-}
-
-int getenv_int(const char *var, int def) {
-    const char *val = getenv(var);
-    return val ? atoi(val) : def;
-}
-
-
-int main(int argc, const char *argv[])
-{
-    if (!handle_args(argc, argv)) {
+    // any other non-option arg is not recognized
+    if (optind < argc) {
+        for (int i = optind; i < argc; i++) {
+            fprintf(stderr, "Unrecognized argument: %s\n", argv[i]);
+        }
         print_usage();
-        return EXIT_FAILURE;
+        exit(EXIT_FAILURE);
     }
+}
+
+int main(int argc, char *argv[])
+{
+    handle_args(argc, argv);
 
     FILE *verbose_file = plot_mode ? stderr : stdout;
     fprintf(verbose_file, "Compiled %s %s\n", __DATE__, __TIME__);
@@ -497,9 +535,7 @@ int main(int argc, const char *argv[])
 
     // use 100 if we are printing the buffer because some things don't show up
     // until more instructions are used
-    int start = getenv_int("START", print_ibuf ? 33 : 16);
-    int stop  = getenv_int("STOP", 250);
-    for (int icount = start; icount < stop; icount += 1)
+    for (int icount = start_icount; icount < stop_icount; icount += 1)
     {
         make_routine(ibuf, dbuf, dbuf+((8388608+4096)/sizeof(void*)), icount, instr_type);
         routine();
