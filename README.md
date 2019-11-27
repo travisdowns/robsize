@@ -45,12 +45,12 @@ These determine the load buffer (test 32) and store buffer (test 33) sizes respe
 
 ## Plotting
 
-You can plot the data for easy analysis using the included [plot-csv.py](plot-csv.py).
+You can plot the data for easy analysis using the included [scripts/plot-csv.py](scripts/plot-csv.py).
 
 For example, the following command (after almost 7 minutes, use `--fast` if you don't want to wait that long):
 
 ```
- ./robsize 32 --csv | head -n100 | ./plot-csv.py --xrotate=90 --tick-interval=4 --cols 1 2 --title="Load buffer analysis (SKL)"
+ ./robsize 32 --csv | head -n100 | scripts/plot-csv.py --xrotate=90 --tick-interval=4 --cols 1 2 --title="Load buffer analysis (SKL)"
  ```
 
  Generates this chart:
