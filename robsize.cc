@@ -27,6 +27,7 @@ static int its = 8192;
 static const int unroll = 17;
 static bool print_ibuf;
 static bool plot_mode; // make csv output, extraneous output to stdout
+static bool lfence_mode;
 static int start_icount = 16;
 static int stop_icount = 256;
 
@@ -313,18 +314,20 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
             ADD_BYTE(0x12);	//		... edx, [edx]
         }
 
-        // ADD_BYTE(0x0F); // lfence
-        // ADD_BYTE(0xAE);
-        // ADD_BYTE(0xE8);
-
-        // we also apply compensation on the last iteration, to allow for the
-        // sub instruction. In principle this is exact only for measuring the PRF
-        // size - for ROB size we should also compensate for the jump (unless macro
-        // fused), and for the load buffer we don't need compensation, unlike with
-        // the fencing loads, etc.
-        for (int j=0; j < adjusted_icount - (u == 0 && needs_comp); j++)
-        {
-            pbuf += add_filler(ibuf+pbuf, instr, j, k++);
+        if (lfence_mode) {
+            ADD_BYTE(0x0F); // lfence
+            ADD_BYTE(0xAE);
+            ADD_BYTE(0xE8);
+        } else {
+            // we also apply compensation on the last iteration, to allow for the
+            // sub instruction. In principle this is exact only for measuring the PRF
+            // size - for ROB size we should also compensate for the jump (unless macro
+            // fused), and for the load buffer we don't need compensation, unlike with
+            // the fencing loads, etc.
+            for (int j=0; j < adjusted_icount - (u == 0 && needs_comp); j++)
+            {
+                pbuf += add_filler(ibuf+pbuf, instr, j, k++);
+            }
         }
     }
 
@@ -409,6 +412,7 @@ static int instr_type = 4;	// Default to two-byte nop
 void print_usage() {
     fprintf(stderr, "Usage: robsize [TEST_ID] [OPTIONS]\n\n"
     "\t--csv        \tOutput in csv format suitable for plotting\n"
+    "\t--lfence     \tUse the lfence-based technique\n"
     "\t--slow       \tRun more iterations making the test slower but potentiallly more accurate\n"
     "\t--fast       \tRun fewer iterations making the test faster but potentiallly less accurate\n"
     "\t--superfast  \tRun at ludicrous speed which is even less accurate than --fast\n"
@@ -433,6 +437,7 @@ static struct option long_options[] = {
     {"list",       no_argument, NULL, 'l'},
     {"csv",        no_argument, NULL, 'c'},
     {"write-asm",  no_argument, NULL, 'w'},
+    {"lfence",     no_argument, NULL, 'e'},
     {"slow",       no_argument, NULL, 's'},
     {"fast",       no_argument, NULL, 'f'},
     {"superfast",  no_argument, NULL, 'g'},
@@ -459,6 +464,9 @@ void handle_args(int argc, char *argv[]) {
                 break;
             case 'w': /* write-asm */
                 print_ibuf = true;
+                break;
+            case 'e':
+                lfence_mode = true;
                 break;
             case 's': /* slow */
                 outer_its <<= 1;
