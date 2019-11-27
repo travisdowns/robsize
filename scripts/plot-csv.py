@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import matplotlib.pyplot as mpl
 import matplotlib.pyplot as plt
 import matplotlib.ticker as plticker
 import pandas as pd
@@ -48,12 +49,17 @@ p.add_argument('--suffix-names', help='Suffix each column name with the file it 
 # data manipulation
 p.add_argument('--jitter', help='Apply horizontal (x-axis) jitter of the given relative amount (default 0.1)',
     nargs='?', type=float, const=0.1)
+p.add_argument('--group', help='Group data by the first column, with new min/median/max columns with one row per group')
 
 # axis and line/point configuration
-p.add_argument('--ylim', help='Set the y axis limits explicitly (e.g., to cross at zero)', type=int, nargs='+')
+p.add_argument('--ylim', help='Set the y axis limits explicitly (e.g., to cross at zero)', type=float, nargs='+')
 p.add_argument('--xrotate', help='rotate the xlablels by this amount', default=0)
 p.add_argument('--tick-interval', help='use the given x-axis tick spacing (in x axis units)', type=int)
 p.add_argument('--marker', help='use the given marker', type=str)
+p.add_argument('--markersize', help='use the given marker', type=float)
+p.add_argument('--linewidth', help='use the given line width', type=float)
+p.add_argument('--tight', help='use tight_layout for less space around chart', action='store_true')
+
 
 # debugging
 p.add_argument('--verbose', '-v', help='enable verbose logging', action='store_true')
@@ -61,6 +67,13 @@ args = p.parse_args()
 
 vprint = print if args.verbose else lambda *a: None
 vprint("args = ", args)
+
+# fix various random seeds so we get reproducible plots
+# fix the mpl seed used to generate SVG IDs
+mpl.rcParams['svg.hashsalt'] = 'foobar'
+
+# numpy random seeds (used by e.g., jitter function below)
+np.random.seed(123)
 
 # if we are reading from stdin and stdin is a tty, print a warning since maybe the user just messed up
 # the arguments and otherwise we just appear to hang
@@ -112,27 +125,28 @@ def col_names_to_indices(requested, df):
 
 def extract_cols(cols, df, name):
     vprint(name, "axis columns: ", cols)
+    if (not cols): return None
     if (max(cols) >= len(df.columns)):
         print("Column", max(cols), "too large: input only has", len(df.columns), "columns", file=sys.stderr)
         exit(1)
+    # ensure xi is the first thing in the column list
+    if xi in cols: cols.remove(xi)
+    cols = [xi] + cols
+    vprint(name, " final columns: ", cols)
     pruned = df.iloc[:, cols]
     vprint("----- pruned ", name, " df -----\n", pruned.head(), "\n---------------------")
     return pruned
 
-df2 = extract_cols(args.cols2, df, "secondary") if args.cols2 else None
-
-cols = None
 
 if args.cols_by_name:
     cols = col_names_to_indices(args.cols_by_name, df)
-
-if args.cols:
+elif args.cols:
     cols = args.cols
+else:
+    cols = list(range(len(df.columns)))
 
-if cols:
-    if xi not in cols:
-        cols.insert(0, xi)
-    df = extract_cols(cols, df, "primary")
+df = extract_cols(cols, df, "primary")
+df2 = extract_cols(args.cols2, df, "secondary")
 
 if args.clabels:
     if len(df.columns) != len(args.clabels):
@@ -147,6 +161,21 @@ if True in dupes:
         df.columns[dupes].values.tolist(), file=sys.stderr)
     exit(1)
 
+# do grouping (feature not complete)
+if (args.group):
+    vprint("before grouping\n", df)
+
+    dfg = df.groupby(by=df.columns[0])
+
+    df = dfg.agg([min, pd.DataFrame.median, max])
+
+    vprint("agg\n---------------\n", df)
+
+    df.columns = [tup[0] + ' (' + tup[1] + ')' for tup in df.columns.values]
+    df.reset_index(inplace=True)
+
+    vprint("flat\n---------------\n", df)
+
 def jitter(arr, multiplier):
     stdev = multiplier*(max(arr)-min(arr))/len(arr)
     return arr if not len(arr) else arr + np.random.randn(len(arr)) * stdev
@@ -155,6 +184,9 @@ if args.jitter:
     df.iloc[:,xi] = jitter(df.iloc[:,xi], args.jitter)
 
 kwargs = {}
+
+if (args.linewidth):
+    kwargs["linewidth"] = args.linewidth
 
 if args.color_map:
     colors = []
@@ -169,13 +201,22 @@ if args.color_map:
     vprint("colors = ", colors)
     kwargs["color"] = colors
 
+if (args.scatter):
+    kwargs['linestyle'] = 'none'
+    kwargs['marker'] = args.marker if args.marker else '.'
+elif (args.marker):
+    kwargs['marker'] = args.marker
+
+if (args.markersize):
+    kwargs['markersize'] = args.markersize
+
 # set x labels to strings so we don't get a scatter plot, and
 # so the x labels are not themselves plotted
-if (args.scatter):
-    ax = df.plot.line(x=xi, title=args.title, figsize=(12,8), grid=True, linestyle='none', marker='.')
-else:
+#if (args.scatter):
+#    ax = df.plot.line(x=0, title=args.title, figsize=(12,8), grid=True, **kwargs)
+#else:
     # df.iloc[:,xi] = df.iloc[:,xi].apply(str)
-    ax = df.plot.line(x=xi, title=args.title, figsize=(12,8), grid=True, marker=args.marker)
+ax = df.plot.line(x=0, title=args.title, figsize=(12,8), grid=True, **kwargs)
 
 # this sets the ticks explicitly to one per x value, which means that
 # all x values will be shown, but the x-axis could be crowded if there
@@ -206,7 +247,10 @@ if args.ylim:
 
 # secondary axis handling
 if df2 is not None:
-    df2.plot(secondary_y=True, ax=ax, grid=True)
+    df2.plot(x=0, secondary_y=True, ax=ax, grid=True)
+
+if (args.tight):
+    plt.tight_layout()
 
 if (args.out):
     vprint("Saving figure to ", args.out, "...")
