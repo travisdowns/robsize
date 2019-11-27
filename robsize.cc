@@ -185,6 +185,15 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
 {
     assert(icount <= MAX_ICOUNT);
 
+    if (print_ibuf) {
+        // we are printing the ibug we just set the buffer pointers to arbitrary
+        // values 1 and 2, since the buffer will never be accessed and we don't
+        // want randomized buffer addresses showing up in the assembly since
+        // those lines would never never match
+        p1 = (void *)1;
+        p2 = (void *)2;
+    }
+
     const test_info* info = get_test(instr);
     if (!info) {
         printf("invalid test ID %d\n", instr);

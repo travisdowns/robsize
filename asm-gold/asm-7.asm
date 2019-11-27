@@ -22,10 +22,10 @@ Disassembly of section .data:
   18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
   1f:	45 31 c0             	xor    r8d,r8d
   22:	4c 8d 0c 24          	lea    r9,[rsp]
-  26:	48 b9 00 c0 a0 e7 ff 	movabs rcx,0x7fffe7a0c000
-  2d:	7f 00 00 
-  30:	48 ba 00 d0 20 e8 ff 	movabs rdx,0x7fffe820d000
-  37:	7f 00 00 
+  26:	48 b9 01 00 00 00 00 	movabs rcx,0x1
+  2d:	00 00 00 
+  30:	48 ba 02 00 00 00 00 	movabs rdx,0x2
+  37:	00 00 00 
   3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
   41:	00 00 00 
   44:	48 83 eb 00          	sub    rbx,0x0
