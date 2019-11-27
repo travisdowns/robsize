@@ -72,12 +72,13 @@ const test_info tests[] = {
     { NO_COMP, "vpxord zmmN, zmmN, zmmN+1" },
     { NO_COMP, "kaddd k1, k2, k3" },
     { NO_COMP, "kmovd k1, k2" },
-    { NO_COMP, "alternating kaddd k1, k2, k3 and add reg32, reg32" },
+    {       0, "alternating kaddd k1, k2, k3 and add reg32, reg32" },
     {       0, "mov regN, 0" },  // 30 "value matching" tests
     {       0, "mov regN, 1" },
     {       0, "loads: mov ebx, [rsp] (LB size)" },
     { NO_COMP, "stores: mov [rsp - 8], ebx (SB size)" },
     {       0, "loads: mov ebx, [r9 + N] (LB size)" },
+    {       0, "alternating kaddd k1, k2, k3 and vpxor ymmN,ymmN,ymmN+1" },
 };
 
 const int test_count = sizeof(tests) / sizeof(tests[0]);
@@ -165,6 +166,10 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
         case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
         case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
         case 34:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;  // ebx, DWORD PTR [r9 + K]
+        case 35:
+            if (i & 1) { ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); }
+            else       { ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); }
+            break;
     }
 
     return pbuf;
