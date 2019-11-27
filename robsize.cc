@@ -30,6 +30,7 @@ static bool plot_mode; // make csv output, extraneous output to stdout
 static bool lfence_mode;
 static int start_icount = 16;
 static int stop_icount = 256;
+static bool explicit_start;
 
 enum FLAGS {
     // doesn't need compensation for the load op, i.e., it uses different
@@ -490,6 +491,7 @@ void handle_args(int argc, char *argv[]) {
                     print_usage();
                     exit(EXIT_FAILURE);
                 }
+                explicit_start = true;
                 break;
             case 'j': /* stop */
                 if (sscanf(optarg, "%d", &stop_icount) <= 0) {
@@ -502,6 +504,11 @@ void handle_args(int argc, char *argv[]) {
                 print_usage();
                 exit(EXIT_FAILURE);
         }
+    }
+
+    if (!explicit_start && print_ibuf) {
+        // if we are printing the ASM, use 33 as our filler count, unless overridden
+        start_icount = 33;
     }
 
     // At most one non-option argument is the positional arg for the test ID
