@@ -1,3 +1,4 @@
 
 # because bash on WSL will barf if you try to use crlf line endings
-*.sh text eol=lf
+**/*.sh text eol=lf
+**/*.asm text eol=lf
