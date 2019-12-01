@@ -2,7 +2,7 @@
 
 set -e
 
-MAX_TEST=35
+MAX_TEST=$(./robsize --maxtest)
 
 OBJDUMP=(objdump -D -b binary -Mintel -mi386:x86-64)
 
@@ -25,7 +25,7 @@ fi
 mkdir -p asm-temp
 
 for i in $(seq 0 $MAX_TEST); do
-    echo "writing asm for test $i"
+    echo "writing asm for test $i of $MAX_TEST"
     ./robsize $i --write-asm
     ${OBJDUMP[@]} asm.bin > asm-temp/asm-$i.asm
     diff asm-gold/asm-$i.asm asm-temp/asm-$i.asm \

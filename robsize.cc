@@ -431,6 +431,7 @@ void print_usage() {
     "\t--slow       \tRun more iterations making the test slower but potentiallly more accurate\n"
     "\t--fast       \tRun fewer iterations making the test faster but potentiallly less accurate\n"
     "\t--superfast  \tRun at ludicrous speed which is even less accurate than --fast\n"
+    "\t--maxtest    \tOuput the maxium test number and quit, useful for scripts\n"
     "\t--write-asm  \tPrint the raw generated instructions to a file and quit\n"
     "\t--list       \tList the available tests and their IDs\n"
     "\t--start=START\tUse START to specify the initial value of filler instruction count (Default = 16)\n"
@@ -456,6 +457,7 @@ static struct option long_options[] = {
     {"slow",       no_argument, NULL, 's'},
     {"fast",       no_argument, NULL, 'f'},
     {"superfast",  no_argument, NULL, 'g'},
+    {"maxtest",  no_argument, NULL, 'm'},
     {"start", required_argument, NULL, 'i'},
     {"stop",  required_argument, NULL, 'j'},
     {0, 0, 0, 0}
@@ -494,6 +496,9 @@ void handle_args(int argc, char *argv[]) {
                 its >>= 4;
                 outer_its >>= 3;
                 break;
+            case 'm': /* maxtest */
+                printf("%d", test_count - 1);
+                exit(EXIT_SUCCESS);
             case 'i': /* start */
                 if (sscanf(optarg, "%d", &start_icount) <= 0) {
                     fprintf(stderr, "Unrecognized value for --start: %s\n",  optarg);
