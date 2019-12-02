@@ -19,8 +19,13 @@ mkdir -p $PLOTS_DIR
 echo "Plotting $(($MAX_TEST + 1)) results from $RESULTS_DIR and writing the results to $PLOTS_DIR"
 
 for i in $(seq 0 $MAX_TEST); do
-#    echo "writing asm for test $i of $MAX_TEST"
-    "$PLOTPY" "$RESULTS_DIR/results-$i.csv" --out "$PLOTS_DIR/plot-$i.svg"
+    INFILE=$RESULTS_DIR/results-$i.csv
+    if [ -s "$INFILE" ]; then
+        echo "Saving plot $i of $MAX_TEST to $PLOTS_DIR/plot-$i.svg"
+        "$PLOTPY" "$INFILE" --out "$PLOTS_DIR/plot-$i.svg"
+    else
+        echo "$INFILE didn't exist or was empty, skipping"
+    fi
 done
 
 echo "Complete!"
