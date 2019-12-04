@@ -20,11 +20,16 @@
 #define ADD_DWORD(val) do{*(unsigned int*)(&ibuf[pbuf]) = (val); pbuf+=4;} while(0)
 
 
-// global configuration
+// constant configuration
 static int its = 8192;
-
+/* maximum number of filler instructions supported */
+const int MAX_ICOUNT = 400;
 /* we repeat the load/payload pattern "unroll" times */
 static const int unroll = 17;
+/* stack space created for some tests which read/write the stack */
+const int STACK_SPACE = MAX_ICOUNT * unroll * 2 + 100; // 100 arbitrary magic number
+
+// runtime configuration
 static bool print_ibuf;
 static bool plot_mode; // make csv output, extraneous output to stdout
 static bool lfence_mode;
@@ -166,7 +171,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
         case 31:  ADD_BYTE(0xb8 | reg[i&3]); ADD_DWORD(0x1); break;	// mov (ebx, ebp, esi, edi), 1
         case 32:  ADD_BYTE(0x8b); ADD_BYTE(0x1c); ADD_BYTE(0x24); break;  // mov    ebx, [rsp]
         case 33:  ADD_BYTE(0x89); ADD_BYTE(0x5c); ADD_BYTE(0x24); ADD_BYTE(0xf8); break; // mov [rsp-0x8], ebx
-        case 34:  ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;  // ebx, DWORD PTR [r9 + K]
+        case 34:  assert(k + 4 <= STACK_SPACE); ADD_BYTE(0x41); ADD_BYTE(0x8B); ADD_BYTE(0x99); ADD_DWORD(k); break;  // ebx, DWORD PTR [r9 + K]
         case 35:
             if (i & 1) { ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); }
             else       { ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); }
@@ -176,7 +181,6 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
     return pbuf;
 }
 
-const int MAX_ICOUNT = 400;
 
 /**
  * icount - the number of instructions between loads
@@ -217,8 +221,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_WORD(0x5041);   // push r8
     ADD_WORD(0x5141);   // push r9
 
-    const int stack_space = MAX_ICOUNT * unroll;
-    ADD_BYTE(0x48); ADD_BYTE(0x81); ADD_BYTE(0xEC); ADD_DWORD(stack_space); // sub rsp, 64
+    ADD_BYTE(0x48); ADD_BYTE(0x81); ADD_BYTE(0xEC); ADD_DWORD(STACK_SPACE); // sub rsp, STACK_SPACE
 
     ADD_BYTE(0x45); ADD_BYTE(0x31); ADD_BYTE(0xC0); // xor r8d
     ADD_BYTE(0x4C); ADD_BYTE(0x8D); ADD_BYTE(0x0C); ADD_BYTE(0x24);  // lea r9
@@ -361,7 +364,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_DWORD(0x90669066);		// nop padding
     ADD_DWORD(0x90669066);		// nop padding
 
-    ADD_BYTE(0x48); ADD_BYTE(0x81); ADD_BYTE(0xC4); ADD_DWORD(stack_space); // add rsp, 64
+    ADD_BYTE(0x48); ADD_BYTE(0x81); ADD_BYTE(0xC4); ADD_DWORD(STACK_SPACE); // add rsp, 64
 
     ADD_WORD(0x5941);   // pop r9
     ADD_WORD(0x5841);   // pop r8
@@ -375,6 +378,7 @@ void make_routine(unsigned char* ibuf, void *p1, void *p2, const int icount, con
     ADD_BYTE(0xc3);	// c3 ret
 
     if (print_ibuf) {
+        printf("going to print asm");
         FILE *f = fopen("asm.bin", "w");
         if (!f) {
             fprintf(stdout, "Opening file asm.bin for write failed...\n");
@@ -531,6 +535,13 @@ void handle_args(int argc, char *argv[]) {
         optind += (sscanf(argv[optind], "%d", &instr_type) > 0);
     }
 
+    if (start_icount > stop_icount) {
+        fprintf(stderr, "--start (%d) value should be less than or equal to --stop value (%d)\n",
+                start_icount, stop_icount);
+        print_usage();
+        exit(EXIT_FAILURE);
+    }
+
     // any other non-option arg is not recognized
     if (optind < argc) {
         for (int i = optind; i < argc; i++) {
@@ -569,7 +580,7 @@ int main(int argc, char *argv[])
 
     // use 100 if we are printing the buffer because some things don't show up
     // until more instructions are used
-    for (int icount = start_icount; icount < stop_icount; icount += 1)
+    for (int icount = start_icount; icount <= stop_icount; icount += 1)
     {
         make_routine(ibuf, dbuf, dbuf+((8388608+4096)/sizeof(void*)), icount, instr_type);
         routine();
