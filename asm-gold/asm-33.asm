@@ -19,7 +19,7 @@ Disassembly of section .data:
       13:	57                   	push   rdi
       14:	41 50                	push   r8
       16:	41 51                	push   r9
-      18:	48 81 ec 90 1a 00 00 	sub    rsp,0x1a90
+      18:	48 81 ec 84 35 00 00 	sub    rsp,0x3584
       1f:	45 31 c0             	xor    r8d,r8d
       22:	4c 8d 0c 24          	lea    r9,[rsp]
       26:	48 b9 01 00 00 00 00 	movabs rcx,0x1
@@ -1217,7 +1217,7 @@ Disassembly of section .data:
     127d:	66 90                	xchg   ax,ax
     127f:	66 90                	xchg   ax,ax
     1281:	66 90                	xchg   ax,ax
-    1283:	48 81 c4 90 1a 00 00 	add    rsp,0x1a90
+    1283:	48 81 c4 84 35 00 00 	add    rsp,0x3584
     128a:	41 59                	pop    r9
     128c:	41 58                	pop    r8
     128e:	5f                   	pop    rdi
