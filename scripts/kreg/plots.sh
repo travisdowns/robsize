@@ -2,7 +2,7 @@
 set -e
 
 # https://stackoverflow.com/a/12694189
-SCRIPTDIR="${BASH_SOURCE%/*}"
+SCRIPTDIR="${BASH_SOURCE%/*}/.."
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 PLOTPY="$SCRIPTDIR/plot-csv.py"
@@ -28,9 +28,9 @@ function plot {
         --xrotate=90 --tick-interval=4 --cols 1 2 --marker . "${@:6}"
 }
 
-plot skx-27.csv ""        "Cycles" "Filler Instructions" "Test 27: Mask Register PRF Analysis (SKX)"
-plot skx-27.csv "skx-27-zoomed" "Cycles" "Filler Instructions" "Test 27: Zoomed (SKX)" --xlim 124 140 --tick-interval=1
-plot skx-29.csv ""        "Cycles" "Filler Instructions" "Test 29: Alternating Mask and Scalar Add (SKX)"
+plot skx-27.csv ""                      "Cycles" "Filler Instructions" "Test 27: Mask Register PRF Analysis (SKX)"
+plot skx-27.csv "skx-27-zoomed"         "Cycles" "Filler Instructions" "Test 27: Zoomed (SKX)" --xlim 124 140 --tick-interval=1
+plot skx-29.csv ""                      "Cycles" "Filler Instructions" "Test 29: Alternating Mask and Scalar Add (SKX)"
 plot "skx-4.csv skx-29.csv" "skx-4-29"  "Cycles" "Filler Instructions" "Test 4 vs 29" --cols 1 5 --clabels "x,Test 4,Test 29"
 plot "skx-4.csv skx-21.csv" "skx-4-21"  "Cycles" "Filler Instructions" "Test 4 vs 21" --cols 1 5 --clabels "x,Test 4,Test 21"
 plot skx-35.csv ""                      "Cycles" "Filler Instructions" "Test 35: Alternating Mask Add and SIMD Xor (SKX)"
