@@ -53,6 +53,7 @@ p.add_argument('--group', help='Group data by the first column, with new min/med
 
 # axis and line/point configuration
 p.add_argument('--ylim', help='Set the y axis limits explicitly (e.g., to cross at zero)', type=float, nargs='+')
+p.add_argument('--xlim', help='Set the x axis limits explicitly', type=float, nargs='+')
 p.add_argument('--xrotate', help='rotate the xlablels by this amount', default=0)
 p.add_argument('--tick-interval', help='use the given x-axis tick spacing (in x axis units)', type=int)
 p.add_argument('--marker', help='use the given marker', type=str)
@@ -244,6 +245,14 @@ if args.ylim:
         ax.set_ylim(args.ylim[0], args.ylim[1])
     else:
         sys.exit('provide one or two args to --ylim')
+
+if args.xlim:
+    if (len(args.xlim) == 1):
+        ax.set_xlim(args.xlim[0])
+    elif (len(args.xlim) == 2):
+        ax.set_xlim(args.xlim[0], args.xlim[1])
+    else:
+        sys.exit('provide one or two args to --xlim')
 
 # secondary axis handling
 if df2 is not None:
