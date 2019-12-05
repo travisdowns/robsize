@@ -19,6 +19,16 @@ Usage: robsize [TEST_ID] [OPTIONS]
 	--stop=STOP   Use STOP to specify the maximum value of filler instruction count (Default = 256)
 ```
 
+## Supported Platforms
+
+### Operating Systems
+
+This should run fine on any modern Linux, including [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about).
+
+### Hardware
+
+Some tests require AVX, AVX2 or AVX-512, which should mostly be obvious from the description in `robsize --list`. There is no checking whether the current hardware supports the needed ISA, running those specific tests on hardware that doesn't support it will simply crash with an Illegal Instruction fault (pull requests welcome).
+
 ## Interesting Tests
 
 There are currently 27 different tests, so here I'll quickly note which are the most interesting for determining the main parameters of your system.
