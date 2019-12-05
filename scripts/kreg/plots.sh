@@ -14,6 +14,7 @@ function plot {
     if [ -z "$OUTDIR" ]; then
         local OUT=()
     else
+        mkdir -p "$OUTDIR"
         if [ -z "$2" ]; then
             local OUTNAME=${1%.*}$2.svg
         else
