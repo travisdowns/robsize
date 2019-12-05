@@ -12,7 +12,7 @@ mkdir -p "$RESULTDIR"
 
 echo "Collecting data and writing to $RESULTDIR/$PREFIX-*.csv"
 
-for t in 20 21 28 29 35; do
+for t in 21 28 29 35; do
     ./robsize $t --csv --lfence "$@" > "$RESULTDIR/$PREFIX-$t.csv"
 done
 
