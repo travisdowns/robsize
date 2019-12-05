@@ -2,11 +2,11 @@
 set -e
 
 # https://stackoverflow.com/a/12694189
-SCRIPTDIR="${BASH_SOURCE%/*}/.."
+SCRIPTDIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
-PLOTPY="$SCRIPTDIR/plot-csv.py"
-RESULTDIR="$SCRIPTDIR/../results"
+PLOTPY="$SCRIPTDIR/../plot-csv.py"
+RESULTDIR="$SCRIPTDIR/results"
 
 function plot {
     input=( $1 )
