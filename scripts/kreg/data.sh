@@ -17,5 +17,5 @@ for t in 21 28 29 35; do
 done
 
 for t in 0 4; do
-    ./robsize $t --csv > "$@" "$RESULTDIR/$PREFIX-$t.csv"
+    ./robsize $t --csv > "$@" > "$RESULTDIR/$PREFIX-$t.csv"
 done
