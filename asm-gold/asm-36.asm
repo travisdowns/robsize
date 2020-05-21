@@ -84,111 +84,111 @@ Disassembly of section .data:
   d7:	0f ef e4             	pxor   mm4,mm4
   da:	0f ef ed             	pxor   mm5,mm5
   dd:	0f ef f6             	pxor   mm6,mm6
-  e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  e0:	0f ef ff             	pxor   mm7,mm7
   e3:	0f ef c0             	pxor   mm0,mm0
-  e6:	0f ef c9             	pxor   mm1,mm1
-  e9:	0f ef d2             	pxor   mm2,mm2
-  ec:	0f ef db             	pxor   mm3,mm3
-  ef:	0f ef e4             	pxor   mm4,mm4
-  f2:	0f ef ed             	pxor   mm5,mm5
-  f5:	0f ef f6             	pxor   mm6,mm6
-  f8:	0f ef ff             	pxor   mm7,mm7
-  fb:	0f ef c0             	pxor   mm0,mm0
-  fe:	0f ef c9             	pxor   mm1,mm1
- 101:	0f ef d2             	pxor   mm2,mm2
- 104:	0f ef db             	pxor   mm3,mm3
- 107:	0f ef e4             	pxor   mm4,mm4
- 10a:	0f ef ed             	pxor   mm5,mm5
- 10d:	0f ef f6             	pxor   mm6,mm6
- 110:	0f ef ff             	pxor   mm7,mm7
- 113:	0f ef c0             	pxor   mm0,mm0
- 116:	0f ef c9             	pxor   mm1,mm1
- 119:	0f ef d2             	pxor   mm2,mm2
- 11c:	0f ef db             	pxor   mm3,mm3
- 11f:	0f ef e4             	pxor   mm4,mm4
- 122:	0f ef ed             	pxor   mm5,mm5
- 125:	0f ef f6             	pxor   mm6,mm6
- 128:	0f ef ff             	pxor   mm7,mm7
- 12b:	0f ef c0             	pxor   mm0,mm0
- 12e:	0f ef c9             	pxor   mm1,mm1
- 131:	0f ef d2             	pxor   mm2,mm2
- 134:	0f ef db             	pxor   mm3,mm3
- 137:	0f ef e4             	pxor   mm4,mm4
- 13a:	0f ef ed             	pxor   mm5,mm5
- 13d:	0f ef f6             	pxor   mm6,mm6
- 140:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 143:	0f ef c0             	pxor   mm0,mm0
- 146:	0f ef c9             	pxor   mm1,mm1
- 149:	0f ef d2             	pxor   mm2,mm2
- 14c:	0f ef db             	pxor   mm3,mm3
- 14f:	0f ef e4             	pxor   mm4,mm4
- 152:	0f ef ed             	pxor   mm5,mm5
- 155:	0f ef f6             	pxor   mm6,mm6
- 158:	0f ef ff             	pxor   mm7,mm7
- 15b:	0f ef c0             	pxor   mm0,mm0
- 15e:	0f ef c9             	pxor   mm1,mm1
- 161:	0f ef d2             	pxor   mm2,mm2
- 164:	0f ef db             	pxor   mm3,mm3
- 167:	0f ef e4             	pxor   mm4,mm4
- 16a:	0f ef ed             	pxor   mm5,mm5
- 16d:	0f ef f6             	pxor   mm6,mm6
- 170:	0f ef ff             	pxor   mm7,mm7
- 173:	0f ef c0             	pxor   mm0,mm0
- 176:	0f ef c9             	pxor   mm1,mm1
- 179:	0f ef d2             	pxor   mm2,mm2
- 17c:	0f ef db             	pxor   mm3,mm3
- 17f:	0f ef e4             	pxor   mm4,mm4
- 182:	0f ef ed             	pxor   mm5,mm5
- 185:	0f ef f6             	pxor   mm6,mm6
- 188:	0f ef ff             	pxor   mm7,mm7
- 18b:	0f ef c0             	pxor   mm0,mm0
- 18e:	0f ef c9             	pxor   mm1,mm1
- 191:	0f ef d2             	pxor   mm2,mm2
- 194:	0f ef db             	pxor   mm3,mm3
- 197:	0f ef e4             	pxor   mm4,mm4
- 19a:	0f ef ed             	pxor   mm5,mm5
- 19d:	0f ef f6             	pxor   mm6,mm6
- 1a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 1a3:	0f ef c0             	pxor   mm0,mm0
- 1a6:	0f ef c9             	pxor   mm1,mm1
- 1a9:	0f ef d2             	pxor   mm2,mm2
- 1ac:	0f ef db             	pxor   mm3,mm3
- 1af:	0f ef e4             	pxor   mm4,mm4
- 1b2:	0f ef ed             	pxor   mm5,mm5
- 1b5:	0f ef f6             	pxor   mm6,mm6
- 1b8:	0f ef ff             	pxor   mm7,mm7
- 1bb:	0f ef c0             	pxor   mm0,mm0
- 1be:	0f ef c9             	pxor   mm1,mm1
- 1c1:	0f ef d2             	pxor   mm2,mm2
- 1c4:	0f ef db             	pxor   mm3,mm3
- 1c7:	0f ef e4             	pxor   mm4,mm4
- 1ca:	0f ef ed             	pxor   mm5,mm5
- 1cd:	0f ef f6             	pxor   mm6,mm6
- 1d0:	0f ef ff             	pxor   mm7,mm7
- 1d3:	0f ef c0             	pxor   mm0,mm0
- 1d6:	0f ef c9             	pxor   mm1,mm1
- 1d9:	0f ef d2             	pxor   mm2,mm2
- 1dc:	0f ef db             	pxor   mm3,mm3
- 1df:	0f ef e4             	pxor   mm4,mm4
- 1e2:	0f ef ed             	pxor   mm5,mm5
- 1e5:	0f ef f6             	pxor   mm6,mm6
- 1e8:	0f ef ff             	pxor   mm7,mm7
- 1eb:	0f ef c0             	pxor   mm0,mm0
- 1ee:	0f ef c9             	pxor   mm1,mm1
- 1f1:	0f ef d2             	pxor   mm2,mm2
- 1f4:	0f ef db             	pxor   mm3,mm3
- 1f7:	0f ef e4             	pxor   mm4,mm4
- 1fa:	0f ef ed             	pxor   mm5,mm5
- 1fd:	0f ef f6             	pxor   mm6,mm6
- 200:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 203:	0f ef c0             	pxor   mm0,mm0
- 206:	0f ef c9             	pxor   mm1,mm1
- 209:	0f ef d2             	pxor   mm2,mm2
- 20c:	0f ef db             	pxor   mm3,mm3
- 20f:	0f ef e4             	pxor   mm4,mm4
- 212:	0f ef ed             	pxor   mm5,mm5
- 215:	0f ef f6             	pxor   mm6,mm6
- 218:	0f ef ff             	pxor   mm7,mm7
+  e6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  e9:	0f ef c0             	pxor   mm0,mm0
+  ec:	0f ef c9             	pxor   mm1,mm1
+  ef:	0f ef d2             	pxor   mm2,mm2
+  f2:	0f ef db             	pxor   mm3,mm3
+  f5:	0f ef e4             	pxor   mm4,mm4
+  f8:	0f ef ed             	pxor   mm5,mm5
+  fb:	0f ef f6             	pxor   mm6,mm6
+  fe:	0f ef ff             	pxor   mm7,mm7
+ 101:	0f ef c0             	pxor   mm0,mm0
+ 104:	0f ef c9             	pxor   mm1,mm1
+ 107:	0f ef d2             	pxor   mm2,mm2
+ 10a:	0f ef db             	pxor   mm3,mm3
+ 10d:	0f ef e4             	pxor   mm4,mm4
+ 110:	0f ef ed             	pxor   mm5,mm5
+ 113:	0f ef f6             	pxor   mm6,mm6
+ 116:	0f ef ff             	pxor   mm7,mm7
+ 119:	0f ef c0             	pxor   mm0,mm0
+ 11c:	0f ef c9             	pxor   mm1,mm1
+ 11f:	0f ef d2             	pxor   mm2,mm2
+ 122:	0f ef db             	pxor   mm3,mm3
+ 125:	0f ef e4             	pxor   mm4,mm4
+ 128:	0f ef ed             	pxor   mm5,mm5
+ 12b:	0f ef f6             	pxor   mm6,mm6
+ 12e:	0f ef ff             	pxor   mm7,mm7
+ 131:	0f ef c0             	pxor   mm0,mm0
+ 134:	0f ef c9             	pxor   mm1,mm1
+ 137:	0f ef d2             	pxor   mm2,mm2
+ 13a:	0f ef db             	pxor   mm3,mm3
+ 13d:	0f ef e4             	pxor   mm4,mm4
+ 140:	0f ef ed             	pxor   mm5,mm5
+ 143:	0f ef f6             	pxor   mm6,mm6
+ 146:	0f ef ff             	pxor   mm7,mm7
+ 149:	0f ef c0             	pxor   mm0,mm0
+ 14c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 14f:	0f ef c0             	pxor   mm0,mm0
+ 152:	0f ef c9             	pxor   mm1,mm1
+ 155:	0f ef d2             	pxor   mm2,mm2
+ 158:	0f ef db             	pxor   mm3,mm3
+ 15b:	0f ef e4             	pxor   mm4,mm4
+ 15e:	0f ef ed             	pxor   mm5,mm5
+ 161:	0f ef f6             	pxor   mm6,mm6
+ 164:	0f ef ff             	pxor   mm7,mm7
+ 167:	0f ef c0             	pxor   mm0,mm0
+ 16a:	0f ef c9             	pxor   mm1,mm1
+ 16d:	0f ef d2             	pxor   mm2,mm2
+ 170:	0f ef db             	pxor   mm3,mm3
+ 173:	0f ef e4             	pxor   mm4,mm4
+ 176:	0f ef ed             	pxor   mm5,mm5
+ 179:	0f ef f6             	pxor   mm6,mm6
+ 17c:	0f ef ff             	pxor   mm7,mm7
+ 17f:	0f ef c0             	pxor   mm0,mm0
+ 182:	0f ef c9             	pxor   mm1,mm1
+ 185:	0f ef d2             	pxor   mm2,mm2
+ 188:	0f ef db             	pxor   mm3,mm3
+ 18b:	0f ef e4             	pxor   mm4,mm4
+ 18e:	0f ef ed             	pxor   mm5,mm5
+ 191:	0f ef f6             	pxor   mm6,mm6
+ 194:	0f ef ff             	pxor   mm7,mm7
+ 197:	0f ef c0             	pxor   mm0,mm0
+ 19a:	0f ef c9             	pxor   mm1,mm1
+ 19d:	0f ef d2             	pxor   mm2,mm2
+ 1a0:	0f ef db             	pxor   mm3,mm3
+ 1a3:	0f ef e4             	pxor   mm4,mm4
+ 1a6:	0f ef ed             	pxor   mm5,mm5
+ 1a9:	0f ef f6             	pxor   mm6,mm6
+ 1ac:	0f ef ff             	pxor   mm7,mm7
+ 1af:	0f ef c0             	pxor   mm0,mm0
+ 1b2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1b5:	0f ef c0             	pxor   mm0,mm0
+ 1b8:	0f ef c9             	pxor   mm1,mm1
+ 1bb:	0f ef d2             	pxor   mm2,mm2
+ 1be:	0f ef db             	pxor   mm3,mm3
+ 1c1:	0f ef e4             	pxor   mm4,mm4
+ 1c4:	0f ef ed             	pxor   mm5,mm5
+ 1c7:	0f ef f6             	pxor   mm6,mm6
+ 1ca:	0f ef ff             	pxor   mm7,mm7
+ 1cd:	0f ef c0             	pxor   mm0,mm0
+ 1d0:	0f ef c9             	pxor   mm1,mm1
+ 1d3:	0f ef d2             	pxor   mm2,mm2
+ 1d6:	0f ef db             	pxor   mm3,mm3
+ 1d9:	0f ef e4             	pxor   mm4,mm4
+ 1dc:	0f ef ed             	pxor   mm5,mm5
+ 1df:	0f ef f6             	pxor   mm6,mm6
+ 1e2:	0f ef ff             	pxor   mm7,mm7
+ 1e5:	0f ef c0             	pxor   mm0,mm0
+ 1e8:	0f ef c9             	pxor   mm1,mm1
+ 1eb:	0f ef d2             	pxor   mm2,mm2
+ 1ee:	0f ef db             	pxor   mm3,mm3
+ 1f1:	0f ef e4             	pxor   mm4,mm4
+ 1f4:	0f ef ed             	pxor   mm5,mm5
+ 1f7:	0f ef f6             	pxor   mm6,mm6
+ 1fa:	0f ef ff             	pxor   mm7,mm7
+ 1fd:	0f ef c0             	pxor   mm0,mm0
+ 200:	0f ef c9             	pxor   mm1,mm1
+ 203:	0f ef d2             	pxor   mm2,mm2
+ 206:	0f ef db             	pxor   mm3,mm3
+ 209:	0f ef e4             	pxor   mm4,mm4
+ 20c:	0f ef ed             	pxor   mm5,mm5
+ 20f:	0f ef f6             	pxor   mm6,mm6
+ 212:	0f ef ff             	pxor   mm7,mm7
+ 215:	0f ef c0             	pxor   mm0,mm0
+ 218:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  21b:	0f ef c0             	pxor   mm0,mm0
  21e:	0f ef c9             	pxor   mm1,mm1
  221:	0f ef d2             	pxor   mm2,mm2
@@ -212,7 +212,7 @@ Disassembly of section .data:
  257:	0f ef e4             	pxor   mm4,mm4
  25a:	0f ef ed             	pxor   mm5,mm5
  25d:	0f ef f6             	pxor   mm6,mm6
- 260:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 260:	0f ef ff             	pxor   mm7,mm7
  263:	0f ef c0             	pxor   mm0,mm0
  266:	0f ef c9             	pxor   mm1,mm1
  269:	0f ef d2             	pxor   mm2,mm2
@@ -222,109 +222,109 @@ Disassembly of section .data:
  275:	0f ef f6             	pxor   mm6,mm6
  278:	0f ef ff             	pxor   mm7,mm7
  27b:	0f ef c0             	pxor   mm0,mm0
- 27e:	0f ef c9             	pxor   mm1,mm1
- 281:	0f ef d2             	pxor   mm2,mm2
- 284:	0f ef db             	pxor   mm3,mm3
- 287:	0f ef e4             	pxor   mm4,mm4
- 28a:	0f ef ed             	pxor   mm5,mm5
- 28d:	0f ef f6             	pxor   mm6,mm6
- 290:	0f ef ff             	pxor   mm7,mm7
- 293:	0f ef c0             	pxor   mm0,mm0
- 296:	0f ef c9             	pxor   mm1,mm1
- 299:	0f ef d2             	pxor   mm2,mm2
- 29c:	0f ef db             	pxor   mm3,mm3
- 29f:	0f ef e4             	pxor   mm4,mm4
- 2a2:	0f ef ed             	pxor   mm5,mm5
- 2a5:	0f ef f6             	pxor   mm6,mm6
- 2a8:	0f ef ff             	pxor   mm7,mm7
- 2ab:	0f ef c0             	pxor   mm0,mm0
- 2ae:	0f ef c9             	pxor   mm1,mm1
- 2b1:	0f ef d2             	pxor   mm2,mm2
- 2b4:	0f ef db             	pxor   mm3,mm3
- 2b7:	0f ef e4             	pxor   mm4,mm4
- 2ba:	0f ef ed             	pxor   mm5,mm5
- 2bd:	0f ef f6             	pxor   mm6,mm6
- 2c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 2c3:	0f ef c0             	pxor   mm0,mm0
- 2c6:	0f ef c9             	pxor   mm1,mm1
- 2c9:	0f ef d2             	pxor   mm2,mm2
- 2cc:	0f ef db             	pxor   mm3,mm3
- 2cf:	0f ef e4             	pxor   mm4,mm4
- 2d2:	0f ef ed             	pxor   mm5,mm5
- 2d5:	0f ef f6             	pxor   mm6,mm6
- 2d8:	0f ef ff             	pxor   mm7,mm7
- 2db:	0f ef c0             	pxor   mm0,mm0
- 2de:	0f ef c9             	pxor   mm1,mm1
- 2e1:	0f ef d2             	pxor   mm2,mm2
- 2e4:	0f ef db             	pxor   mm3,mm3
- 2e7:	0f ef e4             	pxor   mm4,mm4
- 2ea:	0f ef ed             	pxor   mm5,mm5
- 2ed:	0f ef f6             	pxor   mm6,mm6
- 2f0:	0f ef ff             	pxor   mm7,mm7
- 2f3:	0f ef c0             	pxor   mm0,mm0
- 2f6:	0f ef c9             	pxor   mm1,mm1
- 2f9:	0f ef d2             	pxor   mm2,mm2
- 2fc:	0f ef db             	pxor   mm3,mm3
- 2ff:	0f ef e4             	pxor   mm4,mm4
- 302:	0f ef ed             	pxor   mm5,mm5
- 305:	0f ef f6             	pxor   mm6,mm6
- 308:	0f ef ff             	pxor   mm7,mm7
- 30b:	0f ef c0             	pxor   mm0,mm0
- 30e:	0f ef c9             	pxor   mm1,mm1
- 311:	0f ef d2             	pxor   mm2,mm2
- 314:	0f ef db             	pxor   mm3,mm3
- 317:	0f ef e4             	pxor   mm4,mm4
- 31a:	0f ef ed             	pxor   mm5,mm5
- 31d:	0f ef f6             	pxor   mm6,mm6
- 320:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 323:	0f ef c0             	pxor   mm0,mm0
- 326:	0f ef c9             	pxor   mm1,mm1
- 329:	0f ef d2             	pxor   mm2,mm2
- 32c:	0f ef db             	pxor   mm3,mm3
- 32f:	0f ef e4             	pxor   mm4,mm4
- 332:	0f ef ed             	pxor   mm5,mm5
- 335:	0f ef f6             	pxor   mm6,mm6
- 338:	0f ef ff             	pxor   mm7,mm7
- 33b:	0f ef c0             	pxor   mm0,mm0
- 33e:	0f ef c9             	pxor   mm1,mm1
- 341:	0f ef d2             	pxor   mm2,mm2
- 344:	0f ef db             	pxor   mm3,mm3
- 347:	0f ef e4             	pxor   mm4,mm4
- 34a:	0f ef ed             	pxor   mm5,mm5
- 34d:	0f ef f6             	pxor   mm6,mm6
- 350:	0f ef ff             	pxor   mm7,mm7
- 353:	0f ef c0             	pxor   mm0,mm0
- 356:	0f ef c9             	pxor   mm1,mm1
- 359:	0f ef d2             	pxor   mm2,mm2
- 35c:	0f ef db             	pxor   mm3,mm3
- 35f:	0f ef e4             	pxor   mm4,mm4
- 362:	0f ef ed             	pxor   mm5,mm5
- 365:	0f ef f6             	pxor   mm6,mm6
- 368:	0f ef ff             	pxor   mm7,mm7
- 36b:	0f ef c0             	pxor   mm0,mm0
- 36e:	0f ef c9             	pxor   mm1,mm1
- 371:	0f ef d2             	pxor   mm2,mm2
- 374:	0f ef db             	pxor   mm3,mm3
- 377:	0f ef e4             	pxor   mm4,mm4
- 37a:	0f ef ed             	pxor   mm5,mm5
- 37d:	0f ef f6             	pxor   mm6,mm6
- 380:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 383:	0f ef c0             	pxor   mm0,mm0
- 386:	0f ef c9             	pxor   mm1,mm1
- 389:	0f ef d2             	pxor   mm2,mm2
- 38c:	0f ef db             	pxor   mm3,mm3
- 38f:	0f ef e4             	pxor   mm4,mm4
- 392:	0f ef ed             	pxor   mm5,mm5
- 395:	0f ef f6             	pxor   mm6,mm6
- 398:	0f ef ff             	pxor   mm7,mm7
- 39b:	0f ef c0             	pxor   mm0,mm0
- 39e:	0f ef c9             	pxor   mm1,mm1
- 3a1:	0f ef d2             	pxor   mm2,mm2
- 3a4:	0f ef db             	pxor   mm3,mm3
- 3a7:	0f ef e4             	pxor   mm4,mm4
- 3aa:	0f ef ed             	pxor   mm5,mm5
- 3ad:	0f ef f6             	pxor   mm6,mm6
- 3b0:	0f ef ff             	pxor   mm7,mm7
+ 27e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 281:	0f ef c0             	pxor   mm0,mm0
+ 284:	0f ef c9             	pxor   mm1,mm1
+ 287:	0f ef d2             	pxor   mm2,mm2
+ 28a:	0f ef db             	pxor   mm3,mm3
+ 28d:	0f ef e4             	pxor   mm4,mm4
+ 290:	0f ef ed             	pxor   mm5,mm5
+ 293:	0f ef f6             	pxor   mm6,mm6
+ 296:	0f ef ff             	pxor   mm7,mm7
+ 299:	0f ef c0             	pxor   mm0,mm0
+ 29c:	0f ef c9             	pxor   mm1,mm1
+ 29f:	0f ef d2             	pxor   mm2,mm2
+ 2a2:	0f ef db             	pxor   mm3,mm3
+ 2a5:	0f ef e4             	pxor   mm4,mm4
+ 2a8:	0f ef ed             	pxor   mm5,mm5
+ 2ab:	0f ef f6             	pxor   mm6,mm6
+ 2ae:	0f ef ff             	pxor   mm7,mm7
+ 2b1:	0f ef c0             	pxor   mm0,mm0
+ 2b4:	0f ef c9             	pxor   mm1,mm1
+ 2b7:	0f ef d2             	pxor   mm2,mm2
+ 2ba:	0f ef db             	pxor   mm3,mm3
+ 2bd:	0f ef e4             	pxor   mm4,mm4
+ 2c0:	0f ef ed             	pxor   mm5,mm5
+ 2c3:	0f ef f6             	pxor   mm6,mm6
+ 2c6:	0f ef ff             	pxor   mm7,mm7
+ 2c9:	0f ef c0             	pxor   mm0,mm0
+ 2cc:	0f ef c9             	pxor   mm1,mm1
+ 2cf:	0f ef d2             	pxor   mm2,mm2
+ 2d2:	0f ef db             	pxor   mm3,mm3
+ 2d5:	0f ef e4             	pxor   mm4,mm4
+ 2d8:	0f ef ed             	pxor   mm5,mm5
+ 2db:	0f ef f6             	pxor   mm6,mm6
+ 2de:	0f ef ff             	pxor   mm7,mm7
+ 2e1:	0f ef c0             	pxor   mm0,mm0
+ 2e4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2e7:	0f ef c0             	pxor   mm0,mm0
+ 2ea:	0f ef c9             	pxor   mm1,mm1
+ 2ed:	0f ef d2             	pxor   mm2,mm2
+ 2f0:	0f ef db             	pxor   mm3,mm3
+ 2f3:	0f ef e4             	pxor   mm4,mm4
+ 2f6:	0f ef ed             	pxor   mm5,mm5
+ 2f9:	0f ef f6             	pxor   mm6,mm6
+ 2fc:	0f ef ff             	pxor   mm7,mm7
+ 2ff:	0f ef c0             	pxor   mm0,mm0
+ 302:	0f ef c9             	pxor   mm1,mm1
+ 305:	0f ef d2             	pxor   mm2,mm2
+ 308:	0f ef db             	pxor   mm3,mm3
+ 30b:	0f ef e4             	pxor   mm4,mm4
+ 30e:	0f ef ed             	pxor   mm5,mm5
+ 311:	0f ef f6             	pxor   mm6,mm6
+ 314:	0f ef ff             	pxor   mm7,mm7
+ 317:	0f ef c0             	pxor   mm0,mm0
+ 31a:	0f ef c9             	pxor   mm1,mm1
+ 31d:	0f ef d2             	pxor   mm2,mm2
+ 320:	0f ef db             	pxor   mm3,mm3
+ 323:	0f ef e4             	pxor   mm4,mm4
+ 326:	0f ef ed             	pxor   mm5,mm5
+ 329:	0f ef f6             	pxor   mm6,mm6
+ 32c:	0f ef ff             	pxor   mm7,mm7
+ 32f:	0f ef c0             	pxor   mm0,mm0
+ 332:	0f ef c9             	pxor   mm1,mm1
+ 335:	0f ef d2             	pxor   mm2,mm2
+ 338:	0f ef db             	pxor   mm3,mm3
+ 33b:	0f ef e4             	pxor   mm4,mm4
+ 33e:	0f ef ed             	pxor   mm5,mm5
+ 341:	0f ef f6             	pxor   mm6,mm6
+ 344:	0f ef ff             	pxor   mm7,mm7
+ 347:	0f ef c0             	pxor   mm0,mm0
+ 34a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34d:	0f ef c0             	pxor   mm0,mm0
+ 350:	0f ef c9             	pxor   mm1,mm1
+ 353:	0f ef d2             	pxor   mm2,mm2
+ 356:	0f ef db             	pxor   mm3,mm3
+ 359:	0f ef e4             	pxor   mm4,mm4
+ 35c:	0f ef ed             	pxor   mm5,mm5
+ 35f:	0f ef f6             	pxor   mm6,mm6
+ 362:	0f ef ff             	pxor   mm7,mm7
+ 365:	0f ef c0             	pxor   mm0,mm0
+ 368:	0f ef c9             	pxor   mm1,mm1
+ 36b:	0f ef d2             	pxor   mm2,mm2
+ 36e:	0f ef db             	pxor   mm3,mm3
+ 371:	0f ef e4             	pxor   mm4,mm4
+ 374:	0f ef ed             	pxor   mm5,mm5
+ 377:	0f ef f6             	pxor   mm6,mm6
+ 37a:	0f ef ff             	pxor   mm7,mm7
+ 37d:	0f ef c0             	pxor   mm0,mm0
+ 380:	0f ef c9             	pxor   mm1,mm1
+ 383:	0f ef d2             	pxor   mm2,mm2
+ 386:	0f ef db             	pxor   mm3,mm3
+ 389:	0f ef e4             	pxor   mm4,mm4
+ 38c:	0f ef ed             	pxor   mm5,mm5
+ 38f:	0f ef f6             	pxor   mm6,mm6
+ 392:	0f ef ff             	pxor   mm7,mm7
+ 395:	0f ef c0             	pxor   mm0,mm0
+ 398:	0f ef c9             	pxor   mm1,mm1
+ 39b:	0f ef d2             	pxor   mm2,mm2
+ 39e:	0f ef db             	pxor   mm3,mm3
+ 3a1:	0f ef e4             	pxor   mm4,mm4
+ 3a4:	0f ef ed             	pxor   mm5,mm5
+ 3a7:	0f ef f6             	pxor   mm6,mm6
+ 3aa:	0f ef ff             	pxor   mm7,mm7
+ 3ad:	0f ef c0             	pxor   mm0,mm0
+ 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  3b3:	0f ef c0             	pxor   mm0,mm0
  3b6:	0f ef c9             	pxor   mm1,mm1
  3b9:	0f ef d2             	pxor   mm2,mm2
@@ -340,7 +340,7 @@ Disassembly of section .data:
  3d7:	0f ef e4             	pxor   mm4,mm4
  3da:	0f ef ed             	pxor   mm5,mm5
  3dd:	0f ef f6             	pxor   mm6,mm6
- 3e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 3e0:	0f ef ff             	pxor   mm7,mm7
  3e3:	0f ef c0             	pxor   mm0,mm0
  3e6:	0f ef c9             	pxor   mm1,mm1
  3e9:	0f ef d2             	pxor   mm2,mm2
@@ -358,109 +358,109 @@ Disassembly of section .data:
  40d:	0f ef f6             	pxor   mm6,mm6
  410:	0f ef ff             	pxor   mm7,mm7
  413:	0f ef c0             	pxor   mm0,mm0
- 416:	0f ef c9             	pxor   mm1,mm1
- 419:	0f ef d2             	pxor   mm2,mm2
- 41c:	0f ef db             	pxor   mm3,mm3
- 41f:	0f ef e4             	pxor   mm4,mm4
- 422:	0f ef ed             	pxor   mm5,mm5
- 425:	0f ef f6             	pxor   mm6,mm6
- 428:	0f ef ff             	pxor   mm7,mm7
- 42b:	0f ef c0             	pxor   mm0,mm0
- 42e:	0f ef c9             	pxor   mm1,mm1
- 431:	0f ef d2             	pxor   mm2,mm2
- 434:	0f ef db             	pxor   mm3,mm3
- 437:	0f ef e4             	pxor   mm4,mm4
- 43a:	0f ef ed             	pxor   mm5,mm5
- 43d:	0f ef f6             	pxor   mm6,mm6
- 440:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 443:	0f ef c0             	pxor   mm0,mm0
- 446:	0f ef c9             	pxor   mm1,mm1
- 449:	0f ef d2             	pxor   mm2,mm2
- 44c:	0f ef db             	pxor   mm3,mm3
- 44f:	0f ef e4             	pxor   mm4,mm4
- 452:	0f ef ed             	pxor   mm5,mm5
- 455:	0f ef f6             	pxor   mm6,mm6
- 458:	0f ef ff             	pxor   mm7,mm7
- 45b:	0f ef c0             	pxor   mm0,mm0
- 45e:	0f ef c9             	pxor   mm1,mm1
- 461:	0f ef d2             	pxor   mm2,mm2
- 464:	0f ef db             	pxor   mm3,mm3
- 467:	0f ef e4             	pxor   mm4,mm4
- 46a:	0f ef ed             	pxor   mm5,mm5
- 46d:	0f ef f6             	pxor   mm6,mm6
- 470:	0f ef ff             	pxor   mm7,mm7
- 473:	0f ef c0             	pxor   mm0,mm0
- 476:	0f ef c9             	pxor   mm1,mm1
- 479:	0f ef d2             	pxor   mm2,mm2
- 47c:	0f ef db             	pxor   mm3,mm3
- 47f:	0f ef e4             	pxor   mm4,mm4
- 482:	0f ef ed             	pxor   mm5,mm5
- 485:	0f ef f6             	pxor   mm6,mm6
- 488:	0f ef ff             	pxor   mm7,mm7
- 48b:	0f ef c0             	pxor   mm0,mm0
- 48e:	0f ef c9             	pxor   mm1,mm1
- 491:	0f ef d2             	pxor   mm2,mm2
- 494:	0f ef db             	pxor   mm3,mm3
- 497:	0f ef e4             	pxor   mm4,mm4
- 49a:	0f ef ed             	pxor   mm5,mm5
- 49d:	0f ef f6             	pxor   mm6,mm6
- 4a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 4a3:	0f ef c0             	pxor   mm0,mm0
- 4a6:	0f ef c9             	pxor   mm1,mm1
- 4a9:	0f ef d2             	pxor   mm2,mm2
- 4ac:	0f ef db             	pxor   mm3,mm3
- 4af:	0f ef e4             	pxor   mm4,mm4
- 4b2:	0f ef ed             	pxor   mm5,mm5
- 4b5:	0f ef f6             	pxor   mm6,mm6
- 4b8:	0f ef ff             	pxor   mm7,mm7
- 4bb:	0f ef c0             	pxor   mm0,mm0
- 4be:	0f ef c9             	pxor   mm1,mm1
- 4c1:	0f ef d2             	pxor   mm2,mm2
- 4c4:	0f ef db             	pxor   mm3,mm3
- 4c7:	0f ef e4             	pxor   mm4,mm4
- 4ca:	0f ef ed             	pxor   mm5,mm5
- 4cd:	0f ef f6             	pxor   mm6,mm6
- 4d0:	0f ef ff             	pxor   mm7,mm7
- 4d3:	0f ef c0             	pxor   mm0,mm0
- 4d6:	0f ef c9             	pxor   mm1,mm1
- 4d9:	0f ef d2             	pxor   mm2,mm2
- 4dc:	0f ef db             	pxor   mm3,mm3
- 4df:	0f ef e4             	pxor   mm4,mm4
- 4e2:	0f ef ed             	pxor   mm5,mm5
- 4e5:	0f ef f6             	pxor   mm6,mm6
- 4e8:	0f ef ff             	pxor   mm7,mm7
- 4eb:	0f ef c0             	pxor   mm0,mm0
- 4ee:	0f ef c9             	pxor   mm1,mm1
- 4f1:	0f ef d2             	pxor   mm2,mm2
- 4f4:	0f ef db             	pxor   mm3,mm3
- 4f7:	0f ef e4             	pxor   mm4,mm4
- 4fa:	0f ef ed             	pxor   mm5,mm5
- 4fd:	0f ef f6             	pxor   mm6,mm6
- 500:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 503:	0f ef c0             	pxor   mm0,mm0
- 506:	0f ef c9             	pxor   mm1,mm1
- 509:	0f ef d2             	pxor   mm2,mm2
- 50c:	0f ef db             	pxor   mm3,mm3
- 50f:	0f ef e4             	pxor   mm4,mm4
- 512:	0f ef ed             	pxor   mm5,mm5
- 515:	0f ef f6             	pxor   mm6,mm6
- 518:	0f ef ff             	pxor   mm7,mm7
- 51b:	0f ef c0             	pxor   mm0,mm0
- 51e:	0f ef c9             	pxor   mm1,mm1
- 521:	0f ef d2             	pxor   mm2,mm2
- 524:	0f ef db             	pxor   mm3,mm3
- 527:	0f ef e4             	pxor   mm4,mm4
- 52a:	0f ef ed             	pxor   mm5,mm5
- 52d:	0f ef f6             	pxor   mm6,mm6
- 530:	0f ef ff             	pxor   mm7,mm7
- 533:	0f ef c0             	pxor   mm0,mm0
- 536:	0f ef c9             	pxor   mm1,mm1
- 539:	0f ef d2             	pxor   mm2,mm2
- 53c:	0f ef db             	pxor   mm3,mm3
- 53f:	0f ef e4             	pxor   mm4,mm4
- 542:	0f ef ed             	pxor   mm5,mm5
- 545:	0f ef f6             	pxor   mm6,mm6
- 548:	0f ef ff             	pxor   mm7,mm7
+ 416:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 419:	0f ef c0             	pxor   mm0,mm0
+ 41c:	0f ef c9             	pxor   mm1,mm1
+ 41f:	0f ef d2             	pxor   mm2,mm2
+ 422:	0f ef db             	pxor   mm3,mm3
+ 425:	0f ef e4             	pxor   mm4,mm4
+ 428:	0f ef ed             	pxor   mm5,mm5
+ 42b:	0f ef f6             	pxor   mm6,mm6
+ 42e:	0f ef ff             	pxor   mm7,mm7
+ 431:	0f ef c0             	pxor   mm0,mm0
+ 434:	0f ef c9             	pxor   mm1,mm1
+ 437:	0f ef d2             	pxor   mm2,mm2
+ 43a:	0f ef db             	pxor   mm3,mm3
+ 43d:	0f ef e4             	pxor   mm4,mm4
+ 440:	0f ef ed             	pxor   mm5,mm5
+ 443:	0f ef f6             	pxor   mm6,mm6
+ 446:	0f ef ff             	pxor   mm7,mm7
+ 449:	0f ef c0             	pxor   mm0,mm0
+ 44c:	0f ef c9             	pxor   mm1,mm1
+ 44f:	0f ef d2             	pxor   mm2,mm2
+ 452:	0f ef db             	pxor   mm3,mm3
+ 455:	0f ef e4             	pxor   mm4,mm4
+ 458:	0f ef ed             	pxor   mm5,mm5
+ 45b:	0f ef f6             	pxor   mm6,mm6
+ 45e:	0f ef ff             	pxor   mm7,mm7
+ 461:	0f ef c0             	pxor   mm0,mm0
+ 464:	0f ef c9             	pxor   mm1,mm1
+ 467:	0f ef d2             	pxor   mm2,mm2
+ 46a:	0f ef db             	pxor   mm3,mm3
+ 46d:	0f ef e4             	pxor   mm4,mm4
+ 470:	0f ef ed             	pxor   mm5,mm5
+ 473:	0f ef f6             	pxor   mm6,mm6
+ 476:	0f ef ff             	pxor   mm7,mm7
+ 479:	0f ef c0             	pxor   mm0,mm0
+ 47c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 47f:	0f ef c0             	pxor   mm0,mm0
+ 482:	0f ef c9             	pxor   mm1,mm1
+ 485:	0f ef d2             	pxor   mm2,mm2
+ 488:	0f ef db             	pxor   mm3,mm3
+ 48b:	0f ef e4             	pxor   mm4,mm4
+ 48e:	0f ef ed             	pxor   mm5,mm5
+ 491:	0f ef f6             	pxor   mm6,mm6
+ 494:	0f ef ff             	pxor   mm7,mm7
+ 497:	0f ef c0             	pxor   mm0,mm0
+ 49a:	0f ef c9             	pxor   mm1,mm1
+ 49d:	0f ef d2             	pxor   mm2,mm2
+ 4a0:	0f ef db             	pxor   mm3,mm3
+ 4a3:	0f ef e4             	pxor   mm4,mm4
+ 4a6:	0f ef ed             	pxor   mm5,mm5
+ 4a9:	0f ef f6             	pxor   mm6,mm6
+ 4ac:	0f ef ff             	pxor   mm7,mm7
+ 4af:	0f ef c0             	pxor   mm0,mm0
+ 4b2:	0f ef c9             	pxor   mm1,mm1
+ 4b5:	0f ef d2             	pxor   mm2,mm2
+ 4b8:	0f ef db             	pxor   mm3,mm3
+ 4bb:	0f ef e4             	pxor   mm4,mm4
+ 4be:	0f ef ed             	pxor   mm5,mm5
+ 4c1:	0f ef f6             	pxor   mm6,mm6
+ 4c4:	0f ef ff             	pxor   mm7,mm7
+ 4c7:	0f ef c0             	pxor   mm0,mm0
+ 4ca:	0f ef c9             	pxor   mm1,mm1
+ 4cd:	0f ef d2             	pxor   mm2,mm2
+ 4d0:	0f ef db             	pxor   mm3,mm3
+ 4d3:	0f ef e4             	pxor   mm4,mm4
+ 4d6:	0f ef ed             	pxor   mm5,mm5
+ 4d9:	0f ef f6             	pxor   mm6,mm6
+ 4dc:	0f ef ff             	pxor   mm7,mm7
+ 4df:	0f ef c0             	pxor   mm0,mm0
+ 4e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4e5:	0f ef c0             	pxor   mm0,mm0
+ 4e8:	0f ef c9             	pxor   mm1,mm1
+ 4eb:	0f ef d2             	pxor   mm2,mm2
+ 4ee:	0f ef db             	pxor   mm3,mm3
+ 4f1:	0f ef e4             	pxor   mm4,mm4
+ 4f4:	0f ef ed             	pxor   mm5,mm5
+ 4f7:	0f ef f6             	pxor   mm6,mm6
+ 4fa:	0f ef ff             	pxor   mm7,mm7
+ 4fd:	0f ef c0             	pxor   mm0,mm0
+ 500:	0f ef c9             	pxor   mm1,mm1
+ 503:	0f ef d2             	pxor   mm2,mm2
+ 506:	0f ef db             	pxor   mm3,mm3
+ 509:	0f ef e4             	pxor   mm4,mm4
+ 50c:	0f ef ed             	pxor   mm5,mm5
+ 50f:	0f ef f6             	pxor   mm6,mm6
+ 512:	0f ef ff             	pxor   mm7,mm7
+ 515:	0f ef c0             	pxor   mm0,mm0
+ 518:	0f ef c9             	pxor   mm1,mm1
+ 51b:	0f ef d2             	pxor   mm2,mm2
+ 51e:	0f ef db             	pxor   mm3,mm3
+ 521:	0f ef e4             	pxor   mm4,mm4
+ 524:	0f ef ed             	pxor   mm5,mm5
+ 527:	0f ef f6             	pxor   mm6,mm6
+ 52a:	0f ef ff             	pxor   mm7,mm7
+ 52d:	0f ef c0             	pxor   mm0,mm0
+ 530:	0f ef c9             	pxor   mm1,mm1
+ 533:	0f ef d2             	pxor   mm2,mm2
+ 536:	0f ef db             	pxor   mm3,mm3
+ 539:	0f ef e4             	pxor   mm4,mm4
+ 53c:	0f ef ed             	pxor   mm5,mm5
+ 53f:	0f ef f6             	pxor   mm6,mm6
+ 542:	0f ef ff             	pxor   mm7,mm7
+ 545:	0f ef c0             	pxor   mm0,mm0
+ 548:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  54b:	0f ef c0             	pxor   mm0,mm0
  54e:	0f ef c9             	pxor   mm1,mm1
  551:	0f ef d2             	pxor   mm2,mm2
@@ -468,7 +468,7 @@ Disassembly of section .data:
  557:	0f ef e4             	pxor   mm4,mm4
  55a:	0f ef ed             	pxor   mm5,mm5
  55d:	0f ef f6             	pxor   mm6,mm6
- 560:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 560:	0f ef ff             	pxor   mm7,mm7
  563:	0f ef c0             	pxor   mm0,mm0
  566:	0f ef c9             	pxor   mm1,mm1
  569:	0f ef d2             	pxor   mm2,mm2
@@ -494,109 +494,109 @@ Disassembly of section .data:
  5a5:	0f ef f6             	pxor   mm6,mm6
  5a8:	0f ef ff             	pxor   mm7,mm7
  5ab:	0f ef c0             	pxor   mm0,mm0
- 5ae:	0f ef c9             	pxor   mm1,mm1
- 5b1:	0f ef d2             	pxor   mm2,mm2
- 5b4:	0f ef db             	pxor   mm3,mm3
- 5b7:	0f ef e4             	pxor   mm4,mm4
- 5ba:	0f ef ed             	pxor   mm5,mm5
- 5bd:	0f ef f6             	pxor   mm6,mm6
- 5c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 5c3:	0f ef c0             	pxor   mm0,mm0
- 5c6:	0f ef c9             	pxor   mm1,mm1
- 5c9:	0f ef d2             	pxor   mm2,mm2
- 5cc:	0f ef db             	pxor   mm3,mm3
- 5cf:	0f ef e4             	pxor   mm4,mm4
- 5d2:	0f ef ed             	pxor   mm5,mm5
- 5d5:	0f ef f6             	pxor   mm6,mm6
- 5d8:	0f ef ff             	pxor   mm7,mm7
- 5db:	0f ef c0             	pxor   mm0,mm0
- 5de:	0f ef c9             	pxor   mm1,mm1
- 5e1:	0f ef d2             	pxor   mm2,mm2
- 5e4:	0f ef db             	pxor   mm3,mm3
- 5e7:	0f ef e4             	pxor   mm4,mm4
- 5ea:	0f ef ed             	pxor   mm5,mm5
- 5ed:	0f ef f6             	pxor   mm6,mm6
- 5f0:	0f ef ff             	pxor   mm7,mm7
- 5f3:	0f ef c0             	pxor   mm0,mm0
- 5f6:	0f ef c9             	pxor   mm1,mm1
- 5f9:	0f ef d2             	pxor   mm2,mm2
- 5fc:	0f ef db             	pxor   mm3,mm3
- 5ff:	0f ef e4             	pxor   mm4,mm4
- 602:	0f ef ed             	pxor   mm5,mm5
- 605:	0f ef f6             	pxor   mm6,mm6
- 608:	0f ef ff             	pxor   mm7,mm7
- 60b:	0f ef c0             	pxor   mm0,mm0
- 60e:	0f ef c9             	pxor   mm1,mm1
- 611:	0f ef d2             	pxor   mm2,mm2
- 614:	0f ef db             	pxor   mm3,mm3
- 617:	0f ef e4             	pxor   mm4,mm4
- 61a:	0f ef ed             	pxor   mm5,mm5
- 61d:	0f ef f6             	pxor   mm6,mm6
- 620:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 623:	0f ef c0             	pxor   mm0,mm0
- 626:	0f ef c9             	pxor   mm1,mm1
- 629:	0f ef d2             	pxor   mm2,mm2
- 62c:	0f ef db             	pxor   mm3,mm3
- 62f:	0f ef e4             	pxor   mm4,mm4
- 632:	0f ef ed             	pxor   mm5,mm5
- 635:	0f ef f6             	pxor   mm6,mm6
- 638:	0f ef ff             	pxor   mm7,mm7
- 63b:	0f ef c0             	pxor   mm0,mm0
- 63e:	0f ef c9             	pxor   mm1,mm1
- 641:	0f ef d2             	pxor   mm2,mm2
- 644:	0f ef db             	pxor   mm3,mm3
- 647:	0f ef e4             	pxor   mm4,mm4
- 64a:	0f ef ed             	pxor   mm5,mm5
- 64d:	0f ef f6             	pxor   mm6,mm6
- 650:	0f ef ff             	pxor   mm7,mm7
- 653:	0f ef c0             	pxor   mm0,mm0
- 656:	0f ef c9             	pxor   mm1,mm1
- 659:	0f ef d2             	pxor   mm2,mm2
- 65c:	0f ef db             	pxor   mm3,mm3
- 65f:	0f ef e4             	pxor   mm4,mm4
- 662:	0f ef ed             	pxor   mm5,mm5
- 665:	0f ef f6             	pxor   mm6,mm6
- 668:	0f ef ff             	pxor   mm7,mm7
- 66b:	0f ef c0             	pxor   mm0,mm0
- 66e:	0f ef c9             	pxor   mm1,mm1
- 671:	0f ef d2             	pxor   mm2,mm2
- 674:	0f ef db             	pxor   mm3,mm3
- 677:	0f ef e4             	pxor   mm4,mm4
- 67a:	0f ef ed             	pxor   mm5,mm5
- 67d:	0f ef f6             	pxor   mm6,mm6
- 680:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 683:	0f ef c0             	pxor   mm0,mm0
- 686:	0f ef c9             	pxor   mm1,mm1
- 689:	0f ef d2             	pxor   mm2,mm2
- 68c:	0f ef db             	pxor   mm3,mm3
- 68f:	0f ef e4             	pxor   mm4,mm4
- 692:	0f ef ed             	pxor   mm5,mm5
- 695:	0f ef f6             	pxor   mm6,mm6
- 698:	0f ef ff             	pxor   mm7,mm7
- 69b:	0f ef c0             	pxor   mm0,mm0
- 69e:	0f ef c9             	pxor   mm1,mm1
- 6a1:	0f ef d2             	pxor   mm2,mm2
- 6a4:	0f ef db             	pxor   mm3,mm3
- 6a7:	0f ef e4             	pxor   mm4,mm4
- 6aa:	0f ef ed             	pxor   mm5,mm5
- 6ad:	0f ef f6             	pxor   mm6,mm6
- 6b0:	0f ef ff             	pxor   mm7,mm7
- 6b3:	0f ef c0             	pxor   mm0,mm0
- 6b6:	0f ef c9             	pxor   mm1,mm1
- 6b9:	0f ef d2             	pxor   mm2,mm2
- 6bc:	0f ef db             	pxor   mm3,mm3
- 6bf:	0f ef e4             	pxor   mm4,mm4
- 6c2:	0f ef ed             	pxor   mm5,mm5
- 6c5:	0f ef f6             	pxor   mm6,mm6
- 6c8:	0f ef ff             	pxor   mm7,mm7
- 6cb:	0f ef c0             	pxor   mm0,mm0
- 6ce:	0f ef c9             	pxor   mm1,mm1
- 6d1:	0f ef d2             	pxor   mm2,mm2
- 6d4:	0f ef db             	pxor   mm3,mm3
- 6d7:	0f ef e4             	pxor   mm4,mm4
- 6da:	0f ef ed             	pxor   mm5,mm5
- 6dd:	0f ef f6             	pxor   mm6,mm6
- 6e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5b1:	0f ef c0             	pxor   mm0,mm0
+ 5b4:	0f ef c9             	pxor   mm1,mm1
+ 5b7:	0f ef d2             	pxor   mm2,mm2
+ 5ba:	0f ef db             	pxor   mm3,mm3
+ 5bd:	0f ef e4             	pxor   mm4,mm4
+ 5c0:	0f ef ed             	pxor   mm5,mm5
+ 5c3:	0f ef f6             	pxor   mm6,mm6
+ 5c6:	0f ef ff             	pxor   mm7,mm7
+ 5c9:	0f ef c0             	pxor   mm0,mm0
+ 5cc:	0f ef c9             	pxor   mm1,mm1
+ 5cf:	0f ef d2             	pxor   mm2,mm2
+ 5d2:	0f ef db             	pxor   mm3,mm3
+ 5d5:	0f ef e4             	pxor   mm4,mm4
+ 5d8:	0f ef ed             	pxor   mm5,mm5
+ 5db:	0f ef f6             	pxor   mm6,mm6
+ 5de:	0f ef ff             	pxor   mm7,mm7
+ 5e1:	0f ef c0             	pxor   mm0,mm0
+ 5e4:	0f ef c9             	pxor   mm1,mm1
+ 5e7:	0f ef d2             	pxor   mm2,mm2
+ 5ea:	0f ef db             	pxor   mm3,mm3
+ 5ed:	0f ef e4             	pxor   mm4,mm4
+ 5f0:	0f ef ed             	pxor   mm5,mm5
+ 5f3:	0f ef f6             	pxor   mm6,mm6
+ 5f6:	0f ef ff             	pxor   mm7,mm7
+ 5f9:	0f ef c0             	pxor   mm0,mm0
+ 5fc:	0f ef c9             	pxor   mm1,mm1
+ 5ff:	0f ef d2             	pxor   mm2,mm2
+ 602:	0f ef db             	pxor   mm3,mm3
+ 605:	0f ef e4             	pxor   mm4,mm4
+ 608:	0f ef ed             	pxor   mm5,mm5
+ 60b:	0f ef f6             	pxor   mm6,mm6
+ 60e:	0f ef ff             	pxor   mm7,mm7
+ 611:	0f ef c0             	pxor   mm0,mm0
+ 614:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 617:	0f ef c0             	pxor   mm0,mm0
+ 61a:	0f ef c9             	pxor   mm1,mm1
+ 61d:	0f ef d2             	pxor   mm2,mm2
+ 620:	0f ef db             	pxor   mm3,mm3
+ 623:	0f ef e4             	pxor   mm4,mm4
+ 626:	0f ef ed             	pxor   mm5,mm5
+ 629:	0f ef f6             	pxor   mm6,mm6
+ 62c:	0f ef ff             	pxor   mm7,mm7
+ 62f:	0f ef c0             	pxor   mm0,mm0
+ 632:	0f ef c9             	pxor   mm1,mm1
+ 635:	0f ef d2             	pxor   mm2,mm2
+ 638:	0f ef db             	pxor   mm3,mm3
+ 63b:	0f ef e4             	pxor   mm4,mm4
+ 63e:	0f ef ed             	pxor   mm5,mm5
+ 641:	0f ef f6             	pxor   mm6,mm6
+ 644:	0f ef ff             	pxor   mm7,mm7
+ 647:	0f ef c0             	pxor   mm0,mm0
+ 64a:	0f ef c9             	pxor   mm1,mm1
+ 64d:	0f ef d2             	pxor   mm2,mm2
+ 650:	0f ef db             	pxor   mm3,mm3
+ 653:	0f ef e4             	pxor   mm4,mm4
+ 656:	0f ef ed             	pxor   mm5,mm5
+ 659:	0f ef f6             	pxor   mm6,mm6
+ 65c:	0f ef ff             	pxor   mm7,mm7
+ 65f:	0f ef c0             	pxor   mm0,mm0
+ 662:	0f ef c9             	pxor   mm1,mm1
+ 665:	0f ef d2             	pxor   mm2,mm2
+ 668:	0f ef db             	pxor   mm3,mm3
+ 66b:	0f ef e4             	pxor   mm4,mm4
+ 66e:	0f ef ed             	pxor   mm5,mm5
+ 671:	0f ef f6             	pxor   mm6,mm6
+ 674:	0f ef ff             	pxor   mm7,mm7
+ 677:	0f ef c0             	pxor   mm0,mm0
+ 67a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 67d:	0f ef c0             	pxor   mm0,mm0
+ 680:	0f ef c9             	pxor   mm1,mm1
+ 683:	0f ef d2             	pxor   mm2,mm2
+ 686:	0f ef db             	pxor   mm3,mm3
+ 689:	0f ef e4             	pxor   mm4,mm4
+ 68c:	0f ef ed             	pxor   mm5,mm5
+ 68f:	0f ef f6             	pxor   mm6,mm6
+ 692:	0f ef ff             	pxor   mm7,mm7
+ 695:	0f ef c0             	pxor   mm0,mm0
+ 698:	0f ef c9             	pxor   mm1,mm1
+ 69b:	0f ef d2             	pxor   mm2,mm2
+ 69e:	0f ef db             	pxor   mm3,mm3
+ 6a1:	0f ef e4             	pxor   mm4,mm4
+ 6a4:	0f ef ed             	pxor   mm5,mm5
+ 6a7:	0f ef f6             	pxor   mm6,mm6
+ 6aa:	0f ef ff             	pxor   mm7,mm7
+ 6ad:	0f ef c0             	pxor   mm0,mm0
+ 6b0:	0f ef c9             	pxor   mm1,mm1
+ 6b3:	0f ef d2             	pxor   mm2,mm2
+ 6b6:	0f ef db             	pxor   mm3,mm3
+ 6b9:	0f ef e4             	pxor   mm4,mm4
+ 6bc:	0f ef ed             	pxor   mm5,mm5
+ 6bf:	0f ef f6             	pxor   mm6,mm6
+ 6c2:	0f ef ff             	pxor   mm7,mm7
+ 6c5:	0f ef c0             	pxor   mm0,mm0
+ 6c8:	0f ef c9             	pxor   mm1,mm1
+ 6cb:	0f ef d2             	pxor   mm2,mm2
+ 6ce:	0f ef db             	pxor   mm3,mm3
+ 6d1:	0f ef e4             	pxor   mm4,mm4
+ 6d4:	0f ef ed             	pxor   mm5,mm5
+ 6d7:	0f ef f6             	pxor   mm6,mm6
+ 6da:	0f ef ff             	pxor   mm7,mm7
+ 6dd:	0f ef c0             	pxor   mm0,mm0
+ 6e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  6e3:	0f ef c0             	pxor   mm0,mm0
  6e6:	0f ef c9             	pxor   mm1,mm1
  6e9:	0f ef d2             	pxor   mm2,mm2
@@ -628,111 +628,111 @@ Disassembly of section .data:
  737:	0f ef e4             	pxor   mm4,mm4
  73a:	0f ef ed             	pxor   mm5,mm5
  73d:	0f ef f6             	pxor   mm6,mm6
- 740:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 740:	0f ef ff             	pxor   mm7,mm7
  743:	0f ef c0             	pxor   mm0,mm0
- 746:	0f ef c9             	pxor   mm1,mm1
- 749:	0f ef d2             	pxor   mm2,mm2
- 74c:	0f ef db             	pxor   mm3,mm3
- 74f:	0f ef e4             	pxor   mm4,mm4
- 752:	0f ef ed             	pxor   mm5,mm5
- 755:	0f ef f6             	pxor   mm6,mm6
- 758:	0f ef ff             	pxor   mm7,mm7
- 75b:	0f ef c0             	pxor   mm0,mm0
- 75e:	0f ef c9             	pxor   mm1,mm1
- 761:	0f ef d2             	pxor   mm2,mm2
- 764:	0f ef db             	pxor   mm3,mm3
- 767:	0f ef e4             	pxor   mm4,mm4
- 76a:	0f ef ed             	pxor   mm5,mm5
- 76d:	0f ef f6             	pxor   mm6,mm6
- 770:	0f ef ff             	pxor   mm7,mm7
- 773:	0f ef c0             	pxor   mm0,mm0
- 776:	0f ef c9             	pxor   mm1,mm1
- 779:	0f ef d2             	pxor   mm2,mm2
- 77c:	0f ef db             	pxor   mm3,mm3
- 77f:	0f ef e4             	pxor   mm4,mm4
- 782:	0f ef ed             	pxor   mm5,mm5
- 785:	0f ef f6             	pxor   mm6,mm6
- 788:	0f ef ff             	pxor   mm7,mm7
- 78b:	0f ef c0             	pxor   mm0,mm0
- 78e:	0f ef c9             	pxor   mm1,mm1
- 791:	0f ef d2             	pxor   mm2,mm2
- 794:	0f ef db             	pxor   mm3,mm3
- 797:	0f ef e4             	pxor   mm4,mm4
- 79a:	0f ef ed             	pxor   mm5,mm5
- 79d:	0f ef f6             	pxor   mm6,mm6
- 7a0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 7a3:	0f ef c0             	pxor   mm0,mm0
- 7a6:	0f ef c9             	pxor   mm1,mm1
- 7a9:	0f ef d2             	pxor   mm2,mm2
- 7ac:	0f ef db             	pxor   mm3,mm3
- 7af:	0f ef e4             	pxor   mm4,mm4
- 7b2:	0f ef ed             	pxor   mm5,mm5
- 7b5:	0f ef f6             	pxor   mm6,mm6
- 7b8:	0f ef ff             	pxor   mm7,mm7
- 7bb:	0f ef c0             	pxor   mm0,mm0
- 7be:	0f ef c9             	pxor   mm1,mm1
- 7c1:	0f ef d2             	pxor   mm2,mm2
- 7c4:	0f ef db             	pxor   mm3,mm3
- 7c7:	0f ef e4             	pxor   mm4,mm4
- 7ca:	0f ef ed             	pxor   mm5,mm5
- 7cd:	0f ef f6             	pxor   mm6,mm6
- 7d0:	0f ef ff             	pxor   mm7,mm7
- 7d3:	0f ef c0             	pxor   mm0,mm0
- 7d6:	0f ef c9             	pxor   mm1,mm1
- 7d9:	0f ef d2             	pxor   mm2,mm2
- 7dc:	0f ef db             	pxor   mm3,mm3
- 7df:	0f ef e4             	pxor   mm4,mm4
- 7e2:	0f ef ed             	pxor   mm5,mm5
- 7e5:	0f ef f6             	pxor   mm6,mm6
- 7e8:	0f ef ff             	pxor   mm7,mm7
- 7eb:	0f ef c0             	pxor   mm0,mm0
- 7ee:	0f ef c9             	pxor   mm1,mm1
- 7f1:	0f ef d2             	pxor   mm2,mm2
- 7f4:	0f ef db             	pxor   mm3,mm3
- 7f7:	0f ef e4             	pxor   mm4,mm4
- 7fa:	0f ef ed             	pxor   mm5,mm5
- 7fd:	0f ef f6             	pxor   mm6,mm6
- 800:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 803:	0f ef c0             	pxor   mm0,mm0
- 806:	0f ef c9             	pxor   mm1,mm1
- 809:	0f ef d2             	pxor   mm2,mm2
- 80c:	0f ef db             	pxor   mm3,mm3
- 80f:	0f ef e4             	pxor   mm4,mm4
- 812:	0f ef ed             	pxor   mm5,mm5
- 815:	0f ef f6             	pxor   mm6,mm6
- 818:	0f ef ff             	pxor   mm7,mm7
- 81b:	0f ef c0             	pxor   mm0,mm0
- 81e:	0f ef c9             	pxor   mm1,mm1
- 821:	0f ef d2             	pxor   mm2,mm2
- 824:	0f ef db             	pxor   mm3,mm3
- 827:	0f ef e4             	pxor   mm4,mm4
- 82a:	0f ef ed             	pxor   mm5,mm5
- 82d:	0f ef f6             	pxor   mm6,mm6
- 830:	0f ef ff             	pxor   mm7,mm7
- 833:	0f ef c0             	pxor   mm0,mm0
- 836:	0f ef c9             	pxor   mm1,mm1
- 839:	0f ef d2             	pxor   mm2,mm2
- 83c:	0f ef db             	pxor   mm3,mm3
- 83f:	0f ef e4             	pxor   mm4,mm4
- 842:	0f ef ed             	pxor   mm5,mm5
- 845:	0f ef f6             	pxor   mm6,mm6
- 848:	0f ef ff             	pxor   mm7,mm7
- 84b:	0f ef c0             	pxor   mm0,mm0
- 84e:	0f ef c9             	pxor   mm1,mm1
- 851:	0f ef d2             	pxor   mm2,mm2
- 854:	0f ef db             	pxor   mm3,mm3
- 857:	0f ef e4             	pxor   mm4,mm4
- 85a:	0f ef ed             	pxor   mm5,mm5
- 85d:	0f ef f6             	pxor   mm6,mm6
- 860:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 863:	0f ef c0             	pxor   mm0,mm0
- 866:	0f ef c9             	pxor   mm1,mm1
- 869:	0f ef d2             	pxor   mm2,mm2
- 86c:	0f ef db             	pxor   mm3,mm3
- 86f:	0f ef e4             	pxor   mm4,mm4
- 872:	0f ef ed             	pxor   mm5,mm5
- 875:	0f ef f6             	pxor   mm6,mm6
- 878:	0f ef ff             	pxor   mm7,mm7
+ 746:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 749:	0f ef c0             	pxor   mm0,mm0
+ 74c:	0f ef c9             	pxor   mm1,mm1
+ 74f:	0f ef d2             	pxor   mm2,mm2
+ 752:	0f ef db             	pxor   mm3,mm3
+ 755:	0f ef e4             	pxor   mm4,mm4
+ 758:	0f ef ed             	pxor   mm5,mm5
+ 75b:	0f ef f6             	pxor   mm6,mm6
+ 75e:	0f ef ff             	pxor   mm7,mm7
+ 761:	0f ef c0             	pxor   mm0,mm0
+ 764:	0f ef c9             	pxor   mm1,mm1
+ 767:	0f ef d2             	pxor   mm2,mm2
+ 76a:	0f ef db             	pxor   mm3,mm3
+ 76d:	0f ef e4             	pxor   mm4,mm4
+ 770:	0f ef ed             	pxor   mm5,mm5
+ 773:	0f ef f6             	pxor   mm6,mm6
+ 776:	0f ef ff             	pxor   mm7,mm7
+ 779:	0f ef c0             	pxor   mm0,mm0
+ 77c:	0f ef c9             	pxor   mm1,mm1
+ 77f:	0f ef d2             	pxor   mm2,mm2
+ 782:	0f ef db             	pxor   mm3,mm3
+ 785:	0f ef e4             	pxor   mm4,mm4
+ 788:	0f ef ed             	pxor   mm5,mm5
+ 78b:	0f ef f6             	pxor   mm6,mm6
+ 78e:	0f ef ff             	pxor   mm7,mm7
+ 791:	0f ef c0             	pxor   mm0,mm0
+ 794:	0f ef c9             	pxor   mm1,mm1
+ 797:	0f ef d2             	pxor   mm2,mm2
+ 79a:	0f ef db             	pxor   mm3,mm3
+ 79d:	0f ef e4             	pxor   mm4,mm4
+ 7a0:	0f ef ed             	pxor   mm5,mm5
+ 7a3:	0f ef f6             	pxor   mm6,mm6
+ 7a6:	0f ef ff             	pxor   mm7,mm7
+ 7a9:	0f ef c0             	pxor   mm0,mm0
+ 7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7af:	0f ef c0             	pxor   mm0,mm0
+ 7b2:	0f ef c9             	pxor   mm1,mm1
+ 7b5:	0f ef d2             	pxor   mm2,mm2
+ 7b8:	0f ef db             	pxor   mm3,mm3
+ 7bb:	0f ef e4             	pxor   mm4,mm4
+ 7be:	0f ef ed             	pxor   mm5,mm5
+ 7c1:	0f ef f6             	pxor   mm6,mm6
+ 7c4:	0f ef ff             	pxor   mm7,mm7
+ 7c7:	0f ef c0             	pxor   mm0,mm0
+ 7ca:	0f ef c9             	pxor   mm1,mm1
+ 7cd:	0f ef d2             	pxor   mm2,mm2
+ 7d0:	0f ef db             	pxor   mm3,mm3
+ 7d3:	0f ef e4             	pxor   mm4,mm4
+ 7d6:	0f ef ed             	pxor   mm5,mm5
+ 7d9:	0f ef f6             	pxor   mm6,mm6
+ 7dc:	0f ef ff             	pxor   mm7,mm7
+ 7df:	0f ef c0             	pxor   mm0,mm0
+ 7e2:	0f ef c9             	pxor   mm1,mm1
+ 7e5:	0f ef d2             	pxor   mm2,mm2
+ 7e8:	0f ef db             	pxor   mm3,mm3
+ 7eb:	0f ef e4             	pxor   mm4,mm4
+ 7ee:	0f ef ed             	pxor   mm5,mm5
+ 7f1:	0f ef f6             	pxor   mm6,mm6
+ 7f4:	0f ef ff             	pxor   mm7,mm7
+ 7f7:	0f ef c0             	pxor   mm0,mm0
+ 7fa:	0f ef c9             	pxor   mm1,mm1
+ 7fd:	0f ef d2             	pxor   mm2,mm2
+ 800:	0f ef db             	pxor   mm3,mm3
+ 803:	0f ef e4             	pxor   mm4,mm4
+ 806:	0f ef ed             	pxor   mm5,mm5
+ 809:	0f ef f6             	pxor   mm6,mm6
+ 80c:	0f ef ff             	pxor   mm7,mm7
+ 80f:	0f ef c0             	pxor   mm0,mm0
+ 812:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 815:	0f ef c0             	pxor   mm0,mm0
+ 818:	0f ef c9             	pxor   mm1,mm1
+ 81b:	0f ef d2             	pxor   mm2,mm2
+ 81e:	0f ef db             	pxor   mm3,mm3
+ 821:	0f ef e4             	pxor   mm4,mm4
+ 824:	0f ef ed             	pxor   mm5,mm5
+ 827:	0f ef f6             	pxor   mm6,mm6
+ 82a:	0f ef ff             	pxor   mm7,mm7
+ 82d:	0f ef c0             	pxor   mm0,mm0
+ 830:	0f ef c9             	pxor   mm1,mm1
+ 833:	0f ef d2             	pxor   mm2,mm2
+ 836:	0f ef db             	pxor   mm3,mm3
+ 839:	0f ef e4             	pxor   mm4,mm4
+ 83c:	0f ef ed             	pxor   mm5,mm5
+ 83f:	0f ef f6             	pxor   mm6,mm6
+ 842:	0f ef ff             	pxor   mm7,mm7
+ 845:	0f ef c0             	pxor   mm0,mm0
+ 848:	0f ef c9             	pxor   mm1,mm1
+ 84b:	0f ef d2             	pxor   mm2,mm2
+ 84e:	0f ef db             	pxor   mm3,mm3
+ 851:	0f ef e4             	pxor   mm4,mm4
+ 854:	0f ef ed             	pxor   mm5,mm5
+ 857:	0f ef f6             	pxor   mm6,mm6
+ 85a:	0f ef ff             	pxor   mm7,mm7
+ 85d:	0f ef c0             	pxor   mm0,mm0
+ 860:	0f ef c9             	pxor   mm1,mm1
+ 863:	0f ef d2             	pxor   mm2,mm2
+ 866:	0f ef db             	pxor   mm3,mm3
+ 869:	0f ef e4             	pxor   mm4,mm4
+ 86c:	0f ef ed             	pxor   mm5,mm5
+ 86f:	0f ef f6             	pxor   mm6,mm6
+ 872:	0f ef ff             	pxor   mm7,mm7
+ 875:	0f ef c0             	pxor   mm0,mm0
+ 878:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  87b:	0f ef c0             	pxor   mm0,mm0
  87e:	0f ef c9             	pxor   mm1,mm1
  881:	0f ef d2             	pxor   mm2,mm2
@@ -756,7 +756,7 @@ Disassembly of section .data:
  8b7:	0f ef e4             	pxor   mm4,mm4
  8ba:	0f ef ed             	pxor   mm5,mm5
  8bd:	0f ef f6             	pxor   mm6,mm6
- 8c0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 8c0:	0f ef ff             	pxor   mm7,mm7
  8c3:	0f ef c0             	pxor   mm0,mm0
  8c6:	0f ef c9             	pxor   mm1,mm1
  8c9:	0f ef d2             	pxor   mm2,mm2
@@ -766,109 +766,109 @@ Disassembly of section .data:
  8d5:	0f ef f6             	pxor   mm6,mm6
  8d8:	0f ef ff             	pxor   mm7,mm7
  8db:	0f ef c0             	pxor   mm0,mm0
- 8de:	0f ef c9             	pxor   mm1,mm1
- 8e1:	0f ef d2             	pxor   mm2,mm2
- 8e4:	0f ef db             	pxor   mm3,mm3
- 8e7:	0f ef e4             	pxor   mm4,mm4
- 8ea:	0f ef ed             	pxor   mm5,mm5
- 8ed:	0f ef f6             	pxor   mm6,mm6
- 8f0:	0f ef ff             	pxor   mm7,mm7
- 8f3:	0f ef c0             	pxor   mm0,mm0
- 8f6:	0f ef c9             	pxor   mm1,mm1
- 8f9:	0f ef d2             	pxor   mm2,mm2
- 8fc:	0f ef db             	pxor   mm3,mm3
- 8ff:	0f ef e4             	pxor   mm4,mm4
- 902:	0f ef ed             	pxor   mm5,mm5
- 905:	0f ef f6             	pxor   mm6,mm6
- 908:	0f ef ff             	pxor   mm7,mm7
- 90b:	0f ef c0             	pxor   mm0,mm0
- 90e:	0f ef c9             	pxor   mm1,mm1
- 911:	0f ef d2             	pxor   mm2,mm2
- 914:	0f ef db             	pxor   mm3,mm3
- 917:	0f ef e4             	pxor   mm4,mm4
- 91a:	0f ef ed             	pxor   mm5,mm5
- 91d:	0f ef f6             	pxor   mm6,mm6
- 920:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 923:	0f ef c0             	pxor   mm0,mm0
- 926:	0f ef c9             	pxor   mm1,mm1
- 929:	0f ef d2             	pxor   mm2,mm2
- 92c:	0f ef db             	pxor   mm3,mm3
- 92f:	0f ef e4             	pxor   mm4,mm4
- 932:	0f ef ed             	pxor   mm5,mm5
- 935:	0f ef f6             	pxor   mm6,mm6
- 938:	0f ef ff             	pxor   mm7,mm7
- 93b:	0f ef c0             	pxor   mm0,mm0
- 93e:	0f ef c9             	pxor   mm1,mm1
- 941:	0f ef d2             	pxor   mm2,mm2
- 944:	0f ef db             	pxor   mm3,mm3
- 947:	0f ef e4             	pxor   mm4,mm4
- 94a:	0f ef ed             	pxor   mm5,mm5
- 94d:	0f ef f6             	pxor   mm6,mm6
- 950:	0f ef ff             	pxor   mm7,mm7
- 953:	0f ef c0             	pxor   mm0,mm0
- 956:	0f ef c9             	pxor   mm1,mm1
- 959:	0f ef d2             	pxor   mm2,mm2
- 95c:	0f ef db             	pxor   mm3,mm3
- 95f:	0f ef e4             	pxor   mm4,mm4
- 962:	0f ef ed             	pxor   mm5,mm5
- 965:	0f ef f6             	pxor   mm6,mm6
- 968:	0f ef ff             	pxor   mm7,mm7
- 96b:	0f ef c0             	pxor   mm0,mm0
- 96e:	0f ef c9             	pxor   mm1,mm1
- 971:	0f ef d2             	pxor   mm2,mm2
- 974:	0f ef db             	pxor   mm3,mm3
- 977:	0f ef e4             	pxor   mm4,mm4
- 97a:	0f ef ed             	pxor   mm5,mm5
- 97d:	0f ef f6             	pxor   mm6,mm6
- 980:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- 983:	0f ef c0             	pxor   mm0,mm0
- 986:	0f ef c9             	pxor   mm1,mm1
- 989:	0f ef d2             	pxor   mm2,mm2
- 98c:	0f ef db             	pxor   mm3,mm3
- 98f:	0f ef e4             	pxor   mm4,mm4
- 992:	0f ef ed             	pxor   mm5,mm5
- 995:	0f ef f6             	pxor   mm6,mm6
- 998:	0f ef ff             	pxor   mm7,mm7
- 99b:	0f ef c0             	pxor   mm0,mm0
- 99e:	0f ef c9             	pxor   mm1,mm1
- 9a1:	0f ef d2             	pxor   mm2,mm2
- 9a4:	0f ef db             	pxor   mm3,mm3
- 9a7:	0f ef e4             	pxor   mm4,mm4
- 9aa:	0f ef ed             	pxor   mm5,mm5
- 9ad:	0f ef f6             	pxor   mm6,mm6
- 9b0:	0f ef ff             	pxor   mm7,mm7
- 9b3:	0f ef c0             	pxor   mm0,mm0
- 9b6:	0f ef c9             	pxor   mm1,mm1
- 9b9:	0f ef d2             	pxor   mm2,mm2
- 9bc:	0f ef db             	pxor   mm3,mm3
- 9bf:	0f ef e4             	pxor   mm4,mm4
- 9c2:	0f ef ed             	pxor   mm5,mm5
- 9c5:	0f ef f6             	pxor   mm6,mm6
- 9c8:	0f ef ff             	pxor   mm7,mm7
- 9cb:	0f ef c0             	pxor   mm0,mm0
- 9ce:	0f ef c9             	pxor   mm1,mm1
- 9d1:	0f ef d2             	pxor   mm2,mm2
- 9d4:	0f ef db             	pxor   mm3,mm3
- 9d7:	0f ef e4             	pxor   mm4,mm4
- 9da:	0f ef ed             	pxor   mm5,mm5
- 9dd:	0f ef f6             	pxor   mm6,mm6
- 9e0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- 9e3:	0f ef c0             	pxor   mm0,mm0
- 9e6:	0f ef c9             	pxor   mm1,mm1
- 9e9:	0f ef d2             	pxor   mm2,mm2
- 9ec:	0f ef db             	pxor   mm3,mm3
- 9ef:	0f ef e4             	pxor   mm4,mm4
- 9f2:	0f ef ed             	pxor   mm5,mm5
- 9f5:	0f ef f6             	pxor   mm6,mm6
- 9f8:	0f ef ff             	pxor   mm7,mm7
- 9fb:	0f ef c0             	pxor   mm0,mm0
- 9fe:	0f ef c9             	pxor   mm1,mm1
- a01:	0f ef d2             	pxor   mm2,mm2
- a04:	0f ef db             	pxor   mm3,mm3
- a07:	0f ef e4             	pxor   mm4,mm4
- a0a:	0f ef ed             	pxor   mm5,mm5
- a0d:	0f ef f6             	pxor   mm6,mm6
- a10:	0f ef ff             	pxor   mm7,mm7
+ 8de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8e1:	0f ef c0             	pxor   mm0,mm0
+ 8e4:	0f ef c9             	pxor   mm1,mm1
+ 8e7:	0f ef d2             	pxor   mm2,mm2
+ 8ea:	0f ef db             	pxor   mm3,mm3
+ 8ed:	0f ef e4             	pxor   mm4,mm4
+ 8f0:	0f ef ed             	pxor   mm5,mm5
+ 8f3:	0f ef f6             	pxor   mm6,mm6
+ 8f6:	0f ef ff             	pxor   mm7,mm7
+ 8f9:	0f ef c0             	pxor   mm0,mm0
+ 8fc:	0f ef c9             	pxor   mm1,mm1
+ 8ff:	0f ef d2             	pxor   mm2,mm2
+ 902:	0f ef db             	pxor   mm3,mm3
+ 905:	0f ef e4             	pxor   mm4,mm4
+ 908:	0f ef ed             	pxor   mm5,mm5
+ 90b:	0f ef f6             	pxor   mm6,mm6
+ 90e:	0f ef ff             	pxor   mm7,mm7
+ 911:	0f ef c0             	pxor   mm0,mm0
+ 914:	0f ef c9             	pxor   mm1,mm1
+ 917:	0f ef d2             	pxor   mm2,mm2
+ 91a:	0f ef db             	pxor   mm3,mm3
+ 91d:	0f ef e4             	pxor   mm4,mm4
+ 920:	0f ef ed             	pxor   mm5,mm5
+ 923:	0f ef f6             	pxor   mm6,mm6
+ 926:	0f ef ff             	pxor   mm7,mm7
+ 929:	0f ef c0             	pxor   mm0,mm0
+ 92c:	0f ef c9             	pxor   mm1,mm1
+ 92f:	0f ef d2             	pxor   mm2,mm2
+ 932:	0f ef db             	pxor   mm3,mm3
+ 935:	0f ef e4             	pxor   mm4,mm4
+ 938:	0f ef ed             	pxor   mm5,mm5
+ 93b:	0f ef f6             	pxor   mm6,mm6
+ 93e:	0f ef ff             	pxor   mm7,mm7
+ 941:	0f ef c0             	pxor   mm0,mm0
+ 944:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 947:	0f ef c0             	pxor   mm0,mm0
+ 94a:	0f ef c9             	pxor   mm1,mm1
+ 94d:	0f ef d2             	pxor   mm2,mm2
+ 950:	0f ef db             	pxor   mm3,mm3
+ 953:	0f ef e4             	pxor   mm4,mm4
+ 956:	0f ef ed             	pxor   mm5,mm5
+ 959:	0f ef f6             	pxor   mm6,mm6
+ 95c:	0f ef ff             	pxor   mm7,mm7
+ 95f:	0f ef c0             	pxor   mm0,mm0
+ 962:	0f ef c9             	pxor   mm1,mm1
+ 965:	0f ef d2             	pxor   mm2,mm2
+ 968:	0f ef db             	pxor   mm3,mm3
+ 96b:	0f ef e4             	pxor   mm4,mm4
+ 96e:	0f ef ed             	pxor   mm5,mm5
+ 971:	0f ef f6             	pxor   mm6,mm6
+ 974:	0f ef ff             	pxor   mm7,mm7
+ 977:	0f ef c0             	pxor   mm0,mm0
+ 97a:	0f ef c9             	pxor   mm1,mm1
+ 97d:	0f ef d2             	pxor   mm2,mm2
+ 980:	0f ef db             	pxor   mm3,mm3
+ 983:	0f ef e4             	pxor   mm4,mm4
+ 986:	0f ef ed             	pxor   mm5,mm5
+ 989:	0f ef f6             	pxor   mm6,mm6
+ 98c:	0f ef ff             	pxor   mm7,mm7
+ 98f:	0f ef c0             	pxor   mm0,mm0
+ 992:	0f ef c9             	pxor   mm1,mm1
+ 995:	0f ef d2             	pxor   mm2,mm2
+ 998:	0f ef db             	pxor   mm3,mm3
+ 99b:	0f ef e4             	pxor   mm4,mm4
+ 99e:	0f ef ed             	pxor   mm5,mm5
+ 9a1:	0f ef f6             	pxor   mm6,mm6
+ 9a4:	0f ef ff             	pxor   mm7,mm7
+ 9a7:	0f ef c0             	pxor   mm0,mm0
+ 9aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9ad:	0f ef c0             	pxor   mm0,mm0
+ 9b0:	0f ef c9             	pxor   mm1,mm1
+ 9b3:	0f ef d2             	pxor   mm2,mm2
+ 9b6:	0f ef db             	pxor   mm3,mm3
+ 9b9:	0f ef e4             	pxor   mm4,mm4
+ 9bc:	0f ef ed             	pxor   mm5,mm5
+ 9bf:	0f ef f6             	pxor   mm6,mm6
+ 9c2:	0f ef ff             	pxor   mm7,mm7
+ 9c5:	0f ef c0             	pxor   mm0,mm0
+ 9c8:	0f ef c9             	pxor   mm1,mm1
+ 9cb:	0f ef d2             	pxor   mm2,mm2
+ 9ce:	0f ef db             	pxor   mm3,mm3
+ 9d1:	0f ef e4             	pxor   mm4,mm4
+ 9d4:	0f ef ed             	pxor   mm5,mm5
+ 9d7:	0f ef f6             	pxor   mm6,mm6
+ 9da:	0f ef ff             	pxor   mm7,mm7
+ 9dd:	0f ef c0             	pxor   mm0,mm0
+ 9e0:	0f ef c9             	pxor   mm1,mm1
+ 9e3:	0f ef d2             	pxor   mm2,mm2
+ 9e6:	0f ef db             	pxor   mm3,mm3
+ 9e9:	0f ef e4             	pxor   mm4,mm4
+ 9ec:	0f ef ed             	pxor   mm5,mm5
+ 9ef:	0f ef f6             	pxor   mm6,mm6
+ 9f2:	0f ef ff             	pxor   mm7,mm7
+ 9f5:	0f ef c0             	pxor   mm0,mm0
+ 9f8:	0f ef c9             	pxor   mm1,mm1
+ 9fb:	0f ef d2             	pxor   mm2,mm2
+ 9fe:	0f ef db             	pxor   mm3,mm3
+ a01:	0f ef e4             	pxor   mm4,mm4
+ a04:	0f ef ed             	pxor   mm5,mm5
+ a07:	0f ef f6             	pxor   mm6,mm6
+ a0a:	0f ef ff             	pxor   mm7,mm7
+ a0d:	0f ef c0             	pxor   mm0,mm0
+ a10:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  a13:	0f ef c0             	pxor   mm0,mm0
  a16:	0f ef c9             	pxor   mm1,mm1
  a19:	0f ef d2             	pxor   mm2,mm2
@@ -884,7 +884,7 @@ Disassembly of section .data:
  a37:	0f ef e4             	pxor   mm4,mm4
  a3a:	0f ef ed             	pxor   mm5,mm5
  a3d:	0f ef f6             	pxor   mm6,mm6
- a40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a40:	0f ef ff             	pxor   mm7,mm7
  a43:	0f ef c0             	pxor   mm0,mm0
  a46:	0f ef c9             	pxor   mm1,mm1
  a49:	0f ef d2             	pxor   mm2,mm2
@@ -902,109 +902,109 @@ Disassembly of section .data:
  a6d:	0f ef f6             	pxor   mm6,mm6
  a70:	0f ef ff             	pxor   mm7,mm7
  a73:	0f ef c0             	pxor   mm0,mm0
- a76:	0f ef c9             	pxor   mm1,mm1
- a79:	0f ef d2             	pxor   mm2,mm2
- a7c:	0f ef db             	pxor   mm3,mm3
- a7f:	0f ef e4             	pxor   mm4,mm4
- a82:	0f ef ed             	pxor   mm5,mm5
- a85:	0f ef f6             	pxor   mm6,mm6
- a88:	0f ef ff             	pxor   mm7,mm7
- a8b:	0f ef c0             	pxor   mm0,mm0
- a8e:	0f ef c9             	pxor   mm1,mm1
- a91:	0f ef d2             	pxor   mm2,mm2
- a94:	0f ef db             	pxor   mm3,mm3
- a97:	0f ef e4             	pxor   mm4,mm4
- a9a:	0f ef ed             	pxor   mm5,mm5
- a9d:	0f ef f6             	pxor   mm6,mm6
- aa0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- aa3:	0f ef c0             	pxor   mm0,mm0
- aa6:	0f ef c9             	pxor   mm1,mm1
- aa9:	0f ef d2             	pxor   mm2,mm2
- aac:	0f ef db             	pxor   mm3,mm3
- aaf:	0f ef e4             	pxor   mm4,mm4
- ab2:	0f ef ed             	pxor   mm5,mm5
- ab5:	0f ef f6             	pxor   mm6,mm6
- ab8:	0f ef ff             	pxor   mm7,mm7
- abb:	0f ef c0             	pxor   mm0,mm0
- abe:	0f ef c9             	pxor   mm1,mm1
- ac1:	0f ef d2             	pxor   mm2,mm2
- ac4:	0f ef db             	pxor   mm3,mm3
- ac7:	0f ef e4             	pxor   mm4,mm4
- aca:	0f ef ed             	pxor   mm5,mm5
- acd:	0f ef f6             	pxor   mm6,mm6
- ad0:	0f ef ff             	pxor   mm7,mm7
- ad3:	0f ef c0             	pxor   mm0,mm0
- ad6:	0f ef c9             	pxor   mm1,mm1
- ad9:	0f ef d2             	pxor   mm2,mm2
- adc:	0f ef db             	pxor   mm3,mm3
- adf:	0f ef e4             	pxor   mm4,mm4
- ae2:	0f ef ed             	pxor   mm5,mm5
- ae5:	0f ef f6             	pxor   mm6,mm6
- ae8:	0f ef ff             	pxor   mm7,mm7
- aeb:	0f ef c0             	pxor   mm0,mm0
- aee:	0f ef c9             	pxor   mm1,mm1
- af1:	0f ef d2             	pxor   mm2,mm2
- af4:	0f ef db             	pxor   mm3,mm3
- af7:	0f ef e4             	pxor   mm4,mm4
- afa:	0f ef ed             	pxor   mm5,mm5
- afd:	0f ef f6             	pxor   mm6,mm6
- b00:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- b03:	0f ef c0             	pxor   mm0,mm0
- b06:	0f ef c9             	pxor   mm1,mm1
- b09:	0f ef d2             	pxor   mm2,mm2
- b0c:	0f ef db             	pxor   mm3,mm3
- b0f:	0f ef e4             	pxor   mm4,mm4
- b12:	0f ef ed             	pxor   mm5,mm5
- b15:	0f ef f6             	pxor   mm6,mm6
- b18:	0f ef ff             	pxor   mm7,mm7
- b1b:	0f ef c0             	pxor   mm0,mm0
- b1e:	0f ef c9             	pxor   mm1,mm1
- b21:	0f ef d2             	pxor   mm2,mm2
- b24:	0f ef db             	pxor   mm3,mm3
- b27:	0f ef e4             	pxor   mm4,mm4
- b2a:	0f ef ed             	pxor   mm5,mm5
- b2d:	0f ef f6             	pxor   mm6,mm6
- b30:	0f ef ff             	pxor   mm7,mm7
- b33:	0f ef c0             	pxor   mm0,mm0
- b36:	0f ef c9             	pxor   mm1,mm1
- b39:	0f ef d2             	pxor   mm2,mm2
- b3c:	0f ef db             	pxor   mm3,mm3
- b3f:	0f ef e4             	pxor   mm4,mm4
- b42:	0f ef ed             	pxor   mm5,mm5
- b45:	0f ef f6             	pxor   mm6,mm6
- b48:	0f ef ff             	pxor   mm7,mm7
- b4b:	0f ef c0             	pxor   mm0,mm0
- b4e:	0f ef c9             	pxor   mm1,mm1
- b51:	0f ef d2             	pxor   mm2,mm2
- b54:	0f ef db             	pxor   mm3,mm3
- b57:	0f ef e4             	pxor   mm4,mm4
- b5a:	0f ef ed             	pxor   mm5,mm5
- b5d:	0f ef f6             	pxor   mm6,mm6
- b60:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- b63:	0f ef c0             	pxor   mm0,mm0
- b66:	0f ef c9             	pxor   mm1,mm1
- b69:	0f ef d2             	pxor   mm2,mm2
- b6c:	0f ef db             	pxor   mm3,mm3
- b6f:	0f ef e4             	pxor   mm4,mm4
- b72:	0f ef ed             	pxor   mm5,mm5
- b75:	0f ef f6             	pxor   mm6,mm6
- b78:	0f ef ff             	pxor   mm7,mm7
- b7b:	0f ef c0             	pxor   mm0,mm0
- b7e:	0f ef c9             	pxor   mm1,mm1
- b81:	0f ef d2             	pxor   mm2,mm2
- b84:	0f ef db             	pxor   mm3,mm3
- b87:	0f ef e4             	pxor   mm4,mm4
- b8a:	0f ef ed             	pxor   mm5,mm5
- b8d:	0f ef f6             	pxor   mm6,mm6
- b90:	0f ef ff             	pxor   mm7,mm7
- b93:	0f ef c0             	pxor   mm0,mm0
- b96:	0f ef c9             	pxor   mm1,mm1
- b99:	0f ef d2             	pxor   mm2,mm2
- b9c:	0f ef db             	pxor   mm3,mm3
- b9f:	0f ef e4             	pxor   mm4,mm4
- ba2:	0f ef ed             	pxor   mm5,mm5
- ba5:	0f ef f6             	pxor   mm6,mm6
- ba8:	0f ef ff             	pxor   mm7,mm7
+ a76:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a79:	0f ef c0             	pxor   mm0,mm0
+ a7c:	0f ef c9             	pxor   mm1,mm1
+ a7f:	0f ef d2             	pxor   mm2,mm2
+ a82:	0f ef db             	pxor   mm3,mm3
+ a85:	0f ef e4             	pxor   mm4,mm4
+ a88:	0f ef ed             	pxor   mm5,mm5
+ a8b:	0f ef f6             	pxor   mm6,mm6
+ a8e:	0f ef ff             	pxor   mm7,mm7
+ a91:	0f ef c0             	pxor   mm0,mm0
+ a94:	0f ef c9             	pxor   mm1,mm1
+ a97:	0f ef d2             	pxor   mm2,mm2
+ a9a:	0f ef db             	pxor   mm3,mm3
+ a9d:	0f ef e4             	pxor   mm4,mm4
+ aa0:	0f ef ed             	pxor   mm5,mm5
+ aa3:	0f ef f6             	pxor   mm6,mm6
+ aa6:	0f ef ff             	pxor   mm7,mm7
+ aa9:	0f ef c0             	pxor   mm0,mm0
+ aac:	0f ef c9             	pxor   mm1,mm1
+ aaf:	0f ef d2             	pxor   mm2,mm2
+ ab2:	0f ef db             	pxor   mm3,mm3
+ ab5:	0f ef e4             	pxor   mm4,mm4
+ ab8:	0f ef ed             	pxor   mm5,mm5
+ abb:	0f ef f6             	pxor   mm6,mm6
+ abe:	0f ef ff             	pxor   mm7,mm7
+ ac1:	0f ef c0             	pxor   mm0,mm0
+ ac4:	0f ef c9             	pxor   mm1,mm1
+ ac7:	0f ef d2             	pxor   mm2,mm2
+ aca:	0f ef db             	pxor   mm3,mm3
+ acd:	0f ef e4             	pxor   mm4,mm4
+ ad0:	0f ef ed             	pxor   mm5,mm5
+ ad3:	0f ef f6             	pxor   mm6,mm6
+ ad6:	0f ef ff             	pxor   mm7,mm7
+ ad9:	0f ef c0             	pxor   mm0,mm0
+ adc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ adf:	0f ef c0             	pxor   mm0,mm0
+ ae2:	0f ef c9             	pxor   mm1,mm1
+ ae5:	0f ef d2             	pxor   mm2,mm2
+ ae8:	0f ef db             	pxor   mm3,mm3
+ aeb:	0f ef e4             	pxor   mm4,mm4
+ aee:	0f ef ed             	pxor   mm5,mm5
+ af1:	0f ef f6             	pxor   mm6,mm6
+ af4:	0f ef ff             	pxor   mm7,mm7
+ af7:	0f ef c0             	pxor   mm0,mm0
+ afa:	0f ef c9             	pxor   mm1,mm1
+ afd:	0f ef d2             	pxor   mm2,mm2
+ b00:	0f ef db             	pxor   mm3,mm3
+ b03:	0f ef e4             	pxor   mm4,mm4
+ b06:	0f ef ed             	pxor   mm5,mm5
+ b09:	0f ef f6             	pxor   mm6,mm6
+ b0c:	0f ef ff             	pxor   mm7,mm7
+ b0f:	0f ef c0             	pxor   mm0,mm0
+ b12:	0f ef c9             	pxor   mm1,mm1
+ b15:	0f ef d2             	pxor   mm2,mm2
+ b18:	0f ef db             	pxor   mm3,mm3
+ b1b:	0f ef e4             	pxor   mm4,mm4
+ b1e:	0f ef ed             	pxor   mm5,mm5
+ b21:	0f ef f6             	pxor   mm6,mm6
+ b24:	0f ef ff             	pxor   mm7,mm7
+ b27:	0f ef c0             	pxor   mm0,mm0
+ b2a:	0f ef c9             	pxor   mm1,mm1
+ b2d:	0f ef d2             	pxor   mm2,mm2
+ b30:	0f ef db             	pxor   mm3,mm3
+ b33:	0f ef e4             	pxor   mm4,mm4
+ b36:	0f ef ed             	pxor   mm5,mm5
+ b39:	0f ef f6             	pxor   mm6,mm6
+ b3c:	0f ef ff             	pxor   mm7,mm7
+ b3f:	0f ef c0             	pxor   mm0,mm0
+ b42:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b45:	0f ef c0             	pxor   mm0,mm0
+ b48:	0f ef c9             	pxor   mm1,mm1
+ b4b:	0f ef d2             	pxor   mm2,mm2
+ b4e:	0f ef db             	pxor   mm3,mm3
+ b51:	0f ef e4             	pxor   mm4,mm4
+ b54:	0f ef ed             	pxor   mm5,mm5
+ b57:	0f ef f6             	pxor   mm6,mm6
+ b5a:	0f ef ff             	pxor   mm7,mm7
+ b5d:	0f ef c0             	pxor   mm0,mm0
+ b60:	0f ef c9             	pxor   mm1,mm1
+ b63:	0f ef d2             	pxor   mm2,mm2
+ b66:	0f ef db             	pxor   mm3,mm3
+ b69:	0f ef e4             	pxor   mm4,mm4
+ b6c:	0f ef ed             	pxor   mm5,mm5
+ b6f:	0f ef f6             	pxor   mm6,mm6
+ b72:	0f ef ff             	pxor   mm7,mm7
+ b75:	0f ef c0             	pxor   mm0,mm0
+ b78:	0f ef c9             	pxor   mm1,mm1
+ b7b:	0f ef d2             	pxor   mm2,mm2
+ b7e:	0f ef db             	pxor   mm3,mm3
+ b81:	0f ef e4             	pxor   mm4,mm4
+ b84:	0f ef ed             	pxor   mm5,mm5
+ b87:	0f ef f6             	pxor   mm6,mm6
+ b8a:	0f ef ff             	pxor   mm7,mm7
+ b8d:	0f ef c0             	pxor   mm0,mm0
+ b90:	0f ef c9             	pxor   mm1,mm1
+ b93:	0f ef d2             	pxor   mm2,mm2
+ b96:	0f ef db             	pxor   mm3,mm3
+ b99:	0f ef e4             	pxor   mm4,mm4
+ b9c:	0f ef ed             	pxor   mm5,mm5
+ b9f:	0f ef f6             	pxor   mm6,mm6
+ ba2:	0f ef ff             	pxor   mm7,mm7
+ ba5:	0f ef c0             	pxor   mm0,mm0
+ ba8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  bab:	0f ef c0             	pxor   mm0,mm0
  bae:	0f ef c9             	pxor   mm1,mm1
  bb1:	0f ef d2             	pxor   mm2,mm2
@@ -1012,7 +1012,7 @@ Disassembly of section .data:
  bb7:	0f ef e4             	pxor   mm4,mm4
  bba:	0f ef ed             	pxor   mm5,mm5
  bbd:	0f ef f6             	pxor   mm6,mm6
- bc0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bc0:	0f ef ff             	pxor   mm7,mm7
  bc3:	0f ef c0             	pxor   mm0,mm0
  bc6:	0f ef c9             	pxor   mm1,mm1
  bc9:	0f ef d2             	pxor   mm2,mm2
@@ -1038,124 +1038,191 @@ Disassembly of section .data:
  c05:	0f ef f6             	pxor   mm6,mm6
  c08:	0f ef ff             	pxor   mm7,mm7
  c0b:	0f ef c0             	pxor   mm0,mm0
- c0e:	0f ef c9             	pxor   mm1,mm1
- c11:	0f ef d2             	pxor   mm2,mm2
- c14:	0f ef db             	pxor   mm3,mm3
- c17:	0f ef e4             	pxor   mm4,mm4
- c1a:	0f ef ed             	pxor   mm5,mm5
- c1d:	0f ef f6             	pxor   mm6,mm6
- c20:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- c23:	0f ef c0             	pxor   mm0,mm0
- c26:	0f ef c9             	pxor   mm1,mm1
- c29:	0f ef d2             	pxor   mm2,mm2
- c2c:	0f ef db             	pxor   mm3,mm3
- c2f:	0f ef e4             	pxor   mm4,mm4
- c32:	0f ef ed             	pxor   mm5,mm5
- c35:	0f ef f6             	pxor   mm6,mm6
- c38:	0f ef ff             	pxor   mm7,mm7
- c3b:	0f ef c0             	pxor   mm0,mm0
- c3e:	0f ef c9             	pxor   mm1,mm1
- c41:	0f ef d2             	pxor   mm2,mm2
- c44:	0f ef db             	pxor   mm3,mm3
- c47:	0f ef e4             	pxor   mm4,mm4
- c4a:	0f ef ed             	pxor   mm5,mm5
- c4d:	0f ef f6             	pxor   mm6,mm6
- c50:	0f ef ff             	pxor   mm7,mm7
- c53:	0f ef c0             	pxor   mm0,mm0
- c56:	0f ef c9             	pxor   mm1,mm1
- c59:	0f ef d2             	pxor   mm2,mm2
- c5c:	0f ef db             	pxor   mm3,mm3
- c5f:	0f ef e4             	pxor   mm4,mm4
- c62:	0f ef ed             	pxor   mm5,mm5
- c65:	0f ef f6             	pxor   mm6,mm6
- c68:	0f ef ff             	pxor   mm7,mm7
- c6b:	0f ef c0             	pxor   mm0,mm0
- c6e:	0f ef c9             	pxor   mm1,mm1
- c71:	0f ef d2             	pxor   mm2,mm2
- c74:	0f ef db             	pxor   mm3,mm3
- c77:	0f ef e4             	pxor   mm4,mm4
- c7a:	0f ef ed             	pxor   mm5,mm5
- c7d:	0f ef f6             	pxor   mm6,mm6
- c80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
- c83:	0f ef c0             	pxor   mm0,mm0
- c86:	0f ef c9             	pxor   mm1,mm1
- c89:	0f ef d2             	pxor   mm2,mm2
- c8c:	0f ef db             	pxor   mm3,mm3
- c8f:	0f ef e4             	pxor   mm4,mm4
- c92:	0f ef ed             	pxor   mm5,mm5
- c95:	0f ef f6             	pxor   mm6,mm6
- c98:	0f ef ff             	pxor   mm7,mm7
- c9b:	0f ef c0             	pxor   mm0,mm0
- c9e:	0f ef c9             	pxor   mm1,mm1
- ca1:	0f ef d2             	pxor   mm2,mm2
- ca4:	0f ef db             	pxor   mm3,mm3
- ca7:	0f ef e4             	pxor   mm4,mm4
- caa:	0f ef ed             	pxor   mm5,mm5
- cad:	0f ef f6             	pxor   mm6,mm6
- cb0:	0f ef ff             	pxor   mm7,mm7
- cb3:	0f ef c0             	pxor   mm0,mm0
- cb6:	0f ef c9             	pxor   mm1,mm1
- cb9:	0f ef d2             	pxor   mm2,mm2
- cbc:	0f ef db             	pxor   mm3,mm3
- cbf:	0f ef e4             	pxor   mm4,mm4
- cc2:	0f ef ed             	pxor   mm5,mm5
- cc5:	0f ef f6             	pxor   mm6,mm6
- cc8:	0f ef ff             	pxor   mm7,mm7
- ccb:	0f ef c0             	pxor   mm0,mm0
- cce:	0f ef c9             	pxor   mm1,mm1
- cd1:	0f ef d2             	pxor   mm2,mm2
- cd4:	0f ef db             	pxor   mm3,mm3
- cd7:	0f ef e4             	pxor   mm4,mm4
- cda:	0f ef ed             	pxor   mm5,mm5
- cdd:	0f ef f6             	pxor   mm6,mm6
- ce0:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
- ce3:	0f ef c0             	pxor   mm0,mm0
- ce6:	0f ef c9             	pxor   mm1,mm1
- ce9:	0f ef d2             	pxor   mm2,mm2
- cec:	0f ef db             	pxor   mm3,mm3
- cef:	0f ef e4             	pxor   mm4,mm4
- cf2:	0f ef ed             	pxor   mm5,mm5
- cf5:	0f ef f6             	pxor   mm6,mm6
- cf8:	0f ef ff             	pxor   mm7,mm7
- cfb:	0f ef c0             	pxor   mm0,mm0
- cfe:	0f ef c9             	pxor   mm1,mm1
- d01:	0f ef d2             	pxor   mm2,mm2
- d04:	0f ef db             	pxor   mm3,mm3
- d07:	0f ef e4             	pxor   mm4,mm4
- d0a:	0f ef ed             	pxor   mm5,mm5
- d0d:	0f ef f6             	pxor   mm6,mm6
- d10:	0f ef ff             	pxor   mm7,mm7
- d13:	0f ef c0             	pxor   mm0,mm0
- d16:	0f ef c9             	pxor   mm1,mm1
- d19:	0f ef d2             	pxor   mm2,mm2
- d1c:	0f ef db             	pxor   mm3,mm3
- d1f:	0f ef e4             	pxor   mm4,mm4
- d22:	0f ef ed             	pxor   mm5,mm5
- d25:	0f ef f6             	pxor   mm6,mm6
- d28:	0f ef ff             	pxor   mm7,mm7
- d2b:	0f ef c0             	pxor   mm0,mm0
- d2e:	0f ef c9             	pxor   mm1,mm1
- d31:	0f ef d2             	pxor   mm2,mm2
- d34:	0f ef db             	pxor   mm3,mm3
- d37:	0f ef e4             	pxor   mm4,mm4
- d3a:	0f ef ed             	pxor   mm5,mm5
- d3d:	0f ef f6             	pxor   mm6,mm6
- d40:	83 e8 01             	sub    eax,0x1
- d43:	0f 85 37 f3 ff ff    	jne    0x80
- d49:	66 90                	xchg   ax,ax
- d4b:	66 90                	xchg   ax,ax
- d4d:	66 90                	xchg   ax,ax
- d4f:	66 90                	xchg   ax,ax
- d51:	66 90                	xchg   ax,ax
- d53:	66 90                	xchg   ax,ax
- d55:	66 90                	xchg   ax,ax
- d57:	66 90                	xchg   ax,ax
- d59:	48 81 c4 84 35 00 00 	add    rsp,0x3584
- d60:	41 59                	pop    r9
- d62:	41 58                	pop    r8
- d64:	5f                   	pop    rdi
- d65:	5e                   	pop    rsi
- d66:	5d                   	pop    rbp
- d67:	5b                   	pop    rbx
- d68:	0f 77                	emms   
- d6a:	c3                   	ret    
+ c0e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c11:	0f ef c0             	pxor   mm0,mm0
+ c14:	0f ef c9             	pxor   mm1,mm1
+ c17:	0f ef d2             	pxor   mm2,mm2
+ c1a:	0f ef db             	pxor   mm3,mm3
+ c1d:	0f ef e4             	pxor   mm4,mm4
+ c20:	0f ef ed             	pxor   mm5,mm5
+ c23:	0f ef f6             	pxor   mm6,mm6
+ c26:	0f ef ff             	pxor   mm7,mm7
+ c29:	0f ef c0             	pxor   mm0,mm0
+ c2c:	0f ef c9             	pxor   mm1,mm1
+ c2f:	0f ef d2             	pxor   mm2,mm2
+ c32:	0f ef db             	pxor   mm3,mm3
+ c35:	0f ef e4             	pxor   mm4,mm4
+ c38:	0f ef ed             	pxor   mm5,mm5
+ c3b:	0f ef f6             	pxor   mm6,mm6
+ c3e:	0f ef ff             	pxor   mm7,mm7
+ c41:	0f ef c0             	pxor   mm0,mm0
+ c44:	0f ef c9             	pxor   mm1,mm1
+ c47:	0f ef d2             	pxor   mm2,mm2
+ c4a:	0f ef db             	pxor   mm3,mm3
+ c4d:	0f ef e4             	pxor   mm4,mm4
+ c50:	0f ef ed             	pxor   mm5,mm5
+ c53:	0f ef f6             	pxor   mm6,mm6
+ c56:	0f ef ff             	pxor   mm7,mm7
+ c59:	0f ef c0             	pxor   mm0,mm0
+ c5c:	0f ef c9             	pxor   mm1,mm1
+ c5f:	0f ef d2             	pxor   mm2,mm2
+ c62:	0f ef db             	pxor   mm3,mm3
+ c65:	0f ef e4             	pxor   mm4,mm4
+ c68:	0f ef ed             	pxor   mm5,mm5
+ c6b:	0f ef f6             	pxor   mm6,mm6
+ c6e:	0f ef ff             	pxor   mm7,mm7
+ c71:	0f ef c0             	pxor   mm0,mm0
+ c74:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c77:	0f ef c0             	pxor   mm0,mm0
+ c7a:	0f ef c9             	pxor   mm1,mm1
+ c7d:	0f ef d2             	pxor   mm2,mm2
+ c80:	0f ef db             	pxor   mm3,mm3
+ c83:	0f ef e4             	pxor   mm4,mm4
+ c86:	0f ef ed             	pxor   mm5,mm5
+ c89:	0f ef f6             	pxor   mm6,mm6
+ c8c:	0f ef ff             	pxor   mm7,mm7
+ c8f:	0f ef c0             	pxor   mm0,mm0
+ c92:	0f ef c9             	pxor   mm1,mm1
+ c95:	0f ef d2             	pxor   mm2,mm2
+ c98:	0f ef db             	pxor   mm3,mm3
+ c9b:	0f ef e4             	pxor   mm4,mm4
+ c9e:	0f ef ed             	pxor   mm5,mm5
+ ca1:	0f ef f6             	pxor   mm6,mm6
+ ca4:	0f ef ff             	pxor   mm7,mm7
+ ca7:	0f ef c0             	pxor   mm0,mm0
+ caa:	0f ef c9             	pxor   mm1,mm1
+ cad:	0f ef d2             	pxor   mm2,mm2
+ cb0:	0f ef db             	pxor   mm3,mm3
+ cb3:	0f ef e4             	pxor   mm4,mm4
+ cb6:	0f ef ed             	pxor   mm5,mm5
+ cb9:	0f ef f6             	pxor   mm6,mm6
+ cbc:	0f ef ff             	pxor   mm7,mm7
+ cbf:	0f ef c0             	pxor   mm0,mm0
+ cc2:	0f ef c9             	pxor   mm1,mm1
+ cc5:	0f ef d2             	pxor   mm2,mm2
+ cc8:	0f ef db             	pxor   mm3,mm3
+ ccb:	0f ef e4             	pxor   mm4,mm4
+ cce:	0f ef ed             	pxor   mm5,mm5
+ cd1:	0f ef f6             	pxor   mm6,mm6
+ cd4:	0f ef ff             	pxor   mm7,mm7
+ cd7:	0f ef c0             	pxor   mm0,mm0
+ cda:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ cdd:	0f ef c0             	pxor   mm0,mm0
+ ce0:	0f ef c9             	pxor   mm1,mm1
+ ce3:	0f ef d2             	pxor   mm2,mm2
+ ce6:	0f ef db             	pxor   mm3,mm3
+ ce9:	0f ef e4             	pxor   mm4,mm4
+ cec:	0f ef ed             	pxor   mm5,mm5
+ cef:	0f ef f6             	pxor   mm6,mm6
+ cf2:	0f ef ff             	pxor   mm7,mm7
+ cf5:	0f ef c0             	pxor   mm0,mm0
+ cf8:	0f ef c9             	pxor   mm1,mm1
+ cfb:	0f ef d2             	pxor   mm2,mm2
+ cfe:	0f ef db             	pxor   mm3,mm3
+ d01:	0f ef e4             	pxor   mm4,mm4
+ d04:	0f ef ed             	pxor   mm5,mm5
+ d07:	0f ef f6             	pxor   mm6,mm6
+ d0a:	0f ef ff             	pxor   mm7,mm7
+ d0d:	0f ef c0             	pxor   mm0,mm0
+ d10:	0f ef c9             	pxor   mm1,mm1
+ d13:	0f ef d2             	pxor   mm2,mm2
+ d16:	0f ef db             	pxor   mm3,mm3
+ d19:	0f ef e4             	pxor   mm4,mm4
+ d1c:	0f ef ed             	pxor   mm5,mm5
+ d1f:	0f ef f6             	pxor   mm6,mm6
+ d22:	0f ef ff             	pxor   mm7,mm7
+ d25:	0f ef c0             	pxor   mm0,mm0
+ d28:	0f ef c9             	pxor   mm1,mm1
+ d2b:	0f ef d2             	pxor   mm2,mm2
+ d2e:	0f ef db             	pxor   mm3,mm3
+ d31:	0f ef e4             	pxor   mm4,mm4
+ d34:	0f ef ed             	pxor   mm5,mm5
+ d37:	0f ef f6             	pxor   mm6,mm6
+ d3a:	0f ef ff             	pxor   mm7,mm7
+ d3d:	0f ef c0             	pxor   mm0,mm0
+ d40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ d43:	0f ef c0             	pxor   mm0,mm0
+ d46:	0f ef c9             	pxor   mm1,mm1
+ d49:	0f ef d2             	pxor   mm2,mm2
+ d4c:	0f ef db             	pxor   mm3,mm3
+ d4f:	0f ef e4             	pxor   mm4,mm4
+ d52:	0f ef ed             	pxor   mm5,mm5
+ d55:	0f ef f6             	pxor   mm6,mm6
+ d58:	0f ef ff             	pxor   mm7,mm7
+ d5b:	0f ef c0             	pxor   mm0,mm0
+ d5e:	0f ef c9             	pxor   mm1,mm1
+ d61:	0f ef d2             	pxor   mm2,mm2
+ d64:	0f ef db             	pxor   mm3,mm3
+ d67:	0f ef e4             	pxor   mm4,mm4
+ d6a:	0f ef ed             	pxor   mm5,mm5
+ d6d:	0f ef f6             	pxor   mm6,mm6
+ d70:	0f ef ff             	pxor   mm7,mm7
+ d73:	0f ef c0             	pxor   mm0,mm0
+ d76:	0f ef c9             	pxor   mm1,mm1
+ d79:	0f ef d2             	pxor   mm2,mm2
+ d7c:	0f ef db             	pxor   mm3,mm3
+ d7f:	0f ef e4             	pxor   mm4,mm4
+ d82:	0f ef ed             	pxor   mm5,mm5
+ d85:	0f ef f6             	pxor   mm6,mm6
+ d88:	0f ef ff             	pxor   mm7,mm7
+ d8b:	0f ef c0             	pxor   mm0,mm0
+ d8e:	0f ef c9             	pxor   mm1,mm1
+ d91:	0f ef d2             	pxor   mm2,mm2
+ d94:	0f ef db             	pxor   mm3,mm3
+ d97:	0f ef e4             	pxor   mm4,mm4
+ d9a:	0f ef ed             	pxor   mm5,mm5
+ d9d:	0f ef f6             	pxor   mm6,mm6
+ da0:	0f ef ff             	pxor   mm7,mm7
+ da3:	0f ef c0             	pxor   mm0,mm0
+ da6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ da9:	0f ef c0             	pxor   mm0,mm0
+ dac:	0f ef c9             	pxor   mm1,mm1
+ daf:	0f ef d2             	pxor   mm2,mm2
+ db2:	0f ef db             	pxor   mm3,mm3
+ db5:	0f ef e4             	pxor   mm4,mm4
+ db8:	0f ef ed             	pxor   mm5,mm5
+ dbb:	0f ef f6             	pxor   mm6,mm6
+ dbe:	0f ef ff             	pxor   mm7,mm7
+ dc1:	0f ef c0             	pxor   mm0,mm0
+ dc4:	0f ef c9             	pxor   mm1,mm1
+ dc7:	0f ef d2             	pxor   mm2,mm2
+ dca:	0f ef db             	pxor   mm3,mm3
+ dcd:	0f ef e4             	pxor   mm4,mm4
+ dd0:	0f ef ed             	pxor   mm5,mm5
+ dd3:	0f ef f6             	pxor   mm6,mm6
+ dd6:	0f ef ff             	pxor   mm7,mm7
+ dd9:	0f ef c0             	pxor   mm0,mm0
+ ddc:	0f ef c9             	pxor   mm1,mm1
+ ddf:	0f ef d2             	pxor   mm2,mm2
+ de2:	0f ef db             	pxor   mm3,mm3
+ de5:	0f ef e4             	pxor   mm4,mm4
+ de8:	0f ef ed             	pxor   mm5,mm5
+ deb:	0f ef f6             	pxor   mm6,mm6
+ dee:	0f ef ff             	pxor   mm7,mm7
+ df1:	0f ef c0             	pxor   mm0,mm0
+ df4:	0f ef c9             	pxor   mm1,mm1
+ df7:	0f ef d2             	pxor   mm2,mm2
+ dfa:	0f ef db             	pxor   mm3,mm3
+ dfd:	0f ef e4             	pxor   mm4,mm4
+ e00:	0f ef ed             	pxor   mm5,mm5
+ e03:	0f ef f6             	pxor   mm6,mm6
+ e06:	0f ef ff             	pxor   mm7,mm7
+ e09:	83 e8 01             	sub    eax,0x1
+ e0c:	0f 85 6e f2 ff ff    	jne    0x80
+ e12:	66 90                	xchg   ax,ax
+ e14:	66 90                	xchg   ax,ax
+ e16:	66 90                	xchg   ax,ax
+ e18:	66 90                	xchg   ax,ax
+ e1a:	66 90                	xchg   ax,ax
+ e1c:	66 90                	xchg   ax,ax
+ e1e:	66 90                	xchg   ax,ax
+ e20:	66 90                	xchg   ax,ax
+ e22:	48 81 c4 84 35 00 00 	add    rsp,0x3584
+ e29:	41 59                	pop    r9
+ e2b:	41 58                	pop    r8
+ e2d:	5f                   	pop    rdi
+ e2e:	5e                   	pop    rsi
+ e2f:	5d                   	pop    rbp
+ e30:	5b                   	pop    rbx
+ e31:	0f 77                	emms   
+ e33:	c3                   	ret    

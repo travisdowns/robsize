@@ -5,1224 +5,1224 @@ asm.bin:     file format binary
 Disassembly of section .data:
 
 0000000000000000 <.data>:
-       0:	66 90                	xchg   ax,ax
-       2:	66 90                	xchg   ax,ax
-       4:	66 90                	xchg   ax,ax
-       6:	66 90                	xchg   ax,ax
-       8:	66 90                	xchg   ax,ax
-       a:	66 90                	xchg   ax,ax
-       c:	66 90                	xchg   ax,ax
-       e:	66 90                	xchg   ax,ax
-      10:	53                   	push   rbx
-      11:	55                   	push   rbp
-      12:	56                   	push   rsi
-      13:	57                   	push   rdi
-      14:	41 50                	push   r8
-      16:	41 51                	push   r9
-      18:	48 81 ec 84 35 00 00 	sub    rsp,0x3584
-      1f:	45 31 c0             	xor    r8d,r8d
-      22:	4c 8d 0c 24          	lea    r9,[rsp]
-      26:	48 b9 01 00 00 00 00 	movabs rcx,0x1
-      2d:	00 00 00 
-      30:	48 ba 02 00 00 00 00 	movabs rdx,0x2
-      37:	00 00 00 
-      3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
-      41:	00 00 00 
-      44:	48 83 eb 00          	sub    rbx,0x0
-      48:	48 83 ed 00          	sub    rbp,0x0
-      4c:	48 83 ee 00          	sub    rsi,0x0
-      50:	48 83 ef 00          	sub    rdi,0x0
-      54:	49 83 e8 00          	sub    r8,0x0
-      58:	49 83 e9 00          	sub    r9,0x0
-      5c:	49 83 ea 00          	sub    r10,0x0
-      60:	49 83 eb 00          	sub    r11,0x0
-      64:	49 83 ec 00          	sub    r12,0x0
-      68:	49 83 ed 00          	sub    r13,0x0
-      6c:	49 83 ee 00          	sub    r14,0x0
-      70:	49 83 ef 00          	sub    r15,0x0
-      74:	90                   	nop
-      75:	90                   	nop
-      76:	90                   	nop
-      77:	90                   	nop
-      78:	90                   	nop
-      79:	90                   	nop
-      7a:	90                   	nop
-      7b:	90                   	nop
-      7c:	90                   	nop
-      7d:	90                   	nop
-      7e:	90                   	nop
-      7f:	90                   	nop
-      80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-      83:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      87:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      8b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      8f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      93:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      97:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      9b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      9f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      a3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      a7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      ab:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      af:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      b3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      b7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      bb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      bf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      c3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      c7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      cb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      cf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      d3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      d7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      db:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      df:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      e3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      e7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      eb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      ef:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      f3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      f7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      fb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-      ff:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     103:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     107:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     10a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     10e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     112:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     116:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     11a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     11e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     122:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     126:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     12a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     12e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     132:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     136:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     13a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     13e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     142:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     146:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     14a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     14e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     152:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     156:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     15a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     15e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     162:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     166:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     16a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     16e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     172:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     176:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     17a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     17e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     182:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     186:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     18a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     18e:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     191:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     195:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     199:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     19d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1a1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1a5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1a9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1ad:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1b1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1b5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1b9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1bd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1c1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1c5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1c9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1cd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1d1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1d5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1d9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1dd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1e1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1e5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1e9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1ed:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1f1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1f5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1f9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     1fd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     201:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     205:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     209:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     20d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     211:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     215:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     218:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     21c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     220:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     224:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     228:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     22c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     230:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     234:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     238:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     23c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     240:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     244:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     248:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     24c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     250:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     254:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     258:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     25c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     260:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     264:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     268:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     26c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     270:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     274:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     278:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     27c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     280:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     284:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     288:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     28c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     290:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     294:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     298:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     29c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     29f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2a3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2a7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2ab:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2af:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2b3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2b7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2bb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2bf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2c3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2c7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2cb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2cf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2d3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2d7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2db:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2df:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2e3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2e7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2eb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2ef:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2f3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2f7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2fb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     2ff:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     303:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     307:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     30b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     30f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     313:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     317:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     31b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     31f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     323:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     326:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     32a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     32e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     332:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     336:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     33a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     33e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     342:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     346:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     34a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     34e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     352:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     356:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     35a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     35e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     362:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     366:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     36a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     36e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     372:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     376:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     37a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     37e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     382:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     386:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     38a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     38e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     392:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     396:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     39a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     39e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3a2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3a6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3aa:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     3ad:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3b1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3b5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3b9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3bd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3c1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3c5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3c9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3cd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3d1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3d5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3d9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3dd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3e1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3e5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3e9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3ed:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3f1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3f5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3f9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     3fd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     401:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     405:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     409:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     40d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     411:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     415:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     419:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     41d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     421:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     425:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     429:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     42d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     431:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     434:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     438:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     43c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     440:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     444:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     448:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     44c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     450:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     454:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     458:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     45c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     460:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     464:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     468:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     46c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     470:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     474:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     478:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     47c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     480:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     484:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     488:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     48c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     490:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     494:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     498:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     49c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4a0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4a4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4a8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4ac:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4b0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4b4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4b8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     4bb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4bf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4c3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4c7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4cb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4cf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4d3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4d7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4db:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4df:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4e3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4e7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4eb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4ef:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4f3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4f7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4fb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     4ff:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     503:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     507:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     50b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     50f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     513:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     517:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     51b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     51f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     523:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     527:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     52b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     52f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     533:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     537:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     53b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     53f:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     542:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     546:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     54a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     54e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     552:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     556:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     55a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     55e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     562:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     566:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     56a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     56e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     572:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     576:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     57a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     57e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     582:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     586:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     58a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     58e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     592:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     596:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     59a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     59e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5a2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5a6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5aa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5ae:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5b2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5b6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5ba:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5be:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5c2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5c6:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     5c9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5cd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5d1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5d5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5d9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5dd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5e1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5e5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5e9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5ed:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5f1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5f5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5f9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     5fd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     601:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     605:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     609:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     60d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     611:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     615:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     619:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     61d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     621:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     625:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     629:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     62d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     631:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     635:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     639:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     63d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     641:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     645:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     649:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     64d:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     650:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     654:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     658:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     65c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     660:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     664:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     668:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     66c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     670:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     674:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     678:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     67c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     680:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     684:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     688:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     68c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     690:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     694:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     698:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     69c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6a0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6a4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6a8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6ac:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6b0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6b4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6b8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6bc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6c0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6c4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6c8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6cc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6d0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6d4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     6d7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6db:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6df:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6e3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6e7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6eb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6ef:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6f3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6f7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6fb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     6ff:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     703:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     707:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     70b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     70f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     713:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     717:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     71b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     71f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     723:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     727:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     72b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     72f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     733:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     737:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     73b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     73f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     743:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     747:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     74b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     74f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     753:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     757:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     75b:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     75e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     762:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     766:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     76a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     76e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     772:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     776:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     77a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     77e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     782:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     786:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     78a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     78e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     792:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     796:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     79a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     79e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7a2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7a6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7aa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7ae:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7b2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7b6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7ba:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7be:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7c2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7c6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7ca:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7ce:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7d2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7d6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7da:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7de:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7e2:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     7e5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7e9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7ed:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7f1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7f5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7f9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     7fd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     801:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     805:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     809:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     80d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     811:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     815:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     819:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     81d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     821:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     825:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     829:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     82d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     831:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     835:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     839:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     83d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     841:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     845:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     849:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     84d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     851:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     855:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     859:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     85d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     861:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     865:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     869:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     86c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     870:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     874:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     878:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     87c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     880:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     884:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     888:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     88c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     890:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     894:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     898:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     89c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8a0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8a4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8a8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8ac:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8b0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8b4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8b8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8bc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8c0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8c4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8c8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8cc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8d0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8d4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8d8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8dc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8e0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8e4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8e8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8ec:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8f0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     8f3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8f7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8fb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     8ff:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     903:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     907:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     90b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     90f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     913:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     917:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     91b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     91f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     923:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     927:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     92b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     92f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     933:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     937:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     93b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     93f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     943:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     947:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     94b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     94f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     953:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     957:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     95b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     95f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     963:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     967:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     96b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     96f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     973:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     977:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     97a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     97e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     982:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     986:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     98a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     98e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     992:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     996:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     99a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     99e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9a2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9a6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9aa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9ae:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9b2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9b6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9ba:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9be:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9c2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9c6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9ca:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9ce:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9d2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9d6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9da:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9de:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9e2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9e6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9ea:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9ee:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9f2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9f6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9fa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     9fe:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     a01:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a05:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a09:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a0d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a11:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a15:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a19:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a1d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a21:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a25:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a29:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a2d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a31:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a35:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a39:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a3d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a41:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a45:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a49:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a4d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a51:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a55:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a59:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a5d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a61:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a65:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a69:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a6d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a71:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a75:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a79:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a7d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a81:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a85:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     a88:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a8c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a90:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a94:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a98:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     a9c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     aa0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     aa4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     aa8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     aac:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ab0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ab4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ab8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     abc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ac0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ac4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ac8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     acc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ad0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ad4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ad8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     adc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ae0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ae4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ae8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     aec:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     af0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     af4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     af8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     afc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b00:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b04:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b08:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b0c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     b0f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b13:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b17:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b1b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b1f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b23:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b27:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b2b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b2f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b33:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b37:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b3b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b3f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b43:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b47:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b4b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b4f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b53:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b57:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b5b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b5f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b63:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b67:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b6b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b6f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b73:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b77:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b7b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b7f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b83:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b87:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b8b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b8f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b93:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     b96:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b9a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     b9e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ba2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ba6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     baa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bae:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bb2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bb6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bba:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bbe:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bc2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bc6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bca:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bce:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bd2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bd6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bda:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bde:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     be2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     be6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bea:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bee:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bf2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bf6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bfa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     bfe:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c02:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c06:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c0a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c0e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c12:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c16:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c1a:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     c1d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c21:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c25:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c29:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c2d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c31:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c35:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c39:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c3d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c41:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c45:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c49:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c4d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c51:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c55:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c59:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c5d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c61:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c65:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c69:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c6d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c71:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c75:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c79:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c7d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c81:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c85:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c89:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c8d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c91:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c95:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c99:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     c9d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ca1:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     ca4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ca8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cac:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cb0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cb4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cb8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cbc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cc0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cc4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cc8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ccc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cd0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cd4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cd8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cdc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ce0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ce4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ce8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cec:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cf0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cf4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cf8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     cfc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d00:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d04:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d08:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d0c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d10:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d14:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d18:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d1c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d20:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d24:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d28:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     d2b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d2f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d33:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d37:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d3b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d3f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d43:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d47:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d4b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d4f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d53:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d57:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d5b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d5f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d63:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d67:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d6b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d6f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d73:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d77:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d7b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d7f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d83:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d87:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d8b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d8f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d93:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d97:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d9b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     d9f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     da3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     da7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dab:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     daf:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     db2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     db6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dba:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dbe:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dc2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dc6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dca:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dce:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dd2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dd6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dda:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dde:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     de2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     de6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dea:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dee:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     df2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     df6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dfa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     dfe:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e02:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e06:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e0a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e0e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e12:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e16:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e1a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e1e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e22:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e26:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e2a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e2e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e32:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e36:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     e39:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e3d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e41:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e45:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e49:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e4d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e51:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e55:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e59:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e5d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e61:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e65:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e69:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e6d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e71:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e75:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e79:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e7d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e81:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e85:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e89:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e8d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e91:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e95:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e99:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     e9d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ea1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ea5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ea9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ead:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     eb1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     eb5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     eb9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ebd:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     ec0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ec4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ec8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ecc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ed0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ed4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ed8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     edc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ee0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ee4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ee8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     eec:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ef0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ef4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ef8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     efc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f00:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f04:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f08:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f0c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f10:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f14:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f18:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f1c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f20:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f24:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f28:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f2c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f30:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f34:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f38:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f3c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f40:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f44:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-     f47:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f4b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f4f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f53:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f57:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f5b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f5f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f63:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f67:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f6b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f6f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f73:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f77:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f7b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f7f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f83:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f87:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f8b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f8f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f93:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f97:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f9b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     f9f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fa3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fa7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fab:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     faf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fb3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fb7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fbb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fbf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fc3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fc7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fcb:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-     fce:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fd2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fd6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fda:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fde:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fe2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fe6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fea:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     fee:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ff2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ff6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ffa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-     ffe:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1002:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1006:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    100a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    100e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1012:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1016:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    101a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    101e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1022:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1026:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    102a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    102e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1032:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1036:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    103a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    103e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1042:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1046:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    104a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    104e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1052:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    1055:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1059:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    105d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1061:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1065:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1069:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    106d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1071:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1075:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1079:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    107d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1081:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1085:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1089:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    108d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1091:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1095:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1099:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    109d:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10a1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10a5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10a9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10ad:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10b1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10b5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10b9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10bd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10c1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10c5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10c9:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10cd:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10d1:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10d5:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10d9:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    10dc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10e0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10e4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10e8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10ec:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10f0:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10f4:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10f8:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    10fc:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1100:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1104:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1108:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    110c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1110:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1114:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1118:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    111c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1120:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1124:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1128:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    112c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1130:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1134:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1138:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    113c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1140:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1144:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1148:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    114c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1150:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1154:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1158:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    115c:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1160:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
-    1163:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1167:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    116b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    116f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1173:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1177:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    117b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    117f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1183:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1187:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    118b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    118f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1193:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1197:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    119b:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    119f:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11a3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11a7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11ab:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11af:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11b3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11b7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11bb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11bf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11c3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11c7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11cb:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11cf:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11d3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11d7:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11db:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11df:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11e3:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11e7:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
-    11ea:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11ee:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11f2:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11f6:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11fa:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    11fe:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1202:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1206:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    120a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    120e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1212:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1216:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    121a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    121e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1222:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1226:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    122a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    122e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1232:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1236:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    123a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    123e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1242:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1246:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    124a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    124e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1252:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1256:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    125a:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    125e:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1262:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    1266:	c5 ed 4a cb          	kaddb  k1,k2,k3
-    126a:	83 e8 01             	sub    eax,0x1
-    126d:	0f 85 0d ee ff ff    	jne    0x80
-    1273:	66 90                	xchg   ax,ax
-    1275:	66 90                	xchg   ax,ax
-    1277:	66 90                	xchg   ax,ax
-    1279:	66 90                	xchg   ax,ax
-    127b:	66 90                	xchg   ax,ax
-    127d:	66 90                	xchg   ax,ax
-    127f:	66 90                	xchg   ax,ax
-    1281:	66 90                	xchg   ax,ax
-    1283:	48 81 c4 84 35 00 00 	add    rsp,0x3584
-    128a:	41 59                	pop    r9
-    128c:	41 58                	pop    r8
-    128e:	5f                   	pop    rdi
-    128f:	5e                   	pop    rsi
-    1290:	5d                   	pop    rbp
-    1291:	5b                   	pop    rbx
-    1292:	0f 77                	emms   
-    1294:	c3                   	ret    
+   0:	66 90                	xchg   ax,ax
+   2:	66 90                	xchg   ax,ax
+   4:	66 90                	xchg   ax,ax
+   6:	66 90                	xchg   ax,ax
+   8:	66 90                	xchg   ax,ax
+   a:	66 90                	xchg   ax,ax
+   c:	66 90                	xchg   ax,ax
+   e:	66 90                	xchg   ax,ax
+  10:	53                   	push   rbx
+  11:	55                   	push   rbp
+  12:	56                   	push   rsi
+  13:	57                   	push   rdi
+  14:	41 50                	push   r8
+  16:	41 51                	push   r9
+  18:	48 81 ec 84 35 00 00 	sub    rsp,0x3584
+  1f:	45 31 c0             	xor    r8d,r8d
+  22:	4c 8d 0c 24          	lea    r9,[rsp]
+  26:	48 b9 01 00 00 00 00 	movabs rcx,0x1
+  2d:	00 00 00 
+  30:	48 ba 02 00 00 00 00 	movabs rdx,0x2
+  37:	00 00 00 
+  3a:	48 b8 00 20 00 00 00 	movabs rax,0x2000
+  41:	00 00 00 
+  44:	48 83 eb 00          	sub    rbx,0x0
+  48:	48 83 ed 00          	sub    rbp,0x0
+  4c:	48 83 ee 00          	sub    rsi,0x0
+  50:	48 83 ef 00          	sub    rdi,0x0
+  54:	49 83 e8 00          	sub    r8,0x0
+  58:	49 83 e9 00          	sub    r9,0x0
+  5c:	49 83 ea 00          	sub    r10,0x0
+  60:	49 83 eb 00          	sub    r11,0x0
+  64:	49 83 ec 00          	sub    r12,0x0
+  68:	49 83 ed 00          	sub    r13,0x0
+  6c:	49 83 ee 00          	sub    r14,0x0
+  70:	49 83 ef 00          	sub    r15,0x0
+  74:	90                   	nop
+  75:	90                   	nop
+  76:	90                   	nop
+  77:	90                   	nop
+  78:	90                   	nop
+  79:	90                   	nop
+  7a:	90                   	nop
+  7b:	90                   	nop
+  7c:	90                   	nop
+  7d:	90                   	nop
+  7e:	90                   	nop
+  7f:	90                   	nop
+  80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+  83:	0f eb c1             	por    mm0,mm1
+  86:	0f 57 ca             	xorps  xmm1,xmm2
+  89:	0f eb d3             	por    mm2,mm3
+  8c:	0f 57 dc             	xorps  xmm3,xmm4
+  8f:	0f eb e5             	por    mm4,mm5
+  92:	0f 57 ee             	xorps  xmm5,xmm6
+  95:	0f eb f7             	por    mm6,mm7
+  98:	0f 57 f8             	xorps  xmm7,xmm0
+  9b:	0f eb c1             	por    mm0,mm1
+  9e:	0f 57 ca             	xorps  xmm1,xmm2
+  a1:	0f eb d3             	por    mm2,mm3
+  a4:	0f 57 dc             	xorps  xmm3,xmm4
+  a7:	0f eb e5             	por    mm4,mm5
+  aa:	0f 57 ee             	xorps  xmm5,xmm6
+  ad:	0f eb f7             	por    mm6,mm7
+  b0:	0f 57 f8             	xorps  xmm7,xmm0
+  b3:	0f eb c1             	por    mm0,mm1
+  b6:	0f 57 ca             	xorps  xmm1,xmm2
+  b9:	0f eb d3             	por    mm2,mm3
+  bc:	0f 57 dc             	xorps  xmm3,xmm4
+  bf:	0f eb e5             	por    mm4,mm5
+  c2:	0f 57 ee             	xorps  xmm5,xmm6
+  c5:	0f eb f7             	por    mm6,mm7
+  c8:	0f 57 f8             	xorps  xmm7,xmm0
+  cb:	0f eb c1             	por    mm0,mm1
+  ce:	0f 57 ca             	xorps  xmm1,xmm2
+  d1:	0f eb d3             	por    mm2,mm3
+  d4:	0f 57 dc             	xorps  xmm3,xmm4
+  d7:	0f eb e5             	por    mm4,mm5
+  da:	0f 57 ee             	xorps  xmm5,xmm6
+  dd:	0f eb f7             	por    mm6,mm7
+  e0:	0f 57 f8             	xorps  xmm7,xmm0
+  e3:	0f eb c1             	por    mm0,mm1
+  e6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  e9:	0f eb c1             	por    mm0,mm1
+  ec:	0f 57 ca             	xorps  xmm1,xmm2
+  ef:	0f eb d3             	por    mm2,mm3
+  f2:	0f 57 dc             	xorps  xmm3,xmm4
+  f5:	0f eb e5             	por    mm4,mm5
+  f8:	0f 57 ee             	xorps  xmm5,xmm6
+  fb:	0f eb f7             	por    mm6,mm7
+  fe:	0f 57 f8             	xorps  xmm7,xmm0
+ 101:	0f eb c1             	por    mm0,mm1
+ 104:	0f 57 ca             	xorps  xmm1,xmm2
+ 107:	0f eb d3             	por    mm2,mm3
+ 10a:	0f 57 dc             	xorps  xmm3,xmm4
+ 10d:	0f eb e5             	por    mm4,mm5
+ 110:	0f 57 ee             	xorps  xmm5,xmm6
+ 113:	0f eb f7             	por    mm6,mm7
+ 116:	0f 57 f8             	xorps  xmm7,xmm0
+ 119:	0f eb c1             	por    mm0,mm1
+ 11c:	0f 57 ca             	xorps  xmm1,xmm2
+ 11f:	0f eb d3             	por    mm2,mm3
+ 122:	0f 57 dc             	xorps  xmm3,xmm4
+ 125:	0f eb e5             	por    mm4,mm5
+ 128:	0f 57 ee             	xorps  xmm5,xmm6
+ 12b:	0f eb f7             	por    mm6,mm7
+ 12e:	0f 57 f8             	xorps  xmm7,xmm0
+ 131:	0f eb c1             	por    mm0,mm1
+ 134:	0f 57 ca             	xorps  xmm1,xmm2
+ 137:	0f eb d3             	por    mm2,mm3
+ 13a:	0f 57 dc             	xorps  xmm3,xmm4
+ 13d:	0f eb e5             	por    mm4,mm5
+ 140:	0f 57 ee             	xorps  xmm5,xmm6
+ 143:	0f eb f7             	por    mm6,mm7
+ 146:	0f 57 f8             	xorps  xmm7,xmm0
+ 149:	0f eb c1             	por    mm0,mm1
+ 14c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 14f:	0f eb c1             	por    mm0,mm1
+ 152:	0f 57 ca             	xorps  xmm1,xmm2
+ 155:	0f eb d3             	por    mm2,mm3
+ 158:	0f 57 dc             	xorps  xmm3,xmm4
+ 15b:	0f eb e5             	por    mm4,mm5
+ 15e:	0f 57 ee             	xorps  xmm5,xmm6
+ 161:	0f eb f7             	por    mm6,mm7
+ 164:	0f 57 f8             	xorps  xmm7,xmm0
+ 167:	0f eb c1             	por    mm0,mm1
+ 16a:	0f 57 ca             	xorps  xmm1,xmm2
+ 16d:	0f eb d3             	por    mm2,mm3
+ 170:	0f 57 dc             	xorps  xmm3,xmm4
+ 173:	0f eb e5             	por    mm4,mm5
+ 176:	0f 57 ee             	xorps  xmm5,xmm6
+ 179:	0f eb f7             	por    mm6,mm7
+ 17c:	0f 57 f8             	xorps  xmm7,xmm0
+ 17f:	0f eb c1             	por    mm0,mm1
+ 182:	0f 57 ca             	xorps  xmm1,xmm2
+ 185:	0f eb d3             	por    mm2,mm3
+ 188:	0f 57 dc             	xorps  xmm3,xmm4
+ 18b:	0f eb e5             	por    mm4,mm5
+ 18e:	0f 57 ee             	xorps  xmm5,xmm6
+ 191:	0f eb f7             	por    mm6,mm7
+ 194:	0f 57 f8             	xorps  xmm7,xmm0
+ 197:	0f eb c1             	por    mm0,mm1
+ 19a:	0f 57 ca             	xorps  xmm1,xmm2
+ 19d:	0f eb d3             	por    mm2,mm3
+ 1a0:	0f 57 dc             	xorps  xmm3,xmm4
+ 1a3:	0f eb e5             	por    mm4,mm5
+ 1a6:	0f 57 ee             	xorps  xmm5,xmm6
+ 1a9:	0f eb f7             	por    mm6,mm7
+ 1ac:	0f 57 f8             	xorps  xmm7,xmm0
+ 1af:	0f eb c1             	por    mm0,mm1
+ 1b2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 1b5:	0f eb c1             	por    mm0,mm1
+ 1b8:	0f 57 ca             	xorps  xmm1,xmm2
+ 1bb:	0f eb d3             	por    mm2,mm3
+ 1be:	0f 57 dc             	xorps  xmm3,xmm4
+ 1c1:	0f eb e5             	por    mm4,mm5
+ 1c4:	0f 57 ee             	xorps  xmm5,xmm6
+ 1c7:	0f eb f7             	por    mm6,mm7
+ 1ca:	0f 57 f8             	xorps  xmm7,xmm0
+ 1cd:	0f eb c1             	por    mm0,mm1
+ 1d0:	0f 57 ca             	xorps  xmm1,xmm2
+ 1d3:	0f eb d3             	por    mm2,mm3
+ 1d6:	0f 57 dc             	xorps  xmm3,xmm4
+ 1d9:	0f eb e5             	por    mm4,mm5
+ 1dc:	0f 57 ee             	xorps  xmm5,xmm6
+ 1df:	0f eb f7             	por    mm6,mm7
+ 1e2:	0f 57 f8             	xorps  xmm7,xmm0
+ 1e5:	0f eb c1             	por    mm0,mm1
+ 1e8:	0f 57 ca             	xorps  xmm1,xmm2
+ 1eb:	0f eb d3             	por    mm2,mm3
+ 1ee:	0f 57 dc             	xorps  xmm3,xmm4
+ 1f1:	0f eb e5             	por    mm4,mm5
+ 1f4:	0f 57 ee             	xorps  xmm5,xmm6
+ 1f7:	0f eb f7             	por    mm6,mm7
+ 1fa:	0f 57 f8             	xorps  xmm7,xmm0
+ 1fd:	0f eb c1             	por    mm0,mm1
+ 200:	0f 57 ca             	xorps  xmm1,xmm2
+ 203:	0f eb d3             	por    mm2,mm3
+ 206:	0f 57 dc             	xorps  xmm3,xmm4
+ 209:	0f eb e5             	por    mm4,mm5
+ 20c:	0f 57 ee             	xorps  xmm5,xmm6
+ 20f:	0f eb f7             	por    mm6,mm7
+ 212:	0f 57 f8             	xorps  xmm7,xmm0
+ 215:	0f eb c1             	por    mm0,mm1
+ 218:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 21b:	0f eb c1             	por    mm0,mm1
+ 21e:	0f 57 ca             	xorps  xmm1,xmm2
+ 221:	0f eb d3             	por    mm2,mm3
+ 224:	0f 57 dc             	xorps  xmm3,xmm4
+ 227:	0f eb e5             	por    mm4,mm5
+ 22a:	0f 57 ee             	xorps  xmm5,xmm6
+ 22d:	0f eb f7             	por    mm6,mm7
+ 230:	0f 57 f8             	xorps  xmm7,xmm0
+ 233:	0f eb c1             	por    mm0,mm1
+ 236:	0f 57 ca             	xorps  xmm1,xmm2
+ 239:	0f eb d3             	por    mm2,mm3
+ 23c:	0f 57 dc             	xorps  xmm3,xmm4
+ 23f:	0f eb e5             	por    mm4,mm5
+ 242:	0f 57 ee             	xorps  xmm5,xmm6
+ 245:	0f eb f7             	por    mm6,mm7
+ 248:	0f 57 f8             	xorps  xmm7,xmm0
+ 24b:	0f eb c1             	por    mm0,mm1
+ 24e:	0f 57 ca             	xorps  xmm1,xmm2
+ 251:	0f eb d3             	por    mm2,mm3
+ 254:	0f 57 dc             	xorps  xmm3,xmm4
+ 257:	0f eb e5             	por    mm4,mm5
+ 25a:	0f 57 ee             	xorps  xmm5,xmm6
+ 25d:	0f eb f7             	por    mm6,mm7
+ 260:	0f 57 f8             	xorps  xmm7,xmm0
+ 263:	0f eb c1             	por    mm0,mm1
+ 266:	0f 57 ca             	xorps  xmm1,xmm2
+ 269:	0f eb d3             	por    mm2,mm3
+ 26c:	0f 57 dc             	xorps  xmm3,xmm4
+ 26f:	0f eb e5             	por    mm4,mm5
+ 272:	0f 57 ee             	xorps  xmm5,xmm6
+ 275:	0f eb f7             	por    mm6,mm7
+ 278:	0f 57 f8             	xorps  xmm7,xmm0
+ 27b:	0f eb c1             	por    mm0,mm1
+ 27e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 281:	0f eb c1             	por    mm0,mm1
+ 284:	0f 57 ca             	xorps  xmm1,xmm2
+ 287:	0f eb d3             	por    mm2,mm3
+ 28a:	0f 57 dc             	xorps  xmm3,xmm4
+ 28d:	0f eb e5             	por    mm4,mm5
+ 290:	0f 57 ee             	xorps  xmm5,xmm6
+ 293:	0f eb f7             	por    mm6,mm7
+ 296:	0f 57 f8             	xorps  xmm7,xmm0
+ 299:	0f eb c1             	por    mm0,mm1
+ 29c:	0f 57 ca             	xorps  xmm1,xmm2
+ 29f:	0f eb d3             	por    mm2,mm3
+ 2a2:	0f 57 dc             	xorps  xmm3,xmm4
+ 2a5:	0f eb e5             	por    mm4,mm5
+ 2a8:	0f 57 ee             	xorps  xmm5,xmm6
+ 2ab:	0f eb f7             	por    mm6,mm7
+ 2ae:	0f 57 f8             	xorps  xmm7,xmm0
+ 2b1:	0f eb c1             	por    mm0,mm1
+ 2b4:	0f 57 ca             	xorps  xmm1,xmm2
+ 2b7:	0f eb d3             	por    mm2,mm3
+ 2ba:	0f 57 dc             	xorps  xmm3,xmm4
+ 2bd:	0f eb e5             	por    mm4,mm5
+ 2c0:	0f 57 ee             	xorps  xmm5,xmm6
+ 2c3:	0f eb f7             	por    mm6,mm7
+ 2c6:	0f 57 f8             	xorps  xmm7,xmm0
+ 2c9:	0f eb c1             	por    mm0,mm1
+ 2cc:	0f 57 ca             	xorps  xmm1,xmm2
+ 2cf:	0f eb d3             	por    mm2,mm3
+ 2d2:	0f 57 dc             	xorps  xmm3,xmm4
+ 2d5:	0f eb e5             	por    mm4,mm5
+ 2d8:	0f 57 ee             	xorps  xmm5,xmm6
+ 2db:	0f eb f7             	por    mm6,mm7
+ 2de:	0f 57 f8             	xorps  xmm7,xmm0
+ 2e1:	0f eb c1             	por    mm0,mm1
+ 2e4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 2e7:	0f eb c1             	por    mm0,mm1
+ 2ea:	0f 57 ca             	xorps  xmm1,xmm2
+ 2ed:	0f eb d3             	por    mm2,mm3
+ 2f0:	0f 57 dc             	xorps  xmm3,xmm4
+ 2f3:	0f eb e5             	por    mm4,mm5
+ 2f6:	0f 57 ee             	xorps  xmm5,xmm6
+ 2f9:	0f eb f7             	por    mm6,mm7
+ 2fc:	0f 57 f8             	xorps  xmm7,xmm0
+ 2ff:	0f eb c1             	por    mm0,mm1
+ 302:	0f 57 ca             	xorps  xmm1,xmm2
+ 305:	0f eb d3             	por    mm2,mm3
+ 308:	0f 57 dc             	xorps  xmm3,xmm4
+ 30b:	0f eb e5             	por    mm4,mm5
+ 30e:	0f 57 ee             	xorps  xmm5,xmm6
+ 311:	0f eb f7             	por    mm6,mm7
+ 314:	0f 57 f8             	xorps  xmm7,xmm0
+ 317:	0f eb c1             	por    mm0,mm1
+ 31a:	0f 57 ca             	xorps  xmm1,xmm2
+ 31d:	0f eb d3             	por    mm2,mm3
+ 320:	0f 57 dc             	xorps  xmm3,xmm4
+ 323:	0f eb e5             	por    mm4,mm5
+ 326:	0f 57 ee             	xorps  xmm5,xmm6
+ 329:	0f eb f7             	por    mm6,mm7
+ 32c:	0f 57 f8             	xorps  xmm7,xmm0
+ 32f:	0f eb c1             	por    mm0,mm1
+ 332:	0f 57 ca             	xorps  xmm1,xmm2
+ 335:	0f eb d3             	por    mm2,mm3
+ 338:	0f 57 dc             	xorps  xmm3,xmm4
+ 33b:	0f eb e5             	por    mm4,mm5
+ 33e:	0f 57 ee             	xorps  xmm5,xmm6
+ 341:	0f eb f7             	por    mm6,mm7
+ 344:	0f 57 f8             	xorps  xmm7,xmm0
+ 347:	0f eb c1             	por    mm0,mm1
+ 34a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 34d:	0f eb c1             	por    mm0,mm1
+ 350:	0f 57 ca             	xorps  xmm1,xmm2
+ 353:	0f eb d3             	por    mm2,mm3
+ 356:	0f 57 dc             	xorps  xmm3,xmm4
+ 359:	0f eb e5             	por    mm4,mm5
+ 35c:	0f 57 ee             	xorps  xmm5,xmm6
+ 35f:	0f eb f7             	por    mm6,mm7
+ 362:	0f 57 f8             	xorps  xmm7,xmm0
+ 365:	0f eb c1             	por    mm0,mm1
+ 368:	0f 57 ca             	xorps  xmm1,xmm2
+ 36b:	0f eb d3             	por    mm2,mm3
+ 36e:	0f 57 dc             	xorps  xmm3,xmm4
+ 371:	0f eb e5             	por    mm4,mm5
+ 374:	0f 57 ee             	xorps  xmm5,xmm6
+ 377:	0f eb f7             	por    mm6,mm7
+ 37a:	0f 57 f8             	xorps  xmm7,xmm0
+ 37d:	0f eb c1             	por    mm0,mm1
+ 380:	0f 57 ca             	xorps  xmm1,xmm2
+ 383:	0f eb d3             	por    mm2,mm3
+ 386:	0f 57 dc             	xorps  xmm3,xmm4
+ 389:	0f eb e5             	por    mm4,mm5
+ 38c:	0f 57 ee             	xorps  xmm5,xmm6
+ 38f:	0f eb f7             	por    mm6,mm7
+ 392:	0f 57 f8             	xorps  xmm7,xmm0
+ 395:	0f eb c1             	por    mm0,mm1
+ 398:	0f 57 ca             	xorps  xmm1,xmm2
+ 39b:	0f eb d3             	por    mm2,mm3
+ 39e:	0f 57 dc             	xorps  xmm3,xmm4
+ 3a1:	0f eb e5             	por    mm4,mm5
+ 3a4:	0f 57 ee             	xorps  xmm5,xmm6
+ 3a7:	0f eb f7             	por    mm6,mm7
+ 3aa:	0f 57 f8             	xorps  xmm7,xmm0
+ 3ad:	0f eb c1             	por    mm0,mm1
+ 3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 3b3:	0f eb c1             	por    mm0,mm1
+ 3b6:	0f 57 ca             	xorps  xmm1,xmm2
+ 3b9:	0f eb d3             	por    mm2,mm3
+ 3bc:	0f 57 dc             	xorps  xmm3,xmm4
+ 3bf:	0f eb e5             	por    mm4,mm5
+ 3c2:	0f 57 ee             	xorps  xmm5,xmm6
+ 3c5:	0f eb f7             	por    mm6,mm7
+ 3c8:	0f 57 f8             	xorps  xmm7,xmm0
+ 3cb:	0f eb c1             	por    mm0,mm1
+ 3ce:	0f 57 ca             	xorps  xmm1,xmm2
+ 3d1:	0f eb d3             	por    mm2,mm3
+ 3d4:	0f 57 dc             	xorps  xmm3,xmm4
+ 3d7:	0f eb e5             	por    mm4,mm5
+ 3da:	0f 57 ee             	xorps  xmm5,xmm6
+ 3dd:	0f eb f7             	por    mm6,mm7
+ 3e0:	0f 57 f8             	xorps  xmm7,xmm0
+ 3e3:	0f eb c1             	por    mm0,mm1
+ 3e6:	0f 57 ca             	xorps  xmm1,xmm2
+ 3e9:	0f eb d3             	por    mm2,mm3
+ 3ec:	0f 57 dc             	xorps  xmm3,xmm4
+ 3ef:	0f eb e5             	por    mm4,mm5
+ 3f2:	0f 57 ee             	xorps  xmm5,xmm6
+ 3f5:	0f eb f7             	por    mm6,mm7
+ 3f8:	0f 57 f8             	xorps  xmm7,xmm0
+ 3fb:	0f eb c1             	por    mm0,mm1
+ 3fe:	0f 57 ca             	xorps  xmm1,xmm2
+ 401:	0f eb d3             	por    mm2,mm3
+ 404:	0f 57 dc             	xorps  xmm3,xmm4
+ 407:	0f eb e5             	por    mm4,mm5
+ 40a:	0f 57 ee             	xorps  xmm5,xmm6
+ 40d:	0f eb f7             	por    mm6,mm7
+ 410:	0f 57 f8             	xorps  xmm7,xmm0
+ 413:	0f eb c1             	por    mm0,mm1
+ 416:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 419:	0f eb c1             	por    mm0,mm1
+ 41c:	0f 57 ca             	xorps  xmm1,xmm2
+ 41f:	0f eb d3             	por    mm2,mm3
+ 422:	0f 57 dc             	xorps  xmm3,xmm4
+ 425:	0f eb e5             	por    mm4,mm5
+ 428:	0f 57 ee             	xorps  xmm5,xmm6
+ 42b:	0f eb f7             	por    mm6,mm7
+ 42e:	0f 57 f8             	xorps  xmm7,xmm0
+ 431:	0f eb c1             	por    mm0,mm1
+ 434:	0f 57 ca             	xorps  xmm1,xmm2
+ 437:	0f eb d3             	por    mm2,mm3
+ 43a:	0f 57 dc             	xorps  xmm3,xmm4
+ 43d:	0f eb e5             	por    mm4,mm5
+ 440:	0f 57 ee             	xorps  xmm5,xmm6
+ 443:	0f eb f7             	por    mm6,mm7
+ 446:	0f 57 f8             	xorps  xmm7,xmm0
+ 449:	0f eb c1             	por    mm0,mm1
+ 44c:	0f 57 ca             	xorps  xmm1,xmm2
+ 44f:	0f eb d3             	por    mm2,mm3
+ 452:	0f 57 dc             	xorps  xmm3,xmm4
+ 455:	0f eb e5             	por    mm4,mm5
+ 458:	0f 57 ee             	xorps  xmm5,xmm6
+ 45b:	0f eb f7             	por    mm6,mm7
+ 45e:	0f 57 f8             	xorps  xmm7,xmm0
+ 461:	0f eb c1             	por    mm0,mm1
+ 464:	0f 57 ca             	xorps  xmm1,xmm2
+ 467:	0f eb d3             	por    mm2,mm3
+ 46a:	0f 57 dc             	xorps  xmm3,xmm4
+ 46d:	0f eb e5             	por    mm4,mm5
+ 470:	0f 57 ee             	xorps  xmm5,xmm6
+ 473:	0f eb f7             	por    mm6,mm7
+ 476:	0f 57 f8             	xorps  xmm7,xmm0
+ 479:	0f eb c1             	por    mm0,mm1
+ 47c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 47f:	0f eb c1             	por    mm0,mm1
+ 482:	0f 57 ca             	xorps  xmm1,xmm2
+ 485:	0f eb d3             	por    mm2,mm3
+ 488:	0f 57 dc             	xorps  xmm3,xmm4
+ 48b:	0f eb e5             	por    mm4,mm5
+ 48e:	0f 57 ee             	xorps  xmm5,xmm6
+ 491:	0f eb f7             	por    mm6,mm7
+ 494:	0f 57 f8             	xorps  xmm7,xmm0
+ 497:	0f eb c1             	por    mm0,mm1
+ 49a:	0f 57 ca             	xorps  xmm1,xmm2
+ 49d:	0f eb d3             	por    mm2,mm3
+ 4a0:	0f 57 dc             	xorps  xmm3,xmm4
+ 4a3:	0f eb e5             	por    mm4,mm5
+ 4a6:	0f 57 ee             	xorps  xmm5,xmm6
+ 4a9:	0f eb f7             	por    mm6,mm7
+ 4ac:	0f 57 f8             	xorps  xmm7,xmm0
+ 4af:	0f eb c1             	por    mm0,mm1
+ 4b2:	0f 57 ca             	xorps  xmm1,xmm2
+ 4b5:	0f eb d3             	por    mm2,mm3
+ 4b8:	0f 57 dc             	xorps  xmm3,xmm4
+ 4bb:	0f eb e5             	por    mm4,mm5
+ 4be:	0f 57 ee             	xorps  xmm5,xmm6
+ 4c1:	0f eb f7             	por    mm6,mm7
+ 4c4:	0f 57 f8             	xorps  xmm7,xmm0
+ 4c7:	0f eb c1             	por    mm0,mm1
+ 4ca:	0f 57 ca             	xorps  xmm1,xmm2
+ 4cd:	0f eb d3             	por    mm2,mm3
+ 4d0:	0f 57 dc             	xorps  xmm3,xmm4
+ 4d3:	0f eb e5             	por    mm4,mm5
+ 4d6:	0f 57 ee             	xorps  xmm5,xmm6
+ 4d9:	0f eb f7             	por    mm6,mm7
+ 4dc:	0f 57 f8             	xorps  xmm7,xmm0
+ 4df:	0f eb c1             	por    mm0,mm1
+ 4e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 4e5:	0f eb c1             	por    mm0,mm1
+ 4e8:	0f 57 ca             	xorps  xmm1,xmm2
+ 4eb:	0f eb d3             	por    mm2,mm3
+ 4ee:	0f 57 dc             	xorps  xmm3,xmm4
+ 4f1:	0f eb e5             	por    mm4,mm5
+ 4f4:	0f 57 ee             	xorps  xmm5,xmm6
+ 4f7:	0f eb f7             	por    mm6,mm7
+ 4fa:	0f 57 f8             	xorps  xmm7,xmm0
+ 4fd:	0f eb c1             	por    mm0,mm1
+ 500:	0f 57 ca             	xorps  xmm1,xmm2
+ 503:	0f eb d3             	por    mm2,mm3
+ 506:	0f 57 dc             	xorps  xmm3,xmm4
+ 509:	0f eb e5             	por    mm4,mm5
+ 50c:	0f 57 ee             	xorps  xmm5,xmm6
+ 50f:	0f eb f7             	por    mm6,mm7
+ 512:	0f 57 f8             	xorps  xmm7,xmm0
+ 515:	0f eb c1             	por    mm0,mm1
+ 518:	0f 57 ca             	xorps  xmm1,xmm2
+ 51b:	0f eb d3             	por    mm2,mm3
+ 51e:	0f 57 dc             	xorps  xmm3,xmm4
+ 521:	0f eb e5             	por    mm4,mm5
+ 524:	0f 57 ee             	xorps  xmm5,xmm6
+ 527:	0f eb f7             	por    mm6,mm7
+ 52a:	0f 57 f8             	xorps  xmm7,xmm0
+ 52d:	0f eb c1             	por    mm0,mm1
+ 530:	0f 57 ca             	xorps  xmm1,xmm2
+ 533:	0f eb d3             	por    mm2,mm3
+ 536:	0f 57 dc             	xorps  xmm3,xmm4
+ 539:	0f eb e5             	por    mm4,mm5
+ 53c:	0f 57 ee             	xorps  xmm5,xmm6
+ 53f:	0f eb f7             	por    mm6,mm7
+ 542:	0f 57 f8             	xorps  xmm7,xmm0
+ 545:	0f eb c1             	por    mm0,mm1
+ 548:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 54b:	0f eb c1             	por    mm0,mm1
+ 54e:	0f 57 ca             	xorps  xmm1,xmm2
+ 551:	0f eb d3             	por    mm2,mm3
+ 554:	0f 57 dc             	xorps  xmm3,xmm4
+ 557:	0f eb e5             	por    mm4,mm5
+ 55a:	0f 57 ee             	xorps  xmm5,xmm6
+ 55d:	0f eb f7             	por    mm6,mm7
+ 560:	0f 57 f8             	xorps  xmm7,xmm0
+ 563:	0f eb c1             	por    mm0,mm1
+ 566:	0f 57 ca             	xorps  xmm1,xmm2
+ 569:	0f eb d3             	por    mm2,mm3
+ 56c:	0f 57 dc             	xorps  xmm3,xmm4
+ 56f:	0f eb e5             	por    mm4,mm5
+ 572:	0f 57 ee             	xorps  xmm5,xmm6
+ 575:	0f eb f7             	por    mm6,mm7
+ 578:	0f 57 f8             	xorps  xmm7,xmm0
+ 57b:	0f eb c1             	por    mm0,mm1
+ 57e:	0f 57 ca             	xorps  xmm1,xmm2
+ 581:	0f eb d3             	por    mm2,mm3
+ 584:	0f 57 dc             	xorps  xmm3,xmm4
+ 587:	0f eb e5             	por    mm4,mm5
+ 58a:	0f 57 ee             	xorps  xmm5,xmm6
+ 58d:	0f eb f7             	por    mm6,mm7
+ 590:	0f 57 f8             	xorps  xmm7,xmm0
+ 593:	0f eb c1             	por    mm0,mm1
+ 596:	0f 57 ca             	xorps  xmm1,xmm2
+ 599:	0f eb d3             	por    mm2,mm3
+ 59c:	0f 57 dc             	xorps  xmm3,xmm4
+ 59f:	0f eb e5             	por    mm4,mm5
+ 5a2:	0f 57 ee             	xorps  xmm5,xmm6
+ 5a5:	0f eb f7             	por    mm6,mm7
+ 5a8:	0f 57 f8             	xorps  xmm7,xmm0
+ 5ab:	0f eb c1             	por    mm0,mm1
+ 5ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 5b1:	0f eb c1             	por    mm0,mm1
+ 5b4:	0f 57 ca             	xorps  xmm1,xmm2
+ 5b7:	0f eb d3             	por    mm2,mm3
+ 5ba:	0f 57 dc             	xorps  xmm3,xmm4
+ 5bd:	0f eb e5             	por    mm4,mm5
+ 5c0:	0f 57 ee             	xorps  xmm5,xmm6
+ 5c3:	0f eb f7             	por    mm6,mm7
+ 5c6:	0f 57 f8             	xorps  xmm7,xmm0
+ 5c9:	0f eb c1             	por    mm0,mm1
+ 5cc:	0f 57 ca             	xorps  xmm1,xmm2
+ 5cf:	0f eb d3             	por    mm2,mm3
+ 5d2:	0f 57 dc             	xorps  xmm3,xmm4
+ 5d5:	0f eb e5             	por    mm4,mm5
+ 5d8:	0f 57 ee             	xorps  xmm5,xmm6
+ 5db:	0f eb f7             	por    mm6,mm7
+ 5de:	0f 57 f8             	xorps  xmm7,xmm0
+ 5e1:	0f eb c1             	por    mm0,mm1
+ 5e4:	0f 57 ca             	xorps  xmm1,xmm2
+ 5e7:	0f eb d3             	por    mm2,mm3
+ 5ea:	0f 57 dc             	xorps  xmm3,xmm4
+ 5ed:	0f eb e5             	por    mm4,mm5
+ 5f0:	0f 57 ee             	xorps  xmm5,xmm6
+ 5f3:	0f eb f7             	por    mm6,mm7
+ 5f6:	0f 57 f8             	xorps  xmm7,xmm0
+ 5f9:	0f eb c1             	por    mm0,mm1
+ 5fc:	0f 57 ca             	xorps  xmm1,xmm2
+ 5ff:	0f eb d3             	por    mm2,mm3
+ 602:	0f 57 dc             	xorps  xmm3,xmm4
+ 605:	0f eb e5             	por    mm4,mm5
+ 608:	0f 57 ee             	xorps  xmm5,xmm6
+ 60b:	0f eb f7             	por    mm6,mm7
+ 60e:	0f 57 f8             	xorps  xmm7,xmm0
+ 611:	0f eb c1             	por    mm0,mm1
+ 614:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 617:	0f eb c1             	por    mm0,mm1
+ 61a:	0f 57 ca             	xorps  xmm1,xmm2
+ 61d:	0f eb d3             	por    mm2,mm3
+ 620:	0f 57 dc             	xorps  xmm3,xmm4
+ 623:	0f eb e5             	por    mm4,mm5
+ 626:	0f 57 ee             	xorps  xmm5,xmm6
+ 629:	0f eb f7             	por    mm6,mm7
+ 62c:	0f 57 f8             	xorps  xmm7,xmm0
+ 62f:	0f eb c1             	por    mm0,mm1
+ 632:	0f 57 ca             	xorps  xmm1,xmm2
+ 635:	0f eb d3             	por    mm2,mm3
+ 638:	0f 57 dc             	xorps  xmm3,xmm4
+ 63b:	0f eb e5             	por    mm4,mm5
+ 63e:	0f 57 ee             	xorps  xmm5,xmm6
+ 641:	0f eb f7             	por    mm6,mm7
+ 644:	0f 57 f8             	xorps  xmm7,xmm0
+ 647:	0f eb c1             	por    mm0,mm1
+ 64a:	0f 57 ca             	xorps  xmm1,xmm2
+ 64d:	0f eb d3             	por    mm2,mm3
+ 650:	0f 57 dc             	xorps  xmm3,xmm4
+ 653:	0f eb e5             	por    mm4,mm5
+ 656:	0f 57 ee             	xorps  xmm5,xmm6
+ 659:	0f eb f7             	por    mm6,mm7
+ 65c:	0f 57 f8             	xorps  xmm7,xmm0
+ 65f:	0f eb c1             	por    mm0,mm1
+ 662:	0f 57 ca             	xorps  xmm1,xmm2
+ 665:	0f eb d3             	por    mm2,mm3
+ 668:	0f 57 dc             	xorps  xmm3,xmm4
+ 66b:	0f eb e5             	por    mm4,mm5
+ 66e:	0f 57 ee             	xorps  xmm5,xmm6
+ 671:	0f eb f7             	por    mm6,mm7
+ 674:	0f 57 f8             	xorps  xmm7,xmm0
+ 677:	0f eb c1             	por    mm0,mm1
+ 67a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 67d:	0f eb c1             	por    mm0,mm1
+ 680:	0f 57 ca             	xorps  xmm1,xmm2
+ 683:	0f eb d3             	por    mm2,mm3
+ 686:	0f 57 dc             	xorps  xmm3,xmm4
+ 689:	0f eb e5             	por    mm4,mm5
+ 68c:	0f 57 ee             	xorps  xmm5,xmm6
+ 68f:	0f eb f7             	por    mm6,mm7
+ 692:	0f 57 f8             	xorps  xmm7,xmm0
+ 695:	0f eb c1             	por    mm0,mm1
+ 698:	0f 57 ca             	xorps  xmm1,xmm2
+ 69b:	0f eb d3             	por    mm2,mm3
+ 69e:	0f 57 dc             	xorps  xmm3,xmm4
+ 6a1:	0f eb e5             	por    mm4,mm5
+ 6a4:	0f 57 ee             	xorps  xmm5,xmm6
+ 6a7:	0f eb f7             	por    mm6,mm7
+ 6aa:	0f 57 f8             	xorps  xmm7,xmm0
+ 6ad:	0f eb c1             	por    mm0,mm1
+ 6b0:	0f 57 ca             	xorps  xmm1,xmm2
+ 6b3:	0f eb d3             	por    mm2,mm3
+ 6b6:	0f 57 dc             	xorps  xmm3,xmm4
+ 6b9:	0f eb e5             	por    mm4,mm5
+ 6bc:	0f 57 ee             	xorps  xmm5,xmm6
+ 6bf:	0f eb f7             	por    mm6,mm7
+ 6c2:	0f 57 f8             	xorps  xmm7,xmm0
+ 6c5:	0f eb c1             	por    mm0,mm1
+ 6c8:	0f 57 ca             	xorps  xmm1,xmm2
+ 6cb:	0f eb d3             	por    mm2,mm3
+ 6ce:	0f 57 dc             	xorps  xmm3,xmm4
+ 6d1:	0f eb e5             	por    mm4,mm5
+ 6d4:	0f 57 ee             	xorps  xmm5,xmm6
+ 6d7:	0f eb f7             	por    mm6,mm7
+ 6da:	0f 57 f8             	xorps  xmm7,xmm0
+ 6dd:	0f eb c1             	por    mm0,mm1
+ 6e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 6e3:	0f eb c1             	por    mm0,mm1
+ 6e6:	0f 57 ca             	xorps  xmm1,xmm2
+ 6e9:	0f eb d3             	por    mm2,mm3
+ 6ec:	0f 57 dc             	xorps  xmm3,xmm4
+ 6ef:	0f eb e5             	por    mm4,mm5
+ 6f2:	0f 57 ee             	xorps  xmm5,xmm6
+ 6f5:	0f eb f7             	por    mm6,mm7
+ 6f8:	0f 57 f8             	xorps  xmm7,xmm0
+ 6fb:	0f eb c1             	por    mm0,mm1
+ 6fe:	0f 57 ca             	xorps  xmm1,xmm2
+ 701:	0f eb d3             	por    mm2,mm3
+ 704:	0f 57 dc             	xorps  xmm3,xmm4
+ 707:	0f eb e5             	por    mm4,mm5
+ 70a:	0f 57 ee             	xorps  xmm5,xmm6
+ 70d:	0f eb f7             	por    mm6,mm7
+ 710:	0f 57 f8             	xorps  xmm7,xmm0
+ 713:	0f eb c1             	por    mm0,mm1
+ 716:	0f 57 ca             	xorps  xmm1,xmm2
+ 719:	0f eb d3             	por    mm2,mm3
+ 71c:	0f 57 dc             	xorps  xmm3,xmm4
+ 71f:	0f eb e5             	por    mm4,mm5
+ 722:	0f 57 ee             	xorps  xmm5,xmm6
+ 725:	0f eb f7             	por    mm6,mm7
+ 728:	0f 57 f8             	xorps  xmm7,xmm0
+ 72b:	0f eb c1             	por    mm0,mm1
+ 72e:	0f 57 ca             	xorps  xmm1,xmm2
+ 731:	0f eb d3             	por    mm2,mm3
+ 734:	0f 57 dc             	xorps  xmm3,xmm4
+ 737:	0f eb e5             	por    mm4,mm5
+ 73a:	0f 57 ee             	xorps  xmm5,xmm6
+ 73d:	0f eb f7             	por    mm6,mm7
+ 740:	0f 57 f8             	xorps  xmm7,xmm0
+ 743:	0f eb c1             	por    mm0,mm1
+ 746:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 749:	0f eb c1             	por    mm0,mm1
+ 74c:	0f 57 ca             	xorps  xmm1,xmm2
+ 74f:	0f eb d3             	por    mm2,mm3
+ 752:	0f 57 dc             	xorps  xmm3,xmm4
+ 755:	0f eb e5             	por    mm4,mm5
+ 758:	0f 57 ee             	xorps  xmm5,xmm6
+ 75b:	0f eb f7             	por    mm6,mm7
+ 75e:	0f 57 f8             	xorps  xmm7,xmm0
+ 761:	0f eb c1             	por    mm0,mm1
+ 764:	0f 57 ca             	xorps  xmm1,xmm2
+ 767:	0f eb d3             	por    mm2,mm3
+ 76a:	0f 57 dc             	xorps  xmm3,xmm4
+ 76d:	0f eb e5             	por    mm4,mm5
+ 770:	0f 57 ee             	xorps  xmm5,xmm6
+ 773:	0f eb f7             	por    mm6,mm7
+ 776:	0f 57 f8             	xorps  xmm7,xmm0
+ 779:	0f eb c1             	por    mm0,mm1
+ 77c:	0f 57 ca             	xorps  xmm1,xmm2
+ 77f:	0f eb d3             	por    mm2,mm3
+ 782:	0f 57 dc             	xorps  xmm3,xmm4
+ 785:	0f eb e5             	por    mm4,mm5
+ 788:	0f 57 ee             	xorps  xmm5,xmm6
+ 78b:	0f eb f7             	por    mm6,mm7
+ 78e:	0f 57 f8             	xorps  xmm7,xmm0
+ 791:	0f eb c1             	por    mm0,mm1
+ 794:	0f 57 ca             	xorps  xmm1,xmm2
+ 797:	0f eb d3             	por    mm2,mm3
+ 79a:	0f 57 dc             	xorps  xmm3,xmm4
+ 79d:	0f eb e5             	por    mm4,mm5
+ 7a0:	0f 57 ee             	xorps  xmm5,xmm6
+ 7a3:	0f eb f7             	por    mm6,mm7
+ 7a6:	0f 57 f8             	xorps  xmm7,xmm0
+ 7a9:	0f eb c1             	por    mm0,mm1
+ 7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 7af:	0f eb c1             	por    mm0,mm1
+ 7b2:	0f 57 ca             	xorps  xmm1,xmm2
+ 7b5:	0f eb d3             	por    mm2,mm3
+ 7b8:	0f 57 dc             	xorps  xmm3,xmm4
+ 7bb:	0f eb e5             	por    mm4,mm5
+ 7be:	0f 57 ee             	xorps  xmm5,xmm6
+ 7c1:	0f eb f7             	por    mm6,mm7
+ 7c4:	0f 57 f8             	xorps  xmm7,xmm0
+ 7c7:	0f eb c1             	por    mm0,mm1
+ 7ca:	0f 57 ca             	xorps  xmm1,xmm2
+ 7cd:	0f eb d3             	por    mm2,mm3
+ 7d0:	0f 57 dc             	xorps  xmm3,xmm4
+ 7d3:	0f eb e5             	por    mm4,mm5
+ 7d6:	0f 57 ee             	xorps  xmm5,xmm6
+ 7d9:	0f eb f7             	por    mm6,mm7
+ 7dc:	0f 57 f8             	xorps  xmm7,xmm0
+ 7df:	0f eb c1             	por    mm0,mm1
+ 7e2:	0f 57 ca             	xorps  xmm1,xmm2
+ 7e5:	0f eb d3             	por    mm2,mm3
+ 7e8:	0f 57 dc             	xorps  xmm3,xmm4
+ 7eb:	0f eb e5             	por    mm4,mm5
+ 7ee:	0f 57 ee             	xorps  xmm5,xmm6
+ 7f1:	0f eb f7             	por    mm6,mm7
+ 7f4:	0f 57 f8             	xorps  xmm7,xmm0
+ 7f7:	0f eb c1             	por    mm0,mm1
+ 7fa:	0f 57 ca             	xorps  xmm1,xmm2
+ 7fd:	0f eb d3             	por    mm2,mm3
+ 800:	0f 57 dc             	xorps  xmm3,xmm4
+ 803:	0f eb e5             	por    mm4,mm5
+ 806:	0f 57 ee             	xorps  xmm5,xmm6
+ 809:	0f eb f7             	por    mm6,mm7
+ 80c:	0f 57 f8             	xorps  xmm7,xmm0
+ 80f:	0f eb c1             	por    mm0,mm1
+ 812:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 815:	0f eb c1             	por    mm0,mm1
+ 818:	0f 57 ca             	xorps  xmm1,xmm2
+ 81b:	0f eb d3             	por    mm2,mm3
+ 81e:	0f 57 dc             	xorps  xmm3,xmm4
+ 821:	0f eb e5             	por    mm4,mm5
+ 824:	0f 57 ee             	xorps  xmm5,xmm6
+ 827:	0f eb f7             	por    mm6,mm7
+ 82a:	0f 57 f8             	xorps  xmm7,xmm0
+ 82d:	0f eb c1             	por    mm0,mm1
+ 830:	0f 57 ca             	xorps  xmm1,xmm2
+ 833:	0f eb d3             	por    mm2,mm3
+ 836:	0f 57 dc             	xorps  xmm3,xmm4
+ 839:	0f eb e5             	por    mm4,mm5
+ 83c:	0f 57 ee             	xorps  xmm5,xmm6
+ 83f:	0f eb f7             	por    mm6,mm7
+ 842:	0f 57 f8             	xorps  xmm7,xmm0
+ 845:	0f eb c1             	por    mm0,mm1
+ 848:	0f 57 ca             	xorps  xmm1,xmm2
+ 84b:	0f eb d3             	por    mm2,mm3
+ 84e:	0f 57 dc             	xorps  xmm3,xmm4
+ 851:	0f eb e5             	por    mm4,mm5
+ 854:	0f 57 ee             	xorps  xmm5,xmm6
+ 857:	0f eb f7             	por    mm6,mm7
+ 85a:	0f 57 f8             	xorps  xmm7,xmm0
+ 85d:	0f eb c1             	por    mm0,mm1
+ 860:	0f 57 ca             	xorps  xmm1,xmm2
+ 863:	0f eb d3             	por    mm2,mm3
+ 866:	0f 57 dc             	xorps  xmm3,xmm4
+ 869:	0f eb e5             	por    mm4,mm5
+ 86c:	0f 57 ee             	xorps  xmm5,xmm6
+ 86f:	0f eb f7             	por    mm6,mm7
+ 872:	0f 57 f8             	xorps  xmm7,xmm0
+ 875:	0f eb c1             	por    mm0,mm1
+ 878:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 87b:	0f eb c1             	por    mm0,mm1
+ 87e:	0f 57 ca             	xorps  xmm1,xmm2
+ 881:	0f eb d3             	por    mm2,mm3
+ 884:	0f 57 dc             	xorps  xmm3,xmm4
+ 887:	0f eb e5             	por    mm4,mm5
+ 88a:	0f 57 ee             	xorps  xmm5,xmm6
+ 88d:	0f eb f7             	por    mm6,mm7
+ 890:	0f 57 f8             	xorps  xmm7,xmm0
+ 893:	0f eb c1             	por    mm0,mm1
+ 896:	0f 57 ca             	xorps  xmm1,xmm2
+ 899:	0f eb d3             	por    mm2,mm3
+ 89c:	0f 57 dc             	xorps  xmm3,xmm4
+ 89f:	0f eb e5             	por    mm4,mm5
+ 8a2:	0f 57 ee             	xorps  xmm5,xmm6
+ 8a5:	0f eb f7             	por    mm6,mm7
+ 8a8:	0f 57 f8             	xorps  xmm7,xmm0
+ 8ab:	0f eb c1             	por    mm0,mm1
+ 8ae:	0f 57 ca             	xorps  xmm1,xmm2
+ 8b1:	0f eb d3             	por    mm2,mm3
+ 8b4:	0f 57 dc             	xorps  xmm3,xmm4
+ 8b7:	0f eb e5             	por    mm4,mm5
+ 8ba:	0f 57 ee             	xorps  xmm5,xmm6
+ 8bd:	0f eb f7             	por    mm6,mm7
+ 8c0:	0f 57 f8             	xorps  xmm7,xmm0
+ 8c3:	0f eb c1             	por    mm0,mm1
+ 8c6:	0f 57 ca             	xorps  xmm1,xmm2
+ 8c9:	0f eb d3             	por    mm2,mm3
+ 8cc:	0f 57 dc             	xorps  xmm3,xmm4
+ 8cf:	0f eb e5             	por    mm4,mm5
+ 8d2:	0f 57 ee             	xorps  xmm5,xmm6
+ 8d5:	0f eb f7             	por    mm6,mm7
+ 8d8:	0f 57 f8             	xorps  xmm7,xmm0
+ 8db:	0f eb c1             	por    mm0,mm1
+ 8de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 8e1:	0f eb c1             	por    mm0,mm1
+ 8e4:	0f 57 ca             	xorps  xmm1,xmm2
+ 8e7:	0f eb d3             	por    mm2,mm3
+ 8ea:	0f 57 dc             	xorps  xmm3,xmm4
+ 8ed:	0f eb e5             	por    mm4,mm5
+ 8f0:	0f 57 ee             	xorps  xmm5,xmm6
+ 8f3:	0f eb f7             	por    mm6,mm7
+ 8f6:	0f 57 f8             	xorps  xmm7,xmm0
+ 8f9:	0f eb c1             	por    mm0,mm1
+ 8fc:	0f 57 ca             	xorps  xmm1,xmm2
+ 8ff:	0f eb d3             	por    mm2,mm3
+ 902:	0f 57 dc             	xorps  xmm3,xmm4
+ 905:	0f eb e5             	por    mm4,mm5
+ 908:	0f 57 ee             	xorps  xmm5,xmm6
+ 90b:	0f eb f7             	por    mm6,mm7
+ 90e:	0f 57 f8             	xorps  xmm7,xmm0
+ 911:	0f eb c1             	por    mm0,mm1
+ 914:	0f 57 ca             	xorps  xmm1,xmm2
+ 917:	0f eb d3             	por    mm2,mm3
+ 91a:	0f 57 dc             	xorps  xmm3,xmm4
+ 91d:	0f eb e5             	por    mm4,mm5
+ 920:	0f 57 ee             	xorps  xmm5,xmm6
+ 923:	0f eb f7             	por    mm6,mm7
+ 926:	0f 57 f8             	xorps  xmm7,xmm0
+ 929:	0f eb c1             	por    mm0,mm1
+ 92c:	0f 57 ca             	xorps  xmm1,xmm2
+ 92f:	0f eb d3             	por    mm2,mm3
+ 932:	0f 57 dc             	xorps  xmm3,xmm4
+ 935:	0f eb e5             	por    mm4,mm5
+ 938:	0f 57 ee             	xorps  xmm5,xmm6
+ 93b:	0f eb f7             	por    mm6,mm7
+ 93e:	0f 57 f8             	xorps  xmm7,xmm0
+ 941:	0f eb c1             	por    mm0,mm1
+ 944:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ 947:	0f eb c1             	por    mm0,mm1
+ 94a:	0f 57 ca             	xorps  xmm1,xmm2
+ 94d:	0f eb d3             	por    mm2,mm3
+ 950:	0f 57 dc             	xorps  xmm3,xmm4
+ 953:	0f eb e5             	por    mm4,mm5
+ 956:	0f 57 ee             	xorps  xmm5,xmm6
+ 959:	0f eb f7             	por    mm6,mm7
+ 95c:	0f 57 f8             	xorps  xmm7,xmm0
+ 95f:	0f eb c1             	por    mm0,mm1
+ 962:	0f 57 ca             	xorps  xmm1,xmm2
+ 965:	0f eb d3             	por    mm2,mm3
+ 968:	0f 57 dc             	xorps  xmm3,xmm4
+ 96b:	0f eb e5             	por    mm4,mm5
+ 96e:	0f 57 ee             	xorps  xmm5,xmm6
+ 971:	0f eb f7             	por    mm6,mm7
+ 974:	0f 57 f8             	xorps  xmm7,xmm0
+ 977:	0f eb c1             	por    mm0,mm1
+ 97a:	0f 57 ca             	xorps  xmm1,xmm2
+ 97d:	0f eb d3             	por    mm2,mm3
+ 980:	0f 57 dc             	xorps  xmm3,xmm4
+ 983:	0f eb e5             	por    mm4,mm5
+ 986:	0f 57 ee             	xorps  xmm5,xmm6
+ 989:	0f eb f7             	por    mm6,mm7
+ 98c:	0f 57 f8             	xorps  xmm7,xmm0
+ 98f:	0f eb c1             	por    mm0,mm1
+ 992:	0f 57 ca             	xorps  xmm1,xmm2
+ 995:	0f eb d3             	por    mm2,mm3
+ 998:	0f 57 dc             	xorps  xmm3,xmm4
+ 99b:	0f eb e5             	por    mm4,mm5
+ 99e:	0f 57 ee             	xorps  xmm5,xmm6
+ 9a1:	0f eb f7             	por    mm6,mm7
+ 9a4:	0f 57 f8             	xorps  xmm7,xmm0
+ 9a7:	0f eb c1             	por    mm0,mm1
+ 9aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ 9ad:	0f eb c1             	por    mm0,mm1
+ 9b0:	0f 57 ca             	xorps  xmm1,xmm2
+ 9b3:	0f eb d3             	por    mm2,mm3
+ 9b6:	0f 57 dc             	xorps  xmm3,xmm4
+ 9b9:	0f eb e5             	por    mm4,mm5
+ 9bc:	0f 57 ee             	xorps  xmm5,xmm6
+ 9bf:	0f eb f7             	por    mm6,mm7
+ 9c2:	0f 57 f8             	xorps  xmm7,xmm0
+ 9c5:	0f eb c1             	por    mm0,mm1
+ 9c8:	0f 57 ca             	xorps  xmm1,xmm2
+ 9cb:	0f eb d3             	por    mm2,mm3
+ 9ce:	0f 57 dc             	xorps  xmm3,xmm4
+ 9d1:	0f eb e5             	por    mm4,mm5
+ 9d4:	0f 57 ee             	xorps  xmm5,xmm6
+ 9d7:	0f eb f7             	por    mm6,mm7
+ 9da:	0f 57 f8             	xorps  xmm7,xmm0
+ 9dd:	0f eb c1             	por    mm0,mm1
+ 9e0:	0f 57 ca             	xorps  xmm1,xmm2
+ 9e3:	0f eb d3             	por    mm2,mm3
+ 9e6:	0f 57 dc             	xorps  xmm3,xmm4
+ 9e9:	0f eb e5             	por    mm4,mm5
+ 9ec:	0f 57 ee             	xorps  xmm5,xmm6
+ 9ef:	0f eb f7             	por    mm6,mm7
+ 9f2:	0f 57 f8             	xorps  xmm7,xmm0
+ 9f5:	0f eb c1             	por    mm0,mm1
+ 9f8:	0f 57 ca             	xorps  xmm1,xmm2
+ 9fb:	0f eb d3             	por    mm2,mm3
+ 9fe:	0f 57 dc             	xorps  xmm3,xmm4
+ a01:	0f eb e5             	por    mm4,mm5
+ a04:	0f 57 ee             	xorps  xmm5,xmm6
+ a07:	0f eb f7             	por    mm6,mm7
+ a0a:	0f 57 f8             	xorps  xmm7,xmm0
+ a0d:	0f eb c1             	por    mm0,mm1
+ a10:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ a13:	0f eb c1             	por    mm0,mm1
+ a16:	0f 57 ca             	xorps  xmm1,xmm2
+ a19:	0f eb d3             	por    mm2,mm3
+ a1c:	0f 57 dc             	xorps  xmm3,xmm4
+ a1f:	0f eb e5             	por    mm4,mm5
+ a22:	0f 57 ee             	xorps  xmm5,xmm6
+ a25:	0f eb f7             	por    mm6,mm7
+ a28:	0f 57 f8             	xorps  xmm7,xmm0
+ a2b:	0f eb c1             	por    mm0,mm1
+ a2e:	0f 57 ca             	xorps  xmm1,xmm2
+ a31:	0f eb d3             	por    mm2,mm3
+ a34:	0f 57 dc             	xorps  xmm3,xmm4
+ a37:	0f eb e5             	por    mm4,mm5
+ a3a:	0f 57 ee             	xorps  xmm5,xmm6
+ a3d:	0f eb f7             	por    mm6,mm7
+ a40:	0f 57 f8             	xorps  xmm7,xmm0
+ a43:	0f eb c1             	por    mm0,mm1
+ a46:	0f 57 ca             	xorps  xmm1,xmm2
+ a49:	0f eb d3             	por    mm2,mm3
+ a4c:	0f 57 dc             	xorps  xmm3,xmm4
+ a4f:	0f eb e5             	por    mm4,mm5
+ a52:	0f 57 ee             	xorps  xmm5,xmm6
+ a55:	0f eb f7             	por    mm6,mm7
+ a58:	0f 57 f8             	xorps  xmm7,xmm0
+ a5b:	0f eb c1             	por    mm0,mm1
+ a5e:	0f 57 ca             	xorps  xmm1,xmm2
+ a61:	0f eb d3             	por    mm2,mm3
+ a64:	0f 57 dc             	xorps  xmm3,xmm4
+ a67:	0f eb e5             	por    mm4,mm5
+ a6a:	0f 57 ee             	xorps  xmm5,xmm6
+ a6d:	0f eb f7             	por    mm6,mm7
+ a70:	0f 57 f8             	xorps  xmm7,xmm0
+ a73:	0f eb c1             	por    mm0,mm1
+ a76:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ a79:	0f eb c1             	por    mm0,mm1
+ a7c:	0f 57 ca             	xorps  xmm1,xmm2
+ a7f:	0f eb d3             	por    mm2,mm3
+ a82:	0f 57 dc             	xorps  xmm3,xmm4
+ a85:	0f eb e5             	por    mm4,mm5
+ a88:	0f 57 ee             	xorps  xmm5,xmm6
+ a8b:	0f eb f7             	por    mm6,mm7
+ a8e:	0f 57 f8             	xorps  xmm7,xmm0
+ a91:	0f eb c1             	por    mm0,mm1
+ a94:	0f 57 ca             	xorps  xmm1,xmm2
+ a97:	0f eb d3             	por    mm2,mm3
+ a9a:	0f 57 dc             	xorps  xmm3,xmm4
+ a9d:	0f eb e5             	por    mm4,mm5
+ aa0:	0f 57 ee             	xorps  xmm5,xmm6
+ aa3:	0f eb f7             	por    mm6,mm7
+ aa6:	0f 57 f8             	xorps  xmm7,xmm0
+ aa9:	0f eb c1             	por    mm0,mm1
+ aac:	0f 57 ca             	xorps  xmm1,xmm2
+ aaf:	0f eb d3             	por    mm2,mm3
+ ab2:	0f 57 dc             	xorps  xmm3,xmm4
+ ab5:	0f eb e5             	por    mm4,mm5
+ ab8:	0f 57 ee             	xorps  xmm5,xmm6
+ abb:	0f eb f7             	por    mm6,mm7
+ abe:	0f 57 f8             	xorps  xmm7,xmm0
+ ac1:	0f eb c1             	por    mm0,mm1
+ ac4:	0f 57 ca             	xorps  xmm1,xmm2
+ ac7:	0f eb d3             	por    mm2,mm3
+ aca:	0f 57 dc             	xorps  xmm3,xmm4
+ acd:	0f eb e5             	por    mm4,mm5
+ ad0:	0f 57 ee             	xorps  xmm5,xmm6
+ ad3:	0f eb f7             	por    mm6,mm7
+ ad6:	0f 57 f8             	xorps  xmm7,xmm0
+ ad9:	0f eb c1             	por    mm0,mm1
+ adc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ adf:	0f eb c1             	por    mm0,mm1
+ ae2:	0f 57 ca             	xorps  xmm1,xmm2
+ ae5:	0f eb d3             	por    mm2,mm3
+ ae8:	0f 57 dc             	xorps  xmm3,xmm4
+ aeb:	0f eb e5             	por    mm4,mm5
+ aee:	0f 57 ee             	xorps  xmm5,xmm6
+ af1:	0f eb f7             	por    mm6,mm7
+ af4:	0f 57 f8             	xorps  xmm7,xmm0
+ af7:	0f eb c1             	por    mm0,mm1
+ afa:	0f 57 ca             	xorps  xmm1,xmm2
+ afd:	0f eb d3             	por    mm2,mm3
+ b00:	0f 57 dc             	xorps  xmm3,xmm4
+ b03:	0f eb e5             	por    mm4,mm5
+ b06:	0f 57 ee             	xorps  xmm5,xmm6
+ b09:	0f eb f7             	por    mm6,mm7
+ b0c:	0f 57 f8             	xorps  xmm7,xmm0
+ b0f:	0f eb c1             	por    mm0,mm1
+ b12:	0f 57 ca             	xorps  xmm1,xmm2
+ b15:	0f eb d3             	por    mm2,mm3
+ b18:	0f 57 dc             	xorps  xmm3,xmm4
+ b1b:	0f eb e5             	por    mm4,mm5
+ b1e:	0f 57 ee             	xorps  xmm5,xmm6
+ b21:	0f eb f7             	por    mm6,mm7
+ b24:	0f 57 f8             	xorps  xmm7,xmm0
+ b27:	0f eb c1             	por    mm0,mm1
+ b2a:	0f 57 ca             	xorps  xmm1,xmm2
+ b2d:	0f eb d3             	por    mm2,mm3
+ b30:	0f 57 dc             	xorps  xmm3,xmm4
+ b33:	0f eb e5             	por    mm4,mm5
+ b36:	0f 57 ee             	xorps  xmm5,xmm6
+ b39:	0f eb f7             	por    mm6,mm7
+ b3c:	0f 57 f8             	xorps  xmm7,xmm0
+ b3f:	0f eb c1             	por    mm0,mm1
+ b42:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ b45:	0f eb c1             	por    mm0,mm1
+ b48:	0f 57 ca             	xorps  xmm1,xmm2
+ b4b:	0f eb d3             	por    mm2,mm3
+ b4e:	0f 57 dc             	xorps  xmm3,xmm4
+ b51:	0f eb e5             	por    mm4,mm5
+ b54:	0f 57 ee             	xorps  xmm5,xmm6
+ b57:	0f eb f7             	por    mm6,mm7
+ b5a:	0f 57 f8             	xorps  xmm7,xmm0
+ b5d:	0f eb c1             	por    mm0,mm1
+ b60:	0f 57 ca             	xorps  xmm1,xmm2
+ b63:	0f eb d3             	por    mm2,mm3
+ b66:	0f 57 dc             	xorps  xmm3,xmm4
+ b69:	0f eb e5             	por    mm4,mm5
+ b6c:	0f 57 ee             	xorps  xmm5,xmm6
+ b6f:	0f eb f7             	por    mm6,mm7
+ b72:	0f 57 f8             	xorps  xmm7,xmm0
+ b75:	0f eb c1             	por    mm0,mm1
+ b78:	0f 57 ca             	xorps  xmm1,xmm2
+ b7b:	0f eb d3             	por    mm2,mm3
+ b7e:	0f 57 dc             	xorps  xmm3,xmm4
+ b81:	0f eb e5             	por    mm4,mm5
+ b84:	0f 57 ee             	xorps  xmm5,xmm6
+ b87:	0f eb f7             	por    mm6,mm7
+ b8a:	0f 57 f8             	xorps  xmm7,xmm0
+ b8d:	0f eb c1             	por    mm0,mm1
+ b90:	0f 57 ca             	xorps  xmm1,xmm2
+ b93:	0f eb d3             	por    mm2,mm3
+ b96:	0f 57 dc             	xorps  xmm3,xmm4
+ b99:	0f eb e5             	por    mm4,mm5
+ b9c:	0f 57 ee             	xorps  xmm5,xmm6
+ b9f:	0f eb f7             	por    mm6,mm7
+ ba2:	0f 57 f8             	xorps  xmm7,xmm0
+ ba5:	0f eb c1             	por    mm0,mm1
+ ba8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ bab:	0f eb c1             	por    mm0,mm1
+ bae:	0f 57 ca             	xorps  xmm1,xmm2
+ bb1:	0f eb d3             	por    mm2,mm3
+ bb4:	0f 57 dc             	xorps  xmm3,xmm4
+ bb7:	0f eb e5             	por    mm4,mm5
+ bba:	0f 57 ee             	xorps  xmm5,xmm6
+ bbd:	0f eb f7             	por    mm6,mm7
+ bc0:	0f 57 f8             	xorps  xmm7,xmm0
+ bc3:	0f eb c1             	por    mm0,mm1
+ bc6:	0f 57 ca             	xorps  xmm1,xmm2
+ bc9:	0f eb d3             	por    mm2,mm3
+ bcc:	0f 57 dc             	xorps  xmm3,xmm4
+ bcf:	0f eb e5             	por    mm4,mm5
+ bd2:	0f 57 ee             	xorps  xmm5,xmm6
+ bd5:	0f eb f7             	por    mm6,mm7
+ bd8:	0f 57 f8             	xorps  xmm7,xmm0
+ bdb:	0f eb c1             	por    mm0,mm1
+ bde:	0f 57 ca             	xorps  xmm1,xmm2
+ be1:	0f eb d3             	por    mm2,mm3
+ be4:	0f 57 dc             	xorps  xmm3,xmm4
+ be7:	0f eb e5             	por    mm4,mm5
+ bea:	0f 57 ee             	xorps  xmm5,xmm6
+ bed:	0f eb f7             	por    mm6,mm7
+ bf0:	0f 57 f8             	xorps  xmm7,xmm0
+ bf3:	0f eb c1             	por    mm0,mm1
+ bf6:	0f 57 ca             	xorps  xmm1,xmm2
+ bf9:	0f eb d3             	por    mm2,mm3
+ bfc:	0f 57 dc             	xorps  xmm3,xmm4
+ bff:	0f eb e5             	por    mm4,mm5
+ c02:	0f 57 ee             	xorps  xmm5,xmm6
+ c05:	0f eb f7             	por    mm6,mm7
+ c08:	0f 57 f8             	xorps  xmm7,xmm0
+ c0b:	0f eb c1             	por    mm0,mm1
+ c0e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ c11:	0f eb c1             	por    mm0,mm1
+ c14:	0f 57 ca             	xorps  xmm1,xmm2
+ c17:	0f eb d3             	por    mm2,mm3
+ c1a:	0f 57 dc             	xorps  xmm3,xmm4
+ c1d:	0f eb e5             	por    mm4,mm5
+ c20:	0f 57 ee             	xorps  xmm5,xmm6
+ c23:	0f eb f7             	por    mm6,mm7
+ c26:	0f 57 f8             	xorps  xmm7,xmm0
+ c29:	0f eb c1             	por    mm0,mm1
+ c2c:	0f 57 ca             	xorps  xmm1,xmm2
+ c2f:	0f eb d3             	por    mm2,mm3
+ c32:	0f 57 dc             	xorps  xmm3,xmm4
+ c35:	0f eb e5             	por    mm4,mm5
+ c38:	0f 57 ee             	xorps  xmm5,xmm6
+ c3b:	0f eb f7             	por    mm6,mm7
+ c3e:	0f 57 f8             	xorps  xmm7,xmm0
+ c41:	0f eb c1             	por    mm0,mm1
+ c44:	0f 57 ca             	xorps  xmm1,xmm2
+ c47:	0f eb d3             	por    mm2,mm3
+ c4a:	0f 57 dc             	xorps  xmm3,xmm4
+ c4d:	0f eb e5             	por    mm4,mm5
+ c50:	0f 57 ee             	xorps  xmm5,xmm6
+ c53:	0f eb f7             	por    mm6,mm7
+ c56:	0f 57 f8             	xorps  xmm7,xmm0
+ c59:	0f eb c1             	por    mm0,mm1
+ c5c:	0f 57 ca             	xorps  xmm1,xmm2
+ c5f:	0f eb d3             	por    mm2,mm3
+ c62:	0f 57 dc             	xorps  xmm3,xmm4
+ c65:	0f eb e5             	por    mm4,mm5
+ c68:	0f 57 ee             	xorps  xmm5,xmm6
+ c6b:	0f eb f7             	por    mm6,mm7
+ c6e:	0f 57 f8             	xorps  xmm7,xmm0
+ c71:	0f eb c1             	por    mm0,mm1
+ c74:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ c77:	0f eb c1             	por    mm0,mm1
+ c7a:	0f 57 ca             	xorps  xmm1,xmm2
+ c7d:	0f eb d3             	por    mm2,mm3
+ c80:	0f 57 dc             	xorps  xmm3,xmm4
+ c83:	0f eb e5             	por    mm4,mm5
+ c86:	0f 57 ee             	xorps  xmm5,xmm6
+ c89:	0f eb f7             	por    mm6,mm7
+ c8c:	0f 57 f8             	xorps  xmm7,xmm0
+ c8f:	0f eb c1             	por    mm0,mm1
+ c92:	0f 57 ca             	xorps  xmm1,xmm2
+ c95:	0f eb d3             	por    mm2,mm3
+ c98:	0f 57 dc             	xorps  xmm3,xmm4
+ c9b:	0f eb e5             	por    mm4,mm5
+ c9e:	0f 57 ee             	xorps  xmm5,xmm6
+ ca1:	0f eb f7             	por    mm6,mm7
+ ca4:	0f 57 f8             	xorps  xmm7,xmm0
+ ca7:	0f eb c1             	por    mm0,mm1
+ caa:	0f 57 ca             	xorps  xmm1,xmm2
+ cad:	0f eb d3             	por    mm2,mm3
+ cb0:	0f 57 dc             	xorps  xmm3,xmm4
+ cb3:	0f eb e5             	por    mm4,mm5
+ cb6:	0f 57 ee             	xorps  xmm5,xmm6
+ cb9:	0f eb f7             	por    mm6,mm7
+ cbc:	0f 57 f8             	xorps  xmm7,xmm0
+ cbf:	0f eb c1             	por    mm0,mm1
+ cc2:	0f 57 ca             	xorps  xmm1,xmm2
+ cc5:	0f eb d3             	por    mm2,mm3
+ cc8:	0f 57 dc             	xorps  xmm3,xmm4
+ ccb:	0f eb e5             	por    mm4,mm5
+ cce:	0f 57 ee             	xorps  xmm5,xmm6
+ cd1:	0f eb f7             	por    mm6,mm7
+ cd4:	0f 57 f8             	xorps  xmm7,xmm0
+ cd7:	0f eb c1             	por    mm0,mm1
+ cda:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ cdd:	0f eb c1             	por    mm0,mm1
+ ce0:	0f 57 ca             	xorps  xmm1,xmm2
+ ce3:	0f eb d3             	por    mm2,mm3
+ ce6:	0f 57 dc             	xorps  xmm3,xmm4
+ ce9:	0f eb e5             	por    mm4,mm5
+ cec:	0f 57 ee             	xorps  xmm5,xmm6
+ cef:	0f eb f7             	por    mm6,mm7
+ cf2:	0f 57 f8             	xorps  xmm7,xmm0
+ cf5:	0f eb c1             	por    mm0,mm1
+ cf8:	0f 57 ca             	xorps  xmm1,xmm2
+ cfb:	0f eb d3             	por    mm2,mm3
+ cfe:	0f 57 dc             	xorps  xmm3,xmm4
+ d01:	0f eb e5             	por    mm4,mm5
+ d04:	0f 57 ee             	xorps  xmm5,xmm6
+ d07:	0f eb f7             	por    mm6,mm7
+ d0a:	0f 57 f8             	xorps  xmm7,xmm0
+ d0d:	0f eb c1             	por    mm0,mm1
+ d10:	0f 57 ca             	xorps  xmm1,xmm2
+ d13:	0f eb d3             	por    mm2,mm3
+ d16:	0f 57 dc             	xorps  xmm3,xmm4
+ d19:	0f eb e5             	por    mm4,mm5
+ d1c:	0f 57 ee             	xorps  xmm5,xmm6
+ d1f:	0f eb f7             	por    mm6,mm7
+ d22:	0f 57 f8             	xorps  xmm7,xmm0
+ d25:	0f eb c1             	por    mm0,mm1
+ d28:	0f 57 ca             	xorps  xmm1,xmm2
+ d2b:	0f eb d3             	por    mm2,mm3
+ d2e:	0f 57 dc             	xorps  xmm3,xmm4
+ d31:	0f eb e5             	por    mm4,mm5
+ d34:	0f 57 ee             	xorps  xmm5,xmm6
+ d37:	0f eb f7             	por    mm6,mm7
+ d3a:	0f 57 f8             	xorps  xmm7,xmm0
+ d3d:	0f eb c1             	por    mm0,mm1
+ d40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
+ d43:	0f eb c1             	por    mm0,mm1
+ d46:	0f 57 ca             	xorps  xmm1,xmm2
+ d49:	0f eb d3             	por    mm2,mm3
+ d4c:	0f 57 dc             	xorps  xmm3,xmm4
+ d4f:	0f eb e5             	por    mm4,mm5
+ d52:	0f 57 ee             	xorps  xmm5,xmm6
+ d55:	0f eb f7             	por    mm6,mm7
+ d58:	0f 57 f8             	xorps  xmm7,xmm0
+ d5b:	0f eb c1             	por    mm0,mm1
+ d5e:	0f 57 ca             	xorps  xmm1,xmm2
+ d61:	0f eb d3             	por    mm2,mm3
+ d64:	0f 57 dc             	xorps  xmm3,xmm4
+ d67:	0f eb e5             	por    mm4,mm5
+ d6a:	0f 57 ee             	xorps  xmm5,xmm6
+ d6d:	0f eb f7             	por    mm6,mm7
+ d70:	0f 57 f8             	xorps  xmm7,xmm0
+ d73:	0f eb c1             	por    mm0,mm1
+ d76:	0f 57 ca             	xorps  xmm1,xmm2
+ d79:	0f eb d3             	por    mm2,mm3
+ d7c:	0f 57 dc             	xorps  xmm3,xmm4
+ d7f:	0f eb e5             	por    mm4,mm5
+ d82:	0f 57 ee             	xorps  xmm5,xmm6
+ d85:	0f eb f7             	por    mm6,mm7
+ d88:	0f 57 f8             	xorps  xmm7,xmm0
+ d8b:	0f eb c1             	por    mm0,mm1
+ d8e:	0f 57 ca             	xorps  xmm1,xmm2
+ d91:	0f eb d3             	por    mm2,mm3
+ d94:	0f 57 dc             	xorps  xmm3,xmm4
+ d97:	0f eb e5             	por    mm4,mm5
+ d9a:	0f 57 ee             	xorps  xmm5,xmm6
+ d9d:	0f eb f7             	por    mm6,mm7
+ da0:	0f 57 f8             	xorps  xmm7,xmm0
+ da3:	0f eb c1             	por    mm0,mm1
+ da6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+ da9:	0f eb c1             	por    mm0,mm1
+ dac:	0f 57 ca             	xorps  xmm1,xmm2
+ daf:	0f eb d3             	por    mm2,mm3
+ db2:	0f 57 dc             	xorps  xmm3,xmm4
+ db5:	0f eb e5             	por    mm4,mm5
+ db8:	0f 57 ee             	xorps  xmm5,xmm6
+ dbb:	0f eb f7             	por    mm6,mm7
+ dbe:	0f 57 f8             	xorps  xmm7,xmm0
+ dc1:	0f eb c1             	por    mm0,mm1
+ dc4:	0f 57 ca             	xorps  xmm1,xmm2
+ dc7:	0f eb d3             	por    mm2,mm3
+ dca:	0f 57 dc             	xorps  xmm3,xmm4
+ dcd:	0f eb e5             	por    mm4,mm5
+ dd0:	0f 57 ee             	xorps  xmm5,xmm6
+ dd3:	0f eb f7             	por    mm6,mm7
+ dd6:	0f 57 f8             	xorps  xmm7,xmm0
+ dd9:	0f eb c1             	por    mm0,mm1
+ ddc:	0f 57 ca             	xorps  xmm1,xmm2
+ ddf:	0f eb d3             	por    mm2,mm3
+ de2:	0f 57 dc             	xorps  xmm3,xmm4
+ de5:	0f eb e5             	por    mm4,mm5
+ de8:	0f 57 ee             	xorps  xmm5,xmm6
+ deb:	0f eb f7             	por    mm6,mm7
+ dee:	0f 57 f8             	xorps  xmm7,xmm0
+ df1:	0f eb c1             	por    mm0,mm1
+ df4:	0f 57 ca             	xorps  xmm1,xmm2
+ df7:	0f eb d3             	por    mm2,mm3
+ dfa:	0f 57 dc             	xorps  xmm3,xmm4
+ dfd:	0f eb e5             	por    mm4,mm5
+ e00:	0f 57 ee             	xorps  xmm5,xmm6
+ e03:	0f eb f7             	por    mm6,mm7
+ e06:	0f 57 f8             	xorps  xmm7,xmm0
+ e09:	83 e8 01             	sub    eax,0x1
+ e0c:	0f 85 6e f2 ff ff    	jne    0x80
+ e12:	66 90                	xchg   ax,ax
+ e14:	66 90                	xchg   ax,ax
+ e16:	66 90                	xchg   ax,ax
+ e18:	66 90                	xchg   ax,ax
+ e1a:	66 90                	xchg   ax,ax
+ e1c:	66 90                	xchg   ax,ax
+ e1e:	66 90                	xchg   ax,ax
+ e20:	66 90                	xchg   ax,ax
+ e22:	48 81 c4 84 35 00 00 	add    rsp,0x3584
+ e29:	41 59                	pop    r9
+ e2b:	41 58                	pop    r8
+ e2d:	5f                   	pop    rdi
+ e2e:	5e                   	pop    rsi
+ e2f:	5d                   	pop    rbp
+ e30:	5b                   	pop    rbx
+ e31:	0f 77                	emms   
+ e33:	c3                   	ret    
