@@ -7,3 +7,5 @@ asm.bin
 /results
 /res.a
 /res.b
+/temp.asm
+/temp.o

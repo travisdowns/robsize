@@ -85,6 +85,9 @@ const test_info tests[] = {
     { NO_COMP, "stores: mov [rsp - 8], ebx (SB size)" },
     {       0, "loads: mov ebx, [r9 + N] (LB size)" },
     {       0, "alternating kaddd k1, k2, k3 and vpxor ymmN,ymmN,ymmN+1" },
+    {       0, "pxor mmN, mmN" },
+    {       0, "pxor mmN, mmN+1" },
+    { NO_COMP, "kaddb k1, k2, k3" },
 };
 
 const int test_count = sizeof(tests) / sizeof(tests[0]);
@@ -176,6 +179,9 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
             if (i & 1) { ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); }
             else       { ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); }
             break;
+        case 36: ADD_WORD(0xef0f); ADD_BYTE(0xc0 | (i&7)<<3 | (i&7)); break;      // pxor mmN, mmN
+        case 37: ADD_WORD(0xef0f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break;  // pxor mmN, mmN+1
+        case 38: ADD_BYTE(0xc5); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;  // kaddb k1, k2, k3
     }
 
     return pbuf;
