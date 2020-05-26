@@ -53,6 +53,10 @@ These use SIMD xor operations (with different registers so it is not a zeroing i
 
 These determine the load buffer (test 32) and store buffer (test 33) sizes respectively, by using loads and stores as the filler instructions.
 
+### Tests 39, 40 and 41
+
+These show that while there is no sharing between mask (kreg) registers and SSE/AVX registers (test 39) or general purpose registers (test 40), there _does_ seem to be sharing between mask registers and x87/MMX registers (test 41) -- they appear to draw from a common pool of ~150 physical registers. Details [here](https://travisdowns.github.io/blog/2020/05/26/kreg2.html#skx-41).
+
 ## Plotting
 
 You can plot the data for easy analysis using the included [scripts/plot-csv.py](scripts/plot-csv.py).
@@ -70,3 +74,7 @@ For example, the following command (after almost 7 minutes, use `--fast` if you 
 ## References
 
 H. Wong, _Measuring Reorder Buffer Capacity_, May, 2013. [Online]. Available: http://blog.stuffedcow.net/2013/05/measuring-rob-capacity/
+
+[A Note on Mask Registers](https://travisdowns.github.io/blog/2019/12/05/kreg-facts.html) describes using this tool to measure the mask (kreg) PRF size
+
+[AVX-512 Mask Registers, Again](https://travisdowns.github.io/blog/2020/05/26/kreg2.html) describes using this tool to verify a theory that the mask registers are shared with the x87/MMX registers
