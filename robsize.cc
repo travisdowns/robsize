@@ -76,7 +76,7 @@ const test_info tests[] = {
     {       0, "add regN, regN" },	// add64 (rbx, rbp, rsi, rdi), (rbx, rbp, rsi, rdi)
     {       0, "mov regN, regN+1" },	// mov64 (ebx, ebp, esi, edi), (edi, ebx, ebp, esi)
     { NO_COMP, "vpxord zmmN, zmmN, zmmN+1" },
-    { NO_COMP, "kaddd k1, k2, k3" },
+    { NO_COMP, "kaddd k1, k2, k3" }, // 27
     { NO_COMP, "kmovd k1, k2" },
     {       0, "alternating kaddd k1, k2, k3 and add reg32, reg32" }, // 29
     {       0, "mov regN, 0" },  // 30 "value matching" tests
@@ -86,11 +86,12 @@ const test_info tests[] = {
     {       0, "loads: mov ebx, [r9 + N] (LB size)" },
     { NO_COMP, "alternating kaddd k1, k2, k3 and vpxor ymmN,ymmN,ymmN+1" }, // 35
     { NO_COMP, "pxor mmN, mmN" },  // 36
-    { NO_COMP, "por mmN, mmN+1" }, // 37
-    { NO_COMP, "alternating xorps xmmN, xmmN+1 and por mmN, mmN+1" }, // 38
-    {       0, "alternating add reg32N, reg32N+1 and por mmN, mmN+1" }, // 39
-    { NO_COMP, "alternating kaddb k1, k2, k3 and por mmN, mmN+1" }, // 40
-    { NO_COMP, "kaddb k1, k2, k3" }, // 41
+    { NO_COMP, "por mm0, mm0" }, // 37
+    { NO_COMP, "por mmN, mmN+1" }, // 38
+    { NO_COMP, "alternating xorps xmmN, xmmN+1 and por mmN, mmN+1" }, // 39
+    {       0, "alternating add reg32N, reg32N+1 and por mmN, mmN+1" }, // 40
+    { NO_COMP, "alternating kaddb k1, k2, k3 and por mmN, mmN+1" }, // 41
+    { NO_COMP, "kaddb k1, k2, k3" }, // 42
 };
 
 const int test_count = sizeof(tests) / sizeof(tests[0]);
@@ -183,8 +184,9 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
             else       { ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); }
             break;
         case 36: ADD_WORD(0xef0f); ADD_BYTE(0xc0 | (i&7)<<3 | (i&7)); break;      // pxor mmN, mmN
-        case 37: ADD_WORD(0xeb0f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break;  // por mmN, mmN+1
-        case 38:
+        case 37: ADD_WORD(0xeb0f); ADD_BYTE(0xc0); break;  // por mmN, mmN+1
+        case 38: ADD_WORD(0xeb0f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break;  // por mmN, mmN+1
+        case 39:
             // check if mmx and sse regs are shared
             if (i & 1) {
                 ADD_WORD(0x570f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); // xorps xmm, xmm+1
@@ -192,7 +194,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
                 ADD_WORD(0xeb0f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); // por mmN, mmN+1
             }
             break;
-        case 39:
+        case 40:
             // check if mmx and gp regs are shared
             if (i & 1) {
                 ADD_BYTE(0x03);	ADD_BYTE(0xc0 | reg[i&3]<<3 | reg[i&3]); // add reg, reg
@@ -200,7 +202,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
                 ADD_WORD(0xeb0f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); // por mmN, mmN+1
             }
             break;
-        case 40:
+        case 41:
             // check if mmx and kregs are shared
             if (i & 1) {
                 ADD_BYTE(0xc5); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;  // kaddb k1, k2, k3
@@ -208,7 +210,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
                 ADD_WORD(0xeb0f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); // por mmN, mmN+1
             }
             break;
-        case 41: ADD_BYTE(0xc5); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;  // kaddb k1, k2, k3
+        case 42: ADD_BYTE(0xc5); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;  // kaddb k1, k2, k3
     }
 
     return pbuf;

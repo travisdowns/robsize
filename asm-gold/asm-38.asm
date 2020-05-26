@@ -54,1159 +54,1159 @@ Disassembly of section .data:
   7f:	90                   	nop
   80:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
   83:	0f eb c1             	por    mm0,mm1
-  86:	0f 57 ca             	xorps  xmm1,xmm2
+  86:	0f eb ca             	por    mm1,mm2
   89:	0f eb d3             	por    mm2,mm3
-  8c:	0f 57 dc             	xorps  xmm3,xmm4
+  8c:	0f eb dc             	por    mm3,mm4
   8f:	0f eb e5             	por    mm4,mm5
-  92:	0f 57 ee             	xorps  xmm5,xmm6
+  92:	0f eb ee             	por    mm5,mm6
   95:	0f eb f7             	por    mm6,mm7
-  98:	0f 57 f8             	xorps  xmm7,xmm0
+  98:	0f eb f8             	por    mm7,mm0
   9b:	0f eb c1             	por    mm0,mm1
-  9e:	0f 57 ca             	xorps  xmm1,xmm2
+  9e:	0f eb ca             	por    mm1,mm2
   a1:	0f eb d3             	por    mm2,mm3
-  a4:	0f 57 dc             	xorps  xmm3,xmm4
+  a4:	0f eb dc             	por    mm3,mm4
   a7:	0f eb e5             	por    mm4,mm5
-  aa:	0f 57 ee             	xorps  xmm5,xmm6
+  aa:	0f eb ee             	por    mm5,mm6
   ad:	0f eb f7             	por    mm6,mm7
-  b0:	0f 57 f8             	xorps  xmm7,xmm0
+  b0:	0f eb f8             	por    mm7,mm0
   b3:	0f eb c1             	por    mm0,mm1
-  b6:	0f 57 ca             	xorps  xmm1,xmm2
+  b6:	0f eb ca             	por    mm1,mm2
   b9:	0f eb d3             	por    mm2,mm3
-  bc:	0f 57 dc             	xorps  xmm3,xmm4
+  bc:	0f eb dc             	por    mm3,mm4
   bf:	0f eb e5             	por    mm4,mm5
-  c2:	0f 57 ee             	xorps  xmm5,xmm6
+  c2:	0f eb ee             	por    mm5,mm6
   c5:	0f eb f7             	por    mm6,mm7
-  c8:	0f 57 f8             	xorps  xmm7,xmm0
+  c8:	0f eb f8             	por    mm7,mm0
   cb:	0f eb c1             	por    mm0,mm1
-  ce:	0f 57 ca             	xorps  xmm1,xmm2
+  ce:	0f eb ca             	por    mm1,mm2
   d1:	0f eb d3             	por    mm2,mm3
-  d4:	0f 57 dc             	xorps  xmm3,xmm4
+  d4:	0f eb dc             	por    mm3,mm4
   d7:	0f eb e5             	por    mm4,mm5
-  da:	0f 57 ee             	xorps  xmm5,xmm6
+  da:	0f eb ee             	por    mm5,mm6
   dd:	0f eb f7             	por    mm6,mm7
-  e0:	0f 57 f8             	xorps  xmm7,xmm0
+  e0:	0f eb f8             	por    mm7,mm0
   e3:	0f eb c1             	por    mm0,mm1
   e6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
   e9:	0f eb c1             	por    mm0,mm1
-  ec:	0f 57 ca             	xorps  xmm1,xmm2
+  ec:	0f eb ca             	por    mm1,mm2
   ef:	0f eb d3             	por    mm2,mm3
-  f2:	0f 57 dc             	xorps  xmm3,xmm4
+  f2:	0f eb dc             	por    mm3,mm4
   f5:	0f eb e5             	por    mm4,mm5
-  f8:	0f 57 ee             	xorps  xmm5,xmm6
+  f8:	0f eb ee             	por    mm5,mm6
   fb:	0f eb f7             	por    mm6,mm7
-  fe:	0f 57 f8             	xorps  xmm7,xmm0
+  fe:	0f eb f8             	por    mm7,mm0
  101:	0f eb c1             	por    mm0,mm1
- 104:	0f 57 ca             	xorps  xmm1,xmm2
+ 104:	0f eb ca             	por    mm1,mm2
  107:	0f eb d3             	por    mm2,mm3
- 10a:	0f 57 dc             	xorps  xmm3,xmm4
+ 10a:	0f eb dc             	por    mm3,mm4
  10d:	0f eb e5             	por    mm4,mm5
- 110:	0f 57 ee             	xorps  xmm5,xmm6
+ 110:	0f eb ee             	por    mm5,mm6
  113:	0f eb f7             	por    mm6,mm7
- 116:	0f 57 f8             	xorps  xmm7,xmm0
+ 116:	0f eb f8             	por    mm7,mm0
  119:	0f eb c1             	por    mm0,mm1
- 11c:	0f 57 ca             	xorps  xmm1,xmm2
+ 11c:	0f eb ca             	por    mm1,mm2
  11f:	0f eb d3             	por    mm2,mm3
- 122:	0f 57 dc             	xorps  xmm3,xmm4
+ 122:	0f eb dc             	por    mm3,mm4
  125:	0f eb e5             	por    mm4,mm5
- 128:	0f 57 ee             	xorps  xmm5,xmm6
+ 128:	0f eb ee             	por    mm5,mm6
  12b:	0f eb f7             	por    mm6,mm7
- 12e:	0f 57 f8             	xorps  xmm7,xmm0
+ 12e:	0f eb f8             	por    mm7,mm0
  131:	0f eb c1             	por    mm0,mm1
- 134:	0f 57 ca             	xorps  xmm1,xmm2
+ 134:	0f eb ca             	por    mm1,mm2
  137:	0f eb d3             	por    mm2,mm3
- 13a:	0f 57 dc             	xorps  xmm3,xmm4
+ 13a:	0f eb dc             	por    mm3,mm4
  13d:	0f eb e5             	por    mm4,mm5
- 140:	0f 57 ee             	xorps  xmm5,xmm6
+ 140:	0f eb ee             	por    mm5,mm6
  143:	0f eb f7             	por    mm6,mm7
- 146:	0f 57 f8             	xorps  xmm7,xmm0
+ 146:	0f eb f8             	por    mm7,mm0
  149:	0f eb c1             	por    mm0,mm1
  14c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  14f:	0f eb c1             	por    mm0,mm1
- 152:	0f 57 ca             	xorps  xmm1,xmm2
+ 152:	0f eb ca             	por    mm1,mm2
  155:	0f eb d3             	por    mm2,mm3
- 158:	0f 57 dc             	xorps  xmm3,xmm4
+ 158:	0f eb dc             	por    mm3,mm4
  15b:	0f eb e5             	por    mm4,mm5
- 15e:	0f 57 ee             	xorps  xmm5,xmm6
+ 15e:	0f eb ee             	por    mm5,mm6
  161:	0f eb f7             	por    mm6,mm7
- 164:	0f 57 f8             	xorps  xmm7,xmm0
+ 164:	0f eb f8             	por    mm7,mm0
  167:	0f eb c1             	por    mm0,mm1
- 16a:	0f 57 ca             	xorps  xmm1,xmm2
+ 16a:	0f eb ca             	por    mm1,mm2
  16d:	0f eb d3             	por    mm2,mm3
- 170:	0f 57 dc             	xorps  xmm3,xmm4
+ 170:	0f eb dc             	por    mm3,mm4
  173:	0f eb e5             	por    mm4,mm5
- 176:	0f 57 ee             	xorps  xmm5,xmm6
+ 176:	0f eb ee             	por    mm5,mm6
  179:	0f eb f7             	por    mm6,mm7
- 17c:	0f 57 f8             	xorps  xmm7,xmm0
+ 17c:	0f eb f8             	por    mm7,mm0
  17f:	0f eb c1             	por    mm0,mm1
- 182:	0f 57 ca             	xorps  xmm1,xmm2
+ 182:	0f eb ca             	por    mm1,mm2
  185:	0f eb d3             	por    mm2,mm3
- 188:	0f 57 dc             	xorps  xmm3,xmm4
+ 188:	0f eb dc             	por    mm3,mm4
  18b:	0f eb e5             	por    mm4,mm5
- 18e:	0f 57 ee             	xorps  xmm5,xmm6
+ 18e:	0f eb ee             	por    mm5,mm6
  191:	0f eb f7             	por    mm6,mm7
- 194:	0f 57 f8             	xorps  xmm7,xmm0
+ 194:	0f eb f8             	por    mm7,mm0
  197:	0f eb c1             	por    mm0,mm1
- 19a:	0f 57 ca             	xorps  xmm1,xmm2
+ 19a:	0f eb ca             	por    mm1,mm2
  19d:	0f eb d3             	por    mm2,mm3
- 1a0:	0f 57 dc             	xorps  xmm3,xmm4
+ 1a0:	0f eb dc             	por    mm3,mm4
  1a3:	0f eb e5             	por    mm4,mm5
- 1a6:	0f 57 ee             	xorps  xmm5,xmm6
+ 1a6:	0f eb ee             	por    mm5,mm6
  1a9:	0f eb f7             	por    mm6,mm7
- 1ac:	0f 57 f8             	xorps  xmm7,xmm0
+ 1ac:	0f eb f8             	por    mm7,mm0
  1af:	0f eb c1             	por    mm0,mm1
  1b2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  1b5:	0f eb c1             	por    mm0,mm1
- 1b8:	0f 57 ca             	xorps  xmm1,xmm2
+ 1b8:	0f eb ca             	por    mm1,mm2
  1bb:	0f eb d3             	por    mm2,mm3
- 1be:	0f 57 dc             	xorps  xmm3,xmm4
+ 1be:	0f eb dc             	por    mm3,mm4
  1c1:	0f eb e5             	por    mm4,mm5
- 1c4:	0f 57 ee             	xorps  xmm5,xmm6
+ 1c4:	0f eb ee             	por    mm5,mm6
  1c7:	0f eb f7             	por    mm6,mm7
- 1ca:	0f 57 f8             	xorps  xmm7,xmm0
+ 1ca:	0f eb f8             	por    mm7,mm0
  1cd:	0f eb c1             	por    mm0,mm1
- 1d0:	0f 57 ca             	xorps  xmm1,xmm2
+ 1d0:	0f eb ca             	por    mm1,mm2
  1d3:	0f eb d3             	por    mm2,mm3
- 1d6:	0f 57 dc             	xorps  xmm3,xmm4
+ 1d6:	0f eb dc             	por    mm3,mm4
  1d9:	0f eb e5             	por    mm4,mm5
- 1dc:	0f 57 ee             	xorps  xmm5,xmm6
+ 1dc:	0f eb ee             	por    mm5,mm6
  1df:	0f eb f7             	por    mm6,mm7
- 1e2:	0f 57 f8             	xorps  xmm7,xmm0
+ 1e2:	0f eb f8             	por    mm7,mm0
  1e5:	0f eb c1             	por    mm0,mm1
- 1e8:	0f 57 ca             	xorps  xmm1,xmm2
+ 1e8:	0f eb ca             	por    mm1,mm2
  1eb:	0f eb d3             	por    mm2,mm3
- 1ee:	0f 57 dc             	xorps  xmm3,xmm4
+ 1ee:	0f eb dc             	por    mm3,mm4
  1f1:	0f eb e5             	por    mm4,mm5
- 1f4:	0f 57 ee             	xorps  xmm5,xmm6
+ 1f4:	0f eb ee             	por    mm5,mm6
  1f7:	0f eb f7             	por    mm6,mm7
- 1fa:	0f 57 f8             	xorps  xmm7,xmm0
+ 1fa:	0f eb f8             	por    mm7,mm0
  1fd:	0f eb c1             	por    mm0,mm1
- 200:	0f 57 ca             	xorps  xmm1,xmm2
+ 200:	0f eb ca             	por    mm1,mm2
  203:	0f eb d3             	por    mm2,mm3
- 206:	0f 57 dc             	xorps  xmm3,xmm4
+ 206:	0f eb dc             	por    mm3,mm4
  209:	0f eb e5             	por    mm4,mm5
- 20c:	0f 57 ee             	xorps  xmm5,xmm6
+ 20c:	0f eb ee             	por    mm5,mm6
  20f:	0f eb f7             	por    mm6,mm7
- 212:	0f 57 f8             	xorps  xmm7,xmm0
+ 212:	0f eb f8             	por    mm7,mm0
  215:	0f eb c1             	por    mm0,mm1
  218:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  21b:	0f eb c1             	por    mm0,mm1
- 21e:	0f 57 ca             	xorps  xmm1,xmm2
+ 21e:	0f eb ca             	por    mm1,mm2
  221:	0f eb d3             	por    mm2,mm3
- 224:	0f 57 dc             	xorps  xmm3,xmm4
+ 224:	0f eb dc             	por    mm3,mm4
  227:	0f eb e5             	por    mm4,mm5
- 22a:	0f 57 ee             	xorps  xmm5,xmm6
+ 22a:	0f eb ee             	por    mm5,mm6
  22d:	0f eb f7             	por    mm6,mm7
- 230:	0f 57 f8             	xorps  xmm7,xmm0
+ 230:	0f eb f8             	por    mm7,mm0
  233:	0f eb c1             	por    mm0,mm1
- 236:	0f 57 ca             	xorps  xmm1,xmm2
+ 236:	0f eb ca             	por    mm1,mm2
  239:	0f eb d3             	por    mm2,mm3
- 23c:	0f 57 dc             	xorps  xmm3,xmm4
+ 23c:	0f eb dc             	por    mm3,mm4
  23f:	0f eb e5             	por    mm4,mm5
- 242:	0f 57 ee             	xorps  xmm5,xmm6
+ 242:	0f eb ee             	por    mm5,mm6
  245:	0f eb f7             	por    mm6,mm7
- 248:	0f 57 f8             	xorps  xmm7,xmm0
+ 248:	0f eb f8             	por    mm7,mm0
  24b:	0f eb c1             	por    mm0,mm1
- 24e:	0f 57 ca             	xorps  xmm1,xmm2
+ 24e:	0f eb ca             	por    mm1,mm2
  251:	0f eb d3             	por    mm2,mm3
- 254:	0f 57 dc             	xorps  xmm3,xmm4
+ 254:	0f eb dc             	por    mm3,mm4
  257:	0f eb e5             	por    mm4,mm5
- 25a:	0f 57 ee             	xorps  xmm5,xmm6
+ 25a:	0f eb ee             	por    mm5,mm6
  25d:	0f eb f7             	por    mm6,mm7
- 260:	0f 57 f8             	xorps  xmm7,xmm0
+ 260:	0f eb f8             	por    mm7,mm0
  263:	0f eb c1             	por    mm0,mm1
- 266:	0f 57 ca             	xorps  xmm1,xmm2
+ 266:	0f eb ca             	por    mm1,mm2
  269:	0f eb d3             	por    mm2,mm3
- 26c:	0f 57 dc             	xorps  xmm3,xmm4
+ 26c:	0f eb dc             	por    mm3,mm4
  26f:	0f eb e5             	por    mm4,mm5
- 272:	0f 57 ee             	xorps  xmm5,xmm6
+ 272:	0f eb ee             	por    mm5,mm6
  275:	0f eb f7             	por    mm6,mm7
- 278:	0f 57 f8             	xorps  xmm7,xmm0
+ 278:	0f eb f8             	por    mm7,mm0
  27b:	0f eb c1             	por    mm0,mm1
  27e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  281:	0f eb c1             	por    mm0,mm1
- 284:	0f 57 ca             	xorps  xmm1,xmm2
+ 284:	0f eb ca             	por    mm1,mm2
  287:	0f eb d3             	por    mm2,mm3
- 28a:	0f 57 dc             	xorps  xmm3,xmm4
+ 28a:	0f eb dc             	por    mm3,mm4
  28d:	0f eb e5             	por    mm4,mm5
- 290:	0f 57 ee             	xorps  xmm5,xmm6
+ 290:	0f eb ee             	por    mm5,mm6
  293:	0f eb f7             	por    mm6,mm7
- 296:	0f 57 f8             	xorps  xmm7,xmm0
+ 296:	0f eb f8             	por    mm7,mm0
  299:	0f eb c1             	por    mm0,mm1
- 29c:	0f 57 ca             	xorps  xmm1,xmm2
+ 29c:	0f eb ca             	por    mm1,mm2
  29f:	0f eb d3             	por    mm2,mm3
- 2a2:	0f 57 dc             	xorps  xmm3,xmm4
+ 2a2:	0f eb dc             	por    mm3,mm4
  2a5:	0f eb e5             	por    mm4,mm5
- 2a8:	0f 57 ee             	xorps  xmm5,xmm6
+ 2a8:	0f eb ee             	por    mm5,mm6
  2ab:	0f eb f7             	por    mm6,mm7
- 2ae:	0f 57 f8             	xorps  xmm7,xmm0
+ 2ae:	0f eb f8             	por    mm7,mm0
  2b1:	0f eb c1             	por    mm0,mm1
- 2b4:	0f 57 ca             	xorps  xmm1,xmm2
+ 2b4:	0f eb ca             	por    mm1,mm2
  2b7:	0f eb d3             	por    mm2,mm3
- 2ba:	0f 57 dc             	xorps  xmm3,xmm4
+ 2ba:	0f eb dc             	por    mm3,mm4
  2bd:	0f eb e5             	por    mm4,mm5
- 2c0:	0f 57 ee             	xorps  xmm5,xmm6
+ 2c0:	0f eb ee             	por    mm5,mm6
  2c3:	0f eb f7             	por    mm6,mm7
- 2c6:	0f 57 f8             	xorps  xmm7,xmm0
+ 2c6:	0f eb f8             	por    mm7,mm0
  2c9:	0f eb c1             	por    mm0,mm1
- 2cc:	0f 57 ca             	xorps  xmm1,xmm2
+ 2cc:	0f eb ca             	por    mm1,mm2
  2cf:	0f eb d3             	por    mm2,mm3
- 2d2:	0f 57 dc             	xorps  xmm3,xmm4
+ 2d2:	0f eb dc             	por    mm3,mm4
  2d5:	0f eb e5             	por    mm4,mm5
- 2d8:	0f 57 ee             	xorps  xmm5,xmm6
+ 2d8:	0f eb ee             	por    mm5,mm6
  2db:	0f eb f7             	por    mm6,mm7
- 2de:	0f 57 f8             	xorps  xmm7,xmm0
+ 2de:	0f eb f8             	por    mm7,mm0
  2e1:	0f eb c1             	por    mm0,mm1
  2e4:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  2e7:	0f eb c1             	por    mm0,mm1
- 2ea:	0f 57 ca             	xorps  xmm1,xmm2
+ 2ea:	0f eb ca             	por    mm1,mm2
  2ed:	0f eb d3             	por    mm2,mm3
- 2f0:	0f 57 dc             	xorps  xmm3,xmm4
+ 2f0:	0f eb dc             	por    mm3,mm4
  2f3:	0f eb e5             	por    mm4,mm5
- 2f6:	0f 57 ee             	xorps  xmm5,xmm6
+ 2f6:	0f eb ee             	por    mm5,mm6
  2f9:	0f eb f7             	por    mm6,mm7
- 2fc:	0f 57 f8             	xorps  xmm7,xmm0
+ 2fc:	0f eb f8             	por    mm7,mm0
  2ff:	0f eb c1             	por    mm0,mm1
- 302:	0f 57 ca             	xorps  xmm1,xmm2
+ 302:	0f eb ca             	por    mm1,mm2
  305:	0f eb d3             	por    mm2,mm3
- 308:	0f 57 dc             	xorps  xmm3,xmm4
+ 308:	0f eb dc             	por    mm3,mm4
  30b:	0f eb e5             	por    mm4,mm5
- 30e:	0f 57 ee             	xorps  xmm5,xmm6
+ 30e:	0f eb ee             	por    mm5,mm6
  311:	0f eb f7             	por    mm6,mm7
- 314:	0f 57 f8             	xorps  xmm7,xmm0
+ 314:	0f eb f8             	por    mm7,mm0
  317:	0f eb c1             	por    mm0,mm1
- 31a:	0f 57 ca             	xorps  xmm1,xmm2
+ 31a:	0f eb ca             	por    mm1,mm2
  31d:	0f eb d3             	por    mm2,mm3
- 320:	0f 57 dc             	xorps  xmm3,xmm4
+ 320:	0f eb dc             	por    mm3,mm4
  323:	0f eb e5             	por    mm4,mm5
- 326:	0f 57 ee             	xorps  xmm5,xmm6
+ 326:	0f eb ee             	por    mm5,mm6
  329:	0f eb f7             	por    mm6,mm7
- 32c:	0f 57 f8             	xorps  xmm7,xmm0
+ 32c:	0f eb f8             	por    mm7,mm0
  32f:	0f eb c1             	por    mm0,mm1
- 332:	0f 57 ca             	xorps  xmm1,xmm2
+ 332:	0f eb ca             	por    mm1,mm2
  335:	0f eb d3             	por    mm2,mm3
- 338:	0f 57 dc             	xorps  xmm3,xmm4
+ 338:	0f eb dc             	por    mm3,mm4
  33b:	0f eb e5             	por    mm4,mm5
- 33e:	0f 57 ee             	xorps  xmm5,xmm6
+ 33e:	0f eb ee             	por    mm5,mm6
  341:	0f eb f7             	por    mm6,mm7
- 344:	0f 57 f8             	xorps  xmm7,xmm0
+ 344:	0f eb f8             	por    mm7,mm0
  347:	0f eb c1             	por    mm0,mm1
  34a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  34d:	0f eb c1             	por    mm0,mm1
- 350:	0f 57 ca             	xorps  xmm1,xmm2
+ 350:	0f eb ca             	por    mm1,mm2
  353:	0f eb d3             	por    mm2,mm3
- 356:	0f 57 dc             	xorps  xmm3,xmm4
+ 356:	0f eb dc             	por    mm3,mm4
  359:	0f eb e5             	por    mm4,mm5
- 35c:	0f 57 ee             	xorps  xmm5,xmm6
+ 35c:	0f eb ee             	por    mm5,mm6
  35f:	0f eb f7             	por    mm6,mm7
- 362:	0f 57 f8             	xorps  xmm7,xmm0
+ 362:	0f eb f8             	por    mm7,mm0
  365:	0f eb c1             	por    mm0,mm1
- 368:	0f 57 ca             	xorps  xmm1,xmm2
+ 368:	0f eb ca             	por    mm1,mm2
  36b:	0f eb d3             	por    mm2,mm3
- 36e:	0f 57 dc             	xorps  xmm3,xmm4
+ 36e:	0f eb dc             	por    mm3,mm4
  371:	0f eb e5             	por    mm4,mm5
- 374:	0f 57 ee             	xorps  xmm5,xmm6
+ 374:	0f eb ee             	por    mm5,mm6
  377:	0f eb f7             	por    mm6,mm7
- 37a:	0f 57 f8             	xorps  xmm7,xmm0
+ 37a:	0f eb f8             	por    mm7,mm0
  37d:	0f eb c1             	por    mm0,mm1
- 380:	0f 57 ca             	xorps  xmm1,xmm2
+ 380:	0f eb ca             	por    mm1,mm2
  383:	0f eb d3             	por    mm2,mm3
- 386:	0f 57 dc             	xorps  xmm3,xmm4
+ 386:	0f eb dc             	por    mm3,mm4
  389:	0f eb e5             	por    mm4,mm5
- 38c:	0f 57 ee             	xorps  xmm5,xmm6
+ 38c:	0f eb ee             	por    mm5,mm6
  38f:	0f eb f7             	por    mm6,mm7
- 392:	0f 57 f8             	xorps  xmm7,xmm0
+ 392:	0f eb f8             	por    mm7,mm0
  395:	0f eb c1             	por    mm0,mm1
- 398:	0f 57 ca             	xorps  xmm1,xmm2
+ 398:	0f eb ca             	por    mm1,mm2
  39b:	0f eb d3             	por    mm2,mm3
- 39e:	0f 57 dc             	xorps  xmm3,xmm4
+ 39e:	0f eb dc             	por    mm3,mm4
  3a1:	0f eb e5             	por    mm4,mm5
- 3a4:	0f 57 ee             	xorps  xmm5,xmm6
+ 3a4:	0f eb ee             	por    mm5,mm6
  3a7:	0f eb f7             	por    mm6,mm7
- 3aa:	0f 57 f8             	xorps  xmm7,xmm0
+ 3aa:	0f eb f8             	por    mm7,mm0
  3ad:	0f eb c1             	por    mm0,mm1
  3b0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  3b3:	0f eb c1             	por    mm0,mm1
- 3b6:	0f 57 ca             	xorps  xmm1,xmm2
+ 3b6:	0f eb ca             	por    mm1,mm2
  3b9:	0f eb d3             	por    mm2,mm3
- 3bc:	0f 57 dc             	xorps  xmm3,xmm4
+ 3bc:	0f eb dc             	por    mm3,mm4
  3bf:	0f eb e5             	por    mm4,mm5
- 3c2:	0f 57 ee             	xorps  xmm5,xmm6
+ 3c2:	0f eb ee             	por    mm5,mm6
  3c5:	0f eb f7             	por    mm6,mm7
- 3c8:	0f 57 f8             	xorps  xmm7,xmm0
+ 3c8:	0f eb f8             	por    mm7,mm0
  3cb:	0f eb c1             	por    mm0,mm1
- 3ce:	0f 57 ca             	xorps  xmm1,xmm2
+ 3ce:	0f eb ca             	por    mm1,mm2
  3d1:	0f eb d3             	por    mm2,mm3
- 3d4:	0f 57 dc             	xorps  xmm3,xmm4
+ 3d4:	0f eb dc             	por    mm3,mm4
  3d7:	0f eb e5             	por    mm4,mm5
- 3da:	0f 57 ee             	xorps  xmm5,xmm6
+ 3da:	0f eb ee             	por    mm5,mm6
  3dd:	0f eb f7             	por    mm6,mm7
- 3e0:	0f 57 f8             	xorps  xmm7,xmm0
+ 3e0:	0f eb f8             	por    mm7,mm0
  3e3:	0f eb c1             	por    mm0,mm1
- 3e6:	0f 57 ca             	xorps  xmm1,xmm2
+ 3e6:	0f eb ca             	por    mm1,mm2
  3e9:	0f eb d3             	por    mm2,mm3
- 3ec:	0f 57 dc             	xorps  xmm3,xmm4
+ 3ec:	0f eb dc             	por    mm3,mm4
  3ef:	0f eb e5             	por    mm4,mm5
- 3f2:	0f 57 ee             	xorps  xmm5,xmm6
+ 3f2:	0f eb ee             	por    mm5,mm6
  3f5:	0f eb f7             	por    mm6,mm7
- 3f8:	0f 57 f8             	xorps  xmm7,xmm0
+ 3f8:	0f eb f8             	por    mm7,mm0
  3fb:	0f eb c1             	por    mm0,mm1
- 3fe:	0f 57 ca             	xorps  xmm1,xmm2
+ 3fe:	0f eb ca             	por    mm1,mm2
  401:	0f eb d3             	por    mm2,mm3
- 404:	0f 57 dc             	xorps  xmm3,xmm4
+ 404:	0f eb dc             	por    mm3,mm4
  407:	0f eb e5             	por    mm4,mm5
- 40a:	0f 57 ee             	xorps  xmm5,xmm6
+ 40a:	0f eb ee             	por    mm5,mm6
  40d:	0f eb f7             	por    mm6,mm7
- 410:	0f 57 f8             	xorps  xmm7,xmm0
+ 410:	0f eb f8             	por    mm7,mm0
  413:	0f eb c1             	por    mm0,mm1
  416:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  419:	0f eb c1             	por    mm0,mm1
- 41c:	0f 57 ca             	xorps  xmm1,xmm2
+ 41c:	0f eb ca             	por    mm1,mm2
  41f:	0f eb d3             	por    mm2,mm3
- 422:	0f 57 dc             	xorps  xmm3,xmm4
+ 422:	0f eb dc             	por    mm3,mm4
  425:	0f eb e5             	por    mm4,mm5
- 428:	0f 57 ee             	xorps  xmm5,xmm6
+ 428:	0f eb ee             	por    mm5,mm6
  42b:	0f eb f7             	por    mm6,mm7
- 42e:	0f 57 f8             	xorps  xmm7,xmm0
+ 42e:	0f eb f8             	por    mm7,mm0
  431:	0f eb c1             	por    mm0,mm1
- 434:	0f 57 ca             	xorps  xmm1,xmm2
+ 434:	0f eb ca             	por    mm1,mm2
  437:	0f eb d3             	por    mm2,mm3
- 43a:	0f 57 dc             	xorps  xmm3,xmm4
+ 43a:	0f eb dc             	por    mm3,mm4
  43d:	0f eb e5             	por    mm4,mm5
- 440:	0f 57 ee             	xorps  xmm5,xmm6
+ 440:	0f eb ee             	por    mm5,mm6
  443:	0f eb f7             	por    mm6,mm7
- 446:	0f 57 f8             	xorps  xmm7,xmm0
+ 446:	0f eb f8             	por    mm7,mm0
  449:	0f eb c1             	por    mm0,mm1
- 44c:	0f 57 ca             	xorps  xmm1,xmm2
+ 44c:	0f eb ca             	por    mm1,mm2
  44f:	0f eb d3             	por    mm2,mm3
- 452:	0f 57 dc             	xorps  xmm3,xmm4
+ 452:	0f eb dc             	por    mm3,mm4
  455:	0f eb e5             	por    mm4,mm5
- 458:	0f 57 ee             	xorps  xmm5,xmm6
+ 458:	0f eb ee             	por    mm5,mm6
  45b:	0f eb f7             	por    mm6,mm7
- 45e:	0f 57 f8             	xorps  xmm7,xmm0
+ 45e:	0f eb f8             	por    mm7,mm0
  461:	0f eb c1             	por    mm0,mm1
- 464:	0f 57 ca             	xorps  xmm1,xmm2
+ 464:	0f eb ca             	por    mm1,mm2
  467:	0f eb d3             	por    mm2,mm3
- 46a:	0f 57 dc             	xorps  xmm3,xmm4
+ 46a:	0f eb dc             	por    mm3,mm4
  46d:	0f eb e5             	por    mm4,mm5
- 470:	0f 57 ee             	xorps  xmm5,xmm6
+ 470:	0f eb ee             	por    mm5,mm6
  473:	0f eb f7             	por    mm6,mm7
- 476:	0f 57 f8             	xorps  xmm7,xmm0
+ 476:	0f eb f8             	por    mm7,mm0
  479:	0f eb c1             	por    mm0,mm1
  47c:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  47f:	0f eb c1             	por    mm0,mm1
- 482:	0f 57 ca             	xorps  xmm1,xmm2
+ 482:	0f eb ca             	por    mm1,mm2
  485:	0f eb d3             	por    mm2,mm3
- 488:	0f 57 dc             	xorps  xmm3,xmm4
+ 488:	0f eb dc             	por    mm3,mm4
  48b:	0f eb e5             	por    mm4,mm5
- 48e:	0f 57 ee             	xorps  xmm5,xmm6
+ 48e:	0f eb ee             	por    mm5,mm6
  491:	0f eb f7             	por    mm6,mm7
- 494:	0f 57 f8             	xorps  xmm7,xmm0
+ 494:	0f eb f8             	por    mm7,mm0
  497:	0f eb c1             	por    mm0,mm1
- 49a:	0f 57 ca             	xorps  xmm1,xmm2
+ 49a:	0f eb ca             	por    mm1,mm2
  49d:	0f eb d3             	por    mm2,mm3
- 4a0:	0f 57 dc             	xorps  xmm3,xmm4
+ 4a0:	0f eb dc             	por    mm3,mm4
  4a3:	0f eb e5             	por    mm4,mm5
- 4a6:	0f 57 ee             	xorps  xmm5,xmm6
+ 4a6:	0f eb ee             	por    mm5,mm6
  4a9:	0f eb f7             	por    mm6,mm7
- 4ac:	0f 57 f8             	xorps  xmm7,xmm0
+ 4ac:	0f eb f8             	por    mm7,mm0
  4af:	0f eb c1             	por    mm0,mm1
- 4b2:	0f 57 ca             	xorps  xmm1,xmm2
+ 4b2:	0f eb ca             	por    mm1,mm2
  4b5:	0f eb d3             	por    mm2,mm3
- 4b8:	0f 57 dc             	xorps  xmm3,xmm4
+ 4b8:	0f eb dc             	por    mm3,mm4
  4bb:	0f eb e5             	por    mm4,mm5
- 4be:	0f 57 ee             	xorps  xmm5,xmm6
+ 4be:	0f eb ee             	por    mm5,mm6
  4c1:	0f eb f7             	por    mm6,mm7
- 4c4:	0f 57 f8             	xorps  xmm7,xmm0
+ 4c4:	0f eb f8             	por    mm7,mm0
  4c7:	0f eb c1             	por    mm0,mm1
- 4ca:	0f 57 ca             	xorps  xmm1,xmm2
+ 4ca:	0f eb ca             	por    mm1,mm2
  4cd:	0f eb d3             	por    mm2,mm3
- 4d0:	0f 57 dc             	xorps  xmm3,xmm4
+ 4d0:	0f eb dc             	por    mm3,mm4
  4d3:	0f eb e5             	por    mm4,mm5
- 4d6:	0f 57 ee             	xorps  xmm5,xmm6
+ 4d6:	0f eb ee             	por    mm5,mm6
  4d9:	0f eb f7             	por    mm6,mm7
- 4dc:	0f 57 f8             	xorps  xmm7,xmm0
+ 4dc:	0f eb f8             	por    mm7,mm0
  4df:	0f eb c1             	por    mm0,mm1
  4e2:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  4e5:	0f eb c1             	por    mm0,mm1
- 4e8:	0f 57 ca             	xorps  xmm1,xmm2
+ 4e8:	0f eb ca             	por    mm1,mm2
  4eb:	0f eb d3             	por    mm2,mm3
- 4ee:	0f 57 dc             	xorps  xmm3,xmm4
+ 4ee:	0f eb dc             	por    mm3,mm4
  4f1:	0f eb e5             	por    mm4,mm5
- 4f4:	0f 57 ee             	xorps  xmm5,xmm6
+ 4f4:	0f eb ee             	por    mm5,mm6
  4f7:	0f eb f7             	por    mm6,mm7
- 4fa:	0f 57 f8             	xorps  xmm7,xmm0
+ 4fa:	0f eb f8             	por    mm7,mm0
  4fd:	0f eb c1             	por    mm0,mm1
- 500:	0f 57 ca             	xorps  xmm1,xmm2
+ 500:	0f eb ca             	por    mm1,mm2
  503:	0f eb d3             	por    mm2,mm3
- 506:	0f 57 dc             	xorps  xmm3,xmm4
+ 506:	0f eb dc             	por    mm3,mm4
  509:	0f eb e5             	por    mm4,mm5
- 50c:	0f 57 ee             	xorps  xmm5,xmm6
+ 50c:	0f eb ee             	por    mm5,mm6
  50f:	0f eb f7             	por    mm6,mm7
- 512:	0f 57 f8             	xorps  xmm7,xmm0
+ 512:	0f eb f8             	por    mm7,mm0
  515:	0f eb c1             	por    mm0,mm1
- 518:	0f 57 ca             	xorps  xmm1,xmm2
+ 518:	0f eb ca             	por    mm1,mm2
  51b:	0f eb d3             	por    mm2,mm3
- 51e:	0f 57 dc             	xorps  xmm3,xmm4
+ 51e:	0f eb dc             	por    mm3,mm4
  521:	0f eb e5             	por    mm4,mm5
- 524:	0f 57 ee             	xorps  xmm5,xmm6
+ 524:	0f eb ee             	por    mm5,mm6
  527:	0f eb f7             	por    mm6,mm7
- 52a:	0f 57 f8             	xorps  xmm7,xmm0
+ 52a:	0f eb f8             	por    mm7,mm0
  52d:	0f eb c1             	por    mm0,mm1
- 530:	0f 57 ca             	xorps  xmm1,xmm2
+ 530:	0f eb ca             	por    mm1,mm2
  533:	0f eb d3             	por    mm2,mm3
- 536:	0f 57 dc             	xorps  xmm3,xmm4
+ 536:	0f eb dc             	por    mm3,mm4
  539:	0f eb e5             	por    mm4,mm5
- 53c:	0f 57 ee             	xorps  xmm5,xmm6
+ 53c:	0f eb ee             	por    mm5,mm6
  53f:	0f eb f7             	por    mm6,mm7
- 542:	0f 57 f8             	xorps  xmm7,xmm0
+ 542:	0f eb f8             	por    mm7,mm0
  545:	0f eb c1             	por    mm0,mm1
  548:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  54b:	0f eb c1             	por    mm0,mm1
- 54e:	0f 57 ca             	xorps  xmm1,xmm2
+ 54e:	0f eb ca             	por    mm1,mm2
  551:	0f eb d3             	por    mm2,mm3
- 554:	0f 57 dc             	xorps  xmm3,xmm4
+ 554:	0f eb dc             	por    mm3,mm4
  557:	0f eb e5             	por    mm4,mm5
- 55a:	0f 57 ee             	xorps  xmm5,xmm6
+ 55a:	0f eb ee             	por    mm5,mm6
  55d:	0f eb f7             	por    mm6,mm7
- 560:	0f 57 f8             	xorps  xmm7,xmm0
+ 560:	0f eb f8             	por    mm7,mm0
  563:	0f eb c1             	por    mm0,mm1
- 566:	0f 57 ca             	xorps  xmm1,xmm2
+ 566:	0f eb ca             	por    mm1,mm2
  569:	0f eb d3             	por    mm2,mm3
- 56c:	0f 57 dc             	xorps  xmm3,xmm4
+ 56c:	0f eb dc             	por    mm3,mm4
  56f:	0f eb e5             	por    mm4,mm5
- 572:	0f 57 ee             	xorps  xmm5,xmm6
+ 572:	0f eb ee             	por    mm5,mm6
  575:	0f eb f7             	por    mm6,mm7
- 578:	0f 57 f8             	xorps  xmm7,xmm0
+ 578:	0f eb f8             	por    mm7,mm0
  57b:	0f eb c1             	por    mm0,mm1
- 57e:	0f 57 ca             	xorps  xmm1,xmm2
+ 57e:	0f eb ca             	por    mm1,mm2
  581:	0f eb d3             	por    mm2,mm3
- 584:	0f 57 dc             	xorps  xmm3,xmm4
+ 584:	0f eb dc             	por    mm3,mm4
  587:	0f eb e5             	por    mm4,mm5
- 58a:	0f 57 ee             	xorps  xmm5,xmm6
+ 58a:	0f eb ee             	por    mm5,mm6
  58d:	0f eb f7             	por    mm6,mm7
- 590:	0f 57 f8             	xorps  xmm7,xmm0
+ 590:	0f eb f8             	por    mm7,mm0
  593:	0f eb c1             	por    mm0,mm1
- 596:	0f 57 ca             	xorps  xmm1,xmm2
+ 596:	0f eb ca             	por    mm1,mm2
  599:	0f eb d3             	por    mm2,mm3
- 59c:	0f 57 dc             	xorps  xmm3,xmm4
+ 59c:	0f eb dc             	por    mm3,mm4
  59f:	0f eb e5             	por    mm4,mm5
- 5a2:	0f 57 ee             	xorps  xmm5,xmm6
+ 5a2:	0f eb ee             	por    mm5,mm6
  5a5:	0f eb f7             	por    mm6,mm7
- 5a8:	0f 57 f8             	xorps  xmm7,xmm0
+ 5a8:	0f eb f8             	por    mm7,mm0
  5ab:	0f eb c1             	por    mm0,mm1
  5ae:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  5b1:	0f eb c1             	por    mm0,mm1
- 5b4:	0f 57 ca             	xorps  xmm1,xmm2
+ 5b4:	0f eb ca             	por    mm1,mm2
  5b7:	0f eb d3             	por    mm2,mm3
- 5ba:	0f 57 dc             	xorps  xmm3,xmm4
+ 5ba:	0f eb dc             	por    mm3,mm4
  5bd:	0f eb e5             	por    mm4,mm5
- 5c0:	0f 57 ee             	xorps  xmm5,xmm6
+ 5c0:	0f eb ee             	por    mm5,mm6
  5c3:	0f eb f7             	por    mm6,mm7
- 5c6:	0f 57 f8             	xorps  xmm7,xmm0
+ 5c6:	0f eb f8             	por    mm7,mm0
  5c9:	0f eb c1             	por    mm0,mm1
- 5cc:	0f 57 ca             	xorps  xmm1,xmm2
+ 5cc:	0f eb ca             	por    mm1,mm2
  5cf:	0f eb d3             	por    mm2,mm3
- 5d2:	0f 57 dc             	xorps  xmm3,xmm4
+ 5d2:	0f eb dc             	por    mm3,mm4
  5d5:	0f eb e5             	por    mm4,mm5
- 5d8:	0f 57 ee             	xorps  xmm5,xmm6
+ 5d8:	0f eb ee             	por    mm5,mm6
  5db:	0f eb f7             	por    mm6,mm7
- 5de:	0f 57 f8             	xorps  xmm7,xmm0
+ 5de:	0f eb f8             	por    mm7,mm0
  5e1:	0f eb c1             	por    mm0,mm1
- 5e4:	0f 57 ca             	xorps  xmm1,xmm2
+ 5e4:	0f eb ca             	por    mm1,mm2
  5e7:	0f eb d3             	por    mm2,mm3
- 5ea:	0f 57 dc             	xorps  xmm3,xmm4
+ 5ea:	0f eb dc             	por    mm3,mm4
  5ed:	0f eb e5             	por    mm4,mm5
- 5f0:	0f 57 ee             	xorps  xmm5,xmm6
+ 5f0:	0f eb ee             	por    mm5,mm6
  5f3:	0f eb f7             	por    mm6,mm7
- 5f6:	0f 57 f8             	xorps  xmm7,xmm0
+ 5f6:	0f eb f8             	por    mm7,mm0
  5f9:	0f eb c1             	por    mm0,mm1
- 5fc:	0f 57 ca             	xorps  xmm1,xmm2
+ 5fc:	0f eb ca             	por    mm1,mm2
  5ff:	0f eb d3             	por    mm2,mm3
- 602:	0f 57 dc             	xorps  xmm3,xmm4
+ 602:	0f eb dc             	por    mm3,mm4
  605:	0f eb e5             	por    mm4,mm5
- 608:	0f 57 ee             	xorps  xmm5,xmm6
+ 608:	0f eb ee             	por    mm5,mm6
  60b:	0f eb f7             	por    mm6,mm7
- 60e:	0f 57 f8             	xorps  xmm7,xmm0
+ 60e:	0f eb f8             	por    mm7,mm0
  611:	0f eb c1             	por    mm0,mm1
  614:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  617:	0f eb c1             	por    mm0,mm1
- 61a:	0f 57 ca             	xorps  xmm1,xmm2
+ 61a:	0f eb ca             	por    mm1,mm2
  61d:	0f eb d3             	por    mm2,mm3
- 620:	0f 57 dc             	xorps  xmm3,xmm4
+ 620:	0f eb dc             	por    mm3,mm4
  623:	0f eb e5             	por    mm4,mm5
- 626:	0f 57 ee             	xorps  xmm5,xmm6
+ 626:	0f eb ee             	por    mm5,mm6
  629:	0f eb f7             	por    mm6,mm7
- 62c:	0f 57 f8             	xorps  xmm7,xmm0
+ 62c:	0f eb f8             	por    mm7,mm0
  62f:	0f eb c1             	por    mm0,mm1
- 632:	0f 57 ca             	xorps  xmm1,xmm2
+ 632:	0f eb ca             	por    mm1,mm2
  635:	0f eb d3             	por    mm2,mm3
- 638:	0f 57 dc             	xorps  xmm3,xmm4
+ 638:	0f eb dc             	por    mm3,mm4
  63b:	0f eb e5             	por    mm4,mm5
- 63e:	0f 57 ee             	xorps  xmm5,xmm6
+ 63e:	0f eb ee             	por    mm5,mm6
  641:	0f eb f7             	por    mm6,mm7
- 644:	0f 57 f8             	xorps  xmm7,xmm0
+ 644:	0f eb f8             	por    mm7,mm0
  647:	0f eb c1             	por    mm0,mm1
- 64a:	0f 57 ca             	xorps  xmm1,xmm2
+ 64a:	0f eb ca             	por    mm1,mm2
  64d:	0f eb d3             	por    mm2,mm3
- 650:	0f 57 dc             	xorps  xmm3,xmm4
+ 650:	0f eb dc             	por    mm3,mm4
  653:	0f eb e5             	por    mm4,mm5
- 656:	0f 57 ee             	xorps  xmm5,xmm6
+ 656:	0f eb ee             	por    mm5,mm6
  659:	0f eb f7             	por    mm6,mm7
- 65c:	0f 57 f8             	xorps  xmm7,xmm0
+ 65c:	0f eb f8             	por    mm7,mm0
  65f:	0f eb c1             	por    mm0,mm1
- 662:	0f 57 ca             	xorps  xmm1,xmm2
+ 662:	0f eb ca             	por    mm1,mm2
  665:	0f eb d3             	por    mm2,mm3
- 668:	0f 57 dc             	xorps  xmm3,xmm4
+ 668:	0f eb dc             	por    mm3,mm4
  66b:	0f eb e5             	por    mm4,mm5
- 66e:	0f 57 ee             	xorps  xmm5,xmm6
+ 66e:	0f eb ee             	por    mm5,mm6
  671:	0f eb f7             	por    mm6,mm7
- 674:	0f 57 f8             	xorps  xmm7,xmm0
+ 674:	0f eb f8             	por    mm7,mm0
  677:	0f eb c1             	por    mm0,mm1
  67a:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  67d:	0f eb c1             	por    mm0,mm1
- 680:	0f 57 ca             	xorps  xmm1,xmm2
+ 680:	0f eb ca             	por    mm1,mm2
  683:	0f eb d3             	por    mm2,mm3
- 686:	0f 57 dc             	xorps  xmm3,xmm4
+ 686:	0f eb dc             	por    mm3,mm4
  689:	0f eb e5             	por    mm4,mm5
- 68c:	0f 57 ee             	xorps  xmm5,xmm6
+ 68c:	0f eb ee             	por    mm5,mm6
  68f:	0f eb f7             	por    mm6,mm7
- 692:	0f 57 f8             	xorps  xmm7,xmm0
+ 692:	0f eb f8             	por    mm7,mm0
  695:	0f eb c1             	por    mm0,mm1
- 698:	0f 57 ca             	xorps  xmm1,xmm2
+ 698:	0f eb ca             	por    mm1,mm2
  69b:	0f eb d3             	por    mm2,mm3
- 69e:	0f 57 dc             	xorps  xmm3,xmm4
+ 69e:	0f eb dc             	por    mm3,mm4
  6a1:	0f eb e5             	por    mm4,mm5
- 6a4:	0f 57 ee             	xorps  xmm5,xmm6
+ 6a4:	0f eb ee             	por    mm5,mm6
  6a7:	0f eb f7             	por    mm6,mm7
- 6aa:	0f 57 f8             	xorps  xmm7,xmm0
+ 6aa:	0f eb f8             	por    mm7,mm0
  6ad:	0f eb c1             	por    mm0,mm1
- 6b0:	0f 57 ca             	xorps  xmm1,xmm2
+ 6b0:	0f eb ca             	por    mm1,mm2
  6b3:	0f eb d3             	por    mm2,mm3
- 6b6:	0f 57 dc             	xorps  xmm3,xmm4
+ 6b6:	0f eb dc             	por    mm3,mm4
  6b9:	0f eb e5             	por    mm4,mm5
- 6bc:	0f 57 ee             	xorps  xmm5,xmm6
+ 6bc:	0f eb ee             	por    mm5,mm6
  6bf:	0f eb f7             	por    mm6,mm7
- 6c2:	0f 57 f8             	xorps  xmm7,xmm0
+ 6c2:	0f eb f8             	por    mm7,mm0
  6c5:	0f eb c1             	por    mm0,mm1
- 6c8:	0f 57 ca             	xorps  xmm1,xmm2
+ 6c8:	0f eb ca             	por    mm1,mm2
  6cb:	0f eb d3             	por    mm2,mm3
- 6ce:	0f 57 dc             	xorps  xmm3,xmm4
+ 6ce:	0f eb dc             	por    mm3,mm4
  6d1:	0f eb e5             	por    mm4,mm5
- 6d4:	0f 57 ee             	xorps  xmm5,xmm6
+ 6d4:	0f eb ee             	por    mm5,mm6
  6d7:	0f eb f7             	por    mm6,mm7
- 6da:	0f 57 f8             	xorps  xmm7,xmm0
+ 6da:	0f eb f8             	por    mm7,mm0
  6dd:	0f eb c1             	por    mm0,mm1
  6e0:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  6e3:	0f eb c1             	por    mm0,mm1
- 6e6:	0f 57 ca             	xorps  xmm1,xmm2
+ 6e6:	0f eb ca             	por    mm1,mm2
  6e9:	0f eb d3             	por    mm2,mm3
- 6ec:	0f 57 dc             	xorps  xmm3,xmm4
+ 6ec:	0f eb dc             	por    mm3,mm4
  6ef:	0f eb e5             	por    mm4,mm5
- 6f2:	0f 57 ee             	xorps  xmm5,xmm6
+ 6f2:	0f eb ee             	por    mm5,mm6
  6f5:	0f eb f7             	por    mm6,mm7
- 6f8:	0f 57 f8             	xorps  xmm7,xmm0
+ 6f8:	0f eb f8             	por    mm7,mm0
  6fb:	0f eb c1             	por    mm0,mm1
- 6fe:	0f 57 ca             	xorps  xmm1,xmm2
+ 6fe:	0f eb ca             	por    mm1,mm2
  701:	0f eb d3             	por    mm2,mm3
- 704:	0f 57 dc             	xorps  xmm3,xmm4
+ 704:	0f eb dc             	por    mm3,mm4
  707:	0f eb e5             	por    mm4,mm5
- 70a:	0f 57 ee             	xorps  xmm5,xmm6
+ 70a:	0f eb ee             	por    mm5,mm6
  70d:	0f eb f7             	por    mm6,mm7
- 710:	0f 57 f8             	xorps  xmm7,xmm0
+ 710:	0f eb f8             	por    mm7,mm0
  713:	0f eb c1             	por    mm0,mm1
- 716:	0f 57 ca             	xorps  xmm1,xmm2
+ 716:	0f eb ca             	por    mm1,mm2
  719:	0f eb d3             	por    mm2,mm3
- 71c:	0f 57 dc             	xorps  xmm3,xmm4
+ 71c:	0f eb dc             	por    mm3,mm4
  71f:	0f eb e5             	por    mm4,mm5
- 722:	0f 57 ee             	xorps  xmm5,xmm6
+ 722:	0f eb ee             	por    mm5,mm6
  725:	0f eb f7             	por    mm6,mm7
- 728:	0f 57 f8             	xorps  xmm7,xmm0
+ 728:	0f eb f8             	por    mm7,mm0
  72b:	0f eb c1             	por    mm0,mm1
- 72e:	0f 57 ca             	xorps  xmm1,xmm2
+ 72e:	0f eb ca             	por    mm1,mm2
  731:	0f eb d3             	por    mm2,mm3
- 734:	0f 57 dc             	xorps  xmm3,xmm4
+ 734:	0f eb dc             	por    mm3,mm4
  737:	0f eb e5             	por    mm4,mm5
- 73a:	0f 57 ee             	xorps  xmm5,xmm6
+ 73a:	0f eb ee             	por    mm5,mm6
  73d:	0f eb f7             	por    mm6,mm7
- 740:	0f 57 f8             	xorps  xmm7,xmm0
+ 740:	0f eb f8             	por    mm7,mm0
  743:	0f eb c1             	por    mm0,mm1
  746:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  749:	0f eb c1             	por    mm0,mm1
- 74c:	0f 57 ca             	xorps  xmm1,xmm2
+ 74c:	0f eb ca             	por    mm1,mm2
  74f:	0f eb d3             	por    mm2,mm3
- 752:	0f 57 dc             	xorps  xmm3,xmm4
+ 752:	0f eb dc             	por    mm3,mm4
  755:	0f eb e5             	por    mm4,mm5
- 758:	0f 57 ee             	xorps  xmm5,xmm6
+ 758:	0f eb ee             	por    mm5,mm6
  75b:	0f eb f7             	por    mm6,mm7
- 75e:	0f 57 f8             	xorps  xmm7,xmm0
+ 75e:	0f eb f8             	por    mm7,mm0
  761:	0f eb c1             	por    mm0,mm1
- 764:	0f 57 ca             	xorps  xmm1,xmm2
+ 764:	0f eb ca             	por    mm1,mm2
  767:	0f eb d3             	por    mm2,mm3
- 76a:	0f 57 dc             	xorps  xmm3,xmm4
+ 76a:	0f eb dc             	por    mm3,mm4
  76d:	0f eb e5             	por    mm4,mm5
- 770:	0f 57 ee             	xorps  xmm5,xmm6
+ 770:	0f eb ee             	por    mm5,mm6
  773:	0f eb f7             	por    mm6,mm7
- 776:	0f 57 f8             	xorps  xmm7,xmm0
+ 776:	0f eb f8             	por    mm7,mm0
  779:	0f eb c1             	por    mm0,mm1
- 77c:	0f 57 ca             	xorps  xmm1,xmm2
+ 77c:	0f eb ca             	por    mm1,mm2
  77f:	0f eb d3             	por    mm2,mm3
- 782:	0f 57 dc             	xorps  xmm3,xmm4
+ 782:	0f eb dc             	por    mm3,mm4
  785:	0f eb e5             	por    mm4,mm5
- 788:	0f 57 ee             	xorps  xmm5,xmm6
+ 788:	0f eb ee             	por    mm5,mm6
  78b:	0f eb f7             	por    mm6,mm7
- 78e:	0f 57 f8             	xorps  xmm7,xmm0
+ 78e:	0f eb f8             	por    mm7,mm0
  791:	0f eb c1             	por    mm0,mm1
- 794:	0f 57 ca             	xorps  xmm1,xmm2
+ 794:	0f eb ca             	por    mm1,mm2
  797:	0f eb d3             	por    mm2,mm3
- 79a:	0f 57 dc             	xorps  xmm3,xmm4
+ 79a:	0f eb dc             	por    mm3,mm4
  79d:	0f eb e5             	por    mm4,mm5
- 7a0:	0f 57 ee             	xorps  xmm5,xmm6
+ 7a0:	0f eb ee             	por    mm5,mm6
  7a3:	0f eb f7             	por    mm6,mm7
- 7a6:	0f 57 f8             	xorps  xmm7,xmm0
+ 7a6:	0f eb f8             	por    mm7,mm0
  7a9:	0f eb c1             	por    mm0,mm1
  7ac:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  7af:	0f eb c1             	por    mm0,mm1
- 7b2:	0f 57 ca             	xorps  xmm1,xmm2
+ 7b2:	0f eb ca             	por    mm1,mm2
  7b5:	0f eb d3             	por    mm2,mm3
- 7b8:	0f 57 dc             	xorps  xmm3,xmm4
+ 7b8:	0f eb dc             	por    mm3,mm4
  7bb:	0f eb e5             	por    mm4,mm5
- 7be:	0f 57 ee             	xorps  xmm5,xmm6
+ 7be:	0f eb ee             	por    mm5,mm6
  7c1:	0f eb f7             	por    mm6,mm7
- 7c4:	0f 57 f8             	xorps  xmm7,xmm0
+ 7c4:	0f eb f8             	por    mm7,mm0
  7c7:	0f eb c1             	por    mm0,mm1
- 7ca:	0f 57 ca             	xorps  xmm1,xmm2
+ 7ca:	0f eb ca             	por    mm1,mm2
  7cd:	0f eb d3             	por    mm2,mm3
- 7d0:	0f 57 dc             	xorps  xmm3,xmm4
+ 7d0:	0f eb dc             	por    mm3,mm4
  7d3:	0f eb e5             	por    mm4,mm5
- 7d6:	0f 57 ee             	xorps  xmm5,xmm6
+ 7d6:	0f eb ee             	por    mm5,mm6
  7d9:	0f eb f7             	por    mm6,mm7
- 7dc:	0f 57 f8             	xorps  xmm7,xmm0
+ 7dc:	0f eb f8             	por    mm7,mm0
  7df:	0f eb c1             	por    mm0,mm1
- 7e2:	0f 57 ca             	xorps  xmm1,xmm2
+ 7e2:	0f eb ca             	por    mm1,mm2
  7e5:	0f eb d3             	por    mm2,mm3
- 7e8:	0f 57 dc             	xorps  xmm3,xmm4
+ 7e8:	0f eb dc             	por    mm3,mm4
  7eb:	0f eb e5             	por    mm4,mm5
- 7ee:	0f 57 ee             	xorps  xmm5,xmm6
+ 7ee:	0f eb ee             	por    mm5,mm6
  7f1:	0f eb f7             	por    mm6,mm7
- 7f4:	0f 57 f8             	xorps  xmm7,xmm0
+ 7f4:	0f eb f8             	por    mm7,mm0
  7f7:	0f eb c1             	por    mm0,mm1
- 7fa:	0f 57 ca             	xorps  xmm1,xmm2
+ 7fa:	0f eb ca             	por    mm1,mm2
  7fd:	0f eb d3             	por    mm2,mm3
- 800:	0f 57 dc             	xorps  xmm3,xmm4
+ 800:	0f eb dc             	por    mm3,mm4
  803:	0f eb e5             	por    mm4,mm5
- 806:	0f 57 ee             	xorps  xmm5,xmm6
+ 806:	0f eb ee             	por    mm5,mm6
  809:	0f eb f7             	por    mm6,mm7
- 80c:	0f 57 f8             	xorps  xmm7,xmm0
+ 80c:	0f eb f8             	por    mm7,mm0
  80f:	0f eb c1             	por    mm0,mm1
  812:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  815:	0f eb c1             	por    mm0,mm1
- 818:	0f 57 ca             	xorps  xmm1,xmm2
+ 818:	0f eb ca             	por    mm1,mm2
  81b:	0f eb d3             	por    mm2,mm3
- 81e:	0f 57 dc             	xorps  xmm3,xmm4
+ 81e:	0f eb dc             	por    mm3,mm4
  821:	0f eb e5             	por    mm4,mm5
- 824:	0f 57 ee             	xorps  xmm5,xmm6
+ 824:	0f eb ee             	por    mm5,mm6
  827:	0f eb f7             	por    mm6,mm7
- 82a:	0f 57 f8             	xorps  xmm7,xmm0
+ 82a:	0f eb f8             	por    mm7,mm0
  82d:	0f eb c1             	por    mm0,mm1
- 830:	0f 57 ca             	xorps  xmm1,xmm2
+ 830:	0f eb ca             	por    mm1,mm2
  833:	0f eb d3             	por    mm2,mm3
- 836:	0f 57 dc             	xorps  xmm3,xmm4
+ 836:	0f eb dc             	por    mm3,mm4
  839:	0f eb e5             	por    mm4,mm5
- 83c:	0f 57 ee             	xorps  xmm5,xmm6
+ 83c:	0f eb ee             	por    mm5,mm6
  83f:	0f eb f7             	por    mm6,mm7
- 842:	0f 57 f8             	xorps  xmm7,xmm0
+ 842:	0f eb f8             	por    mm7,mm0
  845:	0f eb c1             	por    mm0,mm1
- 848:	0f 57 ca             	xorps  xmm1,xmm2
+ 848:	0f eb ca             	por    mm1,mm2
  84b:	0f eb d3             	por    mm2,mm3
- 84e:	0f 57 dc             	xorps  xmm3,xmm4
+ 84e:	0f eb dc             	por    mm3,mm4
  851:	0f eb e5             	por    mm4,mm5
- 854:	0f 57 ee             	xorps  xmm5,xmm6
+ 854:	0f eb ee             	por    mm5,mm6
  857:	0f eb f7             	por    mm6,mm7
- 85a:	0f 57 f8             	xorps  xmm7,xmm0
+ 85a:	0f eb f8             	por    mm7,mm0
  85d:	0f eb c1             	por    mm0,mm1
- 860:	0f 57 ca             	xorps  xmm1,xmm2
+ 860:	0f eb ca             	por    mm1,mm2
  863:	0f eb d3             	por    mm2,mm3
- 866:	0f 57 dc             	xorps  xmm3,xmm4
+ 866:	0f eb dc             	por    mm3,mm4
  869:	0f eb e5             	por    mm4,mm5
- 86c:	0f 57 ee             	xorps  xmm5,xmm6
+ 86c:	0f eb ee             	por    mm5,mm6
  86f:	0f eb f7             	por    mm6,mm7
- 872:	0f 57 f8             	xorps  xmm7,xmm0
+ 872:	0f eb f8             	por    mm7,mm0
  875:	0f eb c1             	por    mm0,mm1
  878:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  87b:	0f eb c1             	por    mm0,mm1
- 87e:	0f 57 ca             	xorps  xmm1,xmm2
+ 87e:	0f eb ca             	por    mm1,mm2
  881:	0f eb d3             	por    mm2,mm3
- 884:	0f 57 dc             	xorps  xmm3,xmm4
+ 884:	0f eb dc             	por    mm3,mm4
  887:	0f eb e5             	por    mm4,mm5
- 88a:	0f 57 ee             	xorps  xmm5,xmm6
+ 88a:	0f eb ee             	por    mm5,mm6
  88d:	0f eb f7             	por    mm6,mm7
- 890:	0f 57 f8             	xorps  xmm7,xmm0
+ 890:	0f eb f8             	por    mm7,mm0
  893:	0f eb c1             	por    mm0,mm1
- 896:	0f 57 ca             	xorps  xmm1,xmm2
+ 896:	0f eb ca             	por    mm1,mm2
  899:	0f eb d3             	por    mm2,mm3
- 89c:	0f 57 dc             	xorps  xmm3,xmm4
+ 89c:	0f eb dc             	por    mm3,mm4
  89f:	0f eb e5             	por    mm4,mm5
- 8a2:	0f 57 ee             	xorps  xmm5,xmm6
+ 8a2:	0f eb ee             	por    mm5,mm6
  8a5:	0f eb f7             	por    mm6,mm7
- 8a8:	0f 57 f8             	xorps  xmm7,xmm0
+ 8a8:	0f eb f8             	por    mm7,mm0
  8ab:	0f eb c1             	por    mm0,mm1
- 8ae:	0f 57 ca             	xorps  xmm1,xmm2
+ 8ae:	0f eb ca             	por    mm1,mm2
  8b1:	0f eb d3             	por    mm2,mm3
- 8b4:	0f 57 dc             	xorps  xmm3,xmm4
+ 8b4:	0f eb dc             	por    mm3,mm4
  8b7:	0f eb e5             	por    mm4,mm5
- 8ba:	0f 57 ee             	xorps  xmm5,xmm6
+ 8ba:	0f eb ee             	por    mm5,mm6
  8bd:	0f eb f7             	por    mm6,mm7
- 8c0:	0f 57 f8             	xorps  xmm7,xmm0
+ 8c0:	0f eb f8             	por    mm7,mm0
  8c3:	0f eb c1             	por    mm0,mm1
- 8c6:	0f 57 ca             	xorps  xmm1,xmm2
+ 8c6:	0f eb ca             	por    mm1,mm2
  8c9:	0f eb d3             	por    mm2,mm3
- 8cc:	0f 57 dc             	xorps  xmm3,xmm4
+ 8cc:	0f eb dc             	por    mm3,mm4
  8cf:	0f eb e5             	por    mm4,mm5
- 8d2:	0f 57 ee             	xorps  xmm5,xmm6
+ 8d2:	0f eb ee             	por    mm5,mm6
  8d5:	0f eb f7             	por    mm6,mm7
- 8d8:	0f 57 f8             	xorps  xmm7,xmm0
+ 8d8:	0f eb f8             	por    mm7,mm0
  8db:	0f eb c1             	por    mm0,mm1
  8de:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  8e1:	0f eb c1             	por    mm0,mm1
- 8e4:	0f 57 ca             	xorps  xmm1,xmm2
+ 8e4:	0f eb ca             	por    mm1,mm2
  8e7:	0f eb d3             	por    mm2,mm3
- 8ea:	0f 57 dc             	xorps  xmm3,xmm4
+ 8ea:	0f eb dc             	por    mm3,mm4
  8ed:	0f eb e5             	por    mm4,mm5
- 8f0:	0f 57 ee             	xorps  xmm5,xmm6
+ 8f0:	0f eb ee             	por    mm5,mm6
  8f3:	0f eb f7             	por    mm6,mm7
- 8f6:	0f 57 f8             	xorps  xmm7,xmm0
+ 8f6:	0f eb f8             	por    mm7,mm0
  8f9:	0f eb c1             	por    mm0,mm1
- 8fc:	0f 57 ca             	xorps  xmm1,xmm2
+ 8fc:	0f eb ca             	por    mm1,mm2
  8ff:	0f eb d3             	por    mm2,mm3
- 902:	0f 57 dc             	xorps  xmm3,xmm4
+ 902:	0f eb dc             	por    mm3,mm4
  905:	0f eb e5             	por    mm4,mm5
- 908:	0f 57 ee             	xorps  xmm5,xmm6
+ 908:	0f eb ee             	por    mm5,mm6
  90b:	0f eb f7             	por    mm6,mm7
- 90e:	0f 57 f8             	xorps  xmm7,xmm0
+ 90e:	0f eb f8             	por    mm7,mm0
  911:	0f eb c1             	por    mm0,mm1
- 914:	0f 57 ca             	xorps  xmm1,xmm2
+ 914:	0f eb ca             	por    mm1,mm2
  917:	0f eb d3             	por    mm2,mm3
- 91a:	0f 57 dc             	xorps  xmm3,xmm4
+ 91a:	0f eb dc             	por    mm3,mm4
  91d:	0f eb e5             	por    mm4,mm5
- 920:	0f 57 ee             	xorps  xmm5,xmm6
+ 920:	0f eb ee             	por    mm5,mm6
  923:	0f eb f7             	por    mm6,mm7
- 926:	0f 57 f8             	xorps  xmm7,xmm0
+ 926:	0f eb f8             	por    mm7,mm0
  929:	0f eb c1             	por    mm0,mm1
- 92c:	0f 57 ca             	xorps  xmm1,xmm2
+ 92c:	0f eb ca             	por    mm1,mm2
  92f:	0f eb d3             	por    mm2,mm3
- 932:	0f 57 dc             	xorps  xmm3,xmm4
+ 932:	0f eb dc             	por    mm3,mm4
  935:	0f eb e5             	por    mm4,mm5
- 938:	0f 57 ee             	xorps  xmm5,xmm6
+ 938:	0f eb ee             	por    mm5,mm6
  93b:	0f eb f7             	por    mm6,mm7
- 93e:	0f 57 f8             	xorps  xmm7,xmm0
+ 93e:	0f eb f8             	por    mm7,mm0
  941:	0f eb c1             	por    mm0,mm1
  944:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  947:	0f eb c1             	por    mm0,mm1
- 94a:	0f 57 ca             	xorps  xmm1,xmm2
+ 94a:	0f eb ca             	por    mm1,mm2
  94d:	0f eb d3             	por    mm2,mm3
- 950:	0f 57 dc             	xorps  xmm3,xmm4
+ 950:	0f eb dc             	por    mm3,mm4
  953:	0f eb e5             	por    mm4,mm5
- 956:	0f 57 ee             	xorps  xmm5,xmm6
+ 956:	0f eb ee             	por    mm5,mm6
  959:	0f eb f7             	por    mm6,mm7
- 95c:	0f 57 f8             	xorps  xmm7,xmm0
+ 95c:	0f eb f8             	por    mm7,mm0
  95f:	0f eb c1             	por    mm0,mm1
- 962:	0f 57 ca             	xorps  xmm1,xmm2
+ 962:	0f eb ca             	por    mm1,mm2
  965:	0f eb d3             	por    mm2,mm3
- 968:	0f 57 dc             	xorps  xmm3,xmm4
+ 968:	0f eb dc             	por    mm3,mm4
  96b:	0f eb e5             	por    mm4,mm5
- 96e:	0f 57 ee             	xorps  xmm5,xmm6
+ 96e:	0f eb ee             	por    mm5,mm6
  971:	0f eb f7             	por    mm6,mm7
- 974:	0f 57 f8             	xorps  xmm7,xmm0
+ 974:	0f eb f8             	por    mm7,mm0
  977:	0f eb c1             	por    mm0,mm1
- 97a:	0f 57 ca             	xorps  xmm1,xmm2
+ 97a:	0f eb ca             	por    mm1,mm2
  97d:	0f eb d3             	por    mm2,mm3
- 980:	0f 57 dc             	xorps  xmm3,xmm4
+ 980:	0f eb dc             	por    mm3,mm4
  983:	0f eb e5             	por    mm4,mm5
- 986:	0f 57 ee             	xorps  xmm5,xmm6
+ 986:	0f eb ee             	por    mm5,mm6
  989:	0f eb f7             	por    mm6,mm7
- 98c:	0f 57 f8             	xorps  xmm7,xmm0
+ 98c:	0f eb f8             	por    mm7,mm0
  98f:	0f eb c1             	por    mm0,mm1
- 992:	0f 57 ca             	xorps  xmm1,xmm2
+ 992:	0f eb ca             	por    mm1,mm2
  995:	0f eb d3             	por    mm2,mm3
- 998:	0f 57 dc             	xorps  xmm3,xmm4
+ 998:	0f eb dc             	por    mm3,mm4
  99b:	0f eb e5             	por    mm4,mm5
- 99e:	0f 57 ee             	xorps  xmm5,xmm6
+ 99e:	0f eb ee             	por    mm5,mm6
  9a1:	0f eb f7             	por    mm6,mm7
- 9a4:	0f 57 f8             	xorps  xmm7,xmm0
+ 9a4:	0f eb f8             	por    mm7,mm0
  9a7:	0f eb c1             	por    mm0,mm1
  9aa:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  9ad:	0f eb c1             	por    mm0,mm1
- 9b0:	0f 57 ca             	xorps  xmm1,xmm2
+ 9b0:	0f eb ca             	por    mm1,mm2
  9b3:	0f eb d3             	por    mm2,mm3
- 9b6:	0f 57 dc             	xorps  xmm3,xmm4
+ 9b6:	0f eb dc             	por    mm3,mm4
  9b9:	0f eb e5             	por    mm4,mm5
- 9bc:	0f 57 ee             	xorps  xmm5,xmm6
+ 9bc:	0f eb ee             	por    mm5,mm6
  9bf:	0f eb f7             	por    mm6,mm7
- 9c2:	0f 57 f8             	xorps  xmm7,xmm0
+ 9c2:	0f eb f8             	por    mm7,mm0
  9c5:	0f eb c1             	por    mm0,mm1
- 9c8:	0f 57 ca             	xorps  xmm1,xmm2
+ 9c8:	0f eb ca             	por    mm1,mm2
  9cb:	0f eb d3             	por    mm2,mm3
- 9ce:	0f 57 dc             	xorps  xmm3,xmm4
+ 9ce:	0f eb dc             	por    mm3,mm4
  9d1:	0f eb e5             	por    mm4,mm5
- 9d4:	0f 57 ee             	xorps  xmm5,xmm6
+ 9d4:	0f eb ee             	por    mm5,mm6
  9d7:	0f eb f7             	por    mm6,mm7
- 9da:	0f 57 f8             	xorps  xmm7,xmm0
+ 9da:	0f eb f8             	por    mm7,mm0
  9dd:	0f eb c1             	por    mm0,mm1
- 9e0:	0f 57 ca             	xorps  xmm1,xmm2
+ 9e0:	0f eb ca             	por    mm1,mm2
  9e3:	0f eb d3             	por    mm2,mm3
- 9e6:	0f 57 dc             	xorps  xmm3,xmm4
+ 9e6:	0f eb dc             	por    mm3,mm4
  9e9:	0f eb e5             	por    mm4,mm5
- 9ec:	0f 57 ee             	xorps  xmm5,xmm6
+ 9ec:	0f eb ee             	por    mm5,mm6
  9ef:	0f eb f7             	por    mm6,mm7
- 9f2:	0f 57 f8             	xorps  xmm7,xmm0
+ 9f2:	0f eb f8             	por    mm7,mm0
  9f5:	0f eb c1             	por    mm0,mm1
- 9f8:	0f 57 ca             	xorps  xmm1,xmm2
+ 9f8:	0f eb ca             	por    mm1,mm2
  9fb:	0f eb d3             	por    mm2,mm3
- 9fe:	0f 57 dc             	xorps  xmm3,xmm4
+ 9fe:	0f eb dc             	por    mm3,mm4
  a01:	0f eb e5             	por    mm4,mm5
- a04:	0f 57 ee             	xorps  xmm5,xmm6
+ a04:	0f eb ee             	por    mm5,mm6
  a07:	0f eb f7             	por    mm6,mm7
- a0a:	0f 57 f8             	xorps  xmm7,xmm0
+ a0a:	0f eb f8             	por    mm7,mm0
  a0d:	0f eb c1             	por    mm0,mm1
  a10:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  a13:	0f eb c1             	por    mm0,mm1
- a16:	0f 57 ca             	xorps  xmm1,xmm2
+ a16:	0f eb ca             	por    mm1,mm2
  a19:	0f eb d3             	por    mm2,mm3
- a1c:	0f 57 dc             	xorps  xmm3,xmm4
+ a1c:	0f eb dc             	por    mm3,mm4
  a1f:	0f eb e5             	por    mm4,mm5
- a22:	0f 57 ee             	xorps  xmm5,xmm6
+ a22:	0f eb ee             	por    mm5,mm6
  a25:	0f eb f7             	por    mm6,mm7
- a28:	0f 57 f8             	xorps  xmm7,xmm0
+ a28:	0f eb f8             	por    mm7,mm0
  a2b:	0f eb c1             	por    mm0,mm1
- a2e:	0f 57 ca             	xorps  xmm1,xmm2
+ a2e:	0f eb ca             	por    mm1,mm2
  a31:	0f eb d3             	por    mm2,mm3
- a34:	0f 57 dc             	xorps  xmm3,xmm4
+ a34:	0f eb dc             	por    mm3,mm4
  a37:	0f eb e5             	por    mm4,mm5
- a3a:	0f 57 ee             	xorps  xmm5,xmm6
+ a3a:	0f eb ee             	por    mm5,mm6
  a3d:	0f eb f7             	por    mm6,mm7
- a40:	0f 57 f8             	xorps  xmm7,xmm0
+ a40:	0f eb f8             	por    mm7,mm0
  a43:	0f eb c1             	por    mm0,mm1
- a46:	0f 57 ca             	xorps  xmm1,xmm2
+ a46:	0f eb ca             	por    mm1,mm2
  a49:	0f eb d3             	por    mm2,mm3
- a4c:	0f 57 dc             	xorps  xmm3,xmm4
+ a4c:	0f eb dc             	por    mm3,mm4
  a4f:	0f eb e5             	por    mm4,mm5
- a52:	0f 57 ee             	xorps  xmm5,xmm6
+ a52:	0f eb ee             	por    mm5,mm6
  a55:	0f eb f7             	por    mm6,mm7
- a58:	0f 57 f8             	xorps  xmm7,xmm0
+ a58:	0f eb f8             	por    mm7,mm0
  a5b:	0f eb c1             	por    mm0,mm1
- a5e:	0f 57 ca             	xorps  xmm1,xmm2
+ a5e:	0f eb ca             	por    mm1,mm2
  a61:	0f eb d3             	por    mm2,mm3
- a64:	0f 57 dc             	xorps  xmm3,xmm4
+ a64:	0f eb dc             	por    mm3,mm4
  a67:	0f eb e5             	por    mm4,mm5
- a6a:	0f 57 ee             	xorps  xmm5,xmm6
+ a6a:	0f eb ee             	por    mm5,mm6
  a6d:	0f eb f7             	por    mm6,mm7
- a70:	0f 57 f8             	xorps  xmm7,xmm0
+ a70:	0f eb f8             	por    mm7,mm0
  a73:	0f eb c1             	por    mm0,mm1
  a76:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  a79:	0f eb c1             	por    mm0,mm1
- a7c:	0f 57 ca             	xorps  xmm1,xmm2
+ a7c:	0f eb ca             	por    mm1,mm2
  a7f:	0f eb d3             	por    mm2,mm3
- a82:	0f 57 dc             	xorps  xmm3,xmm4
+ a82:	0f eb dc             	por    mm3,mm4
  a85:	0f eb e5             	por    mm4,mm5
- a88:	0f 57 ee             	xorps  xmm5,xmm6
+ a88:	0f eb ee             	por    mm5,mm6
  a8b:	0f eb f7             	por    mm6,mm7
- a8e:	0f 57 f8             	xorps  xmm7,xmm0
+ a8e:	0f eb f8             	por    mm7,mm0
  a91:	0f eb c1             	por    mm0,mm1
- a94:	0f 57 ca             	xorps  xmm1,xmm2
+ a94:	0f eb ca             	por    mm1,mm2
  a97:	0f eb d3             	por    mm2,mm3
- a9a:	0f 57 dc             	xorps  xmm3,xmm4
+ a9a:	0f eb dc             	por    mm3,mm4
  a9d:	0f eb e5             	por    mm4,mm5
- aa0:	0f 57 ee             	xorps  xmm5,xmm6
+ aa0:	0f eb ee             	por    mm5,mm6
  aa3:	0f eb f7             	por    mm6,mm7
- aa6:	0f 57 f8             	xorps  xmm7,xmm0
+ aa6:	0f eb f8             	por    mm7,mm0
  aa9:	0f eb c1             	por    mm0,mm1
- aac:	0f 57 ca             	xorps  xmm1,xmm2
+ aac:	0f eb ca             	por    mm1,mm2
  aaf:	0f eb d3             	por    mm2,mm3
- ab2:	0f 57 dc             	xorps  xmm3,xmm4
+ ab2:	0f eb dc             	por    mm3,mm4
  ab5:	0f eb e5             	por    mm4,mm5
- ab8:	0f 57 ee             	xorps  xmm5,xmm6
+ ab8:	0f eb ee             	por    mm5,mm6
  abb:	0f eb f7             	por    mm6,mm7
- abe:	0f 57 f8             	xorps  xmm7,xmm0
+ abe:	0f eb f8             	por    mm7,mm0
  ac1:	0f eb c1             	por    mm0,mm1
- ac4:	0f 57 ca             	xorps  xmm1,xmm2
+ ac4:	0f eb ca             	por    mm1,mm2
  ac7:	0f eb d3             	por    mm2,mm3
- aca:	0f 57 dc             	xorps  xmm3,xmm4
+ aca:	0f eb dc             	por    mm3,mm4
  acd:	0f eb e5             	por    mm4,mm5
- ad0:	0f 57 ee             	xorps  xmm5,xmm6
+ ad0:	0f eb ee             	por    mm5,mm6
  ad3:	0f eb f7             	por    mm6,mm7
- ad6:	0f 57 f8             	xorps  xmm7,xmm0
+ ad6:	0f eb f8             	por    mm7,mm0
  ad9:	0f eb c1             	por    mm0,mm1
  adc:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  adf:	0f eb c1             	por    mm0,mm1
- ae2:	0f 57 ca             	xorps  xmm1,xmm2
+ ae2:	0f eb ca             	por    mm1,mm2
  ae5:	0f eb d3             	por    mm2,mm3
- ae8:	0f 57 dc             	xorps  xmm3,xmm4
+ ae8:	0f eb dc             	por    mm3,mm4
  aeb:	0f eb e5             	por    mm4,mm5
- aee:	0f 57 ee             	xorps  xmm5,xmm6
+ aee:	0f eb ee             	por    mm5,mm6
  af1:	0f eb f7             	por    mm6,mm7
- af4:	0f 57 f8             	xorps  xmm7,xmm0
+ af4:	0f eb f8             	por    mm7,mm0
  af7:	0f eb c1             	por    mm0,mm1
- afa:	0f 57 ca             	xorps  xmm1,xmm2
+ afa:	0f eb ca             	por    mm1,mm2
  afd:	0f eb d3             	por    mm2,mm3
- b00:	0f 57 dc             	xorps  xmm3,xmm4
+ b00:	0f eb dc             	por    mm3,mm4
  b03:	0f eb e5             	por    mm4,mm5
- b06:	0f 57 ee             	xorps  xmm5,xmm6
+ b06:	0f eb ee             	por    mm5,mm6
  b09:	0f eb f7             	por    mm6,mm7
- b0c:	0f 57 f8             	xorps  xmm7,xmm0
+ b0c:	0f eb f8             	por    mm7,mm0
  b0f:	0f eb c1             	por    mm0,mm1
- b12:	0f 57 ca             	xorps  xmm1,xmm2
+ b12:	0f eb ca             	por    mm1,mm2
  b15:	0f eb d3             	por    mm2,mm3
- b18:	0f 57 dc             	xorps  xmm3,xmm4
+ b18:	0f eb dc             	por    mm3,mm4
  b1b:	0f eb e5             	por    mm4,mm5
- b1e:	0f 57 ee             	xorps  xmm5,xmm6
+ b1e:	0f eb ee             	por    mm5,mm6
  b21:	0f eb f7             	por    mm6,mm7
- b24:	0f 57 f8             	xorps  xmm7,xmm0
+ b24:	0f eb f8             	por    mm7,mm0
  b27:	0f eb c1             	por    mm0,mm1
- b2a:	0f 57 ca             	xorps  xmm1,xmm2
+ b2a:	0f eb ca             	por    mm1,mm2
  b2d:	0f eb d3             	por    mm2,mm3
- b30:	0f 57 dc             	xorps  xmm3,xmm4
+ b30:	0f eb dc             	por    mm3,mm4
  b33:	0f eb e5             	por    mm4,mm5
- b36:	0f 57 ee             	xorps  xmm5,xmm6
+ b36:	0f eb ee             	por    mm5,mm6
  b39:	0f eb f7             	por    mm6,mm7
- b3c:	0f 57 f8             	xorps  xmm7,xmm0
+ b3c:	0f eb f8             	por    mm7,mm0
  b3f:	0f eb c1             	por    mm0,mm1
  b42:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  b45:	0f eb c1             	por    mm0,mm1
- b48:	0f 57 ca             	xorps  xmm1,xmm2
+ b48:	0f eb ca             	por    mm1,mm2
  b4b:	0f eb d3             	por    mm2,mm3
- b4e:	0f 57 dc             	xorps  xmm3,xmm4
+ b4e:	0f eb dc             	por    mm3,mm4
  b51:	0f eb e5             	por    mm4,mm5
- b54:	0f 57 ee             	xorps  xmm5,xmm6
+ b54:	0f eb ee             	por    mm5,mm6
  b57:	0f eb f7             	por    mm6,mm7
- b5a:	0f 57 f8             	xorps  xmm7,xmm0
+ b5a:	0f eb f8             	por    mm7,mm0
  b5d:	0f eb c1             	por    mm0,mm1
- b60:	0f 57 ca             	xorps  xmm1,xmm2
+ b60:	0f eb ca             	por    mm1,mm2
  b63:	0f eb d3             	por    mm2,mm3
- b66:	0f 57 dc             	xorps  xmm3,xmm4
+ b66:	0f eb dc             	por    mm3,mm4
  b69:	0f eb e5             	por    mm4,mm5
- b6c:	0f 57 ee             	xorps  xmm5,xmm6
+ b6c:	0f eb ee             	por    mm5,mm6
  b6f:	0f eb f7             	por    mm6,mm7
- b72:	0f 57 f8             	xorps  xmm7,xmm0
+ b72:	0f eb f8             	por    mm7,mm0
  b75:	0f eb c1             	por    mm0,mm1
- b78:	0f 57 ca             	xorps  xmm1,xmm2
+ b78:	0f eb ca             	por    mm1,mm2
  b7b:	0f eb d3             	por    mm2,mm3
- b7e:	0f 57 dc             	xorps  xmm3,xmm4
+ b7e:	0f eb dc             	por    mm3,mm4
  b81:	0f eb e5             	por    mm4,mm5
- b84:	0f 57 ee             	xorps  xmm5,xmm6
+ b84:	0f eb ee             	por    mm5,mm6
  b87:	0f eb f7             	por    mm6,mm7
- b8a:	0f 57 f8             	xorps  xmm7,xmm0
+ b8a:	0f eb f8             	por    mm7,mm0
  b8d:	0f eb c1             	por    mm0,mm1
- b90:	0f 57 ca             	xorps  xmm1,xmm2
+ b90:	0f eb ca             	por    mm1,mm2
  b93:	0f eb d3             	por    mm2,mm3
- b96:	0f 57 dc             	xorps  xmm3,xmm4
+ b96:	0f eb dc             	por    mm3,mm4
  b99:	0f eb e5             	por    mm4,mm5
- b9c:	0f 57 ee             	xorps  xmm5,xmm6
+ b9c:	0f eb ee             	por    mm5,mm6
  b9f:	0f eb f7             	por    mm6,mm7
- ba2:	0f 57 f8             	xorps  xmm7,xmm0
+ ba2:	0f eb f8             	por    mm7,mm0
  ba5:	0f eb c1             	por    mm0,mm1
  ba8:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  bab:	0f eb c1             	por    mm0,mm1
- bae:	0f 57 ca             	xorps  xmm1,xmm2
+ bae:	0f eb ca             	por    mm1,mm2
  bb1:	0f eb d3             	por    mm2,mm3
- bb4:	0f 57 dc             	xorps  xmm3,xmm4
+ bb4:	0f eb dc             	por    mm3,mm4
  bb7:	0f eb e5             	por    mm4,mm5
- bba:	0f 57 ee             	xorps  xmm5,xmm6
+ bba:	0f eb ee             	por    mm5,mm6
  bbd:	0f eb f7             	por    mm6,mm7
- bc0:	0f 57 f8             	xorps  xmm7,xmm0
+ bc0:	0f eb f8             	por    mm7,mm0
  bc3:	0f eb c1             	por    mm0,mm1
- bc6:	0f 57 ca             	xorps  xmm1,xmm2
+ bc6:	0f eb ca             	por    mm1,mm2
  bc9:	0f eb d3             	por    mm2,mm3
- bcc:	0f 57 dc             	xorps  xmm3,xmm4
+ bcc:	0f eb dc             	por    mm3,mm4
  bcf:	0f eb e5             	por    mm4,mm5
- bd2:	0f 57 ee             	xorps  xmm5,xmm6
+ bd2:	0f eb ee             	por    mm5,mm6
  bd5:	0f eb f7             	por    mm6,mm7
- bd8:	0f 57 f8             	xorps  xmm7,xmm0
+ bd8:	0f eb f8             	por    mm7,mm0
  bdb:	0f eb c1             	por    mm0,mm1
- bde:	0f 57 ca             	xorps  xmm1,xmm2
+ bde:	0f eb ca             	por    mm1,mm2
  be1:	0f eb d3             	por    mm2,mm3
- be4:	0f 57 dc             	xorps  xmm3,xmm4
+ be4:	0f eb dc             	por    mm3,mm4
  be7:	0f eb e5             	por    mm4,mm5
- bea:	0f 57 ee             	xorps  xmm5,xmm6
+ bea:	0f eb ee             	por    mm5,mm6
  bed:	0f eb f7             	por    mm6,mm7
- bf0:	0f 57 f8             	xorps  xmm7,xmm0
+ bf0:	0f eb f8             	por    mm7,mm0
  bf3:	0f eb c1             	por    mm0,mm1
- bf6:	0f 57 ca             	xorps  xmm1,xmm2
+ bf6:	0f eb ca             	por    mm1,mm2
  bf9:	0f eb d3             	por    mm2,mm3
- bfc:	0f 57 dc             	xorps  xmm3,xmm4
+ bfc:	0f eb dc             	por    mm3,mm4
  bff:	0f eb e5             	por    mm4,mm5
- c02:	0f 57 ee             	xorps  xmm5,xmm6
+ c02:	0f eb ee             	por    mm5,mm6
  c05:	0f eb f7             	por    mm6,mm7
- c08:	0f 57 f8             	xorps  xmm7,xmm0
+ c08:	0f eb f8             	por    mm7,mm0
  c0b:	0f eb c1             	por    mm0,mm1
  c0e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  c11:	0f eb c1             	por    mm0,mm1
- c14:	0f 57 ca             	xorps  xmm1,xmm2
+ c14:	0f eb ca             	por    mm1,mm2
  c17:	0f eb d3             	por    mm2,mm3
- c1a:	0f 57 dc             	xorps  xmm3,xmm4
+ c1a:	0f eb dc             	por    mm3,mm4
  c1d:	0f eb e5             	por    mm4,mm5
- c20:	0f 57 ee             	xorps  xmm5,xmm6
+ c20:	0f eb ee             	por    mm5,mm6
  c23:	0f eb f7             	por    mm6,mm7
- c26:	0f 57 f8             	xorps  xmm7,xmm0
+ c26:	0f eb f8             	por    mm7,mm0
  c29:	0f eb c1             	por    mm0,mm1
- c2c:	0f 57 ca             	xorps  xmm1,xmm2
+ c2c:	0f eb ca             	por    mm1,mm2
  c2f:	0f eb d3             	por    mm2,mm3
- c32:	0f 57 dc             	xorps  xmm3,xmm4
+ c32:	0f eb dc             	por    mm3,mm4
  c35:	0f eb e5             	por    mm4,mm5
- c38:	0f 57 ee             	xorps  xmm5,xmm6
+ c38:	0f eb ee             	por    mm5,mm6
  c3b:	0f eb f7             	por    mm6,mm7
- c3e:	0f 57 f8             	xorps  xmm7,xmm0
+ c3e:	0f eb f8             	por    mm7,mm0
  c41:	0f eb c1             	por    mm0,mm1
- c44:	0f 57 ca             	xorps  xmm1,xmm2
+ c44:	0f eb ca             	por    mm1,mm2
  c47:	0f eb d3             	por    mm2,mm3
- c4a:	0f 57 dc             	xorps  xmm3,xmm4
+ c4a:	0f eb dc             	por    mm3,mm4
  c4d:	0f eb e5             	por    mm4,mm5
- c50:	0f 57 ee             	xorps  xmm5,xmm6
+ c50:	0f eb ee             	por    mm5,mm6
  c53:	0f eb f7             	por    mm6,mm7
- c56:	0f 57 f8             	xorps  xmm7,xmm0
+ c56:	0f eb f8             	por    mm7,mm0
  c59:	0f eb c1             	por    mm0,mm1
- c5c:	0f 57 ca             	xorps  xmm1,xmm2
+ c5c:	0f eb ca             	por    mm1,mm2
  c5f:	0f eb d3             	por    mm2,mm3
- c62:	0f 57 dc             	xorps  xmm3,xmm4
+ c62:	0f eb dc             	por    mm3,mm4
  c65:	0f eb e5             	por    mm4,mm5
- c68:	0f 57 ee             	xorps  xmm5,xmm6
+ c68:	0f eb ee             	por    mm5,mm6
  c6b:	0f eb f7             	por    mm6,mm7
- c6e:	0f 57 f8             	xorps  xmm7,xmm0
+ c6e:	0f eb f8             	por    mm7,mm0
  c71:	0f eb c1             	por    mm0,mm1
  c74:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  c77:	0f eb c1             	por    mm0,mm1
- c7a:	0f 57 ca             	xorps  xmm1,xmm2
+ c7a:	0f eb ca             	por    mm1,mm2
  c7d:	0f eb d3             	por    mm2,mm3
- c80:	0f 57 dc             	xorps  xmm3,xmm4
+ c80:	0f eb dc             	por    mm3,mm4
  c83:	0f eb e5             	por    mm4,mm5
- c86:	0f 57 ee             	xorps  xmm5,xmm6
+ c86:	0f eb ee             	por    mm5,mm6
  c89:	0f eb f7             	por    mm6,mm7
- c8c:	0f 57 f8             	xorps  xmm7,xmm0
+ c8c:	0f eb f8             	por    mm7,mm0
  c8f:	0f eb c1             	por    mm0,mm1
- c92:	0f 57 ca             	xorps  xmm1,xmm2
+ c92:	0f eb ca             	por    mm1,mm2
  c95:	0f eb d3             	por    mm2,mm3
- c98:	0f 57 dc             	xorps  xmm3,xmm4
+ c98:	0f eb dc             	por    mm3,mm4
  c9b:	0f eb e5             	por    mm4,mm5
- c9e:	0f 57 ee             	xorps  xmm5,xmm6
+ c9e:	0f eb ee             	por    mm5,mm6
  ca1:	0f eb f7             	por    mm6,mm7
- ca4:	0f 57 f8             	xorps  xmm7,xmm0
+ ca4:	0f eb f8             	por    mm7,mm0
  ca7:	0f eb c1             	por    mm0,mm1
- caa:	0f 57 ca             	xorps  xmm1,xmm2
+ caa:	0f eb ca             	por    mm1,mm2
  cad:	0f eb d3             	por    mm2,mm3
- cb0:	0f 57 dc             	xorps  xmm3,xmm4
+ cb0:	0f eb dc             	por    mm3,mm4
  cb3:	0f eb e5             	por    mm4,mm5
- cb6:	0f 57 ee             	xorps  xmm5,xmm6
+ cb6:	0f eb ee             	por    mm5,mm6
  cb9:	0f eb f7             	por    mm6,mm7
- cbc:	0f 57 f8             	xorps  xmm7,xmm0
+ cbc:	0f eb f8             	por    mm7,mm0
  cbf:	0f eb c1             	por    mm0,mm1
- cc2:	0f 57 ca             	xorps  xmm1,xmm2
+ cc2:	0f eb ca             	por    mm1,mm2
  cc5:	0f eb d3             	por    mm2,mm3
- cc8:	0f 57 dc             	xorps  xmm3,xmm4
+ cc8:	0f eb dc             	por    mm3,mm4
  ccb:	0f eb e5             	por    mm4,mm5
- cce:	0f 57 ee             	xorps  xmm5,xmm6
+ cce:	0f eb ee             	por    mm5,mm6
  cd1:	0f eb f7             	por    mm6,mm7
- cd4:	0f 57 f8             	xorps  xmm7,xmm0
+ cd4:	0f eb f8             	por    mm7,mm0
  cd7:	0f eb c1             	por    mm0,mm1
  cda:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  cdd:	0f eb c1             	por    mm0,mm1
- ce0:	0f 57 ca             	xorps  xmm1,xmm2
+ ce0:	0f eb ca             	por    mm1,mm2
  ce3:	0f eb d3             	por    mm2,mm3
- ce6:	0f 57 dc             	xorps  xmm3,xmm4
+ ce6:	0f eb dc             	por    mm3,mm4
  ce9:	0f eb e5             	por    mm4,mm5
- cec:	0f 57 ee             	xorps  xmm5,xmm6
+ cec:	0f eb ee             	por    mm5,mm6
  cef:	0f eb f7             	por    mm6,mm7
- cf2:	0f 57 f8             	xorps  xmm7,xmm0
+ cf2:	0f eb f8             	por    mm7,mm0
  cf5:	0f eb c1             	por    mm0,mm1
- cf8:	0f 57 ca             	xorps  xmm1,xmm2
+ cf8:	0f eb ca             	por    mm1,mm2
  cfb:	0f eb d3             	por    mm2,mm3
- cfe:	0f 57 dc             	xorps  xmm3,xmm4
+ cfe:	0f eb dc             	por    mm3,mm4
  d01:	0f eb e5             	por    mm4,mm5
- d04:	0f 57 ee             	xorps  xmm5,xmm6
+ d04:	0f eb ee             	por    mm5,mm6
  d07:	0f eb f7             	por    mm6,mm7
- d0a:	0f 57 f8             	xorps  xmm7,xmm0
+ d0a:	0f eb f8             	por    mm7,mm0
  d0d:	0f eb c1             	por    mm0,mm1
- d10:	0f 57 ca             	xorps  xmm1,xmm2
+ d10:	0f eb ca             	por    mm1,mm2
  d13:	0f eb d3             	por    mm2,mm3
- d16:	0f 57 dc             	xorps  xmm3,xmm4
+ d16:	0f eb dc             	por    mm3,mm4
  d19:	0f eb e5             	por    mm4,mm5
- d1c:	0f 57 ee             	xorps  xmm5,xmm6
+ d1c:	0f eb ee             	por    mm5,mm6
  d1f:	0f eb f7             	por    mm6,mm7
- d22:	0f 57 f8             	xorps  xmm7,xmm0
+ d22:	0f eb f8             	por    mm7,mm0
  d25:	0f eb c1             	por    mm0,mm1
- d28:	0f 57 ca             	xorps  xmm1,xmm2
+ d28:	0f eb ca             	por    mm1,mm2
  d2b:	0f eb d3             	por    mm2,mm3
- d2e:	0f 57 dc             	xorps  xmm3,xmm4
+ d2e:	0f eb dc             	por    mm3,mm4
  d31:	0f eb e5             	por    mm4,mm5
- d34:	0f 57 ee             	xorps  xmm5,xmm6
+ d34:	0f eb ee             	por    mm5,mm6
  d37:	0f eb f7             	por    mm6,mm7
- d3a:	0f 57 f8             	xorps  xmm7,xmm0
+ d3a:	0f eb f8             	por    mm7,mm0
  d3d:	0f eb c1             	por    mm0,mm1
  d40:	48 8b 09             	mov    rcx,QWORD PTR [rcx]
  d43:	0f eb c1             	por    mm0,mm1
- d46:	0f 57 ca             	xorps  xmm1,xmm2
+ d46:	0f eb ca             	por    mm1,mm2
  d49:	0f eb d3             	por    mm2,mm3
- d4c:	0f 57 dc             	xorps  xmm3,xmm4
+ d4c:	0f eb dc             	por    mm3,mm4
  d4f:	0f eb e5             	por    mm4,mm5
- d52:	0f 57 ee             	xorps  xmm5,xmm6
+ d52:	0f eb ee             	por    mm5,mm6
  d55:	0f eb f7             	por    mm6,mm7
- d58:	0f 57 f8             	xorps  xmm7,xmm0
+ d58:	0f eb f8             	por    mm7,mm0
  d5b:	0f eb c1             	por    mm0,mm1
- d5e:	0f 57 ca             	xorps  xmm1,xmm2
+ d5e:	0f eb ca             	por    mm1,mm2
  d61:	0f eb d3             	por    mm2,mm3
- d64:	0f 57 dc             	xorps  xmm3,xmm4
+ d64:	0f eb dc             	por    mm3,mm4
  d67:	0f eb e5             	por    mm4,mm5
- d6a:	0f 57 ee             	xorps  xmm5,xmm6
+ d6a:	0f eb ee             	por    mm5,mm6
  d6d:	0f eb f7             	por    mm6,mm7
- d70:	0f 57 f8             	xorps  xmm7,xmm0
+ d70:	0f eb f8             	por    mm7,mm0
  d73:	0f eb c1             	por    mm0,mm1
- d76:	0f 57 ca             	xorps  xmm1,xmm2
+ d76:	0f eb ca             	por    mm1,mm2
  d79:	0f eb d3             	por    mm2,mm3
- d7c:	0f 57 dc             	xorps  xmm3,xmm4
+ d7c:	0f eb dc             	por    mm3,mm4
  d7f:	0f eb e5             	por    mm4,mm5
- d82:	0f 57 ee             	xorps  xmm5,xmm6
+ d82:	0f eb ee             	por    mm5,mm6
  d85:	0f eb f7             	por    mm6,mm7
- d88:	0f 57 f8             	xorps  xmm7,xmm0
+ d88:	0f eb f8             	por    mm7,mm0
  d8b:	0f eb c1             	por    mm0,mm1
- d8e:	0f 57 ca             	xorps  xmm1,xmm2
+ d8e:	0f eb ca             	por    mm1,mm2
  d91:	0f eb d3             	por    mm2,mm3
- d94:	0f 57 dc             	xorps  xmm3,xmm4
+ d94:	0f eb dc             	por    mm3,mm4
  d97:	0f eb e5             	por    mm4,mm5
- d9a:	0f 57 ee             	xorps  xmm5,xmm6
+ d9a:	0f eb ee             	por    mm5,mm6
  d9d:	0f eb f7             	por    mm6,mm7
- da0:	0f 57 f8             	xorps  xmm7,xmm0
+ da0:	0f eb f8             	por    mm7,mm0
  da3:	0f eb c1             	por    mm0,mm1
  da6:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
  da9:	0f eb c1             	por    mm0,mm1
- dac:	0f 57 ca             	xorps  xmm1,xmm2
+ dac:	0f eb ca             	por    mm1,mm2
  daf:	0f eb d3             	por    mm2,mm3
- db2:	0f 57 dc             	xorps  xmm3,xmm4
+ db2:	0f eb dc             	por    mm3,mm4
  db5:	0f eb e5             	por    mm4,mm5
- db8:	0f 57 ee             	xorps  xmm5,xmm6
+ db8:	0f eb ee             	por    mm5,mm6
  dbb:	0f eb f7             	por    mm6,mm7
- dbe:	0f 57 f8             	xorps  xmm7,xmm0
+ dbe:	0f eb f8             	por    mm7,mm0
  dc1:	0f eb c1             	por    mm0,mm1
- dc4:	0f 57 ca             	xorps  xmm1,xmm2
+ dc4:	0f eb ca             	por    mm1,mm2
  dc7:	0f eb d3             	por    mm2,mm3
- dca:	0f 57 dc             	xorps  xmm3,xmm4
+ dca:	0f eb dc             	por    mm3,mm4
  dcd:	0f eb e5             	por    mm4,mm5
- dd0:	0f 57 ee             	xorps  xmm5,xmm6
+ dd0:	0f eb ee             	por    mm5,mm6
  dd3:	0f eb f7             	por    mm6,mm7
- dd6:	0f 57 f8             	xorps  xmm7,xmm0
+ dd6:	0f eb f8             	por    mm7,mm0
  dd9:	0f eb c1             	por    mm0,mm1
- ddc:	0f 57 ca             	xorps  xmm1,xmm2
+ ddc:	0f eb ca             	por    mm1,mm2
  ddf:	0f eb d3             	por    mm2,mm3
- de2:	0f 57 dc             	xorps  xmm3,xmm4
+ de2:	0f eb dc             	por    mm3,mm4
  de5:	0f eb e5             	por    mm4,mm5
- de8:	0f 57 ee             	xorps  xmm5,xmm6
+ de8:	0f eb ee             	por    mm5,mm6
  deb:	0f eb f7             	por    mm6,mm7
- dee:	0f 57 f8             	xorps  xmm7,xmm0
+ dee:	0f eb f8             	por    mm7,mm0
  df1:	0f eb c1             	por    mm0,mm1
- df4:	0f 57 ca             	xorps  xmm1,xmm2
+ df4:	0f eb ca             	por    mm1,mm2
  df7:	0f eb d3             	por    mm2,mm3
- dfa:	0f 57 dc             	xorps  xmm3,xmm4
+ dfa:	0f eb dc             	por    mm3,mm4
  dfd:	0f eb e5             	por    mm4,mm5
- e00:	0f 57 ee             	xorps  xmm5,xmm6
+ e00:	0f eb ee             	por    mm5,mm6
  e03:	0f eb f7             	por    mm6,mm7
- e06:	0f 57 f8             	xorps  xmm7,xmm0
+ e06:	0f eb f8             	por    mm7,mm0
  e09:	83 e8 01             	sub    eax,0x1
  e0c:	0f 85 6e f2 ff ff    	jne    0x80
  e12:	66 90                	xchg   ax,ax
