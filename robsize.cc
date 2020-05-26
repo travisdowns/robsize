@@ -185,7 +185,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
             else       { ADD_WORD(0xfcc5 & ~((i&7)<<11)); ADD_BYTE(0x57); ADD_BYTE(0xc0 | ((i&7)<<3) | ((i+1)&7)); }
             break;
         case 36: ADD_WORD(0xef0f); ADD_BYTE(0xc0 | (i&7)<<3 | (i&7)); break;      // pxor mmN, mmN
-        case 37: ADD_WORD(0xeb0f); ADD_BYTE(0xc0); break;  // por mmN, mmN+1
+        case 37: ADD_WORD(0xeb0f); ADD_BYTE(0xc0); break;  // por mm0, mm0
         case 38: ADD_WORD(0xeb0f); ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break;  // por mmN, mmN+1
         case 39:
             // check if mmx and sse regs are shared
@@ -213,7 +213,7 @@ int add_filler(unsigned char* ibuf, int instr, int i, int k)
             break;
         case 42: ADD_BYTE(0xc5); ADD_BYTE(0xed); ADD_BYTE(0x4a); ADD_BYTE(0xcb); break;  // kaddb k1, k2, k3
         case 43: ADD_BYTE(0xc4); ADD_BYTE(0xe1); ADD_BYTE(0xfd & ~(((i+1)&7)<<3)); ADD_BYTE(0x4a);
-                 ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break;  // kaddd k1, k2, k3
+                 ADD_BYTE(0xc0 | (i&7)<<3 | ((i+1)&7)); break;  // kaddd kN, kN+1, kN+1
 
     }
 
