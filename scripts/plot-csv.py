@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import matplotlib.pyplot as mpl
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.ticker as plticker
 import pandas as pd
@@ -61,6 +61,7 @@ p.add_argument('--markersize', help='use the given marker', type=float)
 p.add_argument('--linewidth', help='use the given line width', type=float)
 p.add_argument('--tight', help='use tight_layout for less space around chart', action='store_true')
 
+p.add_argument('--style', help='set the matplotlib style', type=str)
 
 # debugging
 p.add_argument('--verbose', '-v', help='enable verbose logging', action='store_true')
@@ -68,6 +69,9 @@ args = p.parse_args()
 
 vprint = print if args.verbose else lambda *a: None
 vprint("args = ", args)
+
+if args.style:
+    plt.style.use(args.style)
 
 # fix various random seeds so we get reproducible plots
 # fix the mpl seed used to generate SVG IDs
@@ -217,7 +221,7 @@ if (args.markersize):
 #    ax = df.plot.line(x=0, title=args.title, figsize=(12,8), grid=True, **kwargs)
 #else:
     # df.iloc[:,xi] = df.iloc[:,xi].apply(str)
-ax = df.plot.line(x=0, title=args.title, figsize=(12,8), grid=True, **kwargs)
+ax = df.plot.line(x=0, title=args.title, figsize=(9,6), grid=True, **kwargs)
 
 # this sets the ticks explicitly to one per x value, which means that
 # all x values will be shown, but the x-axis could be crowded if there
