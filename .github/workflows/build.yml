@@ -1,0 +1,21 @@
+name: build
+on: [push]
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-16.04, ubuntu-latest]
+        cpp_compiler: [g++, g++-8, clang++]
+        include:
+          - c_compiler: gcc
+          - cpp_ompiler: g++-8
+            c_compiler: gcc-8
+          - cpp_compiler: clang++
+            c_compiler: clang
+    steps:
+      - uses: actions/checkout@v2
+      - run: lscpu
+      - run: make CC=${{ matrix.c_compiler }} CXX=${{ matrix.cpp_compiler }}
+      - run: ./check-gold.sh
+      - run: ./robsize 0 --superfast
