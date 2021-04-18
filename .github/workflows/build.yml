@@ -4,6 +4,7 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-16.04, ubuntu-latest]
         cpp_compiler: [g++, g++-8, clang++]
@@ -14,6 +15,16 @@ jobs:
           - cpp_compiler: clang++
             c_compiler: clang
     steps:
+      - name: Install C Compiler
+        if: ${{ startsWith(matrix.c_compiler, 'gcc-') || startsWith(matrix.c_compiler, 'clang-') }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ${{ matrix.c_compiler }}
+      - name: Install C++ Compiler
+        if: ${{ startsWith(matrix.cpp_compiler, 'g++-') || startsWith(matrix.cpp_compiler, 'clang++-') }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ${{ matrix.cpp_compiler }}
       - uses: actions/checkout@v2
       - run: lscpu
       - run: make CC=${{ matrix.c_compiler }} CXX=${{ matrix.cpp_compiler }}
