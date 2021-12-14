@@ -71,6 +71,12 @@ For example, the following command (after almost 7 minutes, use `--fast` if you 
 
  ![Skylake Load Buffers](skl-load.png)
 
+## Related Work
+
+ - [Microarchitecturometer](https://github.com/Veedrac/microarchitecturometer) is an implementation of this idea, but which generates the test variants at compile-time using a Python script. It supports Arm in addition to x86.
+ - [rob.rs](https://github.com/eigenform/lamina/blob/main/bin/rob.rs) is a (much more readable) implementation of this idea, also using JIT and which uses actual mnemonics rather than line hex machine code.  
+    
+   
 ## References
 
 H. Wong, _Measuring Reorder Buffer Capacity_, May, 2013. [Online]. Available: http://blog.stuffedcow.net/2013/05/measuring-rob-capacity/
