@@ -6,7 +6,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-16.04, ubuntu-latest]
+        os: [ubuntu-latest]
         cpp_compiler: [g++, g++-8, clang++]
         include:
           - c_compiler: gcc
